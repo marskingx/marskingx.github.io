@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on 懶得變有錢</title>
+        <link>https://demo.stack.jimmycai.com/page/</link>
+        <description>Recent content in Pages on 懶得變有錢</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-tw</language>
+        <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://demo.stack.jimmycai.com/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Category</title>
+        <link>https://demo.stack.jimmycai.com/category/</link>
+        <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+        
+        <guid>https://demo.stack.jimmycai.com/category/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>About Me</title>
+        <link>https://demo.stack.jimmycai.com/about-me/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://demo.stack.jimmycai.com/about-me/</guid>
+        <description>&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;
+&lt;p&gt;Hello there! I&amp;rsquo;m [Your Name], currently living in Taiwan. I&amp;rsquo;m the CEO of a fintech startup and a passionate podcaster.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/path/to/your/image.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Your Image Alt Text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;-podcasting&#34;&gt;🎙️ Podcasting&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;ve been podcasting for over X years. My shows typically cover topics ranging from A to Z.&lt;/p&gt;
+&lt;h3 id=&#34;-fintech-startup&#34;&gt;📈 Fintech Startup&lt;/h3&gt;
+&lt;p&gt;Leading [Startup Name], I&amp;rsquo;ve delved deep into the fintech industry, exploring innovative ways to bring value to our customers.&lt;/p&gt;
+&lt;h3 id=&#34;-writing&#34;&gt;📚 Writing&lt;/h3&gt;
+&lt;p&gt;I love to share my knowledge on financial planning. Writing articles has allowed me to connect with a larger audience, simplifying complex concepts for everyone.&lt;/p&gt;
+&lt;h3 id=&#34;-financial-news&#34;&gt;📰 Financial News&lt;/h3&gt;
+&lt;p&gt;Staying updated with the latest financial news is a hobby. It not only informs my business decisions but also provides content for my podcasts.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;contact&#34;&gt;Contact&lt;/h3&gt;
+&lt;p&gt;Feel free to reach out to me via &lt;a class=&#34;link&#34; href=&#34;mailto:your-email@example.com&#34; &gt;email&lt;/a&gt; for collaborations or just to say hi!&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Links</title>
+        <link>https://demo.stack.jimmycai.com/links/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://demo.stack.jimmycai.com/links/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>https://demo.stack.jimmycai.com/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://demo.stack.jimmycai.com/search/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>
