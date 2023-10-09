@@ -7,3 +7,4 @@ image: lazy.png
 
 ![Lazytoberich.png](Lazytoberich.png)
 
+測試一下文章有沒有圖片!
