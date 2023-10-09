@@ -11,5 +11,9 @@ draft: false
 ---
 test
 
-![懶得變有錢](Lazytoberich.png) 
 
+
+![](img001.jpg)
+
+
+{{< youtube tuEEH0ckrLM >}}

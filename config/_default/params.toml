@@ -6,7 +6,7 @@ favicon = "/lazy.png"
 
 [footer]
 since = 2018
-customText = """測試一下"""
+customText = """從Medium寫到自己架設hugo網站!知識與技能可以隨著刻意練強制升級!"""
 
 [dateFormat]
 published = "Jan 02, 2006"
