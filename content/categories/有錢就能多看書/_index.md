@@ -1,7 +1,7 @@
 ---
-title: "Podcast聊聊看️"
-description: "每一集都收集在這裡!"
-image: Lazytoberich-blog-cover-categories.png
+title: "有錢就能多看書"
+description: "看過的書都能分享"
+image: 
 
 # Badge style
 style:
