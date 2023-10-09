@@ -38,24 +38,26 @@
     </header>
 
     {{- with .Site.Menus.social -}}
-        <ol class="social-menu">
-            {{ range . }}
-                <li>
-                    <a 
-                        href='{{ .URL }}'
-                        {{ if eq (default true .Params.newTab) true }}target="_blank"{{ end }}
-                        {{ with .Name }}title="{{ . }}"{{ end }}
-                        rel="me"
-                    >
-                        {{ $icon := default "link" .Params.Icon }}
-                        {{ with $icon }}
-                            {{ partial "helper/icon" . }}
-                        {{ end }}
-                    </a>
-                </li>
-            {{ end }}
-        </ol>
-    {{- end -}}
+    {{ $sortedSocial := sort . "Params.weight" }}
+    <ol class="social-menu">
+        {{ range $sortedSocial }}
+            <li>
+                <a
+                    href='{{ .URL }}'
+                    {{ if eq (default true .Params.newTab) true }}target="_blank"{{ end }}
+                    {{ with .Name }}title="{{ . }}"{{ end }}
+                    rel="me"
+                >
+                    {{ $icon := default "link" .Params.Icon }}
+                    {{ with $icon }}
+                        {{ partial "helper/icon" . }}
+                    {{ end }}
+                </a>
+            </li>
+        {{ end }}
+    </ol>
+{{- end -}}
+
 
     <ol class="menu" id="main-menu">
         {{ $currentPage := . }}
