@@ -9,11 +9,9 @@ hidden: false
 comments: true
 draft: false
 ---
+
 test
 
-
-
-![](img001.jpg)
-
+![img001.jpg](img001.jpg)
 
 {{< youtube tuEEH0ckrLM >}}
