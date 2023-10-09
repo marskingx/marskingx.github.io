@@ -43,7 +43,7 @@ notFound:
 widget:
     archives:
         title:
-            other: 歷史記錄
+            other: 文章年度
 
         more:
             other: 更多
