@@ -13,5 +13,6 @@ draft: false
 test
 
 ![img001.jpg](img001.jpg)
+![Lazytoberich.png](..%2F..%2F..%2Fassets%2Fimg%2FLazytoberich.png)
 
 {{< youtube tuEEH0ckrLM >}}
