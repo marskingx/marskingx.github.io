@@ -1,0 +1,4 @@
+{{ $wordCount := countwords .Content }}
+{{ $wordsPerMinute := 288 }}
+{{ $readingTime := div $wordCount $wordsPerMinute }}
+<p>閱讀時間: {{ $readingTime }} 分鐘</p>

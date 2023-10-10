@@ -33,6 +33,9 @@ article:
         one: "閱讀時間: {{ .Count }} 分鐘"
         other: "閱讀時間: {{ .Count }} 分鐘"
 
+readingTime: "閱讀時間: {{ $readingTime }} 分鐘"
+
+
 notFound:
     title:
         other: 404 錯誤

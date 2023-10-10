@@ -30,8 +30,10 @@ article:
         other: Last updated on
 
     readingTime:
-        one: "{{ .Count }} minute read"
-        other: "{{ .Count }} minute read"
+        one: "Estimated reading time: {{ $readingTime }} minutes."
+        other: "Estimated reading time: {{ $readingTime }} minutes."
+
+readingTime: "Estimated reading time: {{ $readingTime }} minutes."
 
 
 
