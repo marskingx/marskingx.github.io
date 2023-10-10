@@ -35,4 +35,4 @@ Staying updated with the latest financial news is a hobby. It not only informs m
 
 ### Contact
 
-Feel free to reach out to me via [email](mailto:your-email@example.com) for collaborations or just to say hi!
+Feel free to reach out to me via [email](mailto:marskingx@gmail.com) for collaborations or just to say hi!

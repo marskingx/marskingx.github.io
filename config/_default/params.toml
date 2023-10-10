@@ -30,6 +30,7 @@ src = "img/Lazytoberich.png"
 math = false
 readingTime = true
 
+
 [article.license]
 enabled = true
 default = "Licensed under CC BY LazyToBeRich 懶得變有錢"
