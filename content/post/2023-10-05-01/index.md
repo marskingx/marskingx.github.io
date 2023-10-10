@@ -12,7 +12,7 @@ Score /5: ⭐️⭐️⭐️⭐️⭐️
 ---
 ![img001.png](img001.png)
 
-# 瘋潮行銷
+### 瘋潮行銷
 
 整本書的最大重點應該就是在說怎麼創造「口碑」，當然我們每個人都知道創造「口碑」的重要性，但是透過書裡面寫的元素，可以更有意識的創造這些元素，並利用在行銷當中。
 
@@ -26,11 +26,11 @@ Score /5: ⭐️⭐️⭐️⭐️⭐️
 > 只有讓成功的機會增加的行銷
 > 
 
-# MindMap－《瘋潮行銷》
+### MindMap－《瘋潮行銷》
 
 ![Xmind-YourMoney_or_YourLife.png](Xmind-YourMoney_or_YourLife.png)
 
-# STEEPS，用山道猴子的一生來驗證
+### STEEPS，用山道猴子的一生來驗證
 
 在現代社會，網路與社交媒體的普及使得信息傳播速度很快，一則具有感染力的消息或故事能在瞬間引起廣泛的關注和討論，就像[山道猴子的一生](https://www.google.com/search?q=%E5%B1%B1%E9%81%93%E7%8C%B4%E5%AD%90%E7%9A%84%E4%B8%80%E7%94%9F&rlz=1C1ONGR_zh-TWTW1077TW1077&oq=%E5%B1%B1%E9%81%93%E7%8C%B4%E5%AD%90%E7%9A%84%E4%B8%80%E7%94%9F&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyBwgBEC4YgAQyBggCEEUYOzIGCAMQRRg7MgcIBBAAGIAEMgcIBRAAGIAEMgYIBhBFGD0yBggHEEUYPdIBCDI5NjNqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8)。而在市場行銷領域，如何有效地利用這股瘋潮，讓品牌或產品得到更多人的認識和喜愛，是每個行銷人員或企業家必須思考的問題。《瘋潮行銷》一書提供了一套名為“感染力六大原則”（STEEPS原則）的方法，來幫助我們更好地理解和掌握口碑傳播的奧秘。
 
@@ -52,7 +52,7 @@ Score /5: ⭐️⭐️⭐️⭐️⭐️
 
 總而言之，掌握感染力六大原則，結合產品特點和市場環境，制定出有針對性的行銷策略，是達成良好口碑傳播效果的基礎。在這個信息爆炸的時代，如何讓品牌在瘋潮中脫穎而出，值得我們把有意識的行銷方法放在自己的腦袋裡面。這裡也會不定期的分享不只跟財務規劃相關的文章，讓大家一起都有機會成長!
 
-# 聽聽懶的變有錢Podcast頻道
+### 聽聽懶的變有錢Podcast頻道
 [![Lisenttolazypeople.svg](Lisenttolazypeople.svg "懶得變有錢podcast")](https://solink.soundon.fm/lazytoberich)
 👉[點擊前往](https://solink.soundon.fm/lazytoberich)
 

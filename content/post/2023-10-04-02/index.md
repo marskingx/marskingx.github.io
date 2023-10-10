@@ -23,8 +23,9 @@ date: 2023-10-04
 
 理財兩三事ig 追蹤❤️[@marslife234](https://www.instagram.com/marslife234/)
 
-<img alt="applepodcast懶得變有錢" src="applepodcast.svg" title="applepodcast懶得變有錢" width="300"/>
+[<img alt="applepodcast.svg" src="applepodcast.svg" width="300"/>](https://podcasts.apple.com/us/podcast/%E6%87%B6%E5%BE%97%E8%AE%8A%E6%9C%89%E9%8C%A2/id1707756115)
 
-<img alt="googlepodcast懶得變有錢" src="googlepodcast.svg" title="googlepodcast懶得變有錢" width="300"/>
+[<img alt="googlepodcast.svg" src="googlepodcast.svg" width="300"/>](https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZG9uLmZtL3BvZGNhc3RzLzNmNGQyY2VjLWMxNjAtNDQ2OC1hNmRmLWJkMWM5YWNmZGUxMy54bWw?sa=X&ved=2ahUKEwjukq6gtduBAxW4plYBHWsmC7MQ9sEGegQIARAE&hl=zh-TW&source=post_page-----b18906608c46--------------------------------)
 
-<img alt="spotifypodcast懶得變有錢" src="spotify01.svg" title="spotifypodcast懶得變有錢" width="300"/>
+[<img alt="spotify01.svg" src="spotify01.svg" width="300"/>](https://open.spotify.com/show/0VOxVD8igXWWJLFCtQxhdN?go=1&sp_cid=07117902ac4c900be98efc076f9a10a0&utm_source=embed_player_p&utm_medium=desktop&nd=1)
+

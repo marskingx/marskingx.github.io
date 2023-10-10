@@ -139,7 +139,7 @@ category = ""
 categoryID = ""
 mapping = ""
 lightTheme = ""
-darkTheme = "auto"
+darkTheme = ""
 reactionsEnabled = 1
 emitMetadata = 0
 

@@ -4,10 +4,8 @@ description: 財務規劃是一種很基礎的理財計劃，但為什麼很難�
 date: 2023-10-10T07:01:14+08:00
 image: https://cdn-images-1.medium.com/max/800/0*DaKySpyWQpUBhDwL
 categories: [財務規劃要雞湯]
-description: 財務規劃是一種很基礎的理財計劃，但為什麼很難被執行呢？原因是因為拿到不把錢當辛苦錢，因為工作的辛苦，職場的勞累讓我們認為拿到錢就應該好好享受一下。但如果今天是拿輕鬆賺到的錢去享樂一下呢？是不是更痛快？
 keywords: [ETF, Podcast, 台股, 懶得變有錢, 理財規劃, 瑪斯理財兩三事, 美股, 記帳, 讀書心得, 財務規劃]
 tags: [財務規劃, 財務規劃要雞湯]
-date: 2023/09/27
 Status: 已發佈
 ---
 
@@ -96,9 +94,11 @@ Status: 已發佈
 ![Lazytodrawconclusions.svg](Lazytodrawconclusions.svg)
 ### 懶的結論
 
+
+{{< quote author="懶得有結論" source="" url="">}}
 ７種錢代表著花錢的流程，記得從[這篇文章](https://medium.com/lazytoberich/%E6%94%B6%E6%94%AF-%E6%8B%BF%E5%88%B0%E8%96%AA%E6%B0%B4%E5%B0%B1%E6%87%89%E8%A9%B2%E8%A6%81%E9%80%99%E6%A8%A3%E5%88%86%E9%85%8D-7a9b5f88cd96)就有提到，賺到錢之後的使用方法，這篇文章大概就是一個延伸解釋。
 
-技法跟心法哪個比較重要？回到財務規劃的根本，只要心法對了，技法怎麼用都有效。
+技法跟心法哪個比較重要？回到財務規劃的根本，只要心法對了，技法怎麼用都有效。{{< /quote >}}
 
 > 你忘記所有的理財工具 你就理財成功了
 > 
@@ -107,5 +107,7 @@ Status: 已發佈
 
 ### 聽聽懶的變有錢Podcast頻道
 
-![Lisenttolazypeople.svg](https://solink.soundon.fm/lazytoberich "懶得變有錢")
+![Lisenttolazypeople.svg](Lisenttolazypeople.svg)
+
 👉[前往收聽「懶得變有錢」Podcast](https://solink.soundon.fm/lazytoberich)
+
