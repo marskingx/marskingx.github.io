@@ -6,13 +6,13 @@
 <meta property='og:url' content='{{ .Permalink }}'>
 <meta property='og:site_name' content='{{ .Site.Title }}'>
 <meta property='og:type' content='
-    {{ if .Params.images }}
-        {{ range .Params.images }}
-            <meta property="og:image" content="{{ . | absURL }}" />
-        {{ end }}
-    {{ else }}
-        <meta property="og:image" content="{{ "assets/img/lazytoberich500x300.png" | absURL }}" />
-    {{ end }}
+{{ with .Params.images }}
+<meta property="og:image" content="{{ index . 0 | absURL }}" />
+{{ else }}
+<meta property="og:image" content="{{ "img/lazytoberich500x300.png" | absURL }}" />
+{{ end }}
+
+
     {{- if .IsPage -}}
         article
     {{- else -}}
