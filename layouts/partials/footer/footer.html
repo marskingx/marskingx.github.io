@@ -10,14 +10,14 @@
     <section class="powerby">
         {{ with .Site.Params.footer.customText }}
             {{ . | safeHTML }}
-            {{- $Discord := `<a href="https://discord.gg/你的邀請碼" target="_blank" rel="noopener" style="font-weight: bold; font-size: 1.5em;">Discord!</a>` -}}
+            {{- $Discord := `<a href="https://discord.gg/wf3Qwdsvk6" target="_blank" rel="noopener" style="font-weight: bold; font-size: 1.5em;">Discord!</a>` -}}
             {{ $Discord | safeHTML }}
             <br/>
         {{ end }}
     <span style="opacity: 0.1;">
         {{- $Generator := `<a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>` -}}
         {{- $Theme := printf `<a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="%s">Stack</a>` $ThemeVersion -}}
-        {{- $DesignedBy := `<a href="https://jimmycai.com" target="_blank" rel="noopener" style="font-size: 50%;">Jimmy!</a>` -}}
+        {{- $DesignedBy := `<a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>` -}}
     </span>
         {{ T "footer.builtWith" (dict "Generator" $Generator) | safeHTML }} <br />
         {{ T "footer.designedBy" (dict "Theme" $Theme "DesignedBy" $DesignedBy) | safeHTML }}

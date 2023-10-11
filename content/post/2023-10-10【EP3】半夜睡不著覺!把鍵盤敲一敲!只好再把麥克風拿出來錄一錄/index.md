@@ -2,8 +2,9 @@
 title: 2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄
 description: -半夜不想睡．拿麥克風碎念- 心流狀態也適用在財務規劃的路上- 錢的回饋感比不上短影音- 你進入過心流狀態嗎?- 這集話太多，幹話比較少!- 不要私訊我只會問買什麼股票!
 date: 2023-10-10
+lastmod: 2023-10-10T23:44:58-08:00
 image: 2023-10-10 【EP3】cover.png
-categories: Podcast聊聊看️
+categories: [Podcast聊聊看]
 keywords: [ETF, Podcast, 台股, 懶得變有錢, 理財規劃, 瑪斯理財兩三事, 美股, 記帳, 讀書心得, 財務規劃]
 tags: [Podcast, Podcaster, 心流理論, 講幹話]
 Status: 已發佈

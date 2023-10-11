@@ -2,4 +2,16 @@
     <!-- Refer to https://discourse.gohugo.io/t/responsive-tables-in-markdown/10639/5 -->
     {{ $wrappedTable := printf "<div class=\"table-wrapper\">${1}</div>" }}
     {{ .Content | replaceRE "(<table>(?:.|\n)+?</table>)" $wrappedTable | safeHTML }}
+
+    <!-- 加入文末的dc邀請 -->
+<p>
+    懶得變有錢是推廣
+    <a class="styled-text" href="https://discord.gg/wf3Qwdsvk6" target="_blank" rel="noopener">財務規劃</a>
+    並紀律往
+    <a class="styled-text" href="https://discord.gg/wf3Qwdsvk6" target="_blank" rel="noopener">財務自由</a>
+    而去的Blog!歡迎你加入
+    <a class="discord-invite" href="https://discord.gg/wf3Qwdsvk6" target="_blank" rel="noopener">Discord社群!</a>
+</p>
+
 </section>
+
