@@ -6,7 +6,7 @@ favicon = "/lazy.png"
 
 [footer]
 since = 2018
-customText = """懶得變有錢是一個推廣財務規劃並紀律往財務自由方向而去的網站!歡迎你隨時加入我們!"""
+customText = "懶得變有錢是一個推廣財務規劃並紀律往財務自由方向而去的網站!歡迎你隨時加入我們!"
 
 [dateFormat]
 published = "Jan 02, 2006"
@@ -82,7 +82,7 @@ enabled = true
 ## Comments
 [comments]
 enabled = true
-provider = "disqus"
+provider = "utterances"
 
 [comments.disqusjs]
 shortname = ""
@@ -92,7 +92,7 @@ admin = ""
 adminLabel = ""
 
 [comments.utterances]
-repo = ""
+repo = "marskingx/marskingx.github.io"
 issueTerm = "pathname"
 label = ""
 
