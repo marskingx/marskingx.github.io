@@ -2,13 +2,58 @@
     You can add your own custom styles here.
 */
 
-.styled-text {
+/* 為 dark mode 定義 .styled-text 和 .discord-invite 的樣式 */
+
+:root[data-scheme="dark"] .styled-text, :root[data-scheme="dark"] .discord-invite {
     font-weight: bold;
-    color: #257985;
+    color: #DF961A;  /* 這裡使用了您提供的 dark mode 顏色 */
 }
 
-.discord-invite {
+:root[data-scheme="dark"] .discord-invite {
     font-size: 1.5em;
+    /* 如果您希望在 dark mode 中有其他特定的樣式，您可以在這裡加入 */
+}
+
+/* 為 light mode 定義 .styled-text 和 .discord-invite 的樣式 */
+
+:root[data-scheme="light"] .styled-text, :root[data-scheme="light"] .discord-invite {
     font-weight: bold;
-    color: #257985;
+    color: #257985;  /* 這裡使用了您提供的 light mode 顏色 */
+}
+
+:root[data-scheme="light"] .discord-invite {
+    font-size: 1.5em;
+    /* 如果您希望在 light mode 中有其他特定的樣式，您可以在這裡加入 */
+}
+
+
+
+
+/* 為 dark/light mode 定義超連結的樣式 */
+
+:root[data-scheme=dark] .link{
+    --body-background: #303030;
+    --accent-color: #DF961A;
+    --accent-color-darker: #257985;
+    --accent-color-text: #000;
+    --body-text-color: rgba(255, 255, 255, 0.7);
+    --scrollbar-thumb: hsl(0, 0%, 40%);
+    --scrollbar-track: var(--body-background);
+        font-weight: bold;
+
+}
+
+:root[data-scheme=light] .link{
+    --main-top-padding: 35px;
+    --body-background: #f5f5fa;
+    --accent-color: #257985;
+    --accent-color-darker: #DF961A;
+    --accent-color-text: #fff;
+    --body-text-color: #707070;
+    --tag-border-radius: 4px;
+    --section-separation: 40px;
+    --scrollbar-thumb: hsl(0, 0%, 85%);
+    --scrollbar-track: var(--body-background);
+        font-weight: bold;
+
 }
