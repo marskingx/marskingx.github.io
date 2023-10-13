@@ -6,9 +6,9 @@ path = "github.com/CaiJimmy/hugo-theme-stack/v3"
     accessToken = 'xxx'
 
 [params]
-  description = 'Text about my cool site'
-  images = ['site-feature-image.jpg']
-  title = 'My cool site'
+  description = '懶．是一種思維模式，用更有效率的方式來解決自己不想做的事，那才是真正的懶人。理財也一樣，不要想著一天發財，而是透過有計劃的方式紀律的往目標前進。過程中還是要賺錢。只是怎麼讓賺的錢更有效率。這就是 #懶得變有錢'
+  images = ['/img/lazytoberich500x300.png']
+  title = '懶得變有錢'
 
 [taxonomies]
   series = 'series'
