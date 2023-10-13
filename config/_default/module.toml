@@ -9,5 +9,6 @@ path = "github.com/CaiJimmy/hugo-theme-stack/v3"
   description = 'Text about my cool site'
   images = ['site-feature-image.jpg']
   title = 'My cool site'
+
 [taxonomies]
   series = 'series'
