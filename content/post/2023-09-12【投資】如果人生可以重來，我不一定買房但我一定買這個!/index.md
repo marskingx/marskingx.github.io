@@ -1,17 +1,18 @@
-# 【投資】如果人生可以重來，我不一定買房但我一定買這個!
-
+---
+title: 【投資】如果人生可以重來，我不一定買房但我一定買這個!
 description: 這篇文章討論了人生中的一個共同抉擇：是買房還是投資金融工具。作者表示，如果可以重來，他會毫不猶豫地選擇加碼投資指數股票型基金（ETF）。他提到長期投資的成本是時間，並解釋了複利的優勢、風險分散和流動性的重要性。最後，他強調了制定財務目標和投資策略的重要性。
-date: 2023/09/12
-image: cover.png
-categories: 金融工具要認識
+date: 2023-09-12
+image: image.jpg
+categories: [金融工具要認識]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資理財, 支出, 收入, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
-tags: 投資, 金融工具要認識
+tags: [投資, 金融工具要認識]
 Status: 草稿
 slug: 【Investment】 If life could start over, I might not buy a house, but I would definitely buy this!
+---
 
 許多人生中都會面臨一個共通的抉擇：是將積蓄用來買房，還是將資金投資股票、債券或其他金融工具？這個問題並沒有標準答案，因為每個人的狀況和目標都不同。然而，如果人生可以倒轉，我可以確定的是，我一定會毫不猶豫的**加碼投資指數股票型基金**（英語：exchange-traded funds，縮寫：**ETF**）。
 
-![https://cdn-images-1.medium.com/max/800/1*z7M3wiJgn9U9IV5AASRlYg.jpeg](https://cdn-images-1.medium.com/max/800/1*z7M3wiJgn9U9IV5AASRlYg.jpeg)
+![image.jpg](image.jpg)
 
 ### 長期投資的成本是「時間」
 
@@ -28,13 +29,13 @@ slug: 【Investment】 If life could start over, I might not buy a house, but I 
 
 ### 分散風險分散投資
 
-投資也能有更好地選擇分散風險。當資金投資於不同的資產類別，如股票、債券、不動產投資信託（REITs）、不同國家、不同產業…等等，也還能再透過ETF的方式再分散投資的標的。能夠降低單一投資所帶來的風險。相比之下，將大部分財力用於買房，我們的風險將高度集中在房地產市場上，如果市場出現下滑，我們可能會遭受重大損失，誰也沒把握台灣會不會遇到像美國一樣的[次級房貸風暴](https://medium.com/%E7%91%AA%E7%9A%84%E4%BD%A0%E5%9C%A8%E6%90%9E%E4%BB%80%E9%BA%BC%E4%BA%BA%E7%94%9F/%E9%9B%BB%E5%BD%B1-%E5%A4%A7%E8%B3%A3%E7%A9%BA%E8%AC%9B%E7%9A%84%E5%B0%B1%E6%98%AF2008%E5%B9%B4%E7%9A%84%E9%80%99%E4%BB%B6%E4%BA%8B-ccae5116ed54)。而且只要來一次，就有可能讓存下來的錢毀於一旦。
+投資也能有更好地選擇分散風險。當資金投資於不同的資產類別，如股票、債券、不動產投資信託（REITs）、不同國家、不同產業…等等，也還能再透過ETF的方式再分散投資的標的。能夠降低單一投資所帶來的風險。相比之下，將大部分財力用於買房，我們的風險將高度集中在房地產市場上，如果市場出現下滑，我們可能會遭受重大損失，誰也沒把握台灣會不會遇到像美國一樣的[次級房貸風暴]()。而且只要來一次，就有可能讓存下來的錢毀於一旦。
 
 ### 流動性和靈活性
 
 投資**指數股票型基金ETF**具有更高的流動性和靈活性。當需要資金時，您可以相對輕鬆地出售投資，而不需要等待房地產的買家。這對應對突發事件或機會的能力非常重要。如果您將所有資金用於買房，那麼資金就會被束縛在不動產中，不容易取出。
 
-你可能會說，如果我需要資金的時候市場下跌怎麼辦?這個後續我會再透過更多的文章來說明如何透過「[財務規劃](https://medium.com/%E7%91%AA%E7%9A%84%E4%BD%A0%E5%9C%A8%E6%90%9E%E4%BB%80%E9%BA%BC%E4%BA%BA%E7%94%9F/%E6%93%81%E6%9C%89%E5%A5%BD%E7%9A%84%E8%B2%A1%E5%8B%99%E8%A8%88%E5%8A%83-%E4%B8%8D%E7%94%A8%E8%8A%B1%E6%99%82%E9%96%93%E6%95%B4%E5%A4%A9%E5%88%86%E6%9E%90%E9%87%91%E8%9E%8D%E5%B7%A5%E5%85%B7-6db92d3ea31f)」的方式避免這些可能存在的問題。
+你可能會說，如果我需要資金的時候市場下跌怎麼辦?這個後續我會再透過更多的文章來說明如何透過「[財務規劃]()」的方式避免這些可能存在的問題。
 
 ### 買房看時機 投資要紀律
 
@@ -44,14 +45,17 @@ slug: 【Investment】 If life could start over, I might not buy a house, but I 
 
 再者，股票的價格是沒有天花板的，但房市在我們活著的時代，總是會有一個天花板的上限(我指的是落在中位數區間的上限，而不是台北市的精華地段的價格天花板)
 
-![Lazytodrawconclusions.svg](%E3%80%90%E6%8A%95%E8%B3%87%E3%80%91%E5%A6%82%E6%9E%9C%E4%BA%BA%E7%94%9F%E5%8F%AF%E4%BB%A5%E9%87%8D%E4%BE%86%EF%BC%8C%E6%88%91%E4%B8%8D%E4%B8%80%E5%AE%9A%E8%B2%B7%E6%88%BF%E4%BD%86%E6%88%91%E4%B8%80%E5%AE%9A%E8%B2%B7%E9%80%99%E5%80%8B!%20b2a691dc168e4c94969e6f2fb0df95b2/Lazytodrawconclusions.svg)
+![Lazytodrawconclusions.svg](Lazytodrawconclusions.svg)
 
-### 瑪的結論
-
+### 懶得有**結論**
+{{< quote author="懶得變有錢 | 瑪斯就是懶大" source="About 懶得變有錢" url="https://lazytoberich.com.tw/about-me/">}}
 總之，雖然買房是一種有價值的投資方式，但它不一定適合每個人。長期投資提供了更多的機會，以複利效應和風險分散來實現財務目標。如果我可以回到過去，我會更加注重投資ETF，因為它為實現財務自由和經濟安全提供了更多可能性。
 
 無論您選擇哪種方式，都應該仔細考慮您的財務目標，並制定相應的投資策略。無論您選擇哪條路，都希望您在財務旅程中取得成功。
+{{< /quote >}}
 
-![Lisenttolazypeople.svg](%E3%80%90%E6%8A%95%E8%B3%87%E3%80%91%E5%A6%82%E6%9E%9C%E4%BA%BA%E7%94%9F%E5%8F%AF%E4%BB%A5%E9%87%8D%E4%BE%86%EF%BC%8C%E6%88%91%E4%B8%8D%E4%B8%80%E5%AE%9A%E8%B2%B7%E6%88%BF%E4%BD%86%E6%88%91%E4%B8%80%E5%AE%9A%E8%B2%B7%E9%80%99%E5%80%8B!%20b2a691dc168e4c94969e6f2fb0df95b2/Lisenttolazypeople.svg)
+![Lisenttolazypeople.svg](Lisenttolazypeople.svg)
 
-👉[透過更多地方收聽「懶得變有錢」Podcas](https://solink.soundon.fm/lazytoberich)
+<iframe id="embedPlayer" src="https://embed.podcasts.apple.com/us/podcast/%E6%87%B6%E5%BE%97%E8%AE%8A%E6%9C%89%E9%8C%A2/id1707756115?itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto" height="450px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
+
+👉[透過更多地方收聽「懶得變有錢」Podcast](https://solink.soundon.fm/lazytoberich)

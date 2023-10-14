@@ -3,7 +3,7 @@ title: 【EP1】一支iPHONE要花掉你這輩子當中3小時的壽命!你的�
 description: — 本集內容 —• 節目頻道的縮語粉絲取的真他媽靠北• 錢也會病，小病是【貧】，大病是【窮】• 2個方法先自我檢查，比快篩還更快有結果• 財務獨立就是財務自由就是我們都能做到的事
 image: Cover.png
 date: 2023-09-26
-categories: [Podcast聊聊看️]
+categories: [Podcast聊聊看]
 keywords: ETF, Podcast, 台股, 懶得變有錢, 理財規劃, 瑪斯理財兩三事, 百靈果, 美股, 職涯心得, 股癌, 記帳, 財務規劃
 tags: [Podcast, Podcaster, 講幹話, 財務規劃]
 Status: 已發佈
