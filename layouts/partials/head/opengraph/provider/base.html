@@ -7,6 +7,7 @@
 <meta property='og:site_name' content='{{ .Site.Title }}'>
 <meta property='og:type' content='
 
+
     {{- if .IsPage -}}
         article
 
@@ -43,4 +44,6 @@
 {{ $image := partialCached "helper/image" (dict "Context" . "Type" "opengraph") .RelPermalink "opengraph" }}
 {{- if $image.exists -}}
     <meta property='og:image' content='{{ absURL $image.permalink }}' />
+{{- else -}}
+    <meta property='og:image' content='{{ "images/lazytoberich500x300.png" | absURL }}' />
 {{- end -}}
