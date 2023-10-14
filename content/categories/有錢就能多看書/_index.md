@@ -1,5 +1,5 @@
 ---
-title: "有錢就能多看書"
+title: "有錢就能多讀書"
 description: "看過的書都能分享"
 image: 
   

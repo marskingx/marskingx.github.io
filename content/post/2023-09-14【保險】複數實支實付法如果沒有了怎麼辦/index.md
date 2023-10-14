@@ -2,7 +2,7 @@
 title: 【保險】複數實支實付法如果沒有了怎麼辦?
 description: 根據金管會的相關投保限制，全球人壽宣布從2023年9月16日起，不再接受同一人投保第3張實支實付醫療險的保單申請。這反映了實支實付醫療險對保險業者的負擔。然而，市場上仍有一些保單可以接受副本理賠，如全球人壽的醫靠附約（XHB）和其他知名的附約。此外，隨著金融科技的發展，保險業也朝著理賠規程和方式更方便簡單的方向發展。未來，實支實付醫療險可能會轉向善意複保險的發展。重要的是，財務規劃和風險預防仍然比追求保險給付更重要。
 date: 2023-09-14
-image: https://moneynet-land2.cwmoney.net/upload/article_4_55956727ec.jpg
+image: cover.jpg
 categories: [金融工具要認識]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資理財, 支出, 收入, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 tags: [保險, 實支實付, 金融工具要認識]
@@ -10,7 +10,7 @@ Status: 已發佈
 slug: 【Insurance】What should I do if the method of actual payment for multiple claims is no longer available?
 ---
 
-![https://miro.medium.com/v2/resize:fit:700/0*t4wcutdpOlv9KqIc.jpg](https://miro.medium.com/v2/resize:fit:700/0*t4wcutdpOlv9KqIc.jpg)
+![cover.jpg](cover.jpg)
 
 [再少一家！全球人壽宣布實支實付醫療險不得超過2張 | 保險 | 金融 | 經濟日報 (udn.com)](https://money.udn.com/money/story/5613/7438675)
 
