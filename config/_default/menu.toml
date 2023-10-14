@@ -13,7 +13,7 @@ name = "Apple-podcasts"
 url = "https://podcasts.apple.com/us/podcast/%E6%87%B6%E5%BE%97%E8%AE%8A%E6%9C%89%E9%8C%A2/id1707756115?itsct=podcast_box&itscg=30200&ls=1"
 [social.params]
 icon = "brand-apple-podcast"
-weight = 0  # 排序第0個
+weight = 1  # 排序第0個
 
 [[social]]
 identifier = "google-podcast"
@@ -21,7 +21,7 @@ name = "google-podcasts"
 url = "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZG9uLmZtL3BvZGNhc3RzLzNmNGQyY2VjLWMxNjAtNDQ2OC1hNmRmLWJkMWM5YWNmZGUxMy54bWw"
 [social.params]
 icon = "brand-google-podcasts"
-weight = 1
+weight = 2
 
 [[social]]
 identifier = "spotify-podcast"
@@ -29,7 +29,7 @@ name = "spotify"
 url = "https://open.spotify.com/show/0VOxVD8igXWWJLFCtQxhdN"
 [social.params]
 icon = "brand-spotify"
-weight = 2
+weight = 3
 
 [[social]]
 identifier = "instagram"
@@ -37,7 +37,7 @@ name = "Instagram"
 url = "https://www.instagram.com/lazytoberich/"
 [social.params]
 icon = "brand-instagram"
-weight = 3
+weight = 4
 
 [[social]]
 identifier = "facebook"
@@ -45,12 +45,28 @@ name = "Facebook"
 url = "https://www.facebook.com/lazytoberich"
 [social.params]
 icon = "brand-facebook"
-weight = 4
+weight = 5
+
+[[social]]
+identifier = "AboutMe"
+name = "AboutMe"
+url = "/about-me"
+[social.params]
+icon = "user-circle"
+weight = 7  # 排序第0個
 
 [[social]]
 identifier = "menu"
 name = "menu"
 url = "/links/"
 [social.params]
-icon = "brand-dots-circle-horizontal"
-weight = 5
+icon = "link"
+weight = 6
+
+[[social]]
+identifier = "link"
+name = "link"
+url = "/category/"
+[social.params]
+icon = "category"
+weight = 0
