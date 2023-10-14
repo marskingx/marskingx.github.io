@@ -53,7 +53,7 @@ name = "AboutMe"
 url = "/about-me"
 [social.params]
 icon = "user-circle"
-weight = 7  # 排序第0個
+weight = 0  # 排序第0個
 
 [[social]]
 identifier = "menu"
@@ -64,9 +64,9 @@ icon = "link"
 weight = 6
 
 [[social]]
-identifier = "link"
-name = "link"
+identifier = "category"
+name = "category"
 url = "/category/"
 [social.params]
 icon = "category"
-weight = 0
+weight = 7

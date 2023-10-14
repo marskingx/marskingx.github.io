@@ -57,3 +57,11 @@
         font-weight: bold;
 
 }
+
+.social-menu {
+    display: flex;              /* 使用 flexbox */
+    flex-wrap: wrap;            /* 允許內容自動換行 */
+    justify-content: start;    /* 從左側開始排列 */
+    gap: 20px;                 /* 如果您希望每個 icon 之間有間距，可以調整這個數值 */
+}
+
