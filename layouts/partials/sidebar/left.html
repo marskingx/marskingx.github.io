@@ -45,7 +45,7 @@
             <li>
                 <a
                     href='{{ .URL }}'
-                    {{ if eq (default true .Params.newTab) true }}target="_blank"{{ end }}
+                    {{ if eq (default true .Params.newTab) true }}target=""{{ end }}
                     {{ with .Name }}title="{{ . }}"{{ end }}
                     rel="me"
                 >

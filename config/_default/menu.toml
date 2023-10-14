@@ -70,3 +70,11 @@ url = "/category/"
 [social.params]
 icon = "category"
 weight = 7
+
+[[social]]
+identifier = "search"
+name = "search"
+url = "/search/"
+[social.params]
+icon = "search"
+weight = 7
