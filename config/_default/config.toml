@@ -1,6 +1,5 @@
 # Change baseurl before deploy
 baseurl = "https://lazytoberich.com.tw"
-customurl ="https://lazytoberich.com.tw/about-me/"
 languageCode = "zh-tw"
 paginate = 500
 title = "懶得變有錢"

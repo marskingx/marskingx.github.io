@@ -16,7 +16,7 @@ hi 我是Mars，現在在這裡，你可以叫我[懶大](http://www.facebook.co
 
 ### 🎙️ Podcasting
 
-關於[Podcaster](https://solink.soundon.fm/lazytoberich)這件事，直接受到[百靈果](https://www.bing.com/ck/a?!&&p=3c2419c40e1c3f11JmltdHM9MTY5NjgwOTYwMCZpZ3VpZD0zNDM4NmE1OS00YjIxLTYwYmMtMWY2My03OWZiNGE1ZjYxY2UmaW5zaWQ9NTIzMw&ptn=3&hsh=3&fclid=34386a59-4b21-60bc-1f63-79fb4a5f61ce&psq=%e7%99%be%e9%9d%88%e6%9e%9c&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2JhaWxpbmdndW9uZXdzLw&ntb=1)的刺激，(更正確的說法應該是三年前的百靈果)，當然在三年前也曾經想說要把這件事打開，但工作跟生活的因素，遲遲沒有動手，但說時遲那時也快。剛好就看到他們三年前的[Youtube](https://www.youtube.com/watch?v=FkeY1xxGcWk)內容直接寫著大大的推倒資本主義的高牆。這讓年輕時也曾是寫手的我再次點燃心中的那把火。
+關於[Podcaster](https://solink.soundon.fm/lazytoberich)這件事，直接受到[百靈果](https://www.bing.com/ck/a?!&&p=3c2419c40e1c3f11JmltdHM9MTY5NjgwOTYwMCZpZ3VpZD0zNDM4NmE1OS00YjIxLTYwYmMtMWY2My03OWZiNGE1ZjYxY2UmaW5zaWQ9NTIzMw&ptn=3&hsh=3&fclid=34386a59-4b21-60bc-1f63-79fb4a5f61ce&psq=%e7%99%be%e9%9d%88%e6%9e%9c&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2JhaWxpbmdndW9uZXdzLw&ntb=1)的刺激，(更正確的說法應該是2020年的百靈果)，雖然說2020年的時候也曾經想說要把Podcast打開，但工作、生活跟家庭的因素，當時沒有動作，但說時遲那時也快。今年剛好就看到他們2020年的[Youtube](https://www.youtube.com/watch?v=FkeY1xxGcWk)內容直接寫著大大的推倒資本主義的高牆。這讓年輕時也曾是寫手的我再次點燃心中的那把火。
 
 ### 📈 Fintech Startup
 

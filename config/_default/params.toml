@@ -4,6 +4,9 @@ mainSections = ["post"]
 rssFullContent = true
 favicon = "/lazy.png"
 
+customurl = "https://lazytoberich.com.tw/about-me"
+
+
 [footer]
 since = 2018
 customText = "懶得變有錢是一個推廣財務規劃並紀律往財務自由方向而去的網站!歡迎你隨時加入我們!"
