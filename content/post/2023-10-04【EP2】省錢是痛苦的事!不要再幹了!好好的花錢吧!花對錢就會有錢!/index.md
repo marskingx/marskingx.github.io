@@ -1,12 +1,15 @@
 ---
-title: ep2 | 省錢是痛苦的事，不要再幹了!好好的花錢吧，花對錢就會有錢!
-categories: "Podcast聊聊看"
+title: 【EP2】省錢是痛苦的事，不要再幹了!好好的花錢吧，花對錢就會有錢!
 description: 逃離正經八百的金融圈　解開理財很專業的誤會　只想用日常生活的語言　偶爾穿插點炎上加火烤　用簡單易懂的理財方法　讓懶惰跟效率可以實現
-image: Lazytoberich-blog-cover-ep2.png
-keywords: ["懶得變有錢", "瑪斯理財兩三事", "讀書心得"]
-tags: ["懶得變有錢", "有錢就能多讀書"]
 date: 2023-10-04
+image: Lazytoberich-blog-cover-ep2.png
+categories: [Podcast聊聊看]
+keywords: [懶得變有錢, 瑪斯理財兩三事, 讀書心得]
+tags: [懶得變有錢, 有錢就能多讀書]
+Status: 已發佈
+slug: 【EP0】Intro|Being lazy and having money is real!
 ---
+
 # —本集內容—
 
 - 體感貧窮 不要讓自己無意識的在省錢!

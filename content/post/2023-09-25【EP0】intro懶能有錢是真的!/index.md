@@ -3,7 +3,7 @@ title: 【EP0】intro 懶能有錢是真的!
 description: 這篇文章是介紹一個名為「懶的變有錢Podcast」的節目，主要討論財務規劃和找到更舒適的生活方式。作者提到開始錄音比上台講話還難，但透過懶惰的方法，可以一路懶到底，享受財務規劃的過程。
 date: 2023-09-25
 image: cover.png
-categories: [ Podcast聊聊看]
+categories: [Podcast聊聊看]
 keywords: [ETF, Podcast, 台股, 懶得變有錢, 理財規劃, 瑪斯理財兩三事, 百靈果, 美股, 職涯心得, 股癌, 記帳, 讀書心得, 財務規劃]
 tags: [Podcast, 講幹話, 財務規劃]
 Status: 已發佈

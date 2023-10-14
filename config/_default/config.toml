@@ -4,6 +4,7 @@ languageCode = "zh-tw"
 paginate = 500
 title = "懶得變有錢"
 
+
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk, ar
 defaultContentLanguage = "zh-tw"
@@ -15,4 +16,9 @@ hasCJKLanguage = false
 # Change it to your Disqus shortname before using
 disqusShortname = "lazytoberich"
 
+#setgoogleAnalytics
 goolgeAnalytics = "G-03PSTN4ES1"
+
+#set customurl
+[parmas]
+    customurl = "https://lazytoberich.com.tw/about-me"
