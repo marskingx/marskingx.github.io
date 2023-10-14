@@ -4,7 +4,8 @@ mainSections = ["post"]
 rssFullContent = true
 favicon = "/lazy.png"
 
-customurl = "https://lazytoberich.com.tw/about-me"
+[params]
+    customurl = "https://www.lazytoberich.com/about-me"
 
 
 [footer]
@@ -98,69 +99,3 @@ adminLabel = ""
 repo = "marskingx/marskingx.github.io"
 issueTerm = "pathname"
 label = ""
-
-[comments.remark42]
-host = ""
-site = ""
-locale = ""
-
-[comments.vssue]
-platform = ""
-owner = ""
-repo = ""
-clientId = ""
-clientSecret = ""
-autoCreateIssue = false
-
-[comments.waline]
-serverURL = ""
-lang = ""
-visitor = ""
-avatar = ""
-emoji = ["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"]
-requiredMeta = ["name", "email", "url"]
-placeholder = ""
-
-[comments.waline.locale]
-admin = "Admin"
-
-[comments.twikoo]
-envId = ""
-region = ""
-path = ""
-lang = ""
-
-[comments.cactus]
-defaultHomeserverUrl = "https://matrix.cactus.chat:8448"
-serverName = "cactus.chat"
-siteName = ""
-
-[comments.giscus]
-repo = ""
-repoID = ""
-category = ""
-categoryID = ""
-mapping = ""
-lightTheme = ""
-darkTheme = ""
-reactionsEnabled = 1
-emitMetadata = 0
-
-[comments.gitalk]
-owner = ""
-admin = ""
-repo = ""
-clientID = ""
-clientSecret = ""
-
-[comments.cusdis]
-host = ""
-id = ""
-audio = []
-date = '2006-01-02'
-description = 'Text about this post'
-images = ['post-cover.png']
-series = []
-tags = []
-title = 'Post title'
-videos = []

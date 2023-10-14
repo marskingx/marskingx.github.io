@@ -18,16 +18,12 @@
 
 :root[data-scheme="light"] .styled-text, :root[data-scheme="light"] .discord-invite {
     font-weight: bold;
-    color: #257985;  /* 這裡使用了您提供的 light mode 顏色 */
+    color: #257985;
 }
-
 :root[data-scheme="light"] .discord-invite {
     font-size: 1.5em;
-    /* 如果您希望在 light mode 中有其他特定的樣式，您可以在這裡加入 */
+
 }
-
-
-
 
 /* 為 dark/light mode 定義超連結的樣式 */
 
@@ -58,6 +54,8 @@
 
 }
 
+
+/* social-menu自動換行的樣式 */
 .social-menu {
     display: flex;              /* 使用 flexbox */
     flex-wrap: wrap;            /* 允許內容自動換行 */
