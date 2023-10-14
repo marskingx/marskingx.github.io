@@ -9,7 +9,7 @@
             {{ with .Site.Params.sidebar.avatar }}
                 {{ if (default true .enabled) }}
                 <figure class="site-avatar">
-                    <a href="https://lazytoberich.com.tw/about-me">
+                    <a href="/about-me">
                         {{ if not .local }}
                             <img src="{{ .src }}" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
                         {{ else }}
@@ -45,7 +45,7 @@
             <li>
                 <a
                     href='{{ .URL }}'
-                    {{ if eq (default true .Params.newTab) true }}target="_blank"{{ end }}
+                    {{ if eq (default true .Params.newTab) true }}target=""{{ end }}
                     {{ with .Name }}title="{{ . }}"{{ end }}
                     rel="me"
                 >
