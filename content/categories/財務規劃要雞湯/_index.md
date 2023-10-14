@@ -7,4 +7,5 @@ image:
 style:
     background: 
     color: 
+weight: 1
 ---
