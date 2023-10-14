@@ -2,7 +2,7 @@
 title: "About Me"
 layout: "page"
 slug: "about-me"
-image: "Lisenttolazypeople.svg"
+image: cover.svg
 menu:
     main:
         weight: 1
