@@ -2,16 +2,16 @@
 title: 【保險】保險是理性分析，感性決定
 description: 保險規劃需要在理性和感性之間找到平衡。理性分析包括評估財務狀況、家庭需求和職業風險，而感性因素則關注未來、家人幸福和生活安全感。選擇一家可信賴的保險公司也是重要的感性考量。保險決策應該結合專業意見，並為未來的不確定性做好準備。
 date: 2023-08-29
-image: image.jpg
+image: cover.jpg
 categories: [金融工具要認識]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資理財, 支出, 收入, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 tags: [保險]
-Status: 草稿
+Status: 已發佈
 slug: 【Insurance】Insurance is a rational analysis, an emotional decision!
 ---
 人生充滿了不確定性，而保險正是在這個不確定的人生道路中提供了其中一一道安全防護。然而，當談到保險時，我們是否應該完全依靠理性分析，還是需要加入一些感性因素來做出最佳決定呢？
 
-![image.jpg](image.jpg)
+![cover.jpg](cover.jpg)
 
 Photo by [Juliane Liebermann](https://unsplash.com/@jule_42?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=medium&utm_medium=referral)
 
