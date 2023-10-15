@@ -2,7 +2,7 @@
 title: 【嗑書】每個人都該懂的怎麼行銷，不只是行銷自己，而且要《瘋潮行銷》自己
 categories: [有錢就能多讀書]
 description: STEPPS，六個步驟要創造出可以被瘋傳的行銷方法，這裡讀完跟大家簡單分享，我不是一個單純的理財部落客，什麼書我都會讀，讀完了分享出來如果對你有幫助，也希望你可以給我一些回饋。
-image: Lazytoberich-blog-cover.png
+image: cover.png
 keywords: [懶得變有錢, 瑪斯理財兩三事, 讀書心得]
 tags: [懶得變有錢, 有錢就能多讀書]
 date: 2023-10-05
@@ -10,7 +10,7 @@ Status: 已發佈
 Score /5: ⭐️⭐️⭐️⭐️⭐️
 
 ---
-![img001.png](img001.png)
+![cover.png](cover.png)
 
 ### 瘋潮行銷
 
