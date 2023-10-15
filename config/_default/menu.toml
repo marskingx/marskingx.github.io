@@ -8,46 +8,6 @@
 #newtab = true
 
 [[social]]
-identifier = "apple-podcast"
-name = "Apple-podcasts"
-url = "https://podcasts.apple.com/us/podcast/%E6%87%B6%E5%BE%97%E8%AE%8A%E6%9C%89%E9%8C%A2/id1707756115?itsct=podcast_box&itscg=30200&ls=1"
-[social.params]
-icon = "brand-apple-podcast"
-weight = 1  # 排序第0個
-
-[[social]]
-identifier = "google-podcast"
-name = "google-podcasts"
-url = "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZG9uLmZtL3BvZGNhc3RzLzNmNGQyY2VjLWMxNjAtNDQ2OC1hNmRmLWJkMWM5YWNmZGUxMy54bWw"
-[social.params]
-icon = "brand-google-podcasts"
-weight = 2
-
-[[social]]
-identifier = "spotify-podcast"
-name = "spotify"
-url = "https://open.spotify.com/show/0VOxVD8igXWWJLFCtQxhdN"
-[social.params]
-icon = "brand-spotify"
-weight = 3
-
-[[social]]
-identifier = "instagram"
-name = "Instagram"
-url = "https://www.instagram.com/lazytoberich/"
-[social.params]
-icon = "brand-instagram"
-weight = 4
-
-[[social]]
-identifier = "facebook"
-name = "Facebook"
-url = "https://www.facebook.com/lazytoberich"
-[social.params]
-icon = "brand-facebook"
-weight = 5
-
-[[social]]
 identifier = "AboutMe"
 name = "AboutMe"
 url = "/about-me"
@@ -56,12 +16,60 @@ icon = "user-circle"
 weight = 0  # 排序第0個
 
 [[social]]
-identifier = "menu"
-name = "menu"
+identifier = "link"
+name = "link"
 url = "/links/"
 [social.params]
 icon = "link"
+weight = 1
+
+[[social]]
+identifier = "apple-podcast"
+name = "Apple-podcasts"
+url = "https://podcasts.apple.com/us/podcast/%E6%87%B6%E5%BE%97%E8%AE%8A%E6%9C%89%E9%8C%A2/id1707756115?itsct=podcast_box&itscg=30200&ls=1"
+[social.params]
+icon = "brand-apple-podcast"
+weight = 2  # 排序第0個
+
+[[social]]
+identifier = "google-podcast"
+name = "google-podcasts"
+url = "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZG9uLmZtL3BvZGNhc3RzLzNmNGQyY2VjLWMxNjAtNDQ2OC1hNmRmLWJkMWM5YWNmZGUxMy54bWw"
+[social.params]
+icon = "brand-google-podcasts"
+weight = 3
+
+[[social]]
+identifier = "spotify-podcast"
+name = "spotify"
+url = "https://open.spotify.com/show/0VOxVD8igXWWJLFCtQxhdN"
+[social.params]
+icon = "brand-spotify"
+weight = 4
+
+[[social]]
+identifier = "instagram"
+name = "Instagram"
+url = "https://www.instagram.com/lazytoberich/"
+[social.params]
+icon = "brand-instagram"
+weight = 5
+
+[[social]]
+identifier = "facebook"
+name = "Facebook"
+url = "https://www.facebook.com/lazytoberich"
+[social.params]
+icon = "brand-facebook"
 weight = 6
+
+[[social]]
+identifier = "discord"
+name = "discord"
+url = "https://discord.gg/wf3Qwdsvk6"
+[social.params]
+icon = "brand-discord"
+weight = 7
 
 [[social]]
 identifier = "category"
@@ -69,4 +77,14 @@ name = "category"
 url = "/category/"
 [social.params]
 icon = "category"
-weight = 7
+weight = 8
+
+[[social]]
+identifier = "search"
+name = "search"
+url = "/search/"
+[social.params]
+icon = "search"
+weight = 9
+
+
