@@ -43,12 +43,12 @@
 
 {{ if .IsHome }}
     <!-- 這是首頁的OpenGraph圖像設定 -->
-    <meta property='og:image' content='{{ "imag/facebookcover.png" | absURL }}' />
+    <meta property='og:image' content='{{ "https://github.com/marskingx/marskingx.github.io/blob/dc1290d763a50d135b928f5aa15947c854f774cf/assets/img/facebookcover.png" | absURL }}' />
 {{ else }}
     {{ $image := partialCached "helper/image" (dict "Context" . "Type" "opengraph") .RelPermalink "opengraph" }}
     {{- if $image.exists -}}
         <meta property='og:image' content='{{ absURL $image.permalink }}' />
     {{- else -}}
-        <meta property='og:image' content='{{ "images/facebookcover.png" | absURL }}' />
+        <meta property='og:image' content='{{ "https://github.com/marskingx/marskingx.github.io/blob/dc1290d763a50d135b928f5aa15947c854f774cf/assets/img/facebookcover.png" | absURL }}' />
     {{- end -}}
 {{ end }}
