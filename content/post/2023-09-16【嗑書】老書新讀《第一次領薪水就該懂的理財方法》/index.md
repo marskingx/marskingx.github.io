@@ -58,7 +58,7 @@ slug: 【Book Review】Revisiting an Old Book "Financial Management Methods You 
 
 ![Lazytodrawconclusions.svg](Lazytodrawconclusions.svg)
 
-## 懶**的有結論**
+## 懶的有結論
 
 總之，理財可能聽起來很無趣，但它對於你的財務健康非常重要。所以，請記住這六個件事，並保持冷靜、預算、理性抵押、存錢、投資和設立儲蓄目標。這樣，你就能夠在未來的日子裡享受更多的笑聲，而不是錢包上的眼淚。希望這些財務規劃的六個點能讓你的理財之路更有趣！
 

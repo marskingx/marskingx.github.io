@@ -67,7 +67,7 @@ slug: 【Insurance】What should I do if the method of actual payment for multip
 
 ![Lazytodrawconclusions.svg](Lazytodrawconclusions.svg)
 
-### 懶得有**結論**
+## 懶得有結論
 {{< quote author="懶得變有錢 | 瑪斯就是懶大" source="About 懶得變有錢" url="https://lazytoberich.com.tw/about-me/">}}
 錢!終歸是自己的，實支實付的規劃固然重要，但更重要的是預防風險以及避免風險，而不是在風險來臨的時候去追求那一些保險給付的蠅頭小利。
 

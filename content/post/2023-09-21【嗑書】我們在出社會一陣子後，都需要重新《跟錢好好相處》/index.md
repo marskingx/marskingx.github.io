@@ -82,7 +82,7 @@ Photo by [Brett Jordan](https://unsplash.com/@brett_jordan?utm_source=medium&utm
 
 ![Lazytodrawconclusions.svg](Lazytodrawconclusions.svg)
 
-### 懶得有**結論**
+## 懶得有結論
 
 一開始看這本書的時候，前半段是很大篇幅是財務規劃的基本盤，就是要盤點現況，很多人不知道如何盤點現況，或是不知道從何開始盤點現況，這也是多數人理財遇到的痛點之一。
 

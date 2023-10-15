@@ -92,7 +92,7 @@ Status: 已發佈
 如果你的答案大多是「不知道」或「沒有」，那麼你很可能有財務健檢的必要了。
 
 ![Lazytodrawconclusions.svg](Lazytodrawconclusions.svg)
-### 懶的結論
+## 懶的結論
 
 
 {{< quote author="懶得有結論" source="" url="">}}

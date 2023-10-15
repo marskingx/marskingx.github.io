@@ -71,7 +71,7 @@ bye了!如果突然來一個全球大升息，大概就要去賣屁股了。
 
 ![Lazytodrawconclusions.svg](Lazytodrawconclusions.svg)
 
-### 懶得有結論
+## 懶得有結論
 
 ### 賺>存>花
 

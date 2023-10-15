@@ -47,7 +47,7 @@ slug: 【Investment】 If life could start over, I might not buy a house, but I 
 
 ![Lazytodrawconclusions.svg](Lazytodrawconclusions.svg)
 
-### 懶得有**結論**
+## 懶得有結論
 {{< quote author="懶得變有錢 | 瑪斯就是懶大" source="About 懶得變有錢" url="https://lazytoberich.com.tw/about-me/">}}
 總之，雖然買房是一種有價值的投資方式，但它不一定適合每個人。長期投資提供了更多的機會，以複利效應和風險分散來實現財務目標。如果我可以回到過去，我會更加注重投資ETF，因為它為實現財務自由和經濟安全提供了更多可能性。
 

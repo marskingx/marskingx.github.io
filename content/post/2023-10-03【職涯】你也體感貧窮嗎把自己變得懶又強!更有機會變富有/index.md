@@ -57,7 +57,7 @@ Photo by [Bethany Legg](https://unsplash.com/@bkotynski?utm_source=medium&utm_me
 > 
 
 ![Lazytodrawconclusions.svg](Lazytodrawconclusions.svg)
-### 瑪的結論
+## 懶得有結論
 
 好啦，懶的變有錢的靈感是因為[「這篇文章」](https://www.cw.com.tw/article/5092709)裡面說的，讓自己有更多的時間了解自己、成長自己、再透過更有效率的方法來成就自己。
 

@@ -83,7 +83,7 @@ TAF(trading ative fee)是指交易活動費，是付給美國金融監督局的�
 
 ![Lazytodrawconclusions.svg](Lazytodrawconclusions.svg)
 
-# 懶得有結論
+## 懶得有結論
 
 {{< quote author="懶得變有錢 | 瑪斯就是懶大" source="About 懶得變有錢" url="https://lazytoberich.com.tw/about-me/">}}
 除了過去所學的財務規劃理論，協助身邊的客戶執行財務規劃，再加上自己透過「財務規劃」的方式來整理財務，除了落實執行的毅力，不可或缺的是在這當中獲得的理財成就感。金融工具是中立的，過程中我偶爾也會買進一些台股透過一些資本利得來達成一些小確幸。
@@ -109,5 +109,4 @@ TAF(trading ative fee)是指交易活動費，是付給美國金融監督局的�
 
 <iframe id="embedPlayer" src="https://embed.podcasts.apple.com/us/podcast/%E6%87%B6%E5%BE%97%E8%AE%8A%E6%9C%89%E9%8C%A2/id1707756115?itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto" height="450px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
 
-
-👉[透過更多地方收聽「懶得變有錢」Podcas](https://solink.soundon.fm/lazytoberich)t
+## 👉[透過更多地方收聽「懶得變有錢」Podcas](https://solink.soundon.fm/lazytoberich)t
