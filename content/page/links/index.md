@@ -7,7 +7,7 @@ links:
     website: https://podcasts.apple.com/us/podcast/%E6%87%B6%E5%BE%97%E8%AE%8A%E6%9C%89%E9%8C%A2/id1707756115?itsct=podcast_box&itscg=30200&ls=1
     image: https://www.apple.com/v/apple-podcasts/a/images/overview/hero_icon__c135x5gz14mu_large.png
 
-  - title: Goolge Podcast
+  - title: Google Podcast
     description: Android手機這邊請!
     website: https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZG9uLmZtL3BvZGNhc3RzLzNmNGQyY2VjLWMxNjAtNDQ2OC1hNmRmLWJkMWM5YWNmZGUxMy54bWw
     image: https://ssl.gstatic.com/images/branding/product/1x/podcasts_512dp.png
@@ -51,3 +51,4 @@ menu:
 comments: false
 ---
 
+關於我經營的連結都在這裡!

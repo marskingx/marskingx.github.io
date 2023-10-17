@@ -11,7 +11,7 @@ menu:
             icon: "user-circle"
 ---
 
-## About Me
+## 關於**懶得變有錢**
 
 hi 我是Mars，現在在這裡，你可以叫我[懶大](http://www.facebook.com/lazytoberich)，過去15年的時間我曾經待過保險業、也曾是自由文字工作者、也當過全職交易者、再到獨立財務顧問，而現在是一間金融新創的CEO，當然我目前也是一位熱滿熱情的[Podcaster](https://solink.soundon.fm/lazytoberich)。
 
