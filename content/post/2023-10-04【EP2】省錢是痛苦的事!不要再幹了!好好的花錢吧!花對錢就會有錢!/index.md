@@ -7,7 +7,7 @@ categories: [Podcast聊聊看]
 keywords: [懶得變有錢, 瑪斯理財兩三事, 讀書心得]
 tags: [懶得變有錢, 有錢就能多讀書]
 Status: 已發佈
-slug: 【EP0】Intro|Being lazy and having money is real!
+slug: 【EP2】Saving money can be painful, but don't give up! Spend your money wisely, and you'll have more money!
 ---
 
 # —本集內容—
