@@ -40,6 +40,7 @@ enabled = true
 default = "Licensed under CC BY LazyToBeRich 懶得變有錢"
 
 ## Widgets
+
 [[widgets.homepage]]
 type = "search"
 

@@ -90,7 +90,9 @@
                     </select>
                 </li>
             {{ end }}
-            
+
+
+
             {{ if (default false .Site.Params.colorScheme.toggle) }}
                 <li id="dark-mode-toggle">
                     {{ partial "helper/icon" "toggle-left" }}
@@ -98,6 +100,8 @@
                     <span>{{ T "darkMode" }}</span>
                 </li>
             {{ end }}
+
+            {{ partial "widget/subscribe-email.html" . }}
         </div>
     </ol>
 </aside>
