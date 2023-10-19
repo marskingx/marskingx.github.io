@@ -18,7 +18,8 @@ lastUpdated = "Jan 02, 2006 20:30 MST"
 
 [sidebar]
 emoji = "💰"
-subtitle = "懶．是一種思維模式，用更有效率的方式來解決自己不想做的事，才能成為真正的懶人。"
+subtitle = """| 投資|理財|規劃|生活|閱讀|<br><br>
+懶．是一種思維模式，用更有效率的方式來解決自己不想做的事，才能成為真正的懶人。"""
 
 [sidebar.avatar]
 enabled = true

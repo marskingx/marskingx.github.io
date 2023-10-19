@@ -2,7 +2,7 @@
 baseurl = "https://lazytoberich.com.tw"
 languageCode = "zh-tw"
 paginate = 500
-title = "懶的變有錢 | 投資|理財|規劃|生活|閱讀|"
+title = '懶的變有錢'
 
 
 # Theme i18n support
