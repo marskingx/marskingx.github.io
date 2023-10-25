@@ -2,13 +2,13 @@
 title: 【職涯】這個世代的生活必需是網路!下個世代可能是ai
 description: 討論80年代的人依賴網路和AI的情況。上一代人主要是複製貼上，失去了思考和創造的機會；而新一代人則依賴AI，失去了獨立思考和解決問題的能力。文章提醒我們在使用AI的同時，也要保持自己的獨特觀點和解決問題的能力，並持續自我成長和學習。
 date: 2023-10-11
-image: "https://images.unsplash.com/photo-1684369585053-2b35888b3ae8?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb"
+image: cover.jpg
 categories: [生活偶有小心得]
 keywords: [ETF, Podcast, 台股, 懶得變有錢, 理財規劃, 美股, 職涯心得, 記帳, 財務規劃]
 tags: [87萬小時的職涯]
 Status: 已發佈
 ---
-![https://images.unsplash.com/photo-1684369585053-2b35888b3ae8?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb](https://images.unsplash.com/photo-1684369585053-2b35888b3ae8?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb)
+![cover.jpg](cover.jpg)
 
 ## 運用AI讓工作加速
 
