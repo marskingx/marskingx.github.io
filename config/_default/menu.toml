@@ -80,9 +80,9 @@ icon = "category"
 weight = 8
 
 [[social]]
-identifier = "search"
-name = "search"
-url = "/search/"
+identifier = "rss"
+name = "rss"
+url = "/index.xml/"
 [social.params]
-icon = "search"
+icon = "rss"
 weight = 9
