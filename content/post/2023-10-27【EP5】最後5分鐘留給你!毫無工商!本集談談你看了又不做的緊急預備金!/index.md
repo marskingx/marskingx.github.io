@@ -1,13 +1,12 @@
 ---
 title: 【EP5】最後留後5分鐘!希望你聽得見!談談你看了也不執行的緊急預備金!這不是單純存錢就解決的事情!
-Date Created: October 26, 2023 2:57 PM
+description: 財務規劃中的緊急預備金的重要性，包括存放地點和意義。提醒每個人的財務規劃都不同，並提供了相關資源和連結。
 Status: 已發送
 categories: [Podcast聊聊看]
 date: 2023-10-26
 image: cover.png
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資, 投資理財, 支出, 收入, 理財, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 tags: [Podcaster, Podcast聊聊看, 收支]
-description: 財務規劃中的緊急預備金的重要性，包括存放地點和意義。提醒每個人的財務規劃都不同，並提供了相關資源和連結。
 slug: 【EP5】Financial planning is missing this! Be careful, just buying things is not enough!
 ---
 
