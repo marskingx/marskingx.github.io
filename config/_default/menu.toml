@@ -82,7 +82,7 @@ weight = 8
 [[social]]
 identifier = "rss"
 name = "rss"
-url = "/index.xml/"
+url = "/index.xml"
 [social.params]
 icon = "rss"
 weight = 9
