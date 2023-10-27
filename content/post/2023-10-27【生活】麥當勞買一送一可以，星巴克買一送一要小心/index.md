@@ -65,7 +65,7 @@ slug: 【Income and Expenses】McDonald's buy one get one free is available, be 
 {{< /quote >}}
 
 
-![Lisenttolazypeople.svg](%E3%80%90%E7%94%9F%E6%B4%BB%E3%80%91%E9%BA%A5%E7%95%B6%E5%8B%9E%E8%B2%B7%E4%B8%80%E9%80%81%E4%B8%80%E5%8F%AF%E4%BB%A5%EF%BC%8C%E6%98%9F%E5%B7%B4%E5%85%8B%E8%A6%81%E5%B0%8F%E5%BF%83%204d87d118c0e8422b9c09b42a6624647b/Lisenttolazypeople.svg)
+![Lisenttolazypeople.svg](Lisenttolazypeople.svg)
 
 <iframe id="embedPlayer" src="https://embed.podcasts.apple.com/us/podcast/%E6%87%B6%E5%BE%97%E8%AE%8A%E6%9C%89%E9%8C%A2/id1707756115?itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto" height="450px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
 
