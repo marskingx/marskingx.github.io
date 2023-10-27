@@ -12,18 +12,18 @@ slug: 【Income and Expenses】McDonald's buy one get one free is available, be 
 
 ## **懶人提要**
 
-各位想懶還不能懶以及不能懶但很像懶的懶粉們，今天我們來聊聊**[買一送一](https://www.businesstoday.com.tw/article/category/183030/post/202310260024/)**這個看似美好，但**[買一送一](https://www.businesstoday.com.tw/article/category/183030/post/202310260024/)**還是有不同的消費心理狀態。你以為隨便**[買一送一](https://www.businesstoday.com.tw/article/category/183030/post/202310260024/)**都是一種好事嗎?
+各位想懶還不能懶以及不能懶但很像懶的懶粉們，今天我們來聊聊**[買一送一](https://www.storm.mg/lifestyle/4889362)**這個看似美好，但**[買一送一](https://www.storm.mg/lifestyle/4889362)**還是有不同的消費心理狀態。你以為隨便**[買一送一](https://www.storm.mg/lifestyle/4889362)**都是一種好事嗎?
 
 
 ### **麥當勞的買一送一：不只是食物，重點它算得上生理需求**
 
 ![img.png](cover.png)
 
-首先，我們來談談麥當勞。當你選擇麥當勞的[買一送一](https://www.businesstoday.com.tw/article/category/183030/post/202310260024/)，你不只是在買食物，你是在買時間和便利。這個選擇不僅解決了你的飢餓問題，還讓你的生活更有效率。幾乎沒有人覺得吃麥當勞是一種時尚、侈奢的樣態(不討論弱勢家庭看待麥當勞的態度)。這麼說來麥當勞的**[買一送一](https://www.businesstoday.com.tw/article/category/183030/post/202310260024/)**就是一種可以盡情消費的高CP表現!
+首先，我們來談談麥當勞。當你選擇麥當勞的[買一送一](https://www.storm.mg/lifestyle/4889362)，你不只是在買食物，你是在買時間和便利。這個選擇不僅解決了你的飢餓問題，還讓你的生活更有效率。幾乎沒有人覺得吃麥當勞是一種時尚、侈奢的樣態(不討論弱勢家庭看待麥當勞的態度)。這麼說來麥當勞的**[買一送一](https://www.storm.mg/lifestyle/4889362)**就是一種可以盡情消費的高CP表現!
 
 ### 連買個麥當勞都要這麼理性的嗎?靠，理財也太累了吧！
 
-當然不是連買一個麥當勞就要這麼累！這裡想表達的是我們會買麥當勞**[買一送一](https://www.businesstoday.com.tw/article/category/183030/post/202310260024/)**重點還是在生理需求加上CP值的一種呈現。
+當然不是連買一個麥當勞就要這麼累！這裡想表達的是我們會買麥當勞**[買一送一](https://www.storm.mg/lifestyle/4889362)**重點還是在生理需求加上CP值的一種呈現。
 
 不斷強調生理需求的原因是因為在馬斯克的需求理論裡面生理需求本來就是一種不可避免的需求。
 
