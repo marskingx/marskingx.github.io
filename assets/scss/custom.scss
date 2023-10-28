@@ -63,3 +63,19 @@
     gap: 20px;                 /* 如果您希望每個 icon 之間有間距，可以調整這個數值 */
 }
 
+/* 為 light mode 定義 .styled-text 和 .discord-invite 的樣式 */
+
+:root[data-scheme="light"] .article-content code {
+    color: #ffffff;
+    background-color: rgba(37, 121, 133, 0.85);
+    padding: 2px 4px;
+    border-radius: var(--tag-border-radius);
+    font-size: 1.05em;
+}
+:root[data-scheme="dark"] .article-content code {
+    color: #ffffff;
+    background-color: rgba(223, 150, 26, 0.85);
+    padding: 2px 4px;
+    border-radius: var(--tag-border-radius);
+    font-size: 1.05em;
+}
