@@ -8,7 +8,7 @@ tags: [懶得變有錢, 有錢就能多讀書]
 date: 2023-10-05
 Status: 已發佈
 Score /5: ⭐️⭐️⭐️⭐️⭐️
-
+slug: 【Marketing Knowledge】Everyone should know how to market, not just market themselves, but also "go crazy" marketing themselves.
 ---
 ![cover.png](cover.png)
 

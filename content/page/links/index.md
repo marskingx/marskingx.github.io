@@ -44,7 +44,7 @@ links:
 
 menu:
     main: 
-        weight: 4
+        weight: 1
         params:
             icon: link
 
