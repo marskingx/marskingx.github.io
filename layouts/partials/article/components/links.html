@@ -2,7 +2,11 @@
     {{ range $i, $link := .Params.links }}
         <article>
             <a href="{{ $link.website }}" target="_blank" rel="noopener">
-                <div class="article-details">
+                {{ with $link.image }}
+                    <div class="article-image">
+                        <img src="{{ . }}" loading="lazy">
+                    </div>
+                {{ end }}<div class="article-details">
                     <h2 class="article-title">
                         {{- $link.title -}}
                     </h2>
@@ -15,11 +19,7 @@
                     </footer>
                 </div>
 
-                {{ with $link.image }}
-                    <div class="article-image">
-                        <img src="{{ . }}" loading="lazy">
-                    </div>
-                {{ end }}
+
             </a>
         </article>
     {{ end }}

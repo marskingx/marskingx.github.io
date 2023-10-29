@@ -79,3 +79,17 @@
     border-radius: var(--tag-border-radius);
     font-size: 1.05em;
 }
+/* 調整圖boos顯示預覽圖片的大小 */
+
+.article-list--compact {
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--shadow-l1);
+    background-color: var(--card-background);
+    --image-size: 120px
+}
+
+@media(min-width: 768px) {
+    .article-list--compact {
+        --image-size:120px
+    }
+}
