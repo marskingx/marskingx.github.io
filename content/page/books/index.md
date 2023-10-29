@@ -5,8 +5,9 @@ links:
 
   - title: 《商業書10倍高效閱讀法:這樣選書、讀書、用書最有效率》
     description: 2023/10/28 | 關鍵是思考觀點和找出準則。閱讀時要主動思考、多角度思考，並將所學應用於實際情境。此外，連續閱讀同一主題的書籍可以提高記憶力。閱讀書籍中的觀點可以擴展思維，找到適合自己的準則，並應用於工作和生活中。
-    website: https://lazytoberich.com.tw/p/book-recommendationpoor-charlies-almanackthe-wit-and-wisdom-of-charles-t.-munger-this-book-is-truly-not-about-poverty/
-    image: https://lazytoberich.com.tw/p/book-recommendationpoor-charlies-almanackthe-wit-and-wisdom-of-charles-t.-munger-this-book-is-truly-not-about-poverty/book_hu4e337024e86f6a713a93541adce25a4b_617522_1024x0_resize_box_3.png
+    website: https://lazytoberich.com.tw/p/book-snackingto-learn-how-to-progress-you-must-learn-the-methods-of-progress-in-the-book-10x-productivity-in-business./
+    image: 
+    
   - title: 《窮查理的普通常識》
     description: 2023/10/25 | 《窮查理的普通常識》的摘要，提到了蒙格的投資原則和能力圈理論。文章強調了接受複雜事實、建立自己的決策模式、獨立思考能力以及投資原則的重要性。此外，還提到了謙虛、耐心、準備和改變等方面的建議。最後，文章分享了一些關於懶得變有錢的觀察和心得。
     website: https://lazytoberich.com.tw/p/book-recommendationpoor-charlies-almanackthe-wit-and-wisdom-of-charles-t.-munger-this-book-is-truly-not-about-poverty/
