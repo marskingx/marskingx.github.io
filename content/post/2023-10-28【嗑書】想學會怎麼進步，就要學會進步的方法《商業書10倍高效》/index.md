@@ -20,6 +20,8 @@ slug: 【Book Snacking】To learn how to progress, you must learn the methods of
 
 不過沒關係，我會把我讀到的部份「盡可能的」分享給你理解。
 
+[![img.png](img.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010930654?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202310)
+
 ### 什麼是商業書?為什麼要加速閱讀?
 
 商業書是指關於商業、管理、經濟等相關主題的書籍。閱讀商業書可以幫助我們學習商業知識、管理技巧以及經濟趨勢等，以提升自己在職場上的競爭力。

@@ -22,7 +22,7 @@ slug: 【Book Review】Reading "Subscription Economy", Discussing Business Motiv
 
 > 永遠免不掉事後不得己的冷落
 > 
-
+[![img.png](img.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010819588?gclid=Cj0KCQiAzMGNBhCyARIsANpUkzP4Ncdzk-ld6lobHllWzKE3zzbwGqdq8TYjSCUjJACuX7ntQ7bqj5saAuPVEALw_wcB&utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202112&source=post_page-----6759ecb8077e--------------------------------)
 事前經常性的往來，為的是了解更多客戶的現況，厘清客戶的需求，透過這短期的往後需要快速的建立信任感並且成交。
 
 成交過後客戶只要「沒理賠」「沒契變」，那也沒有需要討論任何保單的內容，就免不掉事後不得己的冷落。
