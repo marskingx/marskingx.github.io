@@ -12,10 +12,12 @@ links:
     description: 2023/10/25 | 《窮查理的普通常識》的摘要，提到了蒙格的投資原則和能力圈理論。文章強調了接受複雜事實、建立自己的決策模式、獨立思考能力以及投資原則的重要性。此外，還提到了謙虛、耐心、準備和改變等方面的建議。最後，文章分享了一些關於懶得變有錢的觀察和心得。
     website: https://lazytoberich.com.tw/p/book-recommendationpoor-charlies-almanackthe-wit-and-wisdom-of-charles-t.-munger-this-book-is-truly-not-about-poverty/
     image: https://lazytoberich.com.tw/p/book-recommendationpoor-charlies-almanackthe-wit-and-wisdom-of-charles-t.-munger-this-book-is-truly-not-about-poverty/book_hu4e337024e86f6a713a93541adce25a4b_617522_1024x0_resize_box_3.png
+    
   - title: 《瘋潮行銷》
     description: 2023/10/05 | STEPPS，六個步驟要創造出可以被瘋傳的行銷方法，這裡讀完跟大家簡單分享，我不是一個單純的理財部落客，什麼書我都會讀，讀完了分享出來如果對你有幫助，也希望你可以給我一些回饋。
     website: https://lazytoberich.com.tw/p/marketing-knowledgeeveryone-should-know-how-to-market-not-just-market-themselves-but-also-go-crazy-marketing-themselves./
     image: https://lazytoberich.com.tw/p/marketing-knowledgeeveryone-should-know-how-to-market-not-just-market-themselves-but-also-go-crazy-marketing-themselves./img_huf933dbe7bf69c55273f67fc7718a4c9b_824384_1024x0_resize_box_3.png
+    
   - title: 《跟錢好好相處》
     description: 2023/09/21 | 如何與金錢相處，包括財務規劃、活在當下、建立預算、改變思維和行為、記帳、省錢、最大化收入、投資自己以及獨立努力。書中提到了一些重要觀點，但也需要批判思考。總結來說，好好了解自己、認識金錢、投資自己，並避免盲目追求金錢。
     website: https://lazytoberich.com.tw/p/read-booksafter-being-in-the-workforce-for-a-while-we-all-need-to-get-along-with-money-again./
@@ -49,6 +51,7 @@ comments: false
 
 ## 2023推薦書單
 
+![img.png](img.png)關鍵是思考觀點和找出準則。閱讀時要主動思考、多角度思考，並將所學應用於實際情境。此外，連續閱讀同一主題的書籍可以提高記憶力。閱讀書籍中的觀點可以擴展思維，找到適合自己的準則，並應用於工作和生活中。
 
-
+`購書連結說明:透過連結買書會有一部份的金額贊助本站!`
 ## 往下看更多歷史書單
