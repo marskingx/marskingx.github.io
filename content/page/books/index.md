@@ -4,7 +4,7 @@ keyword: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有�
 links:
 
   - title: 《商業書10倍高效閱讀法:這樣選書、讀書、用書最有效率》
-    description: 2023/10/28 | 關鍵是思考觀點和找出準則。閱讀時要主動思考、多角度思考，並將所學應用於實際情境。此外，連續閱讀同一主題的書籍可以提高記憶力。閱讀書籍中的觀點可以擴展思維，找到適合自己的準則，並應用於工作和生活中。
+    description: 2023-10-28 | 關鍵是思考觀點和找出準則。閱讀時要主動思考、多角度思考，並將所學應用於實際情境。此外，連續閱讀同一主題的書籍可以提高記憶力。閱讀書籍中的觀點可以擴展思維，找到適合自己的準則，並應用於工作和生活中。
     website: https://lazytoberich.com.tw/p/book-snackingto-learn-how-to-progress-you-must-learn-the-methods-of-progress-in-the-book-10x-productivity-in-business./
     image: https://lazytoberich.com.tw/p/book-snackingto-learn-how-to-progress-you-must-learn-the-methods-of-progress-in-the-book-10x-productivity-in-business./img_hu9f37cd1033f2de1defc5675bd9ff44a7_153532_1024x0_resize_box_3.png
     
@@ -50,8 +50,10 @@ comments: false
 ---
 
 ## 2023推薦書單
+### 自我成長類書籍
 
-![img.png](img.png)關鍵是思考觀點和找出準則。閱讀時要主動思考、多角度思考，並將所學應用於實際情境。此外，連續閱讀同一主題的書籍可以提高記憶力。閱讀書籍中的觀點可以擴展思維，找到適合自己的準則，並應用於工作和生活中。
+[![前往蝦皮購書](2023-10-28.png)]((https://shope.ee/8zeDgGV9qy))
 
-`購書連結說明:透過連結買書會有一部份的金額贊助本站!`
-## 往下看更多歷史書單
+這本書的關鍵是思考觀點和找出準則。閱讀時要主動思考、多角度思考，並將所學應用於實際情境。此外，連續閱讀同一主題的書籍可以提高記憶力。閱讀書籍中的觀點可以擴展思維，找到適合自己的準則，並應用於工作和生活中。
+
+## 往下看更多歷史書單閱讀心得
