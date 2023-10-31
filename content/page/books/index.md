@@ -32,7 +32,7 @@ links:
   - title: 《訂閱經濟:如何用最強商業模式, 開啟全新服務商機》
     description: 2023/09/15 | 訂閱經濟對於保險業務的影響。傳統的保險業務需要打破框架，提供全新的服務，因為客戶需要的不再只是保單，而是一個訂閱式的服務。
     website: https://lazytoberich.com.tw/p/book-reviewreading-subscription-economy-discussing-business-motivation/
-    image: http://localhost:1313/p/book-reviewreading-subscription-economy-discussing-business-motivation/img_hu619a8570316dee3ff5eee3e33456e87d_828632_1024x0_resize_box_3.png
+    image: https://lazytoberich.com.tw/p/book-reviewreading-subscription-economy-discussing-business-motivation/img_hu619a8570316dee3ff5eee3e33456e87d_828632_1024x0_resize_box_3.png
 
       
   
