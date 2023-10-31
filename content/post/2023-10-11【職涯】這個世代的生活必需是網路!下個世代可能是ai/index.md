@@ -43,5 +43,6 @@ AI讓我們從原本透過網路找答案的行為，逐漸轉成透過與AI互�
 
 個人成長不僅僅是為了提升競爭力，更是為了激發自己的潛力，實現更多的目標和夢想。AI只是一個工具，它可以提供資訊和建議，但最終的決策和創造力還是得靠我們自己。所以，讓我們把AI當成一個搞笑的小助手，但同時也要依靠自己的能力來創造更美好的職業和生活！記住，人才是萬能的，AI只是個小助手，我們才是真正的明星！
 
-![Lisenttolazypeople.svg](Lisenttolazypeople.svg)
+![Lisenttolazypeople.svg](/Lisenttolazypeople.svg)
+
 <iframe id="embedPlayer" src="https://embed.podcasts.apple.com/us/podcast/%E6%87%B6%E5%BE%97%E8%AE%8A%E6%9C%89%E9%8C%A2/id1707756115?itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto" height="450px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
