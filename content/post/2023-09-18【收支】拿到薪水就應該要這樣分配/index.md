@@ -3,9 +3,9 @@ title: 【收支】拿到薪水就應該要這樣分配
 description: 每個月月底，許多人都迫不及待地等待薪水入帳，但是先花再存可能會陷入財務危機，而預支未來則直接負債。建議先存再花，把財務目標的花費先支出，然後支付必要的開銷，最後才是自由支配的部分。這樣可以避免陷入債務的泥沼，建立財務安全。最重要的是讓自己過得快樂，而不是只談技巧或方法。財務規劃的核心是「賺>存>花」，而不是「花>存>賺」。
 date: 2023-09-18
 image: https://cdn-images-1.medium.com/max/800/0*7JO_7W9KKxkz60qY
-categories: [財務規劃要雞湯]
+categories: [規劃不理財]
 keywords: ETF, Podcast, 台股, 懶得變有錢, 理財規劃, 瑪斯理財兩三事, 百靈果, 美股, 職涯心得, 股癌, 記帳, 讀書心得, 財務規劃
-tags: [收支, 財務規劃, 財務規劃要雞湯]
+tags: [收支, 財務規劃, 規劃不理財]
 Status: 已發佈
 slug: 【Income and Expenses】 How to Allocate Your Salary
 ---

@@ -3,9 +3,9 @@ title: 【理財規劃】有錢不一定會快樂 但沒錢大多數不快樂
 description: 金錢不是唯一的幸福來源，但財務穩定對於幸福感至關重要。有錢不一定會快樂，但沒錢大多數不快樂。基本需求的滿足、減少壓力和焦慮、追求夢想和興趣，以及建立穩健的未來都需要財務支持。儘管如此，我們應該尋找平衡，將注意力集中在其他幸福的來源上，並學習如何管理金錢。
 date: 2023-09-02
 image: cover.jpg
-categories: [財務規劃要雞湯]
+categories: [規劃不理財]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資理財, 支出, 收入, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
-tags: [懶得變有錢, 財務規劃, 財務規劃要雞湯]
+tags: [懶得變有錢, 財務規劃, 規劃不理財]
 Status: 已發佈
 slug: 【Financial Regulations】Being wealthy does not necessarily guarantee happiness, but lacking money often leads to unhappiness.
 

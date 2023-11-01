@@ -3,9 +3,9 @@ title: 【理財規劃】從鈴木一朗的小學作文找到財務規劃的人�
 description: 這篇文章講述了日本知名棒球選手鈴木一朗的小學作文，並將其轉化為財務規劃的人生。文章強調了紀律的重要性，並提到了持續的執行和定期檢視的重要性。理財顧問評論指出，只要執行財務規劃並以紀律自豪，任何人都有機會實現財務目標。最後，文章提到了財務規劃的難點在於持續執行，並引用了一段關於風險和保險的引言。
 date: 2023-09-02
 image: image.jpg
-categories: [財務規劃要雞湯]
+categories: [規劃不理財]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資, 投資理財, 支出, 收入, 理財, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
-tags: [財務規劃, 財務規劃要雞湯]
+tags: [財務規劃, 規劃不理財]
 Status: 草稿
 slug: 【Financial Planning】Finding a Life Blueprint for Financial Planning from Suzuki Ichiro's Elementary School Composition
 ---
