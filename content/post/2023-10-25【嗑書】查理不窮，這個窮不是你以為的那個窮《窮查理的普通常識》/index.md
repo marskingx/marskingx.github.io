@@ -2,13 +2,13 @@
 title: 【嗑書】《窮查理的普通常識》這個窮真的不是窮!
 Date Created: October 23, 2023 3:52 PM
 Status: Notion
-categories: [有錢就能多讀書]
+categories: [天天都讀書]
 date: 2023-10-25
 description: 這篇文章是關於《窮查理的普通常識》的摘要，提到了蒙格的投資原則和能力圈理論。文章強調了接受複雜事實、建立自己的決策模式、獨立思考能力以及投資原則的重要性。此外，還提到了謙虛、耐心、準備和改變等方面的建議。最後，文章分享了一些關於懶得變有錢的觀察和心得。
 image: cover.png
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資, 投資理財, 支出, 收入, 月配息, 理財, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 slug: 【Book Recommendation】Poor Charlie's Almanack:The Wit and Wisdom of Charles T. Munger" This book is truly not about poverty!
-tags: [商業財經, 有錢就能多讀書]
+tags: [商業財經, 天天都讀書]
 ---
 ![懶得變有錢](cover.png)
 

@@ -1,7 +1,7 @@
 ---
 title: 【投資】復華台灣科技優息00929，買了之後少做這件事，你的損失會很大!
 Date Created: October 26, 2023 7:00 AM
-categories: [金融工具要認識]
+categories: [金融不只錢]
 Status: Notion
 date: 2023-10-26
 image: cover.png

@@ -3,9 +3,9 @@ title: 【生活】麥當勞買一送一可以，星巴克要小心
 description: 買一送一在消費心理上有不同的狀態。麥當勞的買一送一解決了生理需求和提供便利，而星巴克的買一送一可能追求社交地位和心理滿足。買一送一觸發情緒，影響購買決策。選擇買一送一反映價值觀和生活方式，但要建立在必要需求上。
 date: 2023-10-27
 image: cover.png
-categories: [生活偶有小心得]
+categories: [生活小心得]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資, 投資理財, 支出, 收入, 月配息, 理財, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
-tags: [收支, 理財規劃, 生活偶有小心得, 財務規劃]
+tags: [收支, 理財規劃, 生活小心得, 財務規劃]
 Status: Notion
 slug: 【Income and Expenses】McDonald's buy one get one free is available, be careful with Starbucks.
 ---

@@ -3,9 +3,9 @@ title: 【投資】用統計學買股票，談談我最愛的布林通道(BBand)
 description: 布林通道是一種基於統計學原理的技術指標，可以用來分析股票價格波動和趨勢。它由中軌線、上軌線和下軌線組成，並利用標準差來衡量價格的分散程度。布林通道可以幫助判斷股價是否處於高位或低位，以及趨勢的轉折點。然而，股價的漲跌並不完全依賴統計學，因此在使用布林通道時需要結合其他因素進行判斷。
 date: 2023-09-26
 image: https://miro.medium.com/v2/resize:fit:700/0*zhm79N90_46LE5xU.png
-categories: [金融工具要認識]
+categories: [金融不只錢]
 keywords: ETF, Podcast, 台股, 懶得變有錢, 理財規劃, 瑪斯理財兩三事, 百靈果, 美股, 職涯心得, 股癌, 記帳, 財務規劃
-tags: [投資, 金融工具要認識]
+tags: [投資, 金融不只錢]
 Status: 已發佈
 slug: 【Investment】Using statistics to buy stocks, let's discuss my favorite Bollinger Bands (BBand).
 ---

@@ -3,9 +3,9 @@ title: 【嗑書】我們在出社會一陣子後，都需要重新《跟錢好�
 description: 這本書探討了如何與金錢相處，包括財務規劃、活在當下、建立預算、改變思維和行為、記帳、省錢、最大化收入、投資自己以及獨立努力。書中提到了一些重要觀點，但也需要批判思考。總結來說，好好了解自己、認識金錢、投資自己，並避免盲目追求金錢。
 date: 2023-09-21
 image: cover.png
-categories: [有錢就能多讀書]
+categories: [天天都讀書]
 keywords: ETF, Podcast, 台股, 懶得變有錢, 理財規劃, 瑪斯理財兩三事, 百靈果, 美股, 職涯心得, 股癌, 記帳, 讀書心得, 財務規劃
-tags: [有錢就能多讀書, 財務規劃]
+tags: [天天都讀書, 財務規劃]
 Status: 已發佈
 slug: 【Read Books】After being in the workforce for a while, we all need to "Get Along with Money" again.
 ---

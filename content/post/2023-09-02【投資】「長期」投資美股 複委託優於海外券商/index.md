@@ -3,9 +3,9 @@ title: 【投資】「長期」投資美股 複委託優於海外券商
 description: 複委託投資美股比海外券商更具優勢，因為它提供了更高的安全性，省去了海外匯款費用，並帶來更多的安心感。然而，複委託也有一些缺點，如手續費較高、無法融資券、無法做空等。對於長期投資者來說，手續費通常不是主要考慮因素。建議在選擇複委託前仔細考慮這些因素。
 date: 2023-09-02
 image: cover.png
-categories: [金融工具要認識]
+categories: [金融不只錢]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資理財, 支出, 收入, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
-tags: [投資, 複委託, 金融工具要認識]
+tags: [投資, 複委託, 金融不只錢]
 Status: 已發佈
 slug: 【Investment】 "Long-term" Investing in US Stocks is Better with Multiple Delegations than Overseas Brokerages.
 ---

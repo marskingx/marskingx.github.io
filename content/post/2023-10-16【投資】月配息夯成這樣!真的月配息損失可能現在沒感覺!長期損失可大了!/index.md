@@ -3,7 +3,7 @@ title: 【投資】月配息夯成這樣!真的月配息損失了多少?現在�
 description: 本文討論了投資中的熱門話題「月配息」，並通過兩個情境的比較，指出長期的月配息策略可能會導致投資報酬損失。文章提醒投資者在考慮提領配息時要謹慎，並強調長期投資的重要性。最後，文章以幽默的方式呼籲投資者保持冷靜，謹慎投資，並提供了進一步了解投資知識的資源。
 date: 2023-10-16
 image: cover.png
-categories: [金融工具要認識]
+categories: [金融不只錢]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資, 投資理財, 支出, 收入, 理財, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 tags: [ETF, 投資, 複利]
 slug: 【Investment】Monthly dividends are booming like this! How much did we really lose in monthly dividends? We don't feel it now! But long-term losses can be significant!
