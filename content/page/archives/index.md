@@ -1,5 +1,5 @@
 ---
-title: Category-文章分類
+title: 文章分類-Category
 date: 2018-01-01
 layout: "archives"
 slug: "Category"
