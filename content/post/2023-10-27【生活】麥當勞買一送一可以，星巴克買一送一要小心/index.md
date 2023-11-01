@@ -25,7 +25,7 @@ slug: 【Income and Expenses】McDonald's buy one get one free is available, be 
 
 當然不是連買一個[麥當勞](https://www.mcdonalds.com/tw/zh-tw.html)就要這麼累！這裡想表達的是我們會買[麥當勞](https://www.mcdonalds.com/tw/zh-tw.html)**[買一送一](https://www.storm.mg/lifestyle/4889362)**重點還是在生理需求加上CP值的一種呈現。
 
-不斷強調生理需求的原因是因為在馬斯克的需求理論裡面生理需求本來就是一種不可避免的需求。
+不斷強調生理需求的原因是因為在馬斯洛的需求理論裡面生理需求本來就是一種不可避免的需求。
 
 ### **星巴克：是超越生理需求的咖啡，也是社交象徵以及心理滿足**
 

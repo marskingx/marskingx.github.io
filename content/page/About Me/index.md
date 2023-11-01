@@ -27,7 +27,7 @@ hi 我是Mars，現在在這裡，你可以叫我[懶大](http://www.facebook.co
 
 ### 📚 Writing
 o provides content for my podcasts.
-說到文章，2010年左右，我開始自己寫部落格、架設網站在經營自媒體(跟現在的社群完全不是同一回事)，當時候的我就已經跟[商周](https://www.businessweekly.com.tw/)集團旗下的[商周財富網](https://wealth.businessweekly.com.tw/FColumnList.aspx?Column_No=0205)有授權合作，這當中也跟[Money錢雜誌](https://money.cmoney.tw/search/for-celebrity?id=42&orderBy=5)還有[Cmoney網誌](https://www.cmoney.tw/notes/?cid=22814)合作授權文章。寫文還是我覺得可以有效讓自己成長的方式之一。所以[2023](https://zh.wikipedia.org/zh-tw/2023%E5%B9%B4)如果可以的話就在wiki加一筆「懶得變有錢」吧!
+說到文章，2010年左右，我開始自己寫部落格、架設網站在經營自媒體(跟現在的社群完全不是同一回事)，當時候的我就已經跟[商周](https://www.businessweekly.com.tw/)集團旗下的[商周財富網](https://wealth.businessweekly.com.tw/FColumnList.aspx?Column_No=0205)有授權合作，這當中也跟[Money錢雜誌](https://money.cmoney.tw/search/for-celebrity?id=42&orderBy=5)還有[Cmoney網誌](https://www.cmoney.tw/notes/?cid=22814)合作授權文章, 2023年也開始跟[風傳媒](https://www.storm.mg/authors/391526/%E6%87%B6%E5%BE%97%E8%AE%8A%E6%9C%89%E9%8C%A2)合作。寫文還是我覺得可以有效讓自己成長的方式之一。所以[2023](https://zh.wikipedia.org/zh-tw/2023%E5%B9%B4)如果可以的話就在wiki加一筆「懶得變有錢」吧!
 
 ### 💰Financial Planner
 
