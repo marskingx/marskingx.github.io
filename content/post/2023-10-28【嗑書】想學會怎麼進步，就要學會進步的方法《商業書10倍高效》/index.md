@@ -10,7 +10,10 @@ Status: Notion
 slug: 【Book Snacking】To learn how to progress, you must learn the methods of progress in the book "10x Productivity in Business."
 ---
 
-![cover.png](cover.png)
+![懶得多讀書](cover.png)
+
+[![蝦皮購書最低價(含二手書)](shopee.png)](https://shope.ee/99xfvNmoZn) 
+[![博客來購書](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010930654?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
 
 ## **懶人提要**
 
@@ -20,7 +23,7 @@ slug: 【Book Snacking】To learn how to progress, you must learn the methods of
 
 不過沒關係，我會把我讀到的部份「盡可能的」分享給你理解。
 
-[![img.png](img.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010930654?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202310)
+[![商業書10倍高效閱讀法](img.png)]((https://www.books.com.tw/exep/assp.php/shamangels/products/0010930654?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202310))
 
 ### 什麼是商業書?為什麼要加速閱讀?
 
@@ -104,7 +107,7 @@ slug: 【Book Snacking】To learn how to progress, you must learn the methods of
 總之，通過找準則，我們可以從商業書中獲取實踐方法、原則和指導方針，並將其應用於自己的工作或生活中，以提升個人能力和達成目標。
 
 ## 最有效的學習金字塔
-![Untitled.png](Untitled.png)
+![主動學習才是學習.png](Untitled.png)
 ## 懶得有結論 
 ![懶得有結論](lazytoconclude.svg)
 {{< quote author="懶得變有錢 | 瑪斯就是懶大" source="About 懶得變有錢" url="https://lazytoberich.com.tw/about-me/">}}
@@ -114,9 +117,10 @@ slug: 【Book Snacking】To learn how to progress, you must learn the methods of
 
 
 ![lazytobercih.svg](lazytobercih.svg)
-
-
 <iframe id="embedPlayer" src="https://embed.podcasts.apple.com/us/podcast/%E6%87%B6%E5%BE%97%E8%AE%8A%E6%9C%89%E9%8C%A2/id1707756115?itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto" height="450px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
 
+![懶得多讀書](cover.png)
 
-## 👉[透過更多地方收聽「懶得變有錢」Podcast](https://solink.soundon.fm/lazytoberich)
+[![蝦皮購書最低價(含二手書)](shopee.png)](https://shope.ee/99xfvNmoZn) [![博客來購書](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010930654?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
+
+
