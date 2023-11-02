@@ -17,7 +17,7 @@ tags: [商業財經, 天天都讀書]
 
 ## 蒙格主義
 
-![窮查理的普通常識](book.png)
+![窮查理的普通常識](img.png)
 
 ### 多元思維模型
 
@@ -129,7 +129,7 @@ tags: [商業財經, 天天都讀書]
 
 ![Lazytodrawconclusions.svg](Lazytodrawconclusions.svg)
 
-# 懶得有結論
+## 懶得有結論
 
 {{< quote author="懶得變有錢 | 瑪斯就是懶大" source="About 懶得變有錢" url="https://lazytoberich.com.tw/about-me/">}}
 「窮」查理就是得把查理挖得一乾二淨!當然有時候我讀書也是挺批判的!也是有我認為BULL SHIT的內容!

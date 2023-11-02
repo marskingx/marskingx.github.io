@@ -10,10 +10,12 @@ Status: 已發佈
 Score /5: ⭐️⭐️⭐️⭐️⭐️
 slug: 【Marketing Knowledge】Everyone should know how to market, not just market themselves, but also "go crazy" marketing themselves.
 ---
-![cover.png](cover.png)
+![懶得多讀書](cover.png)
 
+[![蝦皮購書最低價(含二手書)](shopee.png)](https://shope.ee/qIY1fn0q7) [![博客來購書](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
 ### 瘋潮行銷
-![img.png](img.png)
+![瘋潮行銷](img.png)
+
 整本書的最大重點應該就是在說怎麼創造「口碑」，當然我們每個人都知道創造「口碑」的重要性，但是透過書裡面寫的元素，可以更有意識的創造這些元素，並利用在行銷當中。
 
 就好像如果有一家好吃的雞排店，我自己吃了很好吃，然後再推薦朋友去吃，那就只符合了「實用價值」這個元素，店家如果沒有意識的增加其它的元素來刺激我，那就真的只有停在「口碑」行銷了。
@@ -53,6 +55,11 @@ slug: 【Marketing Knowledge】Everyone should know how to market, not just mark
 總而言之，掌握感染力六大原則，結合產品特點和市場環境，制定出有針對性的行銷策略，是達成良好口碑傳播效果的基礎。在這個信息爆炸的時代，如何讓品牌在瘋潮中脫穎而出，值得我們把有意識的行銷方法放在自己的腦袋裡面。這裡也會不定期的分享不只跟財務規劃相關的文章，讓大家一起都有機會成長!
 
 ### 聽聽懶的變有錢Podcast頻道
-[![Lisenttolazypeople.svg](Lisenttolazypeople.svg "懶得變有錢podcast")](https://solink.soundon.fm/lazytoberich)
-👉[點擊前往](https://solink.soundon.fm/lazytoberich)
+![lazytoberich.svg](lazytoberich.svg)
+<iframe id="embedPlayer" src="https://embed.podcasts.apple.com/us/podcast/%E6%87%B6%E5%BE%97%E8%AE%8A%E6%9C%89%E9%8C%A2/id1707756115?itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto" height="450px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
 
+
+
+![懶得多讀書](lazytoreadingmorebooks.svg)
+
+[![蝦皮購書最低價(含二手書)](shopee.png)](https://shope.ee/qIY1fn0q7) [![博客來購書](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
