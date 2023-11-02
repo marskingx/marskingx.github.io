@@ -50,8 +50,18 @@ comments: false
 ---
 
 ## 2023推薦書單
-
-![img.png](img.png)關鍵是思考觀點和找出準則。閱讀時要主動思考、多角度思考，並將所學應用於實際情境。此外，連續閱讀同一主題的書籍可以提高記憶力。閱讀書籍中的觀點可以擴展思維，找到適合自己的準則，並應用於工作和生活中。
-
 `購書連結說明:透過連結買書會有一部份的金額贊助本站!`
-## 往下看更多歷史書單
+
+![商業書10倍高效閱讀法](img.png)![窮查理的普通常識](img_1.png)![跟錢好好相處](img_2.png)![瘋潮行銷](img_3.png)
+
+| 近期閱讀書單       | 蝦皮商城最低價<br/>(含二手書)                 | 博客來<br/>(新書)                                                                                                                                                         | 懶得分類          | 
+|----------------|------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| 商業書10倍高效閱讀法    | [去買書](https://shope.ee/99xfvNmoZn) | [去買書 ](https://www.books.com.tw/exep/assp.php/shamangels/products/0010930654?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311) | 自我成長          |
+| 窮查理的普通常識       | [去買書](https://shope.ee/5KkxLWhwIK) | [去買書](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)  | 投資心態          |
+| 瘋潮行銷           | [去買書](https://shope.ee/qIY1fn0q7)  | [去買書](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)  | 自我成長          |
+| 好好跟錢相處         | [去買書](https://shope.ee/fz7oG2786)  | [去買書](https://www.books.com.tw/exep/assp.php/shamangels/products/0010963721?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)  | 理財心態 _(必讀推薦)_ |
+| 第一次領薪水就該懂的理財方法 | [去買書](https://shope.ee/AK9dLt73o3) | [去買書](https://www.books.com.tw/exep/assp.php/shamangels/products/0010855411?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)  | 理財觀念          |
+
+
+
+## 👇往下看更多歷史書單的書籍導讀與心得👇
