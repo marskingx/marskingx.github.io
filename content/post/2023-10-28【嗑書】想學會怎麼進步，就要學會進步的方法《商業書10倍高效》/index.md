@@ -23,7 +23,7 @@ slug: 【Book Snacking】To learn how to progress, you must learn the methods of
 
 不過沒關係，我會把我讀到的部份「盡可能的」分享給你理解。
 
-[![商業書10倍高效閱讀法](img.png)]((https://www.books.com.tw/exep/assp.php/shamangels/products/0010930654?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202310))
+![商業書10倍高效閱讀法](img.png)
 
 ### 什麼是商業書?為什麼要加速閱讀?
 
