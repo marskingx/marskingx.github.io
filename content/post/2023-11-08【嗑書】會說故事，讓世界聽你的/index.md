@@ -143,5 +143,8 @@ idea用來描繪我們想要證明的主張，它讓無聊變有聊。
 {{< /quote >}}
 
 
-![懶得多讀書](cover.png)
-[![蝦皮購書最低價(含二手書)](shopee.png)](https://shope.ee/99xfvNmoZn) [![博客來購書](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010930654?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
+![懶得多讀書](lazytoreadingmorebooks.svg)
+
+[![蝦皮購書最低價(含二手書)](shopee.png)](https://shope.ee/99xfvNmoZn)
+
+[![博客來購書](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010930654?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)

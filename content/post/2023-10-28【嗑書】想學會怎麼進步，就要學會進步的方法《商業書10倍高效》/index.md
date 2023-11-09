@@ -119,8 +119,10 @@ slug: 【Book Snacking】To learn how to progress, you must learn the methods of
 ![lazytobercih.svg](lazytobercih.svg)
 <iframe id="embedPlayer" src="https://embed.podcasts.apple.com/us/podcast/%E6%87%B6%E5%BE%97%E8%AE%8A%E6%9C%89%E9%8C%A2/id1707756115?itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto" height="450px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
 
-![懶得多讀書](cover.png)
+![懶得多讀書](lazytoreadingmorebooks.svg)
 
-[![蝦皮購書最低價(含二手書)](shopee.png)](https://shope.ee/99xfvNmoZn) [![博客來購書](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010930654?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
+[![蝦皮購書最低價(含二手書)](shopee.png)](https://shope.ee/99xfvNmoZn) 
+
+[![博客來購書](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010930654?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
 
 
