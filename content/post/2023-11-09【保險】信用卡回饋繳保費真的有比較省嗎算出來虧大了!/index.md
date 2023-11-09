@@ -174,13 +174,13 @@ slug: 【Insurance】Is it really more cost-effective to pay insurance premiums 
 
 >人們最常因為誤會財務是隱私的而羞於將財務求助於人(或專家)
 
-![Untitled4.png](Untitled4.png)
+![阿明也不知道怎麼理財好.png](Untitled4.png)
 
 這時，阿明想起[懶得變有錢](https://lazytoberich.com.tw/)的部落格中提到「[先準備](https://lazytoberich.com.tw/p/ep1an-iphone-will-cost-you-3-hours-of-your-lifetime-your-money-will-come-and-go-sometimes-quickly-sometimes-slowly./)」的概念出現在他的視野中。阿明開始認真學習如何管理自己的財務，從預算控制到投資股票，他不再尋求短期的滿足，而是著眼於長遠的財務健康。他開始每月設立一個固定的儲蓄帳戶，專門用於繳納保險費，並且利用自己的專業知識，投資於風險可控的理財產品。
 
 隨著時間的推移，阿明發現自己不僅擺脫了財務壓力，還開始享受這個過程。他的投資組合穩健增長，保險費用不再是負擔，反而成為了他理財計劃中的一部分。他的故事證明了，即使是最普通的上班族，也能通過智慧的理財，達到財務自由的境界。
 
-![Untitled 6.png](Untitled6.png)
+![規劃好財務的阿明一片光明.png](Untitled6.png)
 
 ![lazytobeconclude.svg](lazytobeconclude.svg)
 
