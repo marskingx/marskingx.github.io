@@ -1,5 +1,5 @@
 ---
-title: 關於本站-About Me
+title: About Me
 layout: "page"
 slug: "about-me"
 image: cover.svg
