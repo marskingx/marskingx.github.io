@@ -16,7 +16,7 @@ slug: 【Book Review】Revisiting an Old Book "Financial Management Methods You 
 
 在本書中，作者慷慨分享他精心研究與實務操作15年的個人投資理財心得，並提供15個免費下載的EXCEL試算表，除了個人、家庭財務規畫，還要教你看明白、算清楚市場中各種投資工具的價值與投資報酬率。只要你學會這樣算，一定可以穩健理財，一輩子都有錢。
 
-![Untitled.png](Untitled.png)
+![第一次領薪水就該懂的理財方法](img.png)
 
 # **六個心得懶得講**
 
