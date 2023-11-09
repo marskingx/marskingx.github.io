@@ -1,8 +1,12 @@
 ---
-title: 投資書單-Books
+title: 我的書單-Books
 image: lazytoreadmorebooks.png
 keyword: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資理財, 支出, 收入, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 links:
+  - title: 《會說故事，讓世界聽你的》
+    description: 2023/11/08 | 故事是王，沒有故事，就沒有王國。讓自己身上有更多故事，就有機會分享更多的祝福給更多的人。我也是這樣想的，如果有有更多理財規劃的故事，那是否有機會讓更多人懂的其實不是理財不是重點，重點是規劃。
+    website: https://lazytoberich.com.tw/p/ke-booktell-stories-and-let-the-world-hear-you./
+    image: https://lazytoberich.com.tw/p/ke-booktell-stories-and-let-the-world-hear-you./img_huc7790261985cd8bb204683e65f27d81f_95253_1024x0_resize_box_3.png
 
   - title: 《商業書10倍高效閱讀法:這樣選書、讀書、用書最有效率》
     description: 2023/10/28 | 關鍵是思考觀點和找出準則。閱讀時要主動思考、多角度思考，並將所學應用於實際情境。此外，連續閱讀同一主題的書籍可以提高記憶力。閱讀書籍中的觀點可以擴展思維，找到適合自己的準則，並應用於工作和生活中。
