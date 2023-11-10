@@ -17,7 +17,7 @@ slug: 【Investment】Fuhua Taiwan Technology Bond 00929. If you fail to do this
 
 如果配息跟還本就足以讓你高潮，那真的就是高潮過後就什麼都沒了，快感就是那麼樣的一瞬間，累積不到財富，又損失了時間價值。
 
-當然不是配息不能花，但是從你的[財務決策能不能有有依據](https://lazytoberich.com.tw/categories/%E8%B2%A1%E5%8B%99%E8%A6%8F%E5%8A%83%E8%A6%81%E9%9B%9E%E6%B9%AF/)的來花掉配息的錢或者是有沒有依據來投資配息、高股息型的ETF，那才是我的網站中[「財務規劃」](https://lazytoberich.com.tw/categories/%E8%B2%A1%E5%8B%99%E8%A6%8F%E5%8A%83%E8%A6%81%E9%9B%9E%E6%B9%AF/)想討論的。
+當然不是配息不能花，但是從你的[財務決策能不能有有依據](https://lazytoberich.com.tw/categories/%E8%A6%8F%E5%8A%83%E4%B8%8D%E7%90%86%E8%B2%A1/)的來花掉配息的錢或者是有沒有依據來投資配息、高股息型的ETF，那才是我的網站中[「財務規劃」](https://lazytoberich.com.tw/categories/%E8%A6%8F%E5%8A%83%E4%B8%8D%E7%90%86%E8%B2%A1/)想討論的。
 
 ## 基本資料真的很基本 雙手奉上
 
