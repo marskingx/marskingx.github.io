@@ -4,7 +4,7 @@ description: 今天早上花了一點時間把這個**新聞**看完，台灣近
 categories: [職涯與生活]
 image: https://cdn-images-1.medium.com/max/800/0*fI0iYh6_5rSDTJ4_
 keywords: [ETF, Podcast, 台股, 懶得變有錢, 理財規劃, 瑪斯理財兩三事, 美股, 記帳, 讀書心得, 財務規劃，職場心得]
-tags: [職涯有2萬8千7百小時,新聞心得]
+tags: [職涯有2萬8千7百小時,職與生活]
 date: 2023-10-03
 Status: 已發佈
 ---

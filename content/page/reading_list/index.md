@@ -3,6 +3,11 @@ title: Reading List
 image: lazytoreadingmorebooks.svg
 keyword: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資理財, 支出, 收入, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 links:
+  - title: 《賺錢，也賺幸福》
+    description: 2023/11/16 | 常常說理財規劃或財務規劃的重點不在理財，而是在規劃。這本書的重點就把規劃的目的以及為什麼規劃比理財重要講的很透徹。是一本我自己覺得在觀念上重新整理還有方法論的工具書。
+    website: https://lazytoberich.com.tw/p/reading-listthe-millionaire-in-you-ten-things-you-need-to-do-now-to-have-money-and-time-to-enjoy-it/
+    image: https://lazytoberich.com.tw/p/reading-listthe-millionaire-in-you-ten-things-you-need-to-do-now-to-have-money-and-time-to-enjoy-it/img_hu4949fa4036c8935a9c5735b6406dc5a6_87971_1024x0_resize_box_3.png
+
   - title: 《會說故事，讓世界聽你的》
     description: 2023/11/08 | 故事是王，沒有故事，就沒有王國。讓自己身上有更多故事，就有機會分享更多的祝福給更多的人。我也是這樣想的，如果有有更多理財規劃的故事，那是否有機會讓更多人懂的其實不是理財不是重點，重點是規劃。
     website: https://lazytoberich.com.tw/p/ke-booktell-stories-and-let-the-world-hear-you./
@@ -54,18 +59,19 @@ comments: false
 ---
 
 ## 2023推薦書單(理財相關為主其它自行參考)
-![商業書10倍高效閱讀法](img.png)![窮查理的普通常識](img_1.png)![跟錢好好相處](img_2.png)
+![賺錢也賺幸福](img_5.png)![商業書10倍高效閱讀法](img.png)![窮查理的普通常識](img_1.png)
 
-![瘋潮行銷](img_3.png)![第一次領薪水就該懂的理財方法](img_4.png)
+![跟錢好好相處](img_2.png)![瘋潮行銷](img_3.png)![第一次領薪水就該懂的理財方法](img_4.png)
 
-| 懶得分類 | 推薦書單               | 蝦皮商城找最低價(含二手)                      | 博客來找新書                                                                                                                                                               | 
-|------|--------------------|------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 自我成長 | <<商業書10倍高效閱讀法>>    | [去買書](https://shope.ee/99xfvNmoZn) | [去買書 ](https://www.books.com.tw/exep/assp.php/shamangels/products/0010930654?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311) |
-| 投資心態 | <<窮查理的普通常識>>       | [去買書](https://shope.ee/5KkxLWhwIK) | [去買書](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)  |
-| 自我成長 | <<瘋潮行銷>>           | [去買書](https://shope.ee/qIY1fn0q7)  | [去買書](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)  |
-| 理財心態 | <<好好跟錢相處>>         | [推薦必讀](https://shope.ee/fz7oG2786) | [推薦必讀](https://www.books.com.tw/exep/assp.php/shamangels/products/0010963721?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311) |
-| 理財觀念 | <<第一次領薪水就該懂的理財方法>> | [去買書](https://shope.ee/AK9dLt73o3) | [去買書](https://www.books.com.tw/exep/assp.php/shamangels/products/0010855411?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)  |
+| 懶得分類 | 推薦書單               | 蝦皮商城找最低價(含二手)                      | 博客來找新書                                                                                                                                                                | 
+|------|--------------------|------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 理財心態 | <<賺錢也賺幸福>>         | [推薦必讀](https://shope.ee/B3DnSdhg9) | [推薦必讀 ](https://www.books.com.tw/exep/assp.php/shamangels/products/0010848180?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311) |
+| 自我成長 | <<商業書10倍高效閱讀法>>    | [去買書](https://shope.ee/99xfvNmoZn) | [去買書 ](https://www.books.com.tw/exep/assp.php/shamangels/products/0010930654?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)  |
+| 投資心態 | <<窮查理的普通常識>>       | [去買書](https://shope.ee/5KkxLWhwIK) | [去買書](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)   |
+| 自我成長 | <<瘋潮行銷>>           | [去買書](https://shope.ee/qIY1fn0q7)  | [去買書](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)   |
+| 理財心態 | <<好好跟錢相處>>         | [推薦必讀](https://shope.ee/fz7oG2786) | [推薦必讀](https://www.books.com.tw/exep/assp.php/shamangels/products/0010963721?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)  |
+| 理財觀念 | <<第一次領薪水就該懂的理財方法>> | [去買書](https://shope.ee/AK9dLt73o3) | [去買書](https://www.books.com.tw/exep/assp.php/shamangels/products/0010855411?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)   |
 
 
-`購書連結誠實告知說明:透過連結買書會有一部份的金額贊助本站!`
+##### 聯盟行銷聲明 網站部份文章含有聯盟連結，當你點擊連結購買產品後，我可能會收到少量佣金用以贊助本站營運。
 ## 👇往下看更多歷史書單與書籍心得👇
