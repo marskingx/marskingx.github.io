@@ -7,7 +7,7 @@ categories: [Podcast聊聊看]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資, 投資理財, 支出, 收入, 理財, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 tags: [Podcast, Podcast聊聊看,]
 Status: 已發佈
-slug: 【EP6】Why is financial planning placed at the end? Discussing financial decisions, financial confidence, and financial beliefs!
+slug: 【EP7】-answering-listener-questions-financial-planning-goals-and-true-freedom
 ---
 ## — 本集由 還沒有人 贊助播出—
 ![](cover.png)
