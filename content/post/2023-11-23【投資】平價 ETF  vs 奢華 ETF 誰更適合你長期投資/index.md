@@ -15,7 +15,7 @@ slug: investing-affordable-vs-luxury-etf-comparison
 各位想懶不能懶以及不能懶但想懶的懶人們，今天我們來談談2個大家常常討論的ETF，分別在台灣以及美國：[台灣50指數ETF（0050）](https://www.google.com/finance/quote/0050:TPE)和[Vanguard S&P 500 ETF（VOO）](https://www.google.com/finance/quote/VOO:NYSEARCA)。這兩個ETF在投資的討論中極受歡迎，由其是被動投資理論的領域，用平價與奢華來比，直接說明了以寫文章當下的股價，[0050](https://www.google.com/finance/quote/0050:TPE)為131.30元，而[VOO](https://www.google.com/finance/quote/VOO:NYSEARCA)是418.14元，單純以購入的價格來說，[0050](https://www.google.com/finance/quote/0050:TPE)1股就是131.30元，但是[VOO](https://www.google.com/finance/quote/VOO:NYSEARCA)就要418.14*32=13380元。所以平價跟奢華就單純用價格來決定啦。
 
 ## 簡單介紹一下今天對差異
-![img_1.png](img_1.png)
+![](img_1.png)
 
 | 特性 | 台灣50指數ETF（0050） | Vanguard S&P 500 ETF（VOO） |
 | --- | --- | --- |
@@ -79,7 +79,8 @@ slug: investing-affordable-vs-luxury-etf-comparison
 長期投資除了需要有耐心以外，還更需要的是分散，當然[0050](https://www.google.com/finance/quote/0050:TPE)已經在台灣本地分散了50家市值最大的公司，但當中台積電佔比46.36%，仍然是高度集中。[VOO](https://www.google.com/finance/quote/VOO:NYSEARCA)投資了美股500家市值最大的公司，而這些公司多數都還是跨國企業。
 
 ## 理財規劃就像旅行
-![img.png](img.png)
+![](img.png)
+
 如果你仍然無法理解財務規劃的各個要點，我把它比喻成旅行，你會比較好理解：
 
 | 旅行相關術語 | 財務規劃對應 |
