@@ -49,13 +49,13 @@ limit = 5
 type = "categories"
 
 [widgets.homepage.params]
-limit = 100
+limit = 12
 
 [[widgets.homepage]]
 type = "tag-cloud"
 
 [widgets.homepage.params]
-limit = 100
+limit = 10
 
 [[widgets.page]]
 type = "toc"
