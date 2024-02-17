@@ -20,9 +20,9 @@ slug: 【EP0】Intro|Being lazy and having money is real!
 ## **— — —**
 
 
-🎧前往收聽：[懶的變有錢Podcast](https://solink.soundon.fm/episode/a9c93fb4-d744-4a5e-96a0-f0bf291d490a)🎙️
+🎧前往收聽：[懶得變有錢Podcast](https://solink.soundon.fm/episode/a9c93fb4-d744-4a5e-96a0-f0bf291d490a)🎙️
 
-🎧前往收聽：[懶的變有錢Podcast](https://solink.soundon.fm/episode/a9c93fb4-d744-4a5e-96a0-f0bf291d490a)🎙️
+🎧前往收聽：[懶得變有錢Podcast](https://solink.soundon.fm/episode/a9c93fb4-d744-4a5e-96a0-f0bf291d490a)🎙️
 
 podcast頻道 追蹤❤️ [@lazytoberich](https://www.instagram.com/lazytoberich/)
 

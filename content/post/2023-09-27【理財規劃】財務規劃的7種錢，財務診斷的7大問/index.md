@@ -105,7 +105,7 @@ Status: 已發佈
 
 ![https://cdn-images-1.medium.com/max/800/0*ba3uAlkMH3hXjs9C.jpg](https://cdn-images-1.medium.com/max/800/0*ba3uAlkMH3hXjs9C.jpg)
 
-### 聽聽懶的變有錢Podcast頻道
+### 聽聽懶得變有錢Podcast頻道
 
 ![Lisenttolazypeople.svg](Lisenttolazypeople.svg)
 

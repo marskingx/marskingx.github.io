@@ -60,7 +60,7 @@ Photo by [Bethany Legg](https://unsplash.com/@bkotynski?utm_source=medium&utm_me
 
 {{< quote author="懶得變有錢 | 瑪斯就是懶大" source="About 懶得變有錢" url="https://lazytoberich.com.tw/about-me/">}}
 
-好啦，懶的變有錢的靈感是因為[「這篇文章」](https://www.cw.com.tw/article/5092709)裡面說的，讓自己有更多的時間了解自己、成長自己、再透過更有效率的方法來成就自己。
+好啦，懶得變有錢的靈感是因為[「這篇文章」](https://www.cw.com.tw/article/5092709)裡面說的，讓自己有更多的時間了解自己、成長自己、再透過更有效率的方法來成就自己。
 
 如果自己的生理、心理通通都是真的「懶」那再怎麼懶也沒人幫的了你。別讓貧窮的心理成了習得性的無助。
 {{< /quote >}}
