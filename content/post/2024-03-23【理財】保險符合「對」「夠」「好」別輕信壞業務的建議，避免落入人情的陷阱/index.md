@@ -36,16 +36,16 @@ slug: li-cai-mi-jue-xuan-ze-dui-gou-hao-de-bao-xian-bi-mian-huai-ye-wu-de-wu-dao
 
 ## 懶得有結論
 
-```jsx
+
 {{< quote author="懶得變有錢 | 瑪斯就是懶大" source="About 懶得變有錢" url="https://lazytoberich.com.tw/about-me/">}}
 保險確實是一個強大的工具，可以在我們最需要的時候提供幫助。然而，選擇正確的保險需要時間、耐心，以及對市場的深入了解。希望通過這篇文章，你能學會如何識別和避開那些不良的保險銷售策略，並找到最適合自己的保險計劃。記住，只有當保險滿足了「對」「夠」「好」的原則時，它才能真正發揮作用。
 {{< /quote >}}
-```
+
 
 ![lazytoberich.svg](lazytoberich.svg)
 
-```jsx
+
 <iframe id="embedPlayer" src="https://embed.podcasts.apple.com/us/podcast/%E6%87%B6%E5%BE%97%E8%AE%8A%E6%9C%89%E9%8C%A2/id1707756115?itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto" height="450px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
-```
+
 
 ## 👉[透過更多地方收聽「懶得變有錢」Podcast](https://solink.soundon.fm/lazytoberich)
