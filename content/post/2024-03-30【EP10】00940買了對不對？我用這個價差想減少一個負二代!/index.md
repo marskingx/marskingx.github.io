@@ -45,7 +45,7 @@ slug: ep10-is-buying-00940-correct-using-this-price-gap-to-reduce-being-the-seco
 ## 懶得有結論
 
 {{< quote author="懶得變有錢 | 瑪斯就是懶大" source="About 懶得變有錢" url="https://lazytoberich.com.tw/about-me/">}}
-理財規劃不應該把理財放前面，規劃放後面。因為我們應該是要規劃理財、甚至做到「規劃不理財」那才是真正的理財的最高境界。
+理財規劃不應該把理財放前面，規劃放後面。因為我們應該是要規劃理財、甚至做到「規劃不理財」那才是真正的理財的最高境界!
 {{< /quote >}}
 
 <iframe id="embedPlayer" src="https://embed.podcasts.apple.com/us/podcast/%E6%87%B6%E5%BE%97%E8%AE%8A%E6%9C%89%E9%8C%A2/id1707756115?itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto" height="450px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
