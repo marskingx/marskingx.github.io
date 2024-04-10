@@ -9,7 +9,7 @@ tags: [Podcaster, Podcast聊聊看]
 Status: 已發佈
 slug: ep11-2330-breaks-800-should-we-declutter-stocks-too-establishing-financial-decluttering-principles-from-home-organization
 ---
-![cover.png](cover.png)cover.png
+![cover.png](cover.png)
 
 ## 懶得ㄉㄟˇ變有錢
 
@@ -39,9 +39,8 @@ slug: ep11-2330-breaks-800-should-we-declutter-stocks-too-establishing-financial
 
 懶得變有錢ig 追蹤❤️ [@lazytoberich](https://www.instagram.com/lazytoberich/)
 
-—
+---
 
-👉[前往更多地方收聽「懶得變有錢」Podcast](https://solink.soundon.fm/lazytoberich)
 
 ## 懶得有結論
 
