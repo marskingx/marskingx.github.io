@@ -59,18 +59,21 @@ comments: false
 ---
 
 ## 2023推薦書單(理財相關為主其它自行參考)
-![賺錢也賺幸福](img_5.png)![商業書10倍高效閱讀法](img.png)![窮查理的普通常識](img_1.png)
+[![賺錢也賺幸福](img_5.png)](https://www.books.com.tw/products/0010848180?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
+[![商業書10倍高效閱讀法](img.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010930654?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
+[![窮查理的普通常識](img_1.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
+[![跟錢好好相處](img_2.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
+[![瘋潮行銷](img_3.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
+[![第一次領薪水就該懂的理財方法](img_4.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010855411?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
 
-![跟錢好好相處](img_2.png)![瘋潮行銷](img_3.png)![第一次領薪水就該懂的理財方法](img_4.png)
-
-| 懶得分類 | 推薦書單               | 蝦皮商城找最低價(含二手)                      | 博客來找新書                                                                                                                                                                | 
-|------|--------------------|------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 理財心態 | <<賺錢也賺幸福>>         | [推薦必讀](https://shope.ee/B3DnSdhg9) | [推薦必讀 ](https://www.books.com.tw/exep/assp.php/shamangels/products/0010848180?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311) |
-| 自我成長 | <<商業書10倍高效閱讀法>>    | [去買書](https://shope.ee/99xfvNmoZn) | [去買書 ](https://www.books.com.tw/exep/assp.php/shamangels/products/0010930654?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)  |
-| 投資心態 | <<窮查理的普通常識>>       | [去買書](https://shope.ee/5KkxLWhwIK) | [去買書](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)   |
-| 自我成長 | <<瘋潮行銷>>           | [去買書](https://shope.ee/qIY1fn0q7)  | [去買書](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)   |
-| 理財心態 | <<好好跟錢相處>>         | [推薦必讀](https://shope.ee/fz7oG2786) | [推薦必讀](https://www.books.com.tw/exep/assp.php/shamangels/products/0010963721?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)  |
-| 理財觀念 | <<第一次領薪水就該懂的理財方法>> | [去買書](https://shope.ee/AK9dLt73o3) | [去買書](https://www.books.com.tw/exep/assp.php/shamangels/products/0010855411?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)   |
+| 懶得分類 | 推薦書單                                    | 閱讀難易度      | 博客來買書| 
+|-|-----------------------------------------|------------|-|
+| **理財心態** | 賺錢也賺幸福　　　　　   　　　　　　　　　　　　　             | 💡💡       | [推薦必讀 ](https://www.books.com.tw/exep/assp.php/shamangels/products/0010848180?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311) |
+| **自我成長** | 商業書10倍高效閱讀法　　　　　            　　　　　       | 💡💡💡     | [去買書 ](https://www.books.com.tw/exep/assp.php/shamangels/products/0010930654?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)  |
+| **投資心態** | 窮查理的普通常識　　　　　                 　　　　      | 💡💡💡💡💡 | [去買書](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)   |
+| **自我成長** | 瘋潮行銷　　　　　　　　　                     　　　　  | 💡💡💡💡   | [去買書](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)   |
+| **理財心態** | 好好跟錢相處　　　　　　　                         　　 | 💡💡💡💡   | [推薦必讀](https://www.books.com.tw/exep/assp.php/shamangels/products/0010963721?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)  |
+| **理財觀念** | 第一次領薪水就該懂的理財方法　                         | 💡💡       | [去買書](https://www.books.com.tw/exep/assp.php/shamangels/products/0010855411?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)   |
 
 
 ##### 聯盟行銷聲明 網站部份文章含有聯盟連結，當你點擊連結購買產品後，我可能會收到少量佣金用以贊助本站營運。
