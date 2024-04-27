@@ -8,7 +8,7 @@ image: cover.png
 categories: [天天都讀書]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資, 投資理財, 支出, 收入, 理財, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 slug: F.I.R.E._Financial_Freedom
-Status: 草稿
+Status: 已發佈
 ---
 ## 有錢才有機會自由
 [![財務自由，提早過你真正想過的生活](img.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010849695?sloc=main&utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202404)
