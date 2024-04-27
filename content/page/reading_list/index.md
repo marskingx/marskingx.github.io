@@ -7,7 +7,7 @@ links:
   - title: 《賺錢，也賺幸福》
     description: 2024/04/27 | 把錢當成用命換來的，你可能有機會會格外珍惜你的錢，除非你連命都不看重。但是了解自己真的「可能需要」多少錢，對財務自由的目標其實幫助非常的大。
     website: https://lazytoberich.com.tw/p/f.i.r.e._financial_freedom/
-    image: https://lazytoberich.com.tw/p/f.i.r.e._financial_freedom/img_hu0f6d33e9d446d96b4acbc3c62ec9b9fb_156553_1024x0_resize_box_3.png
+    image: https://lazytoberich.com.tw/p/f.i.r.e._financial_freedom/img_hu7d9f77b6f38b944a45783defffbe3c9c_25141_1024x0_resize_box_3.png
 
   - title: 《賺錢，也賺幸福》
     description: 2023/11/16 | 常常說理財規劃或財務規劃的重點不在理財，而是在規劃。這本書的重點就把規劃的目的以及為什麼規劃比理財重要講的很透徹。是一本我自己覺得在觀念上重新整理還有方法論的工具書。
