@@ -7,7 +7,7 @@ links:
   - title: 《賺錢，也賺幸福》
     description: 2023/11/16 | 常常說理財規劃或財務規劃的重點不在理財，而是在規劃。這本書的重點就把規劃的目的以及為什麼規劃比理財重要講的很透徹。是一本我自己覺得在觀念上重新整理還有方法論的工具書。
     website: https://lazytoberich.com.tw/p/reading-listthe-millionaire-in-you-ten-things-you-need-to-do-now-to-have-money-and-time-to-enjoy-it/
-    image: https://lazytoberich.com.tw/p/reading-listthe-millionaire-in-you-ten-things-you-need-to-do-now-to-have-money-and-time-to-enjoy-it/img_hu4949fa4036c8935a9c5735b6406dc5a6_87971_1024x0_resize_box_3.png
+    image: https://lazytoberich.com.tw/p/%E5%97%91%E6%9B%B8fire%E8%B2%A1%E5%8B%99%E8%87%AA%E7%94%B1/img_hu0f6d33e9d446d96b4acbc3c62ec9b9fb_156553_1024x0_resize_box_3.png
 
   - title: 《賺錢，也賺幸福》
     description: 2023/11/16 | 常常說理財規劃或財務規劃的重點不在理財，而是在規劃。這本書的重點就把規劃的目的以及為什麼規劃比理財重要講的很透徹。是一本我自己覺得在觀念上重新整理還有方法論的工具書。
