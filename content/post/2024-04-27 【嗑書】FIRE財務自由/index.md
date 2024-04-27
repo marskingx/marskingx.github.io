@@ -9,8 +9,7 @@ slug: F.I.R.E._Financial_Freedom
 Status: 已發佈
 ---
 ## 有錢才有機會自由
-[![財務自由，提早過你真正想過的生活](img.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010849695?sloc=main&utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202404)
-
+[![財務自由，提早過你真正想過的生活](img.png)]
 ### 財務自由的七個步驟
 
 1. 搞清楚你需要多少錢
