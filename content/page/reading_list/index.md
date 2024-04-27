@@ -3,6 +3,12 @@ title: Reading List
 image: lazytoreadingmorebooks.svg
 keyword: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資理財, 支出, 收入, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 links:
+  
+  - title: 《賺錢，也賺幸福》
+    description: 2023/11/16 | 常常說理財規劃或財務規劃的重點不在理財，而是在規劃。這本書的重點就把規劃的目的以及為什麼規劃比理財重要講的很透徹。是一本我自己覺得在觀念上重新整理還有方法論的工具書。
+    website: https://lazytoberich.com.tw/p/reading-listthe-millionaire-in-you-ten-things-you-need-to-do-now-to-have-money-and-time-to-enjoy-it/
+    image: https://lazytoberich.com.tw/p/reading-listthe-millionaire-in-you-ten-things-you-need-to-do-now-to-have-money-and-time-to-enjoy-it/img_hu4949fa4036c8935a9c5735b6406dc5a6_87971_1024x0_resize_box_3.png
+
   - title: 《賺錢，也賺幸福》
     description: 2023/11/16 | 常常說理財規劃或財務規劃的重點不在理財，而是在規劃。這本書的重點就把規劃的目的以及為什麼規劃比理財重要講的很透徹。是一本我自己覺得在觀念上重新整理還有方法論的工具書。
     website: https://lazytoberich.com.tw/p/reading-listthe-millionaire-in-you-ten-things-you-need-to-do-now-to-have-money-and-time-to-enjoy-it/
