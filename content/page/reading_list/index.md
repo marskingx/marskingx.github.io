@@ -4,6 +4,11 @@ image: lazytoreadingmorebooks.svg
 keyword: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資理財, 支出, 收入, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 links:
   
+  - title: 《堅持不懈:指數基金之父約翰．柏格》
+    description: 2023/12/08| 要讓錢成為我們的得力助手，而不是當做交易工具，這點就是思維的轉換，同樣是理性，但卻不理性。 
+    website: https://lazytoberich.com.tw/p/【Book Review】Stay the Course:The Story of Vanguard and the Index Revolution
+    image: img_10.png
+    
   - title: 《駕馭金錢》
     description: 2023/12/02| 要讓錢成為我們的得力助手，而不是當做交易工具，這點就是思維的轉換，同樣是理性，但卻不理性。 
     website: https://lazytoberich.com.tw/p/book-review-mastering-money/
@@ -70,8 +75,8 @@ comments: false
 
 ## 推薦書單(依閱讀時間序)
 ## 👇文末前往閱讀心得👇
-| 閱讀書單                                                                                                                                                                                             | 購書連結🌐<br/>閱讀難易⭐                                                                                                                                                                           |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 閱讀書單| 購書連結🌐<br/>閱讀難易⭐|
+|-|-|
 | [![駕馭金錢](img_9.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010823445?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202404)               | [駕馭金錢](https://www.books.com.tw/exep/assp.php/shamangels/products/0010823445?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202404)<br/>⭐⭐⭐⭐              |
 | [![FIRE財務自由](img_8.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010849695?sloc=main&utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202404) | [FIRE財務自由](https://www.books.com.tw/exep/assp.php/shamangels/products/0010849695?sloc=main&utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202404)<br/>⭐⭐⭐ |
 | [![賺錢也賺幸福](img_7.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010848180?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)             | [賺錢也賺幸福](https://www.books.com.tw/exep/assp.php/shamangels/products/0010848180?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)<br/>⭐⭐              |
