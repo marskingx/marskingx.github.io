@@ -5,7 +5,7 @@ keyword: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有�
 links:
   
   - title: 《FIRE財務自由》
-    description: 2023/11/24 | 把錢當成用命換來的，你可能有機會會格外珍惜你的錢，除非你連命都不看重。但是了解自己真的「可能需要」多少錢，對財務自由的目標其實幫助非常的大。
+    description: 2023/11/24 | 要讓錢成為我們的得力助手，而不是當做交易工具，這點就是思維的轉換，同樣是理性，但卻不理性。 
     website: https://lazytoberich.com.tw/p/book-review-mastering-money/
     image: https://lazytoberich.com.tw/p/book-review-mastering-money/img_hudef3bbfb96b92edd573470859fab8572_145455_1024x0_resize_box_3.png
     
