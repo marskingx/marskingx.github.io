@@ -1,5 +1,5 @@
 ---
-title: 【嗑書】《窮查理的普通常識》這個窮真的不是窮!
+title: 【嗑書】《窮查理的普通常識》讀後感
 Date Created: October 23, 2023 3:52 PM
 Status: Notion
 categories: [天天都讀書]
@@ -8,7 +8,7 @@ description: 這篇文章是關於《窮查理的普通常識》的摘要，提�
 image: cover.png
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資, 投資理財, 支出, 收入, 月配息, 理財, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 slug: 【Book Recommendation】Poor Charlie's Almanack:The Wit and Wisdom of Charles T. Munger" This book is truly not about poverty!
-tags: [商業財經, 天天都讀書]
+tags: [商業/財經]
 ---
 ![懶得多讀書](cover.png)
 

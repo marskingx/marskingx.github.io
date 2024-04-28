@@ -5,7 +5,7 @@ image: Cover.png
 date: 2023-09-26
 categories: [Podcast聊聊看]
 keywords: ETF, Podcast, 台股, 懶得變有錢, 理財規劃, 瑪斯理財兩三事, 百靈果, 美股, 職涯心得, 股癌, 記帳, 財務規劃
-tags: [Podcast, Podcaster, 講幹話, 財務規劃]
+tags: [Podcast, 講幹話,理財觀念,收管理]
 Status: 已發佈
 slug: 【EP1】An iPhone will cost you 3 hours of your lifetime! Your money will come and go, sometimes quickly, sometimes slowly.
 ---

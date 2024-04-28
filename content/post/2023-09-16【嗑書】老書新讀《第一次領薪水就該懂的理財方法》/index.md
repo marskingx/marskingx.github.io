@@ -1,11 +1,11 @@
 ---
-title: 【嗑書】老書新讀《第一次領薪水就該懂的理財方法》
+title: 【嗑書】《第一次領薪水就該懂的理財方法》讀後感
 description: 這本書介紹了作者在中年時意識到薪水無法致富，並學習投資和財務管理的理財方法。作者提到了建立預算、存錢、投資和設立財務目標的重要性。他還分享了15年的投資經驗和提供了免費的Excel試算表。總結來說，這本書提供了實用的理財建議，幫助讀者在財務上更加穩健。
 date: 2023-09-16
 image: cover.png
 categories: [天天都讀書]
 keywords: [ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資理財, 支出, 收入, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流]
-tags: [商業財經,天天都讀書,]
+tags: [商業/財經]
 Status: 草稿
 slug: 【Book Review】Revisiting an Old Book "Financial Management Methods You Should Know When Receiving Your First Paycheck"
 ---

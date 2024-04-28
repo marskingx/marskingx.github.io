@@ -5,7 +5,7 @@ date: 2023-10-11
 image: cover.jpg
 categories: [職涯與生活]
 keywords: [ETF, Podcast, 台股, 懶得變有錢, 理財規劃, 美股, 職涯心得, 記帳, 財務規劃]
-tags: [87萬小時的職涯]
+tags: [職涯]
 Status: 已發佈
 ---
 ![cover.jpg](cover.jpg)

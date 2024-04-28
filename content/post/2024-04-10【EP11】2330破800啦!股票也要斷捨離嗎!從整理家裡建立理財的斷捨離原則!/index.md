@@ -5,7 +5,7 @@ date: 2024-04-10
 image: cover.png
 categories: [Podcast聊聊看]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資, 投資理財, 支出, 收入, 月配息, 理財, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
-tags: [Podcaster, Podcast聊聊看]
+tags: [Podcast, 講幹話,理財觀念,投資,ETF,複利,美股,複委託]
 Status: 已發佈
 slug: ep11-2330-breaks-800-should-we-declutter-stocks-too-establishing-financial-decluttering-principles-from-home-organization
 ---

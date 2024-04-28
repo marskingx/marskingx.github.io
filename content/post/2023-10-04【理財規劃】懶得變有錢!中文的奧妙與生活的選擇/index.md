@@ -4,7 +4,7 @@ categories: [規劃不理財]
 description: 懶得變有錢，讓我真的覺得中文是個博大精深的語言，單單是一個"得"字，就能讓一句話的意思截然不同。讓我們通過"懶得變有錢"這句話，探討一下生活、理財與選擇之間的有趣關係。
 image: https://cdn-images-1.medium.com/max/800/0*GwB2cqX8pTU4XimC
 keywords: [ETF, Podcast, 台股, 懶得變有錢, 理財規劃, 瑪斯理財兩三事, 美股, 記帳, 讀書心得, 財務規劃]
-tags: [財務規劃, 規劃不理財]
+tags: [理財觀念]
 date: 2023-10-04
 Status: 已發佈
 ---

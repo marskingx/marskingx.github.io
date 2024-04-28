@@ -5,7 +5,7 @@ date: 2023-09-27
 image: https://cdn-images-1.medium.com/max/800/0*DaKySpyWQpUBhDwL
 categories: [規劃不理財]
 keywords: [ETF, Podcast, 台股, 懶得變有錢, 理財規劃, 瑪斯理財兩三事, 美股, 記帳, 讀書心得, 財務規劃]
-tags: [財務規劃, 規劃不理財]
+tags: [理財觀念]
 Status: 已發佈
 ---
 

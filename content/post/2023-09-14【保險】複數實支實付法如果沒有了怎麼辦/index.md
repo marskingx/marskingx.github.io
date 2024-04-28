@@ -5,7 +5,7 @@ date: 2023-09-14
 image: cover.jpg
 categories: [金融不只錢]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資理財, 支出, 收入, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
-tags: [保險, 實支實付, 金融不只錢]
+tags: [保險, 實支實付]
 Status: 已發佈
 slug: 【Insurance】What should I do if the method of actual payment for multiple claims is no longer available?
 ---

@@ -5,7 +5,7 @@ date: 2023-09-23
 image: cover.jpg
 categories: [金融不只錢]
 keywords: [ETF, Podcast, 台股, 懶得變有錢, 理財規劃, 瑪斯理財兩三事, 百靈果, 美股, 職涯心得, 記帳, 讀書心得, 財務規劃]
-tags: [財務規劃, 金融不只錢]
+tags: [資產配置,]
 Status: 已發佈
 slug: 【Investment】 Missed the two key points of asset allocation! Don't claim that you have allocated your assets!
 ---

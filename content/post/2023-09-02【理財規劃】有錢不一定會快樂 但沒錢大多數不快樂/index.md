@@ -5,7 +5,7 @@ date: 2023-09-02
 image: cover.jpg
 categories: [規劃不理財]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資理財, 支出, 收入, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
-tags: [懶得變有錢, 財務規劃, 規劃不理財]
+tags: [理財觀念]
 Status: 已發佈
 slug: 【Financial Regulations】Being wealthy does not necessarily guarantee happiness, but lacking money often leads to unhappiness.
 

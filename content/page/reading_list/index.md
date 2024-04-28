@@ -4,7 +4,7 @@ image: lazytoreadingmorebooks.svg
 keyword: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資理財, 支出, 收入, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 links:
   
-  - title: 《賺錢，也賺幸福》
+  - title: 《FIRE財務自由》
     description: 2024/04/27 | 把錢當成用命換來的，你可能有機會會格外珍惜你的錢，除非你連命都不看重。但是了解自己真的「可能需要」多少錢，對財務自由的目標其實幫助非常的大。
     website: https://lazytoberich.com.tw/p/f.i.r.e._financial_freedom/
     image: https://lazytoberich.com.tw/p/f.i.r.e._financial_freedom/img_hu7d9f77b6f38b944a45783defffbe3c9c_25141_1024x0_resize_box_3.png
@@ -65,24 +65,18 @@ comments: false
 ---
 
 ## 推薦書單(依閱讀時間序)
-[![FIRE財務自由](img_6.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010849695?sloc=main&utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202404)
-[![賺錢也賺幸福](img_5.png)](https://www.books.com.tw/products/0010848180?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
-[![商業書10倍高效閱讀法](img.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010930654?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
-[![窮查理的普通常識](img_1.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
-[![跟錢好好相處](img_2.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
-[![瘋潮行銷](img_3.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
-[![第一次領薪水就該懂的理財方法](img_4.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010855411?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
-
-| 分類               | 書單&閱讀難易度|
-|-|-|
-| **理財**| [FIRE財務自由](https://www.books.com.tw/exep/assp.php/shamangels/products/0010849695?sloc=main&utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202404)<br/>⭐⭐⭐ |
-| **理財**| [賺錢也賺幸福](https://www.books.com.tw/exep/assp.php/shamangels/products/0010848180?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)<br/>⭐⭐          |
-| **成長**| [商業書10倍高效閱讀法](https://www.books.com.tw/exep/assp.php/shamangels/products/0010930654?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)<br/>⭐⭐     |
-| **投資**| [窮查理的普通常識](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)<br/>⭐⭐⭐⭐⭐|
-| **成長**| [瘋潮行銷](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)<br/>⭐⭐⭐ |
-| **理財**| [好好跟錢相處](https://www.books.com.tw/exep/assp.php/shamangels/products/0010963721?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)<br/>⭐⭐⭐| 
-| **理財**| [第一次領薪水就該懂的理財方法](https://www.books.com.tw/exep/assp.php/shamangels/products/0010855411?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)<br/>⭐⭐⭐⭐ |
+## 👇往下看更多歷史書單與書籍心得👇
+| 閱讀書單                                                                                                                                                                                             | 購書連結🌐<br/>閱讀難易⭐                                                                                                                                                                           |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [![駕馭金錢](img_7.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010823445?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202404)               | [駕馭金錢](https://www.books.com.tw/exep/assp.php/shamangels/products/0010823445?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202404)<br/>⭐⭐⭐⭐              |
+| [![FIRE財務自由](img_6.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010849695?sloc=main&utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202404) | [FIRE財務自由](https://www.books.com.tw/exep/assp.php/shamangels/products/0010849695?sloc=main&utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202404)<br/>⭐⭐⭐ |
+| [![賺錢也賺幸福](img_5.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010848180?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)             | [賺錢也賺幸福](https://www.books.com.tw/exep/assp.php/shamangels/products/0010848180?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)<br/>⭐⭐              |
+| [![商業書10倍高效閱讀法](img.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010930654?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)          | [商業書10倍高效閱讀法](https://www.books.com.tw/exep/assp.php/shamangels/products/0010930654?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)<br/>⭐⭐         |
+| [![窮查理的普通常識](img_1.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)           | [窮查理的普通常識](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)<br/>⭐⭐⭐⭐⭐         |
+| [![瘋潮行銷](img_3.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)               | [瘋潮行銷](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)<br/>⭐⭐⭐               |
+| [![跟錢好好相處](img_2.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010963721?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)             | [好好跟錢相處](https://www.books.com.tw/exep/assp.php/shamangels/products/0010963721?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)<br/>⭐⭐⭐             | 
+| [![第一次領薪水就該懂的理財方法](img_4.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010855411?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)     | [第一次領薪水就該懂的理財方法](https://www.books.com.tw/exep/assp.php/shamangels/products/0010855411?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)<br/>⭐⭐⭐⭐    |
 
 
-##### 聯盟行銷聲明 網站部份文章含有聯盟連結，當你點擊連結購買產品後，我可能會收到少量佣金用以贊助本站營運。
+##### 聯盟行銷聲明 網站部份文章含有聯盟連結，當你點擊連結購買產品後，我可能會收到少量回饋用以贊助本站營運。
 ## 👇往下看更多歷史書單與書籍心得👇

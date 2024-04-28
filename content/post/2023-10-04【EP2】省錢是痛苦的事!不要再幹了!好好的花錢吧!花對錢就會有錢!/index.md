@@ -5,7 +5,7 @@ date: 2023-10-04
 image: cover.png
 categories: [Podcast聊聊看]
 keywords: [懶得變有錢, 瑪斯理財兩三事, 讀書心得]
-tags: [懶得變有錢, 天天都讀書]
+tags: [Podcast, 講幹話,理財觀念,收支管理]
 Status: 已發佈
 slug: 【EP2】Saving money can be painful, but don't give up! Spend your money wisely, and you'll have more money!
 ---

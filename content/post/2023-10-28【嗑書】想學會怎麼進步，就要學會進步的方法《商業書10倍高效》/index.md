@@ -1,11 +1,11 @@
 ---
-title: 【嗑書】想學會怎麼進步，就要學會進步的方法《商業書10倍高效》
+title: 【嗑書】《商業書10倍高效》讀後感
 description: 閱讀商業書的關鍵是思考觀點和找出準則。閱讀時要主動思考、多角度思考，並將所學應用於實際情境。此外，連續閱讀同一主題的書籍可以提高記憶力。閱讀書籍中的觀點可以擴展思維，找到適合自己的準則，並應用於工作和生活中。此外，艾浩賓斯遺忘曲線顯示，閱讀後的記憶會隨著時間流逝而減少，因此重複閱讀同一主題的書籍可以提高記憶保留率。總之，閱讀商業書需要思考觀點、找出準則，並將所學應用於實際情境中。
 date: 2023-10-28
 image: cover.png
 categories: [天天都讀書]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 商業周刊, 基金, 懶得變有錢, 房地產, 投資, 投資理財, 支出, 收入, 月配息, 理財, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
-tags: [商務／趨勢, 天天都讀書]
+tags: [商務/趨勢]
 Status: Notion
 slug: 【Book Snacking】To learn how to progress, you must learn the methods of progress in the book "10x Productivity in Business."
 ---

@@ -5,7 +5,7 @@ date: 2023-12-01
 image: cover.png
 categories: [Podcast聊聊看]
 keywords: Podcast, Podcaster
-tags: [Podcast聊聊看]
+tags: [Podcast, 講幹話,理財觀念]
 Status: 已發佈
 slug: EP8-kang-ren-du-mai-bao-xian-le-ni-bu-mai-ma-cong-wo-de-jing-yan-yu-gu-shi-tan-cai-wu-zhong-de-bao-xian-gui-hua
 ---

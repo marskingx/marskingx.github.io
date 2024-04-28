@@ -5,9 +5,9 @@ date: 2024-04-24
 image: cover.png
 categories: [規劃不理財]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資, 投資理財, 支出, 收入, 理財, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
-tags: [投資, 投資理財, 美股]
+tags: [投資, 美股]
 Status: 草稿
-slug: enjoying-the-us-stock-market-rally-focus-on-what-you-can-control
+slug: 【Book Review】enjoying-the-us-stock-market-rally-focus-on-what-you-can-control
 ---
 ![](cover.png)
 

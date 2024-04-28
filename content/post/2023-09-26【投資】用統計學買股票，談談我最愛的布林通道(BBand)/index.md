@@ -5,7 +5,7 @@ date: 2023-09-26
 image: https://miro.medium.com/v2/resize:fit:700/0*zhm79N90_46LE5xU.png
 categories: [金融不只錢]
 keywords: ETF, Podcast, 台股, 懶得變有錢, 理財規劃, 瑪斯理財兩三事, 百靈果, 美股, 職涯心得, 股癌, 記帳, 財務規劃
-tags: [投資, 金融不只錢]
+tags: [投資, 技術分析]
 Status: 已發佈
 slug: 【Investment】Using statistics to buy stocks, let's discuss my favorite Bollinger Bands (BBand).
 ---

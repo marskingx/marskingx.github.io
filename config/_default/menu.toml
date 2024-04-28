@@ -32,13 +32,12 @@ icon = "category"
 weight = 2
 
 [[social]]
-identifier = "link"
-name = "link"
-url = "/links/"
+identifier = "tags"
+name = "tags"
+url = "/tags/"
 [social.params]
-icon = "link"
+icon = "tag"
 weight = 3
-
 
 [[social]]
 identifier = "apple-podcast"
@@ -47,7 +46,6 @@ url = "https://podcasts.apple.com/us/podcast/%E6%87%B6%E5%BE%97%E8%AE%8A%E6%9C%8
 [social.params]
 icon = "brand-apple-podcast"
 weight = 4  # 排序第0個
-
 
 [[social]]
 identifier = "spotify-podcast"
@@ -82,9 +80,17 @@ icon = "brand-discord"
 weight = 8
 
 [[social]]
+identifier = "link"
+name = "link"
+url = "/links/"
+[social.params]
+icon = "link"
+weight = 9
+
+[[social]]
 identifier = "rss"
 name = "rss"
 url = "/index.xml"
 [social.params]
 icon = "rss"
-weight = 9
+weight = 10

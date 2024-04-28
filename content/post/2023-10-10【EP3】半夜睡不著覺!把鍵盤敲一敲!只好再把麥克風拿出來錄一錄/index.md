@@ -6,7 +6,7 @@ lastmod: 2023-10-10T23:44:58-08:00
 image: 2023-10-10 【EP3】cover.png
 categories: [Podcast聊聊看]
 keywords: [ETF, Podcast, 台股, 懶得變有錢, 理財規劃, 瑪斯理財兩三事, 美股, 記帳, 讀書心得, 財務規劃]
-tags: [Podcast, Podcaster, 心流理論, 講幹話]
+tags: [Podcast, 講幹話,理財觀念]
 Status: 已發佈
 ---
 
