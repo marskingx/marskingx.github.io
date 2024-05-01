@@ -57,9 +57,7 @@ slug: 【Book Review】enjoying-the-us-stock-market-rally-focus-on-what-you-can-
 記住，通往財富自由的道路從來都不是一夕致富。它需要時間的淬鍊，需要理性與紀律的隨行，更需要對市場的相信與熱愛。唯有如此，你才能在股海浮沉中，透過財務規劃守住那份踏實的底氣。
 {{< /quote >}}
 
-
-![lazytoberich.svg](%E3%80%90%E7%90%86%E8%B2%A1%E3%80%91%E5%A6%82%E4%BD%95%E4%BA%AB%E5%8F%97%E7%BE%8E%E8%82%A1%E5%A4%A7%E6%BC%B2%EF%BC%9A%E5%B0%88%E6%B3%A8%E6%96%BC%E4%BD%A0%E8%83%BD%E6%8E%8C%E6%8E%A7%E7%9A%84!%20bbda0870375541d4b796b1610d13c0a2/lazytoberich.svg)
-
+![lazytoberich.svg](lazytoberich.svg)
 
 <iframe id="embedPlayer" src="https://embed.podcasts.apple.com/us/podcast/%E6%87%B6%E5%BE%97%E8%AE%8A%E6%9C%89%E9%8C%A2/id1707756115?itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto" height="450px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
 
