@@ -86,7 +86,7 @@ ETF全名為Exchange Traded Fund，中文名為「指數股票型基金」。以
 
 隨著ETF市場的不斷發展，預計未來全球ETF的數量和種類還會繼續增加，為投資者提供更多選擇。
 
-## **ETF有哪些種類？美國和台灣ETF介紹**
+## **ETF有哪些種類？美國和台灣ETF我不介紹**
 
 ETF種類多到讓人眼花繚亂，只要是能投資的就能創建一個ETF，比如說股票型ETF、債券型ETF、期貨/商品型ETF、槓桿型ETF、反向型ETF、貨幣型ETF等等。
 
@@ -107,18 +107,16 @@ ETF種類多到讓人眼花繚亂，只要是能投資的就能創建一個ETF�
 5. 我自己是複委託在進行投資，因為只要長期持有，手續費或是匯率也可以平均分散。
 6. 當然如果你有足夠的資金，一次性投入會比定期定額的方式獲得更大的報酬。這個以後有機會再說。
 
+
+
 ## 懶得有結論
 
-
 {{< quote author="懶得變有錢 | 瑪斯就是懶大" source="About 懶得變有錢" url="https://lazytoberich.com.tw/about-me/">}}
-輸入需要的文字
+ETF是投資最好的入門，少掉了單一個股的高風險，免去了選股的麻煩，由其是被動型的ETF，直接與指數貼齊，無腦享受所有的好處。當然，最重要還是你自己要知道為什麼要買!而或是為什麼要賣?
 {{< /quote >}}
 
-
-![lazytoberich.svg](%E3%80%90%E6%8A%95%E8%B3%87%E3%80%91ETF%E6%96%B0%E6%89%8B%E6%87%B6%E4%BA%BA%E5%8C%85%EF%BD%9CETF%E4%B8%8D%E5%8F%AA%E6%9C%89SPY%E3%80%81VOO%E3%80%81QQQ%EF%BC%81%20d686a98825504118b6d4037275ab2eef/lazytoberich.svg)
-
+![lazytoberich.svg](lazytoberich.svg)
 
 <iframe id="embedPlayer" src="https://embed.podcasts.apple.com/us/podcast/%E6%87%B6%E5%BE%97%E8%AE%8A%E6%9C%89%E9%8C%A2/id1707756115?itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto" height="450px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
-
 
 ## 👉[前往更多懶人的連結](https://linktr.ee/lazytoberich)
