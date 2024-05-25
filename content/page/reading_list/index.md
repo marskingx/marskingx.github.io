@@ -1,4 +1,4 @@
-
+---
 title: Reading List
 image: lazytoreadingmorebooks.svg
 keyword: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資理財, 支出, 收入, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
@@ -65,7 +65,7 @@ links:
     website: https://lazytoberich.com.tw/p/book-reviewreading-subscription-economy-discussing-business-motivation/
     image: img_0.png
       
-  
+
       
 
     
@@ -77,7 +77,7 @@ menu:
             icon: books
 
 comments: false
-
+---
 
 ## 推薦書單(依閱讀時間序)
 ## 👇文末前往閱讀心得👇
