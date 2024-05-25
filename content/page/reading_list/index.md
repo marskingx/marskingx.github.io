@@ -4,14 +4,18 @@ image: lazytoreadingmorebooks.svg
 keyword: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資理財, 支出, 收入, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 links:
   
+  - title: 《平衡心態》
+    description: 2024/05/01 | 最好的投資就是買了股票就忘了你有股票
+    website: https://lazytoberich.com.tw/p/book-review-achieving-a-balanced-mindset/
+    image: img_12.png
     
   - title: 《堅持不懈:指數基金之父約翰．柏格》
-    description: 2023/12/08| 要讓錢成為我們的得力助手，而不是當做交易工具，這點就是思維的轉換，同樣是理性，但卻不理性。 
+    description: 2023/12/08 | 做人誠實，做事堅持 
     website: https://lazytoberich.com.tw/p/【Book Review】Stay the Course:The Story of Vanguard and the Index Revolution
     image: img_11.png
     
   - title: 《駕馭金錢》
-    description: 2023/12/02| 要讓錢成為我們的得力助手，而不是當做交易工具，這點就是思維的轉換，同樣是理性，但卻不理性。 
+    description: 2023/12/02 | 要讓錢成為我們的得力助手，而不是當做交易工具，這點就是思維的轉換，同樣是理性，但卻不理性。 
     website: https://lazytoberich.com.tw/p/book-review-mastering-money/
     image: img_10.png
     
@@ -21,7 +25,7 @@ links:
     image: img_9.png
 
   - title: 《FIRE致富實踐》
-    description: 2023/11/18| 要讓錢成為我們的得力助手，而不是當做交易工具，這點就是思維的轉換，同樣是理性，但卻不理性。 
+    description: 2023/11/18 | 要讓錢成為我們的得力助手，而不是當做交易工具，這點就是思維的轉換，同樣是理性，但卻不理性。 
     website: https://lazytoberich.com.tw/p/book-reviewchoose-fiyour-blueprint-to-financial-independence/
     image: img_8.jpg
 
