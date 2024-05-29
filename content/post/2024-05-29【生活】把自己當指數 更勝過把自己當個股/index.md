@@ -9,7 +9,7 @@ keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有�
 status: 已發佈
 Slug: 【Life】Treating Yourself as an Index is Better Than Treating Yourself as a Stock
 ---
----
+
 ### **把自己當指數 更勝過把自己當個股**
 
 在現代快節奏的生活中，我們經常被外在環境和他人眼光所影響。特別是在[**財務規劃**](https://lazytoberich.com.tw/categories/%E8%A6%8F%E5%8A%83%E4%B8%8D%E7%90%86%E8%B2%A1/)領域，我們往往追求短期的高報酬，而忽略了長期的穩定增長。今天，我想和大家分享一個新觀念：把自己當作**指數**，而不是個股。這個理念不僅適用於**股票投資**，更能指導我們的人生成長。

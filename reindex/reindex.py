@@ -90,11 +90,6 @@ def get_md_files(folder):
         md_files.extend(os.path.join(root, file) for file in files if file.endswith(".md"))
     return md_files
 
-
-def select_md_file(md_files):
-    pass
-
-
 def process_latest_md_files(directory):
     if not os.path.exists(directory):
         print(f"Directory does not exist: {directory}")
@@ -115,12 +110,12 @@ def process_latest_md_files(directory):
 
     if len(md_files) == 1:
         selected_md_file = md_files[0]
-        confirmation = input(f"Do you want to proceed with processing the file: {selected_md_file}? (y/n): ")
+        confirmation = input(f"Do you want to proceed with processing the file: {selected_md_file}? (yes/no): ")
     else:
         selected_md_file = select_md_file(md_files)
-        confirmation = input(f"Do you want to proceed with processing the file: {selected_md_file}? (y/n): ")
+        confirmation = input(f"Do you want to proceed with processing the file: {selected_md_file}? (yes/no): ")
 
-    if confirmation.lower() != 'y':
+    if confirmation.lower() != 'yes':
         print("Operation cancelled.")
         return
 
