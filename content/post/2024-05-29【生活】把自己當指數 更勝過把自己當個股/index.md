@@ -3,13 +3,11 @@ title: 【生活】把自己當指數 更勝過把自己當個股
 description: 在財務規劃領域，把自己當作指數而不是個股，能夠幫助我們追求長期的穩定成長。指數代表整體表現，分散風險，而個股則有高風險和波動性。從個人成長和社會觀感來看，把自己當作指數能夠重視整體能力和內在價值的提升。透過良好的財務規劃，我們能夠實現穩定成長和自我實現，過上滿意的人生。
 date: 2024-05-29
 image: cover.png
-categories: [[[職涯與生活]]]
-tags: [[[生活, 職涯]]]
+categories: [職涯與生活]
+tags: [生活, 職涯]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資, 投資理財, 支出, 收入, 理財, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 status: 已發佈
 Slug: 【Life】Treating Yourself as an Index is Better Than Treating Yourself as a Stock
----
----
 ---
 ---
 ### **把自己當指數 更勝過把自己當個股**
@@ -36,20 +34,16 @@ Slug: 【Life】Treating Yourself as an Index is Better Than Treating Yourself a
 
 透過良好的[**財務規劃**](https://lazytoberich.com.tw/categories/%E8%A6%8F%E5%8A%83%E4%B8%8D%E7%90%86%E8%B2%A1/)，我們可以達到穩定的成長和自我實現，而不用隨波逐流。我們能夠設立長期目標，並一步一步穩定地達成，最終過上自己滿意的人生。[財務規劃](https://lazytoberich.com.tw/categories/%E8%A6%8F%E5%8A%83%E4%B8%8D%E7%90%86%E8%B2%A1/)是重視細節的理財行為，對於每一步都有著策略與思考，也能帶來穩建踏實的財務狀況。
 
-![lazytobeconclude.svg](%E3%80%90%E7%94%9F%E6%B4%BB%E3%80%91%E6%8A%8A%E8%87%AA%E5%B7%B1%E7%95%B6%E6%8C%87%E6%95%B8%20%E6%9B%B4%E5%8B%9D%E9%81%8E%E6%8A%8A%E8%87%AA%E5%B7%B1%E7%95%B6%E5%80%8B%E8%82%A1%20532d49081d5a452fa2696daa4449a209/lazytobeconclude.svg)
+![lazytobeconclude.svg](lazytobeconclude.svg)
 
 ## 懶得有結論
 
-```jsx
 {{< quote author="懶得變有錢 | 瑪斯就是懶大" source="About 懶得變有錢" url="https://lazytoberich.com.tw/about-me/">}}
 輸入需要的文字
 {{< /quote >}}
-```
 
-![lazytoberich.svg](%E3%80%90%E7%94%9F%E6%B4%BB%E3%80%91%E6%8A%8A%E8%87%AA%E5%B7%B1%E7%95%B6%E6%8C%87%E6%95%B8%20%E6%9B%B4%E5%8B%9D%E9%81%8E%E6%8A%8A%E8%87%AA%E5%B7%B1%E7%95%B6%E5%80%8B%E8%82%A1%20532d49081d5a452fa2696daa4449a209/lazytoberich.svg)
+![lazytoberich.svg](lazytoberich.svg)
 
-```jsx
 <iframe id="embedPlayer" src="https://embed.podcasts.apple.com/us/podcast/%E6%87%B6%E5%BE%97%E8%AE%8A%E6%9C%89%E9%8C%A2/id1707756115?itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto" height="450px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
-```
 
 ## 👉[前往更多懶人的連結](https://linktr.ee/lazytoberich)
