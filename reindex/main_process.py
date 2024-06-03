@@ -33,7 +33,8 @@ def format_md_content(content):
     content = re.sub(r'categories: (.*)', r'categories: [\1]', content)
     content = re.sub(r'tags: (.*)', r'tags: [\1]', content)
     content = re.sub(r'status: 草稿', 'status: 已發佈', content)
-    content = re.sub(r'(slug: .*)', r'\1\n---', content)
+    content = re.sub(r'slug: \[.*?\]\s*', 'slug: ', content)
+    content = re.sub(r'slug: (.*)', r'slug: \1\n---', content)
     content = re.sub(r'```jsx\n(.*?)\n```', r'\1', content, flags=re.DOTALL)
     content = re.sub(r'!\[(.*?)\]\([^\)]*/(.*?)\)', r'![\1](\2)', content)
 
