@@ -4,6 +4,7 @@ from datetime import datetime
 from search_books_url import get_books_promotion_link, get_momo_promotion_link
 from reindex_reading_list import update_reading_list_index
 
+
 def read_file(file_path):
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
@@ -14,6 +15,7 @@ def read_file(file_path):
         print(f"Error reading file {file_path}: {e}")
         return ""
 
+
 def write_file(file_path, content):
     try:
         with open(file_path, 'w', encoding='utf-8') as file:
@@ -22,10 +24,12 @@ def write_file(file_path, content):
     except Exception as e:
         print(f"Error writing file {file_path}: {e}")
 
+
 def format_md_content(content):
     original_content = content
     content = re.sub(r'^# (.*)', r'---\ntitle: \1', content, flags=re.MULTILINE)
-    content = re.sub(r'date: (\d{4})/(\d{2})/(\d{2})', lambda m: f'date: {m.group(1)}-{m.group(2)}-{m.group(3)}', content)
+    content = re.sub(r'date: (\d{4})/(\d{2})/(\d{2})', lambda m: f'date: {m.group(1)}-{m.group(2)}-{m.group(3)}',
+                     content)
     content = re.sub(r'categories: (.*)', r'categories: [\1]', content)
     content = re.sub(r'tags: (.*)', r'tags: [\1]', content)
     content = re.sub(r'status: 草稿', 'status: 已發佈', content)
@@ -37,11 +41,15 @@ def format_md_content(content):
     print(f"Formatted content: {content[:200]}...")  # 打印前200字符以供檢查
     return content
 
-def update_links(content, books_url, momo_url):
-    content = re.sub(r'!\[博客來買書\]\(books\.jpg\)', f'![博客來買書]({books_url})', content)
-    content = re.sub(r'!\[momo買書\]\(momobooks\.jpg\)', f'![momo買書]({momo_url})', content)
+
+def update_links(content, books_title, books_url, momo_url):
+    content = re.sub(r'!\[books\.png]\(books\.png\)', f'[![博客來買《{books_title}》](books.png)]({books_url})', content)
+    content = re.sub(r'!\[momobooks\.png]\(momobooks\.png\)',
+                     f'[![推薦到momo買《{books_title}》](momobooks.png)]({momo_url})',
+                     content)
     print(f"Updated content with promotion links.")
     return content
+
 
 def get_latest_folders(directory, n=5):
     try:
@@ -57,6 +65,7 @@ def get_latest_folders(directory, n=5):
         print(f"Error getting latest folders: {e}")
         return []
 
+
 def get_md_files(folder):
     md_files = []
     try:
@@ -67,10 +76,14 @@ def get_md_files(folder):
         print(f"Error getting markdown files: {e}")
     return md_files
 
+
 def extract_book_titles(content):
-    titles = list(set(re.findall(r'《(.*?)》', content)))
+    # 只匹配標題中的書名，假設標題格式固定為 "# 【嗑書】《書名》"
+    title_match = re.search(r'^# 【嗑書】《(.*?)》', content, re.MULTILINE)
+    titles = [title_match.group(1)] if title_match else []
     print(f"Extracted book titles: {titles}")
     return titles
+
 
 def process_latest_md_files(directory):
     if not os.path.exists(directory):
@@ -103,6 +116,7 @@ def process_latest_md_files(directory):
 
     return book_titles, latest_md_file, latest_folder
 
+
 def main(directory_path, reading_list_file):
     print(f"Using directory path: {directory_path}")
     book_titles, latest_md_file, latest_folder = process_latest_md_files(directory_path)
@@ -115,11 +129,11 @@ def main(directory_path, reading_list_file):
 
     book_title = book_titles[0]
     selected_books_title, books_url = get_books_promotion_link(book_title)
-    selected_momo_title, momo_url = get_momo_promotion_link(book_title)
+    _, momo_url = get_momo_promotion_link(book_title)
 
     if books_url and momo_url:
         content = read_file(latest_md_file)
-        updated_content = update_links(content, books_url, momo_url)
+        updated_content = update_links(content, selected_books_title, books_url, momo_url)
         write_file(latest_md_file, updated_content)
 
         # 更新reading_list資料夾內的index.md

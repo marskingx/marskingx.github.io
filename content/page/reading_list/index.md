@@ -14,6 +14,11 @@ links:
   website: https://lazytoberich.com.tw/p/Book-Review-Continuous-Buying-Reflections/
   image: img_14.png
 
+- title: 《普通人的財富自由之道》
+  description: 2024-02-15 | 這本書介紹了一位網紅如何成功的故事，並提到了訂定理想、找到優勢、創造化身、選擇平臺和尋找導師等步驟。書中強調創業技巧而非財務規劃，並提到財富自由和被動收入是紅了之後所創造的流量收益。推薦給對創業有興趣的人閱讀。
+  website: https://lazytoberich.com.tw/p/[Book-Recommendation]-"The-Path-to-Financial-Freedom-for-Ordinary-People"/
+  image: img_15.png
+
 - title: 《堅持不懈:指數基金之父約翰．柏格》
   description: 2023-12-08 | 做人誠實，做事堅持 
   website: https://lazytoberich.com.tw/p/【Book Review】Stay the Course:The Story of Vanguard and the Index Revolution

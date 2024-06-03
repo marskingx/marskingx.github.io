@@ -1,8 +1,12 @@
+import logging
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import TimeoutException, NoSuchElementException, WebDriverException
+import datetime
+# 設置日誌文件
+logging.basicConfig(filename='search_book_errors.log', level=logging.ERROR)
 
 
 def initialize_driver():
@@ -63,34 +67,74 @@ def search_book(driver, keyword, site):
             return None
 
         for index, result in enumerate(results):
-            if site == "books":
-                title = result.find_element(By.CSS_SELECTOR, "h4 a").get_attribute("title")
-                item_id = result.get_attribute("id").split('-')[-1]
-                print(f"{index + 1}: {title} (ID: {item_id})")
-            elif site == "momo":
-                title = result.find_element(By.XPATH, "./ancestor::li//h3[@class='prdName']").text
-                print(f"{index + 1}: {title}")
+            try:
+                if site == "books":
+                    WebDriverWait(result, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, "h4 a")))
+                    title_element = result.find_elements(By.CSS_SELECTOR, "h4 a")
+                    if title_element:
+                        title = title_element[0].text
+                        item_id = result.get_attribute("id").split('-')[-1]
+                        print(f"{index + 1}: {title} (ID: {item_id})")
+                    else:
+                        print(f"No h4 a element found in result {index + 1}")
+                        logging.error(
+                            f"No h4 a element found in result {index + 1}\nHTML Content: {result.get_attribute('outerHTML')}")
+                        continue
+                elif site == "momo":
+                    WebDriverWait(result, 10).until(
+                        EC.presence_of_element_located((By.XPATH, "./ancestor::li//h3[@class='prdName']")))
+                    title_element = result.find_elements(By.XPATH, "./ancestor::li//h3[@class='prdName']")
+                    if title_element:
+                        title = title_element[0].text
+                        print(f"{index + 1}: {title}")
+                    else:
+                        print(f"No prdName element found in result {index + 1}")
+                        logging.error(
+                            f"No prdName element found in result {index + 1}\nHTML Content: {result.get_attribute('outerHTML')}")
+                        continue
+            except (NoSuchElementException, TimeoutException) as e:
+                error_message = f"Error finding element in result {index + 1}: {e}\nHTML Content: {result.get_attribute('outerHTML')}"
+                print(error_message)
+                logging.error(error_message)
+                continue
 
         choice = 0  # 假設選擇第一個結果
         selected_result = results[choice]
 
         if site == "books":
-            selected_title = selected_result.find_element(By.CSS_SELECTOR, "h4 a").get_attribute("title")
-            item_id = selected_result.get_attribute("id").split('-')[-1]
-            base_url = f"https://www.books.com.tw/exep/assp.php/shamangels/products/{item_id}"
-            additional_params = "utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202406"
-            product_url = convert_url(base_url, additional_params)
+            WebDriverWait(selected_result, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, "h4 a")))
+            selected_title_element = selected_result.find_elements(By.CSS_SELECTOR, "h4 a")
+            if selected_title_element:
+                selected_title = selected_title_element[0].text
+                item_id = selected_result.get_attribute("id").split('-')[-1]
+                base_url = f"https://www.books.com.tw/exep/assp.php/shamangels/products/{item_id}"
+                additional_params = "utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202406"
+                product_url = convert_url(base_url, additional_params)
+            else:
+                print("Selected result does not contain h4 a element")
+                logging.error("Selected result does not contain h4 a element")
+                return None, None
         elif site == "momo":
-            selected_title = selected_result.find_element(By.XPATH, "./ancestor::li//h3[@class='prdName']").text
-            base_url = selected_result.get_attribute('href')
-            additional_params = "memid=6000021729&cid=apuad&oid=1&osm=league"
-            product_url = convert_url(base_url, additional_params)
+            WebDriverWait(selected_result, 10).until(
+                EC.presence_of_element_located((By.XPATH, "./ancestor::li//h3[@class='prdName']")))
+            selected_title_element = selected_result.find_elements(By.XPATH, "./ancestor::li//h3[@class='prdName']")
+            if selected_title_element:
+                selected_title = selected_title_element[0].text
+                base_url = selected_result.get_attribute('href')
+                additional_params = "memid=6000021729&cid=apuad&oid=1&osm=league"
+                product_url = convert_url(base_url, additional_params)
+            else:
+                print("Selected result does not contain prdName element")
+                logging.error("Selected result does not contain prdName element")
+                return None, None
 
         print(f"選擇的商品名稱: {selected_title}")
         print(f"最終生成的商品 URL: {product_url}")
         return selected_title, product_url
-    except Exception as e:
-        print(f"Error searching book on {site}: {e}")
+    except (TimeoutException, NoSuchElementException, WebDriverException) as e:
+        error_message = f"Error searching book on {site}: {e}"
+        print(error_message)
+        logging.error(error_message)
         return None, None
 
 

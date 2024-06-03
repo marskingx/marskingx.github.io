@@ -2,6 +2,7 @@ import os
 import re
 from datetime import datetime
 
+
 def read_file(file_path):
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
@@ -9,6 +10,7 @@ def read_file(file_path):
     except Exception as e:
         print(f"Error reading file {file_path}: {e}")
         raise
+
 
 def write_file(file_path, content):
     try:
@@ -18,6 +20,7 @@ def write_file(file_path, content):
     except Exception as e:
         print(f"Error writing file {file_path}: {e}")
         raise
+
 
 def extract_info_from_md(file_path):
     try:
@@ -30,8 +33,8 @@ def extract_info_from_md(file_path):
             description_match = re.search(r'^description:\s*(.+)$', content, re.MULTILINE)
             date_match = re.search(r'^date:\s*(.+)$', content, re.MULTILINE)
             slug_match = re.search(r'^slug:\s*(.+)$', content, re.MULTILINE)
-            books_url_match = re.search(r'!\[博客來買書\]\((.*?)\)', content)
-            momo_url_match = re.search(r'!\[momo買書\]\((.*?)\)', content)
+            books_url_match = re.search(r'\[!\[.*]\(books\.png\)\]\((.*?)\)', content)
+            momo_url_match = re.search(r'\[!\[.*]\(momobooks\.png\)\]\((.*?)\)', content)
 
             if not title_match:
                 print("Missing title")
@@ -46,7 +49,8 @@ def extract_info_from_md(file_path):
             if not momo_url_match:
                 print("Missing momo URL")
 
-            if not (title_match and description_match and date_match and slug_match and books_url_match and momo_url_match):
+            if not (
+                    title_match and description_match and date_match and slug_match and books_url_match and momo_url_match):
                 raise ValueError("One or more required fields are missing in the markdown file")
 
             title = title_match.group(1)
@@ -61,9 +65,11 @@ def extract_info_from_md(file_path):
         print(f"Error extracting information from markdown file {file_path}: {e}")
         raise
 
+
 def sanitize_title(title):
     match = re.search(r'《(.*?)》', title)
     return match.group(1) if match else title
+
 
 def find_existing_image_number(content, sanitized_title):
     match_table = re.search(r'\[!\[%s\]\(img_(\d+)\.png\)' % re.escape(sanitized_title), content)
@@ -74,6 +80,7 @@ def find_existing_image_number(content, sanitized_title):
     elif match_links:
         return int(match_links.group(1))
     return None
+
 
 def check_duplicate_entry(content, title, description, date):
     sanitized_title = sanitize_title(title)
@@ -86,6 +93,7 @@ def check_duplicate_entry(content, title, description, date):
             return True
     return False
 
+
 def update_table_section(content, title, description, date, slug, books_url, momo_url, image_number):
     try:
         lines = content.split('\n')
@@ -95,7 +103,7 @@ def update_table_section(content, title, description, date, slug, books_url, mom
         table_start = None
         table_end = None
         for i, line in enumerate(lines):
-            if line.startswith('| 閱讀書單 | 購書連結🌐<br/>推薦評等⭐|'):
+            if line.startswith('|閱讀書單|購書連結🌐<br/>推薦評等⭐|'):
                 table_start = i
             if table_start is not None and line.startswith('|-|-|'):
                 table_end = i + 1
@@ -115,6 +123,7 @@ def update_table_section(content, title, description, date, slug, books_url, mom
     except Exception as e:
         print(f"Error updating table section: {e}")
         raise
+
 
 def update_reading_list(content, title, description, date, slug, image_number):
     try:
@@ -138,7 +147,7 @@ def update_reading_list(content, title, description, date, slug, image_number):
         ])
 
         updated_content = re.sub(
-            r'(links:\s*\n)(.*?)(?=\nmenu:)', rf'\1{updated_links_yaml}\n', content, flags= re.DOTALL
+            r'(links:\s*\n)(.*?)(?=\nmenu:)', rf'\1{updated_links_yaml}\n', content, flags=re.DOTALL
         )
 
         return updated_content
@@ -146,13 +155,16 @@ def update_reading_list(content, title, description, date, slug, image_number):
         print(f"Error updating reading list: {e}")
         raise
 
+
 def parse_links_section(content):
     links_match = re.search(r'links:\s*(\n\s*-\s*title:.*?)(?=\nmenu:)', content, re.DOTALL)
     if links_match:
         links_yaml = links_match.group(1)
-        links = re.findall(r'-\s*title:\s*(.*?)\n\s*description:\s*(.*?)\n\s*website:\s*(.*?)\n\s*image:\s*(.*?)\n', links_yaml, re.DOTALL)
+        links = re.findall(r'-\s*title:\s*(.*?)\n\s*description:\s*(.*?)\n\s*website:\s*(.*?)\n\s*image:\s*(.*?)\n',
+                           links_yaml, re.DOTALL)
         return links
     return []
+
 
 def update_reading_list_index(latest_md_file, reading_list_file):
     try:
@@ -178,7 +190,8 @@ def update_reading_list_index(latest_md_file, reading_list_file):
             else:
                 image_number = 1
 
-        updated_content = update_table_section(content, title, description, date, slug, books_url, momo_url, image_number)
+        updated_content = update_table_section(content, title, description, date, slug, books_url, momo_url,
+                                               image_number)
         updated_content = update_reading_list(updated_content, title, description, date, slug, image_number)
         write_file(reading_list_file, updated_content)
     except Exception as e:
