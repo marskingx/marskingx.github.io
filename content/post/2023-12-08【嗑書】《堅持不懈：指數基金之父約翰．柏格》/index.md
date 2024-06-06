@@ -1,13 +1,16 @@
 ---
-title: 【嗑書】《堅持不懈:指數基金之父約翰．柏格》讀後感
+title: 【嗑書】《堅持不懈:指數基金之父約翰．柏格》讀書心得
+description: 這本書是關於指數基金之父約翰·柏格的傳記，講述了他的人生故事和創立先鋒基金的理念。柏格堅持為投資者謀福利，提倡長期、低成本、分散的投資理念，並強調人品比頭銜更重要。這本書展示了一個平凡人如何改變世界的故事。
 date: 2023-12-08
 image: cover.png
 categories: [天天都讀書]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資, 投資理財, 支出, 收入, 理財, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 tags: [人文/史哲]
-slug: 【Book Review】Stay the Course:The Story of Vanguard and the Index Revolution
+slug: book-persistence-father-of-the-index-fund-johnberg-reading-experience
 ---
-![堅持不懈:指數基金之父約翰．柏格](img.png)
+
+
+![堅持不懈:指數基金之父約翰．柏格](img_11.png)
 
 有在投資ETF的你，是應該要認識一下這個人：[柏格](https://zh.wikipedia.org/zh-tw/%E7%B4%84%E7%BF%B0%C2%B7%E6%9F%8F%E6%A0%BC)。啃完這本書好一陣子，書名叫做《堅持不懈: 指數基金之父約翰．柏格》。這本書不是要講投資，而是要講我們現在常見的ETF指數型金基是怎麼來的。
 
@@ -46,13 +49,11 @@ slug: 【Book Review】Stay the Course:The Story of Vanguard and the Index Revol
 
 ![Lazy_to_be_studious.svg](Lazy_to_be_studious.svg)
 ## 購書連結
+[![博客來買《堅持不懈：指數基金之父約翰‧柏格》](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010823259?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202406)
 
-[![堅持不懈:指數基金之父約翰．柏格](img.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010823259?sloc=main&utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202404)
-
-[![博客來購書](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010823259?sloc=main&utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202404)
-
-
+[![推薦到momo買《堅持不懈：指數基金之父約翰‧柏格》](momobooks.png)](https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9271410&Area=search&oid=1_1&cid=index&kw=%E5%A0%85%E6%8C%81%E4%B8%8D%E6%87%88%3A%E6%8C%87%E6%95%B8%E5%9F%BA%E9%87%91%E4%B9%8B%E7%88%B6%E7%B4%84%E7%BF%B0%EF%BC%8E%E6%9F%8F%E6%A0%BC&memid=6000021729&cid=apuad&oid=1&osm=league)
 ## 更多我的書單
 
-[![Lazy_to_be_studious.png](Lazy_to_be_studious.png)](https://lazytoberich.com.tw/reading-list/)
+[![查看書單](Lazy_to_be_studious.png)]((https://lazytoberich.com.tw/reading-list/))
+
 [查看書單](https://lazytoberich.com.tw/reading-list/)

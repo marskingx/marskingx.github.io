@@ -1,5 +1,5 @@
 ---
-title: 【嗑書】《商業書10倍高效》讀後感
+title: 【嗑書】《商業書10倍高效》讀書心得
 description: 閱讀商業書的關鍵是思考觀點和找出準則。閱讀時要主動思考、多角度思考，並將所學應用於實際情境。此外，連續閱讀同一主題的書籍可以提高記憶力。閱讀書籍中的觀點可以擴展思維，找到適合自己的準則，並應用於工作和生活中。此外，艾浩賓斯遺忘曲線顯示，閱讀後的記憶會隨著時間流逝而減少，因此重複閱讀同一主題的書籍可以提高記憶保留率。總之，閱讀商業書需要思考觀點、找出準則，並將所學應用於實際情境中。
 date: 2023-10-28
 image: cover.png
@@ -7,13 +7,12 @@ categories: [天天都讀書]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 商業周刊, 基金, 懶得變有錢, 房地產, 投資, 投資理財, 支出, 收入, 月配息, 理財, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 tags: [商務/趨勢]
 Status: Notion
-slug: 【Book Snacking】To learn how to progress, you must learn the methods of progress in the book "10x Productivity in Business."
+slug: book-of-books-commercial-books-10-times-efficient-reading-experience
 ---
 
-![懶得多讀書](cover.png)
 
-[![蝦皮購書最低價(含二手書)](shopee.png)](https://shope.ee/99xfvNmoZn) 
-[![博客來購書](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010930654?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
+
+![懶得多讀書](cover.png)
 
 ## **懶人提要**
 
@@ -121,8 +120,12 @@ slug: 【Book Snacking】To learn how to progress, you must learn the methods of
 
 ![懶得多讀書](lazytoreadingmorebooks.svg)
 
-[![蝦皮購書最低價(含二手書)](shopee.png)](https://shope.ee/99xfvNmoZn) 
+## 購書連結
+[![博客來買《商業書10倍高效閱讀法：這樣選書、讀書、用書最有效率》](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010965241?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202406)
 
-[![博客來購書](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010930654?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
+[![推薦到momo買《商業書10倍高效閱讀法：這樣選書、讀書、用書最有效率》](momobooks.png)](https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=10323246&Area=search&oid=1_1&cid=index&kw=%E5%95%86%E6%A5%AD%E6%9B%B810%E5%80%8D%E9%AB%98%E6%95%88&memid=6000021729&cid=apuad&oid=1&osm=league)
+## 更多我的書單
 
+[![查看書單](Lazy_to_be_studious.png)]((https://lazytoberich.com.tw/reading-list/))
 
+[查看書單](https://lazytoberich.com.tw/reading-list/)

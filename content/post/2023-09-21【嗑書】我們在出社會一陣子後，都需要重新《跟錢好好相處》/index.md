@@ -1,5 +1,5 @@
 ---
-title: 【嗑書】《跟錢好好相處》讀後感
+title: 【嗑書】《跟錢好好相處》讀書心得
 description: 這本書探討了如何與金錢相處，包括財務規劃、活在當下、建立預算、改變思維和行為、記帳、省錢、最大化收入、投資自己以及獨立努力。書中提到了一些重要觀點，但也需要批判思考。總結來說，好好了解自己、認識金錢、投資自己，並避免盲目追求金錢。
 date: 2023-09-21
 image: cover.png
@@ -7,8 +7,10 @@ categories: [天天都讀書]
 keywords: ETF, Podcast, 台股, 懶得變有錢, 理財規劃, 瑪斯理財兩三事, 百靈果, 美股, 職涯心得, 股癌, 記帳, 讀書心得, 財務規劃
 tags: [商業/理財]
 Status: 已發佈
-slug: 【Read Books】After being in the workforce for a while, we all need to "Get Along with Money" again.
+slug: book-of-books-reading-in-along-with-money
 ---
+---
+
 ## 跟錢好好相處10大問
 如果你是因為覺得錢少所以不快樂，那你有可能誤會了金錢的意義，如果你以為錢多所以很快樂，那可能很難擁有快樂。因為金錢只是一種方法，而不是目的。
 
@@ -31,12 +33,6 @@ slug: 【Read Books】After being in the workforce for a while, we all need to "
 > 那這本書就是為你而寫。
 > 
 ![跟錢好好相處](cover.png)
-
-[![蝦皮購書最低價(含近全新二手書)](shopee.png)](https://shope.ee/fz7oG2786)
-[![博客來購新書](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010963721?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
-
-
-
 
 ## MindMap－《**跟錢好好相處》**
 
@@ -127,5 +123,12 @@ Photo by [Brett Jordan](https://unsplash.com/@brett_jordan?utm_source=medium&utm
 
 ![Lazytobestudious.svg](Lazytobestudious.svg)
 
-[![蝦皮購書最低價(含近全新二手書)](shopee.png)](https://shope.ee/fz7oG2786)
-[![博客來購新書](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010963721?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
+## 購書連結
+[![博客來買《跟錢好好相處(修訂版)：幸福的關鍵，是找到金錢與人生的平衡點》](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010963721?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202406)
+
+[![推薦到momo買《跟錢好好相處(修訂版)：幸福的關鍵，是找到金錢與人生的平衡點》](momobooks.png)](https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11652919&Area=search&oid=1_1&cid=index&kw=%E8%B7%9F%E9%8C%A2%E5%A5%BD%E5%A5%BD%E7%9B%B8%E8%99%95&memid=6000021729&cid=apuad&oid=1&osm=league)
+## 更多我的書單
+
+[![查看書單](Lazy_to_be_studious.png)]((https://lazytoberich.com.tw/reading-list/))
+
+[查看書單](https://lazytoberich.com.tw/reading-list/)

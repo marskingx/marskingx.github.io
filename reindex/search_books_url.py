@@ -62,7 +62,20 @@ def search_book(driver, keyword, site):
             print("未找到有效的搜尋結果")
             return None, None
 
-        choice = 0  # 假設選擇第一個結果
+        if len(filtered_results) == 1:  # 只有一個結果時
+            choice = 0  # 自動選擇第一個 (也是唯一一個) 結果
+            print("自動選擇唯一結果")
+        else:
+            while True:
+                try:
+                    choice = int(input("請輸入您要選擇的商品編號: ")) - 1
+                    if 0 <= choice < len(filtered_results):
+                        break
+                    else:
+                        print("無效的編號，請重新輸入")
+                except ValueError:
+                    print("請輸入數字編號")
+
         selected_result = filtered_results[choice]
         selected_title, product_url = get_selected_result_url(selected_result, site)
 
@@ -121,10 +134,9 @@ def get_search_results(driver, site, selector):
 
 
 def process_result(result, index, site):
-    """處理搜尋結果，返回是否為有效結果"""
+    """處理搜尋結果，顯示資訊供使用者選擇"""
     try:
         outer_html = result.get_attribute('outerHTML')
-        # 跳過特定內容的結果
         if any(skip_word in outer_html for skip_word in ["試閱", "putAjaxCart", "putAjaxNextBuy"]):
             return False
 
@@ -134,15 +146,15 @@ def process_result(result, index, site):
             item_id = result.get_attribute("id").split('-')[-1]
             if "No title" in title or not item_id:
                 return False
-            print(f"{index + 1}: {title} (ID: {item_id})")
-            return True
         elif site == "momo":
             title_element = result.find_element(By.XPATH, "./ancestor::li//h3[@class='prdName']")
             title = title_element.text if title_element else "No title"
             if "No title" in title:
                 return False
-            print(f"{index + 1}: {title}")
-            return True
+
+        print(f"{index + 1}: {title}")  # 顯示編號與書名
+        return True  # 所有結果都視為有效，讓使用者選擇
+
     except (NoSuchElementException, TimeoutException) as e:
         error_message = f"Error finding element in result {index + 1}: {e}"
         print(error_message)

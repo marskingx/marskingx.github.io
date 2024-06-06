@@ -1,13 +1,13 @@
 ---
-title: 【嗑書】《FIRE財務自由》讀後感
+title: 【嗑書】《財務自由 提早過你真正想過的生活》讀書心得
 description: 財務自由代表達成財務獨立，可以不完全需要為了錢工作，可以為了理想或是興趣找事情做。但你得先知道那是多少錢！你的生活方式越貴，你的花費越高，需要的錢也就越多，這代表你可能需要工作的更久！需求和欲望不一樣。很多人花了很多錢買不需要的東西，目的只是為了向他討厭的人炫耀。
 date: 2023-11-24
 image: cover.png
 categories: [天天都讀書]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資, 投資理財, 支出, 收入, 理財, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 tags: [商業/財經]
-slug: F.I.R.E._Financial_Freedom
 Status: 已發佈
+slug: book-freedom-of-finance-live-early-life-you-really-thinking-reading-experience
 ---
 ## 有錢才有機會自由
 ![財務自由，提早過你真正想過的生活](img.png)
@@ -211,12 +211,12 @@ Status: 已發佈
 
 ![Lazy_to_be_studious.svg](Lazy_to_be_studious.svg)
 
-
 ## 購書連結
+[![博客來買《財務自由，提早過你真正想過的生活：楊應超Kirk Yang審定推薦，關於時間、、金錢、副業實用思考》](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010849695?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202406)
 
-[![財務自由，提早過你真正想過的生活](img.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010849695?sloc=main&utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202404)
-
-[![博客來購書](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010849695?sloc=main&utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202404)
-
-
+[![推薦到momo買《財務自由，提早過你真正想過的生活：楊應超Kirk Yang審定推薦，關於時間、、金錢、副業實用思考》](momobooks.png)](https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=8563268&Area=search&oid=1_1&cid=index&kw=%E8%B2%A1%E5%8B%99%E8%87%AA%E7%94%B1%20%E6%8F%90%E6%97%A9%E9%81%8E%E4%BD%A0%E7%9C%9F%E6%AD%A3%E6%83%B3%E9%81%8E%E7%9A%84%E7%94%9F%E6%B4%BB&memid=6000021729&cid=apuad&oid=1&osm=league)
 ## 更多我的書單
+
+[![查看書單](Lazy_to_be_studious.png)]((https://lazytoberich.com.tw/reading-list/))
+
+[查看書單](https://lazytoberich.com.tw/reading-list/)

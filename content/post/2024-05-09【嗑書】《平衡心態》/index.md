@@ -1,15 +1,17 @@
 ---
-title: 【嗑書】《平衡心態》讀後感
+title: 【嗑書】《平衡心態》讀書心得
 description: 《平衡心態》是一本探討財務規劃和人生選擇的書籍。書中提到了魚與熊掌兼得的概念，以及成功生活的四個元素：足夠的金錢、穩固的關係、健康的身心狀態和有目標的生活。書中也強調了金錢的重要性，並提倡平衡的選擇。最後，書中引用了一句名言，提醒人們不要活在別人的期望下，而是過自己想要的人生。
 date: 2024-05-01
 image: cover.png
 categories: [天天都讀書]
 tags: [理財/觀念]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資, 投資理財, 支出, 收入, 理財, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
-status: 草稿
+status: 已發佈
 Release: 2024-05-10
-Slug: 【Book Review】 Achieving a Balanced Mindset
+slug: book-balanced-mental-reading-experience
 ---
+---
+
 
 ## 魚與熊掌如何兼得
 
@@ -76,12 +78,10 @@ Slug: 【Book Review】 Achieving a Balanced Mindset
 
 
 ![Lazy_to_be_studious.svg](Lazy_to_be_studious.svg)
-
 ## 購書連結
+[![博客來買《平衡心態：掌握成功的四腳桌法則，穩步累積你的財富、幸福與健康》](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010950295?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202406)
 
-
-[![](books.png)]((https://www.books.com.tw/exep/assp.php/shamangels/products/0010950295?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202405))
-
+[![推薦到momo買《平衡心態：掌握成功的四腳桌法則，穩步累積你的財富、幸福與健康》](momobooks.png)](https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11062008&Area=search&oid=1_1&cid=index&kw=%E5%B9%B3%E8%A1%A1%E5%BF%83%E6%85%8B&memid=6000021729&cid=apuad&oid=1&osm=league)
 ## 更多我的書單
 
 [![查看書單](Lazy_to_be_studious.png)]((https://lazytoberich.com.tw/reading-list/))

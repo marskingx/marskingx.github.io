@@ -3,141 +3,79 @@ import re
 from datetime import datetime
 
 
-def read_file(file_path):
-    try:
-        with open(file_path, 'r', encoding='utf-8') as file:
-            return file.read()
-    except Exception as e:
-        print(f"Error reading file {file_path}: {e}")
-        raise
+class ReadingListUpdater:
+    def __init__(self, latest_md_file, reading_list_file):
+        self.latest_md_file = latest_md_file
+        self.reading_list_file = reading_list_file
 
+    def read_file(self, file_path):
+        try:
+            with open(file_path, 'r', encoding='utf-8') as file:
+                return file.read()
+        except FileNotFoundError:
+            raise FileNotFoundError(f"File not found: {file_path}")
 
-def write_file(file_path, content):
-    try:
+    def write_file(self, file_path, content):
         with open(file_path, 'w', encoding='utf-8') as file:
             file.write(content)
-        print(f"File {file_path} has been updated successfully.")
-    except Exception as e:
-        print(f"Error writing file {file_path}: {e}")
-        raise
 
+    # --- 提取資訊 ---
+    def extract_info_from_md(self):
+        try:
+            with open(self.latest_md_file, 'r', encoding='utf-8') as file:
+                content = file.read()
+                matches = re.finditer(
+                    r'^(title|description|date|slug):\s*(.+)$',
+                    content,
+                    re.MULTILINE
+                )
+                info = {m.group(1): m.group(2) for m in matches}
+                info['slug'] = info['slug'].replace(' ', '-')
+                info['books_url'] = re.search(r'\[!\[.*]\(books\.png\)\]\((.*?)\)', content).group(1)
+                info['momo_url'] = re.search(r'\[!\[.*]\(momobooks\.png\)\]\((.*?)\)', content).group(1)
+                return info
+        except (KeyError, AttributeError) as e:
+            raise ValueError(f"Missing required field in markdown file: {e}")
+        except FileNotFoundError:
+            raise FileNotFoundError(f"File not found: {self.latest_md_file}")
 
-def extract_info_from_md(file_path):
-    try:
-        with open(file_path, 'r', encoding='utf-8') as file:
-            content = file.read()
-            print(f"Extracting information from file: {file_path}")
-            print(content)  # 打印整個文件內容以便檢查
+    def get_image_number(self, content):
+        images = re.findall(r'img_(\d+)\.png', content)
+        return max(map(int, images)) + 1 if images else 1
 
-            title_match = re.search(r'^title:\s*(.+)$', content, re.MULTILINE)
-            description_match = re.search(r'^description:\s*(.+)$', content, re.MULTILINE)
-            date_match = re.search(r'^date:\s*(.+)$', content, re.MULTILINE)
-            slug_match = re.search(r'^slug:\s*(.+)$', content, re.MULTILINE)
-            books_url_match = re.search(r'\[!\[.*]\(books\.png\)\]\((.*?)\)', content)
-            momo_url_match = re.search(r'\[!\[.*]\(momobooks\.png\)\]\((.*?)\)', content)
+    def sanitize_title(self, title):
+        match = re.search(r'《(.*?)》', title)
+        return match.group(1) if match else title
 
-            if not title_match:
-                print("Missing title")
-            if not description_match:
-                print("Missing description")
-            if not date_match:
-                print("Missing date")
-            if not slug_match:
-                print("Missing slug")
-            if not books_url_match:
-                print("Missing books URL")
-            if not momo_url_match:
-                print("Missing momo URL")
+    # --- 處理閱讀清單 ---
+    def parse_links_section(self, content):
+        links_match = re.search(r'links:\s*(\n\s*-\s*title:.*?)(?=\nmenu:)', content, re.DOTALL)
+        if links_match:
+            links_yaml = links_match.group(1)
+            links = [tuple(m.groups()) for m in re.finditer(
+                r'- title: (.*?)\n  description: (.*?)\n  website: (.*?)\n  image: (.*?)\n',
+                links_yaml, re.DOTALL
+            )]
+            return links
+        return []
 
-            if not (
-                    title_match and description_match and date_match and slug_match and books_url_match and momo_url_match):
-                raise ValueError("One or more required fields are missing in the markdown file")
+    def check_duplicate_reading_list_entry(self, links, title, description, date, slug):
+        sanitized_title_with_brackets = f'《{self.sanitize_title(title)}》'
+        new_description = f"{date} | {description}"
+        for link in links:
+            if link[0] == sanitized_title_with_brackets and link[1] == new_description and link[
+                2] == f"/p/{slug}/":
+                return True  # 找到相同條目
+        return False
 
-            title = title_match.group(1)
-            description = description_match.group(1)
-            date = date_match.group(1)
-            slug = slug_match.group(1).replace(' ', '-')
-            books_url = books_url_match.group(1)
-            momo_url = momo_url_match.group(1)
-
-            return title, description, date, slug, books_url, momo_url
-    except Exception as e:
-        print(f"Error extracting information from markdown file {file_path}: {e}")
-        raise
-
-
-def sanitize_title(title):
-    match = re.search(r'《(.*?)》', title)
-    return match.group(1) if match else title
-
-
-def find_existing_image_number(content, sanitized_title):
-    match_table = re.search(r'\[!\[%s\]\(img_(\d+)\.png\)' % re.escape(sanitized_title), content)
-    match_links = re.search(r'- title: .*%s.*\n.*image: img_(\d+)\.png' % re.escape(sanitized_title), content)
-
-    if match_table:
-        return int(match_table.group(1))
-    elif match_links:
-        return int(match_links.group(1))
-    return None
-
-
-def check_duplicate_entry(content, title, description, date):
-    sanitized_title = sanitize_title(title)
-    sanitized_title_with_brackets = f'《{sanitized_title}》'
-    new_description = f"{date} | {description}"
-
-    links = parse_links_section(content)
-    for link in links:
-        if link[0] == sanitized_title_with_brackets and link[1] == new_description:
-            return True
-    return False
-
-
-def update_table_section(content, title, description, date, slug, books_url, momo_url, image_number):
-    try:
-        lines = content.split('\n')
-        sanitized_title = sanitize_title(title)
-        sanitized_title_with_brackets = f'《{sanitized_title}》'
-
-        table_start = None
-        table_end = None
-        for i, line in enumerate(lines):
-            if line.startswith('|閱讀書單|購書連結🌐<br/>推薦評等⭐|'):
-                table_start = i
-            if table_start is not None and line.startswith('|-|-|'):
-                table_end = i + 1
-                break
-
-        if table_start is not None and table_end is not None:
-            table_lines = lines[table_start:table_end]
-            new_table_row = f'| [![{sanitized_title_with_brackets}](img_{image_number}.png)]({momo_url}) | ⭐⭐⭐<br/> [![books_buy.jpg](books_buy.jpg)]({books_url})<br/> [![momobooks_buy.jpg](momobooks_buy.jpg)]({momo_url}) |'
-            table_lines.append(new_table_row)
-            updated_content = '\n'.join(lines[:table_start] + table_lines + lines[table_end:])
-            print("Table section updated successfully.")
-        else:
-            print("No table section found in the file.")
-            updated_content = content
-
-        return updated_content
-    except Exception as e:
-        print(f"Error updating table section: {e}")
-        raise
-
-
-def update_reading_list(content, title, description, date, slug, image_number):
-    try:
-        links = parse_links_section(content)
-        sanitized_title = sanitize_title(title)
-        sanitized_title_with_brackets = f'《{sanitized_title}》'
-
+    def add_reading_list_entry(self, content, title, description, date, slug, image_number, links):
+        sanitized_title_with_brackets = f'《{self.sanitize_title(title)}》'
         new_entry = {
             "title": sanitized_title_with_brackets,
             "description": f"{date} | {description}",
-            "website": f"https://lazytoberich.com.tw/p/{slug}/",
+            "website": f"/p/{slug}/",
             "image": f"img_{image_number}.png"
         }
-
         links.append((new_entry["title"], new_entry["description"], new_entry["website"], new_entry["image"]))
         links.sort(key=lambda x: datetime.strptime(x[1].split(' | ')[0], '%Y-%m-%d'), reverse=True)
 
@@ -149,51 +87,70 @@ def update_reading_list(content, title, description, date, slug, image_number):
         updated_content = re.sub(
             r'(links:\s*\n)(.*?)(?=\nmenu:)', rf'\1{updated_links_yaml}\n', content, flags=re.DOTALL
         )
-
         return updated_content
-    except Exception as e:
-        print(f"Error updating reading list: {e}")
-        raise
+
+    # --- 處理表格區塊 ---
+    def check_duplicate_table_section(self, table_lines, title, momo_url, books_url):
+        """檢查表格中是否已存在相同條目，若不一致則更新，並返回原有圖片編號。"""
+        sanitized_title_with_brackets = f'《{self.sanitize_title(title)}》'
+        for i, line in enumerate(table_lines):
+            if sanitized_title_with_brackets in line:
+                existing_image_match = re.search(r'img_(\d+)\.png', line)
+                existing_image_number = existing_image_match.group(1) if existing_image_match else None
+
+                if not existing_image_match or f'[![{sanitized_title_with_brackets}](img_{existing_image_number}.png)]({momo_url})' not in line:
+                    new_table_row = f'| [![{sanitized_title_with_brackets}](img_{existing_image_number}.png)]({momo_url}) | <br/>✅推薦評等<br/>⭐⭐⭐<br/><br/> [![books_buy.jpg](books_buy.jpg)]({books_url})<br/> [![momobooks_buy.jpg](momobooks_buy.jpg)]({momo_url}) |'
+                    table_lines[i] = new_table_row
+
+                return True, existing_image_number
+
+        return False, None
+
+    def add_table_section_entry(self, content, title, momo_url, books_url, image_number):
+        """添加新的表格條目。"""
+        lines = content.split('\n')
+        table_start_index = next((i for i, line in enumerate(lines) if line.startswith('| 閱讀書單 |')), None)
+        table_end_index = next((i for i, line in enumerate(lines) if line.startswith('##### 聯盟行銷聲明')), None)
+        if table_start_index is None or table_end_index is None:
+            raise ValueError("Table section not found in reading_list.md")
+
+        table_lines = lines[table_start_index:table_end_index]
+        new_table_row = f'| [![《{self.sanitize_title(title)}》](img_{image_number}.png)]({momo_url}) | <br/>✅推薦評等<br/>⭐⭐⭐<br/><br/> [![books_buy.jpg](books_buy.jpg)]({books_url})<br/> [![momobooks_buy.jpg](momobooks_buy.jpg)]({momo_url}) |'
+        table_lines.insert(2, new_table_row)
+        updated_lines = lines[:table_start_index] + table_lines + lines[table_end_index:]
+        return '\n'.join(updated_lines)
 
 
-def parse_links_section(content):
-    links_match = re.search(r'links:\s*(\n\s*-\s*title:.*?)(?=\nmenu:)', content, re.DOTALL)
-    if links_match:
-        links_yaml = links_match.group(1)
-        links = re.findall(r'-\s*title:\s*(.*?)\n\s*description:\s*(.*?)\n\s*website:\s*(.*?)\n\s*image:\s*(.*?)\n',
-                           links_yaml, re.DOTALL)
-        return links
-    return []
+    def update(self):
+        """更新 reading_list.md 檔案。"""
+        try:
+            info = self.extract_info_from_md()
+            content = self.read_file(self.reading_list_file)
+            links = self.parse_links_section(content)
+
+            if not self.check_duplicate_reading_list_entry(links, info['title'], info['description'], info['date'], info['slug']):
+                image_number = self.get_image_number(content)
+                content = self.add_reading_list_entry(content, info['title'], info['description'], info['date'], info['slug'], image_number, links)
+
+            lines = content.split('\n')
+            table_start_index = next((i for i, line in enumerate(lines) if line.startswith('| 閱讀書單 |')), None)
+            table_end_index = next((i for i, line in enumerate(lines) if line.startswith('##### 聯盟行銷聲明')), None)
+            is_duplicate, existing_image_number = self.check_duplicate_table_section(
+                lines[table_start_index:table_end_index], info['title'], info['momo_url'], info['books_url']
+            )
+
+            if not is_duplicate:
+                image_number = existing_image_number if existing_image_number else image_number
+                content = self.add_table_section_entry(content, info['title'], info['momo_url'], info['books_url'], image_number)
+
+            self.write_file(self.reading_list_file, content)
+            print(f"Reading list '{self.reading_list_file}' updated successfully.")
+        except Exception as e:
+            print(f"Error updating reading list: {e}")
 
 
-def update_reading_list_index(latest_md_file, reading_list_file):
-    try:
-        title, description, date, slug, books_url, momo_url = extract_info_from_md(latest_md_file)
-
-        content = read_file(reading_list_file)
-
-        # 檢查是否存在重複條目
-        if check_duplicate_entry(content, title, description, date):
-            print("Duplicate entry found. Skipping update.")
-            return
-
-        sanitized_title = sanitize_title(title)
-
-        # 查找是否已存在相同書名的圖片編號
-        existing_image_number = find_existing_image_number(content, sanitized_title)
-        if existing_image_number is not None:
-            image_number = existing_image_number
-        else:
-            images = re.findall(r'img_(\d+)\.png', content)
-            if images:
-                image_number = max(map(int, images)) + 1
-            else:
-                image_number = 1
-
-        updated_content = update_table_section(content, title, description, date, slug, books_url, momo_url,
-                                               image_number)
-        updated_content = update_reading_list(updated_content, title, description, date, slug, image_number)
-        write_file(reading_list_file, updated_content)
-    except Exception as e:
-        print(f"Error in update_reading_list_index function: {e}")
-        raise
+# if __name__ == "__main__":
+#     updater = ReadingListUpdater(
+#         r"G:\marskingx.github.io\content\post\2023-10-28【嗑書】想學會怎麼進步，就要學會進步的方法《商業書10倍高效》\index.md",
+#         r"G:\marskingx.github.io\content\page\reading_list\index.md")
+#     updater.update()

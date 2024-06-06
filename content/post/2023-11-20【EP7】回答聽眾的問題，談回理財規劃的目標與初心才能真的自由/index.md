@@ -1,6 +1,6 @@
 ---
 title: 【EP7】回答聽眾的問題，談回理財規劃的目標與初心才能真的自由。
-description: 這集《懶得變有錢》Podcast是一個深入探討財務規劃的長篇集數。本集特點包括回答聽眾的財務問題、介紹財務規劃的九個步驟，並深入討論財務自由的可能性。節目亦提供相關文章連結，包括對《跟錢好好相處》一書的讀後感，及關於麥當勞和星巴克消費策略的建議。此外，還鼓勵聽眾給予五星評論和留言，以豐富節目內容。詳細資訊可於節目的網站和社交媒體頁面找到。
+description: 這集《懶得變有錢》Podcast是一個深入探討財務規劃的長篇集數。本集特點包括回答聽眾的財務問題、介紹財務規劃的九個步驟，並深入討論財務自由的可能性。節目亦提供相關文章連結，包括對《跟錢好好相處》一書的讀書心得，及關於麥當勞和星巴克消費策略的建議。此外，還鼓勵聽眾給予五星評論和留言，以豐富節目內容。詳細資訊可於節目的網站和社交媒體頁面找到。
 date: 2023-11-20
 image: cover.png
 categories: [Podcast聊聊看]
@@ -24,7 +24,7 @@ slug: 【EP7】-answering-listener-questions-financial-planning-goals-and-true-f
 
 節目中的相關文章連結：
 
-[【嗑書】跟錢好好相處》讀後感](https://lazytoberich.com.tw/p/read-booksafter-being-in-the-workforce-for-a-while-we-all-need-to-get-along-with-money-again./)
+[【嗑書】跟錢好好相處》讀書心得](https://lazytoberich.com.tw/p/read-booksafter-being-in-the-workforce-for-a-while-we-all-need-to-get-along-with-money-again./)
 
 [【生活】麥當勞買一送一可以，星巴克要小心](https://lazytoberich.com.tw/p/income-and-expensesmcdonalds-buy-one-get-one-free-is-available-be-careful-with-starbucks./)
 

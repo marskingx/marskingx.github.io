@@ -1,5 +1,5 @@
 ---
-title: 【嗑書】會說故事讓世界聽你的
+title: 【嗑書】《會說故事讓世界聽你的》讀書心得
 description: 故事是王，沒有故事就沒有王國。故事能讓人們記住你的品牌，而沒有故事則容易被遺忘。故事是最好的武器，在記憶的爭奪戰中能吸引人們的注意力。故事可以是商品的核心，它能創造利潤並成為企業的救命繩。故事來自於人，講故事就是在閱讀人生。要擁有故事，就要關心人，保持謙卑和警醒。故事是最好的武器，它能改變世界。創造不一樣的觀點，讓世界被你改變。故事要有概念、idea和素材，讓人想跟著你走進去。創造讓人有感覺的故事，滿足心理需求。先催眠自己，才能催眠別人。要有自律才能自由。創意的房間很大，要相信自己的想法。運動可以幫助提案，強壯的身體支撐強壯的腦袋。停止抱怨，有空出來的腦袋才能改變世界。故事是人說的，所以要先活得像個人，才能說出人話。
 date: 2023-11-08
 image: cover.png
@@ -7,10 +7,10 @@ categories: [天天都讀書]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資, 投資理財, 支出, 收入, 理財, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 tags: [行銷/市場]
 Status: 已發佈
-slug: 【Ke Book】Tell stories and let the world hear you.
+slug: book-can-tell-the-story-that-let-the-world-listen-to-you-reading-experience
+---
 ---
 ![懶得多讀書](cover.png)
-[![蝦皮購書最低價(含二手書)](shopee.png)](https://shope.ee/99xfvNmoZn) [![博客來購書](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010930654?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
 
 ## 我們都要成為一個懂得說故事的人
 ### 讀故事說學說故事
@@ -145,6 +145,12 @@ idea用來描繪我們想要證明的主張，它讓無聊變有聊。
 
 ![懶得多讀書](lazytoreadingmorebooks.svg)
 
-[![蝦皮購書最低價(含二手書)](shopee.png)](https://shope.ee/99xfvNmoZn)
+## 購書連結
+[![博客來買《會說故事，讓世界聽你的：說一個動人故事，勝過跳針長篇大論!》](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010632833?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202406)]
 
-[![博客來購書](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010930654?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
+
+## 更多我的書單
+
+[![查看書單](Lazy_to_be_studious.png)]((https://lazytoberich.com.tw/reading-list/))
+
+[查看書單](https://lazytoberich.com.tw/reading-list/)

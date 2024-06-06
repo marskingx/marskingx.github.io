@@ -1,5 +1,5 @@
 ---
-title: 【嗑書】《第一次領薪水就該懂的理財方法》讀後感
+title: 【嗑書】《第一次領薪水就該懂的理財方法》讀書心得
 description: 這本書介紹了作者在中年時意識到薪水無法致富，並學習投資和財務管理的理財方法。作者提到了建立預算、存錢、投資和設立財務目標的重要性。他還分享了15年的投資經驗和提供了免費的Excel試算表。總結來說，這本書提供了實用的理財建議，幫助讀者在財務上更加穩健。
 date: 2023-09-16
 image: cover.png
@@ -7,8 +7,9 @@ categories: [天天都讀書]
 keywords: [ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資理財, 支出, 收入, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流]
 tags: [商業/財經]
 Status: 草稿
-slug: 【Book Review】Revisiting an Old Book "Financial Management Methods You Should Know When Receiving Your First Paycheck"
+slug: book-of-books-financial-methods-that-you-should-understand-for-the-first-time-you-receive-salary-reading-experience
 ---
+
 
 這本書算是我出社會的第一本理財書，十多年過去了，我還是覺得這是一本好書，作者勤奮工作，卻在中年覺悟，想致富不能靠薪水，因此痛下決心要學好投資與財務管理，他發展出一套結合財務知識與EXCEL試算表來檢驗報酬率的理財方法，並提早達到財務自由的目標。
 
@@ -18,7 +19,7 @@ slug: 【Book Review】Revisiting an Old Book "Financial Management Methods You 
 
 ![第一次領薪水就該懂的理財方法](img.png)
 
-# **六個心得懶得講**
+---
 
 ## **噢，薪水，去死吧**
 
@@ -69,3 +70,14 @@ slug: 【Book Review】Revisiting an Old Book "Financial Management Methods You 
 👉[透過更多地方收聽「懶得變有錢」Podcas](https://solink.soundon.fm/lazytoberich)
 
 <iframe id="embedPlayer" src="https://embed.podcasts.apple.com/us/podcast/%E6%87%B6%E5%BE%97%E8%AE%8A%E6%9C%89%E9%8C%A2/id1707756115?itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto" height="450px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
+
+
+## 購書連結
+[![博客來買《第一次領薪水就該懂的理財方法【熱銷再版】》](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/E050028578?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202406)
+
+[![推薦到momo買《第一次領薪水就該懂的理財方法【熱銷再版】》](momobooks.png)](https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9251909&Area=search&oid=1_1&cid=index&kw=%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%A0%98%E8%96%AA%E6%B0%B4%E5%B0%B1%E8%A9%B2%E6%87%82%E7%9A%84%E7%90%86%E8%B2%A1%E6%96%B9%E6%B3%95&memid=6000021729&cid=apuad&oid=1&osm=league)
+## 更多我的書單
+
+[![查看書單](Lazy_to_be_studious.png)]((https://lazytoberich.com.tw/reading-list/))
+
+[查看書單](https://lazytoberich.com.tw/reading-list/)

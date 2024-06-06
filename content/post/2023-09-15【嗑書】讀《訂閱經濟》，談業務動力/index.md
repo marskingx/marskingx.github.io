@@ -1,5 +1,5 @@
 ---
-title: 【嗑書】《訂閱經濟》讀後感
+title: 【嗑書】《訂閱經濟》讀書心得
 description: 這篇文章談到了訂閱經濟對於保險業務的影響。傳統的保險業務需要打破框架，提供全新的服務，因為客戶需要的不再只是保單，而是一個訂閱式的服務。文章強調了建立信任和提供升級服務的重要性，並提出了利用訂閱經濟的銷售策略，如降低流失率、向上銷售和交叉銷售等。最後，文章呼籲業務員不要只關注保單的銷售，而是讓客戶感覺像是訂閱服務，並提供不斷更新的價值。
 date: 2023-09-15
 image: cover.png
@@ -7,8 +7,9 @@ categories: [天天都讀書]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資, 投資理財, 支出, 收入, 理財, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 tags: [商務/趨勢]
 Status: 已發佈
-slug: 【Book Review】Reading "Subscription Economy", Discussing Business Motivation
+slug: book-subscribe-to-economy-reading-experience
 ---
+
 講到訂閱不外乎會提到[Netflix](https://www.netflix.com)、[Spotfy]((https://www.spotify.com))、AppleTV/Music…等等，但身為業務的你卻極需要打破傳統的業務框架，重新找回你全新的業務動力，因為你的客戶需要的不再是一份冰冷的保單，而是一個全新的服務。
 
 [![想買書點我](cover.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010819588?gclid=Cj0KCQiAzMGNBhCyARIsANpUkzP4Ncdzk-ld6lobHllWzKE3zzbwGqdq8TYjSCUjJACuX7ntQ7bqj5saAuPVEALw_wcB&utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202112&source=post_page-----6759ecb8077e--------------------------------)
@@ -88,3 +89,12 @@ slug: 【Book Review】Reading "Subscription Economy", Discussing Business Motiv
 
 
 ## 👉[透過更多地方收聽「懶得變有錢」Podcast](https://solink.soundon.fm/lazytoberich)
+
+[![博客來買《訂閱經濟：一場商業模式的全新變革》](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010900225?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202406)
+
+[![推薦到momo買《訂閱經濟：一場商業模式的全新變革》](momobooks.png)](https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=8614079&Area=search&oid=1_1&cid=index&kw=%E8%A8%82%E9%96%B1%E7%B6%93%E6%BF%9F&memid=6000021729&cid=apuad&oid=1&osm=league)
+
+## 更多我的書單
+![查看我的書單](Lazy_to_be_studious.png)
+
+[更多我的書單](https://lazytoberich.com.tw/reading-list/)

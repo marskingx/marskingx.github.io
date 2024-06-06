@@ -1,12 +1,15 @@
 ---
-title: 【嗑書】《持續買進》讀後感
+title: 【嗑書】《持續買進》讀書心得
 description: 在《持續買進》這本書中，作者提出了窮人應該專注於儲蓄，而富人則應該集中精力於投資的觀點。理解自己的財務階段，投資於自我提升，經營未來如同經營業務，以及長期視角都是重要的財務規劃原則。這本書不僅是一本關於金錢管理的書籍，更是一本關於如何智慧地生活，建立堅實財務基礎的指南。
 date: 2024-04-07
 image: cover.png
 categories: [天天都讀書]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資, 投資理財, 支出, 收入, 理財, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 status: 已發佈
-slug: Book Review Continuous Buying Reflections
+slug: book-continuous-buy-reading-experience
+---
+---
+---
 ---
 
 ## **從儲蓄到投資：掌握財務規劃的藝術**
@@ -38,18 +41,12 @@ slug: Book Review Continuous Buying Reflections
 {{< /quote >}}
 
 ![Lazy to be studious.svg](Lazy_to_be_studious.svg)
-
 ## 購書連結
+[[![博客來買《持續買進：資料科學家的投資終極解答，存錢及致富的實證方法》](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010957881?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202406)]((https://www.books.com.tw/exep/assp.php/shamangels/products/0010950295?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202405))
 
-![博客來買書](books.jpg)
-
-
-
-![momo買書(推薦)](momobooks.jpg)
-
-
+[![推薦到momo買《持續買進：資料科學家的投資終極解答，存錢及致富的實證方法》](momobooks.png)](https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11398962&Area=search&oid=1_1&cid=index&kw=%E6%8C%81%E7%BA%8C%E8%B2%B7%E9%80%B2&memid=6000021729&cid=apuad&oid=1&osm=league)
 ## 更多我的書單
 
-![Lazy_to_be_studious.png](Lazy_to_be_studious.png)
+[![查看書單](Lazy_to_be_studious.png)]((https://lazytoberich.com.tw/reading-list/))
 
 [查看書單](https://lazytoberich.com.tw/reading-list/)

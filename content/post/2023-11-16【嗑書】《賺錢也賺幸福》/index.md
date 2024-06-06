@@ -1,5 +1,5 @@
 ---
-title: 【嗑書】賺錢也賺幸福
+title: 【嗑書】《賺錢也賺幸福》讀書心得
 description: 這篇《賺錢也賺幸福》的讀書心得，提供了實用的財富管理和生活享受建議。內容涵蓋從賺錢、存錢、投資到享受生活的四個關鍵步驟。書中透過真實故事和專家見解，揭示了錢和幸福之間的關係，強調金錢確實可以帶來快樂。書中還介紹了如何有效管理時間、創建個人財務計劃，並提供了實際的財務規劃工具，如72法則和80/20法則。作者還探討了人生的大石頭理論，鼓勵讀者專注於最重要的事情。此外，書中還涉及如何避免財務騙局，以及如何保持財務自由和身心活躍。這本書是為那些尋求財務自由和更豐富生活的讀者而寫的。
 date: 2023-11-16
 image: cover.png
@@ -7,7 +7,9 @@ categories: [天天都讀書]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資, 投資理財, 支出, 收入, 理財, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 tags: [商業/財經,心理/勵志]
 Status: 已發佈
-slug: 【Reading List】The Millionaire in You Ten Things You Need to Do Now to Have Money and Time to Enjoy It
+slug: book-of-books-make-money-and-earn-happiness-reading-experience
+---
+---
 ---
 ## **懶得變有錢情提要**
 ![《賺錢也賺幸福》](cover.png)
@@ -20,8 +22,6 @@ slug: 【Reading List】The Millionaire in You Ten Things You Need to Do Now to 
 然後直接買一本書給自己讀。
 
 ![賺錢也賺幸福](img.png)
-[![蝦皮商城最低價(含二手書)](shopee.png)](https://shope.ee/B3DnSdhg9)
-[![博客來購書](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010848180?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
 
 ## 為你的人生和財富定位座標
 
@@ -477,13 +477,12 @@ HNW數位公司的報告，***全美國最有錢的八百六十萬人中，有�
 
 
 ---
-
-[![查看更多書單](Lazy_to_be_studious.svg)](https://lazytoberich.com.tw/reading-list/)
-
 ## 購書連結
+[![博客來買《賺錢，也賺幸福(修訂版)：讓你累積財富、享受人生的理財魔法書》](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010991526?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202406)
 
-[![蝦皮商城最低價(含二手書)](shopee.png)](https://shope.ee/B3DnSdhg9)
-[![博客來購書](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010848180?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
+[![推薦到momo買《賺錢，也賺幸福(修訂版)：讓你累積財富、享受人生的理財魔法書》](momobooks.png)](https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=12903375&Area=search&oid=1_3&cid=index&kw=%E8%B3%BA%E9%8C%A2%E4%B9%9F%E8%B3%BA%E5%B9%B8%E7%A6%8F&memid=6000021729&cid=apuad&oid=1&osm=league)
+## 更多我的書單
 
+[![查看書單](Lazy_to_be_studious.png)]((https://lazytoberich.com.tw/reading-list/))
 
-## 👉　[更多我的書單 不一定跟理財有關](https://lazytoberich.com.tw/reading-list/)
+[查看書單](https://lazytoberich.com.tw/reading-list/)

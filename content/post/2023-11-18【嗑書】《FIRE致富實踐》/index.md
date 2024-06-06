@@ -1,12 +1,13 @@
 ---
-title: 【嗑書】《FIRE致富實踐》讀後感
+title: 【嗑書】《FIRE致富實踐》讀書心得
 description: 完讀《FIRE致富實踐》通常我的心得也會是我的筆記，但筆記會是我自己反芻的內容，所以如果覺得內文太長你有以下幾個選擇：1. 選擇看有標記、粗體、表格的上下文2. 快速的看完段落。3. 直接看結論。然後直接買一本書給自己讀。
 date: 2023-11-18
 image: cover.jpg
 categories: [天天都讀書]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資, 投資理財, 支出, 收入, 理財, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 tags: [商業/財經]
-slug: 【Book Review】Choose FI:Your Blueprint to Financial Independence
+slug: book-fire-to-get-rich-reading-experience
+
 ---
 ![《FIRE致富實踐》](img.png)
 
@@ -151,13 +152,11 @@ slug: 【Book Review】Choose FI:Your Blueprint to Financial Independence
 ![Lazy_to_be_studious.svg](Lazy_to_be_studious.svg)
 
 ## 購書連結
-![《FIRE致富實踐》](img.png)
+[[![博客來買《FIRE.致富實踐： 全美破千萬收聽的理財人氣podcast「ChooseFI」實體化，完整傳授財務自由的關鍵心法【暢銷紀念版】》](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010938897?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202406)]((https://www.books.com.tw/exep/assp.php/shamangels/products/0010950295?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202405))
 
-[![《FIRE致富實踐》](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010938897?sloc=main&utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202404)
-
-[博客來購書](https://www.books.com.tw/exep/assp.php/shamangels/products/0010938897?sloc=main&utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202404)
-
+[![推薦到momo買《FIRE.致富實踐： 全美破千萬收聽的理財人氣podcast「ChooseFI」實體化，完整傳授財務自由的關鍵心法【暢銷紀念版】》](momobooks.png)](https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=10646848&Area=search&oid=1_2&cid=index&kw=FIRE%E8%87%B4%E5%AF%8C%E5%AF%A6%E8%B8%90&memid=6000021729&cid=apuad&oid=1&osm=league)
 ## 更多我的書單
-[![查看書單](Lazy_to_be_studious.png)](https://lazytoberich.com.tw/reading-list/)
+
+[![查看書單](Lazy_to_be_studious.png)]((https://lazytoberich.com.tw/reading-list/))
 
 [查看書單](https://lazytoberich.com.tw/reading-list/)

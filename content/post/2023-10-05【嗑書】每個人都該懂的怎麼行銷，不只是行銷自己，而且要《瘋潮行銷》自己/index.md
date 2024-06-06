@@ -1,5 +1,5 @@
 ---
-title: 【嗑書】《瘋潮行銷》讀後感
+title: 【嗑書】《瘋潮行銷》讀書心得
 categories: [天天都讀書]
 description: STEPPS，六個步驟要創造出可以被瘋傳的行銷方法，這裡讀完跟大家簡單分享，我不是一個單純的理財部落客，什麼書我都會讀，讀完了分享出來如果對你有幫助，也希望你可以給我一些回饋。
 image: cover.png
@@ -8,11 +8,12 @@ tags: [商務/趨勢]
 date: 2023-10-05
 Status: 已發佈
 Score /5: ⭐️⭐️⭐️⭐️⭐️
-slug: 【Marketing Knowledge】Everyone should know how to market, not just market themselves, but also "go crazy" marketing themselves.
+slug: book-crazy-marketing-reading-experience
 ---
+
+
 ![懶得多讀書](cover.png)
 
-[![蝦皮購書最低價(含二手書)](shopee.png)](https://shope.ee/qIY1fn0q7) [![博客來購書](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
 ### 瘋潮行銷
 ![瘋潮行銷](img.png)
 
@@ -62,4 +63,12 @@ slug: 【Marketing Knowledge】Everyone should know how to market, not just mark
 
 ![懶得多讀書](lazytoreadingmorebooks.svg)
 
-[![蝦皮購書最低價(含二手書)](shopee.png)](https://shope.ee/qIY1fn0q7) [![博客來購書](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
+## 購書連結
+[![博客來買《引領瘋潮：七大策略，讓新觀念、新行為、新產品都能創造大流行》](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010916439?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202406)
+
+[![推薦到momo買《引領瘋潮：七大策略，讓新觀念、新行為、新產品都能創造大流行》](momobooks.png)](https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=8948985&Area=search&oid=1_1&cid=index&kw=%E7%98%8B%E6%BD%AE%E8%A1%8C%E9%8A%B7&memid=6000021729&cid=apuad&oid=1&osm=league)
+## 更多我的書單
+
+[![查看書單](Lazy_to_be_studious.png)]((https://lazytoberich.com.tw/reading-list/))
+
+[查看書單](https://lazytoberich.com.tw/reading-list/)

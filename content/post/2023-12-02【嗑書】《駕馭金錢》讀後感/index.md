@@ -1,15 +1,17 @@
 ---
-title: 【嗑書】《駕馭金錢》讀後感
+title: 【嗑書】《駕馭金錢》讀書心得
 description: 這篇讀書心得深入探討了金錢觀如何塑造個人的財富路徑，透過比較貧窮與富裕的金錢觀念，作者揭示了思維方式對於財務狀況的深遠影響。文章進一步討論了避免四大行為障礙—責備、抱怨、防衛和找藉口，這些都是追求財富時的主要阻礙。透過實用的財富創造公式和行動指南，讀者被引導思考如何透過實現個人願景、價值觀和關鍵成果領域來有效創造和管理財富。此外，文章也提供了具體的練習和策略，幫助讀者學習如何將金錢有效利用，實現財務自由和生活的最大價值。
 date: 2023-12-02
 image: cover.png
 categories: [天天都讀書]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資, 投資理財, 支出, 收入, 理財, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 tags: [商業/財經]
-slug: 【Book Review】 Mastering Money
 Status: 已發佈
+slug: book-of-books-management-of-money-reading-experience
 ---
-![文末置底有購書連結](img.png)
+
+---
+![文末置底有購書連結](img_10.png)
 
 ## 金錢觀就決定了你的錢
 
@@ -105,13 +107,11 @@ VVKIK從抽象到落實的循環
 
 
 ## 購書連結
+[![博客來買《駕馭金錢：借力使力，創造財務自由，讓財富與人生價值最大化》](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010823445?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202406)
 
-[![駕馭金錢：借力使力，創造財務自由，讓財富與人生價值最大化](img.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010823445?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202404)
-
-[![博客來購書](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010823445?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202404)
-
-
+[![推薦到momo買《駕馭金錢：借力使力，創造財務自由，讓財富與人生價值最大化》](momobooks.png)](https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=12360259&Area=search&oid=1_1&cid=index&kw=%E9%A7%95%E9%A6%AD%E9%87%91%E9%8C%A2&memid=6000021729&cid=apuad&oid=1&osm=league)
 ## 更多我的書單
-![查看我的書單](Lazy_to_be_studious.png)
 
-[更多我的書單](https://lazytoberich.com.tw/reading-list/)
+[![查看書單](Lazy_to_be_studious.png)]((https://lazytoberich.com.tw/reading-list/))
+
+[查看書單](https://lazytoberich.com.tw/reading-list/)

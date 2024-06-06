@@ -25,8 +25,8 @@ def is_content_formatted(content):
     # 檢查 `status` 是否已經是 `已發佈`
     if 'status: 已發佈' not in content:
         return False
-    # 檢查 `Slug` 是否在其後包含 `---`
-    if not re.search(r'Slug: .*\n---', content):
+    # 檢查 `slug` 是否在其後包含 `---`
+    if not re.search(r'slug: .*\n---', content):
         return False
     return True
 
@@ -44,8 +44,8 @@ def process_md_content(content):
     content = re.sub(r'tags: (.*)', r'tags: [\1]', content)
     # status 改為已發佈
     content = re.sub(r'status: 草稿', 'status: 已發佈', content)
-    # Slug 內容之後換行並加入 ---
-    content = re.sub(r'(Slug: .*)', r'\1\n---', content)
+    # slug 內容之後換行並加入 ---
+    content = re.sub(r'(slug: .*)', r'\1\n---', content)
     # 移除所有特定代碼塊標記並保留內容
     content = re.sub(r'```jsx\n(.*?)\n```', r'\1', content, flags=re.DOTALL)
     # 修正圖片路徑

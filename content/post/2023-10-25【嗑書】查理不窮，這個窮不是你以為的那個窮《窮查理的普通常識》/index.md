@@ -1,5 +1,5 @@
 ---
-title: 【嗑書】《窮查理的普通常識》讀後感
+title: 【嗑書】《窮查理的普通常識》讀書心得
 Date Created: October 23, 2023 3:52 PM
 Status: Notion
 categories: [天天都讀書]
@@ -7,14 +7,11 @@ date: 2023-10-25
 description: 這篇文章是關於《窮查理的普通常識》的摘要，提到了蒙格的投資原則和能力圈理論。文章強調了接受複雜事實、建立自己的決策模式、獨立思考能力以及投資原則的重要性。此外，還提到了謙虛、耐心、準備和改變等方面的建議。最後，文章分享了一些關於懶得變有錢的觀察和心得。
 image: cover.png
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資, 投資理財, 支出, 收入, 月配息, 理財, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
-slug: 【Book Recommendation】Poor Charlie's Almanack:The Wit and Wisdom of Charles T. Munger" This book is truly not about poverty!
+slug: book-of-books-general-common-sense-of-poor-charlie-reading-experience
 tags: [商業/財經]
+
 ---
 ![懶得多讀書](cover.png)
-
-[![蝦皮購書最低價(含二手書)](shopee.png)](https://shope.ee/5KkxLWhwIK) [![博客來購書](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
-
-
 ## 蒙格主義
 
 ![窮查理的普通常識](img.png)
@@ -144,4 +141,13 @@ tags: [商業/財經]
 <iframe id="embedPlayer" src="https://embed.podcasts.apple.com/us/podcast/%E6%87%B6%E5%BE%97%E8%AE%8A%E6%9C%89%E9%8C%A2/id1707756115?itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto" height="450px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
 
 ![懶得多讀書](lazytoreadingmorebooks.svg)
-[![蝦皮購書最低價(含二手書)](shopee.png)](https://shope.ee/5KkxLWhwIK) [![博客來購書](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010817729?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202311)
+
+## 購書連結
+[![博客來買《窮查理的普通常識(博客來獨家燙金硬殼精裝版)：巴菲特50年智慧合夥人查理.蒙格人生哲學》](books.png)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010987406?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202406)
+
+[![推薦到momo買《窮查理的普通常識(博客來獨家燙金硬殼精裝版)：巴菲特50年智慧合夥人查理.蒙格人生哲學》](momobooks.png)](https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=12757978&Area=search&oid=1_1&cid=index&kw=%E7%AA%AE%E6%9F%A5%E7%90%86%E7%9A%84%E6%99%AE%E9%80%9A%E5%B8%B8%E8%AD%98&memid=6000021729&cid=apuad&oid=1&osm=league)
+## 更多我的書單
+
+[![查看書單](Lazy_to_be_studious.png)]((https://lazytoberich.com.tw/reading-list/))
+
+[查看書單](https://lazytoberich.com.tw/reading-list/)

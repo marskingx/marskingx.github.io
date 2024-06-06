@@ -8,7 +8,7 @@ tags: [生活]
 keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資, 投資理財, 支出, 收入, 理財, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
 status: 已發佈
 Release: 2024-05-25
-Slug: 【Life】To become better, usually requires going through a period of hardship.
+slug: 【Life】To become better, usually requires going through a period of hardship.
 ---
 上次我提到，由於最近處於工作上的挑戰期，我無法全面更新我的平台（除了Facebook和Threads之外）。這個挑戰期並不代表工作的低谷，而是為了未來更高期待的轉換。就像股票市場，每個人都有周期性的循環，不會一直好，也不會一直壞。我們通常都是為了追求更好而調整自己。在這期間，最需要的就是堅持習慣和快速適應。
 
