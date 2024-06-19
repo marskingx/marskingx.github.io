@@ -1,76 +1,15 @@
-toggleMenu:
-    other: 切換選單
-
-darkMode:
-    other: dark / light
-
-list:
-    page:
-        one: "分類共 {{ .Count }} 篇"
-        other: "分類共 {{ .Count }} 篇"
-
-    section:
-        other: 段落
-
-    subsection:
-        one: 小節
-        other: 小節
-
-article:
-    back:
-        other: 返回
-
-    tableOfContents:
-        other: 目錄
-
-    relatedContent:
-        other: 相關文章
-
-    lastUpdatedOn:
-        other: 最後更新
-
-    readingTime:
-        one: "閱讀時間: {{ .Count }} 分鐘"
-        other: "閱讀時間: {{ .Count }} 分鐘"
-
-readingTime: "閱讀時間: {{ $readingTime }} 分鐘"
-
-
-notFound:
-    title:
-        other: 404 錯誤
-
-    subtitle:
-        other: 頁面不存在
-
-widget:
-    archives:
-        title:
-            other: 歷史記錄
-
-        more:
-            other: 更多
-
-    tagCloud:
-        title:
-            other: 內容標籤
-    categoriesCloud:
-        title:
-            other: 文章分類
-
-search:
-    title:
-        other: 搜尋
-
-    placeholder:
-        other: 輸入關鍵字...
-
-    resultTitle:
-        other: "#PAGES_COUNT 個結果 （用時 #TIME_SECONDS 秒）"
-
-footer:
-    builtWith:
-        other: Built with {{ .Generator }}
-
-    designedBy:
-        other: Theme {{ .Theme }} designed by {{ .DesignedBy }}
+home: 首頁
+read_more: 閱讀更多
+send: Send
+related_posts: 相關文章
+categories: 文章分類
+tags: 標籤
+fallow: 追蹤
+toc: Table of Contents
+share: Share
+search_input_placeholder: Search Post...
+search_no_results: No results for
+search_initial_message: Type something to search..
+search_navigate: to navigate
+search_select: to select
+search_close: to close

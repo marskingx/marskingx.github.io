@@ -1,95 +1,57 @@
-/*
-    You can add your own custom styles here.
-*/
-
-/* 為 dark mode 定義 .styled-text 和 .discord-invite 的樣式 */
-
-:root[data-scheme="dark"] .styled-text, :root[data-scheme="dark"] .discord-invite {
-    font-weight: bold;
-    color: #DF961A;  /* 這裡使用了您提供的 dark mode 顏色 */
+// Add your own custom styles here
+/* 將表格和表格內的文字水平和垂直置中 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
 }
 
-:root[data-scheme="dark"] .discord-invite {
-    font-size: 1.2em;
-    /* 如果您希望在 dark mode 中有其他特定的樣式，您可以在這裡加入 */
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center; /* 水平置中 */
+  vertical-align: middle; /* 垂直置中 */
 }
 
-/* 為 light mode 定義 .styled-text 和 .discord-invite 的樣式 */
-
-:root[data-scheme="light"] .styled-text, :root[data-scheme="light"] .discord-invite {
-    font-weight: bold;
-    color: #257985;
-}
-:root[data-scheme="light"] .discord-invite {
-    font-size: 1.2em;
-
+table th {
+  font-size: 16px; /* 調整表格標題的字體大小 */
+  font-weight: bold;
 }
 
-/* 為 dark/light mode 定義超連結的樣式 */
-
-:root[data-scheme=dark] .link{
-    --body-background: #303030;
-    --accent-color: #DF961A;
-    --accent-color-darker: #257985;
-    --accent-color-text: #000;
-    --body-text-color: rgba(255, 255, 255, 0.7);
-    --scrollbar-thumb: hsl(0, 0%, 40%);
-    --scrollbar-track: var(--body-background);
-        font-weight: bold;
-
+/* 自定義表格樣式，讓文字靠上 */
+.table-top-align th, .table-top-align td {
+  vertical-align: top;
+  text-align: center; /* 水平置中 */
 }
 
-:root[data-scheme=light] .link{
-    --main-top-padding: 35px;
-    --body-background: #f5f5fa;
-    --accent-color: #257985;
-    --accent-color-darker: #DF961A;
-    --accent-color-text: #fff;
-    --body-text-color: #707070;
-    --tag-border-radius: 4px;
-    --section-separation: 40px;
-    --scrollbar-thumb: hsl(0, 0%, 85%);
-    --scrollbar-track: var(--body-background);
-        font-weight: bold;
+/* 圖片居中 */
+.table-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+/* 提供給blockquote的語法 */
+.article-content blockquote {
+  position: relative;
+  margin: 1.5em 0;
+  border-inline-start: var(--blockquote-border-size) solid var(--card-separator-color);
+  padding: 15px calc(var(--card-padding) - var(--blockquote-border-size));
+  background-color: var(--blockquote-background-color);
+}
+
+.article-content blockquote .cite {
+  display: block;
+  text-align: right;
+  font-size: 0.75em;
+}
+
+.article-content blockquote .cite a {
+  text-decoration: underline;
 }
 
 
-/* social-menu自動換行的樣式 */
-.social-menu {
-    display: flex;              /* 使用 flexbox */
-    flex-wrap: wrap;            /* 允許內容自動換行 */
-    justify-content: start;    /* 從左側開始排列 */
-    gap: 20px;                 /* 如果您希望每個 icon 之間有間距，可以調整這個數值 */
-}
-
-/* 為 light mode 定義 .styled-text 和 .discord-invite 的樣式 */
-
-:root[data-scheme="light"] .article-content code {
-    color: #ffffff;
-    background-color: rgba(37, 121, 133, 0.85);
-    padding: 2px 4px;
-    border-radius: var(--tag-border-radius);
-    font-size: 1.05em;
-}
-:root[data-scheme="dark"] .article-content code {
-    color: #ffffff;
-    background-color: rgba(223, 150, 26, 0.85);
-    padding: 2px 4px;
-    border-radius: var(--tag-border-radius);
-    font-size: 1.05em;
-}
-/* 調整圖boos顯示預覽圖片的大小 */
-
-.article-list--compact {
-    border-radius: var(--card-border-radius);
-    box-shadow: var(--shadow-l1);
-    background-color: var(--card-background);
-    --image-size: 120px
-}
-
-@media(min-width: 768px) {
-    .article-list--compact {
-        --image-size:120px
-    }
+.podcast-container {
+  display: grid;
+  place-items: center; /* 水平和垂直置中 */
 }
