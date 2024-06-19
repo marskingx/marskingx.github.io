@@ -112,6 +112,6 @@ ETF種類多到讓人眼花繚亂，只要是能投資的就能創建一個ETF�
 
 ## 懶得有結論
 
-{{< quote author="懶得變有錢 | 瑪斯就是懶大" source="About 懶得變有錢" url="https://lazytoberich.com.tw/about-me/">}}
+{{< quote author="懶得變有錢 | 瑪斯就是懶大" source="About 懶得變有錢" url="https://lazytoberich.com.tw/about/">}}
 ETF是投資最好的入門，少掉了單一個股的高風險，免去了選股的麻煩，由其是被動型的ETF，直接與指數貼齊，無腦享受所有的好處。當然，最重要還是你自己要知道為什麼要買!而或是為什麼要賣?
 {{< /quote >}}
