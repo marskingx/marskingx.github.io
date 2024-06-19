@@ -1,4 +1,6 @@
 <meta charset="utf-8" />
+<!-- AdSense -->
+{{ partial "google anything.html" . }}
 
 <!-- responsive meta -->
 <meta
@@ -28,7 +30,7 @@
 {{ partialCached "custom-script.html" . }}
 
 
-<!-- google analytics -->
+<!-- Google Analytics -->
 {{ if and site.Config.Services.GoogleAnalytics.ID (ne site.Config.Services.GoogleAnalytics.ID "G-MEASUREMENT_ID") }}
   {{ template "_internal/google_analytics.html" . }}
 {{ end }}
