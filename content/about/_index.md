@@ -4,6 +4,8 @@ meta_title: "About"
 description: "this is meta description"
 image: "/images/favicon.png"
 draft: false
+aliases:
+  - /about-me/
 ---
 
 
