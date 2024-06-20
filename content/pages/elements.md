@@ -6,7 +6,7 @@ meta_title: ""
 description: "This is meta description"
 # save as draft
 draft: false
-image: ""
+image: "/images/reading_list/reading_list.png"
 ---
 
 {{< toc >}}
