@@ -57,7 +57,7 @@ show_categories = true
 [announcement]
 enable = true
 expire_days = 7
-content = " "
+content = "本站透過少量的GoogleAdsense廣告以及聯盟行銷用於**支持本站營運**及**家扶基金會兒童教養公益**用途！"
 
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo

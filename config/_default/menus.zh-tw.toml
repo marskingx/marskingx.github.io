@@ -37,8 +37,13 @@ pageRef = "/contact"
 
 [[main]]
 parent = "更多"
-name = "系列文章"
+name = "文章分類"
 pageRef = "/categories"
+
+[[main]]
+parent = "更多"
+name = "標籤分類"
+pageRef = "/tags"
 
 # footer menu
 [[footer]]
