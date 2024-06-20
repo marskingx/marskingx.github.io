@@ -1,5 +1,5 @@
 import reindex_books
-from reindex.reindex_books.archive import books_url
+from reindex_ import books_url
 import momo_url
 import reindex_reading_list
 from selenium import webdriver
