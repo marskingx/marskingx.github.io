@@ -2,7 +2,7 @@
 # Banner
 banner:
   title: "懶得變有錢"
-
+  description: "「懶得變有錢」」是由Mars經營的 Podcast 節目，每週更新一集，一集約18至28分鐘，用每周30分鐘以內的時間線上陪你一起，理解更多財務規劃的本質，鑑定自己的財務DNA。"
   content: "「懶得變有錢」」是由Mars經營的 Podcast 節目<br>每週更新一集，一集約18至28分鐘<br>用每周30分鐘以內的時間線上陪你一起<br>理解更多財務規劃的本質<br>鑑定自己的財務DNA。"
   image: "/images/banner-1.png"
   button:
