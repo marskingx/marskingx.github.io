@@ -27,23 +27,64 @@ pageRef = "/blog"
 weight = 5
 
 [[main]]
+weight = 1
+parent = "文章"
+name = "所有文章"
+pageRef = "/blog"
+
+[[main]]
+weight = 2
+parent = "文章"
+name = "財務規劃與心態"
+pageRef = "/categories/財務規劃與心態/"
+
+[[main]]
+weight = 3
+parent = "文章"
+name = "讀書心得與分享"
+pageRef = "/categories/讀書心得與分享/"
+
+[[main]]
+weight = 4
+parent = "文章"
+name = "財務規劃與工具"
+pageRef = "/categories/財務規劃與工具/"
+
+[[main]]
+weight = 5
+parent = "文章"
+name = "職涯與生活心得"
+pageRef = "/categories/職涯與生活心得/"
+
+[[main]]
 weight = 6
-name = "更多"
+parent = "文章"
+name = "職涯與生活心得"
+pageRef = "/categories/Podcast 發佈/"
 
 [[main]]
-parent = "更多"
-name = "聯絡懶大"
-pageRef = "/contact"
+weight = 6
+name = "追蹤"
 
 [[main]]
-parent = "更多"
-name = "文章分類"
-pageRef = "/categories"
+parent = "追蹤"
+name = "facebook"
+pageRef = "https://www.facebook.com/lazytoberich"
 
 [[main]]
-parent = "更多"
-name = "標籤分類"
-pageRef = "/tags"
+parent = "追蹤"
+name = "threads"
+pageRef = "https://www.threads.net/@lazytoberich/"
+
+[[main]]
+parent = "追蹤"
+name = "instagram"
+pageRef = "https://www.instagram.com/lazytoberich/"
+
+[[main]]
+parent = "追蹤"
+name = "discord"
+pageRef = "https://discord.gg/xeYCvQWBPx"
 
 # footer menu
 [[footer]]

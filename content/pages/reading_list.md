@@ -95,7 +95,6 @@ description:
 ---
 
 ## 推薦書單(依閱讀時間序)
-## 👇文末前往閱讀心得👇
 | 閱讀書單 | 推薦評等 | 購書連結 |
 |-|-|-|
 | [![《平衡心態》](/images/reading_list/img_15.png)](https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11062008&Area=search&oid=1_1&cid=index&kw=%E5%B9%B3%E8%A1%A1%E5%BF%83%E6%85%8B&memid=6000021729&cid=apuad&oid=1&osm=league) | 《平衡心態》<br/>⭐⭐⭐⭐⭐ | [![books_buy.jpg](/images/reading_list/books_buy.jpg)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010950295?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202406)<br/> [![momobooks_buy.jpg](/images/reading_list/momobooks_buy.jpg)](https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11062008&Area=search&oid=1_1&cid=index&kw=%E5%B9%B3%E8%A1%A1%E5%BF%83%E6%85%8B&memid=6000021729&cid=apuad&oid=1&osm=league) |
