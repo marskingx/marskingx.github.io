@@ -67,21 +67,26 @@ weight = 6
 name = "追蹤"
 
 [[main]]
-parent = "追蹤"
-name = "facebook"
-pageRef = "https://www.facebook.com/lazytoberich"
-
-[[main]]
+weight = 1
 parent = "追蹤"
 name = "threads"
 pageRef = "https://www.threads.net/@lazytoberich/"
 
 [[main]]
+weight = 2
+
 parent = "追蹤"
 name = "instagram"
 pageRef = "https://www.instagram.com/lazytoberich/"
 
 [[main]]
+weight = 3
+parent = "追蹤"
+name = "facebook"
+pageRef = "https://www.facebook.com/lazytoberich"
+
+[[main]]
+weight = 4
 parent = "追蹤"
 name = "discord"
 pageRef = "https://discord.gg/xeYCvQWBPx"
