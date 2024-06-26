@@ -7,8 +7,8 @@ banner:
   image: "/images/banner-1.png"
   button:
     enable: true
-    label: "前往閱讀懶大文章"
-    link: "/blog/"
+    label: "前往Apple Podcast收聽"
+    link: "https://apple.co/3QjLAuv"
 
 # Features
 features:
