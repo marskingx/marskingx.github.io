@@ -1,9 +1,7 @@
 ---
-aliases:
-- /p/investmentetf-beginners-guide-etfs-are-not-limited-to-spy-voo-qqq/
+title: 【投資】ETF新手懶人包｜ETF不只有SPY、VOO、QQQ！
 author: 懶大
-categories:
-- 財務規劃與工具
+categories: [財務規劃與工具]
 date: 2024-05-05
 description: 這篇文章介紹了ETF的不同類型，包括主動型ETF和被動型ETF，並提到了股票型、債券型、期貨/商品型、槓桿型、反向型和貨幣型等不同種類的ETF。文章還提到了一些著名的ETF，如追蹤S&P500指數的SPY和VOO，以及追蹤NASDAQ表現的QQQ。最後，文章提到了如何選擇和購買ETF。
 draft: false
@@ -12,12 +10,9 @@ keywords: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有�
   理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 讀書心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃,
   開源節流
 slug: investment-etf-beginner-s-guide-etfs-are-not-limited-to-spy-voo-qqq
-tags:
-- ETF
-- 投資管理
-- 理財觀念
-- 美股
-title: 【投資】ETF新手懶人包｜ETF不只有SPY、VOO、QQQ！
+tags: [ETF,投資管理,理財觀念,美股]
+aliases:
+- /p/investment-etf-beginners-guide-etfs-are-not-limited-to-spy-voo-qqq/
 ---
 這2年，大家都在說ETF投資，簡直是火到炸裂，可以說是投資圈的啦啦隊現象也不為過！說ETF是投資新手必學的一種方式完全沒問題，風險還可能比股票低，對新手來說實在是太友善了(但還是要先有基本的財務規劃概念比較好)。
 
