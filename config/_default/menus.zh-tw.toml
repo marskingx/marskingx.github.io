@@ -59,8 +59,8 @@ pageRef = "/categories/職涯與生活心得/"
 [[main]]
 weight = 6
 parent = "文章"
-name = "Podcast 發佈"
-pageRef = "/categories/Podcast 發佈/"
+name = "Podcast發佈"
+pageRef = "/categories/Podcast發佈/"
 
 [[main]]
 weight = 6
