@@ -100,19 +100,19 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime 
 ### Notice
 
 {{< notice "note" >}}
-This is a simple note.
+blue
 {{< /notice >}}
 
 {{< notice "tip" >}}
-這是一本好書
+green
 {{< /notice >}}
 
 {{< notice "info" >}}
-This is a simple info.
+yello
 {{< /notice >}}
 
 {{< notice "warning" >}}
-This is a simple warning.
+red
 {{< /notice >}}
 
 <hr>
