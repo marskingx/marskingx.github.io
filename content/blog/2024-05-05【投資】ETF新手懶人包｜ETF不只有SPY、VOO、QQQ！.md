@@ -1,7 +1,7 @@
 ---
 title: 【投資】ETF新手懶人包｜ETF不只有SPY、VOO、QQQ！
 author: 懶大
-categories: [財務規劃與工具]
+categories: [財務工具與金融商品]
 date: 2024-05-05
 description: 這篇文章介紹了ETF的不同類型，包括主動型ETF和被動型ETF，並提到了股票型、債券型、期貨/商品型、槓桿型、反向型和貨幣型等不同種類的ETF。文章還提到了一些著名的ETF，如追蹤S&P500指數的SPY和VOO，以及追蹤NASDAQ表現的QQQ。最後，文章提到了如何選擇和購買ETF。
 draft: false

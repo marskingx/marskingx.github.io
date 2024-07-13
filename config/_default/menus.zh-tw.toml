@@ -41,26 +41,26 @@ pageRef = "/categories/財務規劃與心態/"
 [[main]]
 weight = 3
 parent = "文章"
-name = "讀書心得與分享"
-pageRef = "/categories/讀書心得與分享/"
+name = "讀書心得"
+pageRef = "/categories/讀書心得/"
 
 [[main]]
 weight = 4
 parent = "文章"
-name = "財務規劃與工具"
-pageRef = "/categories/財務規劃與工具/"
+name = "理財工具與金融商品"
+pageRef = "/categories/理財工具與金融商品/"
 
 [[main]]
 weight = 5
 parent = "文章"
-name = "職涯與生活心得"
-pageRef = "/categories/職涯與生活心得/"
+name = "職涯與生活"
+pageRef = "/categories/職涯與生活/"
 
 [[main]]
 weight = 6
 parent = "文章"
-name = "Podcast發佈"
-pageRef = "/categories/Podcast發佈/"
+name = "Podcast節目"
+pageRef = "/categories/Podcast節目/"
 
 [[main]]
 weight = 6
