@@ -108,7 +108,7 @@ green
 {{< /notice >}}
 
 {{< notice "info" >}}
-yello
+yellow
 {{< /notice >}}
 
 {{< notice "warning" >}}
