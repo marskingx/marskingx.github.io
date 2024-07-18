@@ -64,7 +64,7 @@ ETF全名為Exchange Traded Fund，中文名為「指數股票型基金」。以
 
 ### 推薦閱讀：
 
-- **[【投資】平價 ETF vs 奢華 ETF 誰更適合你長期投資?](https://lazytoberich.com.tw/p/investing-affordable-vs-luxury-etf-comparison/)**
+- **[【投資】平價 ETF vs 奢華 ETF 誰更適合你長期投資?](https://lazytoberich.com.tw/blog/investing-affordable-vs-luxury-etf-comparison/)**
 
 以下用表格整理主動型和被動型ETF的差異：
 

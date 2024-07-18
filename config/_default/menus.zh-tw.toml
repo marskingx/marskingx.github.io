@@ -47,8 +47,8 @@ pageRef = "/categories/讀書心得/"
 [[main]]
 weight = 4
 parent = "文章"
-name = "理財工具與金融商品"
-pageRef = "/categories/理財工具與金融商品/"
+name = "財務工具與金融商品"
+pageRef = "/categories/財務工具與金融商品/"
 
 [[main]]
 weight = 5
