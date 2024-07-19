@@ -4,19 +4,17 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException, WebDriverException
-from datetime import datetime
 
 # 設置日誌文件
-logging.basicConfig(filename='search_book_errors.log', level=logging.ERROR)
-
+logging.basicConfig(filename='search_book_errors.log', level=logging.DEBUG)
 
 def initialize_driver():
-  """初始化 Selenium WebDriver"""
-  options = webdriver.ChromeOptions()
-  options.add_argument('--headless')  # 如果你希望背景運行瀏覽器，移除這一行可以看到瀏覽器操作
-  driver = webdriver.Chrome(options=options)
-  print("初始化 WebDriver 完成")
-  return driver
+    """初始化 Selenium WebDriver"""
+    options = webdriver.ChromeOptions()
+    options.add_argument('--headless')  # 如果你希望背景運行瀏覽器，移除這一行可以看到瀏覽器操作
+    driver = webdriver.Chrome(options=options)
+    logging.debug("初始化 WebDriver 完成")
+    return driver
 
 def close_ads(driver):
     """關閉廣告橫幅"""
@@ -25,21 +23,21 @@ def close_ads(driver):
             EC.element_to_be_clickable((By.ID, "close_top_banner"))
         )
         close_ad_button.click()
-        print("廣告橫幅已關閉")
+        logging.debug("廣告橫幅已關閉")
     except TimeoutException:
-        print("未找到廣告橫幅或廣告橫幅已經關閉")
+        logging.debug("未找到廣告橫幅或廣告橫幅已經關閉")
 
 def search_books(driver, keyword):
     """在博客來網站上搜尋書籍並返回搜尋結果的 URL"""
     try:
-        print("打開博客來網站")
+        logging.debug("打開博客來網站")
         driver.get("https://www.books.com.tw/")
         close_ads(driver)
         search_for_books(driver, keyword)
         results = get_search_results(driver, ".mod2 .table-td")
 
         if not results:
-            print("未找到任何結果")
+            logging.debug("未找到任何結果")
             return None, None
 
         filtered_results = []
@@ -48,12 +46,12 @@ def search_books(driver, keyword):
                 filtered_results.append(result)
 
         if not filtered_results:
-            print("未找到有效的搜尋結果")
+            logging.debug("未找到有效的搜尋結果")
             return None, None
 
         if len(filtered_results) == 1:
             choice = 0
-            print("自動選擇唯一結果")
+            logging.debug("自動選擇唯一結果")
         else:
             while True:
                 try:
@@ -61,20 +59,19 @@ def search_books(driver, keyword):
                     if 0 <= choice < len(filtered_results):
                         break
                     else:
-                        print("無效的編號，請重新輸入")
+                        logging.debug("無效的編號，請重新輸入")
                 except ValueError:
-                    print("請輸入數字編號")
+                    logging.debug("請輸入數字編號")
 
         selected_result = filtered_results[choice]
         selected_title, product_url = get_selected_result_url(selected_result)
 
-        print(f"選擇的商品名稱: {selected_title}")
-        print(f"生成的商品 URL: {product_url}")
+        logging.debug(f"選擇的商品名稱: {selected_title}")
+        logging.debug(f"生成的商品 URL: {product_url}")
         return selected_title, product_url
 
     except (TimeoutException, NoSuchElementException, WebDriverException) as e:
         error_message = f"Error searching book on books.com.tw: {e}"
-        print(error_message)
         logging.error(error_message)
         return None, None
 
@@ -83,13 +80,12 @@ def search_for_books(driver, keyword):
     try:
         WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "key")))
         search_input = driver.find_element(By.ID, "key")
-        print(f"輸入關鍵字: {keyword}")
+        logging.debug(f"輸入關鍵字: {keyword}")
         search_input.send_keys(keyword)
         search_button = WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CLASS_NAME, "search_btn")))
         driver.execute_script("arguments[0].click();", search_button)
     except TimeoutException as e:
         error_message = f"Timeout while searching for books: {e}"
-        print(error_message)
         logging.error(error_message)
 
 def get_search_results(driver, selector):
@@ -97,16 +93,14 @@ def get_search_results(driver, selector):
     try:
         WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.CSS_SELECTOR, selector)))
         results = driver.find_elements(By.CSS_SELECTOR, selector)[:6]
-        print(f"找到 {len(results)} 個結果")
+        logging.debug(f"找到 {len(results)} 個結果")
         return results
     except TimeoutException as e:
         error_message = f"Timeout while getting search results on books.com.tw: {e}"
-        print(error_message)
         logging.error(error_message)
         return []
     except NoSuchElementException as e:
         error_message = f"Error finding search results on books.com.tw: {e}"
-        print(error_message)
         logging.error(error_message)
         return []
 
@@ -123,12 +117,11 @@ def process_result(result, index):
         if "No title" in title or not item_id:
             return False
 
-        print(f"{index + 1}: {title}")
+        logging.debug(f"{index + 1}: {title}")
         return True
 
     except (NoSuchElementException, TimeoutException) as e:
         error_message = f"Error finding element in result {index + 1}: {e}"
-        print(error_message)
         logging.error(error_message)
         return False
 
@@ -148,7 +141,6 @@ def get_selected_result_url(selected_result):
         return title, product_url
     except (NoSuchElementException, TimeoutException) as e:
         error_message = f"Error getting selected result URL: {e}"
-        print(error_message)
         logging.error(error_message)
         return None, None
 
@@ -159,15 +151,13 @@ def convert_url(base_url, additional_params):
     else:
         return f"{base_url}?{additional_params}"
 
-
 def get_books_promotion_link(keyword):
-  driver = initialize_driver()
-  title, url = search_books(driver, keyword)
-  driver.quit()
-  return title, url
-
+    driver = initialize_driver()
+    title, url = search_books(driver, keyword)
+    driver.quit()
+    return title, url
 
 # 示例用法
 if __name__ == "__main__":
-  books_title, books_url = get_books_promotion_link("平衡心態")
-  print(f"Books: {books_title}, URL: {books_url}")
+    books_title, books_url = get_books_promotion_link("平衡心態")
+    logging.debug(f"Books: {books_title}, URL: {books_url}")
