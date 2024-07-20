@@ -1,127 +1,150 @@
-import os
-import re
-import sys
-import subprocess
-from datetime import datetime
+import yaml
 import logging
+import re
+from pathlib import Path
+from datetime import datetime
 
-# 設置日誌記錄
-logging.basicConfig(level=logging.DEBUG,
-                    format='%(asctime)s - %(levelname)s - %(message)s',
-                    handlers=[
-                      logging.FileHandler("main_execution.log"),
-                      logging.StreamHandler()
-                    ])
+from processors import (
+  BooksReviewProcessor,
+  PodcastProcessor,
+  LifeShareProcessor,
+  FinancialToolProcessor,
+  FinancialMindsetProcessor
+)
+
+# 設置日誌
+logging.basicConfig(
+  level=logging.DEBUG,
+  format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+  filename=f'process_log_{datetime.now().strftime("%Y%m%d_%H%M%S")}.log',
+  filemode='w'
+)
+console = logging.StreamHandler()
+console.setLevel(logging.INFO)
+logging.getLogger('').addHandler(console)
 
 
-def read_file(file_path):
-  with open(file_path, 'r', encoding='utf-8') as file:
-    return file.read()
+def load_config():
+  try:
+    with open('archive/20240720/config.yaml', 'r', encoding='utf-8') as file:
+      config = yaml.safe_load(file)
+    logging.info("成功加載配置文件")
+    return config
+  except yaml.YAMLError as e:
+    logging.error(f"解析 YAML 文件時出錯: {e}")
+    if hasattr(e, 'problem_mark'):
+      mark = e.problem_mark
+      logging.error(f"錯誤位置: 第 {mark.line + 1} 行, 第 {mark.column + 1} 列")
+    raise
+  except Exception as e:
+    logging.error(f"加載配置文件時出錯: {e}")
+    raise
 
 
-def get_md_category(content):
-  match = re.search(r'categories:\s*(\S+)', content)
-  if match:
-    return match.group(1).strip()
-  return None
-
-
-def run_script(category, file_path, reading_list_path):
-  script_map = {
-    'Podcast節目': 'podcast_reindex.py',
-    '理財工具與金融商品': 'financial_tool_reindex.py',
-    '財務規劃與心態': 'financial_mindset_reindex.py',
-    '職涯與生活': 'life_share_reindex.py',
-    '讀書心得': 'books_review_reindex.py'
+def get_processor(category):
+  processors = {
+    'Podcast節目': PodcastProcessor,
+    '理財工具與金融商品': FinancialToolProcessor,
+    '財務規劃與心態': FinancialMindsetProcessor,
+    '職涯與生活': LifeShareProcessor,
+    '讀書心得': BooksReviewProcessor
   }
+  return processors.get(category)
 
-  script_name = script_map.get(category)
-  if script_name:
-    script_path = os.path.join(os.path.dirname(__file__), script_name)
-    if os.path.exists(script_path):
-      try:
-        logging.info(f"準備執行腳本: {script_path}")
-        if category == '讀書心得':
-          command = ['python', script_path, file_path, reading_list_path]
-        else:
-          command = ['python', script_path, file_path]
 
-        logging.info(f"正在執行命令: {' '.join(command)}")
-        process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, encoding='utf-8')
+def get_file_category(file_path):
+  try:
+    with open(file_path, 'r', encoding='utf-8') as file:
+      content = file.read()
 
-        while True:
-          output = process.stdout.readline()
-          if output == '' and process.poll() is not None:
-            break
-          if output:
-            logging.info(output.strip())
-
-        stdout, stderr = process.communicate(timeout=300)  # 增加超時時間到5分鐘
-        logging.info(f"命令執行完畢: {' '.join(command)}")
-        logging.info(f"腳本輸出: {stdout}")
-        if stderr:
-          logging.error(f"腳本錯誤: {stderr}")
-      except subprocess.TimeoutExpired:
-        process.kill()
-        stdout, stderr = process.communicate()
-        logging.error(f"腳本執行超時: {' '.join(command)}")
-        logging.error(f"超時後的輸出: {stdout}")
-        logging.error(f"超時後的錯誤: {stderr}")
-      except Exception as e:
-        logging.error(f"腳本執行失敗: {e}")
+    # 嘗試匹配 YAML 前置數據
+    yaml_match = re.search(r'---\s*\n(.*?)\n---', content, re.DOTALL)
+    if (yaml_match):
+      yaml_content = yaml_match.group(1)
+      category_match = re.search(r'categories:\s*\[(.*?)\]', yaml_content)
+      if (category_match):
+        categories = category_match.group(1).strip().split(',')
+        # 取第一個類別（如果有多個的話）
+        category = categories[0].strip().strip('"\'')
+        logging.info(f"從文件 {file_path} 中提取到類別: {category}")
+        return category
+      else:
+        logging.warning(f"在文件 {file_path} 的 YAML 前置數據中未找到 categories 字段")
     else:
-      logging.error(f"腳本文件不存在: {script_path}")
-  else:
-    logging.error(f"未知的類型: {category}")
+      logging.warning(f"在文件 {file_path} 中未找到 YAML 前置數據")
+
+    # 如果無法從 YAML 中提取，嘗試從文件名中提取
+    filename = file_path.split('\\')[-1]
+    if "【嗑書】" in filename:
+      return "讀書心得"
+    elif "【EP" in filename:
+      return "Podcast節目"
+    elif "【理財】" in filename:
+      return "財務規劃與心態"
+    elif "【投資】" in filename:
+      return "理財工具與金融商品"
+    elif "【職涯】" in filename:
+      return "職涯與生活"
+
+    logging.error(f"無法確定文件 {file_path} 的類別")
+    return None
+  except Exception as e:
+    logging.error(f"讀取文件 {file_path} 時發生錯誤: {e}")
+    return None
 
 
-def process_md_file(file_path, reading_list_path):
-  content = read_file(file_path)
-  category = get_md_category(content)
-  if category:
-    logging.info(f"檔案類型為: {category}")
-    run_script(category, file_path, reading_list_path)
-  else:
-    logging.error(f"無法判斷檔案類型: {file_path}")
+def list_recent_md_files(directory_path, limit=10):
+  try:
+    md_files = sorted(
+      Path(directory_path).glob('**/*.md'),
+      key=lambda p: p.stat().st_mtime,
+      reverse=True
+    )
+    return md_files[:limit]
+  except Exception as e:
+    logging.error(f"列出最近的 Markdown 文件時出錯: {e}")
+    return []
 
 
-def list_recent_md_files(directory_path):
-  md_files = []
-  for root, _, files in os.walk(directory_path):
-    for file in files:
-      if file.endswith(".md"):
-        file_path = os.path.join(root, file)
-        md_files.append((file_path, os.path.getmtime(file_path)))
+def main():
+  try:
+    config = load_config()
+    directory_path = config['file_paths']['blog_directory']
+    reading_list_path = config['file_paths']['reading_list']
 
-  md_files.sort(key=lambda x: x[1], reverse=True)
-  return md_files[:10]
+    recent_files = list_recent_md_files(directory_path)
+
+    for i, file_path in enumerate(recent_files, start=1):
+      logging.info(f"{i}. {file_path}")
+
+    while True:
+      try:
+        choice = int(input("請選擇要處理的文件 (1-10)：")) - 1
+        if 0 <= choice < len(recent_files):
+          selected_file = recent_files[choice]
+          break
+        else:
+          logging.error("無效的選擇，請重試。")
+      except ValueError:
+        logging.error("請輸入一個有效的數字。")
+
+    category = get_file_category(str(selected_file))
+    if category:
+      processor_class = get_processor(category)
+      if processor_class:
+        processor = processor_class(str(selected_file), reading_list_path)
+        if category == "讀書心得":
+          promotion_links = processor.process_book_review()
+        else:
+          processor.process()
+      else:
+        logging.error(f"沒有對應的處理器用於類別: {category}")
+    else:
+      logging.error(f"無法確定文件類型: {selected_file}")
+
+  except Exception as e:
+    logging.error(f"程序執行過程中發生錯誤: {e}", exc_info=True)
 
 
 if __name__ == "__main__":
-  directory_path = r'D:\marskingx.github.io\content\blog'
-  reading_list_path = r'D:\marskingx.github.io\content\pages\reading_list.md'
-
-  logging.info(f"使用目錄路徑: {directory_path}")
-
-  recent_files = list_recent_md_files(directory_path)
-  if not recent_files:
-    logging.error("沒有找到 Markdown 檔案。")
-    sys.exit(1)
-
-  logging.info("最近更新的 10 個 Markdown 檔案：")
-  for i, (file_path, _) in enumerate(recent_files, start=1):
-    logging.info(f"{i}. {file_path}")
-
-  file_index = input("請選擇要處理的文件（1-10）：")
-  try:
-    file_index = int(file_index) - 1
-    if 0 <= file_index < len(recent_files):
-      selected_file = recent_files[file_index][0]
-      logging.info(f"選擇的文件: {selected_file}")
-      process_md_file(selected_file, reading_list_path)
-    else:
-      logging.error("選擇的索引超出範圍。")
-  except ValueError:
-    logging.error("無效的選擇。請輸入一個數字。")
-
-  logging.info("主程序執行完成")
+  main()

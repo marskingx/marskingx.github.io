@@ -55,7 +55,7 @@ def search_momo_books(driver, keyword):
     title = title_element.text.strip()
 
     # 構建商品URL
-    product_url = f"https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code={gcode}"
+    product_url = f"https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code={gcode}&memid=6000021729&cid=apuad&oid=1&osm=league"
 
     logging.debug(f"找到書籍: {title}")
     logging.debug(f"商品URL: {product_url}")
