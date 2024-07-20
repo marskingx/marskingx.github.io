@@ -57,7 +57,7 @@ class BooksReviewProcessor(BaseProcessor):
         image = f"/images/blog/{self.format_image_date(date)}.png"
 
         categories_match = re.search(r'categories: (.*)', content)
-        categories = f"[{categories_match.group(1).strip()}]" if categories_match else "[讀書心得]"
+        categories = f"[{categories_match.group(1).strip()}]" if categories_match else "[閱讀心得]"
 
         tags_match = re.search(r'tags: (.*)', content)
         tags = f"[{tags_match.group(1).strip().replace(' ', '').replace(',', ',')}]" if tags_match else "[]"

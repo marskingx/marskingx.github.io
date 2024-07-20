@@ -254,6 +254,6 @@ class ReadingListUpdater:
 # 使用示例（已註釋掉）
 # if __name__ == "__main__":
 #     updater = ReadingListUpdater(
-#         r"G:\marskingx.github.io\content\post\2023-10-28【嗑書】想學會怎麼進步，就要學會進步的方法《商業書10倍高效》\index.md",
+#         r"G:\marskingx.github.io\content\post\2023-10-28【書單】想學會怎麼進步，就要學會進步的方法《商業書10倍高效》\index.md",
 #         r"G:\marskingx.github.io\content\page\reading_list\index.md")
 #     updater.update()

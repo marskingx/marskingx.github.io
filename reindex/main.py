@@ -47,7 +47,7 @@ def get_processor(category):
     '理財工具與金融商品': FinancialToolProcessor,
     '財務規劃與心態': FinancialMindsetProcessor,
     '職涯與生活': LifeShareProcessor,
-    '讀書心得': BooksReviewProcessor
+    '閱讀心得': BooksReviewProcessor
   }
   return processors.get(category)
 
@@ -75,8 +75,8 @@ def get_file_category(file_path):
 
     # 如果無法從 YAML 中提取，嘗試從文件名中提取
     filename = file_path.split('\\')[-1]
-    if "【嗑書】" in filename:
-      return "讀書心得"
+    if "【書單】" in filename:
+      return "閱讀心得"
     elif "【EP" in filename:
       return "Podcast節目"
     elif "【理財】" in filename:
@@ -133,7 +133,7 @@ def main():
       processor_class = get_processor(category)
       if processor_class:
         processor = processor_class(str(selected_file), reading_list_path)
-        if category == "讀書心得":
+        if category == "閱讀心得":
           promotion_links = processor.process_book_review()
         else:
           processor.process()

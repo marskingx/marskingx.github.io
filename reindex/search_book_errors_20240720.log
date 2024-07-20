@@ -1,16 +1,16 @@
 2024-07-20 13:34:17 - INFO - 成功加載配置文件
-2024-07-20 13:34:17 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 13:34:17 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 13:34:17 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 13:34:17 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 13:34:17 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 13:34:17 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 13:34:17 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 13:34:17 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 13:34:17 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 13:34:17 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 13:34:17 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 13:34:17 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 13:34:20 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中未找到 YAML 前置數據
-2024-07-20 13:34:20 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 13:34:20 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中未找到 YAML 前置數據
+2024-07-20 13:34:20 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 13:34:20 - ERROR - 處理書評時發生錯誤: expected string or bytes-like object, got 'NoneType'
 Traceback (most recent call last):
   File "D:\marskingx.github.io\reindex\processors\books_review_processor.py", line 21, in process
@@ -21,20 +21,20 @@ Traceback (most recent call last):
                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 TypeError: expected string or bytes-like object, got 'NoneType'
 2024-07-20 13:35:01 - INFO - 成功加載配置文件
-2024-07-20 13:35:01 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 13:35:01 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 13:35:01 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 13:35:01 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 13:35:01 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 13:35:01 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 13:35:01 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 13:35:01 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 13:35:01 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 13:35:01 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 13:35:01 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 13:35:01 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 13:35:03 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中未找到 YAML 前置數據
-2024-07-20 13:35:03 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 13:35:03 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中未找到 YAML 前置數據
+2024-07-20 13:35:03 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 13:35:03 - DEBUG - 成功更新 YAML 內容
-2024-07-20 13:35:03 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 13:35:03 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 13:35:03 - DEBUG - 成功寫入更新後的內容到文件
 2024-07-20 13:35:03 - INFO - 成功提取書名: 給孩子的商業啟蒙
 2024-07-20 13:35:03 - INFO - 提取到書名: 給孩子的商業啟蒙
@@ -300,20 +300,20 @@ ValueError: too many values to unpack (expected 2)
 2024-07-20 13:35:28 - INFO - MOMO: 標題 = 給孩子的商業啟蒙：劉潤的第一本親子理財書，讓孩子參透商業世界的本質，徹底了解「底層邏輯」！, URL = https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055
 2024-07-20 13:35:28 - INFO - 獲取到的推廣鏈接: Books: 無, Momo: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055
 2024-07-20 14:21:34 - INFO - 成功加載配置文件
-2024-07-20 14:21:34 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:21:34 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:21:34 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 14:21:34 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 14:21:34 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 14:21:34 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 14:21:34 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 14:21:34 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 14:21:34 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 14:21:34 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 14:21:34 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 14:21:34 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 14:21:36 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中未找到 YAML 前置數據
-2024-07-20 14:21:36 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:21:36 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中未找到 YAML 前置數據
+2024-07-20 14:21:36 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:21:36 - DEBUG - 成功更新 YAML 內容
-2024-07-20 14:21:36 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:21:36 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:21:36 - DEBUG - 成功寫入更新後的內容到文件
 2024-07-20 14:21:36 - INFO - 成功提取書名: 給孩子的商業啟蒙
 2024-07-20 14:21:36 - INFO - 提取到書名: 給孩子的商業啟蒙
@@ -574,20 +574,20 @@ ValueError: too many values to unpack (expected 2)
 2024-07-20 14:22:04 - INFO - MOMO: 標題 = 給孩子的商業啟蒙：劉潤的第一本親子理財書，讓孩子參透商業世界的本質，徹底了解「底層邏輯」！, URL = https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055
 2024-07-20 14:22:04 - INFO - 獲取到的推廣鏈接: Books: https://www.books.com.tw/products/0010955949, Momo: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055
 2024-07-20 14:28:35 - INFO - 成功加載配置文件
-2024-07-20 14:28:35 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:28:35 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:28:35 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 14:28:35 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 14:28:35 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 14:28:35 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 14:28:35 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 14:28:35 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 14:28:35 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 14:28:35 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 14:28:35 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 14:28:35 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 14:28:36 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中未找到 YAML 前置數據
-2024-07-20 14:28:36 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:28:36 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中未找到 YAML 前置數據
+2024-07-20 14:28:36 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:28:37 - DEBUG - 成功更新 YAML 內容
-2024-07-20 14:28:37 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:28:37 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:28:37 - DEBUG - 成功寫入更新後的內容到文件
 2024-07-20 14:28:37 - INFO - 成功提取書名: 給孩子的商業啟蒙
 2024-07-20 14:28:37 - INFO - 提取到書名: 給孩子的商業啟蒙
@@ -848,18 +848,18 @@ ValueError: too many values to unpack (expected 2)
 2024-07-20 14:29:02 - INFO - MOMO: 標題 = 給孩子的商業啟蒙：劉潤的第一本親子理財書，讓孩子參透商業世界的本質，徹底了解「底層邏輯」！, URL = https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055
 2024-07-20 14:29:02 - INFO - 獲取到的推廣鏈接: Books: https://www.books.com.tw/products/0010955949, Momo: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055
 2024-07-20 14:30:14 - INFO - 成功加載配置文件
-2024-07-20 14:30:14 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:30:14 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:30:14 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 14:30:14 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 14:30:14 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 14:30:14 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 14:30:14 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 14:30:14 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 14:30:14 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 14:30:14 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 14:30:14 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 14:30:14 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 14:30:23 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 的 YAML 前置數據中未找到 categories 字段
-2024-07-20 14:30:23 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:30:23 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 的 YAML 前置數據中未找到 categories 字段
+2024-07-20 14:30:23 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:30:23 - ERROR - 處理書評時發生錯誤: name 'content' is not defined
 Traceback (most recent call last):
   File "D:\marskingx.github.io\reindex\processors\books_review_processor.py", line 21, in process
@@ -870,18 +870,18 @@ Traceback (most recent call last):
                                         ^^^^^^^
 NameError: name 'content' is not defined. Did you mean: 'self.content'?
 2024-07-20 14:31:12 - INFO - 成功加載配置文件
-2024-07-20 14:31:12 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:31:12 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:31:12 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 14:31:12 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 14:31:12 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 14:31:12 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 14:31:12 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 14:31:12 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 14:31:12 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 14:31:12 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 14:31:12 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 14:31:12 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 14:31:14 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中未找到 YAML 前置數據
-2024-07-20 14:31:14 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:31:14 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中未找到 YAML 前置數據
+2024-07-20 14:31:14 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:31:14 - ERROR - 處理書評時發生錯誤: name 'content' is not defined
 Traceback (most recent call last):
   File "D:\marskingx.github.io\reindex\processors\books_review_processor.py", line 21, in process
@@ -892,20 +892,20 @@ Traceback (most recent call last):
                                         ^^^^^^^
 NameError: name 'content' is not defined. Did you mean: 'self.content'?
 2024-07-20 14:40:49 - INFO - 成功加載配置文件
-2024-07-20 14:40:49 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:40:49 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:40:49 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 14:40:49 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 14:40:49 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 14:40:49 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 14:40:49 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 14:40:49 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 14:40:49 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 14:40:49 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 14:40:49 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 14:40:49 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 14:40:50 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中未找到 YAML 前置數據
-2024-07-20 14:40:50 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:40:50 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中未找到 YAML 前置數據
+2024-07-20 14:40:50 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:40:50 - DEBUG - 成功更新 YAML 內容
-2024-07-20 14:40:50 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:40:50 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:40:50 - DEBUG - 成功寫入更新後的內容到文件
 2024-07-20 14:40:50 - INFO - 成功提取書名: 給孩子的商業啟蒙
 2024-07-20 14:40:50 - INFO - 提取到書名: 給孩子的商業啟蒙
@@ -1166,20 +1166,20 @@ NameError: name 'content' is not defined. Did you mean: 'self.content'?
 2024-07-20 14:41:15 - INFO - MOMO: 標題 = 給孩子的商業啟蒙：劉潤的第一本親子理財書，讓孩子參透商業世界的本質，徹底了解「底層邏輯」！, URL = https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055
 2024-07-20 14:41:15 - INFO - 獲取到的推廣鏈接: Books: https://www.books.com.tw/products/0010955949, Momo: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055
 2024-07-20 14:46:25 - INFO - 成功加載配置文件
-2024-07-20 14:46:25 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:46:25 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:46:25 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 14:46:25 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 14:46:25 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 14:46:25 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 14:46:25 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 14:46:25 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 14:46:25 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 14:46:25 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 14:46:25 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 14:46:25 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 14:46:27 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中未找到 YAML 前置數據
-2024-07-20 14:46:27 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:46:27 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中未找到 YAML 前置數據
+2024-07-20 14:46:27 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:46:27 - DEBUG - 成功更新 YAML 內容
-2024-07-20 14:46:27 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:46:27 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:46:27 - DEBUG - 成功寫入更新後的內容到文件
 2024-07-20 14:46:27 - INFO - 成功提取書名: 給孩子的商業啟蒙
 2024-07-20 14:46:27 - INFO - 提取到書名: 給孩子的商業啟蒙
@@ -1440,20 +1440,20 @@ NameError: name 'content' is not defined. Did you mean: 'self.content'?
 2024-07-20 14:46:53 - INFO - MOMO: 標題 = 給孩子的商業啟蒙：劉潤的第一本親子理財書，讓孩子參透商業世界的本質，徹底了解「底層邏輯」！, URL = https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055
 2024-07-20 14:46:53 - INFO - 獲取到的推廣鏈接: Books: https://www.books.com.tw/products/0010955949, Momo: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055
 2024-07-20 14:48:30 - INFO - 成功加載配置文件
-2024-07-20 14:48:30 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:48:30 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:48:30 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 14:48:30 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 14:48:30 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 14:48:30 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 14:48:30 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 14:48:30 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 14:48:30 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 14:48:30 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 14:48:30 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 14:48:30 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 14:48:32 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中未找到 YAML 前置數據
-2024-07-20 14:48:32 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:48:32 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中未找到 YAML 前置數據
+2024-07-20 14:48:32 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:48:32 - DEBUG - 成功更新 YAML 內容
-2024-07-20 14:48:32 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:48:32 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:48:32 - DEBUG - 成功寫入更新後的內容到文件
 2024-07-20 14:48:32 - INFO - 成功提取書名: 給孩子的商業啟蒙
 2024-07-20 14:48:32 - INFO - 提取到書名: 給孩子的商業啟蒙
@@ -1714,20 +1714,20 @@ NameError: name 'content' is not defined. Did you mean: 'self.content'?
 2024-07-20 14:48:58 - INFO - MOMO: 標題 = 給孩子的商業啟蒙：劉潤的第一本親子理財書，讓孩子參透商業世界的本質，徹底了解「底層邏輯」！, URL = https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055
 2024-07-20 14:48:58 - INFO - 獲取到的推廣鏈接: Books: https://www.books.com.tw/products/0010955949, Momo: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055
 2024-07-20 14:50:40 - INFO - 成功加載配置文件
-2024-07-20 14:50:40 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:50:40 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:50:40 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 14:50:40 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 14:50:40 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 14:50:40 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 14:50:40 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 14:50:40 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 14:50:40 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 14:50:40 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 14:50:40 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 14:50:40 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 14:50:41 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中未找到 YAML 前置數據
-2024-07-20 14:50:41 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:50:41 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中未找到 YAML 前置數據
+2024-07-20 14:50:41 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:50:41 - DEBUG - 成功更新 YAML 內容
-2024-07-20 14:50:41 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:50:41 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:50:41 - DEBUG - 成功寫入更新後的內容到文件
 2024-07-20 14:50:41 - INFO - 成功提取書名: 給孩子的商業啟蒙
 2024-07-20 14:50:41 - INFO - 提取到書名: 給孩子的商業啟蒙
@@ -1988,20 +1988,20 @@ NameError: name 'content' is not defined. Did you mean: 'self.content'?
 2024-07-20 14:51:08 - INFO - MOMO: 標題 = 給孩子的商業啟蒙：劉潤的第一本親子理財書，讓孩子參透商業世界的本質，徹底了解「底層邏輯」！, URL = https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055
 2024-07-20 14:51:08 - INFO - 獲取到的推廣鏈接: Books: https://www.books.com.tw/products/0010955949, Momo: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055
 2024-07-20 14:51:15 - INFO - 成功加載配置文件
-2024-07-20 14:51:15 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:51:15 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:51:15 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 14:51:15 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 14:51:15 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 14:51:15 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 14:51:15 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 14:51:15 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 14:51:15 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 14:51:15 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 14:51:15 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 14:51:15 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 14:51:23 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中未找到 YAML 前置數據
-2024-07-20 14:51:23 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:51:23 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中未找到 YAML 前置數據
+2024-07-20 14:51:23 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:51:23 - DEBUG - 成功更新 YAML 內容
-2024-07-20 14:51:23 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 14:51:23 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 14:51:23 - DEBUG - 成功寫入更新後的內容到文件
 2024-07-20 14:51:23 - INFO - 成功提取書名: 給孩子的商業啟蒙
 2024-07-20 14:51:23 - INFO - 提取到書名: 給孩子的商業啟蒙
@@ -2262,20 +2262,20 @@ NameError: name 'content' is not defined. Did you mean: 'self.content'?
 2024-07-20 14:51:49 - INFO - MOMO: 標題 = 給孩子的商業啟蒙：劉潤的第一本親子理財書，讓孩子參透商業世界的本質，徹底了解「底層邏輯」！, URL = https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055
 2024-07-20 14:51:49 - INFO - 獲取到的推廣鏈接: Books: https://www.books.com.tw/products/0010955949, Momo: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055
 2024-07-20 14:54:12 - INFO - 成功加載配置文件
-2024-07-20 14:54:12 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《上台的技術》讀書心得.md
+2024-07-20 14:54:12 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《上台的技術》閱讀心得.md
 2024-07-20 14:54:12 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 14:54:12 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 14:54:12 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 14:54:12 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 14:54:12 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 14:54:12 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 14:54:12 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 14:54:12 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 14:54:12 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 14:54:12 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 14:54:14 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《上台的技術》讀書心得.md 中未找到 YAML 前置數據
-2024-07-20 14:54:14 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《上台的技術》讀書心得.md
+2024-07-20 14:54:14 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《上台的技術》閱讀心得.md 中未找到 YAML 前置數據
+2024-07-20 14:54:14 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【書單】《上台的技術》閱讀心得.md
 2024-07-20 14:54:14 - DEBUG - 成功更新 YAML 內容
-2024-07-20 14:54:14 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《上台的技術》讀書心得.md
+2024-07-20 14:54:14 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《上台的技術》閱讀心得.md
 2024-07-20 14:54:14 - DEBUG - 成功寫入更新後的內容到文件
 2024-07-20 14:54:14 - INFO - 成功提取書名: 給孩子的商業啟蒙
 2024-07-20 14:54:14 - INFO - 提取到書名: 給孩子的商業啟蒙
@@ -2311,20 +2311,20 @@ NameError: name 'content' is not defined. Did you mean: 'self.content'?
 2024-07-20 14:54:16 - DEBUG - DELETE http://localhost:56317/session/4cfef459cfe7b2190de163a3476a100d {}
 2024-07-20 14:54:16 - DEBUG - Starting new HTTP connection (2): localhost:56317
 2024-07-20 14:54:30 - INFO - 成功加載配置文件
-2024-07-20 14:54:30 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《上台的技術》讀書心得.md
+2024-07-20 14:54:30 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《上台的技術》閱讀心得.md
 2024-07-20 14:54:30 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 14:54:30 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 14:54:30 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 14:54:30 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 14:54:30 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 14:54:30 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 14:54:30 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 14:54:30 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 14:54:30 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 14:54:30 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 14:54:31 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《上台的技術》讀書心得.md 中未找到 YAML 前置數據
-2024-07-20 14:54:31 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《上台的技術》讀書心得.md
+2024-07-20 14:54:31 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《上台的技術》閱讀心得.md 中未找到 YAML 前置數據
+2024-07-20 14:54:31 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【書單】《上台的技術》閱讀心得.md
 2024-07-20 14:54:31 - DEBUG - 成功更新 YAML 內容
-2024-07-20 14:54:31 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《上台的技術》讀書心得.md
+2024-07-20 14:54:31 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《上台的技術》閱讀心得.md
 2024-07-20 14:54:31 - DEBUG - 成功寫入更新後的內容到文件
 2024-07-20 14:54:31 - INFO - 成功提取書名: 上台的技術
 2024-07-20 14:54:31 - INFO - 提取到書名: 上台的技術
@@ -2585,20 +2585,20 @@ NameError: name 'content' is not defined. Did you mean: 'self.content'?
 2024-07-20 14:54:59 - INFO - MOMO: 標題 = 【MyBook】線上即戰場！突破時代困境的遠距溝通術：內容設計、說話技巧……專業講師教你發揮實(電子書), URL = https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=12405825
 2024-07-20 14:54:59 - INFO - 獲取到的推廣鏈接: Books: https://www.books.com.tw/products/0010657348, Momo: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=12405825
 2024-07-20 15:37:43 - INFO - 成功加載配置文件
-2024-07-20 15:37:43 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 15:37:43 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 15:37:43 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 15:37:43 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 15:37:43 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 15:37:43 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 15:37:43 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 15:37:43 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 15:37:43 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 15:37:43 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 15:37:43 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 15:37:43 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 15:37:45 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中未找到 YAML 前置數據
-2024-07-20 15:37:45 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 15:37:45 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中未找到 YAML 前置數據
+2024-07-20 15:37:45 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 15:37:45 - DEBUG - 成功更新 YAML 內容
-2024-07-20 15:37:45 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 15:37:45 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 15:37:45 - DEBUG - 成功寫入更新後的內容到文件
 2024-07-20 15:37:45 - INFO - 成功提取書名: 給孩子的商業啟蒙
 2024-07-20 15:37:45 - INFO - 提取到書名: 給孩子的商業啟蒙
@@ -2862,20 +2862,20 @@ NameError: name 'content' is not defined. Did you mean: 'self.content'?
 2024-07-20 15:38:17 - INFO - MOMO: 標題 = 給孩子的商業啟蒙：劉潤的第一本親子理財書，讓孩子參透商業世界的本質，徹底了解「底層邏輯」！, URL = https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055&memid=6000021729&cid=apuad&oid=1&osm=league
 2024-07-20 15:38:17 - INFO - 獲取到的推廣鏈接: Books: https://www.books.com.tw/products/0010955949?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202407, Momo: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055&memid=6000021729&cid=apuad&oid=1&osm=league
 2024-07-20 15:41:13 - INFO - 成功加載配置文件
-2024-07-20 15:41:13 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 15:41:13 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 15:41:13 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 15:41:13 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 15:41:13 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 15:41:13 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 15:41:13 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 15:41:13 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 15:41:13 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 15:41:13 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 15:41:13 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 15:41:13 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 15:41:14 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中未找到 YAML 前置數據
-2024-07-20 15:41:14 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 15:41:14 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中未找到 YAML 前置數據
+2024-07-20 15:41:14 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 15:41:14 - DEBUG - 成功更新 YAML 內容
-2024-07-20 15:41:14 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 15:41:14 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 15:41:14 - DEBUG - 成功寫入更新後的內容到文件
 2024-07-20 15:41:14 - INFO - 成功提取書名: 給孩子的商業啟蒙
 2024-07-20 15:41:14 - INFO - 提取到書名: 給孩子的商業啟蒙
@@ -3136,17 +3136,17 @@ NameError: name 'content' is not defined. Did you mean: 'self.content'?
 2024-07-20 15:41:48 - INFO - MOMO: 標題 = 給孩子的商業啟蒙：劉潤的第一本親子理財書，讓孩子參透商業世界的本質，徹底了解「底層邏輯」！, URL = https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055&memid=6000021729&cid=apuad&oid=1&osm=league
 2024-07-20 15:41:48 - INFO - 獲取到的推廣鏈接: Books: https://www.books.com.tw/products/0010955949?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202407, Momo: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055&memid=6000021729&cid=apuad&oid=1&osm=league
 2024-07-20 15:45:47 - INFO - 成功加載配置文件
-2024-07-20 15:45:47 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 15:45:47 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 15:45:47 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 15:45:47 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 15:45:47 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 15:45:47 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 15:45:47 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 15:45:47 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 15:45:47 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 15:45:47 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 15:45:47 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 15:45:47 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 15:45:54 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中未找到 YAML 前置數據
+2024-07-20 15:45:54 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中未找到 YAML 前置數據
 2024-07-20 15:45:54 - ERROR - 程序執行過程中發生錯誤: 'BooksReviewProcessor' object has no attribute 'process_book_review'
 Traceback (most recent call last):
   File "D:\marskingx.github.io\reindex\main.py", line 137, in main
@@ -3154,17 +3154,17 @@ Traceback (most recent call last):
                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'BooksReviewProcessor' object has no attribute 'process_book_review'
 2024-07-20 15:47:37 - INFO - 成功加載配置文件
-2024-07-20 15:47:37 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 15:47:37 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 15:47:37 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 15:47:37 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 15:47:37 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 15:47:37 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 15:47:37 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 15:47:37 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 15:47:37 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 15:47:37 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 15:47:37 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 15:47:37 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 15:47:40 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中未找到 YAML 前置數據
+2024-07-20 15:47:40 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中未找到 YAML 前置數據
 2024-07-20 15:47:40 - INFO - 開始處理書評文件
 2024-07-20 15:47:40 - ERROR - 程序執行過程中發生錯誤: expected string or bytes-like object, got 'NoneType'
 Traceback (most recent call last):
@@ -3179,20 +3179,20 @@ Traceback (most recent call last):
                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 TypeError: expected string or bytes-like object, got 'NoneType'
 2024-07-20 15:54:51 - INFO - 成功加載配置文件
-2024-07-20 15:54:51 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 15:54:51 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 15:54:51 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 15:54:51 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 15:54:51 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 15:54:51 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 15:54:51 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 15:54:51 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 15:54:51 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 15:54:51 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 15:54:51 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 15:54:51 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
 2024-07-20 15:55:11 - ERROR - 無效的選擇，請重試。
-2024-07-20 15:55:13 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中未找到 YAML 前置數據
+2024-07-20 15:55:13 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中未找到 YAML 前置數據
 2024-07-20 15:55:13 - INFO - 開始處理書評文件
-2024-07-20 15:55:13 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 15:55:13 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 15:55:13 - INFO - 成功提取書名: 給孩子的商業啟蒙
 2024-07-20 15:55:13 - INFO - 取得聯盟行銷連結，書名: 給孩子的商業啟蒙
 2024-07-20 15:55:13 - DEBUG - Selenium Manager binary found at: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
@@ -3450,7 +3450,7 @@ TypeError: expected string or bytes-like object, got 'NoneType'
 2024-07-20 15:56:16 - INFO - Momo: 給孩子的商業啟蒙：劉潤的第一本親子理財書，讓孩子參透商業世界的本質，徹底了解「底層邏輯」！, URL: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055&memid=6000021729&cid=apuad&oid=1&osm=league
 2024-07-20 15:56:16 - INFO - 開始更新購書連結
 2024-07-20 15:56:16 - INFO - 購書連結更新完成
-2024-07-20 15:56:16 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 15:56:16 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 15:56:16 - INFO - 更新閱讀列表
 2024-07-20 15:56:16 - ERROR - 處理書評文件時發生錯誤: 'BooksReviewProcessor' object has no attribute 'update_reading_list'
 Traceback (most recent call last):
@@ -3459,17 +3459,17 @@ Traceback (most recent call last):
     ^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'BooksReviewProcessor' object has no attribute 'update_reading_list'
 2024-07-20 16:03:39 - INFO - 成功加載配置文件
-2024-07-20 16:03:39 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:03:39 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:03:39 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 16:03:39 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 16:03:39 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 16:03:39 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 16:03:39 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 16:03:39 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 16:03:39 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 16:03:39 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 16:03:39 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 16:03:39 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 16:03:40 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中未找到 YAML 前置數據
+2024-07-20 16:03:40 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中未找到 YAML 前置數據
 2024-07-20 16:03:40 - ERROR - 程序執行過程中發生錯誤: 'BooksReviewProcessor' object has no attribute 'process_book_review'
 Traceback (most recent call last):
   File "D:\marskingx.github.io\reindex\main.py", line 137, in main
@@ -3477,19 +3477,19 @@ Traceback (most recent call last):
                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'BooksReviewProcessor' object has no attribute 'process_book_review'
 2024-07-20 16:03:49 - INFO - 成功加載配置文件
-2024-07-20 16:03:49 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:03:49 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:03:49 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 16:03:49 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 16:03:49 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 16:03:49 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 16:03:49 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 16:03:49 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 16:03:49 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 16:03:49 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 16:03:49 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 16:03:49 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 16:03:52 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中未找到 YAML 前置數據
+2024-07-20 16:03:52 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中未找到 YAML 前置數據
 2024-07-20 16:03:52 - INFO - 開始處理書評文件
-2024-07-20 16:03:52 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:03:52 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:03:52 - INFO - 成功提取書名: 給孩子的商業啟蒙
 2024-07-20 16:03:52 - INFO - 取得聯盟行銷連結，書名: 給孩子的商業啟蒙
 2024-07-20 16:03:52 - DEBUG - Selenium Manager binary found at: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
@@ -3747,7 +3747,7 @@ AttributeError: 'BooksReviewProcessor' object has no attribute 'process_book_rev
 2024-07-20 16:04:16 - INFO - Momo: 給孩子的商業啟蒙：劉潤的第一本親子理財書，讓孩子參透商業世界的本質，徹底了解「底層邏輯」！, URL: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055&memid=6000021729&cid=apuad&oid=1&osm=league
 2024-07-20 16:04:16 - INFO - 開始更新購書連結
 2024-07-20 16:04:16 - INFO - 購書連結更新完成
-2024-07-20 16:04:16 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:04:16 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:04:16 - INFO - 更新閱讀列表
 2024-07-20 16:04:16 - ERROR - 處理書評文件時發生錯誤: 'BooksReviewProcessor' object has no attribute 'update_reading_list'
 Traceback (most recent call last):
@@ -3756,19 +3756,19 @@ Traceback (most recent call last):
     ^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'BooksReviewProcessor' object has no attribute 'update_reading_list'
 2024-07-20 16:14:12 - INFO - 成功加載配置文件
-2024-07-20 16:14:12 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:14:12 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:14:12 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 16:14:12 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 16:14:12 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 16:14:12 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 16:14:12 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 16:14:12 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 16:14:12 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 16:14:12 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 16:14:12 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 16:14:12 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 16:14:29 - INFO - 從文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中提取到類別: 讀書心得
+2024-07-20 16:14:29 - INFO - 從文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中提取到類別: 閱讀心得
 2024-07-20 16:14:29 - INFO - 開始處理書評文件
-2024-07-20 16:14:29 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:14:29 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:14:29 - INFO - 成功提取書名: 給孩子的商業啟蒙
 2024-07-20 16:14:29 - INFO - 取得聯盟行銷連結，書名: 給孩子的商業啟蒙
 2024-07-20 16:14:29 - DEBUG - Selenium Manager binary found at: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
@@ -4026,7 +4026,7 @@ AttributeError: 'BooksReviewProcessor' object has no attribute 'update_reading_l
 2024-07-20 16:14:55 - INFO - Momo: 給孩子的商業啟蒙：劉潤的第一本親子理財書，讓孩子參透商業世界的本質，徹底了解「底層邏輯」！, URL: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055&memid=6000021729&cid=apuad&oid=1&osm=league
 2024-07-20 16:14:55 - INFO - 開始更新購書連結
 2024-07-20 16:14:55 - INFO - 購書連結更新完成
-2024-07-20 16:14:55 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:14:55 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:14:55 - INFO - 更新閱讀列表
 2024-07-20 16:14:55 - ERROR - 處理書評文件時發生錯誤: 'BooksReviewProcessor' object has no attribute 'update_reading_list'
 Traceback (most recent call last):
@@ -4035,41 +4035,41 @@ Traceback (most recent call last):
     ^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'BooksReviewProcessor' object has no attribute 'update_reading_list'
 2024-07-20 16:15:00 - INFO - 成功加載配置文件
-2024-07-20 16:15:00 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:15:00 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:15:00 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 16:15:00 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 16:15:00 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 16:15:00 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 16:15:00 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 16:15:00 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 16:15:00 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 16:15:00 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 16:15:00 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 16:15:00 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
 2024-07-20 16:15:14 - INFO - 成功加載配置文件
-2024-07-20 16:15:14 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:15:14 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:15:14 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 16:15:14 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 16:15:14 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 16:15:14 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 16:15:14 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 16:15:14 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 16:15:14 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 16:15:14 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 16:15:14 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 16:15:14 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
 2024-07-20 16:15:15 - INFO - 成功加載配置文件
-2024-07-20 16:15:15 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:15:15 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:15:15 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 16:15:15 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 16:15:15 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 16:15:15 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 16:15:15 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 16:15:15 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 16:15:15 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 16:15:15 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 16:15:15 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 16:15:15 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 16:15:17 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中未找到 YAML 前置數據
+2024-07-20 16:15:17 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中未找到 YAML 前置數據
 2024-07-20 16:15:17 - INFO - 開始處理書評文件
-2024-07-20 16:15:17 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:15:17 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:15:17 - INFO - 成功提取書名: 給孩子的商業啟蒙
 2024-07-20 16:15:17 - INFO - 取得聯盟行銷連結，書名: 給孩子的商業啟蒙
 2024-07-20 16:15:17 - DEBUG - Selenium Manager binary found at: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
@@ -4327,7 +4327,7 @@ AttributeError: 'BooksReviewProcessor' object has no attribute 'update_reading_l
 2024-07-20 16:15:42 - INFO - Momo: 給孩子的商業啟蒙：劉潤的第一本親子理財書，讓孩子參透商業世界的本質，徹底了解「底層邏輯」！, URL: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055&memid=6000021729&cid=apuad&oid=1&osm=league
 2024-07-20 16:15:42 - INFO - 開始更新購書連結
 2024-07-20 16:15:42 - INFO - 購書連結更新完成
-2024-07-20 16:15:42 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:15:42 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:15:42 - INFO - 更新閱讀列表
 2024-07-20 16:15:42 - ERROR - 處理書評文件時發生錯誤: name 'update_reading_list' is not defined
 Traceback (most recent call last):
@@ -4336,19 +4336,19 @@ Traceback (most recent call last):
     ^^^^^^^^^^^^^^^^^^^
 NameError: name 'update_reading_list' is not defined
 2024-07-20 16:24:06 - INFO - 成功加載配置文件
-2024-07-20 16:24:06 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:24:06 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:24:06 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 16:24:06 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 16:24:06 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 16:24:06 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 16:24:06 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 16:24:06 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 16:24:06 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 16:24:06 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 16:24:06 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 16:24:06 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 16:24:08 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中未找到 YAML 前置數據
+2024-07-20 16:24:08 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中未找到 YAML 前置數據
 2024-07-20 16:24:08 - INFO - 開始處理書評文件
-2024-07-20 16:24:08 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:24:08 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:24:08 - INFO - 成功提取書名: 給孩子的商業啟蒙
 2024-07-20 16:24:08 - INFO - 取得聯盟行銷連結，書名: 給孩子的商業啟蒙
 2024-07-20 16:24:08 - DEBUG - Selenium Manager binary found at: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
@@ -4606,23 +4606,23 @@ NameError: name 'update_reading_list' is not defined
 2024-07-20 16:24:33 - INFO - Momo: 給孩子的商業啟蒙：劉潤的第一本親子理財書，讓孩子參透商業世界的本質，徹底了解「底層邏輯」！, URL: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055&memid=6000021729&cid=apuad&oid=1&osm=league
 2024-07-20 16:24:33 - INFO - 開始更新購書連結
 2024-07-20 16:24:33 - INFO - 購書連結更新完成
-2024-07-20 16:24:33 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:24:33 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:24:33 - INFO - 更新閱讀列表
 2024-07-20 16:24:33 - INFO - 書評文件處理完成
 2024-07-20 16:29:55 - INFO - 成功加載配置文件
-2024-07-20 16:29:55 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:29:55 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:29:55 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 16:29:55 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 16:29:55 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 16:29:55 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 16:29:55 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 16:29:55 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 16:29:55 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 16:29:55 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 16:29:55 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 16:29:55 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 16:29:56 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中未找到 YAML 前置數據
+2024-07-20 16:29:56 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中未找到 YAML 前置數據
 2024-07-20 16:29:56 - INFO - 開始處理書評文件
-2024-07-20 16:29:56 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:29:56 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:29:56 - INFO - 成功提取書名: 給孩子的商業啟蒙
 2024-07-20 16:29:56 - INFO - 取得聯盟行銷連結，書名: 給孩子的商業啟蒙
 2024-07-20 16:29:56 - DEBUG - Selenium Manager binary found at: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
@@ -4880,23 +4880,23 @@ NameError: name 'update_reading_list' is not defined
 2024-07-20 16:30:21 - INFO - Momo: 給孩子的商業啟蒙：劉潤的第一本親子理財書，讓孩子參透商業世界的本質，徹底了解「底層邏輯」！, URL: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055&memid=6000021729&cid=apuad&oid=1&osm=league
 2024-07-20 16:30:21 - INFO - 開始更新購書連結
 2024-07-20 16:30:21 - INFO - 購書連結更新完成
-2024-07-20 16:30:21 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:30:21 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:30:21 - INFO - 更新閱讀列表
 2024-07-20 16:30:21 - INFO - 書評文件處理完成
 2024-07-20 16:34:07 - INFO - 成功加載配置文件
-2024-07-20 16:34:07 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:34:07 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:34:07 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 16:34:07 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 16:34:07 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 16:34:07 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 16:34:07 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 16:34:07 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 16:34:07 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 16:34:07 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 16:34:07 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 16:34:07 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 16:34:10 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中未找到 YAML 前置數據
+2024-07-20 16:34:10 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中未找到 YAML 前置數據
 2024-07-20 16:34:10 - INFO - 開始處理書評文件
-2024-07-20 16:34:10 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:34:10 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:34:10 - INFO - 成功提取書名: 給孩子的商業啟蒙
 2024-07-20 16:34:10 - INFO - 取得聯盟行銷連結，書名: 給孩子的商業啟蒙
 2024-07-20 16:34:10 - DEBUG - Selenium Manager binary found at: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
@@ -5154,23 +5154,23 @@ NameError: name 'update_reading_list' is not defined
 2024-07-20 16:34:33 - INFO - Momo: 給孩子的商業啟蒙：劉潤的第一本親子理財書，讓孩子參透商業世界的本質，徹底了解「底層邏輯」！, URL: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055&memid=6000021729&cid=apuad&oid=1&osm=league
 2024-07-20 16:34:33 - INFO - 開始更新購書連結
 2024-07-20 16:34:33 - INFO - 購書連結更新完成
-2024-07-20 16:34:33 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:34:33 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:34:33 - INFO - 更新閱讀列表
 2024-07-20 16:34:33 - INFO - 書評文件處理完成
 2024-07-20 16:38:31 - INFO - 成功加載配置文件
-2024-07-20 16:38:31 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:38:31 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:38:31 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 16:38:31 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 16:38:31 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 16:38:31 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 16:38:31 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 16:38:31 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 16:38:31 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 16:38:31 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 16:38:31 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 16:38:31 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 16:38:32 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中未找到 YAML 前置數據
+2024-07-20 16:38:32 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中未找到 YAML 前置數據
 2024-07-20 16:38:32 - INFO - 開始處理書評文件
-2024-07-20 16:38:32 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:38:32 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:38:32 - INFO - 成功提取書名: 給孩子的商業啟蒙
 2024-07-20 16:38:32 - INFO - 取得聯盟行銷連結，書名: 給孩子的商業啟蒙
 2024-07-20 16:38:32 - DEBUG - Selenium Manager binary found at: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
@@ -5431,23 +5431,23 @@ NameError: name 'update_reading_list' is not defined
 2024-07-20 16:38:58 - INFO - Momo: 給孩子的商業啟蒙：劉潤的第一本親子理財書，讓孩子參透商業世界的本質，徹底了解「底層邏輯」！, URL: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055&memid=6000021729&cid=apuad&oid=1&osm=league
 2024-07-20 16:38:58 - INFO - 開始更新購書連結
 2024-07-20 16:38:58 - INFO - 購書連結更新完成
-2024-07-20 16:38:58 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:38:58 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:38:58 - INFO - 更新閱讀列表
 2024-07-20 16:38:58 - INFO - 書評文件處理完成
 2024-07-20 16:40:34 - INFO - 成功加載配置文件
-2024-07-20 16:40:34 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:40:34 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:40:34 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 16:40:34 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 16:40:34 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 16:40:34 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 16:40:34 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 16:40:34 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 16:40:34 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 16:40:34 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 16:40:34 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 16:40:34 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 16:40:36 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中未找到 YAML 前置數據
+2024-07-20 16:40:36 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中未找到 YAML 前置數據
 2024-07-20 16:40:36 - INFO - 開始處理書評文件
-2024-07-20 16:40:36 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:40:36 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:40:36 - INFO - 成功提取書名: 給孩子的商業啟蒙
 2024-07-20 16:40:36 - INFO - 取得聯盟行銷連結，書名: 給孩子的商業啟蒙
 2024-07-20 16:40:36 - DEBUG - Selenium Manager binary found at: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
@@ -5705,23 +5705,23 @@ NameError: name 'update_reading_list' is not defined
 2024-07-20 16:41:01 - INFO - Momo: 給孩子的商業啟蒙：劉潤的第一本親子理財書，讓孩子參透商業世界的本質，徹底了解「底層邏輯」！, URL: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055&memid=6000021729&cid=apuad&oid=1&osm=league
 2024-07-20 16:41:01 - INFO - 開始更新購書連結
 2024-07-20 16:41:01 - INFO - 購書連結更新完成
-2024-07-20 16:41:01 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:41:01 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:41:01 - INFO - 更新閱讀列表
 2024-07-20 16:41:01 - INFO - 書評文件處理完成
 2024-07-20 16:45:20 - INFO - 成功加載配置文件
-2024-07-20 16:45:20 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:45:20 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:45:20 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
 2024-07-20 16:45:20 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
 2024-07-20 16:45:20 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
-2024-07-20 16:45:20 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 16:45:20 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【書單】《窮查理的普通常識》閱讀心得.md
 2024-07-20 16:45:20 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
 2024-07-20 16:45:20 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
 2024-07-20 16:45:20 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
 2024-07-20 16:45:20 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
 2024-07-20 16:45:20 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
-2024-07-20 16:45:24 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md 中未找到 YAML 前置數據
+2024-07-20 16:45:24 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md 中未找到 YAML 前置數據
 2024-07-20 16:45:24 - INFO - 開始處理書評文件
-2024-07-20 16:45:24 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:45:24 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:45:24 - INFO - 成功提取書名: 給孩子的商業啟蒙
 2024-07-20 16:45:24 - INFO - 取得聯盟行銷連結，書名: 給孩子的商業啟蒙
 2024-07-20 16:45:24 - DEBUG - Selenium Manager binary found at: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
@@ -5979,7 +5979,7 @@ NameError: name 'update_reading_list' is not defined
 2024-07-20 16:45:50 - INFO - Momo: 給孩子的商業啟蒙：劉潤的第一本親子理財書，讓孩子參透商業世界的本質，徹底了解「底層邏輯」！, URL: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055&memid=6000021729&cid=apuad&oid=1&osm=league
 2024-07-20 16:45:50 - INFO - 開始更新購書連結
 2024-07-20 16:45:50 - INFO - 購書連結更新完成
-2024-07-20 16:45:50 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 16:45:50 - INFO - 成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-20【書單】《給孩子的商業啟蒙》閱讀心得.md
 2024-07-20 16:45:50 - INFO - 更新閱讀列表
 2024-07-20 16:45:50 - INFO - 書評文件處理完成
 2024-07-20 16:51:33 - INFO - 開始搜索關鍵字: 給孩子的商業啟蒙
