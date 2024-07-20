@@ -1,118 +1,90 @@
 import logging
+from datetime import datetime
+import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException, WebDriverException
 
-# 設置日誌文件
-logging.basicConfig(filename='search_book_errors.log', level=logging.DEBUG)
+# 設置日誌
+log_filename = f'search_momo_book_errors_{datetime.now().strftime("%Y%m%d")}.log'
+logging.basicConfig(
+  filename=log_filename,
+  level=logging.DEBUG,
+  format='%(asctime)s - %(levelname)s - %(message)s',
+  datefmt='%Y-%m-%d %H:%M:%S',
+  encoding='utf-8'
+)
+
 
 def initialize_driver():
-    """初始化 Selenium WebDriver"""
-    options = webdriver.ChromeOptions()
-    options.add_argument('--headless')  # 如果你希望背景運行瀏覽器，移除這一行可以看到瀏覽器操作
-    driver = webdriver.Chrome(options=options)
-    logging.debug("初始化 WebDriver 完成")
-    return driver
+  options = webdriver.ChromeOptions()
+  options.add_argument('--headless')
+  options.add_argument('--disable-gpu')
+  options.add_argument('--no-sandbox')
+  options.add_argument('--disable-dev-shm-usage')
+  options.add_argument(
+    'user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36')
+  driver = webdriver.Chrome(options=options)
+  driver.set_page_load_timeout(30)
+  logging.debug("初始化 WebDriver 完成")
+  return driver
+
 
 def search_momo_books(driver, keyword):
-    """在 MOMO 購物網站上搜尋書籍並返回搜尋結果的 URL"""
-    try:
-        logging.debug("打開 MOMO 購物網站")
-        url = f"https://www.momoshop.com.tw/search/searchShop.jsp?keyword={keyword}&searchType=1&curPage=1&showType=chessboardType&serviceCode=MT01&cateCode=&t=1720410921275&_isFuzzy=0"
-        driver.get(url)
+  try:
+    logging.debug(f"開始搜索關鍵字: {keyword}")
+    url = f"https://www.momoshop.com.tw/search/searchShop.jsp?keyword={keyword}&searchType=1&curPage=1&showType=chessboardType"
+    driver.get(url)
 
-        # 等待網頁加載完成
-        WebDriverWait(driver, 30).until(EC.presence_of_all_elements_located((By.CLASS_NAME, 'goodsUrl')))
+    # 等待搜索結果加載
+    WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.CSS_SELECTOR, "li[gcode]")))
 
-        products = driver.find_elements(By.CLASS_NAME, 'goodsUrl')
+    # 獲取所有商品項目
+    products = driver.find_elements(By.CSS_SELECTOR, "li[gcode]")
 
-        if not products:
-            logging.debug("未找到任何結果")
-            return None, None
+    if not products:
+      logging.warning("未找到任何書籍")
+      return None, None
 
-        filtered_results = []
-        for index, product in enumerate(products[:6]):
-            if process_result(product, index):
-                filtered_results.append(product)
+    # 獲取第一個商品的信息
+    first_product = products[0]
+    gcode = first_product.get_attribute('gcode')
+    title_element = first_product.find_element(By.CSS_SELECTOR, ".prdName")
+    title = title_element.text.strip()
 
-        if not filtered_results:
-            logging.debug("未找到有效的搜尋結果")
-            return None, None
+    # 構建商品URL
+    product_url = f"https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code={gcode}"
 
-        if len(filtered_results) == 1:
-            choice = 0
-            logging.debug("自動選擇唯一結果")
-        else:
-            while True:
-                try:
-                    choice = int(input("請輸入您要選擇的商品編號: ")) - 1
-                    if 0 <= choice < len(filtered_results):
-                        break
-                    else:
-                        logging.debug("無效的編號，請重新輸入")
-                except ValueError:
-                    logging.debug("請輸入數字編號")
+    logging.debug(f"找到書籍: {title}")
+    logging.debug(f"商品URL: {product_url}")
+    return title, product_url
+  except Exception as e:
+    logging.error(f"搜索 MOMO 書籍時發生錯誤: {e}")
+    return None, None
 
-        selected_result = filtered_results[choice]
-        selected_title, product_url = get_selected_result_url(selected_result)
-
-        logging.debug(f"選擇的商品名稱: {selected_title}")
-        logging.debug(f"生成的商品 URL: {product_url}")
-        return selected_title, product_url
-
-    except (TimeoutException, NoSuchElementException, WebDriverException) as e:
-        error_message = f"Error searching book on momoshop.com.tw: {e}"
-        logging.error(error_message)
-        return None, None
-
-def process_result(result, index):
-    """處理搜尋結果，顯示資訊供使用者選擇"""
-    try:
-        title_element = result.find_element(By.CLASS_NAME, 'prdName')
-        title = title_element.get_attribute('title')
-        link_element = result.find_element(By.TAG_NAME, 'a')
-        link = link_element.get_attribute('href')
-
-        logging.debug(f"{index + 1}: {title}")
-        return True
-
-    except (NoSuchElementException, TimeoutException) as e:
-        error_message = f"Error finding element in result {index + 1}: {e}"
-        logging.error(error_message)
-        return False
-
-def get_selected_result_url(selected_result):
-    """獲取選擇的結果 URL"""
-    title, product_url = None, None  # 初始化變數
-
-    try:
-        title_element = selected_result.find_element(By.CLASS_NAME, 'prdName')
-        title = title_element.get_attribute('title')
-        link_element = selected_result.find_element(By.TAG_NAME, 'a')
-        link = link_element.get_attribute('href')
-
-        # 添加必要的參數到URL
-        if '?' in link:
-            product_url = f"{link}&memid=6000021729&cid=apuad&oid=1&osm=league"
-        else:
-            product_url = f"{link}?memid=6000021729&cid=apuad&oid=1&osm=league"
-
-        return title, product_url
-    except (NoSuchElementException, TimeoutException) as e:
-        error_message = f"Error getting selected result URL: {e}"
-        logging.error(error_message)
-        return None, None
 
 def get_momo_promotion_link(keyword):
-    driver = initialize_driver()
-    title, url = search_momo_books(driver, keyword)
+  driver = initialize_driver()
+  try:
+    return search_momo_books(driver, keyword)
+  except Exception as e:
+    logging.error(f"獲取書籍促銷連結時發生錯誤: {e}")
+    return None, None
+  finally:
     driver.quit()
-    return title, url
+
 
 # 示例用法
 if __name__ == "__main__":
-    keyword = "平衡心態"
-    momo_title, momo_url = get_momo_promotion_link(keyword)
-    logging.debug(f"Momo: {momo_title}, URL: {momo_url}")
+  keyword = "平衡心態"
+  logging.info(f"開始搜索關鍵字: {keyword}")
+  momo_title, momo_url = get_momo_promotion_link(keyword)
+  if momo_title and momo_url:
+    logging.info(f"Momo: {momo_title}, URL: {momo_url}")
+    print(f"找到商品: {momo_title}")
+    print(f"URL: {momo_url}")
+  else:
+    logging.warning("未能找到書籍資訊")
+    print("未找到符合的商品")
