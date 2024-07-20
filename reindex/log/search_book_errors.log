@@ -1,0 +1,318 @@
+DEBUG:selenium.webdriver.common.selenium_manager:Selenium Manager binary found at: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+DEBUG:selenium.webdriver.common.selenium_manager:Executing process: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+DEBUG:selenium.webdriver.common.selenium_manager:chromedriver not found in PATH
+DEBUG:selenium.webdriver.common.selenium_manager:chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+DEBUG:selenium.webdriver.common.selenium_manager:Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+DEBUG:selenium.webdriver.common.selenium_manager:Output: ""
+DEBUG:selenium.webdriver.common.selenium_manager:Running command: REG QUERY HKCU\Software\Google\Chrome\BLBeacon /v version
+DEBUG:selenium.webdriver.common.selenium_manager:Output: ""
+DEBUG:selenium.webdriver.common.selenium_manager:chrome not found in the system
+DEBUG:selenium.webdriver.common.selenium_manager:Required browser: chrome 126.0.6478.182
+DEBUG:selenium.webdriver.common.selenium_manager:chrome 126.0.6478.182 already exists
+DEBUG:selenium.webdriver.common.selenium_manager:chrome 126.0.6478.182 is available at C:\Users\Mars\.cache\selenium\chrome\win64\126.0.6478.182\chrome.exe
+DEBUG:selenium.webdriver.common.selenium_manager:Required driver: chromedriver 126.0.6478.182
+DEBUG:selenium.webdriver.common.selenium_manager:chromedriver 126.0.6478.182 already in the cache
+DEBUG:selenium.webdriver.common.selenium_manager:Driver path: C:\Users\Mars\.cache\selenium\chromedriver\win64\126.0.6478.182\chromedriver.exe
+DEBUG:selenium.webdriver.common.selenium_manager:Browser path: C:\Users\Mars\.cache\selenium\chrome\win64\126.0.6478.182\chrome.exe
+DEBUG:selenium.webdriver.common.service:Started executable: `C:\Users\Mars\.cache\selenium\chromedriver\win64\126.0.6478.182\chromedriver.exe` in a child process with pid: 49120 using 0 to output -3
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Users\\Mars\\.cache\\selenium\\chrome\\win64\\126.0.6478.182\\chrome.exe', 'args': []}}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:51507
+DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session HTTP/1.1" 200 881
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"126.0.6478.182","chrome":{"chromedriverVersion":"126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776})","userDataDir":"C:\\Users\\Mars\\AppData\\Local\\Temp\\scoped_dir49120_60280932"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:51510"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"866a00bd5f32bef705327f132c32b886"}} | headers=HTTPHeaderDict({'Content-Length': '881', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:初始化 WebDriver 完成
+DEBUG:root:打開 MOMO 購物網站
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/url {'url': 'https://www.momoshop.com.tw/search/searchShop.jsp?keyword=給孩子的商業啟蒙&searchType=1&curPage=1&showType=c...'}
+DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/elements {'using': 'css selector', 'value': '.goodsUrl'}
+DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/elements HTTP/1.1" 200 245
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.78"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.79"}]} | headers=HTTPHeaderDict({'Content-Length': '245', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/elements {'using': 'css selector', 'value': '.goodsUrl'}
+DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/elements HTTP/1.1" 200 245
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.78"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.79"}]} | headers=HTTPHeaderDict({'Content-Length': '245', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/element/f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.78/element {'using': 'css selector', 'value': '.prdName'}
+DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/element/f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.78/element HTTP/1.1" 200 126
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.80"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.80'}, 'title']}
+DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/execute/sync HTTP/1.1" 200 12
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/element/f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.78/element {'using': 'tag name', 'value': 'a'}
+DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/element/f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.78/element HTTP/1.1" 200 126
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.81"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.81'}, 'href']}
+DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/execute/sync HTTP/1.1" 200 147
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"https://www.momoshop.com.tw/search/searchShop.jsp?keyword=%E5%8A%89%E6%BD%A4&specialGoodsType=1&searchType=6&authorNo=20211026153305738"} | headers=HTTPHeaderDict({'Content-Length': '147', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:1: 
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/element/f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.79/element {'using': 'css selector', 'value': '.prdName'}
+DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/element/f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.79/element HTTP/1.1" 200 126
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.82"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.82'}, 'title']}
+DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/execute/sync HTTP/1.1" 200 12
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/element/f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.79/element {'using': 'tag name', 'value': 'a'}
+DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/element/f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.79/element HTTP/1.1" 404 1110
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"tag name\",\"selector\":\"a\"}\n  (Session info: chrome=126.0.6478.182)","stacktrace":"\tGetHandleVerifier [0x00007FF64C73EEB2+31554]\n\t(No symbol) [0x00007FF64C6B7EE9]\n\t(No symbol) [0x00007FF64C57872A]\n\t(No symbol) [0x00007FF64C5C8434]\n\t(No symbol) [0x00007FF64C5C853C]\n\t(No symbol) [0x00007FF64C5BBBAC]\n\t(No symbol) [0x00007FF64C5ED06F]\n\t(No symbol) [0x00007FF64C5BBA76]\n\t(No symbol) [0x00007FF64C5ED240]\n\t(No symbol) [0x00007FF64C60C977]\n\t(No symbol) [0x00007FF64C5ECDD3]\n\t(No symbol) [0x00007FF64C5BA33B]\n\t(No symbol) [0x00007FF64C5BAED1]\n\tGetHandleVerifier [0x00007FF64CA48B2D+3217341]\n\tGetHandleVerifier [0x00007FF64CA95AF3+3532675]\n\tGetHandleVerifier [0x00007FF64CA8B0F0+3489152]\n\tGetHandleVerifier [0x00007FF64C7EE786+750614]\n\t(No symbol) [0x00007FF64C6C376F]\n\t(No symbol) [0x00007FF64C6BEB24]\n\t(No symbol) [0x00007FF64C6BECB2]\n\t(No symbol) [0x00007FF64C6AE17F]\n\tBaseThreadInitThunk [0x00007FFD560C257D+29]\n\tRtlUserThreadStart [0x00007FFD56C2AF28+40]\n"}} | headers=HTTPHeaderDict({'Content-Length': '1110', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+ERROR:root:Error finding element in result 2: Message: no such element: Unable to locate element: {"method":"tag name","selector":"a"}
+  (Session info: chrome=126.0.6478.182); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF64C73EEB2+31554]
+	(No symbol) [0x00007FF64C6B7EE9]
+	(No symbol) [0x00007FF64C57872A]
+	(No symbol) [0x00007FF64C5C8434]
+	(No symbol) [0x00007FF64C5C853C]
+	(No symbol) [0x00007FF64C5BBBAC]
+	(No symbol) [0x00007FF64C5ED06F]
+	(No symbol) [0x00007FF64C5BBA76]
+	(No symbol) [0x00007FF64C5ED240]
+	(No symbol) [0x00007FF64C60C977]
+	(No symbol) [0x00007FF64C5ECDD3]
+	(No symbol) [0x00007FF64C5BA33B]
+	(No symbol) [0x00007FF64C5BAED1]
+	GetHandleVerifier [0x00007FF64CA48B2D+3217341]
+	GetHandleVerifier [0x00007FF64CA95AF3+3532675]
+	GetHandleVerifier [0x00007FF64CA8B0F0+3489152]
+	GetHandleVerifier [0x00007FF64C7EE786+750614]
+	(No symbol) [0x00007FF64C6C376F]
+	(No symbol) [0x00007FF64C6BEB24]
+	(No symbol) [0x00007FF64C6BECB2]
+	(No symbol) [0x00007FF64C6AE17F]
+	BaseThreadInitThunk [0x00007FFD560C257D+29]
+	RtlUserThreadStart [0x00007FFD56C2AF28+40]
+
+DEBUG:root:自動選擇唯一結果
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/element/f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.78/element {'using': 'css selector', 'value': '.prdName'}
+DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/element/f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.78/element HTTP/1.1" 200 126
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.80"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.80'}, 'title']}
+DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/execute/sync HTTP/1.1" 200 12
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/element/f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.78/element {'using': 'tag name', 'value': 'a'}
+DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/element/f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.78/element HTTP/1.1" 200 126
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.81"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.81'}, 'href']}
+DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/execute/sync HTTP/1.1" 200 147
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"https://www.momoshop.com.tw/search/searchShop.jsp?keyword=%E5%8A%89%E6%BD%A4&specialGoodsType=1&searchType=6&authorNo=20211026153305738"} | headers=HTTPHeaderDict({'Content-Length': '147', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:選擇的商品名稱: 
+DEBUG:root:生成的商品 URL: https://www.momoshop.com.tw/search/searchShop.jsp?keyword=%E5%8A%89%E6%BD%A4&specialGoodsType=1&searchType=6&authorNo=20211026153305738&memid=6000021729&cid=apuad&oid=1&osm=league
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://localhost:51507/session/866a00bd5f32bef705327f132c32b886 {}
+DEBUG:urllib3.connectionpool:http://localhost:51507 "DELETE /session/866a00bd5f32bef705327f132c32b886 HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:Momo: , URL: https://www.momoshop.com.tw/search/searchShop.jsp?keyword=%E5%8A%89%E6%BD%A4&specialGoodsType=1&searchType=6&authorNo=20211026153305738&memid=6000021729&cid=apuad&oid=1&osm=league
+2024-07-20 12:31:00,538 - DEBUG - Selenium Manager binary found at: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+2024-07-20 12:31:00,538 - DEBUG - Executing process: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+2024-07-20 12:31:00,610 - DEBUG - chromedriver not found in PATH
+2024-07-20 12:31:00,610 - DEBUG - chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+2024-07-20 12:31:00,610 - DEBUG - Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+2024-07-20 12:31:00,610 - DEBUG - Output: ""
+2024-07-20 12:31:00,610 - DEBUG - Running command: REG QUERY HKCU\Software\Google\Chrome\BLBeacon /v version
+2024-07-20 12:31:00,610 - DEBUG - Output: ""
+2024-07-20 12:31:00,610 - DEBUG - chrome not found in the system
+2024-07-20 12:31:00,610 - DEBUG - Required browser: chrome 126.0.6478.182
+2024-07-20 12:31:00,611 - DEBUG - chrome 126.0.6478.182 already exists
+2024-07-20 12:31:00,611 - DEBUG - chrome 126.0.6478.182 is available at C:\Users\Mars\.cache\selenium\chrome\win64\126.0.6478.182\chrome.exe
+2024-07-20 12:31:00,611 - DEBUG - Required driver: chromedriver 126.0.6478.182
+2024-07-20 12:31:00,611 - DEBUG - chromedriver 126.0.6478.182 already in the cache
+2024-07-20 12:31:00,611 - DEBUG - Driver path: C:\Users\Mars\.cache\selenium\chromedriver\win64\126.0.6478.182\chromedriver.exe
+2024-07-20 12:31:00,611 - DEBUG - Browser path: C:\Users\Mars\.cache\selenium\chrome\win64\126.0.6478.182\chrome.exe
+2024-07-20 12:31:00,649 - DEBUG - Started executable: `C:\Users\Mars\.cache\selenium\chromedriver\win64\126.0.6478.182\chromedriver.exe` in a child process with pid: 6068 using 0 to output -3
+2024-07-20 12:31:01,155 - DEBUG - POST http://localhost:62807/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Users\\Mars\\.cache\\selenium\\chrome\\win64\\126.0.6478.182\\chrome.exe', 'args': []}}}}
+2024-07-20 12:31:01,155 - DEBUG - Starting new HTTP connection (1): localhost:62807
+2024-07-20 12:31:01,611 - DEBUG - http://localhost:62807 "POST /session HTTP/1.1" 200 882
+2024-07-20 12:31:01,611 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"126.0.6478.182","chrome":{"chromedriverVersion":"126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776})","userDataDir":"C:\\Users\\Mars\\AppData\\Local\\Temp\\scoped_dir6068_1566964404"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:62810"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"f369b4cfa77975dd9fea374a8ea56acb"}} | headers=HTTPHeaderDict({'Content-Length': '882', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:01,611 - DEBUG - Finished Request
+2024-07-20 12:31:01,611 - DEBUG - 初始化 WebDriver 完成
+2024-07-20 12:31:01,611 - INFO - 開始搜索關鍵字: 平衡心態
+2024-07-20 12:31:01,612 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/url {'url': 'https://www.momoshop.com.tw/search/searchShop.jsp?keyword=平衡心態&searchType=1&curPage=1&showType=chess...'}
+2024-07-20 12:31:04,246 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/url HTTP/1.1" 200 14
+2024-07-20 12:31:04,246 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,247 - DEBUG - Finished Request
+2024-07-20 12:31:04,247 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/elements {'using': 'css selector', 'value': '.goodsUrl'}
+2024-07-20 12:31:04,252 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/elements HTTP/1.1" 200 830
+2024-07-20 12:31:04,252 - DEBUG - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.82"},{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.83"},{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.84"},{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.85"},{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.86"},{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.87"},{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.88"}]} | headers=HTTPHeaderDict({'Content-Length': '830', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,252 - DEBUG - Finished Request
+2024-07-20 12:31:04,252 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/elements {'using': 'css selector', 'value': '.goodsUrl'}
+2024-07-20 12:31:04,255 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/elements HTTP/1.1" 200 830
+2024-07-20 12:31:04,256 - DEBUG - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.82"},{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.83"},{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.84"},{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.85"},{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.86"},{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.87"},{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.88"}]} | headers=HTTPHeaderDict({'Content-Length': '830', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,256 - DEBUG - Finished Request
+2024-07-20 12:31:04,256 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.82/element {'using': 'css selector', 'value': '.prdName'}
+2024-07-20 12:31:04,262 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.82/element HTTP/1.1" 200 126
+2024-07-20 12:31:04,262 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.89"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,262 - DEBUG - Finished Request
+2024-07-20 12:31:04,262 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.89'}, 'title']}
+2024-07-20 12:31:04,265 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 12
+2024-07-20 12:31:04,266 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,266 - DEBUG - Finished Request
+2024-07-20 12:31:04,266 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.82/element {'using': 'tag name', 'value': 'a'}
+2024-07-20 12:31:04,270 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.82/element HTTP/1.1" 200 126
+2024-07-20 12:31:04,270 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.90"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,270 - DEBUG - Finished Request
+2024-07-20 12:31:04,271 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.90'}, 'href']}
+2024-07-20 12:31:04,273 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 183
+2024-07-20 12:31:04,274 - DEBUG - Remote response: status=200 | data={"value":"https://www.momoshop.com.tw/search/searchShop.jsp?keyword=%E5%AE%89%E5%BE%B7%E9%AD%AF%EF%BC%8E%E5%93%88%E8%97%8D&specialGoodsType=1&searchType=6&authorNo=20211203193608499"} | headers=HTTPHeaderDict({'Content-Length': '183', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,274 - DEBUG - Finished Request
+2024-07-20 12:31:04,274 - DEBUG - 1: 
+2024-07-20 12:31:04,274 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.83/element {'using': 'css selector', 'value': '.prdName'}
+2024-07-20 12:31:04,278 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.83/element HTTP/1.1" 200 126
+2024-07-20 12:31:04,278 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.91"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,279 - DEBUG - Finished Request
+2024-07-20 12:31:04,279 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.91'}, 'title']}
+2024-07-20 12:31:04,281 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 12
+2024-07-20 12:31:04,281 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,281 - DEBUG - Finished Request
+2024-07-20 12:31:04,281 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.83/element {'using': 'tag name', 'value': 'a'}
+2024-07-20 12:31:04,284 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.83/element HTTP/1.1" 404 1110
+2024-07-20 12:31:04,284 - DEBUG - Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"tag name\",\"selector\":\"a\"}\n  (Session info: chrome=126.0.6478.182)","stacktrace":"\tGetHandleVerifier [0x00007FF64C73EEB2+31554]\n\t(No symbol) [0x00007FF64C6B7EE9]\n\t(No symbol) [0x00007FF64C57872A]\n\t(No symbol) [0x00007FF64C5C8434]\n\t(No symbol) [0x00007FF64C5C853C]\n\t(No symbol) [0x00007FF64C5BBBAC]\n\t(No symbol) [0x00007FF64C5ED06F]\n\t(No symbol) [0x00007FF64C5BBA76]\n\t(No symbol) [0x00007FF64C5ED240]\n\t(No symbol) [0x00007FF64C60C977]\n\t(No symbol) [0x00007FF64C5ECDD3]\n\t(No symbol) [0x00007FF64C5BA33B]\n\t(No symbol) [0x00007FF64C5BAED1]\n\tGetHandleVerifier [0x00007FF64CA48B2D+3217341]\n\tGetHandleVerifier [0x00007FF64CA95AF3+3532675]\n\tGetHandleVerifier [0x00007FF64CA8B0F0+3489152]\n\tGetHandleVerifier [0x00007FF64C7EE786+750614]\n\t(No symbol) [0x00007FF64C6C376F]\n\t(No symbol) [0x00007FF64C6BEB24]\n\t(No symbol) [0x00007FF64C6BECB2]\n\t(No symbol) [0x00007FF64C6AE17F]\n\tBaseThreadInitThunk [0x00007FFD560C257D+29]\n\tRtlUserThreadStart [0x00007FFD56C2AF28+40]\n"}} | headers=HTTPHeaderDict({'Content-Length': '1110', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,284 - DEBUG - Finished Request
+2024-07-20 12:31:04,284 - ERROR - Error finding element in result 2: Message: no such element: Unable to locate element: {"method":"tag name","selector":"a"}
+  (Session info: chrome=126.0.6478.182); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF64C73EEB2+31554]
+	(No symbol) [0x00007FF64C6B7EE9]
+	(No symbol) [0x00007FF64C57872A]
+	(No symbol) [0x00007FF64C5C8434]
+	(No symbol) [0x00007FF64C5C853C]
+	(No symbol) [0x00007FF64C5BBBAC]
+	(No symbol) [0x00007FF64C5ED06F]
+	(No symbol) [0x00007FF64C5BBA76]
+	(No symbol) [0x00007FF64C5ED240]
+	(No symbol) [0x00007FF64C60C977]
+	(No symbol) [0x00007FF64C5ECDD3]
+	(No symbol) [0x00007FF64C5BA33B]
+	(No symbol) [0x00007FF64C5BAED1]
+	GetHandleVerifier [0x00007FF64CA48B2D+3217341]
+	GetHandleVerifier [0x00007FF64CA95AF3+3532675]
+	GetHandleVerifier [0x00007FF64CA8B0F0+3489152]
+	GetHandleVerifier [0x00007FF64C7EE786+750614]
+	(No symbol) [0x00007FF64C6C376F]
+	(No symbol) [0x00007FF64C6BEB24]
+	(No symbol) [0x00007FF64C6BECB2]
+	(No symbol) [0x00007FF64C6AE17F]
+	BaseThreadInitThunk [0x00007FFD560C257D+29]
+	RtlUserThreadStart [0x00007FFD56C2AF28+40]
+
+2024-07-20 12:31:04,285 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.84/element {'using': 'css selector', 'value': '.prdName'}
+2024-07-20 12:31:04,287 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.84/element HTTP/1.1" 200 126
+2024-07-20 12:31:04,288 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.77"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,288 - DEBUG - Finished Request
+2024-07-20 12:31:04,288 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.77'}, 'title']}
+2024-07-20 12:31:04,289 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 12
+2024-07-20 12:31:04,290 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,290 - DEBUG - Finished Request
+2024-07-20 12:31:04,290 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.84/element {'using': 'tag name', 'value': 'a'}
+2024-07-20 12:31:04,292 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.84/element HTTP/1.1" 200 126
+2024-07-20 12:31:04,292 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.92"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,292 - DEBUG - Finished Request
+2024-07-20 12:31:04,292 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.92'}, 'href']}
+2024-07-20 12:31:04,295 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 194
+2024-07-20 12:31:04,295 - DEBUG - Remote response: status=200 | data={"value":"https://www.momoshop.com.tw/search/searchShop.jsp?keyword=%E5%B4%A7%E7%87%81%E6%96%87%E5%8C%96&brand=%E5%B4%A7%E7%87%81%E6%96%87%E5%8C%96&specialGoodsType=1&brandNo=20180213154807361"} | headers=HTTPHeaderDict({'Content-Length': '194', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,295 - DEBUG - Finished Request
+2024-07-20 12:31:04,295 - DEBUG - 3: 
+2024-07-20 12:31:04,295 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.85/element {'using': 'css selector', 'value': '.prdName'}
+2024-07-20 12:31:04,298 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.85/element HTTP/1.1" 200 126
+2024-07-20 12:31:04,298 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.93"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,298 - DEBUG - Finished Request
+2024-07-20 12:31:04,298 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.93'}, 'title']}
+2024-07-20 12:31:04,300 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 12
+2024-07-20 12:31:04,300 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,300 - DEBUG - Finished Request
+2024-07-20 12:31:04,300 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.85/element {'using': 'tag name', 'value': 'a'}
+2024-07-20 12:31:04,303 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.85/element HTTP/1.1" 200 126
+2024-07-20 12:31:04,303 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.94"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,304 - DEBUG - Finished Request
+2024-07-20 12:31:04,304 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.94'}, 'href']}
+2024-07-20 12:31:04,306 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 251
+2024-07-20 12:31:04,306 - DEBUG - Remote response: status=200 | data={"value":"https://www.momoshop.com.tw/search/searchShop.jsp?keyword=Neslihan%20Muradog%E2%98%86lu%20%E5%85%A7%E6%96%AF%E9%87%8C%E6%BC%A2%EF%BC%8E%E7%A9%86%E6%8B%89%E5%A4%9A%E6%A0%BC%E9%AD%AF&specialGoodsType=1&searchType=6&authorNo=20230320180002547"} | headers=HTTPHeaderDict({'Content-Length': '251', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,306 - DEBUG - Finished Request
+2024-07-20 12:31:04,306 - DEBUG - 4: 
+2024-07-20 12:31:04,306 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.86/element {'using': 'css selector', 'value': '.prdName'}
+2024-07-20 12:31:04,310 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.86/element HTTP/1.1" 200 126
+2024-07-20 12:31:04,310 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.95"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,310 - DEBUG - Finished Request
+2024-07-20 12:31:04,310 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.95'}, 'title']}
+2024-07-20 12:31:04,312 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 12
+2024-07-20 12:31:04,312 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,313 - DEBUG - Finished Request
+2024-07-20 12:31:04,313 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.86/element {'using': 'tag name', 'value': 'a'}
+2024-07-20 12:31:04,315 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.86/element HTTP/1.1" 200 126
+2024-07-20 12:31:04,316 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.96"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,316 - DEBUG - Finished Request
+2024-07-20 12:31:04,316 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.96'}, 'href']}
+2024-07-20 12:31:04,318 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 183
+2024-07-20 12:31:04,318 - DEBUG - Remote response: status=200 | data={"value":"https://www.momoshop.com.tw/search/searchShop.jsp?keyword=%E5%8D%A1%E6%B4%9B%E7%90%B3%EF%BC%8E%E6%9D%9C%E7%B4%8D&specialGoodsType=1&searchType=6&authorNo=20211117105806327"} | headers=HTTPHeaderDict({'Content-Length': '183', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,318 - DEBUG - Finished Request
+2024-07-20 12:31:04,318 - DEBUG - 5: 
+2024-07-20 12:31:04,318 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.87/element {'using': 'css selector', 'value': '.prdName'}
+2024-07-20 12:31:04,321 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.87/element HTTP/1.1" 200 126
+2024-07-20 12:31:04,321 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.97"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,321 - DEBUG - Finished Request
+2024-07-20 12:31:04,321 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.97'}, 'title']}
+2024-07-20 12:31:04,322 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 12
+2024-07-20 12:31:04,323 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,323 - DEBUG - Finished Request
+2024-07-20 12:31:04,323 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.87/element {'using': 'tag name', 'value': 'a'}
+2024-07-20 12:31:04,326 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.87/element HTTP/1.1" 200 126
+2024-07-20 12:31:04,326 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.98"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,326 - DEBUG - Finished Request
+2024-07-20 12:31:04,326 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.98'}, 'href']}
+2024-07-20 12:31:04,328 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 208
+2024-07-20 12:31:04,328 - DEBUG - Remote response: status=200 | data={"value":"https://www.momoshop.com.tw/search/searchShop.jsp?keyword=Philippe%20J.%20Dubois%20%E8%8F%B2%E5%88%A9%E6%B5%A6%E6%9D%9C%E6%9F%8F%E7%93%A6&specialGoodsType=1&searchType=6&authorNo=20221122153257549"} | headers=HTTPHeaderDict({'Content-Length': '208', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,328 - DEBUG - Finished Request
+2024-07-20 12:31:04,329 - DEBUG - 6: 
+2024-07-20 12:31:04,329 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.82/element {'using': 'css selector', 'value': '.prdName'}
+2024-07-20 12:31:04,332 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.82/element HTTP/1.1" 200 126
+2024-07-20 12:31:04,332 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.89"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,332 - DEBUG - Finished Request
+2024-07-20 12:31:04,332 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.89'}, 'title']}
+2024-07-20 12:31:04,334 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 12
+2024-07-20 12:31:04,334 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,334 - DEBUG - Finished Request
+2024-07-20 12:31:04,334 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.84/element {'using': 'css selector', 'value': '.prdName'}
+2024-07-20 12:31:04,338 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.84/element HTTP/1.1" 200 126
+2024-07-20 12:31:04,338 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.77"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,338 - DEBUG - Finished Request
+2024-07-20 12:31:04,338 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.77'}, 'title']}
+2024-07-20 12:31:04,340 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 12
+2024-07-20 12:31:04,340 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,340 - DEBUG - Finished Request
+2024-07-20 12:31:04,340 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.85/element {'using': 'css selector', 'value': '.prdName'}
+2024-07-20 12:31:04,343 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.85/element HTTP/1.1" 200 126
+2024-07-20 12:31:04,344 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.93"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,344 - DEBUG - Finished Request
+2024-07-20 12:31:04,344 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.93'}, 'title']}
+2024-07-20 12:31:04,347 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 12
+2024-07-20 12:31:04,347 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,347 - DEBUG - Finished Request
+2024-07-20 12:31:04,347 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.86/element {'using': 'css selector', 'value': '.prdName'}
+2024-07-20 12:31:04,350 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.86/element HTTP/1.1" 200 126
+2024-07-20 12:31:04,350 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.95"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,350 - DEBUG - Finished Request
+2024-07-20 12:31:04,350 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.95'}, 'title']}
+2024-07-20 12:31:04,352 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 12
+2024-07-20 12:31:04,352 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,352 - DEBUG - Finished Request
+2024-07-20 12:31:04,353 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.87/element {'using': 'css selector', 'value': '.prdName'}
+2024-07-20 12:31:04,355 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.87/element HTTP/1.1" 200 126
+2024-07-20 12:31:04,355 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.97"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,355 - DEBUG - Finished Request
+2024-07-20 12:31:04,356 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.97'}, 'title']}
+2024-07-20 12:31:04,357 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 12
+2024-07-20 12:31:04,358 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 12:31:04,358 - DEBUG - Finished Request
+2024-07-20 13:01:45,466 - DEBUG - DELETE http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb {}
+2024-07-20 13:01:45,466 - DEBUG - Resetting dropped connection: localhost
