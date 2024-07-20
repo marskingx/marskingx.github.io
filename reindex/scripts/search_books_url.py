@@ -12,11 +12,10 @@ log_filename = f'search_book_errors_{datetime.now().strftime("%Y%m%d")}.log'
 logging.basicConfig(
     filename=log_filename,
     level=logging.DEBUG,
-    format='%(asctime)s - %(levelname)s - %(message)s',
+    format='%(asctime)s - %(levellevelname)s - %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S',
     encoding='utf-8'
 )
-
 
 def initialize_driver():
     options = webdriver.ChromeOptions()
@@ -31,7 +30,6 @@ def initialize_driver():
     logging.debug("初始化 WebDriver 完成")
     return driver
 
-
 def close_ads(driver):
     try:
         close_ad_button = WebDriverWait(driver, 10).until(
@@ -41,7 +39,6 @@ def close_ads(driver):
         logging.debug("廣告橫幅已關閉")
     except TimeoutException:
         logging.debug("未找到廣告橫幅或廣告橫幅已經關閉")
-
 
 def search_for_books(driver, keyword):
     try:
@@ -99,28 +96,25 @@ def search_for_books(driver, keyword):
         logging.error(f"搜索書籍時發生錯誤: {e}")
         return []
 
-
 def get_books_promotion_link(keyword):
     driver = initialize_driver()
     try:
         driver.get("https://www.books.com.tw/")
         close_ads(driver)
         books = search_for_books(driver, keyword)
-        if books:
-            first_book = books[0]
-            return first_book['title'], first_book['url']
-        return None, None
+        return books
     except Exception as e:
         logging.error(f"獲取書籍促銷連結時發生錯誤: {e}")
-        return None, None
+        return []
     finally:
+        logging.debug("正在關閉瀏覽器")
         driver.quit()
-
+        logging.debug("瀏覽器已關閉")
 
 def display_books(books):
     for book in books:
         print(f"{book['index']}. {book['title']} - 價格: {book['price']}")
-
+    print(f"{len(books) + 1}. 略過")
 
 def get_user_choice(books):
     while True:
@@ -128,11 +122,12 @@ def get_user_choice(books):
             choice = int(input("請選擇一本書 (輸入編號): "))
             if 1 <= choice <= len(books):
                 return books[choice - 1]
+            elif choice == len(books) + 1:
+                return None
             else:
                 print("無效的選擇，請重新輸入。")
         except ValueError:
             print("請輸入有效的數字。")
-
 
 # 示例用法
 if __name__ == "__main__":
@@ -143,12 +138,16 @@ if __name__ == "__main__":
         print(f"找到 {len(books)} 本相關書籍:")
         display_books(books)
         selected_book = get_user_choice(books)
-        logging.info(
-            f"選擇的書籍: {selected_book['title']}, URL: {selected_book['url']}, 價格: {selected_book['price']}, 商品代碼: {selected_book['product_id']}")
-        print(f"您選擇的書籍是: {selected_book['title']}")
-        print(f"URL: {selected_book['url']}")
-        print(f"價格: {selected_book['price']}")
-        print(f"商品代碼: {selected_book['product_id']}")
+        if selected_book:
+            logging.info(
+                f"選擇的書籍: {selected_book['title']}, URL: {selected_book['url']}, 價格: {selected_book['price']}, 商品代碼: {selected_book['product_id']}")
+            print(f"您選擇的書籍是: {selected_book['title']}")
+            print(f"URL: {selected_book['url']}")
+            print(f"價格: {selected_book['price']}")
+            print(f"商品代碼: {selected_book['product_id']}")
+        else:
+            print("已略過選擇。")
+            logging.info("用戶選擇略過書籍選擇。")
     else:
         logging.warning("未能找到書籍資訊")
         print("抱歉，未找到相關書籍。")
