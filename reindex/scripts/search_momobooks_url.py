@@ -17,13 +17,14 @@ logging.basicConfig(
   encoding='utf-8'
 )
 
+
 def initialize_driver():
   options = webdriver.ChromeOptions()
   options.add_argument('--headless')
   options.add_argument('--disable-gpu')
-  options.add.argument('--no-sandbox')
+  options.add_argument('--no-sandbox')
   options.add_argument('--disable-dev-shm-usage')
-  options.add.argument(
+  options.add_argument(
     'user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36')
   driver = webdriver.Chrome(options=options)
   driver.set_page_load_timeout(30)
@@ -98,7 +99,7 @@ def get_user_choice(books):
 
 # 示例用法
 if __name__ == "__main__":
-  keyword = "平衡心態"
+  keyword = "開始分心，就是快要變強了"
   logging.info(f"開始搜索關鍵字: {keyword}")
   books = get_momo_promotion_link(keyword)
   if books:

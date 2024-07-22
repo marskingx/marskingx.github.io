@@ -131,7 +131,7 @@ def get_user_choice(books):
 
 # 示例用法
 if __name__ == "__main__":
-    keyword = "給孩子的商業啟蒙"
+    keyword = "開始分心，就是快要變強了"
     logging.info(f"開始搜索關鍵字: {keyword}")
     books = get_books_promotion_link(keyword)
     if books:
