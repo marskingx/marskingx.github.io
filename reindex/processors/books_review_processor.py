@@ -83,7 +83,7 @@ class BooksReviewProcessor(BaseProcessor):
         image = f"/images/blog/{self.format_image_date(date)}.png"
 
         categories_match = re.search(r'categories: (.*)', content)
-        categories = f"[{categories_match.group(1).strip()}]" if categories_match else "[閱讀心得]"
+        categories = f"[{categories_match.group(1).strip()}]" if categories_match else "[讀書心得]"
 
         tags_match = re.search(r'tags: (.*)', content)
         tags = f"[{tags_match.group(1).strip().replace(' ', '').replace(',', ',')}]" if tags_match else "[]"
@@ -124,7 +124,7 @@ class BooksReviewProcessor(BaseProcessor):
         filename = self.file_path.split('\\')[-1]
         title_match = re.search(r'《(.+?)》', filename)
         if title_match:
-            return f"【書單】《{title_match.group(1)}》閱讀心得"
+            return f"【嗑書】《{title_match.group(1)}》讀書心得"
         return "未命名"
 
     def generate_slug(self, title):

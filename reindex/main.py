@@ -133,7 +133,7 @@ def main():
       processor_class = get_processor(category)
       if processor_class:
         processor = processor_class(str(selected_file), reading_list_path)
-        if category == "閱讀心得":
+        if category == "讀書心得":
           promotion_links = processor.process_book_review()
         else:
           processor.process()

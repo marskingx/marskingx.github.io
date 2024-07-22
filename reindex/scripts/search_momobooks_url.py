@@ -12,7 +12,7 @@ log_filename = f'search_momo_book_errors_{datetime.now().strftime("%Y%m%d")}.log
 logging.basicConfig(
   filename=log_filename,
   level=logging.DEBUG,
-  format='%(asctime)s - %(levelname)s - %(message)s',
+  format='%(asctime)s - %(levellevelname)s - %(message)s',
   datefmt='%Y-%m-%d %H:%M:%S',
   encoding='utf-8'
 )
@@ -49,7 +49,7 @@ def search_momo_books(driver, keyword):
 
     # 处理搜索结果
     books = []
-    for i, product in enumerate(products[:5], 1):  # 只處理前5個結果
+    for i, product in enumerate(products[:2], 1):  # 只處理前5個結果
       try:
         gcode = product.get_attribute('gcode')
         title_element = product.find_element(By.CSS_SELECTOR, ".prdName")
