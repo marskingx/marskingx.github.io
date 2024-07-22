@@ -65,7 +65,7 @@ def search_books_com_tw(driver, keyword):
             return []
         current_date = datetime.now().strftime("%Y%m")
         books = []
-        for i, book in enumerate(book_items[:3], 1):
+        for i, book in enumerate(book_items[:2], 1):
             try:
                 product_id = book.get_attribute('id').split('-')[-1]
                 title_element = book.find_element(By.CSS_SELECTOR, "h4 a")
@@ -93,7 +93,7 @@ def search_momo_books(driver, keyword):
             logging.warning("未找到任何書籍")
             return []
         books = []
-        for i, product in enumerate(products[:3], 1):
+        for i, product in enumerate(products[:2], 1):
             try:
                 gcode = product.get_attribute('gcode')
                 title_element = product.find_element(By.CSS_SELECTOR, ".prdName")
@@ -108,30 +108,13 @@ def search_momo_books(driver, keyword):
         logging.error(f"搜索 MOMO 書籍時發生錯誤: {e}")
         return []
 
-def display_books(books):
-    for book in books:
-        print(f"{book['index']}. {book['title']} - 價格: {book.get('price', 'N/A')}")
-
-def get_user_choice(books):
-    while True:
-        try:
-            choice = int(input("請選擇一本書 (輸入編號): "))
-            if 1 <= choice <= len(books):
-                return books[choice - 1]
-            else:
-                print("無效的選擇，請重新輸入。")
-        except ValueError:
-            print("請輸入有效的數字。")
-
 def get_books_promotion_link(keyword):
     driver = initialize_driver()
     try:
         books = search_books_com_tw(driver, keyword)
         if books:
-            print(f"找到 {len(books)} 本相關書籍:")
-            display_books(books)
-            selected_book = get_user_choice(books)
-            return selected_book['title'], selected_book['url']
+            first_book = books[0]
+            return first_book['title'], first_book['url']
         return None, None
     except Exception as e:
         logging.error(f"獲取博客來書籍促銷連結時發生錯誤: {e}")
@@ -144,10 +127,8 @@ def get_momo_promotion_link(keyword):
     try:
         books = search_momo_books(driver, keyword)
         if books:
-            print(f"找到 {len(books)} 本相關書籍:")
-            display_books(books)
-            selected_book = get_user_choice(books)
-            return selected_book['title'], selected_book['url']
+            first_book = books[0]
+            return first_book['title'], first_book['url']
         return None, None
     except Exception as e:
         logging.error(f"獲取 MOMO 書籍促銷連結時發生錯誤: {e}")

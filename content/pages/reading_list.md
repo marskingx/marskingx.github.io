@@ -1,14 +1,7 @@
----
-title: 懶得變有錢 | 書單
-image: "/images/reading_list/reading_list.png"
-keyword: ETF, Podcast, Podcaster, 保險, 儲蓄, 台股, 基金, 懶得變有錢, 房地產, 投資理財, 支出, 收入, 理財規劃, 瑪斯理財兩三事, 稅務, 總體經濟, 美股, 職涯心得, 股利收入, 複委託, 記帳, 閱讀心得, 財務規劃, 財商, 貸款, 資產配置, 退休規劃, 開源節流
-description: 閱讀，是最簡單暴力的擴知方法。懶的極致就是看完多數的書，讓自己理解更多的原則，接著落實到自己的生活來實踐。這不只是閱讀，而是閱歷。
----
-
-
 ## 推薦書單(依閱讀時間序)
 | 閱讀書單 | 推薦評等 | 購書連結 |
 |-|-|-|
+| [![《開始分心，就是快要變強了》](/images/reading_list/img_20.png)](/blog/book-list-mindwandering-reading-experience/) | 《開始分心，就是快要變強了》<br/>⭐⭐⭐ | [![《開始分心，就是快要變強了》](/images/reading_list/books_buy.jpg)](https://www.books.com.tw/products/0010946776?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202407)<br/> [![《開始分心，就是快要變強了》](/images/reading_list/momobooks_buy.jpg)](https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=10947398&memid=6000021729&cid=apuad&oid=1&osm=league) |
 | [![《給孩子的商業啟蒙》](/images/reading_list/img_19.png)](/blog/book-review-business-enlightenment-for-children-book-review/) | 《給孩子的商業啟蒙》<br/>⭐⭐⭐⭐⭐ | [![《給孩子的商業啟蒙》](/images/reading_list/books_buy.jpg)](https://www.books.com.tw/products/0010955949?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202407)<br/> [![《給孩子的商業啟蒙》](/images/reading_list/momobooks_buy.jpg)](https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11305055&memid=6000021729&cid=apuad&oid=1&osm=league) |
 | [![《讓人一搜尋就找到你》](/images/reading_list/img_18.png)](/blog/book-review-let-people-find-you-with-just-one-search/) | 《讓人一搜尋就找到你》<br/>⭐⭐⭐⭐⭐ | [![《讓人一搜尋就找到你》](/images/reading_list/books_buy.jpg)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010977804?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202407)<br/> [![《讓人一搜尋就找到你》](/images/reading_list/momobooks_buy.jpg)](https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=12274102&Area=search&mdiv=403&oid=0_1&cid=index&kw=%E8%AE%93%E4%BA%BA%E4%B8%80%E6%90%9C%E5%B0%8B%E5%B0%B1%E6%89%BE%E5%88%B0%E4%BD%A0&memid=6000021729&cid=apuad&oid=1&osm=league) |
 | [![《財富自由的整理鍊金術》](/images/reading_list/img_17.png)](/blog/book-review-the-alchemy-of-financial-freedom/) | 《財富自由的整理鍊金術》<br/>⭐⭐⭐⭐ | [![《財富自由的整理鍊金術》](/images/reading_list/books_buy.jpg)](https://www.books.com.tw/exep/assp.php/shamangels/products/0010919750?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202407)<br/> [![《財富自由的整理鍊金術》](/images/reading_list/momobooks_buy.jpg)](https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9923534&Area=search&mdiv=403&oid=0_1&cid=index&kw=%E8%B2%A1%E5%AF%8C%E8%87%AA%E7%94%B1%E7%9A%84%E6%95%B4%E7%90%86%E9%8D%8A%E9%87%91%E8%A1%93&memid=6000021729&cid=apuad&oid=1&osm=league) |
