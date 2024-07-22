@@ -17,28 +17,29 @@ class BooksReviewProcessor(BaseProcessor):
             with open(self.file_path, 'r', encoding='utf-8') as file:
                 self.content = file.read()
             self.content = self.update_yaml()
-            if self.content is None:
-                logging.error("更新 YAML 失敗")
-                return None
-            logging.debug("成功更新 YAML 內容")
             self.write_file(self.content)
-            logging.debug("成功寫入更新後的內容到文件")
             book_title = self.extract_book_title()
             if book_title:
-                logging.info(f"提取到書名: {book_title}")
+                logging.info(f"取得聯盟行銷連結，書名: {book_title}")
                 books_title, books_url = get_books_promotion_link(book_title)
                 momo_title, momo_url = get_momo_promotion_link(book_title)
                 logging.info(f"Books: {books_title}, URL: {books_url}")
                 logging.info(f"Momo: {momo_title}, URL: {momo_url}")
                 if books_url or momo_url:
-                    self.content = self.update_book_links(self.content, book_title, books_url, momo_url)
+                    tags_match = re.search(r'tags: \[(.*?)\]', self.content)
+                    if tags_match:
+                        tags = tags_match.group(1).strip().split(',')
+                        categories_links = "<br>".join([f"[ {tag}](/tags/{tag.strip()}/)" for tag in tags])
+                    else:
+                        categories_links = ""
+                    self.content = self.update_book_links(self.content, book_title, books_url, momo_url, categories_links)
                     self.write_file(self.content)
                     rate_match = re.search(r'rate: (.*)', self.content)
                     rate = rate_match.group(1).strip() if rate_match else "⭐⭐⭐"
                     slug_match = re.search(r'slug: (.*)', self.content)
                     slug = slug_match.group(1).strip() if slug_match else book_title.replace(' ', '-').lower()
                     logging.info("更新閱讀列表")
-                    update_reading_list(self.reading_list_path, book_title, books_url, momo_url, rate, slug)
+                    update_reading_list(self.reading_list_path, book_title, books_url, momo_url, rate, slug, categories_links)
                     logging.info("書評文件處理完成")
                     return f"Books: {books_url}, Momo: {momo_url}"
             logging.warning("無法取得聯盟行銷連結")
@@ -56,31 +57,38 @@ class BooksReviewProcessor(BaseProcessor):
     def update_yaml(self):
         yaml_pattern = re.compile(r'^---\s*\n(.*?)\n---\s*\n', re.DOTALL)
         yaml_match = yaml_pattern.search(self.content)
-        content = yaml_match.group(1) if yaml_match else self.content
-        title_match = re.search(r'^# (.*)', content, re.MULTILINE)
+        if yaml_match:
+            original_yaml = yaml_match.group(0)
+            content_without_yaml = self.content[yaml_match.end():].strip()
+        else:
+            original_yaml = ''
+            content_without_yaml = self.content
+
+        title_match = re.search(r'^# (.*)', content_without_yaml, re.MULTILINE)
         title = title_match.group(1).strip() if title_match else "未命名"
-        description_match = re.search(r'description: (.*)', content)
+        description_match = re.search(r'description: (.*)', content_without_yaml)
         description = description_match.group(1).strip() if description_match else "這是一個預設的描述。"
-        author_match = re.search(r'authors: (.*)', content)
+        author_match = re.search(r'authors: (.*)', content_without_yaml)
         author = author_match.group(1).strip() if author_match else "懶大"
-        release_match = re.search(r'release: (.*)', content, re.IGNORECASE)
+        release_match = re.search(r'release: (.*)', content_without_yaml, re.IGNORECASE)
         release_date = release_match.group(1).strip() if release_match else datetime.now().strftime("%Y-%m-%d")
-        date_match = re.search(r'date: (\d{4}/\d{2}/\d{2})', content)
+        date_match = re.search(r'date: (\d{4}/\d{2}/\d{2})', content_without_yaml)
         date = self.standardize_date_format(date_match.group(1).strip()) if date_match else datetime.now().strftime("%Y-%m-%d")
         image = f"/images/blog/{self.format_image_date(date)}.png"
-        categories_match = re.search(r'categories: (.*)', content)
+        categories_match = re.search(r'categories: (.*)', content_without_yaml)
         categories = f"[{categories_match.group(1).strip()}]" if categories_match else "[讀書心得]"
-        tags_match = re.search(r'tags: (.*)', content)
+        tags_match = re.search(r'tags: (.*)', content_without_yaml)
         tags = f"[{tags_match.group(1).strip().replace(' ', '').replace(',', ',')}]" if tags_match else "[]"
-        keywords_match = re.search(r'keywords: (.*)', content)
+        keywords_match = re.search(r'keywords: (.*)', content_without_yaml)
         keywords = keywords_match.group(1).strip() if keywords_match else ""
-        draft_match = re.search(r'draft: (.*)', content)
+        draft_match = re.search(r'draft: (.*)', content_without_yaml)
         draft = draft_match.group(1).strip() if draft_match else "false"
-        slug_match = re.search(r'slug: (.*)', content)
+        slug_match = re.search(r'slug: (.*)', content_without_yaml)
         if slug_match:
             slug = self.generate_slug(slug_match.group(1).strip())
         else:
             slug = self.generate_slug(title)
+
         new_yaml = (
             f"---\n"
             f"title: {title}\n"
@@ -96,8 +104,8 @@ class BooksReviewProcessor(BaseProcessor):
             f"slug: {slug}\n"
             f"---"
         )
-        content_without_yaml = re.sub(r'^---.*?---', '', self.content, flags=re.DOTALL).strip()
-        return f"{new_yaml}\n\n{content_without_yaml}"
+
+        return f"{original_yaml}\n\n{content_without_yaml}"
 
     def extract_title(self):
         filename = self.file_path.split('\\')[-1]
@@ -148,7 +156,7 @@ class BooksReviewProcessor(BaseProcessor):
             return f"Books: {books_url or '無'}, Momo: {momo_url or '無'}"
         return None
 
-    def update_book_links(self, content, book_title, books_url, momo_url):
+    def update_book_links(self, content, book_title, books_url, momo_url, categories_links):
         logging.info("開始更新購書連結")
         book_image_link = f"[![《{book_title}》.png](/images/blog/books.png)\n]({books_url})"
         momo_image_link = f"[![《{book_title}》.png](/images/blog/momobooks.png)\n]({momo_url})"
@@ -179,14 +187,20 @@ class BooksReviewProcessor(BaseProcessor):
                 logging.info(f"Books: {books_title}, URL: {books_url}")
                 logging.info(f"Momo: {momo_title}, URL: {momo_url}")
                 if books_url or momo_url:
-                    self.content = self.update_book_links(self.content, book_title, books_url, momo_url)
+                    tags_match = re.search(r'tags: \[(.*?)\]', self.content)
+                    if tags_match:
+                        tags = tags_match.group(1).strip().split(',')
+                        categories_links = "<br>".join([f"[ {tag}](/tags/{tag.strip()}/)" for tag in tags])
+                    else:
+                        categories_links = ""
+                    self.content = self.update_book_links(self.content, book_title, books_url, momo_url, categories_links)
                     self.write_file(self.content)
                     rate_match = re.search(r'rate: (.*)', self.content)
                     rate = rate_match.group(1).strip() if rate_match else "⭐⭐⭐"
                     slug_match = re.search(r'slug: (.*)', self.content)
                     slug = slug_match.group(1).strip() if slug_match else book_title.replace(' ', '-').lower()
                     logging.info("更新閱讀列表")
-                    update_reading_list(self.reading_list_path, book_title, books_url, momo_url, rate, slug)
+                    update_reading_list(self.reading_list_path, book_title, books_url, momo_url, rate, slug, categories_links)
                     logging.info("書評文件處理完成")
                     return f"Books: {books_url}, Momo: {momo_url}"
             logging.warning("無法取得聯盟行銷連結")
