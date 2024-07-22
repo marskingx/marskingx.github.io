@@ -12,7 +12,7 @@ log_filename = f'search_momo_book_errors_{datetime.now().strftime("%Y%m%d")}.log
 logging.basicConfig(
   filename=log_filename,
   level=logging.DEBUG,
-  format='%(asctime)s - %(levellevelname)s - %(message)s',
+  format='%(asctime)s - %(levelname)s - %(message)s',
   datefmt='%Y-%m-%d %H:%M:%S',
   encoding='utf-8'
 )
