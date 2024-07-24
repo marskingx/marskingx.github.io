@@ -5,11 +5,11 @@ from pathlib import Path
 from datetime import datetime
 
 from processors import (
-  BooksReviewProcessor,
-  PodcastProcessor,
-  LifeShareProcessor,
-  FinancialToolProcessor,
-  FinancialMindsetProcessor
+    BooksReviewProcessor,
+    PodcastProcessor,
+    LifeShareProcessor,
+    FinancialToolProcessor,
+    FinancialMindsetProcessor
 )
 
 # 設置日誌

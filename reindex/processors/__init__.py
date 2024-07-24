@@ -1,5 +1,5 @@
-from .books_review_processor import BooksReviewProcessor
 from .podcast_processor import PodcastProcessor
+from .books_review_processor import BooksReviewProcessor
 from .life_share_processor import LifeShareProcessor
 from .financial_tool_processor import FinancialToolProcessor
 from .financial_mindset_processor import FinancialMindsetProcessor
