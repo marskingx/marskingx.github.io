@@ -1,4 +1,4 @@
-## 推薦書單(依閱讀時間序)
+## 2024年閱讀&推薦書單(依閱讀時間序)
 | 閱讀書單 | 推薦評等 | 購書連結 |
 |-|-|-|
 | [![《商業簡史》](/images/reading_list/img_21.png)](/blog/book-list-a-brief-history-of-business) |<br>《商業簡史》<br/>⭐⭐⭐⭐⭐ | [![《商業簡史》](/images/reading_list/books_buy.jpg)](https://www.books.com.tw/products/0010949733?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202408)<br/> [![《商業簡史》](/images/reading_list/momobooks_buy.jpg)](https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11068579&memid=6000021729&cid=apuad&oid=1&osm=league) |
