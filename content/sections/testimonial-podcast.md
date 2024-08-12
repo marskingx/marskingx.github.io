@@ -5,6 +5,13 @@ description: "雖然**財務規劃**很正經，但我還是**懶**得用太嚴�
 
 # Testimonials
 testimonials:
+  - designation: "習慣在Spotify收聽"
+    name: "JET6869"
+    rate: "⭐️⭐️⭐️⭐️⭐️"
+    avatar: "/images/avatar-sir.png"
+    title: "懶得ㄉㄟˇ寫評論"
+    content: "雖然我習慣在Spotify收聽，不過那邊沒法留評給星，所以特地來這裡。我是因為《原子習慣》書評才知到懶大的，真的很感謝懶大開這個節目，會持續收聽分享的。"
+  
   - designation: "自由業"
     name: "恥力無限"
     rate: "⭐️⭐️⭐️⭐️⭐️"
