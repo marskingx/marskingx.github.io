@@ -57,37 +57,31 @@ def get_file_category(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
       content = file.read()
 
-    # 嘗試匹配 YAML 前置數據
+    # 嘗試匹配 YAML 前置數據中的 categories
     yaml_match = re.search(r'---\s*\n(.*?)\n---', content, re.DOTALL)
-    if (yaml_match):
+    if yaml_match:
       yaml_content = yaml_match.group(1)
       category_match = re.search(r'categories:\s*\[(.*?)\]', yaml_content)
-      if (category_match):
+      if category_match:
         categories = category_match.group(1).strip().split(',')
         # 取第一個類別（如果有多個的話）
         category = categories[0].strip().strip('"\'')
         logging.info(f"從文件 {file_path} 中提取到類別: {category}")
         return category
-      else:
-        logging.warning(f"在文件 {file_path} 的 YAML 前置數據中未找到 categories 字段")
-    else:
-      logging.warning(f"在文件 {file_path} 中未找到 YAML 前置數據")
 
-    # 如果無法從 YAML 中提取，嘗試從文件名中提取
-    filename = file_path.split('\\')[-1]
-    if "【書單】" in filename:
-      return "閱讀心得"
-    elif "【EP" in filename:
-      return "Podcast節目"
-    elif "【理財】" in filename:
-      return "財務規劃與心態"
-    elif "【投資】" in filename:
-      return "理財工具與金融商品"
-    elif "【職涯】" in filename:
-      return "職涯與生活"
+    # 如果在 YAML 中沒有找到 categories，嘗試在整個文件內容中查找
+    category_match = re.search(r'categories:\s*(\S+)', content)
+    if category_match:
+      category = category_match.group(1).strip().strip('[]"\'')
+      logging.info(f"從文件 {file_path} 內容中提取到類別: {category}")
+      return category
 
+    logging.warning(f"在文件 {file_path} 中未找到 categories 欄位")
+
+    # 如果仍然沒有找到類別，可以返回一個預設類別或 None
     logging.error(f"無法確定文件 {file_path} 的類別")
     return None
+
   except Exception as e:
     logging.error(f"讀取文件 {file_path} 時發生錯誤: {e}")
     return None
