@@ -1,4 +1,9 @@
 
+## 推薦書單(依閱讀時間序)
+| 閱讀書單 | 推薦評等 | 購書連結 |
+|-|-|-|
+| [![《卡片盒筆記》](/images/reading_list/img_23.png)](/blog/【Book List】Reading reflections on "Card Box Notes" - hoping to help you implement it more easily./) |<br>《卡片盒筆記》<br/>⭐⭐⭐⭐⭐ | [![《卡片盒筆記》](/images/reading_list/books_buy.jpg)](https://www.books.com.tw/products/0010922143?utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-202408)<br/> [![《卡片盒筆記》](/images/reading_list/momobooks_buy.jpg)](https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=10014702&memid=6000021729&cid=apuad&oid=1&osm=league) |
+
 # 2024年推薦書單&閱讀心得
 (依閱讀時間序)
 
