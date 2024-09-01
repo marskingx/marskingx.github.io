@@ -1,0 +1,206 @@
+2024-09-01 08:32:59 - INFO - 成功加載配置文件
+2024-09-01 08:32:59 - INFO - 1. D:\marskingx.github.io\content\blog\2024-08-28【書單】《把時間當做朋友》閱讀心得.md
+2024-09-01 08:32:59 - INFO - 2. D:\marskingx.github.io\content\blog\2024-08-23【書單】《卡片盒筆記》閱讀心得.md
+2024-09-01 08:32:59 - INFO - 3. D:\marskingx.github.io\content\blog\2024-08-29【EP28】這周真的2更，觀察、體驗、試錯、閱讀是學習的4個底層邏輯，但不容易套用在理財這件事! .md
+2024-09-01 08:32:59 - INFO - 4. D:\marskingx.github.io\content\blog\2024-08-26【EP27】嚐試一周2更，《把時間當朋友》讓財務規劃成為人生導航的地圖.md
+2024-09-01 08:32:59 - INFO - 5. D:\marskingx.github.io\content\blog\2024-08-15【書單】《王永福》閱讀心得.md
+2024-09-01 08:32:59 - INFO - 6. D:\marskingx.github.io\content\blog\2024-08-21【EP26】為什麼股票下跌的痛苦大過於股票上漲時的快樂.md
+2024-09-01 08:32:59 - INFO - 7. D:\marskingx.github.io\content\blog\2024-08-16【投資】2024 QQQ完整分析介紹，誰又適合投資QQQ.md
+2024-09-01 08:32:59 - INFO - 8. D:\marskingx.github.io\content\blog\2024-08-19【理財】財務規劃怎麼做 一張圖完整告訴你!.md
+2024-09-01 08:32:59 - INFO - 9. D:\marskingx.github.io\content\blog\2024-08-14【EP25】如何擁有好的投資心態，又過了一次回憶無窮的父親節.md
+2024-09-01 08:32:59 - INFO - 10. D:\marskingx.github.io\content\blog\2024-08-15【書單】《極客之道》閱讀心得.md
+2024-09-01 08:33:01 - INFO - 從文件 D:\marskingx.github.io\content\blog\2024-08-28【書單】《把時間當做朋友》閱讀心得.md 內容中提取到類別: 閱讀心得
+2024-09-01 08:33:01 - INFO - 開始處理書評: D:\marskingx.github.io\content\blog\2024-08-28【書單】《把時間當做朋友》閱讀心得.md
+2024-09-01 08:33:01 - INFO - 成功提取書名: 把時間當做朋友
+2024-09-01 08:33:01 - INFO - 取得聯盟行銷連結，書名: 把時間當做朋友
+2024-09-01 08:33:01 - DEBUG - Selenium Manager binary found at: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+2024-09-01 08:33:01 - DEBUG - Executing process: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+2024-09-01 08:33:01 - DEBUG - Sending stats to Plausible: Props { browser: "chrome", browser_version: "", os: "windows", arch: "amd64", lang: "python", selenium_version: "4.22-nightly" }
+2024-09-01 08:33:01 - DEBUG - chromedriver not found in PATH
+2024-09-01 08:33:01 - DEBUG - chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+2024-09-01 08:33:01 - DEBUG - Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+2024-09-01 08:33:01 - DEBUG - Output: ""
+2024-09-01 08:33:01 - DEBUG - Running command: REG QUERY HKCU\Software\Google\Chrome\BLBeacon /v version
+2024-09-01 08:33:01 - DEBUG - Output: ""
+2024-09-01 08:33:01 - DEBUG - chrome not found in the system
+2024-09-01 08:33:01 - DEBUG - Discovering versions from https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json
+2024-09-01 08:33:01 - DEBUG - Required browser: chrome 128.0.6613.86
+2024-09-01 08:33:01 - DEBUG - chrome 128.0.6613.86 already exists
+2024-09-01 08:33:01 - DEBUG - chrome 128.0.6613.86 is available at C:\Users\Mars\.cache\selenium\chrome\win64\128.0.6613.86\chrome.exe
+2024-09-01 08:33:01 - DEBUG - Discovering versions from https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
+2024-09-01 08:33:01 - DEBUG - Required driver: chromedriver 128.0.6613.86
+2024-09-01 08:33:01 - DEBUG - chromedriver 128.0.6613.86 already in the cache
+2024-09-01 08:33:01 - DEBUG - Driver path: C:\Users\Mars\.cache\selenium\chromedriver\win64\128.0.6613.86\chromedriver.exe
+2024-09-01 08:33:01 - DEBUG - Browser path: C:\Users\Mars\.cache\selenium\chrome\win64\128.0.6613.86\chrome.exe
+2024-09-01 08:33:02 - DEBUG - Started executable: `C:\Users\Mars\.cache\selenium\chromedriver\win64\128.0.6613.86\chromedriver.exe` in a child process with pid: 4664 using 0 to output -3
+2024-09-01 08:33:02 - DEBUG - POST http://localhost:49215/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Users\\Mars\\.cache\\selenium\\chrome\\win64\\128.0.6613.86\\chrome.exe', 'args': ['--headless', '--disable-gpu', '--no-sandbox', '--disable-dev-shm-usage', 'user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36']}}}}
+2024-09-01 08:33:02 - DEBUG - Starting new HTTP connection (1): localhost:49215
+2024-09-01 08:33:03 - DEBUG - http://localhost:49215 "POST /session HTTP/1.1" 200 879
+2024-09-01 08:33:03 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"128.0.6613.86","chrome":{"chromedriverVersion":"128.0.6613.86 (3045ed680fdab64f784f3b366cfe74adbdf6ff01-refs/branch-heads/6613@{#1337})","userDataDir":"C:\\Users\\Mars\\AppData\\Local\\Temp\\scoped_dir4664_117663639"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:49221"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"fcfa3b5e685990c7f12bc34aea748529"}} | headers=HTTPHeaderDict({'Content-Length': '879', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:03 - DEBUG - Finished Request
+2024-09-01 08:33:03 - DEBUG - POST http://localhost:49215/session/fcfa3b5e685990c7f12bc34aea748529/timeouts {'pageLoad': 30000}
+2024-09-01 08:33:03 - DEBUG - http://localhost:49215 "POST /session/fcfa3b5e685990c7f12bc34aea748529/timeouts HTTP/1.1" 200 14
+2024-09-01 08:33:03 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:03 - DEBUG - Finished Request
+2024-09-01 08:33:03 - DEBUG - 初始化 WebDriver 完成
+2024-09-01 08:33:03 - DEBUG - POST http://localhost:49215/session/fcfa3b5e685990c7f12bc34aea748529/url {'url': 'https://www.books.com.tw/'}
+2024-09-01 08:33:06 - DEBUG - http://localhost:49215 "POST /session/fcfa3b5e685990c7f12bc34aea748529/url HTTP/1.1" 200 14
+2024-09-01 08:33:06 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:06 - DEBUG - Finished Request
+2024-09-01 08:33:06 - DEBUG - POST http://localhost:49215/session/fcfa3b5e685990c7f12bc34aea748529/element {'using': 'css selector', 'value': '[id="close_top_banner"]'}
+2024-09-01 08:33:06 - DEBUG - http://localhost:49215 "POST /session/fcfa3b5e685990c7f12bc34aea748529/element HTTP/1.1" 200 126
+2024-09-01 08:33:06 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.20E9D24D8DB286C6571A11047EE5C4F8.d.A0370B9A327040FA73754A26B1FA971C.e.53"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:06 - DEBUG - Finished Request
+2024-09-01 08:33:06 - DEBUG - POST http://localhost:49215/session/fcfa3b5e685990c7f12bc34aea748529/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.20E9D24D8DB286C6571A11047EE5C4F8.d.A0370B9A327040FA73754A26B1FA971C.e.53'}]}
+2024-09-01 08:33:06 - DEBUG - http://localhost:49215 "POST /session/fcfa3b5e685990c7f12bc34aea748529/execute/sync HTTP/1.1" 200 14
+2024-09-01 08:33:06 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:06 - DEBUG - Finished Request
+2024-09-01 08:33:06 - DEBUG - GET http://localhost:49215/session/fcfa3b5e685990c7f12bc34aea748529/element/f.20E9D24D8DB286C6571A11047EE5C4F8.d.A0370B9A327040FA73754A26B1FA971C.e.53/enabled {}
+2024-09-01 08:33:06 - DEBUG - http://localhost:49215 "GET /session/fcfa3b5e685990c7f12bc34aea748529/element/f.20E9D24D8DB286C6571A11047EE5C4F8.d.A0370B9A327040FA73754A26B1FA971C.e.53/enabled HTTP/1.1" 200 14
+2024-09-01 08:33:06 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:06 - DEBUG - Finished Request
+2024-09-01 08:33:06 - DEBUG - POST http://localhost:49215/session/fcfa3b5e685990c7f12bc34aea748529/element/f.20E9D24D8DB286C6571A11047EE5C4F8.d.A0370B9A327040FA73754A26B1FA971C.e.53/click {}
+2024-09-01 08:33:06 - DEBUG - http://localhost:49215 "POST /session/fcfa3b5e685990c7f12bc34aea748529/element/f.20E9D24D8DB286C6571A11047EE5C4F8.d.A0370B9A327040FA73754A26B1FA971C.e.53/click HTTP/1.1" 200 14
+2024-09-01 08:33:06 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:06 - DEBUG - Finished Request
+2024-09-01 08:33:06 - DEBUG - 廣告橫幅已關閉
+2024-09-01 08:33:06 - DEBUG - POST http://localhost:49215/session/fcfa3b5e685990c7f12bc34aea748529/element {'using': 'css selector', 'value': '[id="key"]'}
+2024-09-01 08:33:06 - DEBUG - http://localhost:49215 "POST /session/fcfa3b5e685990c7f12bc34aea748529/element HTTP/1.1" 200 126
+2024-09-01 08:33:06 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.20E9D24D8DB286C6571A11047EE5C4F8.d.A0370B9A327040FA73754A26B1FA971C.e.33"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:06 - DEBUG - Finished Request
+2024-09-01 08:33:06 - DEBUG - POST http://localhost:49215/session/fcfa3b5e685990c7f12bc34aea748529/element/f.20E9D24D8DB286C6571A11047EE5C4F8.d.A0370B9A327040FA73754A26B1FA971C.e.33/clear {}
+2024-09-01 08:33:06 - DEBUG - http://localhost:49215 "POST /session/fcfa3b5e685990c7f12bc34aea748529/element/f.20E9D24D8DB286C6571A11047EE5C4F8.d.A0370B9A327040FA73754A26B1FA971C.e.33/clear HTTP/1.1" 200 14
+2024-09-01 08:33:06 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:06 - DEBUG - Finished Request
+2024-09-01 08:33:06 - DEBUG - POST http://localhost:49215/session/fcfa3b5e685990c7f12bc34aea748529/element/f.20E9D24D8DB286C6571A11047EE5C4F8.d.A0370B9A327040FA73754A26B1FA971C.e.33/value {'text': '把時間當做朋友', 'value': ['把', '時', '間', '當', '做', '朋', '友']}
+2024-09-01 08:33:06 - DEBUG - http://localhost:49215 "POST /session/fcfa3b5e685990c7f12bc34aea748529/element/f.20E9D24D8DB286C6571A11047EE5C4F8.d.A0370B9A327040FA73754A26B1FA971C.e.33/value HTTP/1.1" 200 14
+2024-09-01 08:33:06 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:06 - DEBUG - Finished Request
+2024-09-01 08:33:06 - DEBUG - POST http://localhost:49215/session/fcfa3b5e685990c7f12bc34aea748529/element {'using': 'css selector', 'value': '.search_btn'}
+2024-09-01 08:33:06 - DEBUG - http://localhost:49215 "POST /session/fcfa3b5e685990c7f12bc34aea748529/element HTTP/1.1" 200 126
+2024-09-01 08:33:06 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.20E9D24D8DB286C6571A11047EE5C4F8.d.A0370B9A327040FA73754A26B1FA971C.e.55"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:06 - DEBUG - Finished Request
+2024-09-01 08:33:06 - DEBUG - POST http://localhost:49215/session/fcfa3b5e685990c7f12bc34aea748529/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.20E9D24D8DB286C6571A11047EE5C4F8.d.A0370B9A327040FA73754A26B1FA971C.e.55'}]}
+2024-09-01 08:33:06 - DEBUG - http://localhost:49215 "POST /session/fcfa3b5e685990c7f12bc34aea748529/execute/sync HTTP/1.1" 200 14
+2024-09-01 08:33:06 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:06 - DEBUG - Finished Request
+2024-09-01 08:33:06 - DEBUG - GET http://localhost:49215/session/fcfa3b5e685990c7f12bc34aea748529/element/f.20E9D24D8DB286C6571A11047EE5C4F8.d.A0370B9A327040FA73754A26B1FA971C.e.55/enabled {}
+2024-09-01 08:33:06 - DEBUG - http://localhost:49215 "GET /session/fcfa3b5e685990c7f12bc34aea748529/element/f.20E9D24D8DB286C6571A11047EE5C4F8.d.A0370B9A327040FA73754A26B1FA971C.e.55/enabled HTTP/1.1" 200 14
+2024-09-01 08:33:06 - DEBUG - Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:06 - DEBUG - Finished Request
+2024-09-01 08:33:06 - DEBUG - POST http://localhost:49215/session/fcfa3b5e685990c7f12bc34aea748529/element/f.20E9D24D8DB286C6571A11047EE5C4F8.d.A0370B9A327040FA73754A26B1FA971C.e.55/click {}
+2024-09-01 08:33:36 - DEBUG - http://localhost:49215 "POST /session/fcfa3b5e685990c7f12bc34aea748529/element/f.20E9D24D8DB286C6571A11047EE5C4F8.d.A0370B9A327040FA73754A26B1FA971C.e.55/click HTTP/1.1" 500 1180
+2024-09-01 08:33:36 - DEBUG - Remote response: status=500 | data={"value":{"error":"timeout","message":"timeout: Timed out receiving message from renderer: 30.000\n  (Session info: chrome=128.0.6613.86)","stacktrace":"\tGetHandleVerifier [0x00007FF74B8BB632+29090]\n\t(No symbol) [0x00007FF74B82E6E9]\n\t(No symbol) [0x00007FF74B6EB1CA]\n\t(No symbol) [0x00007FF74B6D3F0D]\n\t(No symbol) [0x00007FF74B6D3C10]\n\t(No symbol) [0x00007FF74B6D1AD3]\n\t(No symbol) [0x00007FF74B6D231F]\n\t(No symbol) [0x00007FF74B6E0C1E]\n\t(No symbol) [0x00007FF74B6F95CD]\n\t(No symbol) [0x00007FF74B6FF16A]\n\t(No symbol) [0x00007FF74B6D2A6A]\n\t(No symbol) [0x00007FF74B6F943F]\n\t(No symbol) [0x00007FF74B78693E]\n\t(No symbol) [0x00007FF74B766493]\n\t(No symbol) [0x00007FF74B7309B1]\n\t(No symbol) [0x00007FF74B731B11]\n\tGetHandleVerifier [0x00007FF74BBD883D+3294125]\n\tGetHandleVerifier [0x00007FF74BC24423+3604371]\n\tGetHandleVerifier [0x00007FF74BC1A2E7+3563095]\n\tGetHandleVerifier [0x00007FF74B976F16+797318]\n\t(No symbol) [0x00007FF74B83986F]\n\t(No symbol) [0x00007FF74B835454]\n\t(No symbol) [0x00007FF74B8355E0]\n\t(No symbol) [0x00007FF74B824A7F]\n\tBaseThreadInitThunk [0x00007FF8429A257D+29]\n\tRtlUserThreadStart [0x00007FF84488AF28+40]\n"}} | headers=HTTPHeaderDict({'Content-Length': '1180', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:36 - DEBUG - Finished Request
+2024-09-01 08:33:36 - ERROR - 搜索書籍時發生錯誤: Message: timeout: Timed out receiving message from renderer: 30.000
+  (Session info: chrome=128.0.6613.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74B8BB632+29090]
+	(No symbol) [0x00007FF74B82E6E9]
+	(No symbol) [0x00007FF74B6EB1CA]
+	(No symbol) [0x00007FF74B6D3F0D]
+	(No symbol) [0x00007FF74B6D3C10]
+	(No symbol) [0x00007FF74B6D1AD3]
+	(No symbol) [0x00007FF74B6D231F]
+	(No symbol) [0x00007FF74B6E0C1E]
+	(No symbol) [0x00007FF74B6F95CD]
+	(No symbol) [0x00007FF74B6FF16A]
+	(No symbol) [0x00007FF74B6D2A6A]
+	(No symbol) [0x00007FF74B6F943F]
+	(No symbol) [0x00007FF74B78693E]
+	(No symbol) [0x00007FF74B766493]
+	(No symbol) [0x00007FF74B7309B1]
+	(No symbol) [0x00007FF74B731B11]
+	GetHandleVerifier [0x00007FF74BBD883D+3294125]
+	GetHandleVerifier [0x00007FF74BC24423+3604371]
+	GetHandleVerifier [0x00007FF74BC1A2E7+3563095]
+	GetHandleVerifier [0x00007FF74B976F16+797318]
+	(No symbol) [0x00007FF74B83986F]
+	(No symbol) [0x00007FF74B835454]
+	(No symbol) [0x00007FF74B8355E0]
+	(No symbol) [0x00007FF74B824A7F]
+	BaseThreadInitThunk [0x00007FF8429A257D+29]
+	RtlUserThreadStart [0x00007FF84488AF28+40]
+
+2024-09-01 08:33:36 - DEBUG - DELETE http://localhost:49215/session/fcfa3b5e685990c7f12bc34aea748529 {}
+2024-09-01 08:33:36 - DEBUG - http://localhost:49215 "DELETE /session/fcfa3b5e685990c7f12bc34aea748529 HTTP/1.1" 200 14
+2024-09-01 08:33:36 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:36 - DEBUG - Finished Request
+2024-09-01 08:33:43 - DEBUG - Selenium Manager binary found at: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+2024-09-01 08:33:43 - DEBUG - Executing process: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+2024-09-01 08:33:43 - DEBUG - chromedriver not found in PATH
+2024-09-01 08:33:43 - DEBUG - chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+2024-09-01 08:33:43 - DEBUG - Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+2024-09-01 08:33:43 - DEBUG - Output: ""
+2024-09-01 08:33:43 - DEBUG - Running command: REG QUERY HKCU\Software\Google\Chrome\BLBeacon /v version
+2024-09-01 08:33:43 - DEBUG - Output: ""
+2024-09-01 08:33:43 - DEBUG - chrome not found in the system
+2024-09-01 08:33:43 - DEBUG - Required browser: chrome 128.0.6613.86
+2024-09-01 08:33:43 - DEBUG - chrome 128.0.6613.86 already exists
+2024-09-01 08:33:43 - DEBUG - chrome 128.0.6613.86 is available at C:\Users\Mars\.cache\selenium\chrome\win64\128.0.6613.86\chrome.exe
+2024-09-01 08:33:43 - DEBUG - Required driver: chromedriver 128.0.6613.86
+2024-09-01 08:33:43 - DEBUG - chromedriver 128.0.6613.86 already in the cache
+2024-09-01 08:33:43 - DEBUG - Driver path: C:\Users\Mars\.cache\selenium\chromedriver\win64\128.0.6613.86\chromedriver.exe
+2024-09-01 08:33:43 - DEBUG - Browser path: C:\Users\Mars\.cache\selenium\chrome\win64\128.0.6613.86\chrome.exe
+2024-09-01 08:33:43 - DEBUG - Started executable: `C:\Users\Mars\.cache\selenium\chromedriver\win64\128.0.6613.86\chromedriver.exe` in a child process with pid: 29136 using 0 to output -3
+2024-09-01 08:33:43 - DEBUG - POST http://localhost:56431/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Users\\Mars\\.cache\\selenium\\chrome\\win64\\128.0.6613.86\\chrome.exe', 'args': ['--headless', '--disable-gpu', '--no-sandbox', '--disable-dev-shm-usage', 'user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36']}}}}
+2024-09-01 08:33:43 - DEBUG - Starting new HTTP connection (1): localhost:56431
+2024-09-01 08:33:44 - DEBUG - http://localhost:56431 "POST /session HTTP/1.1" 200 881
+2024-09-01 08:33:44 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"128.0.6613.86","chrome":{"chromedriverVersion":"128.0.6613.86 (3045ed680fdab64f784f3b366cfe74adbdf6ff01-refs/branch-heads/6613@{#1337})","userDataDir":"C:\\Users\\Mars\\AppData\\Local\\Temp\\scoped_dir29136_1675444257"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:56434"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"dbcb57718b35f66409cd3162fad7703a"}} | headers=HTTPHeaderDict({'Content-Length': '881', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:44 - DEBUG - Finished Request
+2024-09-01 08:33:44 - DEBUG - POST http://localhost:56431/session/dbcb57718b35f66409cd3162fad7703a/timeouts {'pageLoad': 30000}
+2024-09-01 08:33:44 - DEBUG - http://localhost:56431 "POST /session/dbcb57718b35f66409cd3162fad7703a/timeouts HTTP/1.1" 200 14
+2024-09-01 08:33:44 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:44 - DEBUG - Finished Request
+2024-09-01 08:33:44 - DEBUG - 初始化 WebDriver 完成
+2024-09-01 08:33:44 - DEBUG - 開始搜索關鍵字: 把時間當做朋友
+2024-09-01 08:33:44 - DEBUG - POST http://localhost:56431/session/dbcb57718b35f66409cd3162fad7703a/url {'url': 'https://www.momoshop.com.tw/search/searchShop.jsp?keyword=把時間當做朋友&searchType=1&curPage=1&showType=ch...'}
+2024-09-01 08:33:47 - DEBUG - http://localhost:56431 "POST /session/dbcb57718b35f66409cd3162fad7703a/url HTTP/1.1" 200 14
+2024-09-01 08:33:47 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:47 - DEBUG - Finished Request
+2024-09-01 08:33:47 - DEBUG - POST http://localhost:56431/session/dbcb57718b35f66409cd3162fad7703a/element {'using': 'css selector', 'value': 'li[gcode]'}
+2024-09-01 08:33:47 - DEBUG - http://localhost:56431 "POST /session/dbcb57718b35f66409cd3162fad7703a/element HTTP/1.1" 200 126
+2024-09-01 08:33:47 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.23472CC2998DF459631836AA725EE7A7.d.4C2553D7B9695BDCB9172C0339FC069A.e.78"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:47 - DEBUG - Finished Request
+2024-09-01 08:33:47 - DEBUG - POST http://localhost:56431/session/dbcb57718b35f66409cd3162fad7703a/elements {'using': 'css selector', 'value': 'li[gcode]'}
+2024-09-01 08:33:47 - DEBUG - http://localhost:56431 "POST /session/dbcb57718b35f66409cd3162fad7703a/elements HTTP/1.1" 200 1298
+2024-09-01 08:33:47 - DEBUG - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.23472CC2998DF459631836AA725EE7A7.d.4C2553D7B9695BDCB9172C0339FC069A.e.78"},{"element-6066-11e4-a52e-4f735466cecf":"f.23472CC2998DF459631836AA725EE7A7.d.4C2553D7B9695BDCB9172C0339FC069A.e.79"},{"element-6066-11e4-a52e-4f735466cecf":"f.23472CC2998DF459631836AA725EE7A7.d.4C2553D7B9695BDCB9172C0339FC069A.e.80"},{"element-6066-11e4-a52e-4f735466cecf":"f.23472CC2998DF459631836AA725EE7A7.d.4C2553D7B9695BDCB9172C0339FC069A.e.81"},{"element-6066-11e4-a52e-4f735466cecf":"f.23472CC2998DF459631836AA725EE7A7.d.4C2553D7B9695BDCB9172C0339FC069A.e.82"},{"element-6066-11e4-a52e-4f735466cecf":"f.23472CC2998DF459631836AA725EE7A7.d.4C2553D7B9695BDCB9172C0339FC069A.e.83"},{"element-6066-11e4-a52e-4f735466cecf":"f.23472CC2998DF459631836AA725EE7A7.d.4C2553D7B9695BDCB9172C0339FC069A.e.84"},{"element-6066-11e4-a52e-4f735466cecf":"f.23472CC2998DF459631836AA725EE7A7.d.4C2553D7B9695BDCB9172C0339FC069A.e.85"},{"element-6066-11e4-a52e-4f735466cecf":"f.23472CC2998DF459631836AA725EE7A7.d.4C2553D7B9695BDCB9172C0339FC069A.e.86"},{"element-6066-11e4-a52e-4f735466cecf":"f.23472CC2998DF459631836AA725EE7A7.d.4C2553D7B9695BDCB9172C0339FC069A.e.87"},{"element-6066-11e4-a52e-4f735466cecf":"f.23472CC2998DF459631836AA725EE7A7.d.4C2553D7B9695BDCB9172C0339FC069A.e.88"}]} | headers=HTTPHeaderDict({'Content-Length': '1298', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:47 - DEBUG - Finished Request
+2024-09-01 08:33:47 - DEBUG - POST http://localhost:56431/session/dbcb57718b35f66409cd3162fad7703a/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.23472CC2998DF459631836AA725EE7A7.d.4C2553D7B9695BDCB9172C0339FC069A.e.78'}, 'gcode']}
+2024-09-01 08:33:47 - DEBUG - http://localhost:56431 "POST /session/dbcb57718b35f66409cd3162fad7703a/execute/sync HTTP/1.1" 200 20
+2024-09-01 08:33:47 - DEBUG - Remote response: status=200 | data={"value":"11557481"} | headers=HTTPHeaderDict({'Content-Length': '20', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:47 - DEBUG - Finished Request
+2024-09-01 08:33:47 - DEBUG - POST http://localhost:56431/session/dbcb57718b35f66409cd3162fad7703a/element/f.23472CC2998DF459631836AA725EE7A7.d.4C2553D7B9695BDCB9172C0339FC069A.e.78/element {'using': 'css selector', 'value': '.prdName'}
+2024-09-01 08:33:47 - DEBUG - http://localhost:56431 "POST /session/dbcb57718b35f66409cd3162fad7703a/element/f.23472CC2998DF459631836AA725EE7A7.d.4C2553D7B9695BDCB9172C0339FC069A.e.78/element HTTP/1.1" 200 126
+2024-09-01 08:33:47 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.23472CC2998DF459631836AA725EE7A7.d.4C2553D7B9695BDCB9172C0339FC069A.e.89"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:47 - DEBUG - Finished Request
+2024-09-01 08:33:47 - DEBUG - GET http://localhost:56431/session/dbcb57718b35f66409cd3162fad7703a/element/f.23472CC2998DF459631836AA725EE7A7.d.4C2553D7B9695BDCB9172C0339FC069A.e.89/text {}
+2024-09-01 08:33:47 - DEBUG - http://localhost:56431 "GET /session/dbcb57718b35f66409cd3162fad7703a/element/f.23472CC2998DF459631836AA725EE7A7.d.4C2553D7B9695BDCB9172C0339FC069A.e.89/text HTTP/1.1" 200 120
+2024-09-01 08:33:47 - DEBUG - Remote response: status=200 | data={"value":"把時間當作朋友【暢銷紀念版】：沒有人能管理時間，你真正能管理的只有你自己"} | headers=HTTPHeaderDict({'Content-Length': '120', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:47 - DEBUG - Finished Request
+2024-09-01 08:33:47 - DEBUG - 找到書籍 1: 把時間當作朋友【暢銷紀念版】：沒有人能管理時間，你真正能管理的只有你自己
+2024-09-01 08:33:47 - DEBUG - POST http://localhost:56431/session/dbcb57718b35f66409cd3162fad7703a/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.23472CC2998DF459631836AA725EE7A7.d.4C2553D7B9695BDCB9172C0339FC069A.e.79'}, 'gcode']}
+2024-09-01 08:33:47 - DEBUG - http://localhost:56431 "POST /session/dbcb57718b35f66409cd3162fad7703a/execute/sync HTTP/1.1" 200 20
+2024-09-01 08:33:47 - DEBUG - Remote response: status=200 | data={"value":"11086477"} | headers=HTTPHeaderDict({'Content-Length': '20', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:47 - DEBUG - Finished Request
+2024-09-01 08:33:47 - DEBUG - POST http://localhost:56431/session/dbcb57718b35f66409cd3162fad7703a/element/f.23472CC2998DF459631836AA725EE7A7.d.4C2553D7B9695BDCB9172C0339FC069A.e.79/element {'using': 'css selector', 'value': '.prdName'}
+2024-09-01 08:33:47 - DEBUG - http://localhost:56431 "POST /session/dbcb57718b35f66409cd3162fad7703a/element/f.23472CC2998DF459631836AA725EE7A7.d.4C2553D7B9695BDCB9172C0339FC069A.e.79/element HTTP/1.1" 200 126
+2024-09-01 08:33:47 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.23472CC2998DF459631836AA725EE7A7.d.4C2553D7B9695BDCB9172C0339FC069A.e.90"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:47 - DEBUG - Finished Request
+2024-09-01 08:33:47 - DEBUG - GET http://localhost:56431/session/dbcb57718b35f66409cd3162fad7703a/element/f.23472CC2998DF459631836AA725EE7A7.d.4C2553D7B9695BDCB9172C0339FC069A.e.90/text {}
+2024-09-01 08:33:47 - DEBUG - http://localhost:56431 "GET /session/dbcb57718b35f66409cd3162fad7703a/element/f.23472CC2998DF459631836AA725EE7A7.d.4C2553D7B9695BDCB9172C0339FC069A.e.90/text HTTP/1.1" 200 96
+2024-09-01 08:33:47 - DEBUG - Remote response: status=200 | data={"value":"一分鐘和陌生人成為朋友：用最短的時間，走進陌生人的內心！"} | headers=HTTPHeaderDict({'Content-Length': '96', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:47 - DEBUG - Finished Request
+2024-09-01 08:33:47 - DEBUG - 找到書籍 2: 一分鐘和陌生人成為朋友：用最短的時間，走進陌生人的內心！
+2024-09-01 08:33:47 - DEBUG - 正在關閉瀏覽器
+2024-09-01 08:33:47 - DEBUG - DELETE http://localhost:56431/session/dbcb57718b35f66409cd3162fad7703a {}
+2024-09-01 08:33:47 - DEBUG - http://localhost:56431 "DELETE /session/dbcb57718b35f66409cd3162fad7703a HTTP/1.1" 200 14
+2024-09-01 08:33:47 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-01 08:33:47 - DEBUG - Finished Request
+2024-09-01 08:33:49 - DEBUG - 瀏覽器已關閉
+2024-09-01 08:33:53 - INFO - Books: None, URL: None
+2024-09-01 08:33:53 - INFO - Momo: 把時間當作朋友【暢銷紀念版】：沒有人能管理時間，你真正能管理的只有你自己, URL: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11557481&memid=6000021729&cid=apuad&oid=1&osm=league
+2024-09-01 08:33:53 - INFO - 開始更新購書連結
+2024-09-01 08:33:53 - INFO - 購書連結更新完成
+2024-09-01 08:33:53 - INFO - 更新閱讀列表
+2024-09-01 08:33:53 - INFO - 書評文件處理完成
