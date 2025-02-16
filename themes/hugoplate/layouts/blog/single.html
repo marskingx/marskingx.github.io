@@ -91,33 +91,51 @@
 
 <!-- Related posts -->
 {{ $curr := . }}
-{{ $related := slice }}
+{{ $sameCategoryPosts := slice }}
 
-<!-- Get posts from the same categories -->
+<!-- 1. Find posts with same categories -->
 {{ with .Params.categories }}
   {{ range . }}
     {{ $category := . }}
     {{ $categoryPosts := where site.RegularPages ".Params.categories" "intersect" (slice $category) }}
-    {{ $related = $related | union $categoryPosts }}
+    {{ $sameCategoryPosts = $sameCategoryPosts | union $categoryPosts }}
   {{ end }}
 {{ end }}
 
-<!-- If we don't have enough posts from categories, add posts with similar tags -->
-{{ if lt ($related | len) 3 }}
-  {{ with .Params.tags }}
-    {{ range . }}
-      {{ $tag := . }}
-      {{ $tagPosts := where site.RegularPages ".Params.tags" "intersect" (slice $tag) }}
-      {{ $related = $related | union $tagPosts }}
-    {{ end }}
+<!-- Remove current post from category matches -->
+{{ $sameCategoryPosts = where $sameCategoryPosts "Title" "!=" $curr.Title }}
+
+<!-- Related posts -->
+{{ $curr := . }}
+{{ $sameCategoryPosts := slice }}
+
+<!-- 1. Find posts with same categories -->
+{{ with .Params.categories }}
+  {{ range . }}
+    {{ $category := . }}
+    {{ $categoryPosts := where site.RegularPages ".Params.categories" "intersect" (slice $category) }}
+    {{ $sameCategoryPosts = $sameCategoryPosts | union $categoryPosts }}
   {{ end }}
 {{ end }}
 
-<!-- Remove current post and get final set -->
-{{ $filtered := where $related "Title" "!=" $curr.Title }}
-{{ $final := $filtered | shuffle | first 3 }}
+<!-- Remove current post from category matches -->
+{{ $sameCategoryPosts = where $sameCategoryPosts "Title" "!=" $curr.Title }}
 
-{{ with $final }}
+<!-- 2. From posts with same categories, find those with matching tags -->
+{{ $relatedPosts := slice }}
+{{ with .Params.tags }}
+  {{ range . }}
+    {{ $tag := . }}
+    {{ $tagMatches := where $sameCategoryPosts ".Params.tags" "intersect" (slice $tag) }}
+    {{ $relatedPosts = $relatedPosts | union $tagMatches }}
+  {{ end }}
+{{ end }}
+
+<!-- 3. Sort by date (newest first) and get first 3 -->
+{{ $finalPosts := where $relatedPosts "Type" "not in" (slice "page") | uniq }}
+{{ $sortedPosts := sort $finalPosts ".Date" "desc" | first 3 }}
+
+{{ with $sortedPosts }}
   <div class="section pb-0">
     <h2 class="h3 mb-12">{{ T "related_posts" }}</h2>
     <div class="row">
