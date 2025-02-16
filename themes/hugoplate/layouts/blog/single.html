@@ -89,21 +89,46 @@
         </article>
       </div>
 
-      <!-- Related posts -->
-      {{ $related := (where site.RegularPages "Section" "in" site.Params.mainSections) | intersect (where site.RegularPages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) }}
-      {{ $related = $related | shuffle | first 3 }}
-      {{ with $related }}
-        <div class="section pb-0">
-          <h2 class="h3 mb-12">{{ T "related_posts" }}</h2>
-          <div class="row">
-            {{ range . }}
-              <div class="lg:col-4 md:col-6 mb-14">
-                {{ partial "components/blog-card" . }}
-              </div>
-            {{ end }}
-          </div>
+<!-- Related posts -->
+{{ $curr := . }}
+{{ $related := slice }}
+
+<!-- Get posts from the same categories -->
+{{ with .Params.categories }}
+  {{ range . }}
+    {{ $category := . }}
+    {{ $categoryPosts := where site.RegularPages ".Params.categories" "intersect" (slice $category) }}
+    {{ $related = $related | union $categoryPosts }}
+  {{ end }}
+{{ end }}
+
+<!-- If we don't have enough posts from categories, add posts with similar tags -->
+{{ if lt ($related | len) 3 }}
+  {{ with .Params.tags }}
+    {{ range . }}
+      {{ $tag := . }}
+      {{ $tagPosts := where site.RegularPages ".Params.tags" "intersect" (slice $tag) }}
+      {{ $related = $related | union $tagPosts }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+<!-- Remove current post and get final set -->
+{{ $filtered := where $related "Title" "!=" $curr.Title }}
+{{ $final := $filtered | shuffle | first 3 }}
+
+{{ with $final }}
+  <div class="section pb-0">
+    <h2 class="h3 mb-12">{{ T "related_posts" }}</h2>
+    <div class="row">
+      {{ range . }}
+        <div class="lg:col-4 md:col-6 mb-14">
+          {{ partial "components/blog-card" . }}
         </div>
       {{ end }}
     </div>
-  </section>
+  </div>
+{{ end }}
+</div>
+</section>
 {{ end }}
