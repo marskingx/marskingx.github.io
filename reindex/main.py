@@ -26,25 +26,19 @@ logging.getLogger('').addHandler(console)
 
 def load_config():
   try:
-    with open('archive/20240720/config.yaml', 'r', encoding='utf-8') as file:
-      config = yaml.safe_load(file)
-    logging.info("成功加載配置文件")
-    return config
-  except yaml.YAMLError as e:
-    logging.error(f"解析 YAML 文件時出錯: {e}")
-    if hasattr(e, 'problem_mark'):
-      mark = e.problem_mark
-      logging.error(f"錯誤位置: 第 {mark.line + 1} 行, 第 {mark.column + 1} 列")
-    raise
+    # 修改為正確的設定檔路徑
+    config_path = 'config.yaml'  # 或 'hugo.yaml' 或其他實際的路徑
+    with open(config_path, 'r', encoding='utf-8') as file:
+      return yaml.safe_load(file)
   except Exception as e:
-    logging.error(f"加載配置文件時出錯: {e}")
-    raise
+    print(f"加載配置文件時出錯: {e}")
+    return None
 
 
 def get_processor(category):
   processors = {
     'Podcast節目': PodcastProcessor,
-    '理財工具與金融商品': FinancialToolProcessor,
+    '財務工具與金融商品': FinancialToolProcessor,
     '財務規劃與心態': FinancialMindsetProcessor,
     '職涯與生活': LifeShareProcessor,
     '閱讀心得': BooksReviewProcessor
