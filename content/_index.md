@@ -26,23 +26,9 @@ features:
       enable: true
       label: "關於我"
       link: "/about/"  
-      
-  - title: "在Podcast，陪你一起理財"
-    image: "/images/service-3.png"
-    content: "歡迎來到《**懶得變有錢**》，讓我們以**Mindfulness**「**慵懶專注**」的思維，陪你活在當下，一起理解財務規劃的本質。一起討論收支問題｜投資想法｜生活心得｜讀書感想｜你有理財常見的迷思嗎？，**留言給我**，我都會在節目中分享！"
-    bulletpoints:
-      - "每周更新Podcast節目(沒意外的話)"
-      - "Apple Podcast"
-      - "Spotify Podcast"
-      - "Youtube Podcast"
-      - "每個平台都可以前往收聽，記得留言評論**五星吹捧**"
-    button:
-      enable: True
-      label: "前往收聽"
-      link: "/podcast"
-
+  
   - title: "關於財務規劃這件事你也有以下的煩惱嗎？"
-    image: "/images/service-1.png"
+    image: "/images/service-3.png"
     content: "每一個人都有屬於自己的**財務規劃**，**財務規劃**的本質就是帶給你金錢與生活上的平衡。然而，每個人雖然都有共同的需求——錢，但其實**每個人的財務DNA完全不同**，每個人對於錢的概念與財務決策完全不同，而產生出不同的財務結果，你也有以下的煩惱嗎?。"
     bulletpoints:
       - "**收支管理**：不知道錢花去哪裡，又存不下錢？"
@@ -53,8 +39,24 @@ features:
       - "**退休目標**：想規劃退休？怎麼知道有沒有錢退休？"
     button:
       enable: True
-      label: "了解財務規劃"
-      link: "#"
+      label: "閱讀文章"
+      link: "/blog/"
+    
+  - title: "在Podcast，陪你一起理財"
+    image: "/images/service-1.png"
+    content: "歡迎來到《**懶得變有錢**》，讓我們以**Mindfulness**「**慵懶專注**」的思維，陪你活在當下，一起理解財務規劃的本質。一起討論收支問題｜投資想法｜生活心得｜讀書感想｜你有理財常見的迷思嗎？，**留言給我**，我都會在節目中分享！"
+    bulletpoints:
+      - "每周更新Podcast節目(沒意外的話)"
+      - "Apple Podcast"
+      - "Spotify Podcast"
+      - "Youtube Podcast"
+      - "每個平台都可以前往收聽，記得留言評論**五星吹捧**"
+    button:
+      enable: True
+      label: "前往收聽"
+      link: "/podcast/"
+
+
 
 
 ---
