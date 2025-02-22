@@ -119,26 +119,25 @@ name = "追蹤"
 weight = 1
 parent = "追蹤"
 name = "threads"
-pageRef = "https://www.threads.net/@lazytoberich/"
+url = "https://www.threads.net/@lazytoberich/"
 
 [[main]]
 weight = 2
-
 parent = "追蹤"
 name = "instagram"
-pageRef = "https://www.instagram.com/lazytoberich/"
+url = "https://www.instagram.com/lazytoberich/"
 
 [[main]]
 weight = 3
 parent = "追蹤"
 name = "facebook"
-pageRef = "https://www.facebook.com/lazytoberich"
+url = "https://www.facebook.com/lazytoberich"
 
 [[main]]
 weight = 4
 parent = "追蹤"
 name = "discord"
-pageRef = "https://discord.gg/xeYCvQWBPx"
+url = "https://discord.gg/xeYCvQWBPx"
 
 # footer menu
 [[footer]]
