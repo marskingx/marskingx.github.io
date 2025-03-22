@@ -18,7 +18,6 @@ weight = 3
 
 [[main]]
 name = "書單"
-pageRef = "/reading_list"
 weight = 4
 
 [[main]]

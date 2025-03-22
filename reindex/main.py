@@ -1,4 +1,5 @@
-import yaml
+import shutil
+shutil.rmtree("processors/__pycache__", ignore_errors=True)
 import logging
 import re
 from pathlib import Path
@@ -14,10 +15,10 @@ from processors import (
 
 # 設置日誌
 logging.basicConfig(
-  level=logging.DEBUG,
-  format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-  filename=f'process_log_{datetime.now().strftime("%Y%m%d_%H%M%S")}.log',
-  filemode='w'
+    level=logging.DEBUG,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    filename=f'process_log_{datetime.now().strftime("%Y%m%d_%H%M%S")}.log',
+    filemode='w'
 )
 console = logging.StreamHandler()
 console.setLevel(logging.INFO)
@@ -25,101 +26,103 @@ logging.getLogger('').addHandler(console)
 
 
 def load_config():
-    try:
-        # 不再嘗試讀取外部設定檔
-        config = {
-            'file_paths': {
-                'blog_directory': 'content/blog',
-                'reading_list': 'data/reading_list.yaml'
-            }
-        }
-        logging.info("使用預設設定")
-        return config
-    except Exception as e:
-        logging.error(f"設定載入錯誤: {str(e)}")
-        return None
-
+  config = {
+    'file_paths': {
+      # Windows 的路徑可以用反斜線 \，或直接寫成 / 也能被 Python 正常解析
+      'blog_directory': 'D:/marskingx.github.io/content/blog',
+      'reading_list': 'D:/marskingx.github.io/reindex/data/reading_list.yaml'
+    }
+  }
+  logging.info("使用預設設定")
+  return config
 
 def get_processor(category):
-  processors = {
-    'Podcast節目': PodcastProcessor,
-    '財務工具與金融商品': FinancialToolProcessor,
-    '財務規劃與心態': FinancialMindsetProcessor,
-    '職涯與生活': LifeShareProcessor,
-    '閱讀心得': BooksReviewProcessor
-  }
-  return processors.get(category)
+    processors = {
+        'Podcast節目': PodcastProcessor,
+        '財務工具與金融商品': FinancialToolProcessor,
+        '財務規劃與心態': FinancialMindsetProcessor,
+        '職涯與生活': LifeShareProcessor,
+        '閱讀心得': BooksReviewProcessor
+    }
+    return processors.get(category)
 
 
 def get_file_category(file_path):
-  try:
-    with open(file_path, 'r', encoding='utf-8') as file:
-      content = file.read()
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            content = file.read()
 
-    # 嘗試匹配 YAML 前置數據中的 categories
-    yaml_match = re.search(r'---\s*\n(.*?)\n---', content, re.DOTALL)
-    if yaml_match:
-      yaml_content = yaml_match.group(1)
-      category_match = re.search(r'categories:\s*\[(.*?)\]', yaml_content)
-      if category_match:
-        categories = category_match.group(1).strip().split(',')
-        # 取第一個類別（如果有多個的話）
-        category = categories[0].strip().strip('"\'')
-        logging.info(f"從文件 {file_path} 中提取到類別: {category}")
-        return category
+        # 嘗試匹配 YAML 前置數據中的 categories
+        yaml_match = re.search(r'---\s*\n(.*?)\n---', content, re.DOTALL)
+        if yaml_match:
+            yaml_content = yaml_match.group(1)
+            category_match = re.search(r'categories:\s*\[(.*?)\]', yaml_content)
+            if category_match:
+                categories = category_match.group(1).strip().split(',')
+                # 取第一個類別（如果有多個的話）
+                category = categories[0].strip().strip('"\'')
+                logging.info(f"從文件 {file_path} 中提取到類別: {category}")
+                return category
 
-    # 如果在 YAML 中沒有找到 categories，嘗試在整個文件內容中查找
-    category_match = re.search(r'categories:\s*(\S+)', content)
-    if category_match:
-      category = category_match.group(1).strip().strip('[]"\'')
-      logging.info(f"從文件 {file_path} 內容中提取到類別: {category}")
-      return category
+        # 如果在 YAML 中沒有找到 categories，嘗試在整個文件內容中查找
+        category_match = re.search(r'categories:\s*(\S+)', content)
+        if category_match:
+            category = category_match.group(1).strip().strip('[]"\'')
+            logging.info(f"從文件 {file_path} 內容中提取到類別: {category}")
+            return category
 
-    logging.warning(f"在文件 {file_path} 中未找到 categories 欄位")
+        logging.warning(f"在文件 {file_path} 中未找到 categories 欄位")
 
-    # 如果仍然沒有找到類別，可以返回一個預設類別或 None
-    logging.error(f"無法確定文件 {file_path} 的類別")
-    return None
+        # 如果仍然沒有找到類別，可以返回一個預設類別或 None
+        logging.error(f"無法確定文件 {file_path} 的類別")
+        return None
 
-  except Exception as e:
-    logging.error(f"讀取文件 {file_path} 時發生錯誤: {e}")
-    return None
+    except Exception as e:
+        logging.error(f"讀取文件 {file_path} 時發生錯誤: {e}")
+        return None
 
 
 def list_recent_md_files(directory_path, limit=10):
-  try:
-    md_files = sorted(
-      Path(directory_path).glob('**/*.md'),
-      key=lambda p: p.stat().st_mtime,
-      reverse=True
-    )
-    return md_files[:limit]
-  except Exception as e:
-    logging.error(f"列出最近的 Markdown 文件時出錯: {e}")
-    return []
+    try:
+        md_files = sorted(
+            Path(directory_path).glob('**/*.md'),
+            key=lambda p: p.stat().st_mtime,
+            reverse=True
+        )
+        return md_files[:limit]
+    except Exception as e:
+        logging.error(f"列出最近的 Markdown 文件時出錯: {e}")
+        return []
 
 
 def main():
     try:
+        # 顯示目前程式執行時所在的工作目錄（用來除錯路徑問題）
+        logging.debug(f"當前工作目錄: {Path.cwd()}")
+
         config = load_config()
         if config is None:  # 檢查設定是否成功載入
             logging.error("無法載入設定，程式結束")
             return
-            
+
         directory_path = config['file_paths']['blog_directory']
         reading_list_path = config['file_paths']['reading_list']
-        
-        # 檢查目錄是否存在
+
+        # 如果目錄不存在，嘗試自動建立
         if not Path(directory_path).exists():
-            logging.error(f"目錄不存在: {directory_path}")
-            return
-            
+            try:
+                Path(directory_path).mkdir(parents=True, exist_ok=True)
+                logging.info(f"已自動建立目錄: {directory_path}")
+            except Exception as e:
+                logging.error(f"目錄不存在且自動建立失敗: {directory_path}, 錯誤: {e}")
+                return
+
         recent_files = list_recent_md_files(directory_path)
-        
+
         if not recent_files:
             logging.error(f"在 {directory_path} 中沒有找到 Markdown 文件")
             return
-            
+
         for i, file_path in enumerate(recent_files, start=1):
             logging.info(f"{i}. {file_path}")
 
@@ -155,4 +158,4 @@ def main():
 
 
 if __name__ == "__main__":
-  main()
+    main()

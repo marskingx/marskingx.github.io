@@ -97,7 +97,7 @@ sidebar = ["apple-podcast", "categories", "tags", ]
 
 # google map
 [google_map]
-enable = false
+enable = true
 map_api_key = "AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"
 map_latitude = "51.5223477"
 map_longitude = "-0.1622023"
@@ -106,7 +106,7 @@ map_marker = "images/marker.png"
 
 # Subscription
 [subscription]
-enable = false
+enable = true
 # mailchimp subsciption
 mailchimp_form_action = "https://lazytoberich.us14.list-manage.com/subscribe/post?u=db5c854191bdeffdff24a5147&amp;id=517a8482e3&amp;f_id=006cc3e0f0" # replace this url with yours
 mailchimp_form_name = "b_db5c854191bdeffdff24a5147_517a8482e3"
