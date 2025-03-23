@@ -1,3 +1,19 @@
+INFO:root:成功加載配置文件
+INFO:root:1. D:\marskingx.github.io\content\blog\2024-07-22【書單】《開始分心，就是要變強了》閱讀心得.md
+INFO:root:2. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+INFO:root:3. D:\marskingx.github.io\content\blog\2023-10-28【嗑書】《商業書10倍高效》讀書心得.md
+INFO:root:4. D:\marskingx.github.io\content\blog\2023-11-09【保險】信用卡回饋繳保費真的有比較省嗎算出來虧大了!.md
+INFO:root:5. D:\marskingx.github.io\content\blog\2023-11-16【嗑書】《賺錢也賺幸福》.md
+INFO:root:6. D:\marskingx.github.io\content\blog\2023-11-18【嗑書】《FIRE致富實踐》.md
+INFO:root:7. D:\marskingx.github.io\content\blog\2023-11-23【投資】平價ETFvs奢華ETF誰更適合你長期投資.md
+INFO:root:8. D:\marskingx.github.io\content\blog\2024-04-24【理財】如何享受美股大漲：專注你能控制的.md
+INFO:root:9. D:\marskingx.github.io\content\blog\2023-11-10【EP6】財務規劃怎麼會把規劃放後面!談談財務決策_財務信心_財務信仰!.md
+INFO:root:10. D:\marskingx.github.io\content\blog\2023-08-29【保險】保險是理性分析，感性決定.md
+WARNING:root:在文件 D:\marskingx.github.io\content\blog\2024-07-22【書單】《開始分心，就是要變強了》閱讀心得.md 中未找到 YAML 前置數據
+INFO:root:開始處理書評文件
+INFO:root:成功寫入文件: D:\marskingx.github.io\content\blog\2024-07-22【書單】《開始分心，就是要變強了》閱讀心得.md
+INFO:root:成功提取書名: 開始分心，就是快要變強了
+INFO:root:取得聯盟行銷連結，書名: 開始分心，就是快要變強了
 DEBUG:selenium.webdriver.common.selenium_manager:Selenium Manager binary found at: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
 DEBUG:selenium.webdriver.common.selenium_manager:Executing process: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
 DEBUG:selenium.webdriver.common.selenium_manager:chromedriver not found in PATH
@@ -14,305 +30,204 @@ DEBUG:selenium.webdriver.common.selenium_manager:Required driver: chromedriver 1
 DEBUG:selenium.webdriver.common.selenium_manager:chromedriver 126.0.6478.182 already in the cache
 DEBUG:selenium.webdriver.common.selenium_manager:Driver path: C:\Users\Mars\.cache\selenium\chromedriver\win64\126.0.6478.182\chromedriver.exe
 DEBUG:selenium.webdriver.common.selenium_manager:Browser path: C:\Users\Mars\.cache\selenium\chrome\win64\126.0.6478.182\chrome.exe
-DEBUG:selenium.webdriver.common.service:Started executable: `C:\Users\Mars\.cache\selenium\chromedriver\win64\126.0.6478.182\chromedriver.exe` in a child process with pid: 49120 using 0 to output -3
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Users\\Mars\\.cache\\selenium\\chrome\\win64\\126.0.6478.182\\chrome.exe', 'args': []}}}}
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:51507
-DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session HTTP/1.1" 200 881
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"126.0.6478.182","chrome":{"chromedriverVersion":"126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776})","userDataDir":"C:\\Users\\Mars\\AppData\\Local\\Temp\\scoped_dir49120_60280932"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:51510"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"866a00bd5f32bef705327f132c32b886"}} | headers=HTTPHeaderDict({'Content-Length': '881', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.common.service:Started executable: `C:\Users\Mars\.cache\selenium\chromedriver\win64\126.0.6478.182\chromedriver.exe` in a child process with pid: 47976 using 0 to output -3
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53719/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Users\\Mars\\.cache\\selenium\\chrome\\win64\\126.0.6478.182\\chrome.exe', 'args': ['--headless']}}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:53719
+DEBUG:urllib3.connectionpool:http://localhost:53719 "POST /session HTTP/1.1" 200 898
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome-headless-shell","browserVersion":"126.0.6478.182","chrome":{"chromedriverVersion":"126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776})","userDataDir":"C:\\Users\\Mars\\AppData\\Local\\Temp\\scoped_dir47976_2071293156"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:53725"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"545e2be29b0e1925bb97672934101383"}} | headers=HTTPHeaderDict({'Content-Length': '898', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
 DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
 DEBUG:root:初始化 WebDriver 完成
-DEBUG:root:打開 MOMO 購物網站
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/url {'url': 'https://www.momoshop.com.tw/search/searchShop.jsp?keyword=給孩子的商業啟蒙&searchType=1&curPage=1&showType=c...'}
-DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/url HTTP/1.1" 200 14
+DEBUG:root:打開博客來網站
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53719/session/545e2be29b0e1925bb97672934101383/url {'url': 'https://www.books.com.tw/'}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "POST /session/545e2be29b0e1925bb97672934101383/url HTTP/1.1" 200 14
 DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
 DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/elements {'using': 'css selector', 'value': '.goodsUrl'}
-DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/elements HTTP/1.1" 200 245
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.78"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.79"}]} | headers=HTTPHeaderDict({'Content-Length': '245', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53719/session/545e2be29b0e1925bb97672934101383/element {'using': 'css selector', 'value': '[id="close_top_banner"]'}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "POST /session/545e2be29b0e1925bb97672934101383/element HTTP/1.1" 200 126
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.C616DB4859560BF75FF898FEC64B1C2A.d.03D9EA4DC8844EDBAABBCDB3D13ACD33.e.39"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
 DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/elements {'using': 'css selector', 'value': '.goodsUrl'}
-DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/elements HTTP/1.1" 200 245
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.78"},{"element-6066-11e4-a52e-4f735466cecf":"f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.79"}]} | headers=HTTPHeaderDict({'Content-Length': '245', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53719/session/545e2be29b0e1925bb97672934101383/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.C616DB4859560BF75FF898FEC64B1C2A.d.03D9EA4DC8844EDBAABBCDB3D13ACD33.e.39'}]}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "POST /session/545e2be29b0e1925bb97672934101383/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
 DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/element/f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.78/element {'using': 'css selector', 'value': '.prdName'}
-DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/element/f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.78/element HTTP/1.1" 200 126
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.80"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:53719/session/545e2be29b0e1925bb97672934101383/element/f.C616DB4859560BF75FF898FEC64B1C2A.d.03D9EA4DC8844EDBAABBCDB3D13ACD33.e.39/enabled {}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "GET /session/545e2be29b0e1925bb97672934101383/element/f.C616DB4859560BF75FF898FEC64B1C2A.d.03D9EA4DC8844EDBAABBCDB3D13ACD33.e.39/enabled HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
 DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.80'}, 'title']}
-DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/execute/sync HTTP/1.1" 200 12
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/element/f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.78/element {'using': 'tag name', 'value': 'a'}
-DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/element/f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.78/element HTTP/1.1" 200 126
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.81"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.81'}, 'href']}
-DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/execute/sync HTTP/1.1" 200 147
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"https://www.momoshop.com.tw/search/searchShop.jsp?keyword=%E5%8A%89%E6%BD%A4&specialGoodsType=1&searchType=6&authorNo=20211026153305738"} | headers=HTTPHeaderDict({'Content-Length': '147', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:root:1: 
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/element/f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.79/element {'using': 'css selector', 'value': '.prdName'}
-DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/element/f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.79/element HTTP/1.1" 200 126
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.82"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.82'}, 'title']}
-DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/execute/sync HTTP/1.1" 200 12
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/element/f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.79/element {'using': 'tag name', 'value': 'a'}
-DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/element/f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.79/element HTTP/1.1" 404 1110
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"tag name\",\"selector\":\"a\"}\n  (Session info: chrome=126.0.6478.182)","stacktrace":"\tGetHandleVerifier [0x00007FF64C73EEB2+31554]\n\t(No symbol) [0x00007FF64C6B7EE9]\n\t(No symbol) [0x00007FF64C57872A]\n\t(No symbol) [0x00007FF64C5C8434]\n\t(No symbol) [0x00007FF64C5C853C]\n\t(No symbol) [0x00007FF64C5BBBAC]\n\t(No symbol) [0x00007FF64C5ED06F]\n\t(No symbol) [0x00007FF64C5BBA76]\n\t(No symbol) [0x00007FF64C5ED240]\n\t(No symbol) [0x00007FF64C60C977]\n\t(No symbol) [0x00007FF64C5ECDD3]\n\t(No symbol) [0x00007FF64C5BA33B]\n\t(No symbol) [0x00007FF64C5BAED1]\n\tGetHandleVerifier [0x00007FF64CA48B2D+3217341]\n\tGetHandleVerifier [0x00007FF64CA95AF3+3532675]\n\tGetHandleVerifier [0x00007FF64CA8B0F0+3489152]\n\tGetHandleVerifier [0x00007FF64C7EE786+750614]\n\t(No symbol) [0x00007FF64C6C376F]\n\t(No symbol) [0x00007FF64C6BEB24]\n\t(No symbol) [0x00007FF64C6BECB2]\n\t(No symbol) [0x00007FF64C6AE17F]\n\tBaseThreadInitThunk [0x00007FFD560C257D+29]\n\tRtlUserThreadStart [0x00007FFD56C2AF28+40]\n"}} | headers=HTTPHeaderDict({'Content-Length': '1110', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-ERROR:root:Error finding element in result 2: Message: no such element: Unable to locate element: {"method":"tag name","selector":"a"}
-  (Session info: chrome=126.0.6478.182); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Stacktrace:
-	GetHandleVerifier [0x00007FF64C73EEB2+31554]
-	(No symbol) [0x00007FF64C6B7EE9]
-	(No symbol) [0x00007FF64C57872A]
-	(No symbol) [0x00007FF64C5C8434]
-	(No symbol) [0x00007FF64C5C853C]
-	(No symbol) [0x00007FF64C5BBBAC]
-	(No symbol) [0x00007FF64C5ED06F]
-	(No symbol) [0x00007FF64C5BBA76]
-	(No symbol) [0x00007FF64C5ED240]
-	(No symbol) [0x00007FF64C60C977]
-	(No symbol) [0x00007FF64C5ECDD3]
-	(No symbol) [0x00007FF64C5BA33B]
-	(No symbol) [0x00007FF64C5BAED1]
-	GetHandleVerifier [0x00007FF64CA48B2D+3217341]
-	GetHandleVerifier [0x00007FF64CA95AF3+3532675]
-	GetHandleVerifier [0x00007FF64CA8B0F0+3489152]
-	GetHandleVerifier [0x00007FF64C7EE786+750614]
-	(No symbol) [0x00007FF64C6C376F]
-	(No symbol) [0x00007FF64C6BEB24]
-	(No symbol) [0x00007FF64C6BECB2]
-	(No symbol) [0x00007FF64C6AE17F]
-	BaseThreadInitThunk [0x00007FFD560C257D+29]
-	RtlUserThreadStart [0x00007FFD56C2AF28+40]
-
-DEBUG:root:自動選擇唯一結果
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/element/f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.78/element {'using': 'css selector', 'value': '.prdName'}
-DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/element/f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.78/element HTTP/1.1" 200 126
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.80"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.80'}, 'title']}
-DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/execute/sync HTTP/1.1" 200 12
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/element/f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.78/element {'using': 'tag name', 'value': 'a'}
-DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/element/f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.78/element HTTP/1.1" 200 126
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.81"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:51507/session/866a00bd5f32bef705327f132c32b886/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.7A418ECE02992FAF70DE7DC94D72DCDD.d.52B2BCBA0EE77BC4D8469B44291B8DED.e.81'}, 'href']}
-DEBUG:urllib3.connectionpool:http://localhost:51507 "POST /session/866a00bd5f32bef705327f132c32b886/execute/sync HTTP/1.1" 200 147
-DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"https://www.momoshop.com.tw/search/searchShop.jsp?keyword=%E5%8A%89%E6%BD%A4&specialGoodsType=1&searchType=6&authorNo=20211026153305738"} | headers=HTTPHeaderDict({'Content-Length': '147', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:root:選擇的商品名稱: 
-DEBUG:root:生成的商品 URL: https://www.momoshop.com.tw/search/searchShop.jsp?keyword=%E5%8A%89%E6%BD%A4&specialGoodsType=1&searchType=6&authorNo=20211026153305738&memid=6000021729&cid=apuad&oid=1&osm=league
-DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://localhost:51507/session/866a00bd5f32bef705327f132c32b886 {}
-DEBUG:urllib3.connectionpool:http://localhost:51507 "DELETE /session/866a00bd5f32bef705327f132c32b886 HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53719/session/545e2be29b0e1925bb97672934101383/element/f.C616DB4859560BF75FF898FEC64B1C2A.d.03D9EA4DC8844EDBAABBCDB3D13ACD33.e.39/click {}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "POST /session/545e2be29b0e1925bb97672934101383/element/f.C616DB4859560BF75FF898FEC64B1C2A.d.03D9EA4DC8844EDBAABBCDB3D13ACD33.e.39/click HTTP/1.1" 200 14
 DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
 DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
-DEBUG:root:Momo: , URL: https://www.momoshop.com.tw/search/searchShop.jsp?keyword=%E5%8A%89%E6%BD%A4&specialGoodsType=1&searchType=6&authorNo=20211026153305738&memid=6000021729&cid=apuad&oid=1&osm=league
-2024-07-20 12:31:00,538 - DEBUG - Selenium Manager binary found at: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
-2024-07-20 12:31:00,538 - DEBUG - Executing process: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
-2024-07-20 12:31:00,610 - DEBUG - chromedriver not found in PATH
-2024-07-20 12:31:00,610 - DEBUG - chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
-2024-07-20 12:31:00,610 - DEBUG - Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
-2024-07-20 12:31:00,610 - DEBUG - Output: ""
-2024-07-20 12:31:00,610 - DEBUG - Running command: REG QUERY HKCU\Software\Google\Chrome\BLBeacon /v version
-2024-07-20 12:31:00,610 - DEBUG - Output: ""
-2024-07-20 12:31:00,610 - DEBUG - chrome not found in the system
-2024-07-20 12:31:00,610 - DEBUG - Required browser: chrome 126.0.6478.182
-2024-07-20 12:31:00,611 - DEBUG - chrome 126.0.6478.182 already exists
-2024-07-20 12:31:00,611 - DEBUG - chrome 126.0.6478.182 is available at C:\Users\Mars\.cache\selenium\chrome\win64\126.0.6478.182\chrome.exe
-2024-07-20 12:31:00,611 - DEBUG - Required driver: chromedriver 126.0.6478.182
-2024-07-20 12:31:00,611 - DEBUG - chromedriver 126.0.6478.182 already in the cache
-2024-07-20 12:31:00,611 - DEBUG - Driver path: C:\Users\Mars\.cache\selenium\chromedriver\win64\126.0.6478.182\chromedriver.exe
-2024-07-20 12:31:00,611 - DEBUG - Browser path: C:\Users\Mars\.cache\selenium\chrome\win64\126.0.6478.182\chrome.exe
-2024-07-20 12:31:00,649 - DEBUG - Started executable: `C:\Users\Mars\.cache\selenium\chromedriver\win64\126.0.6478.182\chromedriver.exe` in a child process with pid: 6068 using 0 to output -3
-2024-07-20 12:31:01,155 - DEBUG - POST http://localhost:62807/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Users\\Mars\\.cache\\selenium\\chrome\\win64\\126.0.6478.182\\chrome.exe', 'args': []}}}}
-2024-07-20 12:31:01,155 - DEBUG - Starting new HTTP connection (1): localhost:62807
-2024-07-20 12:31:01,611 - DEBUG - http://localhost:62807 "POST /session HTTP/1.1" 200 882
-2024-07-20 12:31:01,611 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"126.0.6478.182","chrome":{"chromedriverVersion":"126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776})","userDataDir":"C:\\Users\\Mars\\AppData\\Local\\Temp\\scoped_dir6068_1566964404"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:62810"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"f369b4cfa77975dd9fea374a8ea56acb"}} | headers=HTTPHeaderDict({'Content-Length': '882', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:01,611 - DEBUG - Finished Request
-2024-07-20 12:31:01,611 - DEBUG - 初始化 WebDriver 完成
-2024-07-20 12:31:01,611 - INFO - 開始搜索關鍵字: 平衡心態
-2024-07-20 12:31:01,612 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/url {'url': 'https://www.momoshop.com.tw/search/searchShop.jsp?keyword=平衡心態&searchType=1&curPage=1&showType=chess...'}
-2024-07-20 12:31:04,246 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/url HTTP/1.1" 200 14
-2024-07-20 12:31:04,246 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,247 - DEBUG - Finished Request
-2024-07-20 12:31:04,247 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/elements {'using': 'css selector', 'value': '.goodsUrl'}
-2024-07-20 12:31:04,252 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/elements HTTP/1.1" 200 830
-2024-07-20 12:31:04,252 - DEBUG - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.82"},{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.83"},{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.84"},{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.85"},{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.86"},{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.87"},{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.88"}]} | headers=HTTPHeaderDict({'Content-Length': '830', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,252 - DEBUG - Finished Request
-2024-07-20 12:31:04,252 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/elements {'using': 'css selector', 'value': '.goodsUrl'}
-2024-07-20 12:31:04,255 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/elements HTTP/1.1" 200 830
-2024-07-20 12:31:04,256 - DEBUG - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.82"},{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.83"},{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.84"},{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.85"},{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.86"},{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.87"},{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.88"}]} | headers=HTTPHeaderDict({'Content-Length': '830', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,256 - DEBUG - Finished Request
-2024-07-20 12:31:04,256 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.82/element {'using': 'css selector', 'value': '.prdName'}
-2024-07-20 12:31:04,262 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.82/element HTTP/1.1" 200 126
-2024-07-20 12:31:04,262 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.89"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,262 - DEBUG - Finished Request
-2024-07-20 12:31:04,262 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.89'}, 'title']}
-2024-07-20 12:31:04,265 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 12
-2024-07-20 12:31:04,266 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,266 - DEBUG - Finished Request
-2024-07-20 12:31:04,266 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.82/element {'using': 'tag name', 'value': 'a'}
-2024-07-20 12:31:04,270 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.82/element HTTP/1.1" 200 126
-2024-07-20 12:31:04,270 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.90"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,270 - DEBUG - Finished Request
-2024-07-20 12:31:04,271 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.90'}, 'href']}
-2024-07-20 12:31:04,273 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 183
-2024-07-20 12:31:04,274 - DEBUG - Remote response: status=200 | data={"value":"https://www.momoshop.com.tw/search/searchShop.jsp?keyword=%E5%AE%89%E5%BE%B7%E9%AD%AF%EF%BC%8E%E5%93%88%E8%97%8D&specialGoodsType=1&searchType=6&authorNo=20211203193608499"} | headers=HTTPHeaderDict({'Content-Length': '183', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,274 - DEBUG - Finished Request
-2024-07-20 12:31:04,274 - DEBUG - 1: 
-2024-07-20 12:31:04,274 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.83/element {'using': 'css selector', 'value': '.prdName'}
-2024-07-20 12:31:04,278 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.83/element HTTP/1.1" 200 126
-2024-07-20 12:31:04,278 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.91"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,279 - DEBUG - Finished Request
-2024-07-20 12:31:04,279 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.91'}, 'title']}
-2024-07-20 12:31:04,281 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 12
-2024-07-20 12:31:04,281 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,281 - DEBUG - Finished Request
-2024-07-20 12:31:04,281 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.83/element {'using': 'tag name', 'value': 'a'}
-2024-07-20 12:31:04,284 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.83/element HTTP/1.1" 404 1110
-2024-07-20 12:31:04,284 - DEBUG - Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"tag name\",\"selector\":\"a\"}\n  (Session info: chrome=126.0.6478.182)","stacktrace":"\tGetHandleVerifier [0x00007FF64C73EEB2+31554]\n\t(No symbol) [0x00007FF64C6B7EE9]\n\t(No symbol) [0x00007FF64C57872A]\n\t(No symbol) [0x00007FF64C5C8434]\n\t(No symbol) [0x00007FF64C5C853C]\n\t(No symbol) [0x00007FF64C5BBBAC]\n\t(No symbol) [0x00007FF64C5ED06F]\n\t(No symbol) [0x00007FF64C5BBA76]\n\t(No symbol) [0x00007FF64C5ED240]\n\t(No symbol) [0x00007FF64C60C977]\n\t(No symbol) [0x00007FF64C5ECDD3]\n\t(No symbol) [0x00007FF64C5BA33B]\n\t(No symbol) [0x00007FF64C5BAED1]\n\tGetHandleVerifier [0x00007FF64CA48B2D+3217341]\n\tGetHandleVerifier [0x00007FF64CA95AF3+3532675]\n\tGetHandleVerifier [0x00007FF64CA8B0F0+3489152]\n\tGetHandleVerifier [0x00007FF64C7EE786+750614]\n\t(No symbol) [0x00007FF64C6C376F]\n\t(No symbol) [0x00007FF64C6BEB24]\n\t(No symbol) [0x00007FF64C6BECB2]\n\t(No symbol) [0x00007FF64C6AE17F]\n\tBaseThreadInitThunk [0x00007FFD560C257D+29]\n\tRtlUserThreadStart [0x00007FFD56C2AF28+40]\n"}} | headers=HTTPHeaderDict({'Content-Length': '1110', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,284 - DEBUG - Finished Request
-2024-07-20 12:31:04,284 - ERROR - Error finding element in result 2: Message: no such element: Unable to locate element: {"method":"tag name","selector":"a"}
-  (Session info: chrome=126.0.6478.182); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Stacktrace:
-	GetHandleVerifier [0x00007FF64C73EEB2+31554]
-	(No symbol) [0x00007FF64C6B7EE9]
-	(No symbol) [0x00007FF64C57872A]
-	(No symbol) [0x00007FF64C5C8434]
-	(No symbol) [0x00007FF64C5C853C]
-	(No symbol) [0x00007FF64C5BBBAC]
-	(No symbol) [0x00007FF64C5ED06F]
-	(No symbol) [0x00007FF64C5BBA76]
-	(No symbol) [0x00007FF64C5ED240]
-	(No symbol) [0x00007FF64C60C977]
-	(No symbol) [0x00007FF64C5ECDD3]
-	(No symbol) [0x00007FF64C5BA33B]
-	(No symbol) [0x00007FF64C5BAED1]
-	GetHandleVerifier [0x00007FF64CA48B2D+3217341]
-	GetHandleVerifier [0x00007FF64CA95AF3+3532675]
-	GetHandleVerifier [0x00007FF64CA8B0F0+3489152]
-	GetHandleVerifier [0x00007FF64C7EE786+750614]
-	(No symbol) [0x00007FF64C6C376F]
-	(No symbol) [0x00007FF64C6BEB24]
-	(No symbol) [0x00007FF64C6BECB2]
-	(No symbol) [0x00007FF64C6AE17F]
-	BaseThreadInitThunk [0x00007FFD560C257D+29]
-	RtlUserThreadStart [0x00007FFD56C2AF28+40]
-
-2024-07-20 12:31:04,285 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.84/element {'using': 'css selector', 'value': '.prdName'}
-2024-07-20 12:31:04,287 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.84/element HTTP/1.1" 200 126
-2024-07-20 12:31:04,288 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.77"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,288 - DEBUG - Finished Request
-2024-07-20 12:31:04,288 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.77'}, 'title']}
-2024-07-20 12:31:04,289 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 12
-2024-07-20 12:31:04,290 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,290 - DEBUG - Finished Request
-2024-07-20 12:31:04,290 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.84/element {'using': 'tag name', 'value': 'a'}
-2024-07-20 12:31:04,292 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.84/element HTTP/1.1" 200 126
-2024-07-20 12:31:04,292 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.92"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,292 - DEBUG - Finished Request
-2024-07-20 12:31:04,292 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.92'}, 'href']}
-2024-07-20 12:31:04,295 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 194
-2024-07-20 12:31:04,295 - DEBUG - Remote response: status=200 | data={"value":"https://www.momoshop.com.tw/search/searchShop.jsp?keyword=%E5%B4%A7%E7%87%81%E6%96%87%E5%8C%96&brand=%E5%B4%A7%E7%87%81%E6%96%87%E5%8C%96&specialGoodsType=1&brandNo=20180213154807361"} | headers=HTTPHeaderDict({'Content-Length': '194', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,295 - DEBUG - Finished Request
-2024-07-20 12:31:04,295 - DEBUG - 3: 
-2024-07-20 12:31:04,295 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.85/element {'using': 'css selector', 'value': '.prdName'}
-2024-07-20 12:31:04,298 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.85/element HTTP/1.1" 200 126
-2024-07-20 12:31:04,298 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.93"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,298 - DEBUG - Finished Request
-2024-07-20 12:31:04,298 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.93'}, 'title']}
-2024-07-20 12:31:04,300 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 12
-2024-07-20 12:31:04,300 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,300 - DEBUG - Finished Request
-2024-07-20 12:31:04,300 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.85/element {'using': 'tag name', 'value': 'a'}
-2024-07-20 12:31:04,303 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.85/element HTTP/1.1" 200 126
-2024-07-20 12:31:04,303 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.94"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,304 - DEBUG - Finished Request
-2024-07-20 12:31:04,304 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.94'}, 'href']}
-2024-07-20 12:31:04,306 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 251
-2024-07-20 12:31:04,306 - DEBUG - Remote response: status=200 | data={"value":"https://www.momoshop.com.tw/search/searchShop.jsp?keyword=Neslihan%20Muradog%E2%98%86lu%20%E5%85%A7%E6%96%AF%E9%87%8C%E6%BC%A2%EF%BC%8E%E7%A9%86%E6%8B%89%E5%A4%9A%E6%A0%BC%E9%AD%AF&specialGoodsType=1&searchType=6&authorNo=20230320180002547"} | headers=HTTPHeaderDict({'Content-Length': '251', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,306 - DEBUG - Finished Request
-2024-07-20 12:31:04,306 - DEBUG - 4: 
-2024-07-20 12:31:04,306 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.86/element {'using': 'css selector', 'value': '.prdName'}
-2024-07-20 12:31:04,310 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.86/element HTTP/1.1" 200 126
-2024-07-20 12:31:04,310 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.95"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,310 - DEBUG - Finished Request
-2024-07-20 12:31:04,310 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.95'}, 'title']}
-2024-07-20 12:31:04,312 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 12
-2024-07-20 12:31:04,312 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,313 - DEBUG - Finished Request
-2024-07-20 12:31:04,313 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.86/element {'using': 'tag name', 'value': 'a'}
-2024-07-20 12:31:04,315 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.86/element HTTP/1.1" 200 126
-2024-07-20 12:31:04,316 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.96"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,316 - DEBUG - Finished Request
-2024-07-20 12:31:04,316 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.96'}, 'href']}
-2024-07-20 12:31:04,318 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 183
-2024-07-20 12:31:04,318 - DEBUG - Remote response: status=200 | data={"value":"https://www.momoshop.com.tw/search/searchShop.jsp?keyword=%E5%8D%A1%E6%B4%9B%E7%90%B3%EF%BC%8E%E6%9D%9C%E7%B4%8D&specialGoodsType=1&searchType=6&authorNo=20211117105806327"} | headers=HTTPHeaderDict({'Content-Length': '183', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,318 - DEBUG - Finished Request
-2024-07-20 12:31:04,318 - DEBUG - 5: 
-2024-07-20 12:31:04,318 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.87/element {'using': 'css selector', 'value': '.prdName'}
-2024-07-20 12:31:04,321 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.87/element HTTP/1.1" 200 126
-2024-07-20 12:31:04,321 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.97"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,321 - DEBUG - Finished Request
-2024-07-20 12:31:04,321 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.97'}, 'title']}
-2024-07-20 12:31:04,322 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 12
-2024-07-20 12:31:04,323 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,323 - DEBUG - Finished Request
-2024-07-20 12:31:04,323 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.87/element {'using': 'tag name', 'value': 'a'}
-2024-07-20 12:31:04,326 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.87/element HTTP/1.1" 200 126
-2024-07-20 12:31:04,326 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.98"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,326 - DEBUG - Finished Request
-2024-07-20 12:31:04,326 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.98'}, 'href']}
-2024-07-20 12:31:04,328 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 208
-2024-07-20 12:31:04,328 - DEBUG - Remote response: status=200 | data={"value":"https://www.momoshop.com.tw/search/searchShop.jsp?keyword=Philippe%20J.%20Dubois%20%E8%8F%B2%E5%88%A9%E6%B5%A6%E6%9D%9C%E6%9F%8F%E7%93%A6&specialGoodsType=1&searchType=6&authorNo=20221122153257549"} | headers=HTTPHeaderDict({'Content-Length': '208', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,328 - DEBUG - Finished Request
-2024-07-20 12:31:04,329 - DEBUG - 6: 
-2024-07-20 12:31:04,329 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.82/element {'using': 'css selector', 'value': '.prdName'}
-2024-07-20 12:31:04,332 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.82/element HTTP/1.1" 200 126
-2024-07-20 12:31:04,332 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.89"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,332 - DEBUG - Finished Request
-2024-07-20 12:31:04,332 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.89'}, 'title']}
-2024-07-20 12:31:04,334 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 12
-2024-07-20 12:31:04,334 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,334 - DEBUG - Finished Request
-2024-07-20 12:31:04,334 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.84/element {'using': 'css selector', 'value': '.prdName'}
-2024-07-20 12:31:04,338 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.84/element HTTP/1.1" 200 126
-2024-07-20 12:31:04,338 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.77"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,338 - DEBUG - Finished Request
-2024-07-20 12:31:04,338 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.77'}, 'title']}
-2024-07-20 12:31:04,340 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 12
-2024-07-20 12:31:04,340 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,340 - DEBUG - Finished Request
-2024-07-20 12:31:04,340 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.85/element {'using': 'css selector', 'value': '.prdName'}
-2024-07-20 12:31:04,343 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.85/element HTTP/1.1" 200 126
-2024-07-20 12:31:04,344 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.93"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,344 - DEBUG - Finished Request
-2024-07-20 12:31:04,344 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.93'}, 'title']}
-2024-07-20 12:31:04,347 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 12
-2024-07-20 12:31:04,347 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,347 - DEBUG - Finished Request
-2024-07-20 12:31:04,347 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.86/element {'using': 'css selector', 'value': '.prdName'}
-2024-07-20 12:31:04,350 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.86/element HTTP/1.1" 200 126
-2024-07-20 12:31:04,350 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.95"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,350 - DEBUG - Finished Request
-2024-07-20 12:31:04,350 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.95'}, 'title']}
-2024-07-20 12:31:04,352 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 12
-2024-07-20 12:31:04,352 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,352 - DEBUG - Finished Request
-2024-07-20 12:31:04,353 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.87/element {'using': 'css selector', 'value': '.prdName'}
-2024-07-20 12:31:04,355 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/element/f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.87/element HTTP/1.1" 200 126
-2024-07-20 12:31:04,355 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.97"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,355 - DEBUG - Finished Request
-2024-07-20 12:31:04,356 - DEBUG - POST http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.B50334857A603C6289A858843513A3B4.d.CA0BAEF1D72F12F4E14CC1CD86C34BF2.e.97'}, 'title']}
-2024-07-20 12:31:04,357 - DEBUG - http://localhost:62807 "POST /session/f369b4cfa77975dd9fea374a8ea56acb/execute/sync HTTP/1.1" 200 12
-2024-07-20 12:31:04,358 - DEBUG - Remote response: status=200 | data={"value":""} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
-2024-07-20 12:31:04,358 - DEBUG - Finished Request
-2024-07-20 13:01:45,466 - DEBUG - DELETE http://localhost:62807/session/f369b4cfa77975dd9fea374a8ea56acb {}
-2024-07-20 13:01:45,466 - DEBUG - Resetting dropped connection: localhost
+DEBUG:root:廣告橫幅已關閉
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53719/session/545e2be29b0e1925bb97672934101383/element {'using': 'css selector', 'value': '[id="key"]'}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "POST /session/545e2be29b0e1925bb97672934101383/element HTTP/1.1" 200 126
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.C616DB4859560BF75FF898FEC64B1C2A.d.03D9EA4DC8844EDBAABBCDB3D13ACD33.e.41"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53719/session/545e2be29b0e1925bb97672934101383/element {'using': 'css selector', 'value': '[id="key"]'}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "POST /session/545e2be29b0e1925bb97672934101383/element HTTP/1.1" 200 126
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.C616DB4859560BF75FF898FEC64B1C2A.d.03D9EA4DC8844EDBAABBCDB3D13ACD33.e.41"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:輸入關鍵字: 開始分心，就是快要變強了
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53719/session/545e2be29b0e1925bb97672934101383/element/f.C616DB4859560BF75FF898FEC64B1C2A.d.03D9EA4DC8844EDBAABBCDB3D13ACD33.e.41/value {'text': '開始分心，就是快要變強了', 'value': ['開', '始', '分', '心', '，', '就', '是', '快', '要', '變', '強', '了']}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "POST /session/545e2be29b0e1925bb97672934101383/element/f.C616DB4859560BF75FF898FEC64B1C2A.d.03D9EA4DC8844EDBAABBCDB3D13ACD33.e.41/value HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53719/session/545e2be29b0e1925bb97672934101383/element {'using': 'css selector', 'value': '.search_btn'}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "POST /session/545e2be29b0e1925bb97672934101383/element HTTP/1.1" 200 126
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.C616DB4859560BF75FF898FEC64B1C2A.d.03D9EA4DC8844EDBAABBCDB3D13ACD33.e.43"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53719/session/545e2be29b0e1925bb97672934101383/execute/sync {'script': '/* isDisplayed */return (function(){return (function(){var g=this||self;\nfunction aa(a){var b=typeof...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.C616DB4859560BF75FF898FEC64B1C2A.d.03D9EA4DC8844EDBAABBCDB3D13ACD33.e.43'}]}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "POST /session/545e2be29b0e1925bb97672934101383/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:53719/session/545e2be29b0e1925bb97672934101383/element/f.C616DB4859560BF75FF898FEC64B1C2A.d.03D9EA4DC8844EDBAABBCDB3D13ACD33.e.43/enabled {}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "GET /session/545e2be29b0e1925bb97672934101383/element/f.C616DB4859560BF75FF898FEC64B1C2A.d.03D9EA4DC8844EDBAABBCDB3D13ACD33.e.43/enabled HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":true} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53719/session/545e2be29b0e1925bb97672934101383/execute/sync {'script': 'arguments[0].click();', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.C616DB4859560BF75FF898FEC64B1C2A.d.03D9EA4DC8844EDBAABBCDB3D13ACD33.e.43'}]}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "POST /session/545e2be29b0e1925bb97672934101383/execute/sync HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53719/session/545e2be29b0e1925bb97672934101383/element {'using': 'css selector', 'value': '.mod2 .table-td'}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "POST /session/545e2be29b0e1925bb97672934101383/element HTTP/1.1" 200 126
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.68"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53719/session/545e2be29b0e1925bb97672934101383/elements {'using': 'css selector', 'value': '.mod2 .table-td'}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "POST /session/545e2be29b0e1925bb97672934101383/elements HTTP/1.1" 200 479
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.68"},{"element-6066-11e4-a52e-4f735466cecf":"f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.69"},{"element-6066-11e4-a52e-4f735466cecf":"f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.70"},{"element-6066-11e4-a52e-4f735466cecf":"f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.71"}]} | headers=HTTPHeaderDict({'Content-Length': '479', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:找到 4 個結果
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53719/session/545e2be29b0e1925bb97672934101383/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.68'}, 'outerHTML']}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "POST /session/545e2be29b0e1925bb97672934101383/execute/sync HTTP/1.1" 200 2468
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"\u003Cdiv class=\"table-td\" id=\"prod-itemlist-0010946776\">\n\u003Cdiv class=\"box\">\n\u003Ca target=\"_blank\" href=\"//search.books.com.tw/redirect/move/key/%E9%96%8B%E5%A7%8B%E5%88%86%E5%BF%83%EF%BC%8C%E5%B0%B1%E6%98%AF%E5%BF%AB%E8%A6%81%E8%AE%8A%E5%BC%B7%E4%BA%86/area/mid/item/0010946776/page/1/idx/1/cat/001/pdf/1/spell/3\" title=\"開始分心，就是快要變強了：哈佛醫學院的「思緒漫遊」講座，如何用分心提升思想的廣度與創造力，還能使心情平靜而愉快\">\u003Cimg class=\"b-lazy b-loaded\" src=\"https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/094/67/0010946776.jpg&amp;w=187&amp;h=187&amp;v=63b555fa\" alt=\"開始分心，就是快要變強了：哈佛醫學院的「思緒漫遊」講座，如何用分心提升思想的廣度與創造力，還能使心情平靜而愉快\" srcset=\"https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/001/094/67/0010946776.jpg&amp;w=374&amp;h=374&amp;v=63b555fa 2x\">\u003C/a>\n\u003C/div>\n\u003Ch4>\u003Ca target=\"_blank\" href=\"//search.books.com.tw/redirect/move/key/%E9%96%8B%E5%A7%8B%E5%88%86%E5%BF%83%EF%BC%8C%E5%B0%B1%E6%98%AF%E5%BF%AB%E8%A6%81%E8%AE%8A%E5%BC%B7%E4%BA%86/area/mid/item/0010946776/page/1/idx/1/cat/001/pdf/1/spell/3\" title=\"開始分心，就是快要變強了：哈佛醫學院的「思緒漫遊」講座，如何用分心提升思想的廣度與創造力，還能使心情平靜而愉快\">\u003Cem>開始\u003C/em>\u003Cem>分心\u003C/em>，\u003Cem>就是\u003C/em>\u003Cem>快要\u003C/em>變\u003Cem>強了\u003C/em>：哈佛醫學院的「思緒漫遊」講座，如何用\u003Cem>分心\u003C/em>提升思想的廣度與創造力，還能使心情平靜而愉快\u003C/a>\u003C/h4>\n\u003Cdiv class=\"type clearfix\">\n\u003Cp>中文書\u003C/p>\n\u003Cp class=\"author\">\n\u003Ca rel=\"go_author\" href=\"//search.books.com.tw/search/query/cat/all/v/1/adv_author/1/key/%E5%A2%A8%E5%AF%A6%EF%BC%8E%E5%B7%B4%E7%88%BE%E5%8D%9A%E5%A3%AB\" title=\"墨實．巴爾博士\">墨實．巴爾博士\u003C/a>&nbsp;&nbsp;\u003Ca rel=\"go_author\" href=\"//search.books.com.tw/search/query/cat/all/v/1/adv_author/1/key/%E6%9D%8E%E5%A9%89%E5%A6%82\" title=\"李婉如\">李婉如\u003C/a>\u003C/p>\n\u003C/div>\n\u003Cul class=\"price clearfix\">\n\u003Cli>優惠價: \u003Cb>7\u003C/b> 折, \u003Cb>294\u003C/b> 元\u003C/li>\n\u003C/ul>\n\u003Cdiv class=\"paster-0\">\n\u003C/div>\n\u003C/div>"} | headers=HTTPHeaderDict({'Content-Length': '2468', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53719/session/545e2be29b0e1925bb97672934101383/element/f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.68/element {'using': 'css selector', 'value': 'h4 a'}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "POST /session/545e2be29b0e1925bb97672934101383/element/f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.68/element HTTP/1.1" 200 126
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.72"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:53719/session/545e2be29b0e1925bb97672934101383/element/f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.72/text {}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "GET /session/545e2be29b0e1925bb97672934101383/element/f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.72/text HTTP/1.1" 200 177
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"開始分心，就是快要變強了：哈佛醫學院的「思緒漫遊」講座，如何用分心提升思想的廣度與創造力，還能使心情平靜而愉快"} | headers=HTTPHeaderDict({'Content-Length': '177', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53719/session/545e2be29b0e1925bb97672934101383/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.68'}, 'id']}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "POST /session/545e2be29b0e1925bb97672934101383/execute/sync HTTP/1.1" 200 36
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"prod-itemlist-0010946776"} | headers=HTTPHeaderDict({'Content-Length': '36', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:1: 開始分心，就是快要變強了：哈佛醫學院的「思緒漫遊」講座，如何用分心提升思想的廣度與創造力，還能使心情平靜而愉快
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53719/session/545e2be29b0e1925bb97672934101383/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.69'}, 'outerHTML']}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "POST /session/545e2be29b0e1925bb97672934101383/execute/sync HTTP/1.1" 200 2538
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"\u003Cdiv class=\"table-td\" id=\"prod-itemlist-E050152322\">\n\u003Cdiv class=\"box\">\n\u003Ci class=\"sign_ebook\">\u003C/i>\n\u003Ca target=\"_blank\" href=\"//search.books.com.tw/redirect/move/key/%E9%96%8B%E5%A7%8B%E5%88%86%E5%BF%83%EF%BC%8C%E5%B0%B1%E6%98%AF%E5%BF%AB%E8%A6%81%E8%AE%8A%E5%BC%B7%E4%BA%86/area/mid/item/E050152322/page/1/idx/2/cat/E05/pdf/1/spell/3\" title=\"開始分心，就是快要變強了：哈佛醫學院的「思緒漫遊」講座，如何用分心提升思想的廣度與創造力，還能使心情平靜而愉快 (電子書)\">\u003Cimg class=\"b-lazy b-loaded\" src=\"https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/015/23/E050152322.jpg&amp;w=187&amp;h=187&amp;v=63c7a162\" alt=\"開始分心，就是快要變強了：哈佛醫學院的「思緒漫遊」講座，如何用分心提升思想的廣度與創造力，還能使心情平靜而愉快 (電子書)\" srcset=\"https://im1.book.com.tw/image/getImage?i=https://www.books.com.tw/img/E05/015/23/E050152322.jpg&amp;w=374&amp;h=374&amp;v=63c7a162 2x\">\u003C/a>\n\u003C/div>\n\u003Ch4>\u003Ca target=\"_blank\" href=\"//search.books.com.tw/redirect/move/key/%E9%96%8B%E5%A7%8B%E5%88%86%E5%BF%83%EF%BC%8C%E5%B0%B1%E6%98%AF%E5%BF%AB%E8%A6%81%E8%AE%8A%E5%BC%B7%E4%BA%86/area/mid/item/E050152322/page/1/idx/2/cat/E05/pdf/1/spell/3\" title=\"開始分心，就是快要變強了：哈佛醫學院的「思緒漫遊」講座，如何用分心提升思想的廣度與創造力，還能使心情平靜而愉快 (電子書)\">\u003Cem>開始\u003C/em>\u003Cem>分心\u003C/em>，\u003Cem>就是\u003C/em>\u003Cem>快要\u003C/em>變\u003Cem>強了\u003C/em>：哈佛醫學院的「思緒漫遊」講座，如何用\u003Cem>分心\u003C/em>提升思想的廣度與創造力，還能使心情平靜而愉快 (電子書)\u003C/a>\u003C/h4>\n\u003Cdiv class=\"type clearfix\">\n\u003Cp>中文電子書\u003C/p>\n\u003Cp class=\"author\">\n\u003Ca rel=\"go_author\" href=\"//search.books.com.tw/search/query/cat/all/v/1/adv_author/1/key/%E5%A2%A8%E5%AF%A6%EF%BC%8E%E5%B7%B4%E7%88%BE%E5%8D%9A%E5%A3%AB\" title=\"墨實．巴爾博士\">墨實．巴爾博士\u003C/a>&nbsp;&nbsp;\u003Ca rel=\"go_author\" href=\"//search.books.com.tw/search/query/cat/all/v/1/adv_author/1/key/%E6%9D%8E%E5%A9%89%E5%A6%82\" title=\"李婉如\">李婉如\u003C/a>\u003C/p>\n\u003C/div>\n\u003Cul class=\"price clearfix\">\n\u003Cli>優惠價: \u003Cb>332\u003C/b> 元\u003C/li>\n\u003C/ul>\n\u003Cdiv class=\"paster-0\">\n\u003C/div>\n\u003C/div>"} | headers=HTTPHeaderDict({'Content-Length': '2538', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53719/session/545e2be29b0e1925bb97672934101383/element/f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.69/element {'using': 'css selector', 'value': 'h4 a'}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "POST /session/545e2be29b0e1925bb97672934101383/element/f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.69/element HTTP/1.1" 200 126
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.73"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:53719/session/545e2be29b0e1925bb97672934101383/element/f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.73/text {}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "GET /session/545e2be29b0e1925bb97672934101383/element/f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.73/text HTTP/1.1" 200 189
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"開始分心，就是快要變強了：哈佛醫學院的「思緒漫遊」講座，如何用分心提升思想的廣度與創造力，還能使心情平靜而愉快 (電子書)"} | headers=HTTPHeaderDict({'Content-Length': '189', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53719/session/545e2be29b0e1925bb97672934101383/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.69'}, 'id']}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "POST /session/545e2be29b0e1925bb97672934101383/execute/sync HTTP/1.1" 200 36
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"prod-itemlist-E050152322"} | headers=HTTPHeaderDict({'Content-Length': '36', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:2: 開始分心，就是快要變強了：哈佛醫學院的「思緒漫遊」講座，如何用分心提升思想的廣度與創造力，還能使心情平靜而愉快 (電子書)
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53719/session/545e2be29b0e1925bb97672934101383/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.70'}, 'outerHTML']}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "POST /session/545e2be29b0e1925bb97672934101383/execute/sync HTTP/1.1" 200 908
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"\u003Cdiv class=\"table-td\">\n\u003Cdiv class=\"footer-wrap\">\n\u003Cdiv class=\"floated-btn-wrap\" id=\"prod-itemlist-footer-0010946776\">\n\u003Ca class=\"button type-01\" href=\"javascript:void(0)\" onclick=\"reopen('//search.books.com.tw/redirect/move/key/%E9%96%8B%E5%A7%8B%E5%88%86%E5%BF%83%EF%BC%8C%E5%B0%B1%E6%98%AF%E5%BF%AB%E8%A6%81%E8%AE%8A%E5%BC%B7%E4%BA%86/area/mid_epub/item/0010946776/page/1/epub/1/idx/1/cat/001/pdf/1/spell/3', 'booksearch')\">試閱\u003C/a>\n\u003Ca class=\"button type-01\" href=\"javascript:void(0)\" onclick=\"putAjaxCart('0010946776', '1', '001', '294')\">\u003Ci class=\"icon-shoppingcart\">\u003C/i>\u003C/a>\n\u003Ca class=\"button type-01\" href=\"javascript:void(0)\" onclick=\"putAjaxNextBuy('0010946776', 'search-pc', 1, this)\" title=\"下次再買\"> \n\u003Ci class=\"icon-heart-empty\">\u003C/i>\n\u003C/a>\n\u003C/div>\n\u003C/div>\n\u003C/div>"} | headers=HTTPHeaderDict({'Content-Length': '908', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53719/session/545e2be29b0e1925bb97672934101383/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.71'}, 'outerHTML']}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "POST /session/545e2be29b0e1925bb97672934101383/execute/sync HTTP/1.1" 200 908
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"\u003Cdiv class=\"table-td\">\n\u003Cdiv class=\"footer-wrap\">\n\u003Cdiv class=\"floated-btn-wrap\" id=\"prod-itemlist-footer-E050152322\">\n\u003Ca class=\"button type-01\" href=\"javascript:void(0)\" onclick=\"reopen('//search.books.com.tw/redirect/move/key/%E9%96%8B%E5%A7%8B%E5%88%86%E5%BF%83%EF%BC%8C%E5%B0%B1%E6%98%AF%E5%BF%AB%E8%A6%81%E8%AE%8A%E5%BC%B7%E4%BA%86/area/mid_epub/item/E050152322/page/1/epub/1/idx/2/cat/E05/pdf/1/spell/3', 'booksearch')\">試閱\u003C/a>\n\u003Ca class=\"button type-01\" href=\"javascript:void(0)\" onclick=\"putAjaxCart('E050152322', '2', 'E05', '332')\">\u003Ci class=\"icon-shoppingcart\">\u003C/i>\u003C/a>\n\u003Ca class=\"button type-01\" href=\"javascript:void(0)\" onclick=\"putAjaxNextBuy('E050152322', 'search-pc', 1, this)\" title=\"下次再買\"> \n\u003Ci class=\"icon-heart-empty\">\u003C/i>\n\u003C/a>\n\u003C/div>\n\u003C/div>\n\u003C/div>"} | headers=HTTPHeaderDict({'Content-Length': '908', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53719/session/545e2be29b0e1925bb97672934101383/element/f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.68/element {'using': 'css selector', 'value': 'h4 a'}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "POST /session/545e2be29b0e1925bb97672934101383/element/f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.68/element HTTP/1.1" 200 126
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.72"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:53719/session/545e2be29b0e1925bb97672934101383/element/f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.72/text {}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "GET /session/545e2be29b0e1925bb97672934101383/element/f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.72/text HTTP/1.1" 200 177
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"開始分心，就是快要變強了：哈佛醫學院的「思緒漫遊」講座，如何用分心提升思想的廣度與創造力，還能使心情平靜而愉快"} | headers=HTTPHeaderDict({'Content-Length': '177', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53719/session/545e2be29b0e1925bb97672934101383/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.C616DB4859560BF75FF898FEC64B1C2A.d.C3534A304D1E6AA48E0A28B25CFD63A4.e.68'}, 'id']}
+DEBUG:urllib3.connectionpool:http://localhost:53719 "POST /session/545e2be29b0e1925bb97672934101383/execute/sync HTTP/1.1" 200 36
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"prod-itemlist-0010946776"} | headers=HTTPHeaderDict({'Content-Length': '36', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+ERROR:root:獲取博客來推廣鏈接時發生錯誤: name 'datetime' is not defined
+Traceback (most recent call last):
+  File "D:\marskingx.github.io\reindex\processors\books_review_processor.py", line 155, in safe_get_books_promotion_link
+    return get_books_promotion_link(book_title)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\marskingx.github.io\reindex\scripts\search_books_url.py", line 156, in get_books_promotion_link
+    title, url = search_books(driver, keyword)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\marskingx.github.io\reindex\scripts\search_books_url.py", line 67, in search_books
+    selected_title, product_url = get_selected_result_url(selected_result)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\marskingx.github.io\reindex\scripts\search_books_url.py", line 137, in get_selected_result_url
+    current_date = datetime.now().strftime('%Y%m')
+                   ^^^^^^^^
+NameError: name 'datetime' is not defined. Did you forget to import 'datetime'
+DEBUG:selenium.webdriver.common.selenium_manager:Selenium Manager binary found at: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+DEBUG:selenium.webdriver.common.selenium_manager:Executing process: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+DEBUG:selenium.webdriver.common.selenium_manager:chromedriver not found in PATH
+DEBUG:selenium.webdriver.common.selenium_manager:chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+DEBUG:selenium.webdriver.common.selenium_manager:Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+DEBUG:selenium.webdriver.common.selenium_manager:Output: ""
+DEBUG:selenium.webdriver.common.selenium_manager:Running command: REG QUERY HKCU\Software\Google\Chrome\BLBeacon /v version
+DEBUG:selenium.webdriver.common.selenium_manager:Output: ""
+DEBUG:selenium.webdriver.common.selenium_manager:chrome not found in the system
+DEBUG:selenium.webdriver.common.selenium_manager:Required browser: chrome 126.0.6478.182
+DEBUG:selenium.webdriver.common.selenium_manager:chrome 126.0.6478.182 already exists
+DEBUG:selenium.webdriver.common.selenium_manager:chrome 126.0.6478.182 is available at C:\Users\Mars\.cache\selenium\chrome\win64\126.0.6478.182\chrome.exe
+DEBUG:selenium.webdriver.common.selenium_manager:Required driver: chromedriver 126.0.6478.182
+DEBUG:selenium.webdriver.common.selenium_manager:chromedriver 126.0.6478.182 already in the cache
+DEBUG:selenium.webdriver.common.selenium_manager:Driver path: C:\Users\Mars\.cache\selenium\chromedriver\win64\126.0.6478.182\chromedriver.exe
+DEBUG:selenium.webdriver.common.selenium_manager:Browser path: C:\Users\Mars\.cache\selenium\chrome\win64\126.0.6478.182\chrome.exe
+DEBUG:selenium.webdriver.common.service:Started executable: `C:\Users\Mars\.cache\selenium\chromedriver\win64\126.0.6478.182\chromedriver.exe` in a child process with pid: 10920 using 0 to output -3
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53796/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Users\\Mars\\.cache\\selenium\\chrome\\win64\\126.0.6478.182\\chrome.exe', 'args': ['--headless', '--disable-gpu', '--no-sandbox', '--disable-dev-shm-usage', 'user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36']}}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:53796
+DEBUG:urllib3.connectionpool:http://localhost:53796 "POST /session HTTP/1.1" 200 897
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome-headless-shell","browserVersion":"126.0.6478.182","chrome":{"chromedriverVersion":"126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776})","userDataDir":"C:\\Users\\Mars\\AppData\\Local\\Temp\\scoped_dir10920_988483649"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:53799"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"365a46db0d4e56135375cfa4d91d97df"}} | headers=HTTPHeaderDict({'Content-Length': '897', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53796/session/365a46db0d4e56135375cfa4d91d97df/timeouts {'pageLoad': 30000}
+DEBUG:urllib3.connectionpool:http://localhost:53796 "POST /session/365a46db0d4e56135375cfa4d91d97df/timeouts HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:初始化 WebDriver 完成
+DEBUG:root:開始搜索關鍵字: 開始分心，就是快要變強了
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53796/session/365a46db0d4e56135375cfa4d91d97df/url {'url': 'https://www.momoshop.com.tw/search/searchShop.jsp?keyword=開始分心，就是快要變強了&searchType=1&curPage=1&showTy...'}
+DEBUG:urllib3.connectionpool:http://localhost:53796 "POST /session/365a46db0d4e56135375cfa4d91d97df/url HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53796/session/365a46db0d4e56135375cfa4d91d97df/element {'using': 'css selector', 'value': 'li[gcode]'}
+DEBUG:urllib3.connectionpool:http://localhost:53796 "POST /session/365a46db0d4e56135375cfa4d91d97df/element HTTP/1.1" 200 126
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.C727105E1DFE48CF1006EC3A20B77064.d.959FAED026E3254ECD12440021ACCD6D.e.37"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53796/session/365a46db0d4e56135375cfa4d91d97df/elements {'using': 'css selector', 'value': 'li[gcode]'}
+DEBUG:urllib3.connectionpool:http://localhost:53796 "POST /session/365a46db0d4e56135375cfa4d91d97df/elements HTTP/1.1" 200 128
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.C727105E1DFE48CF1006EC3A20B77064.d.959FAED026E3254ECD12440021ACCD6D.e.37"}]} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53796/session/365a46db0d4e56135375cfa4d91d97df/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.C727105E1DFE48CF1006EC3A20B77064.d.959FAED026E3254ECD12440021ACCD6D.e.37'}, 'gcode']}
+DEBUG:urllib3.connectionpool:http://localhost:53796 "POST /session/365a46db0d4e56135375cfa4d91d97df/execute/sync HTTP/1.1" 200 20
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"10947398"} | headers=HTTPHeaderDict({'Content-Length': '20', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:53796/session/365a46db0d4e56135375cfa4d91d97df/element/f.C727105E1DFE48CF1006EC3A20B77064.d.959FAED026E3254ECD12440021ACCD6D.e.37/element {'using': 'css selector', 'value': '.prdName'}
+DEBUG:urllib3.connectionpool:http://localhost:53796 "POST /session/365a46db0d4e56135375cfa4d91d97df/element/f.C727105E1DFE48CF1006EC3A20B77064.d.959FAED026E3254ECD12440021ACCD6D.e.37/element HTTP/1.1" 200 126
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.C727105E1DFE48CF1006EC3A20B77064.d.959FAED026E3254ECD12440021ACCD6D.e.38"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:GET http://localhost:53796/session/365a46db0d4e56135375cfa4d91d97df/element/f.C727105E1DFE48CF1006EC3A20B77064.d.959FAED026E3254ECD12440021ACCD6D.e.38/text {}
+DEBUG:urllib3.connectionpool:http://localhost:53796 "GET /session/365a46db0d4e56135375cfa4d91d97df/element/f.C727105E1DFE48CF1006EC3A20B77064.d.959FAED026E3254ECD12440021ACCD6D.e.38/text HTTP/1.1" 200 140
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":"開始分心 就是快要變強了：哈佛醫學院的「思緒漫遊」講座 如何用分心提升思想的廣度與創造力"} | headers=HTTPHeaderDict({'Content-Length': '140', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:找到書籍 1: 開始分心 就是快要變強了：哈佛醫學院的「思緒漫遊」講座 如何用分心提升思想的廣度與創造力
+DEBUG:root:正在關閉瀏覽器
+DEBUG:selenium.webdriver.remote.remote_connection:DELETE http://localhost:53796/session/365a46db0d4e56135375cfa4d91d97df {}
+DEBUG:urllib3.connectionpool:http://localhost:53796 "DELETE /session/365a46db0d4e56135375cfa4d91d97df HTTP/1.1" 200 14
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:root:瀏覽器已關閉
+ERROR:root:處理書評文件時發生錯誤: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "D:\marskingx.github.io\reindex\processors\books_review_processor.py", line 199, in process_book_review
+    momo_title, momo_url = self.safe_get_momo_promotion_link(book_title)
+    ^^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
