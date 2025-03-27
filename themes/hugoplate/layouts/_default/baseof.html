@@ -49,5 +49,10 @@
 
     <!-- script (always cache it) -->
     {{ partialCached "essentials/script.html" . }}
+
+    {{ if site.Params.subscription.enable }}
+      {{ partial "subscription.html" . }}
+    {{ end }}
+
   </body>
 </html>
