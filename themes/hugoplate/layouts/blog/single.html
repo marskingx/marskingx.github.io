@@ -2,27 +2,25 @@
   <section class="section pt-7">
     <div class="container">
       <div class="row justify-center">
-        <!-- 閱讀前廣告 -->
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-1504939696165194"
-             data-ad-slot="2730268755"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-        <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+        <div class="mb-4">
+          <!-- Breadcrumb -->
+          {{ partial "components/breadcrumb.html" . }}
+        </div>
         <article class="lg:col-10">
+          {{/* Display post image if available */}}
           {{ $image:= .Params.image }}
           {{ if $image }}
             <div class="mb-10">
               {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full rounded") }}
             </div>
           {{ end }}
+          <!-- Post Title -->
           <h1 class="h2 mb-4">
             {{ .Title }}
           </h1>
+          <!-- Post-meta -->
           <ul class="mb-4">
+            <!-- Author -->
             <li class="mr-4 inline-block">
               <a
                 href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/">
@@ -30,6 +28,7 @@
                 >{{ .Params.author }}
               </a>
             </li>
+            <!-- Categories -->
             {{ $categories:= .Params.categories }}
             {{ if $categories }}
               <li class="mr-4 inline-block">
@@ -45,23 +44,34 @@
                 {{ end }}
               </li>
             {{ end }}
+            <!-- Last Updated Date -->
             <li class="mr-4 inline-block">
               <i class="fa-regular fa-clock mr-2"></i>
-              {{ time.Format ":date_long" .PublishDate }}
+              {{ T "last_updated_on" }} {{ time.Format ":date_long" .Lastmod }}
+            </li>
+            <!-- Reading Time -->
+            <li class="mr-4 inline-block">
+              <i class="fa-solid fa-stopwatch mr-2"></i>
+              {{ .ReadingTime }} {{ T "reading_time" }}
             </li>
           </ul>
+          <!-- Post Content -->
           <div class="content mb-10">
+            <!-- Table of Contents -->
             {{ partial "toc.html" (dict "Class" "blog" "Collapsed" false "TableOfContents" .TableOfContents ) }}
             {{ .Content }}
+            <!-- Podcast footer partial -->
             {{ partial "podcast-footer.html" . }}
           </div>
+          <!-- Tags and Social Share -->
           <div class="row items-start justify-between">
+            <!-- Tags -->
             {{ $tags:= .Params.tags }}
             {{ if $tags }}
               <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
                 <h5 class="mr-3">{{ T "tags" }} :</h5>
                 <ul>
-                  {{ range $i,$p:= $tags }}
+                  {{ range $tags }}
                     <li class="inline-block">
                       <a
                         class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 block rounded px-3 py-1 hover:text-white"
@@ -73,6 +83,7 @@
                 </ul>
               </div>
             {{ end }}
+            <!-- Social Share links -->
             <div class="lg:col-5 flex items-center">
               <h5 class="mr-3">{{ T "fallow" }} :</h5>
               <ul class="social-icons">
@@ -90,82 +101,79 @@
             </ul>
             </div>
           </div>
-          <!-- comments -->
-<!--          {{ if site.Config.Services.Disqus.Shortname }}-->
-<!--            <div class="mt-20">-->
-<!--              {{ template "_internal/disqus.html" . }}-->
-<!--            </div>-->
-<!--          {{ end }}-->
+          <!-- Disqus Comments (currently commented out) -->
+          <!-- {{ if site.Config.Services.Disqus.Shortname }}-->
+          <!--   <div class="mt-20">-->
+          <!--     {{ template "_internal/disqus.html" . }}-->
+          <!--   </div>-->
+          <!-- {{ end }}-->
+          {{- $schema := dict "@context" "https://schema.org" "@type" "BlogPosting" -}}
+          {{- $schema = merge $schema (dict "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)) -}}
+          {{- $schema = merge $schema (dict "headline" .Title) -}}
+          {{- $schema = merge $schema (dict "description" .Description) -}}
+          {{- with .Params.image -}}
+            {{- $schema = merge $schema (dict "image" ( . | absURL )) -}}
+          {{- end -}}
+          {{- $schema = merge $schema (dict "datePublished" (.PublishDate.Format "2006-01-02T15:04:05Z07:00")) -}}
+          {{- $schema = merge $schema (dict "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")) -}}
+          {{- $author := dict "@type" "Person" "name" .Params.author "url" (printf "%s%s/" ("authors/" | relLangURL) (.Params.Author | urlize)) -}}
+          {{- $schema = merge $schema (dict "author" $author) -}}
+          {{- $publisher := dict "@type" "Organization" "name" site.Title "logo" (dict "@type" "ImageObject" "url" (site.Params.logo | absURL)) -}}
+          {{- $schema = merge $schema (dict "publisher" $publisher) -}}
+          {{- with .Params.categories -}}
+            {{- $schema = merge $schema (dict "articleSection" (index . 0)) -}}
+          {{- end -}}
+          {{- with .Params.tags -}}
+            {{- $schema = merge $schema (dict "keywords" (delimit . ", ")) -}}
+          {{- end -}}
+          {{- $schema = merge $schema (dict "wordCount" .WordCount) -}}
+          <script type="application/ld+json">
+          {{- $schema | jsonify (dict "indent" "  ") -}}
+          </script>
         </article>
       </div>
-      <!-- 閱讀後廣告 -->
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-client="ca-pub-1504939696165194"
-           data-ad-slot="1161750806"
-           data-ad-format="auto"
-           data-full-width-responsive="true"></ins>
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-<!-- Related posts -->
-{{ $curr := . }}
-{{ $sameCategoryPosts := slice }}
 
-<!-- 1. Find posts with same categories -->
-{{ with .Params.categories }}
-  {{ range . }}
-    {{ $category := . }}
-    {{ $categoryPosts := where site.RegularPages ".Params.categories" "intersect" (slice $category) }}
-    {{ $sameCategoryPosts = $sameCategoryPosts | union $categoryPosts }}
-  {{ end }}
-{{ end }}
+      <!-- Related posts -->
+      {{ $curr := . }}
+      {{ $sameCategoryPosts := slice }}
 
-<!-- Remove current post from category matches -->
-{{ $sameCategoryPosts = where $sameCategoryPosts "Title" "!=" $curr.Title }}
+      <!-- 1. Find posts with same categories -->
+      {{ with .Params.categories }}
+        {{ range . }}
+          {{ $category := . }}
+          {{ $categoryPosts := where site.RegularPages ".Params.categories" "intersect" (slice $category) }}
+          {{ $sameCategoryPosts = $sameCategoryPosts | union $categoryPosts }}
+        {{ end }}
+      {{ end }}
 
-<!-- Related posts -->
-{{ $curr := . }}
-{{ $sameCategoryPosts := slice }}
+      <!-- Remove current post from category matches -->
+      {{ $sameCategoryPosts = where $sameCategoryPosts "Title" "ne" $curr.Title }}
 
-<!-- 1. Find posts with same categories -->
-{{ with .Params.categories }}
-  {{ range . }}
-    {{ $category := . }}
-    {{ $categoryPosts := where site.RegularPages ".Params.categories" "intersect" (slice $category) }}
-    {{ $sameCategoryPosts = $sameCategoryPosts | union $categoryPosts }}
-  {{ end }}
-{{ end }}
+      <!-- 2. From posts with same categories, find those with matching tags -->
+      {{ $relatedPosts := slice }}
+      {{ with .Params.tags }}
+        {{ range . }}
+          {{ $tag := . }}
+          {{ $tagMatches := where $sameCategoryPosts ".Params.tags" "intersect" (slice $tag) }}
+          {{ $relatedPosts = $relatedPosts | union $tagMatches }}
+        {{ end }}
+      {{ end }}
 
-<!-- Remove current post from category matches -->
-{{ $sameCategoryPosts = where $sameCategoryPosts "Title" "!=" $curr.Title }}
+      <!-- 3. Sort by date (newest first) and get first 3 -->
+      {{ $finalPosts := $relatedPosts | first 3 }}
 
-<!-- 2. From posts with same categories, find those with matching tags -->
-{{ $relatedPosts := slice }}
-{{ with .Params.tags }}
-  {{ range . }}
-    {{ $tag := . }}
-    {{ $tagMatches := where $sameCategoryPosts ".Params.tags" "intersect" (slice $tag) }}
-    {{ $relatedPosts = $relatedPosts | union $tagMatches }}
-  {{ end }}
-{{ end }}
-
-<!-- 3. Sort by date (newest first) and get first 3 -->
-{{ $finalPosts := where $relatedPosts "Type" "not in" (slice "page") | uniq }}
-{{ $sortedPosts := sort $finalPosts ".Date" "desc" | first 3 }}
-
-{{ with $sortedPosts }}
-  <div class="section pb-0">
-    <h2 class="h3 mb-12">{{ T "related_posts" }}</h2>
-    <div class="row">
-      {{ range . }}
-        <div class="lg:col-4 md:col-6 mb-14">
-          {{ partial "components/blog-card" . }}
+      {{ if gt (len $finalPosts) 0 }}
+        <div class="mt-20">
+          <h2 class="h3 mb-8 text-center">{{ T "related_posts" }}</h2>
+          <div class="row justify-center">
+            {{ range $finalPosts }}
+              <div class="lg:col-4 mb-5">
+                {{ partial "components/blog-card.html" . }}
+              </div>
+            {{ end }}
+          </div>
         </div>
       {{ end }}
     </div>
-  </div>
-{{ end }}
-</div>
-</section>
+  </section>
 {{ end }}
