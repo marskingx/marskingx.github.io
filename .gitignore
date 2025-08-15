@@ -9,6 +9,7 @@ node_modules
 builds
 package-lock.json
 public
+sitemap.xml
 resources
 .hugo_build.lock
 jsconfig.json

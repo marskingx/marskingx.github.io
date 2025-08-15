@@ -1,39 +1,41 @@
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.querySelector('form');
 
+  // Helper to create and show an error message
+  const showError = (field, message) => {
+    let error = field.parentElement.querySelector('.error-message');
+    if (!error) {
+      error = document.createElement('p');
+      error.className = 'error-message text-red-500 text-sm mt-1';
+      field.parentElement.appendChild(error);
+    }
+    error.textContent = message;
+  };
+
+  // Helper to clear error messages
+  const clearErrors = () => {
+    form.querySelectorAll('.error-message').forEach(e => e.remove());
+  };
+
   form.addEventListener('submit', function (event) {
-    // 檢查所有必填欄位
-    const requiredFields = form.querySelectorAll('[required]');
+    event.preventDefault();
+    clearErrors();
     let isValid = true;
+
+    // Check all required text/email/textarea fields
+    const requiredFields = form.querySelectorAll('[required]');
     for (const field of requiredFields) {
       if (!field.value.trim()) {
         isValid = false;
-        alert(`請填寫 ${field.labels[0].textContent}`);
+        showError(field, `請填寫 ${field.labels[0].textContent.replace('*', '').trim()}`);
         field.focus();
-        break;
+        return; // Stop on first error
       }
     }
 
-    // 檢查所有 checkbox group
-    const checkboxGroups = document.querySelectorAll('.space-y-2');
-    for (const group of checkboxGroups) {
-      const checkboxes = group.querySelectorAll('input[type="checkbox"]');
-      let isGroupChecked = false;
-      for (const checkbox of checkboxes) {
-        if (checkbox.checked) {
-          isGroupChecked = true;
-          break;
-        }
-      }
-      if (!isGroupChecked) {
-        isValid = false;
-        alert(`請至少勾選一個 ${group.previousElementSibling.textContent.trim()}`);
-        break;
-      }
-    }
-
-    if (!isValid) {
-      event.preventDefault();
+    // If all checks pass, submit the form
+    if (isValid) {
+      form.submit();
     }
   });
 });
