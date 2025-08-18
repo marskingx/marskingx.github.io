@@ -124,6 +124,10 @@ isPlainText = true
 notAlternative = true
 
 
+############################# Parameters ############################
+[params]
+logo = "/favicon.png"
+
 ############################# Plugins ##############################
 
 # CSS Plugins
