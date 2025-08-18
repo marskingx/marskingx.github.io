@@ -163,7 +163,7 @@
 
           {{ $schema.Set "data" $schemaData }}
           <script type="application/ld+json">
-          {{ ($schema.Get "data") | jsonify (dict "indent" "  ") }}
+{{- ($schema.Get "data") | jsonify (dict "indent" "  ") -}}
           </script>
 
         </article>
