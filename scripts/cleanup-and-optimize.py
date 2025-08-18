@@ -12,6 +12,7 @@ from urllib.parse import unquote
 import re
 from bs4 import BeautifulSoup
 import json
+import sys
 
 class CleanupOptimizer:
     def __init__(self, public_dir: str = "public"):
@@ -164,6 +165,7 @@ pause
         return True
 
 def main():
+    sys.stdout.reconfigure(encoding='utf-8')
     optimizer = CleanupOptimizer()
     optimizer.run_analysis()
 

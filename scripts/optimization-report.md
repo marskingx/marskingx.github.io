@@ -1,425 +1,192 @@
 # 結構化資料優化報告
-生成時間: 2025-08-18 19:31:41
+生成時間: 2025-08-18 22:22:11
 
 ## 📊 統計資訊
 - ✅ 成功驗證: 136 個
 - ❌ 錯誤: 0 個
-- ⚠️ 警告: 412 個
+- ⚠️ 警告: 179 個
 - 💡 建議: 0 個
 
 ## ⚠️ 警告詳情
-- blog\0050-vs-voo-2024-performance-showdown\index.html: 描述過短 (85 字符)，建議至少120字符
-- blog\0050-vs-voo-2024-performance-showdown\index.html: 圖片 URL 建議使用 HTTPS
-- blog\0050-vs-voo-2024-performance-showdown\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\0050-vs-voo-2024-performance-showdown\index.html: 描述過長 (207 字符)，建議控制在160字符內
 - blog\2024-04-10ep112330破800啦股票也要斷捨離嗎從整理家裡建立理財的斷捨離原則\index.html: 文章字數較少 (201 字)，建議至少300字
-- blog\2024-04-10ep112330破800啦股票也要斷捨離嗎從整理家裡建立理財的斷捨離原則\index.html: 圖片 URL 建議使用 HTTPS
-- blog\2024-04-10ep112330破800啦股票也要斷捨離嗎從整理家裡建立理財的斷捨離原則\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\4-ways-for-parents-to-invest-red-envelope-money-for-kids\index.html: 描述過長 (173 字符)，建議控制在160字符內
-- blog\4-ways-for-parents-to-invest-red-envelope-money-for-kids\index.html: 圖片 URL 建議使用 HTTPS
-- blog\4-ways-for-parents-to-invest-red-envelope-money-for-kids\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\4-ways-for-parents-to-invest-red-envelope-money-for-kids\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\book-balanced-mental-reading-experience\index.html: 標題過短 (16 字符)，建議至少30字符
-- blog\book-balanced-mental-reading-experience\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-balanced-mental-reading-experience\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\book-can-tell-the-story-that-let-the-world-listen-to-you-reading-experience\index.html: 標題過短 (22 字符)，建議至少30字符
-- blog\book-can-tell-the-story-that-let-the-world-listen-to-you-reading-experience\index.html: 描述過長 (314 字符)，建議控制在160字符內
-- blog\book-can-tell-the-story-that-let-the-world-listen-to-you-reading-experience\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-can-tell-the-story-that-let-the-world-listen-to-you-reading-experience\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\book-can-tell-the-story-that-let-the-world-listen-to-you-reading-experience\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\book-continuous-buy-reading-experience\index.html: 標題過短 (16 字符)，建議至少30字符
-- blog\book-continuous-buy-reading-experience\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-continuous-buy-reading-experience\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\book-crazy-marketing-reading-experience\index.html: 標題過短 (16 字符)，建議至少30字符
-- blog\book-crazy-marketing-reading-experience\index.html: 描述過短 (90 字符)，建議至少120字符
-- blog\book-crazy-marketing-reading-experience\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-crazy-marketing-reading-experience\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\book-crazy-marketing-reading-experience\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\book-fire-to-get-rich-reading-experience\index.html: 標題過短 (20 字符)，建議至少30字符
-- blog\book-fire-to-get-rich-reading-experience\index.html: 描述過短 (113 字符)，建議至少120字符
-- blog\book-fire-to-get-rich-reading-experience\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-fire-to-get-rich-reading-experience\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\book-fire-to-get-rich-reading-experience\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\book-freedom-of-finance-live-early-life-you-really-thinking-reading-experience\index.html: 標題過短 (28 字符)，建議至少30字符
-- blog\book-freedom-of-finance-live-early-life-you-really-thinking-reading-experience\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-freedom-of-finance-live-early-life-you-really-thinking-reading-experience\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\book-list-a-brief-history-of-business\index.html: 標題過短 (16 字符)，建議至少30字符
-- blog\book-list-a-brief-history-of-business\index.html: 描述過短 (109 字符)，建議至少120字符
-- blog\book-list-a-brief-history-of-business\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-list-a-brief-history-of-business\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\book-list-a-brief-history-of-business\index.html: 描述過長 (214 字符)，建議控制在160字符內
 - blog\book-list-mindwandering-reading-experience\index.html: 標題過短 (24 字符)，建議至少30字符
-- blog\book-list-mindwandering-reading-experience\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-list-mindwandering-reading-experience\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\book-list-reading-insights-on-reconstructing-retirement\index.html: 標題過短 (16 字符)，建議至少30字符
-- blog\book-list-reading-insights-on-reconstructing-retirement\index.html: 描述過短 (86 字符)，建議至少120字符
-- blog\book-list-reading-insights-on-reconstructing-retirement\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-list-reading-insights-on-reconstructing-retirement\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\book-list-reading-insights-on-reconstructing-retirement\index.html: 描述過長 (214 字符)，建議控制在160字符內
 - blog\book-list-reading-reflection-on-treat-time-as-a-friend\index.html: 標題過短 (19 字符)，建議至少30字符
-- blog\book-list-reading-reflection-on-treat-time-as-a-friend\index.html: 描述過短 (108 字符)，建議至少120字符
-- blog\book-list-reading-reflection-on-treat-time-as-a-friend\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-list-reading-reflection-on-treat-time-as-a-friend\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\book-list-reading-reflection-on-treat-time-as-a-friend\index.html: 描述過長 (213 字符)，建議控制在160字符內
 - blog\book-list-reading-reflections-on-card-box-notes-hoping-to-help-you-implement-it-more-easily\index.html: 標題過短 (17 字符)，建議至少30字符
-- blog\book-list-reading-reflections-on-card-box-notes-hoping-to-help-you-implement-it-more-easily\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-list-reading-reflections-on-card-box-notes-hoping-to-help-you-implement-it-more-easily\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\book-list-reading-reflections-on-wang-yong-fu\index.html: 標題過短 (15 字符)，建議至少30字符
-- blog\book-list-reading-reflections-on-wang-yong-fu\index.html: 描述過短 (107 字符)，建議至少120字符
-- blog\book-list-reading-reflections-on-wang-yong-fu\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-list-reading-reflections-on-wang-yong-fu\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\book-list-reading-reflections-on-wang-yong-fu\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\book-list-the-way-of-the-geek-reading-reflection\index.html: 標題過短 (16 字符)，建議至少30字符
-- blog\book-list-the-way-of-the-geek-reading-reflection\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-list-the-way-of-the-geek-reading-reflection\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\book-list-the-way-of-the-geek-reading-reflection\index.html: 描述過長 (214 字符)，建議控制在160字符內
 - blog\book-of-books-commercial-books-10-times-efficient-reading-experience\index.html: 標題過短 (20 字符)，建議至少30字符
-- blog\book-of-books-commercial-books-10-times-efficient-reading-experience\index.html: 描述過長 (193 字符)，建議控制在160字符內
-- blog\book-of-books-commercial-books-10-times-efficient-reading-experience\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-of-books-commercial-books-10-times-efficient-reading-experience\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\book-of-books-commercial-books-10-times-efficient-reading-experience\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\book-of-books-financial-methods-that-you-should-understand-for-the-first-time-you-receive-salary-reading-experience\index.html: 標題過短 (26 字符)，建議至少30字符
-- blog\book-of-books-financial-methods-that-you-should-understand-for-the-first-time-you-receive-salary-reading-experience\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-of-books-financial-methods-that-you-should-understand-for-the-first-time-you-receive-salary-reading-experience\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\book-of-books-general-common-sense-of-poor-charlie-reading-experience\index.html: 標題過短 (20 字符)，建議至少30字符
-- blog\book-of-books-general-common-sense-of-poor-charlie-reading-experience\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-of-books-general-common-sense-of-poor-charlie-reading-experience\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\book-of-books-make-money-and-earn-happiness-reading-experience\index.html: 標題過短 (18 字符)，建議至少30字符
-- blog\book-of-books-make-money-and-earn-happiness-reading-experience\index.html: 描述過長 (242 字符)，建議控制在160字符內
-- blog\book-of-books-make-money-and-earn-happiness-reading-experience\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-of-books-make-money-and-earn-happiness-reading-experience\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\book-of-books-make-money-and-earn-happiness-reading-experience\index.html: 描述過長 (217 字符)，建議控制在160字符內
 - blog\book-of-books-management-of-money-reading-experience\index.html: 標題過短 (16 字符)，建議至少30字符
-- blog\book-of-books-management-of-money-reading-experience\index.html: 描述過長 (214 字符)，建議控制在160字符內
-- blog\book-of-books-management-of-money-reading-experience\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-of-books-management-of-money-reading-experience\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\book-of-books-management-of-money-reading-experience\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\book-of-books-reading-in-along-with-money\index.html: 標題過短 (18 字符)，建議至少30字符
-- blog\book-of-books-reading-in-along-with-money\index.html: 描述過短 (117 字符)，建議至少120字符
+- blog\book-of-books-reading-in-along-with-money\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\book-of-books-reading-in-along-with-money\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-of-books-reading-in-along-with-money\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\book-of-books-reading-in-along-with-money\index.html: 圖片 URL 建議使用 HTTPS
 - blog\book-persistence-father-of-the-index-fund-johnberg-reading-experience\index.html: 標題過短 (28 字符)，建議至少30字符
-- blog\book-persistence-father-of-the-index-fund-johnberg-reading-experience\index.html: 描述過短 (105 字符)，建議至少120字符
-- blog\book-persistence-father-of-the-index-fund-johnberg-reading-experience\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-persistence-father-of-the-index-fund-johnberg-reading-experience\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\book-persistence-father-of-the-index-fund-johnberg-reading-experience\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\book-review-business-enlightenment-for-children-book-review\index.html: 標題過短 (20 字符)，建議至少30字符
-- blog\book-review-business-enlightenment-for-children-book-review\index.html: 描述過短 (118 字符)，建議至少120字符
-- blog\book-review-business-enlightenment-for-children-book-review\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-review-business-enlightenment-for-children-book-review\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\book-review-business-enlightenment-for-children-book-review\index.html: 描述過長 (214 字符)，建議控制在160字符內
 - blog\book-review-let-people-find-you-with-just-one-search\index.html: 標題過短 (20 字符)，建議至少30字符
-- blog\book-review-let-people-find-you-with-just-one-search\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-review-let-people-find-you-with-just-one-search\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\book-review-the-alchemy-of-financial-freedom\index.html: 標題過短 (21 字符)，建議至少30字符
-- blog\book-review-the-alchemy-of-financial-freedom\index.html: 描述過短 (100 字符)，建議至少120字符
-- blog\book-review-the-alchemy-of-financial-freedom\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-review-the-alchemy-of-financial-freedom\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\book-review-the-alchemy-of-financial-freedom\index.html: 描述過長 (240 字符)，建議控制在160字符內
 - blog\book-review-thoughts-on-atomic-habits\index.html: 標題過短 (16 字符)，建議至少30字符
-- blog\book-review-thoughts-on-atomic-habits\index.html: 描述過短 (40 字符)，建議至少120字符
-- blog\book-review-thoughts-on-atomic-habits\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-review-thoughts-on-atomic-habits\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\book-review-thoughts-on-atomic-habits\index.html: 描述過長 (214 字符)，建議控制在160字符內
 - blog\book-social-animal-financial-plan\index.html: 標題過短 (15 字符)，建議至少30字符
-- blog\book-social-animal-financial-plan\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-social-animal-financial-plan\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\book-subscribe-to-economy-reading-experience\index.html: 標題過短 (16 字符)，建議至少30字符
-- blog\book-subscribe-to-economy-reading-experience\index.html: 描述過長 (171 字符)，建議控制在160字符內
+- blog\book-subscribe-to-economy-reading-experience\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\book-subscribe-to-economy-reading-experience\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-subscribe-to-economy-reading-experience\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\book-subscribe-to-economy-reading-experience\index.html: 圖片 URL 建議使用 HTTPS
 - blog\book-the-word-of-freedom-of-evergreen\index.html: 標題過短 (18 字符)，建議至少30字符
-- blog\book-the-word-of-freedom-of-evergreen\index.html: 描述過短 (107 字符)，建議至少120字符
-- blog\book-the-word-of-freedom-of-evergreen\index.html: 圖片 URL 建議使用 HTTPS
-- blog\book-the-word-of-freedom-of-evergreen\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\book-the-word-of-freedom-of-evergreen\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\career-have-you-experienced-poverty-make-yourself-lazy-and-strong-increase-the-chance-of-becoming-wealthy\index.html: 圖片 URL 建議使用 HTTPS
-- blog\career-have-you-experienced-poverty-make-yourself-lazy-and-strong-increase-the-chance-of-becoming-wealthy\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\career-have-you-experienced-poverty-make-yourself-lazy-and-strong-increase-the-chance-of-becoming-wealthy\index.html: 圖片 URL 建議使用 HTTPS
 - blog\career-the-necessity-of-this-generation-is-the-internet-next-generation-may-be-ai\index.html: 標題過短 (28 字符)，建議至少30字符
-- blog\career-the-necessity-of-this-generation-is-the-internet-next-generation-may-be-ai\index.html: 描述過短 (118 字符)，建議至少120字符
-- blog\career-the-necessity-of-this-generation-is-the-internet-next-generation-may-be-ai\index.html: 圖片 URL 建議使用 HTTPS
-- blog\career-the-necessity-of-this-generation-is-the-internet-next-generation-may-be-ai\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\cong-jia-zhi-guan-chai-yi-dao-gou-wu-jue-ce-ni-jiu-shi-hai-zi-de-li-cai-jiao-yu-da-shi\index.html: 描述過短 (110 字符)，建議至少120字符
-- blog\cong-jia-zhi-guan-chai-yi-dao-gou-wu-jue-ce-ni-jiu-shi-hai-zi-de-li-cai-jiao-yu-da-shi\index.html: 圖片 URL 建議使用 HTTPS
-- blog\cong-jia-zhi-guan-chai-yi-dao-gou-wu-jue-ce-ni-jiu-shi-hai-zi-de-li-cai-jiao-yu-da-shi\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\da-cheng-cai-fu-zi-you-de-wu-da-bu-zou-xin-tai-li-cai-tou-zi-zhai-wu-yu-sheng-huo-ping-heng\index.html: 圖片 URL 建議使用 HTTPS
-- blog\da-cheng-cai-fu-zi-you-de-wu-da-bu-zou-xin-tai-li-cai-tou-zi-zhai-wu-yu-sheng-huo-ping-heng\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\career-the-necessity-of-this-generation-is-the-internet-next-generation-may-be-ai\index.html: 描述過長 (202 字符)，建議控制在160字符內
+- blog\cong-jia-zhi-guan-chai-yi-dao-gou-wu-jue-ce-ni-jiu-shi-hai-zi-de-li-cai-jiao-yu-da-shi\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\ep0-intro-being-lazy-and-having-money-is-real\index.html: 標題過短 (21 字符)，建議至少30字符
-- blog\ep0-intro-being-lazy-and-having-money-is-real\index.html: 描述過短 (94 字符)，建議至少120字符
+- blog\ep0-intro-being-lazy-and-having-money-is-real\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\ep0-intro-being-lazy-and-having-money-is-real\index.html: 文章字數較少 (213 字)，建議至少300字
-- blog\ep0-intro-being-lazy-and-having-money-is-real\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep0-intro-being-lazy-and-having-money-is-real\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\ep1-an-iphone-will-cost-you-3-hours-of-your-lifetime-your-money-will-come-and-go-sometimes-quickly-sometimes-slowly\index.html: 文章字數較少 (143 字)，建議至少300字
 - blog\ep1-an-iphone-will-cost-you-3-hours-of-your-lifetime-your-money-will-come-and-go-sometimes-quickly-sometimes-slowly\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep1-an-iphone-will-cost-you-3-hours-of-your-lifetime-your-money-will-come-and-go-sometimes-quickly-sometimes-slowly\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep10-is-buying-00940-correct-using-this-price-gap-to-reduce-being-the-second-generation-in-debt\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep10-is-buying-00940-correct-using-this-price-gap-to-reduce-being-the-second-generation-in-debt\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep13-how-to-build-a-happy-financial-plan-for-stock-market-ups-and-downs-master-this-one-thing\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep13-how-to-build-a-happy-financial-plan-for-stock-market-ups-and-downs-master-this-one-thing\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep14-first-experience-taking-son-to-movie-actual-payment-transforming-accurate-predictions\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep14-first-experience-taking-son-to-movie-actual-payment-transforming-accurate-predictions\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep15-how-to-manage-your-finances-as-a-lower-middle-class-individual-say-thank-you-to-your-money-and-it-will-keep-growing\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep15-how-to-manage-your-finances-as-a-lower-middle-class-individual-say-thank-you-to-your-money-and-it-will-keep-growing\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\ep1-an-iphone-will-cost-you-3-hours-of-your-lifetime-your-money-will-come-and-go-sometimes-quickly-sometimes-slowly\index.html: 圖片 URL 建議使用 HTTPS
 - blog\ep16-raise-financially-literate-kids-become-stock-gurus\index.html: 標題過短 (27 字符)，建議至少30字符
-- blog\ep16-raise-financially-literate-kids-become-stock-gurus\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep16-raise-financially-literate-kids-become-stock-gurus\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep17-buffett-s-words-made-me-more-determined-earning-38-000-but-spending-41-000-how-to-live\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep17-buffett-s-words-made-me-more-determined-earning-38-000-but-spending-41-000-how-to-live\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\ep18-when-the-mindset-changes-money-appears\index.html: 標題過短 (25 字符)，建議至少30字符
-- blog\ep18-when-the-mindset-changes-money-appears\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep18-when-the-mindset-changes-money-appears\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\ep19-the-new-website-is-now-online-how-can-i-make-a-purchase-with-real-time-payment\index.html: 標題過短 (25 字符)，建議至少30字符
-- blog\ep19-the-new-website-is-now-online-how-can-i-make-a-purchase-with-real-time-payment\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep19-the-new-website-is-now-online-how-can-i-make-a-purchase-with-real-time-payment\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\ep2-saving-money-can-be-painful-but-don-t-give-up-spend-your-money-wisely-and-you-ll-have-more-money\index.html: 文章字數較少 (196 字)，建議至少300字
-- blog\ep2-saving-money-can-be-painful-but-don-t-give-up-spend-your-money-wisely-and-you-ll-have-more-money\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep2-saving-money-can-be-painful-but-don-t-give-up-spend-your-money-wisely-and-you-ll-have-more-money\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep20-what-is-voluntary-retirement-provision-and-the-difference-between-earning-ability-and-investment-return-rate\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep20-what-is-voluntary-retirement-provision-and-the-difference-between-earning-ability-and-investment-return-rate\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep21-using-atomic-habits-to-establish-the-habit-of-saving-money-learning-to-spend-money-will-lead-to-saving-money\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep21-using-atomic-habits-to-establish-the-habit-of-saving-money-learning-to-spend-money-will-lead-to-saving-money\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep23-get-on-top-and-get-in-the-middle-understanding-the-basics-of-financial-planning-3-statements\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep23-get-on-top-and-get-in-the-middle-understanding-the-basics-of-financial-planning-3-statements\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep24-taiwan-stock-market-declines-every-cut-sees-stocks-dont-ask-asking-means-buying-celebrate-the-golden-medal-of-linyang-major-stock-sale\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep24-taiwan-stock-market-declines-every-cut-sees-stocks-dont-ask-asking-means-buying-celebrate-the-golden-medal-of-linyang-major-stock-sale\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep25how-to-have-a-good-investment-mindset-and-once-again-experienced-an-unforgettable-fathers-day\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep25how-to-have-a-good-investment-mindset-and-once-again-experienced-an-unforgettable-fathers-day\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep26-why-is-the-pain-of-a-stock-market-decline-greater-than-the-joy-of-a-stock-market-rise\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep26-why-is-the-pain-of-a-stock-market-decline-greater-than-the-joy-of-a-stock-market-rise\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep27-trying-two-updates-a-week-turning-financial-planning-into-a-navigation-map-for-life\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep27-trying-two-updates-a-week-turning-financial-planning-into-a-navigation-map-for-life\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep28-this-week-really-2-updates-observation-experience-trial-and-error-reading-are-the-four-underlying-logics-of-learning-but-are-not-easy-to-apply-in-finance\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep28-this-week-really-2-updates-observation-experience-trial-and-error-reading-are-the-four-underlying-logics-of-learning-but-are-not-easy-to-apply-in-finance\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep29-financial-freedom-is-a-concept-financial-planning-is-a-skill-learning-what-metacognition-is-will-upgrade-your-brain\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep29-financial-freedom-is-a-concept-financial-planning-is-a-skill-learning-what-metacognition-is-will-upgrade-your-brain\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep30-success-is-80-luck-and-20-effort-sharing-what-is-an-investment-strategy-that-does-not-require-stop-loss\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep30-success-is-80-luck-and-20-effort-sharing-what-is-an-investment-strategy-that-does-not-require-stop-loss\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep31-why-is-it-best-to-invest-in-continuous-buying-is-it-better-to-invest-a-fixed-amount-regularly-or-to-invest-in-a-lump-sum\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep31-why-is-it-best-to-invest-in-continuous-buying-is-it-better-to-invest-a-fixed-amount-regularly-or-to-invest-in-a-lump-sum\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep32-happy-mid-autumn-festival-just-happens-to-be-the-one-year-anniversary-of-recording-its-all-the-genes-fault-just-read-and-my-thoughts-are-overflowing\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep32-happy-mid-autumn-festival-just-happens-to-be-the-one-year-anniversary-of-recording-its-all-the-genes-fault-just-read-and-my-thoughts-are-overflowing\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep33-threads-wrote-a-viral-post-fans-doubled-saving-money-wont-make-you-rich-only-saving-stocks-will\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep33-threads-wrote-a-viral-post-fans-doubled-saving-money-wont-make-you-rich-only-saving-stocks-will\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep34-is-monday-a-food-desert-buying-0050-is-not-as-good-as-buying-tsmc-honestly-there-is-really-no-need-to-argue\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep34-is-monday-a-food-desert-buying-0050-is-not-as-good-as-buying-tsmc-honestly-there-is-really-no-need-to-argue\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep35-if-you-only-do-one-thing-in-financial-management-then-its-to-calculate-net-assets-if-you-have-children-your-net-assets-must-be-this-value\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep35-if-you-only-do-one-thing-in-financial-management-then-its-to-calculate-net-assets-if-you-have-children-your-net-assets-must-be-this-value\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep36-as-long-as-the-time-is-sufficient-the-market-will-definitely-rise-you-can-achieve-an-annualized-return-of-10-without-having-to-bet-on-individual-stocks\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep36-as-long-as-the-time-is-sufficient-the-market-will-definitely-rise-you-can-achieve-an-annualized-return-of-10-without-having-to-bet-on-individual-stocks\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep38-the-dodgers-destroy-the-yankees-talent-with-execution-financial-planning-requires-not-only-talent-but-also-execution\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep38-the-dodgers-destroy-the-yankees-talent-with-execution-financial-planning-requires-not-only-talent-but-also-execution\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\ep36-as-long-as-the-time-is-sufficient-the-market-will-definitely-rise-you-can-achieve-an-annualized-return-of-10-without-having-to-bet-on-individual-stocks\index.html: 標題過短 (2 字符)，建議至少30字符
 - blog\ep39-how-to-continue-after-resuming-starting-from-the-matter-of-investment\index.html: 標題過短 (27 字符)，建議至少30字符
-- blog\ep39-how-to-continue-after-resuming-starting-from-the-matter-of-investment\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep39-how-to-continue-after-resuming-starting-from-the-matter-of-investment\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\ep4-there-is-a-bank-that-gives-you-1440-every-day-whether-you-have-spent-it-all-or-not-the-next-day-it-will-fill-up-your-account-with-another-1440\index.html: 文章字數較少 (290 字)，建議至少300字
 - blog\ep4-there-is-a-bank-that-gives-you-1440-every-day-whether-you-have-spent-it-all-or-not-the-next-day-it-will-fill-up-your-account-with-another-1440\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep4-there-is-a-bank-that-gives-you-1440-every-day-whether-you-have-spent-it-all-or-not-the-next-day-it-will-fill-up-your-account-with-another-1440\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep40-its-time-to-split-1-into-5-how-to-get-children-to-finish-their-meal-in-25-minutes\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep40-its-time-to-split-1-into-5-how-to-get-children-to-finish-their-meal-in-25-minutes\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep5-financial-planning-is-missing-this-be-careful-just-buying-things-is-not-enough\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep5-financial-planning-is-missing-this-be-careful-just-buying-things-is-not-enough\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\ep4-there-is-a-bank-that-gives-you-1440-every-day-whether-you-have-spent-it-all-or-not-the-next-day-it-will-fill-up-your-account-with-another-1440\index.html: 圖片 URL 建議使用 HTTPS
 - blog\ep6-why-is-financial-planning-placed-at-the-end-discussing-financial-decisions-financial-confidence-and-financial-beliefs\index.html: 文章字數較少 (280 字)，建議至少300字
-- blog\ep6-why-is-financial-planning-placed-at-the-end-discussing-financial-decisions-financial-confidence-and-financial-beliefs\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep6-why-is-financial-planning-placed-at-the-end-discussing-financial-decisions-financial-confidence-and-financial-beliefs\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\ep7-answering-listener-questions-financial-planning-goals-and-true-freedom\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep7-answering-listener-questions-financial-planning-goals-and-true-freedom\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep8-kang-ren-du-mai-bao-xian-le-ni-bu-mai-ma-cong-wo-de-jing-yan-yu-gu-shi-tan-cai-wu-zhong-de-bao-xian-gui-hua\index.html: 文章字數較少 (286 字)，建議至少300字
-- blog\ep8-kang-ren-du-mai-bao-xian-le-ni-bu-mai-ma-cong-wo-de-jing-yan-yu-gu-shi-tan-cai-wu-zhong-de-bao-xian-gui-hua\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep8-kang-ren-du-mai-bao-xian-le-ni-bu-mai-ma-cong-wo-de-jing-yan-yu-gu-shi-tan-cai-wu-zhong-de-bao-xian-gui-hua\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\ep9-five-steps-to-financial-freedom-mindset-financial-management-investment-debt-and-life-balance\index.html: 圖片 URL 建議使用 HTTPS
-- blog\ep9-five-steps-to-financial-freedom-mindset-financial-management-investment-debt-and-life-balance\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\ep7-answering-listener-questions-financial-planning-goals-and-true-freedom\index.html: 圖片 URL 建議使用 HTTPS
+- blog\ep8-kang-ren-du-mai-bao-xian-le-ni-bu-mai-ma-cong-wo-de-jing-yan-yu-gu-shi-tan-cai-wu-zhong-de-bao-xian-gui-hua\index.html: 文章字數較少 (250 字)，建議至少300字
 - blog\finance-7-types-of-money-for-financial-planning-7-questions-for-financial-diagnosis\index.html: 標題過短 (23 字符)，建議至少30字符
-- blog\finance-7-types-of-money-for-financial-planning-7-questions-for-financial-diagnosis\index.html: 描述過短 (102 字符)，建議至少120字符
-- blog\finance-7-types-of-money-for-financial-planning-7-questions-for-financial-diagnosis\index.html: 圖片 URL 建議使用 HTTPS
-- blog\finance-7-types-of-money-for-financial-planning-7-questions-for-financial-diagnosis\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\finance-8-must-see-reasons-and-solutions-that-prevent-you-from-saving-money-a-saving-strategy-for-young-people-in-taiwan\index.html: 描述過短 (119 字符)，建議至少120字符
+- blog\finance-7-types-of-money-for-financial-planning-7-questions-for-financial-diagnosis\index.html: 描述過長 (202 字符)，建議控制在160字符內
+- blog\finance-8-must-see-reasons-and-solutions-that-prevent-you-from-saving-money-a-saving-strategy-for-young-people-in-taiwan\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\finance-8-must-see-reasons-and-solutions-that-prevent-you-from-saving-money-a-saving-strategy-for-young-people-in-taiwan\index.html: 圖片 URL 建議使用 HTTPS
-- blog\finance-8-must-see-reasons-and-solutions-that-prevent-you-from-saving-money-a-saving-strategy-for-young-people-in-taiwan\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\finance-a-must-see-comparison-for-beginners-qqq-vs-spy-the-showdown-between-growth-stocks-and-value-stocks-which-one-is-more-suitable-for-me\index.html: 圖片 URL 建議使用 HTTPS
-- blog\finance-a-must-see-comparison-for-beginners-qqq-vs-spy-the-showdown-between-growth-stocks-and-value-stocks-which-one-is-more-suitable-for-me\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\finance-8-must-see-reasons-and-solutions-that-prevent-you-from-saving-money-a-saving-strategy-for-young-people-in-taiwan\index.html: 圖片 URL 建議使用 HTTPS
 - blog\finance-a-single-investment-outperforms-regular-fixed-investments-as-long-as-you-do-these-3-things-well\index.html: 標題過短 (27 字符)，建議至少30字符
-- blog\finance-a-single-investment-outperforms-regular-fixed-investments-as-long-as-you-do-these-3-things-well\index.html: 描述過短 (110 字符)，建議至少120字符
-- blog\finance-a-single-investment-outperforms-regular-fixed-investments-as-long-as-you-do-these-3-things-well\index.html: 圖片 URL 建議使用 HTTPS
-- blog\finance-a-single-investment-outperforms-regular-fixed-investments-as-long-as-you-do-these-3-things-well\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\finance-a-single-investment-outperforms-regular-fixed-investments-as-long-as-you-do-these-3-things-well\index.html: 描述過長 (224 字符)，建議控制在160字符內
 - blog\finance-enjoying-the-us-stock-market-rally-focus-on-what-you-can-control\index.html: 標題過短 (22 字符)，建議至少30字符
-- blog\finance-enjoying-the-us-stock-market-rally-focus-on-what-you-can-control\index.html: 圖片 URL 建議使用 HTTPS
-- blog\finance-enjoying-the-us-stock-market-rally-focus-on-what-you-can-control\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\finance-financial-freedom-is-not-a-dream-4-types-of-fire-models-find-your-new-retirement-options\index.html: 描述過短 (81 字符)，建議至少120字符
-- blog\finance-financial-freedom-is-not-a-dream-4-types-of-fire-models-find-your-new-retirement-options\index.html: 圖片 URL 建議使用 HTTPS
-- blog\finance-financial-freedom-is-not-a-dream-4-types-of-fire-models-find-your-new-retirement-options\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\finance-financial-freedom-is-not-a-dream-4-types-of-fire-models-find-your-new-retirement-options\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\finance-knowing-how-much-is-enough-is-more-important-than-how-much-money-you-have\index.html: 標題過短 (23 字符)，建議至少30字符
-- blog\finance-knowing-how-much-is-enough-is-more-important-than-how-much-money-you-have\index.html: 描述過短 (96 字符)，建議至少120字符
-- blog\finance-knowing-how-much-is-enough-is-more-important-than-how-much-money-you-have\index.html: 圖片 URL 建議使用 HTTPS
-- blog\finance-knowing-how-much-is-enough-is-more-important-than-how-much-money-you-have\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\finance-retirement-funds-are-not-as-insufficient-as-you-think-as-long-as-you-start-investing-now-follow-these-6-steps-to-begin-your-retirement-planning\index.html: 描述過短 (104 字符)，建議至少120字符
-- blog\finance-retirement-funds-are-not-as-insufficient-as-you-think-as-long-as-you-start-investing-now-follow-these-6-steps-to-begin-your-retirement-planning\index.html: 圖片 URL 建議使用 HTTPS
-- blog\finance-retirement-funds-are-not-as-insufficient-as-you-think-as-long-as-you-start-investing-now-follow-these-6-steps-to-begin-your-retirement-planning\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\finance-knowing-how-much-is-enough-is-more-important-than-how-much-money-you-have\index.html: 描述過長 (202 字符)，建議控制在160字符內
+- blog\finance-retirement-funds-are-not-as-insufficient-as-you-think-as-long-as-you-start-investing-now-follow-these-6-steps-to-begin-your-retirement-planning\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\finance-the-3-major-financial-statements-for-personal-financial-planning-cant-afford-to-miss-any\index.html: 標題過短 (27 字符)，建議至少30字符
-- blog\finance-the-3-major-financial-statements-for-personal-financial-planning-cant-afford-to-miss-any\index.html: 描述過短 (110 字符)，建議至少120字符
-- blog\finance-the-3-major-financial-statements-for-personal-financial-planning-cant-afford-to-miss-any\index.html: 圖片 URL 建議使用 HTTPS
-- blog\finance-the-3-major-financial-statements-for-personal-financial-planning-cant-afford-to-miss-any\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\finance-the-3-major-financial-statements-for-personal-financial-planning-cant-afford-to-miss-any\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\finance-the-average-life-expectancy-in-taiwan-is-nearly-80-years-but-are-you-prepared-for-your-retirement\index.html: 標題過短 (29 字符)，建議至少30字符
-- blog\finance-the-average-life-expectancy-in-taiwan-is-nearly-80-years-but-are-you-prepared-for-your-retirement\index.html: 描述過長 (215 字符)，建議控制在160字符內
-- blog\finance-the-average-life-expectancy-in-taiwan-is-nearly-80-years-but-are-you-prepared-for-your-retirement\index.html: 圖片 URL 建議使用 HTTPS
-- blog\finance-the-average-life-expectancy-in-taiwan-is-nearly-80-years-but-are-you-prepared-for-your-retirement\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\finance-the-basics-of-financial-planning-six-key-steps-to-achieve-financial-health-and-freedom\index.html: 描述過短 (112 字符)，建議至少120字符
-- blog\finance-the-basics-of-financial-planning-six-key-steps-to-achieve-financial-health-and-freedom\index.html: 圖片 URL 建議使用 HTTPS
-- blog\finance-the-basics-of-financial-planning-six-key-steps-to-achieve-financial-health-and-freedom\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\finance-the-average-life-expectancy-in-taiwan-is-nearly-80-years-but-are-you-prepared-for-your-retirement\index.html: 描述過長 (202 字符)，建議控制在160字符內
+- blog\finance-the-basics-of-financial-planning-six-key-steps-to-achieve-financial-health-and-freedom\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\finance-the-emergency-fund-is-not-really-for-when-you-are-in-an-emergency\index.html: 標題過短 (24 字符)，建議至少30字符
-- blog\finance-the-emergency-fund-is-not-really-for-when-you-are-in-an-emergency\index.html: 描述過短 (101 字符)，建議至少120字符
-- blog\finance-the-emergency-fund-is-not-really-for-when-you-are-in-an-emergency\index.html: 圖片 URL 建議使用 HTTPS
-- blog\finance-the-emergency-fund-is-not-really-for-when-you-are-in-an-emergency\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\finance-the-emergency-fund-is-not-really-for-when-you-are-in-an-emergency\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\finance-the-transition-from-not-being-able-to-save-money-to-stable-accumulation-mastering-the-key-to-three-financial-mindsets\index.html: 圖片 URL 建議使用 HTTPS
-- blog\finance-the-transition-from-not-being-able-to-save-money-to-stable-accumulation-mastering-the-key-to-three-financial-mindsets\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\finance-the-transition-from-not-being-able-to-save-money-to-stable-accumulation-mastering-the-key-to-three-financial-mindsets\index.html: 圖片 URL 建議使用 HTTPS
 - blog\finance-the-true-meaning-of-financial-planning-material-things-fade-experiences-last-forever\index.html: 標題過短 (27 字符)，建議至少30字符
-- blog\finance-the-true-meaning-of-financial-planning-material-things-fade-experiences-last-forever\index.html: 描述過長 (166 字符)，建議控制在160字符內
-- blog\finance-the-true-meaning-of-financial-planning-material-things-fade-experiences-last-forever\index.html: 圖片 URL 建議使用 HTTPS
-- blog\finance-the-true-meaning-of-financial-planning-material-things-fade-experiences-last-forever\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\finance-to-truly-achieve-financial-freedom-one-must-attain-three-types-of-freedom-financial-time-and-mental-freedom\index.html: 描述過短 (91 字符)，建議至少120字符
-- blog\finance-to-truly-achieve-financial-freedom-one-must-attain-three-types-of-freedom-financial-time-and-mental-freedom\index.html: 圖片 URL 建議使用 HTTPS
-- blog\finance-to-truly-achieve-financial-freedom-one-must-attain-three-types-of-freedom-financial-time-and-mental-freedom\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\finance-the-true-meaning-of-financial-planning-material-things-fade-experiences-last-forever\index.html: 描述過長 (202 字符)，建議控制在160字符內
+- blog\finance-to-truly-achieve-financial-freedom-one-must-attain-three-types-of-freedom-financial-time-and-mental-freedom\index.html: 描述過長 (224 字符)，建議控制在160字符內
 - blog\finance-why-do-people-always-lose-money-in-stock-investing-because-of-this-one-thing-in-your-brain\index.html: 標題過短 (29 字符)，建議至少30字符
-- blog\finance-why-do-people-always-lose-money-in-stock-investing-because-of-this-one-thing-in-your-brain\index.html: 描述過短 (117 字符)，建議至少120字符
-- blog\finance-why-do-people-always-lose-money-in-stock-investing-because-of-this-one-thing-in-your-brain\index.html: 圖片 URL 建議使用 HTTPS
-- blog\finance-why-do-people-always-lose-money-in-stock-investing-because-of-this-one-thing-in-your-brain\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\finance-why-do-people-always-lose-money-in-stock-investing-because-of-this-one-thing-in-your-brain\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\financial-management-how-to-do-financial-planning-a-complete-chart-tells-you\index.html: 標題過短 (23 字符)，建議至少30字符
-- blog\financial-management-how-to-do-financial-planning-a-complete-chart-tells-you\index.html: 描述過短 (117 字符)，建議至少120字符
-- blog\financial-management-how-to-do-financial-planning-a-complete-chart-tells-you\index.html: 圖片 URL 建議使用 HTTPS
-- blog\financial-management-how-to-do-financial-planning-a-complete-chart-tells-you\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\financial-management-learn-financial-management-from-deng-kaiwei-your-financial-planning-is-an-infinite-game-from-the-bullpen-to-the-major-leagues\index.html: 描述過短 (110 字符)，建議至少120字符
-- blog\financial-management-learn-financial-management-from-deng-kaiwei-your-financial-planning-is-an-infinite-game-from-the-bullpen-to-the-major-leagues\index.html: 圖片 URL 建議使用 HTTPS
-- blog\financial-management-learn-financial-management-from-deng-kaiwei-your-financial-planning-is-an-infinite-game-from-the-bullpen-to-the-major-leagues\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\financial-management-how-to-do-financial-planning-a-complete-chart-tells-you\index.html: 描述過長 (202 字符)，建議控制在160字符內
+- blog\financial-management-learn-financial-management-from-deng-kaiwei-your-financial-planning-is-an-infinite-game-from-the-bullpen-to-the-major-leagues\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\financial-planning-7-things-to-consider-for-beginners\index.html: 標題過短 (23 字符)，建議至少30字符
-- blog\financial-planning-7-things-to-consider-for-beginners\index.html: 圖片 URL 建議使用 HTTPS
-- blog\financial-planning-7-things-to-consider-for-beginners\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\financial-planning-finding-a-life-blueprint-for-financial-planning-from-suzuki-ichiro-s-elementary-school-composition\index.html: 標題過短 (25 字符)，建議至少30字符
-- blog\financial-planning-finding-a-life-blueprint-for-financial-planning-from-suzuki-ichiro-s-elementary-school-composition\index.html: 圖片 URL 建議使用 HTTPS
-- blog\financial-planning-finding-a-life-blueprint-for-financial-planning-from-suzuki-ichiro-s-elementary-school-composition\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\financial-regulations-being-wealthy-does-not-necessarily-guarantee-happiness-but-lacking-money-often-leads-to-unhappiness\index.html: 標題過短 (24 字符)，建議至少30字符
-- blog\financial-regulations-being-wealthy-does-not-necessarily-guarantee-happiness-but-lacking-money-often-leads-to-unhappiness\index.html: 圖片 URL 建議使用 HTTPS
-- blog\financial-regulations-being-wealthy-does-not-necessarily-guarantee-happiness-but-lacking-money-often-leads-to-unhappiness\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\financial-regulations-having-a-good-financial-plan-eliminates-the-need-to-spend-all-day-analyzing-financial-instruments\index.html: 標題過短 (28 字符)，建議至少30字符
-- blog\financial-regulations-having-a-good-financial-plan-eliminates-the-need-to-spend-all-day-analyzing-financial-instruments\index.html: 描述過短 (108 字符)，建議至少120字符
+- blog\financial-regulations-having-a-good-financial-plan-eliminates-the-need-to-spend-all-day-analyzing-financial-instruments\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\financial-regulations-having-a-good-financial-plan-eliminates-the-need-to-spend-all-day-analyzing-financial-instruments\index.html: 圖片 URL 建議使用 HTTPS
-- blog\financial-regulations-having-a-good-financial-plan-eliminates-the-need-to-spend-all-day-analyzing-financial-instruments\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\financial-understanding-financial-planning-from-splurging-to-peace-of-mind\index.html: 圖片 URL 建議使用 HTTPS
-- blog\financial-understanding-financial-planning-from-splurging-to-peace-of-mind\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\from-30-stock-market-profits-how-to-make-wise-investment-and-speculation-decisions-in-a-volatile-market\index.html: 圖片 URL 建議使用 HTTPS
-- blog\from-30-stock-market-profits-how-to-make-wise-investment-and-speculation-decisions-in-a-volatile-market\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\financial-regulations-having-a-good-financial-plan-eliminates-the-need-to-spend-all-day-analyzing-financial-instruments\index.html: 圖片 URL 建議使用 HTTPS
 - blog\how-to-learn-to-spend-not-save-and-still-save-money\index.html: 標題過短 (23 字符)，建議至少30字符
-- blog\how-to-learn-to-spend-not-save-and-still-save-money\index.html: 圖片 URL 建議使用 HTTPS
-- blog\how-to-learn-to-spend-not-save-and-still-save-money\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\income-and-expenses-how-to-allocate-your-salary\index.html: 標題過短 (28 字符)，建議至少30字符
-- blog\income-and-expenses-how-to-allocate-your-salary\index.html: 描述過長 (184 字符)，建議控制在160字符內
+- blog\income-and-expenses-how-to-allocate-your-salary\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\income-and-expenses-how-to-allocate-your-salary\index.html: 圖片 URL 建議使用 HTTPS
-- blog\income-and-expenses-how-to-allocate-your-salary\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\income-and-expenses-how-to-allocate-your-salary\index.html: 圖片 URL 建議使用 HTTPS
 - blog\income-and-expenses-mcdonald-s-buy-one-get-one-free-is-available-be-careful-with-starbucks\index.html: 標題過短 (22 字符)，建議至少30字符
-- blog\income-and-expenses-mcdonald-s-buy-one-get-one-free-is-available-be-careful-with-starbucks\index.html: 描述過短 (107 字符)，建議至少120字符
-- blog\income-and-expenses-mcdonald-s-buy-one-get-one-free-is-available-be-careful-with-starbucks\index.html: 圖片 URL 建議使用 HTTPS
-- blog\income-and-expenses-mcdonald-s-buy-one-get-one-free-is-available-be-careful-with-starbucks\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\income-and-expenses-mcdonald-s-buy-one-get-one-free-is-available-be-careful-with-starbucks\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\insurance-4-reasons-why-you-need-critical-illness-insurance\index.html: 標題過短 (29 字符)，建議至少30字符
-- blog\insurance-4-reasons-why-you-need-critical-illness-insurance\index.html: 描述過短 (115 字符)，建議至少120字符
+- blog\insurance-4-reasons-why-you-need-critical-illness-insurance\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\insurance-4-reasons-why-you-need-critical-illness-insurance\index.html: 圖片 URL 建議使用 HTTPS
-- blog\insurance-4-reasons-why-you-need-critical-illness-insurance\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\insurance-4-reasons-why-you-need-critical-illness-insurance\index.html: 圖片 URL 建議使用 HTTPS
 - blog\insurance-critical-illness-insurance-the-next-insurance-product-that-could-come-in-handy\index.html: 標題過短 (27 字符)，建議至少30字符
-- blog\insurance-critical-illness-insurance-the-next-insurance-product-that-could-come-in-handy\index.html: 描述過短 (54 字符)，建議至少120字符
-- blog\insurance-critical-illness-insurance-the-next-insurance-product-that-could-come-in-handy\index.html: 圖片 URL 建議使用 HTTPS
-- blog\insurance-critical-illness-insurance-the-next-insurance-product-that-could-come-in-handy\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\insurance-how-to-buy-indemnity-insurance-correctly-3-key-points-to-help-you-plan-your-indemnity-health-insurance-with-confidence\index.html: 圖片 URL 建議使用 HTTPS
-- blog\insurance-how-to-buy-indemnity-insurance-correctly-3-key-points-to-help-you-plan-your-indemnity-health-insurance-with-confidence\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\insurance-critical-illness-insurance-the-next-insurance-product-that-could-come-in-handy\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\insurance-insurance-is-a-rational-analysis-an-emotional-decision\index.html: 標題過短 (18 字符)，建議至少30字符
-- blog\insurance-insurance-is-a-rational-analysis-an-emotional-decision\index.html: 描述過短 (115 字符)，建議至少120字符
+- blog\insurance-insurance-is-a-rational-analysis-an-emotional-decision\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\insurance-insurance-is-a-rational-analysis-an-emotional-decision\index.html: 圖片 URL 建議使用 HTTPS
-- blog\insurance-insurance-is-a-rational-analysis-an-emotional-decision\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\insurance-is-it-really-more-cost-effective-to-pay-insurance-premiums-with-credit-card-rewards-let-s-break-down-this-credit-card-myth-and-find-out\index.html: 描述過短 (115 字符)，建議至少120字符
-- blog\insurance-is-it-really-more-cost-effective-to-pay-insurance-premiums-with-credit-card-rewards-let-s-break-down-this-credit-card-myth-and-find-out\index.html: 圖片 URL 建議使用 HTTPS
-- blog\insurance-is-it-really-more-cost-effective-to-pay-insurance-premiums-with-credit-card-rewards-let-s-break-down-this-credit-card-myth-and-find-out\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\insurance-insurance-is-a-rational-analysis-an-emotional-decision\index.html: 圖片 URL 建議使用 HTTPS
+- blog\insurance-is-it-really-more-cost-effective-to-pay-insurance-premiums-with-credit-card-rewards-let-s-break-down-this-credit-card-myth-and-find-out\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\insurance-microinsurance-can-be-helpful-the-key-is-whether-you-are-willing-to-let-someone-help\index.html: 標題過短 (26 字符)，建議至少30字符
-- blog\insurance-microinsurance-can-be-helpful-the-key-is-whether-you-are-willing-to-let-someone-help\index.html: 圖片 URL 建議使用 HTTPS
-- blog\insurance-microinsurance-can-be-helpful-the-key-is-whether-you-are-willing-to-let-someone-help\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\insurance-what-should-i-do-if-the-method-of-actual-payment-for-multiple-claims-is-no-longer-available\index.html: 標題過短 (22 字符)，建議至少30字符
-- blog\insurance-what-should-i-do-if-the-method-of-actual-payment-for-multiple-claims-is-no-longer-available\index.html: 描述過長 (212 字符)，建議控制在160字符內
+- blog\insurance-what-should-i-do-if-the-method-of-actual-payment-for-multiple-claims-is-no-longer-available\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\insurance-what-should-i-do-if-the-method-of-actual-payment-for-multiple-claims-is-no-longer-available\index.html: 圖片 URL 建議使用 HTTPS
-- blog\insurance-what-should-i-do-if-the-method-of-actual-payment-for-multiple-claims-is-no-longer-available\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\investing-affordable-vs-luxury-etf-comparison\index.html: 描述過短 (66 字符)，建議至少120字符
+- blog\insurance-what-should-i-do-if-the-method-of-actual-payment-for-multiple-claims-is-no-longer-available\index.html: 圖片 URL 建議使用 HTTPS
+- blog\investing-affordable-vs-luxury-etf-comparison\index.html: 描述過長 (207 字符)，建議控制在160字符內
 - blog\investing-affordable-vs-luxury-etf-comparison\index.html: 圖片 URL 建議使用 HTTPS
-- blog\investing-affordable-vs-luxury-etf-comparison\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\investing-affordable-vs-luxury-etf-comparison\index.html: 圖片 URL 建議使用 HTTPS
 - blog\investment-0050-is-about-to-split-1-into-5-these-are-the-things-you-must-know\index.html: 標題過短 (27 字符)，建議至少30字符
-- blog\investment-0050-is-about-to-split-1-into-5-these-are-the-things-you-must-know\index.html: 描述過短 (86 字符)，建議至少120字符
-- blog\investment-0050-is-about-to-split-1-into-5-these-are-the-things-you-must-know\index.html: 圖片 URL 建議使用 HTTPS
-- blog\investment-0050-is-about-to-split-1-into-5-these-are-the-things-you-must-know\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\investment-2024-complete-analysis-of-qqq-who-is-suitable-for-investing-in-qqq\index.html: 圖片 URL 建議使用 HTTPS
-- blog\investment-2024-complete-analysis-of-qqq-who-is-suitable-for-investing-in-qqq\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\investment-etf-beginner-s-guide-etfs-are-not-limited-to-spy-voo-qqq\index.html: 圖片 URL 建議使用 HTTPS
-- blog\investment-etf-beginner-s-guide-etfs-are-not-limited-to-spy-voo-qqq\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\investment-fuhua-taiwan-technology-bond-00929-if-you-fail-to-do-this-after-buying-it-your-losses-will-be-significant\index.html: 圖片 URL 建議使用 HTTPS
-- blog\investment-fuhua-taiwan-technology-bond-00929-if-you-fail-to-do-this-after-buying-it-your-losses-will-be-significant\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\investment-0050-is-about-to-split-1-into-5-these-are-the-things-you-must-know\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\investment-if-life-could-start-over-i-might-not-buy-a-house-but-i-would-definitely-buy-this\index.html: 標題過短 (29 字符)，建議至少30字符
-- blog\investment-if-life-could-start-over-i-might-not-buy-a-house-but-i-would-definitely-buy-this\index.html: 圖片 URL 建議使用 HTTPS
-- blog\investment-if-life-could-start-over-i-might-not-buy-a-house-but-i-would-definitely-buy-this\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\investment-is-voo-a-guaranteed-profit-in-2025-or-should-we-be-cautious-of-potential-pitfalls\index.html: 標題過短 (27 字符)，建議至少30字符
-- blog\investment-is-voo-a-guaranteed-profit-in-2025-or-should-we-be-cautious-of-potential-pitfalls\index.html: 描述過短 (84 字符)，建議至少120字符
-- blog\investment-is-voo-a-guaranteed-profit-in-2025-or-should-we-be-cautious-of-potential-pitfalls\index.html: 圖片 URL 建議使用 HTTPS
-- blog\investment-is-voo-a-guaranteed-profit-in-2025-or-should-we-be-cautious-of-potential-pitfalls\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\investment-is-voo-a-guaranteed-profit-in-2025-or-should-we-be-cautious-of-potential-pitfalls\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\investment-long-term-investing-in-us-stocks-is-better-with-multiple-delegations-than-overseas-brokerages\index.html: 標題過短 (24 字符)，建議至少30字符
 - blog\investment-long-term-investing-in-us-stocks-is-better-with-multiple-delegations-than-overseas-brokerages\index.html: 圖片 URL 建議使用 HTTPS
-- blog\investment-long-term-investing-in-us-stocks-is-better-with-multiple-delegations-than-overseas-brokerages\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\investment-long-term-investing-in-us-stocks-is-better-with-multiple-delegations-than-overseas-brokerages\index.html: 圖片 URL 建議使用 HTTPS
 - blog\investment-missed-the-two-key-points-of-asset-allocation-don-t-claim-that-you-have-allocated-your-assets\index.html: 標題過短 (29 字符)，建議至少30字符
-- blog\investment-missed-the-two-key-points-of-asset-allocation-don-t-claim-that-you-have-allocated-your-assets\index.html: 描述過短 (2 字符)，建議至少120字符
-- blog\investment-missed-the-two-key-points-of-asset-allocation-don-t-claim-that-you-have-allocated-your-assets\index.html: 圖片 URL 建議使用 HTTPS
-- blog\investment-missed-the-two-key-points-of-asset-allocation-don-t-claim-that-you-have-allocated-your-assets\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\investment-missed-the-two-key-points-of-asset-allocation-don-t-claim-that-you-have-allocated-your-assets\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\investment-monthly-dividends-are-booming-like-this-how-much-did-we-really-lose-in-monthly-dividends-we-don-t-feel-it-now-but-long-term-losses-can-be-significant\index.html: 圖片 URL 建議使用 HTTPS
-- blog\investment-monthly-dividends-are-booming-like-this-how-much-did-we-really-lose-in-monthly-dividends-we-don-t-feel-it-now-but-long-term-losses-can-be-significant\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\investment-the-sp-500-has-surprisingly-shown-a-golden-cross-how-should-lazy-investors-respond\index.html: 描述過短 (112 字符)，建議至少120字符
-- blog\investment-the-sp-500-has-surprisingly-shown-a-golden-cross-how-should-lazy-investors-respond\index.html: 圖片 URL 建議使用 HTTPS
-- blog\investment-the-sp-500-has-surprisingly-shown-a-golden-cross-how-should-lazy-investors-respond\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\investment-monthly-dividends-are-booming-like-this-how-much-did-we-really-lose-in-monthly-dividends-we-don-t-feel-it-now-but-long-term-losses-can-be-significant\index.html: 圖片 URL 建議使用 HTTPS
+- blog\investment-the-sp-500-has-surprisingly-shown-a-golden-cross-how-should-lazy-investors-respond\index.html: 描述過長 (207 字符)，建議控制在160字符內
 - blog\investment-using-statistics-to-buy-stocks-let-s-discuss-my-favorite-bollinger-bands-bband\index.html: 圖片 URL 建議使用 HTTPS
-- blog\investment-using-statistics-to-buy-stocks-let-s-discuss-my-favorite-bollinger-bands-bband\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\investment-using-statistics-to-buy-stocks-let-s-discuss-my-favorite-bollinger-bands-bband\index.html: 圖片 URL 建議使用 HTTPS
 - blog\investment-vt-a-simple-choice-for-lazy-people-to-invest-in-the-global-stock-market\index.html: 標題過短 (24 字符)，建議至少30字符
-- blog\investment-vt-a-simple-choice-for-lazy-people-to-invest-in-the-global-stock-market\index.html: 描述過短 (12 字符)，建議至少120字符
-- blog\investment-vt-a-simple-choice-for-lazy-people-to-invest-in-the-global-stock-market\index.html: 圖片 URL 建議使用 HTTPS
-- blog\investment-vt-a-simple-choice-for-lazy-people-to-invest-in-the-global-stock-market\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\investment-what-are-the-three-major-indices-of-the-us-stock-market-in-2024-what-is-the-use-of-knowing-them\index.html: 描述過長 (183 字符)，建議控制在160字符內
-- blog\investment-what-are-the-three-major-indices-of-the-us-stock-market-in-2024-what-is-the-use-of-knowing-them\index.html: 圖片 URL 建議使用 HTTPS
-- blog\investment-what-are-the-three-major-indices-of-the-us-stock-market-in-2024-what-is-the-use-of-knowing-them\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\investment-vt-a-simple-choice-for-lazy-people-to-invest-in-the-global-stock-market\index.html: 描述過長 (202 字符)，建議控制在160字符內
+- blog\investment-what-are-the-three-major-indices-of-the-us-stock-market-in-2024-what-is-the-use-of-knowing-them\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\investment2024-complete-analysis-of-vti-who-is-suitable-for-investing-in-vti\index.html: 標題過短 (28 字符)，建議至少30字符
-- blog\investment2024-complete-analysis-of-vti-who-is-suitable-for-investing-in-vti\index.html: 圖片 URL 建議使用 HTTPS
-- blog\investment2024-complete-analysis-of-vti-who-is-suitable-for-investing-in-vti\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\is-loan-investment-right-no-one-wants-to-make-wrong-decisions\index.html: 標題過短 (29 字符)，建議至少30字符
-- blog\is-loan-investment-right-no-one-wants-to-make-wrong-decisions\index.html: 圖片 URL 建議使用 HTTPS
-- blog\is-loan-investment-right-no-one-wants-to-make-wrong-decisions\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\lazy-to-rich-the-magic-of-chinese-and-life-choices\index.html: 標題過短 (23 字符)，建議至少30字符
-- blog\lazy-to-rich-the-magic-of-chinese-and-life-choices\index.html: 描述過短 (90 字符)，建議至少120字符
+- blog\lazy-to-rich-the-magic-of-chinese-and-life-choices\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\lazy-to-rich-the-magic-of-chinese-and-life-choices\index.html: 圖片 URL 建議使用 HTTPS
-- blog\lazy-to-rich-the-magic-of-chinese-and-life-choices\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\let-children-have-space-and-learn-to-cherish-time-and-then-achieve-three-conditions-for-financial-freedom\index.html: 圖片 URL 建議使用 HTTPS
-- blog\let-children-have-space-and-learn-to-cherish-time-and-then-achieve-three-conditions-for-financial-freedom\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\li-cai-mi-jue-xuan-ze-dui-gou-hao-de-bao-xian-bi-mian-huai-ye-wu-de-wu-dao\index.html: 描述過長 (175 字符)，建議控制在160字符內
-- blog\li-cai-mi-jue-xuan-ze-dui-gou-hao-de-bao-xian-bi-mian-huai-ye-wu-de-wu-dao\index.html: 圖片 URL 建議使用 HTTPS
-- blog\li-cai-mi-jue-xuan-ze-dui-gou-hao-de-bao-xian-bi-mian-huai-ye-wu-de-wu-dao\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\life-hijack-1971-movie-recommendation-words-3-financial-observation-points-after-watching-ha-jung-woo-and-choi-si-won-little-thunder\index.html: 描述過短 (105 字符)，建議至少120字符
-- blog\life-hijack-1971-movie-recommendation-words-3-financial-observation-points-after-watching-ha-jung-woo-and-choi-si-won-little-thunder\index.html: 圖片 URL 建議使用 HTTPS
-- blog\life-hijack-1971-movie-recommendation-words-3-financial-observation-points-after-watching-ha-jung-woo-and-choi-si-won-little-thunder\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\lazy-to-rich-the-magic-of-chinese-and-life-choices\index.html: 圖片 URL 建議使用 HTTPS
+- blog\li-cai-mi-jue-xuan-ze-dui-gou-hao-de-bao-xian-bi-mian-huai-ye-wu-de-wu-dao\index.html: 描述過長 (202 字符)，建議控制在160字符內
+- blog\life-hijack-1971-movie-recommendation-words-3-financial-observation-points-after-watching-ha-jung-woo-and-choi-si-won-little-thunder\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\life-rebuilding-work-and-life-motivation-four-practical-methods-to-help-you-break-through-low-periods\index.html: 標題過短 (29 字符)，建議至少30字符
-- blog\life-rebuilding-work-and-life-motivation-four-practical-methods-to-help-you-break-through-low-periods\index.html: 描述過短 (72 字符)，建議至少120字符
-- blog\life-rebuilding-work-and-life-motivation-four-practical-methods-to-help-you-break-through-low-periods\index.html: 圖片 URL 建議使用 HTTPS
-- blog\life-rebuilding-work-and-life-motivation-four-practical-methods-to-help-you-break-through-low-periods\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\life-review-slam-dunk-movie-disney-plus-june-10\index.html: 圖片 URL 建議使用 HTTPS
-- blog\life-review-slam-dunk-movie-disney-plus-june-10\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\life-stop-complaining-and-focus-on-the-circle-of-influence-use-psychology-to-break-the-anxiety-and-helplessness-of-life\index.html: 描述過短 (76 字符)，建議至少120字符
-- blog\life-stop-complaining-and-focus-on-the-circle-of-influence-use-psychology-to-break-the-anxiety-and-helplessness-of-life\index.html: 圖片 URL 建議使用 HTTPS
-- blog\life-stop-complaining-and-focus-on-the-circle-of-influence-use-psychology-to-break-the-anxiety-and-helplessness-of-life\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\life-rebuilding-work-and-life-motivation-four-practical-methods-to-help-you-break-through-low-periods\index.html: 描述過長 (202 字符)，建議控制在160字符內
+- blog\life-stop-complaining-and-focus-on-the-circle-of-influence-use-psychology-to-break-the-anxiety-and-helplessness-of-life\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\life-to-become-better-usually-requires-going-through-a-period-of-hardship\index.html: 標題過短 (25 字符)，建議至少30字符
-- blog\life-to-become-better-usually-requires-going-through-a-period-of-hardship\index.html: 描述過短 (118 字符)，建議至少120字符
-- blog\life-to-become-better-usually-requires-going-through-a-period-of-hardship\index.html: 圖片 URL 建議使用 HTTPS
-- blog\life-to-become-better-usually-requires-going-through-a-period-of-hardship\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\life-to-become-better-usually-requires-going-through-a-period-of-hardship\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\life-treating-yourself-as-an-index-is-better-than-treating-yourself-as-a-stock\index.html: 標題過短 (22 字符)，建議至少30字符
-- blog\life-treating-yourself-as-an-index-is-better-than-treating-yourself-as-a-stock\index.html: 圖片 URL 建議使用 HTTPS
-- blog\life-treating-yourself-as-an-index-is-better-than-treating-yourself-as-a-stock\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\life-understanding-why-the-universal-distribution-could-be-a-candy-coated-trap-from-the-200000-lost-due-to-pandemic-insurance\index.html: 描述過短 (111 字符)，建議至少120字符
-- blog\life-understanding-why-the-universal-distribution-could-be-a-candy-coated-trap-from-the-200000-lost-due-to-pandemic-insurance\index.html: 圖片 URL 建議使用 HTTPS
-- blog\life-understanding-why-the-universal-distribution-could-be-a-candy-coated-trap-from-the-200000-lost-due-to-pandemic-insurance\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\life-understanding-why-the-universal-distribution-could-be-a-candy-coated-trap-from-the-200000-lost-due-to-pandemic-insurance\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\lifesharing-insights-on-the-growth-of-financial-planning-and-wealth-management-channels\index.html: 標題過短 (21 字符)，建議至少30字符
-- blog\lifesharing-insights-on-the-growth-of-financial-planning-and-wealth-management-channels\index.html: 描述過短 (90 字符)，建議至少120字符
-- blog\lifesharing-insights-on-the-growth-of-financial-planning-and-wealth-management-channels\index.html: 圖片 URL 建議使用 HTTPS
-- blog\lifesharing-insights-on-the-growth-of-financial-planning-and-wealth-management-channels\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
-- blog\mai-ge-wu-can-de-tan-xian-ye-neng-de-dao-li-cai-qi-shi-xiao-hai-de-fan-ying-zong-shi-sheng-huo-de-jing-xi\index.html: 圖片 URL 建議使用 HTTPS
-- blog\mai-ge-wu-can-de-tan-xian-ye-neng-de-dao-li-cai-qi-shi-xiao-hai-de-fan-ying-zong-shi-sheng-huo-de-jing-xi\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\lifesharing-insights-on-the-growth-of-financial-planning-and-wealth-management-channels\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\master-these-two-hearts-financial-planning-eases-your-anxiety\index.html: 標題過短 (29 字符)，建議至少30字符
-- blog\master-these-two-hearts-financial-planning-eases-your-anxiety\index.html: 圖片 URL 建議使用 HTTPS
-- blog\master-these-two-hearts-financial-planning-eases-your-anxiety\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\my-money-in-the-stock-market-how-to-sleep-soundly-with-investments\index.html: 標題過短 (26 字符)，建議至少30字符
-- blog\my-money-in-the-stock-market-how-to-sleep-soundly-with-investments\index.html: 圖片 URL 建議使用 HTTPS
-- blog\my-money-in-the-stock-market-how-to-sleep-soundly-with-investments\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 - blog\night-market-games-teach-financial-planning-10-dollar-priceless-education\index.html: 標題過短 (28 字符)，建議至少30字符
-- blog\night-market-games-teach-financial-planning-10-dollar-priceless-education\index.html: 描述過長 (190 字符)，建議控制在160字符內
-- blog\night-market-games-teach-financial-planning-10-dollar-priceless-education\index.html: 圖片 URL 建議使用 HTTPS
-- blog\night-market-games-teach-financial-planning-10-dollar-priceless-education\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\night-market-games-teach-financial-planning-10-dollar-priceless-education\index.html: 描述過長 (202 字符)，建議控制在160字符內
 - blog\the-best-selling-time-for-etf-investment-let-demand-guide-investment-decisions\index.html: 標題過短 (28 字符)，建議至少30字符
-- blog\the-best-selling-time-for-etf-investment-let-demand-guide-investment-decisions\index.html: 圖片 URL 建議使用 HTTPS
-- blog\the-best-selling-time-for-etf-investment-let-demand-guide-investment-decisions\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
+- blog\the-best-selling-time-for-etf-investment-let-demand-guide-investment-decisions\index.html: 描述過長 (202 字符)，建議控制在160字符內
 
 ## 🎯 最佳實踐建議
 1. **SEO 優化**:

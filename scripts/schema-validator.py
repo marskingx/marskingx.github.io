@@ -9,6 +9,7 @@ import jsonschema
 from pathlib import Path
 from bs4 import BeautifulSoup
 import argparse
+import sys
 
 # 麵包屑的 JSON Schema
 BREADCRUMB_SCHEMA = {
@@ -161,6 +162,7 @@ class SchemaValidator:
         return all_valid
 
 def main():
+    sys.stdout.reconfigure(encoding='utf-8')
     parser = argparse.ArgumentParser(description='使用 JSON Schema 驗證結構化資料')
     parser.add_argument('--file', help='要驗證的 HTML 檔案')
     parser.add_argument('--dir', default='public', help='要驗證的目錄 (預設: public)')

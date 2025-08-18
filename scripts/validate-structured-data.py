@@ -14,6 +14,7 @@ import requests
 from bs4 import BeautifulSoup
 import argparse
 from typing import List, Dict, Any
+import sys
 
 class StructuredDataValidator:
     def __init__(self, public_dir: str = "public"):
@@ -236,6 +237,7 @@ class StructuredDataValidator:
             print("\n🎉 所有結構化資料都通過驗證！")
 
 def main():
+    sys.stdout.reconfigure(encoding='utf-8')
     parser = argparse.ArgumentParser(description='驗證 Hugo 網站的結構化資料')
     parser.add_argument('--public-dir', default='public', help='public 目錄路徑 (預設: public)')
     parser.add_argument('--file', help='驗證特定檔案')
