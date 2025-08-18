@@ -56,8 +56,8 @@
               <i class="fa-solid fa-stopwatch mr-2"></i>
               {{ .ReadingTime }} {{ T "reading_time" }}
             </li>
-          </ul>
-          <!-- Post Content -->
+          </ul> 
+         <!-- Post Content -->
           <div class="content mb-10">
             <!-- Table of Contents -->
             {{ partial "toc.html" (dict "Class" "blog" "Collapsed" false "TableOfContents" .TableOfContents ) }}
@@ -102,73 +102,73 @@
             {{ end }}
             </ul>
             </div>
-          </div>
+          </div>    
+      {{/* Create a scratchpad for the schema */}}
+          {{ $schema := newScratch }}
 
-          {{-/* Create a scratchpad for the schema */-}}
-          {{- $schema := newScratch -}}
+          {{/* Base Schema */}}
+          {{ $schema.Set "data" (dict "@context" "https://schema.org" "@type" "BlogPosting") }}
+          {{ $schemaData := $schema.Get "data" }}
+          {{ $schemaData = merge $schemaData (dict "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)) }}
+          {{ $schemaData = merge $schemaData (dict "headline" .Title) }}
+          {{ $schemaData = merge $schemaData (dict "description" .Description) }}
+          {{ with .Params.image }}
+            {{ $schemaData = merge $schemaData (dict "image" (. | absURL)) }}
+          {{ end }}
+          {{ $schemaData = merge $schemaData (dict "datePublished" (.PublishDate.Format "2006-01-02T15:04:05Z07:00")) }}
+          {{ $schemaData = merge $schemaData (dict "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")) }}
 
-          {{-/* Base Schema */-}}
-          {{- $schema.Set "data" (dict "@context" "https://schema.org" "@type" "BlogPosting") -}}
-          {{- $schema.Add "data" "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink) -}}
-          {{- $schema.Add "data" "headline" .Title -}}
-          {{- $schema.Add "data" "description" .Description -}}
-          {{- with .Params.image -}}
-            {{- $schema.Add "data" "image" (. | absURL) -}}
-          {{- end -}}
-          {{- $schema.Add "data" "datePublished" (.PublishDate.Format "2006-01-02T15:04:05Z07:00") -}}
-          {{- $schema.Add "data" "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00") -}}
+          {{/* Author - ONLY if author param exists and is not empty */}}
+          {{ with .Params.author }}
+            {{ if ne . "" }}
+              {{ $schemaData = merge $schemaData (dict "author" (dict "@type" "Person" "name" . "url" (printf "%s%s/" ("authors/" | relLangURL) (. | urlize)))) }}
+            {{ end }}
+          {{ end }}
 
-          {{-/* Author - ONLY if author param exists and is not empty */-}}
-          {{- with .Params.author -}}
-            {{- if ne . "" -}}
-              {{- $schema.Add "data" "author" (dict "@type" "Person" "name" . "url" (printf "%s%s/" ("authors/" | relLangURL) (. | urlize))) -}}
-            {{- end -}}
-          {{- end -}}
+          {{/* Publisher */}}
+          {{ $logoURL := site.Params.logo | default "/favicon.png" | absURL }}
+          {{ $publisher := dict "@type" "Organization" "name" site.Title "logo" (dict "@type" "ImageObject" "url" $logoURL) }}
+          {{ $schemaData = merge $schemaData (dict "publisher" $publisher) }}
 
-          {{-/* Publisher */-}}
-          {{- $publisher := dict "@type" "Organization" "name" site.Title "logo" (dict "@type" "ImageObject" "url" (site.Params.logo | absURL)) -}}
-          {{- $schema.Add "data" "publisher" $publisher -}}
+          {{/* Categories & Tags */}}
+          {{ with .Params.categories }}
+            {{ $schemaData = merge $schemaData (dict "articleSection" (index . 0)) }}
+          {{ end }}
+          {{ with .Params.tags }}
+            {{ $schemaData = merge $schemaData (dict "keywords" (delimit . ", ")) }}
+          {{ end }}
+          {{ $schemaData = merge $schemaData (dict "wordCount" .WordCount) }} 
+         {{/* Review - ONLY for book reviews with a rating */}}
+          {{ if and (in .Params.categories "閱讀心得") .Params.rate }}
+            {{ $cleanRate := .Params.rate | replaceRE "⭐️" "⭐" }}
+            {{ $ratingValue := len (findRE "⭐" $cleanRate) }}
+            {{ if and (gt $ratingValue 0) (le $ratingValue 5) }}
+              {{ $bookTitle := .Title }}
+              {{ with findRE "《([^》]+)》" .Title }}
+                {{ $bookTitle = index . 0 | strings.TrimPrefix "《" | strings.TrimSuffix "》" }}
+              {{ end }}
 
-          {{-/* Categories & Tags */-}}
-          {{- with .Params.categories -}}
-            {{- $schema.Add "data" "articleSection" (index . 0) -}}
-          {{- end -}}
-          {{- with .Params.tags -}}
-            {{- $schema.Add "data" "keywords" (delimit . ", ") -}}
-          {{- end -}}
-          {{- $schema.Add "data" "wordCount" .WordCount -}}
+              {{ $reviewData := dict "@type" "Review" }}
+              {{ $reviewData = merge $reviewData (dict "itemReviewed" (dict "@type" "Book" "name" $bookTitle)) }}
+              {{ with .Params.author }}
+                {{ if ne . "" }}
+                  {{ $reviewData = merge $reviewData (dict "author" (dict "@type" "Person" "name" .)) }}
+                {{ end }}
+              {{ end }}
+              {{ $reviewData = merge $reviewData (dict "reviewRating" (dict "@type" "Rating" "ratingValue" $ratingValue "bestRating" 5)) }}
 
-          {{-/* Review - ONLY for book reviews with a rating */-}}
-          {{- if and (in .Params.categories "閱讀心得") .Params.rate -}}
-            {{- $ratingValue := len (findRE "⭐" .Params.rate) -}}
-            {{- if gt $ratingValue 0 -}}
-              {{- $bookTitle := .Title -}}
-              {{- with findRE "《([^》]+)》" .Title -}}
-                {{- $bookTitle = index . 0 | strings.TrimPrefix "《" | strings.TrimSuffix "》" -}}
-              {{- end -}}
+              {{ $schemaData = merge $schemaData (dict "review" $reviewData) }}
+            {{ end }}
+          {{ end }}
 
-              {{- $review := newScratch -}}
-              {{- $review.Set "data" (dict "@type" "Review") -}}
-              {{- $review.Add "data" "itemReviewed" (dict "@type" "Book" "name" $bookTitle) -}}
-              {{- with .Params.author -}}
-                {{- if ne . "" -}}
-                  {{- $review.Add "data" "author" (dict "@type" "Person" "name" .) -}}
-                {{- end -}}
-              {{- end -}}
-              {{- $review.Add "data" "reviewRating" (dict "@type" "Rating" "ratingValue" $ratingValue "bestRating" 5) -}}
-
-              {{- $schema.Add "data" "review" ($review.Get "data") -}}
-            {{- end -}}
-          {{- end -}}
-
+          {{ $schema.Set "data" $schemaData }}
           <script type="application/ld+json">
-          {{- ($schema.Get "data") | jsonify (dict "indent" "  ") -}}
+          {{ ($schema.Get "data") | jsonify (dict "indent" "  ") }}
           </script>
 
         </article>
-      </div>
-
-      <!-- Related posts -->
+      </div> 
+     <!-- Related posts -->
       {{ $curr := . }}
       {{ $sameCategoryPosts := slice }}
 

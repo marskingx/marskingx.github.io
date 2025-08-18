@@ -1,26 +1,31 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Serve Drafts",
+            "label": "Hugo: Start Server",
             "type": "shell",
-            "command": "hugo server -D",
-            "group": {
-                "kind": "test",
-                "isDefault": true
+            "command": "npm",
+            "args": ["run", "dev"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
             },
-            "isBackground": true,
             "problemMatcher": []
         },
         {
-            "label": "Build",
+            "label": "Hugo: Build Site",
             "type": "shell",
-            "command": "hugo",
-            "group": {
-                "kind": "build",
-                "isDefault": true
+            "command": "npm",
+            "args": ["run", "build"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
             },
             "problemMatcher": []
         }
