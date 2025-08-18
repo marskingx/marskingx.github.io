@@ -168,8 +168,8 @@
   "headline": {{ .Title | jsonify }},
   "description": {{ .Description | jsonify }},
   {{ with .Params.image }}"image": {{ . | absURL | jsonify }},{{ end }}
-  "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
-  "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+  "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
   {{ with .Params.author }}{{ if ne . "" }}"author": {
     "@type": "Person",
     "name": {{ . | jsonify }},
