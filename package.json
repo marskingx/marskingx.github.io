@@ -16,7 +16,15 @@
     "project-setup": "node ./scripts/projectSetup.js",
     "theme-setup": "node ./scripts/themeSetup.js",
     "update-theme": "node ./scripts/themeUpdate.js",
-    "format": "prettier -w ."
+    "format": "prettier -w .",
+    "memory:update": "node ./scripts/update-memory.js",
+    "memory:backup": "cp .kiro/steering/project-memory.md .kiro/steering/project-memory.backup.md",
+    "memory:validate": "node ./scripts/validate-memory.js",
+    "ai-memory:manage": "node ./docs/ai-memory/tools/memory-manager.js",
+    "ai-memory:backup": "node -e \"const fs=require('fs'); const path='docs/ai-memory/backups'; if(!fs.existsSync(path)) fs.mkdirSync(path,{recursive:true}); const t=new Date().toISOString().replace(/[:.]/g,'-'); fs.copyFileSync('docs/ai-memory/project-memory.md', `${path}/project-memory-${t}.md`); console.log('✅ 備份完成');\"",
+    "gemini:setup": "node ./docs/ai-memory/tools/gemini-memory-loader.js",
+    "gemini:auto-load": "node ./docs/ai-memory/tools/gemini-auto-loader.js",
+    "gemini:install": "npm install @google/generative-ai"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",
