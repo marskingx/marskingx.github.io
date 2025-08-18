@@ -21,13 +21,15 @@
           <!-- Post-meta -->
           <ul class="mb-4">
             <!-- Author -->
-            <li class="mr-4 inline-block">
-              <a
-                href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/">
-                <i class="fa-regular fa-circle-user mr-2"></i
-                >{{ .Params.author }}
-              </a>
-            </li>
+            {{ with .Params.author }}
+              {{ if ne . "" }}
+                <li class="mr-4 inline-block">
+                  <a href="{{ `authors/` | relLangURL }}{{ . | urlize }}/">
+                    <i class="fa-regular fa-circle-user mr-2"></i>{{ . }}
+                  </a>
+                </li>
+              {{ end }}
+            {{ end }}
             <!-- Categories -->
             {{ $categories:= .Params.categories }}
             {{ if $categories }}
@@ -101,54 +103,68 @@
             </ul>
             </div>
           </div>
-          <!-- Disqus Comments (currently commented out) -->
-          <!-- {{ if site.Config.Services.Disqus.Shortname }}-->
-          <!--   <div class="mt-20">-->
-          <!--     {{ template "_internal/disqus.html" . }}-->
-          <!--   </div>-->
-          <!-- {{ end }}-->
-          {{- $schema := dict "@context" "https://schema.org" "@type" "BlogPosting" -}}
-          {{- $schema = merge $schema (dict "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)) -}}
-          {{- $schema = merge $schema (dict "headline" .Title) -}}
-          {{- $schema = merge $schema (dict "description" .Description) -}}
+
+          {{-/* Create a scratchpad for the schema */-}}
+          {{- $schema := newScratch -}}
+
+          {{-/* Base Schema */-}}
+          {{- $schema.Set "data" (dict "@context" "https://schema.org" "@type" "BlogPosting") -}}
+          {{- $schema.Add "data" "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink) -}}
+          {{- $schema.Add "data" "headline" .Title -}}
+          {{- $schema.Add "data" "description" .Description -}}
           {{- with .Params.image -}}
-            {{- $schema = merge $schema (dict "image" ( . | absURL )) -}}
+            {{- $schema.Add "data" "image" (. | absURL) -}}
           {{- end -}}
-          {{- $schema = merge $schema (dict "datePublished" (.PublishDate.Format "2006-01-02T15:04:05Z07:00")) -}}
-          {{- $schema = merge $schema (dict "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")) -}}
-          {{- $author := dict "@type" "Person" "name" .Params.author "url" (printf "%s%s/" ("authors/" | relLangURL) (.Params.Author | urlize)) -}}
-          {{- $schema = merge $schema (dict "author" $author) -}}
+          {{- $schema.Add "data" "datePublished" (.PublishDate.Format "2006-01-02T15:04:05Z07:00") -}}
+          {{- $schema.Add "data" "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00") -}}
+
+          {{-/* Author - ONLY if author param exists and is not empty */-}}
+          {{- with .Params.author -}}
+            {{- if ne . "" -}}
+              {{- $schema.Add "data" "author" (dict "@type" "Person" "name" . "url" (printf "%s%s/" ("authors/" | relLangURL) (. | urlize))) -}}
+            {{- end -}}
+          {{- end -}}
+
+          {{-/* Publisher */-}}
           {{- $publisher := dict "@type" "Organization" "name" site.Title "logo" (dict "@type" "ImageObject" "url" (site.Params.logo | absURL)) -}}
-          {{- $schema = merge $schema (dict "publisher" $publisher) -}}
+          {{- $schema.Add "data" "publisher" $publisher -}}
+
+          {{-/* Categories & Tags */-}}
           {{- with .Params.categories -}}
-            {{- $schema = merge $schema (dict "articleSection" (index . 0)) -}}
+            {{- $schema.Add "data" "articleSection" (index . 0) -}}
           {{- end -}}
           {{- with .Params.tags -}}
-            {{- $schema = merge $schema (dict "keywords" (delimit . ", ")) -}}
+            {{- $schema.Add "data" "keywords" (delimit . ", ") -}}
           {{- end -}}
-          {{- $schema = merge $schema (dict "wordCount" .WordCount) -}}
+          {{- $schema.Add "data" "wordCount" .WordCount -}}
 
-          {{/* If it's a book review, add review schema */}}
-          {{ if and (in .Params.categories "閱讀心得") .Params.rate }}
-            {{ $ratingValue := len (findRE "⭐" .Params.rate) }}
-            {{ if gt $ratingValue 0 }}
-              {{ $bookTitle := .Title }}
-              {{ with findRE "《([^》]+)》" .Title }}
-                {{ $bookTitle = index . 0 | strings.TrimPrefix "《" | strings.TrimSuffix "》" }}
-              {{ end }}
+          {{-/* Review - ONLY for book reviews with a rating */-}}
+          {{- if and (in .Params.categories "閱讀心得") .Params.rate -}}
+            {{- $ratingValue := len (findRE "⭐" .Params.rate) -}}
+            {{- if gt $ratingValue 0 -}}
+              {{- $bookTitle := .Title -}}
+              {{- with findRE "《([^》]+)》" .Title -}}
+                {{- $bookTitle = index . 0 | strings.TrimPrefix "《" | strings.TrimSuffix "》" -}}
+              {{- end -}}
 
-              {{ $itemReviewed := dict "@type" "Book" "name" $bookTitle }}
-              {{ $rating := dict "@type" "Rating" "ratingValue" $ratingValue "bestRating" "5" }}
-              {{ $author := dict "@type" "Person" "name" .Params.author }}
-              {{ $reviewObject := dict "@type" "Review" "itemReviewed" $itemReviewed "author" $author "reviewRating" $rating }}
+              {{- $review := newScratch -}}
+              {{- $review.Set "data" (dict "@type" "Review") -}}
+              {{- $review.Add "data" "itemReviewed" (dict "@type" "Book" "name" $bookTitle) -}}
+              {{- with .Params.author -}}
+                {{- if ne . "" -}}
+                  {{- $review.Add "data" "author" (dict "@type" "Person" "name" .) -}}
+                {{- end -}}
+              {{- end -}}
+              {{- $review.Add "data" "reviewRating" (dict "@type" "Rating" "ratingValue" $ratingValue "bestRating" 5) -}}
 
-              {{ $schema = merge $schema (dict "review" $reviewObject) }}
-            {{ end }}
-          {{ end }}
+              {{- $schema.Add "data" "review" ($review.Get "data") -}}
+            {{- end -}}
+          {{- end -}}
 
           <script type="application/ld+json">
-          {{- $schema | jsonify (dict "indent" "  ") -}}
+          {{- ($schema.Get "data") | jsonify (dict "indent" "  ") -}}
           </script>
+
         </article>
       </div>
 
