@@ -128,7 +128,7 @@ class SEOOptimizer:
                 return True
                 
         except Exception as e:
-            print(f"❌ 處理檔案 {file_path} 時發生錯誤: {e}")
+            print(f"處理檔案 {file_path} 時發生錯誤: {e}")
             return False
         
         return False
@@ -136,11 +136,11 @@ class SEOOptimizer:
     def optimize_all(self) -> bool:
         """優化所有檔案"""
         if not self.public_dir.exists():
-            print(f"❌ 找不到 public 目錄: {self.public_dir}")
+            print(f"找不到 public 目錄: {self.public_dir}")
             return False
         
         html_files = list(self.public_dir.rglob("*.html"))
-        print(f"🔍 找到 {len(html_files)} 個 HTML 檔案")
+        print(f"找到 {len(html_files)} 個 HTML 檔案")
         
         optimized_count = 0
         for file_path in html_files:
@@ -150,20 +150,20 @@ class SEOOptimizer:
             if self.optimize_file(file_path):
                 optimized_count += 1
         
-        print(f"\n📊 優化結果:")
-        print(f"✅ 優化了 {optimized_count} 個檔案")
-        print(f"🔧 應用了 {len(self.fixes)} 個修復")
-        print(f"💡 產生了 {len(self.suggestions)} 個建議")
+        print(f"\n優化結果:")
+        print(f"優化了 {optimized_count} 個檔案")
+        print(f"應用了 {len(self.fixes)} 個修復")
+        print(f"產生了 {len(self.suggestions)} 個建議")
         
         if self.fixes:
-            print("\n🔧 應用的修復:")
+            print("\n應用的修復:")
             for fix in self.fixes[:10]:  # 只顯示前10個
                 print(f"  • {fix}")
             if len(self.fixes) > 10:
                 print(f"  ... 還有 {len(self.fixes) - 10} 個修復")
         
         if self.suggestions:
-            print("\n💡 優化建議:")
+            print("\n優化建議:")
             for suggestion in self.suggestions[:10]:  # 只顯示前10個
                 print(f"  • {suggestion}")
             if len(self.suggestions) > 10:
@@ -180,7 +180,7 @@ def main():
     
     optimizer = SEOOptimizer(args.public_dir)
     
-    print("🚀 開始 SEO 優化...")
+    print("開始 SEO 優化...")
     success = optimizer.optimize_all()
     
     sys.exit(0 if success else 1)
