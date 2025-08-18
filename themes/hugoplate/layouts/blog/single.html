@@ -127,6 +127,37 @@
             {{- $schema = merge $schema (dict "keywords" (delimit . ", ")) -}}
           {{- end -}}
           {{- $schema = merge $schema (dict "wordCount" .WordCount) -}}
+
+          {{/* If it's a book review, add review schema */}}
+          {{ if and (in .Params.categories "閱讀心得") .Params.rate }}
+            {{ $ratingValue := len (findRE "⭐" .Params.rate) }}
+            {{ if gt $ratingValue 0 }}
+              {{ $bookTitle := .Title }}
+              {{ with findRE "《([^》]+)》" .Title }}
+                {{ $bookTitle = index . 0 | strings.TrimPrefix "《" | strings.TrimSuffix "》" }}
+              {{ end }}
+              {{ $review := dict
+                "review" (dict
+                  "@type" "Review"
+                  "reviewRating" (dict
+                    "@type" "Rating"
+                    "ratingValue" $ratingValue
+                    "bestRating" "5"
+                  )
+                  "author" (dict
+                    "@type" "Person"
+                    "name" $.Params.author
+                  )
+                  "itemReviewed" (dict
+                    "@type" "Book"
+                    "name" $bookTitle
+                  )
+                )
+              -}}
+              {{ $schema = merge $schema $review -}}
+            {{ end }}
+          {{ end }}
+
           <script type="application/ld+json">
           {{- $schema | jsonify (dict "indent" "  ") -}}
           </script>
