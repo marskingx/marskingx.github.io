@@ -136,25 +136,13 @@
               {{ with findRE "《([^》]+)》" .Title }}
                 {{ $bookTitle = index . 0 | strings.TrimPrefix "《" | strings.TrimSuffix "》" }}
               {{ end }}
-              {{ $review := dict
-                "review" (dict
-                  "@type" "Review"
-                  "reviewRating" (dict
-                    "@type" "Rating"
-                    "ratingValue" $ratingValue
-                    "bestRating" "5"
-                  )
-                  "author" (dict
-                    "@type" "Person"
-                    "name" $.Params.author
-                  )
-                  "itemReviewed" (dict
-                    "@type" "Book"
-                    "name" $bookTitle
-                  )
-                )
-              -}}
-              {{ $schema = merge $schema $review -}}
+
+              {{ $itemReviewed := dict "@type" "Book" "name" $bookTitle }}
+              {{ $rating := dict "@type" "Rating" "ratingValue" $ratingValue "bestRating" "5" }}
+              {{ $author := dict "@type" "Person" "name" .Params.author }}
+              {{ $reviewObject := dict "@type" "Review" "itemReviewed" $itemReviewed "author" $author "reviewRating" $rating }}
+
+              {{ $schema = merge $schema (dict "review" $reviewObject) }}
             {{ end }}
           {{ end }}
 
