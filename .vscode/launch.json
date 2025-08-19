@@ -1,14 +1,15 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "name": "Ask Gemini",
+            "type": "python",
             "request": "launch",
-            "name": "Open single.html",
-            "file": "d:\\marskingx.github.io\\themes\\hugoplate\\layouts\\blog\\single.html"
+            "program": "${workspaceFolder}/gemini_client.py",
+            "console": "integratedTerminal",
+            "env": {
+                "GOOGLE_API_KEY": "AIzaSyBIcFvGYMjREv_y31oJLd_2--azDHBBT5A"
+            }
         }
     ]
 }

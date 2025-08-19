@@ -12,8 +12,8 @@ except KeyError:
     print("請將其設定為您的 Google API 金鑰。")
     exit()
 
-# --- 模型初始化 ---
-model = genai.GenerativeModel('gemini-pro')
+# --- 模型初始化 (使用更新後的模型名稱) ---
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 def read_prompt_from_file(file_path):
     """從指定的檔案讀取提示文字。"""
