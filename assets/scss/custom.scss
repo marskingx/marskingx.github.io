@@ -33,6 +33,15 @@ table th {
   margin-right: auto;
 }
 
+/* 修復 header dark mode 背景色問題 */
+.header {
+  background-color: #fff !important;
+}
+
+html.dark .header {
+  background-color: #1c1c1c !important;
+}
+
 /* 提供給blockquote的語法 */
 .article-content blockquote {
   position: relative;
