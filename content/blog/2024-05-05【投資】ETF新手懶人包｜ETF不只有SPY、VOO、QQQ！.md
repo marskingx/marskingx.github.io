@@ -112,7 +112,7 @@ ETF種類多到讓人眼花繚亂，只要是能投資的就能創建一個ETF�
 5. 我自己是複委託在進行投資，因為只要長期持有，手續費或是匯率也可以平均分散。
 6. 當然如果你有足夠的資金，一次性投入會比定期定額的方式獲得更大的報酬。這個以後有機會再說。
 
-![懶得有結論](/images/blog/lazytobeconclude.svg)
+{{< img src="/images/blog/lazytobeconclude.svg" alt="懶得有結論" >}}
 ## 懶得有結論
 
 {{< quote author="瑪斯就是懶大" source="👉關於我" url="https://lazytoberich.com.tw/about/">}}

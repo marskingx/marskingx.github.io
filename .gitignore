@@ -25,3 +25,6 @@ scripts/venv/
 *.pyc
 __pycache__/
 git_log_temp.txt
+
+# Environment variables
+.env

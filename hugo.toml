@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 # The base URL of your site (required). This will be prepended to all relative URLs.
-baseURL = "/"
+baseURL = "https://marskingx.github.io/"
 # Title of your website (required).
 title = "懶得變有錢 | 帶你了解財務規劃本質 鑑定自己的財務DNA"
 # Your theme name
@@ -79,6 +79,12 @@ home = ["HTML", "RSS", "WebAppManifest", "SearchIndex"]
 # Default JPEG or WebP quality setting. Default is 75.
 quality = 80
 resampleFilter = "Lanczos"
+# Enable WebP format for better compression
+[imaging.exif]
+includeFields = ""
+excludeFields = ".*"
+disableDate = false
+disableLatLong = true
 
 ############################ Caches ##############################
 [caches]
