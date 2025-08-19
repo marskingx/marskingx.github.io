@@ -36,7 +36,12 @@
     "schema:validate": "node ./scripts/structured-data-validator.js",
     "schema:build": "npm run build && npm run schema:validate",
     "images:optimize": "node ./scripts/optimize-large-images.js",
-    "images:preview": "node ./scripts/optimize-large-images.js --dry-run"
+    "images:preview": "node ./scripts/optimize-large-images.js --dry-run",
+    "version:patch": "npm version patch && git push && git push --tags",
+    "version:minor": "npm version minor && git push && git push --tags",
+    "version:major": "npm version major && git push && git push --tags",
+    "version:show": "node -e \"const pkg = require('./package.json'); console.log(`📦 當前版本: ${pkg.name} v${pkg.version}`);\"",
+    "version:changelog": "node -e \"console.log('📋 更新 CHANGELOG.md 然後執行版本發布'); console.log('npm run version:patch  # 錯誤修正'); console.log('npm run version:minor  # 新功能'); console.log('npm run version:major  # 重大更新');\""
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",
