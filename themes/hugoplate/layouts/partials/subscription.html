@@ -1,41 +1,25 @@
-<div
-  id="popup-overlay"
-  class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
-  <div
-    class="bg-white max-w-md mx-auto mt-40 p-6 rounded-xl relative shadow-xl">
-    <button
-      onclick="document.getElementById('popup-overlay').style.display='none'"
-      class="absolute top-2 right-2 text-gray-500 hover:text-black text-xl">
-      &times;
-    </button>
+<div id="popup-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+  <div class="bg-white max-w-md mx-auto mt-40 p-6 rounded-xl relative shadow-xl">
+    <button onclick="document.getElementById('popup-overlay').style.display='none'"
+      class="absolute top-2 right-2 text-gray-500 hover:text-black text-xl">&times;</button>
     <h2 class="text-xl font-bold mb-4">訂閱有錢電子報</h2>
-    <form
-      action="https://lazytoberich.us14.list-manage.com/subscribe/post?u=db5c854191bdeffdff24a5147&amp;id=517a8482e3&amp;f_id=006cc3e0f0"
-      method="POST"
-      target="_blank">
-      <input
-        type="email"
-        name="EMAIL"
-        placeholder="輸入你的 Email"
-        required
+    <form action="https://lazytoberich.us14.list-manage.com/subscribe/post?u=db5c854191bdeffdff24a5147&amp;id=517a8482e3&amp;f_id=006cc3e0f0" method="POST" target="_blank">
+      <input type="email" name="EMAIL" placeholder="輸入你的 Email" required
         class="w-full px-4 py-2 border border-gray-300 rounded mb-4" />
-      <button
-        type="submit"
-        class="w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition">
-        立即訂閱電子報
-      </button>
+      <button type="submit"
+        class="w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition">立即訂閱電子報</button>
     </form>
   </div>
 </div>
 
 <script>
-  window.addEventListener("load", function () {
-    const countKey = "popup-count";
+  window.addEventListener('load', function () {
+    const countKey = 'popup-count';
     let count = parseInt(localStorage.getItem(countKey)) || 0;
 
     if (count < 5) {
       setTimeout(() => {
-        document.getElementById("popup-overlay").style.display = "block";
+        document.getElementById('popup-overlay').style.display = 'block';
         localStorage.setItem(countKey, count + 1);
       }, 2000);
     }

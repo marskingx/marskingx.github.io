@@ -1,6 +1,7 @@
-{{/* Find and display related posts based on shared categories and tags.
-  @param {PageContext} .
-  @context Page
+{{/*
+Find and display related posts based on shared categories and tags.
+@param {PageContext} .
+@context Page
 */}}
 
 {{/* 預設顯示 3 篇相關文章，或從設定檔讀取 */}}
@@ -8,45 +9,41 @@
 {{ $curr := . }}
 {{ $sameCategoryPosts := slice }}
 
-
 <!-- 1. 找出所有包含相同分類的文章 -->
 {{ with .Params.categories }}
-  {{ range . }}
-    {{ $category := . }}
-    {{ $categoryPosts := where site.RegularPages ".Params.categories" "intersect" (slice $category) }}
-    {{ $sameCategoryPosts = $sameCategoryPosts | union $categoryPosts }}
-  {{ end }}
+{{ range . }}
+{{ $category := . }}
+{{ $categoryPosts := where site.RegularPages ".Params.categories" "intersect" (slice $category) }}
+{{ $sameCategoryPosts = $sameCategoryPosts | union $categoryPosts }}
 {{ end }}
-
+{{ end }}
 
 <!-- 2. 從結果中排除目前正在看的這篇文章 -->
 {{ $sameCategoryPosts = where $sameCategoryPosts "Title" "!=" $curr.Title }}
 
-
 <!-- 3. 從分類相符的文章中，再找出標籤也相符的文章 -->
 {{ $relatedPosts := slice }}
 {{ with .Params.tags }}
-  {{ range . }}
-    {{ $tag := . }}
-    {{ $tagMatches := where $sameCategoryPosts ".Params.tags" "intersect" (slice $tag) }}
-    {{ $relatedPosts = $relatedPosts | union $tagMatches }}
-  {{ end }}
+{{ range . }}
+{{ $tag := . }}
+{{ $tagMatches := where $sameCategoryPosts ".Params.tags" "intersect" (slice $tag) }}
+{{ $relatedPosts = $relatedPosts | union $tagMatches }}
 {{ end }}
-
+{{ end }}
 
 <!-- 4. 排除非 blog 類型的頁面，並按日期排序，取得最終結果 -->
 {{ $finalPosts := where $relatedPosts "Type" "not in" (slice "page") | uniq }}
 {{ $sortedPosts := sort $finalPosts ".Date" "desc" | first $relatedPostsCount }}
 
 {{ with $sortedPosts }}
-  <div class="section pb-0">
-    <h2 class="h3 mb-12">{{ T "related_posts" }}</h2>
-    <div class="row">
-      {{ range . }}
-        <div class="lg:col-4 md:col-6 mb-14">
-          {{ partial "components/blog-card" . }}
-        </div>
-      {{ end }}
+<div class="section pb-0">
+  <h2 class="h3 mb-12">{{ T "related_posts" }}</h2>
+  <div class="row">
+    {{ range . }}
+    <div class="lg:col-4 md:col-6 mb-14">
+      {{ partial "components/blog-card" . }}
     </div>
+    {{ end }}
   </div>
+</div>
 {{ end }}

@@ -5,21 +5,21 @@
  * 提供多種方式將專案記憶載入到 Google Gemini
  */
 
-const fs = require("fs");
-const path = require("path");
-const readline = require("readline");
+const fs = require('fs');
+const path = require('path');
+const readline = require('readline');
 
 // 配置
 const CONFIG = {
-  MEMORY_FILE: "docs/ai-memory/project-memory.md",
-  GEMINI_MEMORY_FILE: "docs/ai-memory/gemini-memory.md",
-  GEMINI_SCRIPT_FILE: "docs/ai-memory/tools/gemini-auto-loader.js",
-  EXPORTS_DIR: "docs/ai-memory/exports",
+  MEMORY_FILE: 'docs/ai-memory/project-memory.md',
+  GEMINI_MEMORY_FILE: 'docs/ai-memory/gemini-memory.md',
+  GEMINI_SCRIPT_FILE: 'docs/ai-memory/tools/gemini-auto-loader.js',
+  EXPORTS_DIR: 'docs/ai-memory/exports'
 };
 
 const rl = readline.createInterface({
   input: process.stdin,
-  output: process.stdout,
+  output: process.stdout
 });
 
 function ensureDirectoryExists(dirPath) {
@@ -29,15 +29,15 @@ function ensureDirectoryExists(dirPath) {
 }
 
 function generateGeminiMemoryFile() {
-  console.log("\n=== 生成 Gemini 專用記憶檔案 ===");
-
+  console.log('\n=== 生成 Gemini 專用記憶檔案 ===');
+  
   if (!fs.existsSync(CONFIG.MEMORY_FILE)) {
-    console.log("❌ 原始記憶檔案不存在");
+    console.log('❌ 原始記憶檔案不存在');
     return false;
   }
-
-  const memoryContent = fs.readFileSync(CONFIG.MEMORY_FILE, "utf8");
-
+  
+  const memoryContent = fs.readFileSync(CONFIG.MEMORY_FILE, 'utf8');
+  
   const geminiMemory = `# Gemini 專案記憶載入
 
 > 🧠 這是「懶得變有錢」專案的完整記憶檔案，請在整個對話過程中參考這些資訊來協助開發工作。
@@ -59,23 +59,23 @@ ${memoryContent}
 ## 🔄 記憶更新提醒
 如果專案有重要變更，請提醒我更新這個記憶檔案，以確保資訊的準確性和時效性。`;
 
-  fs.writeFileSync(CONFIG.GEMINI_MEMORY_FILE, geminiMemory, "utf8");
+  fs.writeFileSync(CONFIG.GEMINI_MEMORY_FILE, geminiMemory, 'utf8');
   console.log(`✅ Gemini 記憶檔案已生成: ${CONFIG.GEMINI_MEMORY_FILE}`);
-  console.log("📤 請將此檔案上傳到 Gemini 介面");
-
+  console.log('📤 請將此檔案上傳到 Gemini 介面');
+  
   return true;
 }
 
 function generateGeminiAPIScript() {
-  console.log("\n=== 生成 Gemini API 自動載入腳本 ===");
-
+  console.log('\n=== 生成 Gemini API 自動載入腳本 ===');
+  
   if (!fs.existsSync(CONFIG.MEMORY_FILE)) {
-    console.log("❌ 原始記憶檔案不存在");
+    console.log('❌ 原始記憶檔案不存在');
     return false;
   }
-
-  const memoryContent = fs.readFileSync(CONFIG.MEMORY_FILE, "utf8");
-
+  
+  const memoryContent = fs.readFileSync(CONFIG.MEMORY_FILE, 'utf8');
+  
   const apiScript = `#!/usr/bin/env node
 
 /**
@@ -92,7 +92,7 @@ class GeminiMemoryLoader {
       throw new Error('請提供 Gemini API Key');
     }
     this.genAI = new GoogleGenerativeAI(apiKey);
-    this.memoryContent = \`${memoryContent.replace(/`/g, "\\`").replace(/\$/g, "\\$")}\`;
+    this.memoryContent = \`${memoryContent.replace(/`/g, '\\`').replace(/\$/g, '\\$')}\`;
   }
   
   // 建立包含記憶的模型
@@ -172,30 +172,28 @@ if (require.main === module) {
 
 module.exports = GeminiMemoryLoader;`;
 
-  fs.writeFileSync(CONFIG.GEMINI_SCRIPT_FILE, apiScript, "utf8");
+  fs.writeFileSync(CONFIG.GEMINI_SCRIPT_FILE, apiScript, 'utf8');
   console.log(`✅ Gemini API 腳本已生成: ${CONFIG.GEMINI_SCRIPT_FILE}`);
-  console.log("💡 使用方法:");
-  console.log("   1. 安裝依賴: npm install @google/generative-ai");
+  console.log('💡 使用方法:');
+  console.log('   1. 安裝依賴: npm install @google/generative-ai');
   console.log('   2. 設定 API Key: export GEMINI_API_KEY="your-key"');
-  console.log(
-    "   3. 執行腳本: node docs/ai-memory/tools/gemini-auto-loader.js",
-  );
-
+  console.log('   3. 執行腳本: node docs/ai-memory/tools/gemini-auto-loader.js');
+  
   return true;
 }
 
 function generateGeminiPrompts() {
-  console.log("\n=== 生成 Gemini 載入提示詞 ===");
-
+  console.log('\n=== 生成 Gemini 載入提示詞 ===');
+  
   ensureDirectoryExists(CONFIG.EXPORTS_DIR);
-
+  
   if (!fs.existsSync(CONFIG.MEMORY_FILE)) {
-    console.log("❌ 原始記憶檔案不存在");
+    console.log('❌ 原始記憶檔案不存在');
     return false;
   }
-
-  const memoryContent = fs.readFileSync(CONFIG.MEMORY_FILE, "utf8");
-
+  
+  const memoryContent = fs.readFileSync(CONFIG.MEMORY_FILE, 'utf8');
+  
   // 完整載入提示
   const fullPrompt = `🧠 專案記憶載入 - Gemini 版
 
@@ -237,27 +235,19 @@ ${memoryContent}
 請在協助我開發時參考這些背景資訊。如需完整的專案記憶，我可以上傳詳細的記憶檔案。`;
 
   // 儲存提示詞
-  fs.writeFileSync(
-    path.join(CONFIG.EXPORTS_DIR, "gemini-full-prompt.txt"),
-    fullPrompt,
-    "utf8",
-  );
-  fs.writeFileSync(
-    path.join(CONFIG.EXPORTS_DIR, "gemini-summary-prompt.txt"),
-    summaryPrompt,
-    "utf8",
-  );
-
-  console.log("✅ Gemini 提示詞已生成:");
+  fs.writeFileSync(path.join(CONFIG.EXPORTS_DIR, 'gemini-full-prompt.txt'), fullPrompt, 'utf8');
+  fs.writeFileSync(path.join(CONFIG.EXPORTS_DIR, 'gemini-summary-prompt.txt'), summaryPrompt, 'utf8');
+  
+  console.log('✅ Gemini 提示詞已生成:');
   console.log(`   - 完整版: ${CONFIG.EXPORTS_DIR}/gemini-full-prompt.txt`);
   console.log(`   - 摘要版: ${CONFIG.EXPORTS_DIR}/gemini-summary-prompt.txt`);
-
+  
   return true;
 }
 
 function generateGeminiSetupScript() {
-  console.log("\n=== 生成 Gemini 設定腳本 ===");
-
+  console.log('\n=== 生成 Gemini 設定腳本 ===');
+  
   const setupScript = `#!/bin/bash
 
 # Gemini 記憶自動載入設定腳本
@@ -329,63 +319,63 @@ echo "   3. 提示詞: 使用 docs/ai-memory/exports/ 中的提示詞"
 echo ""
 `;
 
-  fs.writeFileSync("docs/ai-memory/tools/setup-gemini.sh", setupScript, "utf8");
-
+  fs.writeFileSync('docs/ai-memory/tools/setup-gemini.sh', setupScript, 'utf8');
+  
   // 設定執行權限 (在 Unix 系統上)
   try {
-    fs.chmodSync("docs/ai-memory/tools/setup-gemini.sh", "755");
+    fs.chmodSync('docs/ai-memory/tools/setup-gemini.sh', '755');
   } catch (error) {
     // Windows 系統可能不支援 chmod，忽略錯誤
   }
-
-  console.log("✅ Gemini 設定腳本已生成: docs/ai-memory/tools/setup-gemini.sh");
-  console.log("💡 執行方法: bash docs/ai-memory/tools/setup-gemini.sh");
-
+  
+  console.log('✅ Gemini 設定腳本已生成: docs/ai-memory/tools/setup-gemini.sh');
+  console.log('💡 執行方法: bash docs/ai-memory/tools/setup-gemini.sh');
+  
   return true;
 }
 
 function showMainMenu() {
-  console.log("\n=== Gemini 記憶自動載入工具 ===");
-  console.log("1. 生成 Gemini 專用記憶檔案 (上傳用)");
-  console.log("2. 生成 Gemini API 自動載入腳本");
-  console.log("3. 生成 Gemini 載入提示詞");
-  console.log("4. 生成 Gemini 設定腳本");
-  console.log("5. 全部生成");
-  console.log("6. 退出");
-
-  rl.question("\n請選擇操作 (1-6): ", (choice) => {
+  console.log('\n=== Gemini 記憶自動載入工具 ===');
+  console.log('1. 生成 Gemini 專用記憶檔案 (上傳用)');
+  console.log('2. 生成 Gemini API 自動載入腳本');
+  console.log('3. 生成 Gemini 載入提示詞');
+  console.log('4. 生成 Gemini 設定腳本');
+  console.log('5. 全部生成');
+  console.log('6. 退出');
+  
+  rl.question('\n請選擇操作 (1-6): ', (choice) => {
     switch (choice) {
-      case "1":
+      case '1':
         generateGeminiMemoryFile();
         showMainMenu();
         break;
-      case "2":
+      case '2':
         generateGeminiAPIScript();
         showMainMenu();
         break;
-      case "3":
+      case '3':
         generateGeminiPrompts();
         showMainMenu();
         break;
-      case "4":
+      case '4':
         generateGeminiSetupScript();
         showMainMenu();
         break;
-      case "5":
-        console.log("\n=== 生成所有 Gemini 整合檔案 ===");
+      case '5':
+        console.log('\n=== 生成所有 Gemini 整合檔案 ===');
         generateGeminiMemoryFile();
         generateGeminiAPIScript();
         generateGeminiPrompts();
         generateGeminiSetupScript();
-        console.log("\n🎉 所有 Gemini 整合檔案已生成完成！");
+        console.log('\n🎉 所有 Gemini 整合檔案已生成完成！');
         showMainMenu();
         break;
-      case "6":
-        console.log("👋 再見！");
+      case '6':
+        console.log('👋 再見！');
         rl.close();
         break;
       default:
-        console.log("❌ 無效選擇，請重新選擇");
+        console.log('❌ 無效選擇，請重新選擇');
         showMainMenu();
     }
   });
@@ -393,20 +383,20 @@ function showMainMenu() {
 
 // 初始化
 function initialize() {
-  console.log("🤖 Gemini 記憶自動載入工具");
-  console.log("================================");
-
+  console.log('🤖 Gemini 記憶自動載入工具');
+  console.log('================================');
+  
   // 檢查記憶檔案
   if (!fs.existsSync(CONFIG.MEMORY_FILE)) {
     console.log(`❌ 記憶檔案不存在: ${CONFIG.MEMORY_FILE}`);
-    console.log("請確保在正確的專案目錄中執行此工具");
+    console.log('請確保在正確的專案目錄中執行此工具');
     process.exit(1);
   }
-
+  
   // 確保輸出目錄存在
   ensureDirectoryExists(CONFIG.EXPORTS_DIR);
   ensureDirectoryExists(path.dirname(CONFIG.GEMINI_SCRIPT_FILE));
-
+  
   showMainMenu();
 }
 

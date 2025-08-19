@@ -10,16 +10,18 @@
 {{- if .IsHome -}}
   {{/* 首頁 */}}
   {{ partial "structured-data/homepage.html" . }}
+
 {{- else if .IsPage -}}
   {{/* 單一頁面（文章、靜態頁面） */}}
   {{ partial "structured-data/article.html" . }}
-
+  
   {{/* FAQ 結構化資料（如果頁面有 FAQ） */}}
   {{ partial "structured-data/faq.html" . }}
 
 {{- else if or .IsSection (eq .Kind "taxonomy") -}}
   {{/* 列表頁面（部落格列表、分類、標籤等） */}}
   {{ partial "structured-data/collection.html" . }}
+
 {{- end -}}
 
 {{/* 麵包屑導航（除首頁外所有頁面） */}}

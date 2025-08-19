@@ -6,8 +6,7 @@ table {
   margin: 20px 0;
 }
 
-table th,
-table td {
+table th, table td {
   border: 1px solid #ddd;
   padding: 10px;
   text-align: center; /* 水平置中 */
@@ -20,8 +19,7 @@ table th {
 }
 
 /* 自定義表格樣式，讓文字靠上 */
-.table-top-align th,
-.table-top-align td {
+.table-top-align th, .table-top-align td {
   vertical-align: top;
   text-align: center; /* 水平置中 */
 }
@@ -46,8 +44,7 @@ html.dark .header {
 .article-content blockquote {
   position: relative;
   margin: 1.5em 0;
-  border-inline-start: var(--blockquote-border-size) solid
-    var(--card-separator-color);
+  border-inline-start: var(--blockquote-border-size) solid var(--card-separator-color);
   padding: 15px calc(var(--card-padding) - var(--blockquote-border-size));
   background-color: var(--blockquote-background-color);
 }
@@ -62,10 +59,12 @@ html.dark .header {
   text-decoration: underline;
 }
 
+
 .podcast-container {
   display: grid;
   place-items: center; /* 水平和垂直置中 */
 }
+
 
 .video-wrapper {
   position: relative;

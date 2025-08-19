@@ -10,7 +10,7 @@ testimonials:
     rate: "⭐️⭐️⭐️⭐️⭐️"
     avatar: "/images/avatar-boy.png"
     content: "「作為一名大學生，我對理財的認識還比較淺，但這個Blog讓我學到了很多！作者用淺顯易懂而且帶著白爛的方式講解了很多複雜的理財概念，讓我受益良多。特別是那篇有關0050vsvoo的文章，給了我很大的啟發。強烈推薦給所有年輕人！」"
-
+    
   - designation: "上班族"
     name: "懶得留言"
     rate: "⭐️⭐️⭐️⭐️⭐️"
