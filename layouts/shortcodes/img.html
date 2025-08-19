@@ -1,0 +1,59 @@
+{{/* 
+Smart Image Shortcode with WebP support
+Usage: {{< img src="/images/blog/example.png" alt="Description" >}}
+*/}}
+
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $width := .Get "width" | default "800" -}}
+{{- $height := .Get "height" | default "" -}}
+{{- $class := .Get "class" | default "img-fluid" -}}
+
+{{- if $src -}}
+  {{- $image := "" -}}
+  
+  {{/* Try to get image resource */}}
+  {{- with resources.Get $src -}}
+    {{- $image = . -}}
+  {{- else -}}
+    {{/* Try to get page resource */}}
+    {{- with $.Page.Resources.GetMatch $src -}}
+      {{- $image = . -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- if $image -}}
+    {{/* Check if image is SVG */}}
+    {{- if eq $image.MediaType.SubType "svg" -}}
+      {{/* SVG files cannot be resized, use as-is */}}
+      <img src="{{ $image.RelPermalink }}" 
+           alt="{{ $alt }}" 
+           {{- with $width }} width="{{ . }}"{{ end }}
+           {{- with $height }} height="{{ . }}"{{ end }}
+           class="{{ $class }}"
+           loading="lazy">
+    {{- else -}}
+      {{/* Generate different formats for raster images */}}
+      {{- $webp := $image.Resize (printf "%sx webp q80" $width) -}}
+      {{- $fallback := $image.Resize (printf "%sx q80" $width) -}}
+      
+      <picture>
+        <source srcset="{{ $webp.RelPermalink }}" type="image/webp">
+        <img src="{{ $fallback.RelPermalink }}" 
+             alt="{{ $alt }}" 
+             width="{{ $fallback.Width }}" 
+             height="{{ $fallback.Height }}"
+             class="{{ $class }}"
+             loading="lazy">
+      </picture>
+    {{- end -}}
+  {{- else -}}
+    {{/* Fallback for external or missing images */}}
+    <img src="{{ $src }}" 
+         alt="{{ $alt }}" 
+         {{- with $width }} width="{{ . }}"{{ end }}
+         {{- with $height }} height="{{ . }}"{{ end }}
+         class="{{ $class }}"
+         loading="lazy">
+  {{- end -}}
+{{- end -}}

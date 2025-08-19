@@ -1,0 +1,45 @@
+<meta charset="utf-8" />
+
+<!-- 效能優化：預載入和資源提示 -->
+{{ partial "essentials/performance-head.html" . }}
+
+<!-- Google Scripts -->
+{{ partial "google-scripts.html" . }}
+
+<!-- responsive meta -->
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=5" />
+
+<!-- theme meta -->
+<meta name="theme-name" content="hugoplate" />
+
+<!-- favicon -->
+{{ partialCached "favicon" . }}
+
+<!-- manifest -->
+{{ partialCached "manifest" . }}
+
+<!-- site verifications -->
+{{ partialCached "site-verifications.html" . }}
+
+<!-- opengraph and twitter card -->
+{{ partial "basic-seo.html" . }}
+
+<!-- 結構化資料 (JSON-LD) -->
+{{ partial "structured-data.html" . }}
+
+<!-- custom script -->
+{{ partialCached "custom-script.html" . }}
+
+<!-- google tag manager -->
+{{ partialCached "gtm.html" . }}
+
+<!-- search index -->
+{{ partial "search-index.html" . }}
+
+<!-- Mermaid -->
+{{ partial "mermaid/assets/js" . }}
+
+<!-- 智慧型預取系統 -->
+{{ partial "smart-prefetch.html" . }}

@@ -1,0 +1,58 @@
+{{/* 首頁專用的結構化資料 */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.BaseURL }}#homepage",
+  "url": "{{ site.BaseURL }}",
+  "name": {{ site.Title | jsonify }},
+  "description": {{ site.Params.meta_description | default "專業的財務規劃和理財教育平台，提供實用的投資理財知識與策略" | jsonify }},
+  "inLanguage": "zh-TW",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "{{ site.BaseURL }}#website"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "財務規劃",
+    "description": "個人理財規劃、投資策略、保險規劃等財務知識"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "最新文章",
+    "description": "懶得變有錢部落格的最新財務規劃文章",
+    "itemListElement": [
+      {{- $pages := where .Site.RegularPages "Section" "blog" -}}
+      {{- $recentPosts := first 10 $pages -}}
+      {{- range $index, $post := $recentPosts -}}
+        {{- if $index -}}, {{ end -}}
+        {
+          "@type": "ListItem",
+          "position": {{ add $index 1 }},
+          "item": {
+            "@type": "BlogPosting",
+            "name": {{ $post.Title | jsonify }},
+            "url": "{{ $post.Permalink }}",
+            "datePublished": "{{ $post.PublishDate.Format "2006-01-02T15:04:05Z07:00" }}",
+            "author": {
+              "@type": "Person",
+              "name": {{ ($post.Params.author | default "懶大") | jsonify }}
+            }
+          }
+        }
+      {{- end -}}
+    ]
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "首頁",
+        "item": "{{ site.BaseURL }}"
+      }
+    ]
+  }
+}
+</script>

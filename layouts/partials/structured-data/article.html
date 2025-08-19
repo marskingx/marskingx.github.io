@@ -1,0 +1,109 @@
+{{/* 文章內容的結構化資料 */}}
+{{- $articleType := "BlogPosting" -}}
+{{- $articleSection := "Finance" -}}
+
+{{- if .Params.categories -}}
+  {{- $firstCategory := index .Params.categories 0 -}}
+  {{- if eq $firstCategory "閱讀心得" -}}
+    {{- $articleType = "Review" -}}
+    {{- $articleSection = "Book Review" -}}
+  {{- else if eq $firstCategory "理財" -}}
+    {{- $articleSection = "Financial Planning" -}}
+  {{- else if eq $firstCategory "投資" -}}
+    {{- $articleSection = "Investment" -}}
+  {{- else if eq $firstCategory "保險" -}}
+    {{- $articleSection = "Insurance" -}}
+  {{- else if eq $firstCategory "生活" -}}
+    {{- $articleSection = "Lifestyle" -}}
+  {{- end -}}
+{{- end -}}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": {{ $articleType | jsonify }},
+  "@id": "{{ .Permalink }}#article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  },
+  "headline": {{ .Title | jsonify }},
+  "description": {{ .Description | jsonify }},
+  "inLanguage": "zh-TW",
+  {{- with .Params.image -}}
+  "image": {
+    "@type": "ImageObject",
+    "url": {{ . | absURL | jsonify }},
+    "width": 1200,
+    "height": 630
+  },
+  {{- end -}}
+  "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": {
+    "@type": "Person",
+    "@id": "{{ site.BaseURL }}#founder",
+    "name": {{ (.Params.author | default "懶大") | jsonify }},
+    "description": "財務規劃專家，專注於協助民眾建立正確的理財觀念",
+    "url": "{{ printf "%s%s/" ("authors/" | relLangURL) ((.Params.author | default "懶大") | urlize) }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "{{ site.BaseURL }}#organization",
+    "name": {{ site.Title | jsonify }},
+    "url": "{{ site.BaseURL }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{ (site.Params.logo | default "/favicon.png" | absURL) | jsonify }},
+      "width": 512,
+      "height": 512
+    }
+  },
+  {{- with .Params.categories -}}
+  "articleSection": {{ $articleSection | jsonify }},
+  "about": [
+    {{- range $index, $category := . -}}
+      {{- if $index -}}, {{ end -}}
+      {
+        "@type": "Thing",
+        "name": {{ $category | jsonify }}
+      }
+    {{- end -}}
+  ],
+  {{- end -}}
+  {{- with .Params.tags -}}
+  "keywords": {{ delimit . ", " | jsonify }},
+  {{- end -}}
+  "wordCount": {{ .WordCount }},
+  "timeRequired": "PT{{ math.Ceil (div .WordCount 200.0) }}M",
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "{{ site.BaseURL }}#website"
+  }
+  {{- if and (in .Params.categories "閱讀心得") .Params.rate -}}
+    {{- $cleanRate := .Params.rate | replaceRE "⭐️" "⭐" -}}
+    {{- $ratingValue := len (findRE "⭐" $cleanRate) -}}
+    {{- if and (gt $ratingValue 0) (le $ratingValue 5) -}}
+      {{- $bookTitle := .Title -}}
+      {{- with findRE "《([^》]+)》" .Title -}}
+        {{- $bookTitle = index . 0 | strings.TrimPrefix "《" | strings.TrimSuffix "》" -}}
+      {{- end -}}
+  ,
+  "itemReviewed": {
+    "@type": "Book",
+    "name": {{ $bookTitle | jsonify }},
+    "author": {
+      "@type": "Person",
+      "name": "未知作者"
+    }
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": {{ $ratingValue }},
+    "bestRating": 5,
+    "worstRating": 1
+  }
+    {{- end -}}
+  {{- end -}}
+}
+</script>

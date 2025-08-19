@@ -1,0 +1,10 @@
+{{/* 
+Performance Head: 整合所有效能優化到 head 中
+在 head.html 中引用這個 partial
+*/}}
+
+<!-- 效能優化：資源預載入 -->
+{{ partial "performance-optimization.html" . }}
+
+<!-- 效能優化：關鍵 CSS 載入 -->
+{{ partial "critical-css-loader.html" . }}
