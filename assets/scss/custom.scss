@@ -40,6 +40,15 @@ html.dark .header {
   background-color: #1c1c1c !important;
 }
 
+/* 修復 navbar 和 container 背景色問題 */
+.navbar {
+  background-color: transparent !important;
+}
+
+.header .container {
+  background-color: transparent !important;
+}
+
 /* 提供給blockquote的語法 */
 .article-content blockquote {
   position: relative;
