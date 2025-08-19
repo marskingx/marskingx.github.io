@@ -22,8 +22,8 @@ features:
     button:
       enable: true
       label: "前往Apple Podcast收聽"
-      link: "https://apple.co/3QjLAuv"  
-      
+      link: "https://apple.co/3QjLAuv"
+
   - title: "Spotify Podcast"
     image: "/images/spotify_podcast-1.png"
     content: "**每周三(順利的話)準時更新**"
@@ -45,6 +45,4 @@ features:
       enable: true
       label: "前往Youtube收聽"
       link: "https://www.youtube.com/channel/UC1aV8nIJxkE0s6bWdKQvtUQ"
-
-
 ---

@@ -1,6 +1,6 @@
 file_paths:
-  blog_directory: 'D:/marskingx.github.io/content/blog'
-  reading_list: 'D:/marskingx.github.io/content/pages/reading_list.md'
+  blog_directory: "D:/marskingx.github.io/content/blog"
+  reading_list: "D:/marskingx.github.io/content/pages/reading_list.md"
 
 default_values:
   author: "懶大"

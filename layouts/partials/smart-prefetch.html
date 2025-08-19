@@ -1,6 +1,5 @@
-{{/* 
-Smart Prefetch System: 智慧型預取系統
-根據使用者行為和頁面類型智慧預取資源
+{{/* Smart Prefetch System: 智慧型預取系統
+  根據使用者行為和頁面類型智慧預取資源
 */}}
 
 {{ if hugo.Environment | eq "production" }}
@@ -26,8 +25,8 @@ Smart Prefetch System: 智慧型預取系統
   // 檢查網路條件
   function shouldPrefetch() {
     // 檢查 Data Saver
-    if (PREFETCH_CONFIG.respectDataSaver && 
-        navigator.connection && 
+    if (PREFETCH_CONFIG.respectDataSaver &&
+        navigator.connection &&
         navigator.connection.saveData) {
       return false;
     }
@@ -35,7 +34,7 @@ Smart Prefetch System: 智慧型預取系統
     // 檢查連線速度
     if (navigator.connection) {
       const connection = navigator.connection;
-      const slowConnection = connection.effectiveType === 'slow-2g' || 
+      const slowConnection = connection.effectiveType === 'slow-2g' ||
                            connection.effectiveType === '2g';
       if (slowConnection) return false;
     }
@@ -59,7 +58,7 @@ Smart Prefetch System: 智慧型預取系統
     link.rel = 'prefetch';
     link.href = url;
     link.fetchPriority = priority;
-    
+
     // 預取完成後的清理
     link.onload = link.onerror = () => {
       prefetchQueue.delete(url);
@@ -115,13 +114,13 @@ Smart Prefetch System: 智慧型預取系統
         if (entry.isIntersecting) {
           const link = entry.target;
           const href = link.href;
-          
+
           if (href && href !== window.location.href) {
             // 延遲預取以避免影響當前頁面載入
             setTimeout(() => {
               prefetchResource(href, 'low');
             }, 200);
-            
+
             linkObserver.unobserve(link);
           }
         }

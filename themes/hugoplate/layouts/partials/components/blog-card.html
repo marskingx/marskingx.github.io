@@ -2,7 +2,7 @@
   {{ $image:= .Params.image }}
   {{ if $image }}
     <a href="{{ .RelPermalink }}">
-    {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mb-6 w-full rounded") }}
+      {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mb-6 w-full rounded") }}
     </a>
   {{ end }}
   <h4 class="mb-3">
@@ -13,7 +13,6 @@
   {{ $categories:= .Params.categories }}
   {{ if $categories }}
     <ul class="mb-4">
-
       <li class="mr-4 inline-block">
         <i class="fa-regular fa-folder mr-1"></i>
         {{ range $i,$p:= $categories }}
@@ -27,11 +26,12 @@
         {{ end }}
       </li>
       <li class="mr-4 inline-block">
-              <i class="fa-regular fa-clock mr-2"></i>
-              {{ time.Format ":date_long" .PublishDate }}
-            </li>
+        <i class="fa-regular fa-clock mr-2"></i>
+        {{ time.Format ":date_long" .PublishDate }}
+      </li>
     </ul>
   {{ end }}
+
 
   <p class="mb-6">{{ .Summary }}</p>
   <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">

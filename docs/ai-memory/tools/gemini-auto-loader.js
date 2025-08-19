@@ -5,13 +5,13 @@
  * 使用 Google Gemini API 自動載入專案記憶
  */
 
-const { GoogleGenerativeAI } = require('@google/generative-ai');
-const fs = require('fs');
+const { GoogleGenerativeAI } = require("@google/generative-ai");
+const fs = require("fs");
 
 class GeminiMemoryLoader {
   constructor(apiKey) {
     if (!apiKey) {
-      throw new Error('請提供 Gemini API Key');
+      throw new Error("請提供 Gemini API Key");
     }
     this.genAI = new GoogleGenerativeAI(apiKey);
     this.memoryContent = `# 專案記憶 - 懶得變有錢部落格
@@ -437,40 +437,42 @@ target = 'css'
 - 為未來支援更多 AI 平台建立了標準化流程
 **標籤**: #gemini #auto-load #cross-platform #api-integration`;
   }
-  
+
   // 建立包含記憶的模型
-  createModelWithMemory(modelName = 'gemini-pro') {
+  createModelWithMemory(modelName = "gemini-pro") {
     return this.genAI.getGenerativeModel({
       model: modelName,
       systemInstruction: {
-        parts: [{
-          text: `你是一個專業的開發助手。以下是「懶得變有錢」專案的完整記憶，請在所有回答中參考這些資訊：
+        parts: [
+          {
+            text: `你是一個專業的開發助手。以下是「懶得變有錢」專案的完整記憶，請在所有回答中參考這些資訊：
 
 ${this.memoryContent}
 
-請確保你理解了專案的技術棧、重要決策和最佳實踐，並在協助開發時參考這些背景資訊。`
-        }]
-      }
+請確保你理解了專案的技術棧、重要決策和最佳實踐，並在協助開發時參考這些背景資訊。`,
+          },
+        ],
+      },
     });
   }
-  
+
   // 建立包含記憶的對話
-  async createChatWithMemory(modelName = 'gemini-pro') {
+  async createChatWithMemory(modelName = "gemini-pro") {
     const model = this.createModelWithMemory(modelName);
     return model.startChat();
   }
-  
+
   // 驗證記憶載入
-  async validateMemoryLoading(modelName = 'gemini-pro') {
+  async validateMemoryLoading(modelName = "gemini-pro") {
     const chat = await this.createChatWithMemory(modelName);
-    
+
     const result = await chat.sendMessage(
-      "請簡要總結我的專案技術棧和最近的重要決策，以確認你已正確載入記憶。"
+      "請簡要總結我的專案技術棧和最近的重要決策，以確認你已正確載入記憶。",
     );
-    
+
     return result.response.text();
   }
-  
+
   // 更新記憶內容
   updateMemory(newMemoryContent) {
     this.memoryContent = newMemoryContent;
@@ -481,30 +483,31 @@ ${this.memoryContent}
 async function example() {
   // 從環境變數獲取 API Key
   const apiKey = process.env.GEMINI_API_KEY;
-  
+
   if (!apiKey) {
-    console.log('請設定 GEMINI_API_KEY 環境變數');
+    console.log("請設定 GEMINI_API_KEY 環境變數");
     console.log('export GEMINI_API_KEY="your-api-key-here"');
     return;
   }
-  
+
   try {
     const loader = new GeminiMemoryLoader(apiKey);
-    
+
     // 驗證記憶載入
-    console.log('🧠 驗證記憶載入...');
+    console.log("🧠 驗證記憶載入...");
     const validation = await loader.validateMemoryLoading();
-    console.log('驗證結果:', validation);
-    
+    console.log("驗證結果:", validation);
+
     // 建立對話
     const chat = await loader.createChatWithMemory();
-    
+
     // 範例對話
-    const result = await chat.sendMessage("我的 Hugo 網站建置時間很長，有什麼優化建議？");
-    console.log('\n回答:', result.response.text());
-    
+    const result = await chat.sendMessage(
+      "我的 Hugo 網站建置時間很長，有什麼優化建議？",
+    );
+    console.log("\n回答:", result.response.text());
   } catch (error) {
-    console.error('錯誤:', error.message);
+    console.error("錯誤:", error.message);
   }
 }
 

@@ -1,161 +1,175 @@
 {{ define "main" }}
-<section class="section pt-7">
-  <div class="container">
-    <div class="row justify-center">
-      <div class="mb-4">
-        <!-- Breadcrumb -->
-        {{ partial "components/breadcrumb.html" . }}
-      </div>
-      <article class="lg:col-10">
-        {{/* Display post image if available */}}
-        {{ $image:= .Params.image }}
-        {{ if $image }}
-        <div class="mb-10">
-          {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full rounded") }}
+  <section class="section pt-7">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="mb-4">
+          <!-- Breadcrumb -->
+          {{ partial "components/breadcrumb.html" . }}
         </div>
-        {{ end }}
-        <!-- Post Title -->
-        <h1 class="h2 mb-4">
-          {{ .Title }}
-        </h1>
-        <!-- Post-meta -->
-        <ul class="mb-4">
-          <!-- Author -->
-          {{ with .Params.author }}
-          {{ if ne . "" }}
-          <li class="mr-4 inline-block">
-            <a href="{{ `authors/` | relLangURL }}{{ . | urlize }}/">
-              <i class="fa-regular fa-circle-user mr-2"></i>{{ . }}
-            </a>
-          </li>
+        <article class="lg:col-10">
+          {{/* Display post image if available */}}
+          {{ $image:= .Params.image }}
+          {{ if $image }}
+            <div class="mb-10">
+              {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full rounded") }}
+            </div>
           {{ end }}
-          {{ end }}
-          <!-- Categories -->
-          {{ $categories:= .Params.categories }}
-          {{ if $categories }}
-          <li class="mr-4 inline-block">
-            <i class="fa-regular fa-folder mr-2"></i>
-            {{ range $i,$p:= $categories }}
-            <a href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/" class="">{{ . | humanize }}{{ if ne $i
-              (sub (len $categories) 1) }}
-              {{ "," }}
+          <!-- Post Title -->
+          <h1 class="h2 mb-4">
+            {{ .Title }}
+          </h1>
+          <!-- Post-meta -->
+          <ul class="mb-4">
+            <!-- Author -->
+            {{ with .Params.author }}
+              {{ if ne . "" }}
+                <li class="mr-4 inline-block">
+                  <a href="{{ `authors/` | relLangURL }}{{ . | urlize }}/">
+                    <i class="fa-regular fa-circle-user mr-2"></i>{{ . }}
+                  </a>
+                </li>
               {{ end }}
-            </a>
             {{ end }}
-          </li>
-          {{ end }}
-          <!-- Last Updated Date -->
-          <li class="mr-4 inline-block">
-            <i class="fa-regular fa-clock mr-2"></i>
-            {{ T "last_updated_on" }} {{ time.Format ":date_long" .Lastmod }}
-          </li>
-          <!-- Reading Time -->
-          <li class="mr-4 inline-block">
-            <i class="fa-solid fa-stopwatch mr-2"></i>
-            {{ .ReadingTime }} {{ T "reading_time" }}
-          </li>
-        </ul>
-        <!-- Post Content -->
-        <div class="content mb-10">
-          <!-- Table of Contents -->
-          {{ partial "toc.html" (dict "Class" "blog" "Collapsed" false "TableOfContents" .TableOfContents ) }}
-          {{ .Content }}
-          <!-- Podcast footer partial -->
-          {{ partial "podcast-footer.html" . }}
-        </div>
-        <!-- Tags and Social Share -->
-        <div class="row items-start justify-between">
-          <!-- Tags -->
-          {{ $tags:= .Params.tags }}
-          {{ if $tags }}
-          <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
-            <h5 class="mr-3">{{ T "tags" }} :</h5>
-            <ul>
-              {{ range $tags }}
-              <li class="inline-block">
-                <a class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 block rounded px-3 py-1 hover:text-white"
-                  href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/">
-                  {{ . | humanize }}
-                </a>
+            <!-- Categories -->
+            {{ $categories:= .Params.categories }}
+            {{ if $categories }}
+              <li class="mr-4 inline-block">
+                <i class="fa-regular fa-folder mr-2"></i>
+                {{ range $i,$p:= $categories }}
+                  <a
+                    href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"
+                    class=""
+                    >{{ . | humanize }}{{ if ne $i
+                      (sub (len $categories) 1)
+                    }}
+                      {{ "," }}
+                    {{ end }}
+                  </a>
+                {{ end }}
               </li>
-              {{ end }}
-            </ul>
+            {{ end }}
+            <!-- Last Updated Date -->
+            <li class="mr-4 inline-block">
+              <i class="fa-regular fa-clock mr-2"></i>
+              {{ T "last_updated_on" }}
+              {{ time.Format ":date_long" .Lastmod }}
+            </li>
+            <!-- Reading Time -->
+            <li class="mr-4 inline-block">
+              <i class="fa-solid fa-stopwatch mr-2"></i>
+              {{ .ReadingTime }}
+              {{ T "reading_time" }}
+            </li>
+          </ul>
+          <!-- Post Content -->
+          <div class="content mb-10">
+            <!-- Table of Contents -->
+            {{ partial "toc.html" (dict "Class" "blog" "Collapsed" false "TableOfContents" .TableOfContents ) }}
+            {{ .Content }}
+            <!-- Podcast footer partial -->
+            {{ partial "podcast-footer.html" . }}
           </div>
+          <!-- Tags and Social Share -->
+          <div class="row items-start justify-between">
+            <!-- Tags -->
+            {{ $tags:= .Params.tags }}
+            {{ if $tags }}
+              <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
+                <h5 class="mr-3">{{ T "tags" }} :</h5>
+                <ul>
+                  {{ range $tags }}
+                    <li class="inline-block">
+                      <a
+                        class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 block rounded px-3 py-1 hover:text-white"
+                        href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/">
+                        {{ . | humanize }}
+                      </a>
+                    </li>
+                  {{ end }}
+                </ul>
+              </div>
+            {{ end }}
+            <!-- Social Share links -->
+            <div class="lg:col-5 flex items-center">
+              <h5 class="mr-3">{{ T "fallow" }} :</h5>
+              <ul class="social-icons">
+                {{ range site.Data.social.main }}
+                  <li>
+                    <a
+                      target="_blank"
+                      aria-label="{{ .name }}"
+                      rel="nofollow noopener"
+                      href="{{ .link | safeURL }}">
+                      <i class="{{ .icon }}"></i>
+                    </a>
+                  </li>
+                {{ end }}
+              </ul>
+            </div>
+          </div>
+          {{/* Create a scratchpad for the schema */}}
+          {{ $schema := newScratch }}
+
+          {{/* Base Schema */}}
+          {{ $schema.Set "data" (dict "@context" "https://schema.org" "@type" "BlogPosting") }}
+          {{ $schemaData := $schema.Get "data" }}
+          {{ $schemaData = merge $schemaData (dict "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)) }}
+          {{ $schemaData = merge $schemaData (dict "headline" .Title) }}
+          {{ $schemaData = merge $schemaData (dict "description" .Description) }}
+          {{ with .Params.image }}
+            {{ $schemaData = merge $schemaData (dict "image" (. | absURL)) }}
           {{ end }}
-          <!-- Social Share links -->
-          <div class="lg:col-5 flex items-center">
-            <h5 class="mr-3">{{ T "fallow" }} :</h5>
-            <ul class="social-icons">
-              {{ range site.Data.social.main}}
-              <li>
-                <a target="_blank" aria-label="{{ .name }}" rel="nofollow noopener" href="{{ .link | safeURL }}">
-                  <i class="{{ .icon }}"></i>
-                </a>
-              </li>
+          {{ $schemaData = merge $schemaData (dict "datePublished" (.PublishDate.Format "2006-01-02T15:04:05Z07:00")) }}
+          {{ $schemaData = merge $schemaData (dict "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")) }}
+
+          {{/* Author - ONLY if author param exists and is not empty */}}
+          {{ with .Params.author }}
+            {{ if ne . "" }}
+              {{ $schemaData = merge $schemaData (dict "author" (dict "@type" "Person" "name" . "url" (printf "%s%s/"
+                ("authors/" | relLangURL) (. | urlize))))
+              }}
+            {{ end }}
+          {{ end }}
+
+          {{/* Publisher */}}
+          {{ $logoURL := site.Params.logo | default "/favicon.png" | absURL }}
+          {{ $publisher := dict "@type" "Organization" "name" site.Title "logo" (dict "@type" "ImageObject" "url"
+            $logoURL)
+          }}
+          {{ $schemaData = merge $schemaData (dict "publisher" $publisher) }}
+
+          {{/* Categories & Tags */}}
+          {{ with .Params.categories }}
+            {{ $schemaData = merge $schemaData (dict "articleSection" (index . 0)) }}
+          {{ end }}
+          {{ with .Params.tags }}
+            {{ $schemaData = merge $schemaData (dict "keywords" (delimit . ", ")) }}
+          {{ end }}
+          {{ $schemaData = merge $schemaData (dict "wordCount" .WordCount) }}
+          {{/* Review - ONLY for book reviews with a rating */}}
+          {{ if and (in .Params.categories "閱讀心得") .Params.rate }}
+            {{ $cleanRate := .Params.rate | replaceRE "⭐️" "⭐" }}
+            {{ $ratingValue := len (findRE "⭐" $cleanRate) }}
+            {{ if and (gt $ratingValue 0) (le $ratingValue 5) }}
+              {{ $bookTitle := .Title }}
+              {{ with findRE "《([^》]+)》" .Title }}
+                {{ $bookTitle = index . 0 | strings.TrimPrefix "《" | strings.TrimSuffix "》" }}
               {{ end }}
-            </ul>
-          </div>
-        </div>
-        {{/* Create a scratchpad for the schema */}}
-        {{ $schema := newScratch }}
 
-        {{/* Base Schema */}}
-        {{ $schema.Set "data" (dict "@context" "https://schema.org" "@type" "BlogPosting") }}
-        {{ $schemaData := $schema.Get "data" }}
-        {{ $schemaData = merge $schemaData (dict "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)) }}
-        {{ $schemaData = merge $schemaData (dict "headline" .Title) }}
-        {{ $schemaData = merge $schemaData (dict "description" .Description) }}
-        {{ with .Params.image }}
-        {{ $schemaData = merge $schemaData (dict "image" (. | absURL)) }}
-        {{ end }}
-        {{ $schemaData = merge $schemaData (dict "datePublished" (.PublishDate.Format "2006-01-02T15:04:05Z07:00")) }}
-        {{ $schemaData = merge $schemaData (dict "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")) }}
+              {{ $reviewData := dict "@type" "Review" }}
+              {{ $reviewData = merge $reviewData (dict "itemReviewed" (dict "@type" "Book" "name" $bookTitle)) }}
+              {{ with .Params.author }}
+                {{ if ne . "" }}
+                  {{ $reviewData = merge $reviewData (dict "author" (dict "@type" "Person" "name" .)) }}
+                {{ end }}
+              {{ end }}
+              {{ $reviewData = merge $reviewData (dict "reviewRating" (dict "@type" "Rating" "ratingValue" $ratingValue
+                "bestRating" 5))
+              }}
 
-        {{/* Author - ONLY if author param exists and is not empty */}}
-        {{ with .Params.author }}
-        {{ if ne . "" }}
-        {{ $schemaData = merge $schemaData (dict "author" (dict "@type" "Person" "name" . "url" (printf "%s%s/"
-        ("authors/" | relLangURL) (. | urlize)))) }}
-        {{ end }}
-        {{ end }}
-
-        {{/* Publisher */}}
-        {{ $logoURL := site.Params.logo | default "/favicon.png" | absURL }}
-        {{ $publisher := dict "@type" "Organization" "name" site.Title "logo" (dict "@type" "ImageObject" "url"
-        $logoURL) }}
-        {{ $schemaData = merge $schemaData (dict "publisher" $publisher) }}
-
-        {{/* Categories & Tags */}}
-        {{ with .Params.categories }}
-        {{ $schemaData = merge $schemaData (dict "articleSection" (index . 0)) }}
-        {{ end }}
-        {{ with .Params.tags }}
-        {{ $schemaData = merge $schemaData (dict "keywords" (delimit . ", ")) }}
-        {{ end }}
-        {{ $schemaData = merge $schemaData (dict "wordCount" .WordCount) }}
-        {{/* Review - ONLY for book reviews with a rating */}}
-        {{ if and (in .Params.categories "閱讀心得") .Params.rate }}
-        {{ $cleanRate := .Params.rate | replaceRE "⭐️" "⭐" }}
-        {{ $ratingValue := len (findRE "⭐" $cleanRate) }}
-        {{ if and (gt $ratingValue 0) (le $ratingValue 5) }}
-        {{ $bookTitle := .Title }}
-        {{ with findRE "《([^》]+)》" .Title }}
-        {{ $bookTitle = index . 0 | strings.TrimPrefix "《" | strings.TrimSuffix "》" }}
-        {{ end }}
-
-        {{ $reviewData := dict "@type" "Review" }}
-        {{ $reviewData = merge $reviewData (dict "itemReviewed" (dict "@type" "Book" "name" $bookTitle)) }}
-        {{ with .Params.author }}
-        {{ if ne . "" }}
-        {{ $reviewData = merge $reviewData (dict "author" (dict "@type" "Person" "name" .)) }}
-        {{ end }}
-        {{ end }}
-        {{ $reviewData = merge $reviewData (dict "reviewRating" (dict "@type" "Rating" "ratingValue" $ratingValue
-        "bestRating" 5)) }}
-
-        {{ $schemaData = merge $schemaData (dict "review" $reviewData) }}
-        {{ end }}
-        {{ end }}
+              {{ $schemaData = merge $schemaData (dict "review" $reviewData) }}
+            {{ end }}
+          {{ end }}
 
         <script type="application/ld+json">
 {
@@ -213,53 +227,55 @@
   {{ end }}
   "wordCount": {{ .WordCount }}
 }
-        </script>
+        </script> {{ partial "breadcrumb-jsonld.html" . }}
 
-        {{ partial "breadcrumb-jsonld.html" . }}
-
-      </article>
-    </div>
-    <!-- Related posts -->
-    {{ $curr := . }}
-    {{ $sameCategoryPosts := slice }}
-
-    <!-- 1. Find posts with same categories -->
-    {{ with .Params.categories }}
-    {{ range . }}
-    {{ $category := . }}
-    {{ $categoryPosts := where site.RegularPages ".Params.categories" "intersect" (slice $category) }}
-    {{ $sameCategoryPosts = $sameCategoryPosts | union $categoryPosts }}
-    {{ end }}
-    {{ end }}
-
-    <!-- Remove current post from category matches -->
-    {{ $sameCategoryPosts = where $sameCategoryPosts "Title" "ne" $curr.Title }}
-
-    <!-- 2. From posts with same categories, find those with matching tags -->
-    {{ $relatedPosts := slice }}
-    {{ with .Params.tags }}
-    {{ range . }}
-    {{ $tag := . }}
-    {{ $tagMatches := where $sameCategoryPosts ".Params.tags" "intersect" (slice $tag) }}
-    {{ $relatedPosts = $relatedPosts | union $tagMatches }}
-    {{ end }}
-    {{ end }}
-
-    <!-- 3. Sort by date (newest first) and get first 3 -->
-    {{ $finalPosts := $relatedPosts | first 3 }}
-
-    {{ if gt (len $finalPosts) 0 }}
-    <div class="mt-20">
-      <h2 class="h3 mb-8 text-center">{{ T "related_posts" }}</h2>
-      <div class="row justify-center">
-        {{ range $finalPosts }}
-        <div class="lg:col-4 mb-5">
-          {{ partial "components/blog-card.html" . }}
-        </div>
-        {{ end }}
+        </article>
       </div>
+      <!-- Related posts -->
+      {{ $curr := . }}
+      {{ $sameCategoryPosts := slice }}
+
+
+      <!-- 1. Find posts with same categories -->
+      {{ with .Params.categories }}
+        {{ range . }}
+          {{ $category := . }}
+          {{ $categoryPosts := where site.RegularPages ".Params.categories" "intersect" (slice $category) }}
+          {{ $sameCategoryPosts = $sameCategoryPosts | union $categoryPosts }}
+        {{ end }}
+      {{ end }}
+
+
+      <!-- Remove current post from category matches -->
+      {{ $sameCategoryPosts = where $sameCategoryPosts "Title" "ne" $curr.Title }}
+
+
+      <!-- 2. From posts with same categories, find those with matching tags -->
+      {{ $relatedPosts := slice }}
+      {{ with .Params.tags }}
+        {{ range . }}
+          {{ $tag := . }}
+          {{ $tagMatches := where $sameCategoryPosts ".Params.tags" "intersect" (slice $tag) }}
+          {{ $relatedPosts = $relatedPosts | union $tagMatches }}
+        {{ end }}
+      {{ end }}
+
+
+      <!-- 3. Sort by date (newest first) and get first 3 -->
+      {{ $finalPosts := $relatedPosts | first 3 }}
+
+      {{ if gt (len $finalPosts) 0 }}
+        <div class="mt-20">
+          <h2 class="h3 mb-8 text-center">{{ T "related_posts" }}</h2>
+          <div class="row justify-center">
+            {{ range $finalPosts }}
+              <div class="lg:col-4 mb-5">
+                {{ partial "components/blog-card.html" . }}
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
     </div>
-    {{ end }}
-  </div>
-</section>
+  </section>
 {{ end }}

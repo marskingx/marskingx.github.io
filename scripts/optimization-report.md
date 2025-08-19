@@ -1,13 +1,16 @@
 # 結構化資料優化報告
+
 生成時間: 2025-08-18 19:31:41
 
 ## 📊 統計資訊
+
 - ✅ 成功驗證: 136 個
 - ❌ 錯誤: 0 個
 - ⚠️ 警告: 412 個
 - 💡 建議: 0 個
 
 ## ⚠️ 警告詳情
+
 - blog\0050-vs-voo-2024-performance-showdown\index.html: 描述過短 (85 字符)，建議至少120字符
 - blog\0050-vs-voo-2024-performance-showdown\index.html: 圖片 URL 建議使用 HTTPS
 - blog\0050-vs-voo-2024-performance-showdown\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
@@ -422,12 +425,15 @@
 - blog\the-best-selling-time-for-etf-investment-let-demand-guide-investment-decisions\index.html: 圖片格式建議使用 .jpg, .png 或 .webp
 
 ## 🎯 最佳實踐建議
+
 1. **SEO 優化**:
+
    - 標題控制在 30-60 字符
    - 描述控制在 120-160 字符
    - 添加相關關鍵字
 
 2. **效能優化**:
+
    - 使用 HTTPS 圖片 URL
    - 優先使用 WebP 格式圖片
    - 壓縮圖片大小

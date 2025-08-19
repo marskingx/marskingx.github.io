@@ -1,12 +1,12 @@
-{{/* 
-Performance Optimization: 資源預載入和 DNS 優化
-這個 partial 提供積極的資源預載入策略
+{{/* Performance Optimization: 資源預載入和 DNS 優化
+  這個 partial 提供積極的資源預載入策略
 */}}
 
+
 <!-- DNS 預解析和連線預建立 -->
-{{ $external_domains := slice 
+{{ $external_domains := slice
   "fonts.googleapis.com"
-  "fonts.gstatic.com" 
+  "fonts.gstatic.com"
   "www.googletagmanager.com"
   "www.google-analytics.com"
   "cdn.jsdelivr.net"
@@ -15,28 +15,45 @@ Performance Optimization: 資源預載入和 DNS 優化
 }}
 
 {{ range $external_domains }}
-<link rel="dns-prefetch" href="//{.}">
-<link rel="preconnect" href="https://{{.}}" crossorigin>
+  <link rel="dns-prefetch" href="//{.}" />
+  <link rel="preconnect" href="https://{{ . }}" crossorigin />
 {{ end }}
+
 
 <!-- 關鍵 CSS 預載入 -->
 {{ $critical_css := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify }}
-<link rel="preload" href="{{ $critical_css.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="{{ $critical_css.RelPermalink }}"></noscript>
+<link
+  rel="preload"
+  href="{{ $critical_css.RelPermalink }}"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'" />
+<noscript
+  ><link rel="stylesheet" href="{{ $critical_css.RelPermalink }}"
+/></noscript>
 
 <!-- 關鍵字型預載入 -->
 {{ if site.Params.google_font_family }}
-<link rel="preload" href="https://fonts.googleapis.com/css2?family={{ site.Params.google_font_family | urlquery }}&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link
+    rel="preload"
+    href="https://fonts.googleapis.com/css2?family={{ site.Params.google_font_family | urlquery }}&display=swap"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'" />
 {{ end }}
+
 
 <!-- Logo 和關鍵圖片預載入 -->
 {{ with site.Params.logo }}
-{{ $logo := resources.Get . }}
-{{ if $logo }}
-  {{ $logo_webp := $logo.Resize "160x webp" }}
-  <link rel="preload" href="{{ $logo_webp.RelPermalink }}" as="image" type="image/webp">
+  {{ $logo := resources.Get . }}
+  {{ if $logo }}
+    {{ $logo_webp := $logo.Resize "160x webp" }}
+    <link
+      rel="preload"
+      href="{{ $logo_webp.RelPermalink }}"
+      as="image"
+      type="image/webp" />
+  {{ end }}
 {{ end }}
-{{ end }}
+
 
 <!-- 首頁橫幅圖片預載入 -->
 {{ if eq .Type "homepage" }}
@@ -44,56 +61,65 @@ Performance Optimization: 資源預載入和 DNS 優化
     {{ $banner := resources.Get . }}
     {{ if $banner }}
       {{ $banner_webp := $banner.Resize "1200x webp q80" }}
-      <link rel="preload" href="{{ $banner_webp.RelPermalink }}" as="image" type="image/webp">
+      <link
+        rel="preload"
+        href="{{ $banner_webp.RelPermalink }}"
+        as="image"
+        type="image/webp" />
     {{ end }}
   {{ end }}
 {{ end }}
 
+
 <!-- 關鍵 JavaScript 預載入 -->
-{{ $critical_js := slice 
+{{ $critical_js := slice
   "js/search.js"
-  "plugins/cookie.js" 
+  "plugins/cookie.js"
 }}
 
 {{ range $critical_js }}
   {{ $js := resources.Get . }}
   {{ if $js }}
     {{ $js_min := $js | resources.Minify }}
-    <link rel="modulepreload" href="{{ $js_min.RelPermalink }}">
+    <link rel="modulepreload" href="{{ $js_min.RelPermalink }}" />
   {{ end }}
 {{ end }}
 
+
 <!-- 下一頁預取 (適用於部落格文章) -->
 {{ if and .NextInSection (eq .Type "blog") }}
-<link rel="prefetch" href="{{ .NextInSection.RelPermalink }}">
+  <link rel="prefetch" href="{{ .NextInSection.RelPermalink }}" />
 {{ end }}
 
+
 <!-- Resource Hints 設定 -->
-<meta http-equiv="X-DNS-Prefetch-Control" content="on">
+<meta http-equiv="X-DNS-Prefetch-Control" content="on" />
 
 <!-- Early Hints 支援 -->
 {{ if hugo.Environment | eq "production" }}
-<script>
-// Critical Resource Priority
-if ('fetchpriority' in HTMLLinkElement.prototype) {
-  document.head.querySelectorAll('link[rel="preload"]').forEach(link => {
-    if (link.as === 'style' || link.as === 'script') {
-      link.fetchPriority = 'high';
+  <script>
+    // Critical Resource Priority
+    if ("fetchpriority" in HTMLLinkElement.prototype) {
+      document.head.querySelectorAll('link[rel="preload"]').forEach((link) => {
+        if (link.as === "style" || link.as === "script") {
+          link.fetchPriority = "high";
+        }
+      });
     }
-  });
-}
-</script>
+  </script>
 {{ end }}
+
 
 <!-- Service Worker 註冊 -->
 {{ if hugo.Environment | eq "production" }}
-<script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js')
-      .then(registration => console.log('SW registered'))
-      .catch(error => console.log('SW registration failed'));
-  });
-}
-</script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker
+          .register("/sw.js")
+          .then((registration) => console.log("SW registered"))
+          .catch((error) => console.log("SW registration failed"));
+      });
+    }
+  </script>
 {{ end }}
