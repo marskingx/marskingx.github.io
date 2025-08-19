@@ -15,70 +15,30 @@ from bs4 import BeautifulSoup
 import argparse
 from typing import List, Dict, Any
 from datetime import datetime
-import sys
-
-import yaml
 
 class EnhancedValidator:
-    def __init__(self, public_dir: str = "public", content_dir: str = "content"):
+    def __init__(self, public_dir: str = "public"):
         self.public_dir = Path(public_dir)
-        self.content_dir = Path(content_dir)
         self.errors = []
         self.warnings = []
         self.suggestions = []
         self.success_count = 0
-
-    def find_source_markdown(self, html_file_path: Path) -> Path | None:
-        """根據 HTML 檔案路徑找到對應的 Markdown 原始檔"""
-        try:
-            # 從 HTML 路徑中提取文章的 slug
-            slug = html_file_path.parent.name
-            # 在 content/blog 目錄下尋找對應的 .md 檔案
-            # 這是一個簡化的假設，可能需要根據您的 URL 結構進行調整
-            for md_file in self.content_dir.glob(f"blog/{slug}.md"):
-                return md_file
-            # 如果找不到，嘗試另一種常見的模式
-            for md_file in self.content_dir.glob(f"blog/**/{slug}.md"):
-                return md_file
-            # 再嘗試直接比對檔名 (不含日期)
-            clean_slug = re.sub(r'^\\d{4}-\\d{2}-\\d{2}-', '', slug)
-            for md_file in self.content_dir.glob(f"blog/**/{clean_slug}.md"):
-                return md_file
-        except Exception as e:
-            self.warnings.append(f"尋找原始檔時出錯 {html_file_path}: {e}")
-        return None
-
-    def get_front_matter(self, md_file: Path) -> Dict[str, Any] | None:
-        """從 Markdown 檔案中解析 Front Matter"""
-        try:
-            with open(md_file, 'r', encoding='utf-8') as f:
-                content = f.read()
-            
-            match = re.search(r'^---\s*\n(.*?)\n---\s*\n', content, re.DOTALL)
-            if match:
-                return yaml.safe_load(match.group(1))
-        except Exception as e:
-            self.warnings.append(f"解析 Front Matter 時出錯 {md_file}: {e}")
-        return None
-
-    def validate_seo_optimization(self, data: Dict[Any, Any], file_path: Path, soup: BeautifulSoup) -> bool:
+        
+    def validate_seo_optimization(self, data: Dict[Any, Any], file_path: Path) -> bool:
         """驗證 SEO 優化相關的結構化資料"""
         relative_path = file_path.relative_to(self.public_dir)
         is_valid = True
         
-        source_md = self.find_source_markdown(file_path)
-        front_matter = self.get_front_matter(source_md) if source_md else {}
-        
         if data.get('@type') == 'BlogPosting':
-            # 使用 Front Matter 的標題和描述進行驗證
-            headline = front_matter.get('title', data.get('headline', ''))
-            description = front_matter.get('description', data.get('description', ''))
-
+            # 檢查標題長度
+            headline = data.get('headline', '')
             if len(headline) > 60:
                 self.warnings.append(f"{relative_path}: 標題過長 ({len(headline)} 字符)，建議控制在60字符內")
             elif len(headline) < 30:
                 self.warnings.append(f"{relative_path}: 標題過短 ({len(headline)} 字符)，建議至少30字符")
             
+            # 檢查描述長度
+            description = data.get('description', '')
             if description:
                 if len(description) > 160:
                     self.warnings.append(f"{relative_path}: 描述過長 ({len(description)} 字符)，建議控制在160字符內")
@@ -88,37 +48,36 @@ class EnhancedValidator:
                 self.errors.append(f"{relative_path}: 缺少描述 (description)")
                 is_valid = False
             
+            # 檢查圖片
             if 'image' not in data:
                 self.warnings.append(f"{relative_path}: 建議添加特色圖片以提升 SEO")
             
+            # 檢查關鍵字
             keywords = data.get('keywords', '')
             if not keywords:
                 self.suggestions.append(f"{relative_path}: 建議添加關鍵字 (keywords) 以提升 SEO")
             
+            # 檢查文章長度
             word_count = data.get('wordCount', 0)
             if word_count < 300:
                 self.warnings.append(f"{relative_path}: 文章字數較少 ({word_count} 字)，建議至少300字")
         
         return is_valid
     
-    def validate_performance_optimization(self, data: Dict[Any, Any], file_path: Path, soup: BeautifulSoup) -> bool:
+    def validate_performance_optimization(self, data: Dict[Any, Any], file_path: Path) -> bool:
         """驗證效能優化相關的結構化資料"""
         relative_path = file_path.relative_to(self.public_dir)
         
-        # 檢查 og:image meta 標籤
-        og_image_tag = soup.find('meta', property='og:image')
-        if og_image_tag and og_image_tag.get('content'):
-            image_url = og_image_tag['content']
-            if not image_url.startswith('https://'):
-                self.warnings.append(f"{relative_path}: 圖片 URL 建議使用 HTTPS")
-            
-            if not any(image_url.lower().endswith(ext) for ext in ['.jpg', '.jpeg', '.png', '.webp']):
-                self.warnings.append(f"{relative_path}: 圖片格式建議使用 .jpg, .png 或 .webp")
-
-        source_md = self.find_source_markdown(file_path)
-        front_matter = self.get_front_matter(source_md) if source_md else {}
-        if front_matter and front_matter.get('image') and isinstance(front_matter.get('image'), str) and front_matter.get('image').startswith('http://'):
-             self.warnings.append(f"{relative_path}: 圖片 URL 建議使用 HTTPS")
+        # 檢查圖片 URL
+        if 'image' in data:
+            image_url = data['image']
+            if isinstance(image_url, str):
+                if not image_url.startswith('https://'):
+                    self.warnings.append(f"{relative_path}: 圖片 URL 建議使用 HTTPS")
+                
+                # 檢查圖片格式
+                if not any(image_url.lower().endswith(ext) for ext in ['.jpg', '.jpeg', '.png', '.webp']):
+                    self.warnings.append(f"{relative_path}: 圖片格式建議使用 .jpg, .png 或 .webp")
         
         return True
     
@@ -260,9 +219,9 @@ class EnhancedValidator:
                 data = json.loads(script.string)
                 
                 # 執行各種驗證
-                if not self.validate_seo_optimization(data, file_path, soup):
+                if not self.validate_seo_optimization(data, file_path):
                     file_valid = False
-                if not self.validate_performance_optimization(data, file_path, soup):
+                if not self.validate_performance_optimization(data, file_path):
                     file_valid = False
                 if not self.validate_accessibility(data, file_path):
                     file_valid = False
@@ -298,18 +257,14 @@ class EnhancedValidator:
         
         return all_valid
 
-import yaml
-
 def main():
-    sys.stdout.reconfigure(encoding='utf-8')
     parser = argparse.ArgumentParser(description='增強版結構化資料驗證工具')
     parser.add_argument('--public-dir', default='public', help='public 目錄路徑')
-    parser.add_argument('--content-dir', default='content', help='content 目錄路徑')
     parser.add_argument('--generate-report', action='store_true', help='生成優化報告')
     
     args = parser.parse_args()
     
-    validator = EnhancedValidator(args.public_dir, args.content_dir)
+    validator = EnhancedValidator(args.public_dir)
     
     print("🚀 開始增強版結構化資料驗證...")
     is_valid = validator.validate_all_enhanced()
