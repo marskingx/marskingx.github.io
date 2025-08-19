@@ -1,9 +1,9 @@
 {
-  "name": "hugoplate",
-  "description": "hugo tailwindcss boilerplate",
-  "version": "1.15.1",
+  "name": "lazytoberich-blog",
+  "description": "懶得變有錢理財部落格 - Hugo + TailwindCSS + 圖片優化系統",
+  "version": "2.0.0",
   "license": "MIT",
-  "author": "zeon.studio",
+  "author": "懶大 <lazytoberich@gmail.com>",
   "scripts": {
     "dev": "hugo server",
     "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic",
