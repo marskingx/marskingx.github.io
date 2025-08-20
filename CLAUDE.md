@@ -173,7 +173,13 @@ slug: seo-friendly-url-slug    # SEO 友善 URL
 - 主分支: `main`
 - 提交前確保建置成功
 - 使用有意義的提交訊息格式
-- 定期推送到 GitHub 觸發自動部署
+- 由使用者決定推送時機（Claude 不自動 push）
+
+### Claude Code 工作流程設定
+- **自動提交**: ✅ Claude 完成任務後自動執行 `git commit`
+- **自動推送**: ❌ Claude 不會自動執行 `git push`，由使用者控制部署時機
+- **提交訊息**: 自動生成語義化的中文提交訊息
+- **部署控制**: 使用者可以檢視變更後再決定是否推送到 GitHub Pages
 
 ## 故障排除清單
 
@@ -344,6 +350,12 @@ npm run claude:status
 - **需優化**: 191 個大型圖片 (>500KB)
 
 ## 開發注意事項
+
+### Claude Code 協作流程
+- **任務完成**: Claude 完成修改後會自動提交變更 (`git commit`)
+- **部署控制**: 使用者檢視提交內容，決定是否推送 (`git push origin main`)
+- **提交訊息**: 自動生成包含修改描述和 Claude Code 標籤的中文訊息
+- **驗證建議**: 重要變更建議先本地測試 (`npm run build`) 再推送部署
 
 ### 文章發布檢查清單
 1. ✅ Front matter 資訊完整 (title, description, date, image, categories, tags)
