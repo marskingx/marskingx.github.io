@@ -1,1 +1,18 @@
 ################ language ##################
+
+# 繁體中文 (預設語言)
+[zh-tw]
+languageName = "繁體中文"  
+languageCode = "zh-TW"
+weight = 1
+title = "懶得變有錢 | 帶你了解財務規劃本質 鑑定自己的財務DNA"
+
+[zh-tw.params]
+# 語言特定參數可以在這裡設定
+
+# 英文 (Hugo 0.127.0 相容性需要)
+[en]
+languageName = "English"
+languageCode = "en-US"
+weight = 2
+title = "懶得變有錢 | 帶你了解財務規劃本質 鑑定自己的財務DNA"
