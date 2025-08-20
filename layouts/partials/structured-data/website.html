@@ -4,24 +4,24 @@
   "@context": "https://schema.org",
   "@type": "WebSite",
   "@id": "{{ site.BaseURL }}#website",
-  "url": "{{ site.BaseURL }}",
+  "url": {{ site.BaseURL | jsonify }},
   "name": {{ site.Title | jsonify }},
-  "alternateName": "懶得變有錢",
+  "alternateName": {{ "懶得變有錢" | jsonify }},
   "description": {{ site.Params.meta_description | default "帶你了解財務規劃本質，鑑定自己的財務DNA" | jsonify }},
-  "inLanguage": "zh-TW",
+  "inLanguage": {{ "zh-TW" | jsonify }},
   "potentialAction": {
     "@type": "SearchAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "{{ site.BaseURL }}search?q={search_term_string}"
+      "urlTemplate": {{ printf "%ssearch?q={search_term_string}" site.BaseURL | jsonify }}
     },
-    "query-input": "required name=search_term_string"
+    "query-input": {{ "required name=search_term_string" | jsonify }}
   },
   "publisher": {
     "@type": "Organization",
     "@id": "{{ site.BaseURL }}#organization",
     "name": {{ site.Title | jsonify }},
-    "url": "{{ site.BaseURL }}",
+    "url": {{ site.BaseURL | jsonify }},
     "logo": {
       "@type": "ImageObject",
       "url": {{ (site.Params.logo | default "/favicon.png" | absURL) | jsonify }},

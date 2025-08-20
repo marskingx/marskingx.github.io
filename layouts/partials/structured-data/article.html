@@ -29,7 +29,7 @@
   },
   "headline": {{ .Title | jsonify }},
   "description": {{ .Description | jsonify }},
-  "inLanguage": "zh-TW",
+  "inLanguage": {{ "zh-TW" | jsonify }},
   {{- with .Params.image -}}
   "image": {
     "@type": "ImageObject",
@@ -44,14 +44,14 @@
     "@type": "Person",
     "@id": "{{ site.BaseURL }}#founder",
     "name": {{ (.Params.author | default "懶大") | jsonify }},
-    "description": "財務規劃專家，專注於協助民眾建立正確的理財觀念",
-    "url": "{{ printf "%s%s/" ("authors/" | relLangURL) ((.Params.author | default "懶大") | urlize) }}"
+    "description": {{ "財務規劃專家，專注於協助民眾建立正確的理財觀念" | jsonify }},
+    "url": {{ printf "%s%s/" ("authors/" | relLangURL) ((.Params.author | default "懶大") | urlize) | jsonify }}
   },
   "publisher": {
     "@type": "Organization",
     "@id": "{{ site.BaseURL }}#organization",
     "name": {{ site.Title | jsonify }},
-    "url": "{{ site.BaseURL }}",
+    "url": {{ site.BaseURL | jsonify }},
     "logo": {
       "@type": "ImageObject",
       "url": {{ (site.Params.logo | default "/favicon.png" | absURL) | jsonify }},
@@ -94,7 +94,7 @@
     "name": {{ $bookTitle | jsonify }},
     "author": {
       "@type": "Person",
-      "name": "未知作者"
+      "name": {{ "未知作者" | jsonify }}
     }
   },
   "reviewRating": {

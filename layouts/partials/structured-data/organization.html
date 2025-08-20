@@ -5,8 +5,8 @@
   "@type": "Organization",
   "@id": "{{ site.BaseURL }}#organization",
   "name": {{ site.Title | jsonify }},
-  "alternateName": "懶得變有錢",
-  "url": "{{ site.BaseURL }}",
+  "alternateName": {{ "懶得變有錢" | jsonify }},
+  "url": {{ site.BaseURL | jsonify }},
   "logo": {
     "@type": "ImageObject",
     "url": {{ (site.Params.logo | default "/favicon.png" | absURL) | jsonify }},
@@ -20,13 +20,13 @@
     "height": 630
   },
   "description": {{ site.Params.meta_description | default "專業的財務規劃和理財教育平台，提供實用的投資理財知識與策略" | jsonify }},
-  "foundingDate": "2023",
+  "foundingDate": {{ "2023" | jsonify }},
   "founder": {
     "@type": "Person",
     "@id": "{{ site.BaseURL }}#founder",
-    "name": "懶大",
-    "description": "財務規劃專家，專注於協助民眾建立正確的理財觀念",
-    "url": "{{ site.BaseURL }}authors/懶大/",
+    "name": {{ "懶大" | jsonify }},
+    "description": {{ "財務規劃專家，專注於協助民眾建立正確的理財觀念" | jsonify }},
+    "url": {{ printf "%sauthors/懶大/" site.BaseURL | jsonify }},
     "sameAs": [
       {{- $socialLinks := slice -}}
       {{- with site.Params.social -}}
@@ -70,9 +70,9 @@
   ],
   "contactPoint": {
     "@type": "ContactPoint",
-    "contactType": "customer service",
-    "availableLanguage": "zh-TW",
-    "url": "{{ site.BaseURL }}contact/"
+    "contactType": {{ "customer service" | jsonify }},
+    "availableLanguage": {{ "zh-TW" | jsonify }},
+    "url": {{ printf "%scontact/" site.BaseURL | jsonify }}
   }
 }
 </script>
