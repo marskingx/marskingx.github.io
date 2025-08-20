@@ -51,7 +51,10 @@
     {{ partialCached "essentials/script.html" . }}
 
     {{ if site.Params.subscription.enable }}
-      {{ partial "subscription.html" . }}
+      {{ partial "newsletter-popup.html" . }}
+      {{ if not hugo.IsProduction }}
+        {{ partial "newsletter-popup-demo.html" . }}
+      {{ end }}
     {{ end }}
 
   </body>
