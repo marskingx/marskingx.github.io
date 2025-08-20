@@ -43,7 +43,7 @@
     "version:show": "node -e \"const pkg = require('./package.json'); console.log(`📦 當前版本: ${pkg.name} v${pkg.version}`);\"",
     "version:changelog": "node -e \"console.log('📋 更新 CHANGELOG.md 然後執行版本發布'); console.log('npm run version:patch  # 錯誤修正'); console.log('npm run version:minor  # 新功能'); console.log('npm run version:major  # 重大更新');\"",
     "content:process": "node ./scripts/content-workflow.js process",
-    "content:batch": "node ./scripts/content-workflow.js batch", 
+    "content:batch": "node ./scripts/content-workflow.js batch",
     "content:publish": "node ./scripts/content-workflow.js publish",
     "content:validate": "node ./scripts/content-validator.js --dir",
     "content:validate:file": "node ./scripts/content-validator.js",

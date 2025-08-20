@@ -1,0 +1,43 @@
+{{/*
+懶得變有錢 - 關鍵 CSS 內嵌載入器
+將關鍵樣式直接內嵌到 HTML 中以加速首屏渲染
+*/}}
+
+{{ $critical := resources.Get "scss/_critical.scss" }}
+{{ $critical = $critical | css.Sass (dict "targetPath" "css/critical.css" "enableSourceMap" false) }}
+{{ $critical = $critical | resources.Minify }}
+
+<style>
+/* 懶得變有錢 - 關鍵樣式 (內嵌) */
+{{ $critical.Content | safeCSS }}
+</style>
+
+{{/* 預載入主要 CSS 檔案 */}}
+{{ $mainCSS := resources.Get "scss/main.scss" }}
+{{ $mainCSS = $mainCSS | css.Sass (dict "targetPath" "css/style.css") }}
+{{ $mainCSS = $mainCSS | resources.Minify }}
+
+<link rel="preload" href="{{ $mainCSS.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ $mainCSS.RelPermalink }}"></noscript>
+
+{{/* 字型預載入 */}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
+
+{{/* CSS 載入完成後的回調 */}}
+<script>
+// 確保 CSS 載入完成後的處理
+(function() {
+  function cssLoaded() {
+    document.documentElement.classList.add('css-loaded');
+  }
+  
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', cssLoaded);
+  } else {
+    cssLoaded();
+  }
+})();
+</script>

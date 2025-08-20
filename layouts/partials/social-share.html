@@ -1,0 +1,193 @@
+{{/*
+懶得變有錢 - 社群分享按鈕組件
+支援多平台分享：Facebook, X(Twitter), LinkedIn, WhatsApp, Telegram, Line, Email
+*/}}
+
+{{ $url := .Permalink }}
+{{ $title := .Title }}
+{{ $description := .Description | default .Summary }}
+{{ $encodedUrl := $url | urlquery }}
+{{ $encodedTitle := $title | urlquery }}
+{{ $encodedDescription := $description | urlquery }}
+{{ $encodedText := printf "%s - %s" $title $description | urlquery }}
+
+<div class="social-share-container">
+  <h5 class="share-title">分享文章：</h5>
+  <div class="social-share-buttons">
+    
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ $encodedUrl }}" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="share-btn share-facebook"
+       aria-label="分享到 Facebook"
+       title="分享到 Facebook">
+      <i class="fab fa-facebook-f"></i>
+      <span class="share-text">Facebook</span>
+    </a>
+
+    <!-- X (Twitter) -->
+    <a href="https://twitter.com/intent/tweet?url={{ $encodedUrl }}&text={{ $encodedTitle }}" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="share-btn share-twitter"
+       aria-label="分享到 X (Twitter)"
+       title="分享到 X (Twitter)">
+      <i class="fab fa-x-twitter"></i>
+      <span class="share-text">X</span>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ $encodedUrl }}&title={{ $encodedTitle }}&summary={{ $encodedDescription }}" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="share-btn share-linkedin"
+       aria-label="分享到 LinkedIn"
+       title="分享到 LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+      <span class="share-text">LinkedIn</span>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/?text={{ $encodedText }}%20{{ $encodedUrl }}" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="share-btn share-whatsapp"
+       aria-label="分享到 WhatsApp"
+       title="分享到 WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+      <span class="share-text">WhatsApp</span>
+    </a>
+
+    <!-- Telegram -->
+    <a href="https://t.me/share/url?url={{ $encodedUrl }}&text={{ $encodedTitle }}" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="share-btn share-telegram"
+       aria-label="分享到 Telegram"
+       title="分享到 Telegram">
+      <i class="fab fa-telegram-plane"></i>
+      <span class="share-text">Telegram</span>
+    </a>
+
+    <!-- Line -->
+    <a href="https://social-plugins.line.me/lineit/share?url={{ $encodedUrl }}" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="share-btn share-line"
+       aria-label="分享到 LINE"
+       title="分享到 LINE">
+      <i class="fab fa-line"></i>
+      <span class="share-text">LINE</span>
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:?subject={{ $encodedTitle }}&body={{ $encodedText }}%0A%0A{{ $encodedUrl }}" 
+       class="share-btn share-email"
+       aria-label="透過 Email 分享"
+       title="透過 Email 分享">
+      <i class="fas fa-envelope"></i>
+      <span class="share-text">Email</span>
+    </a>
+
+    <!-- 複製連結 -->
+    <button class="share-btn share-copy" 
+            data-url="{{ $url }}"
+            aria-label="複製連結"
+            title="複製連結">
+      <i class="fas fa-link"></i>
+      <span class="share-text">複製連結</span>
+    </button>
+
+  </div>
+</div>
+
+
+<script>
+// 複製連結功能
+document.addEventListener('DOMContentLoaded', function() {
+  const copyBtn = document.querySelector('.share-copy');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', function() {
+      const url = this.dataset.url;
+      
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(url).then(function() {
+          showCopySuccess(copyBtn);
+        }).catch(function() {
+          fallbackCopyTextToClipboard(url, copyBtn);
+        });
+      } else {
+        fallbackCopyTextToClipboard(url, copyBtn);
+      }
+    });
+  }
+});
+
+function showCopySuccess(btn) {
+  const originalText = btn.querySelector('.share-text').textContent;
+  const originalIcon = btn.querySelector('i').className;
+  
+  btn.classList.add('copied');
+  btn.querySelector('.share-text').textContent = '已複製！';
+  btn.querySelector('i').className = 'fas fa-check';
+  
+  setTimeout(function() {
+    btn.classList.remove('copied');
+    btn.querySelector('.share-text').textContent = originalText;
+    btn.querySelector('i').className = originalIcon;
+  }, 2000);
+}
+
+function fallbackCopyTextToClipboard(text, btn) {
+  const textArea = document.createElement("textarea");
+  textArea.value = text;
+  textArea.style.top = "0";
+  textArea.style.left = "0";
+  textArea.style.position = "fixed";
+  
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
+  
+  try {
+    const successful = document.execCommand('copy');
+    if (successful) {
+      showCopySuccess(btn);
+    }
+  } catch (err) {
+    console.error('無法複製連結:', err);
+  }
+  
+  document.body.removeChild(textArea);
+}
+
+// 追蹤分享事件 (Google Analytics)
+document.addEventListener('DOMContentLoaded', function() {
+  const shareButtons = document.querySelectorAll('.share-btn[href]');
+  shareButtons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      const platform = this.className.match(/share-(\w+)/)[1];
+      
+      // Google Analytics 4 事件追蹤
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'share', {
+          method: platform,
+          content_type: 'article',
+          item_id: window.location.pathname
+        });
+      }
+      
+      // Google Tag Manager 事件追蹤
+      if (typeof dataLayer !== 'undefined') {
+        dataLayer.push({
+          event: 'social_share',
+          share_platform: platform,
+          share_url: window.location.href,
+          page_title: document.title
+        });
+      }
+    });
+  });
+});
+</script>

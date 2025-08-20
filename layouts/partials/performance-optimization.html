@@ -20,7 +20,7 @@ Performance Optimization: 資源預載入和 DNS 優化
 {{ end }}
 
 <!-- 關鍵 CSS 預載入 -->
-{{ $critical_css := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify }}
+{{ $critical_css := resources.Get "scss/main.scss" | toCSS | resources.Minify }}
 <link rel="preload" href="{{ $critical_css.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="{{ $critical_css.RelPermalink }}"></noscript>
 
