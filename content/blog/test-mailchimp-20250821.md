@@ -1,14 +1,14 @@
 ---
-title: "【測試】Mailchimp 自動化電子報系統測試"
-description: "測試新建立的 Mailchimp 自動化系統是否能正確運作，這是一篇測試文章。"
+title: "【測試】Mailchimp 自動化電子報系統測試 v2"
+description: "測試修復後的 Mailchimp 自動化系統，驗證 GitHub Actions 工作流程是否能正確執行。"
 author: 懶大
 release: 2025-08-21
 date: 2025-08-21
 image: /images/blog/20250821.png
 categories: [測試]
-tags: [測試, 系統驗證]
+tags: [測試, 系統驗證, GitHub Actions]
 draft: false
-slug: test-mailchimp-automation-system
+slug: test-mailchimp-automation-system-v2
 ---
 
 這是一篇測試文章，用於驗證我們新建立的 Mailchimp 自動化電子報系統。
