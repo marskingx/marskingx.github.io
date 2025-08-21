@@ -1,27 +1,557 @@
-<div id="popup-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
-  <div class="bg-white max-w-md mx-auto mt-40 p-6 rounded-xl relative shadow-xl">
-    <button onclick="document.getElementById('popup-overlay').style.display='none'"
-      class="absolute top-2 right-2 text-gray-500 hover:text-black text-xl">&times;</button>
-    <h2 class="text-xl font-bold mb-4">訂閱有錢電子報</h2>
-    <form action="https://lazytoberich.us14.list-manage.com/subscribe/post?u=db5c854191bdeffdff24a5147&amp;id=517a8482e3&amp;f_id=006cc3e0f0" method="POST" target="_blank">
-      <input type="email" name="EMAIL" placeholder="輸入你的 Email" required
-        class="w-full px-4 py-2 border border-gray-300 rounded mb-4" />
-      <button type="submit"
-        class="w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition">立即訂閱電子報</button>
-    </form>
+<!-- Newsletter Subscription Popup -->
+<div id="newsletter-popup-overlay" class="newsletter-popup-overlay newsletter-popup-hidden">
+  <div class="newsletter-popup-container">
+    <!-- Close Button -->
+    <button id="newsletter-close-btn" class="newsletter-close-btn" aria-label="關閉彈出視窗">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <!-- Main Content -->
+    <div id="newsletter-content" class="newsletter-content">
+      <div class="newsletter-grid">
+        <!-- Image Section -->
+        <div class="newsletter-image-section">
+          <div class="newsletter-image-placeholder">
+            <svg viewBox="0 0 200 150" class="newsletter-icon">
+              <rect x="20" y="40" width="160" height="2" fill="currentColor" opacity="0.3"/>
+              <rect x="20" y="60" width="120" height="2" fill="currentColor" opacity="0.5"/>
+              <rect x="20" y="80" width="140" height="2" fill="currentColor" opacity="0.4"/>
+              <circle cx="160" cy="60" r="15" fill="currentColor" opacity="0.2"/>
+              <path d="M145 45 L175 45 L160 65 Z" fill="currentColor" opacity="0.3"/>
+              <rect x="30" y="100" width="80" height="30" rx="4" fill="currentColor" opacity="0.2"/>
+              <text x="70" y="118" text-anchor="middle" fill="currentColor" opacity="0.6" font-size="8">財務規劃</text>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Content Section -->
+        <div class="newsletter-text-section">
+          <div class="newsletter-header">
+            <h2 class="newsletter-title">免費訂閱電子報</h2>
+            <p class="newsletter-subtitle">立即訂閱免費電子報，即可獲得您第一手理財資訊！</p>
+          </div>
+
+          <form id="newsletter-form" class="newsletter-form" action="https://lazytoberich.us14.list-manage.com/subscribe/post?u=db5c854191bdeffdff24a5147&amp;id=517a8482e3&amp;f_id=006cc3e0f0" method="POST" target="_blank">
+            <div class="newsletter-input-group">
+              <input 
+                type="email" 
+                name="EMAIL" 
+                id="newsletter-email"
+                placeholder="請輸入您的電子郵件" 
+                required
+                class="newsletter-input" 
+              />
+              <button type="submit" class="newsletter-submit-btn">
+                免費訂閱
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Success Message -->
+    <div id="newsletter-success" class="newsletter-success newsletter-popup-hidden">
+      <div class="newsletter-success-content">
+        <div class="newsletter-success-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+            <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h2 class="newsletter-success-title">感謝您的訂閱！</h2>
+        <p class="newsletter-success-message">恭禧你即將成為懶又有錢的人。</p>
+      </div>
+    </div>
   </div>
 </div>
 
-<script>
-  window.addEventListener('load', function () {
-    const countKey = 'popup-count';
-    let count = parseInt(localStorage.getItem(countKey)) || 0;
+<!-- Newsletter Popup Styles -->
+<style>
+.newsletter-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+}
 
-    if (count < 5) {
-      setTimeout(() => {
-        document.getElementById('popup-overlay').style.display = 'block';
-        localStorage.setItem(countKey, count + 1);
-      }, 2000);
+.newsletter-popup-overlay.newsletter-popup-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.newsletter-popup-container {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  max-height: 90vh;
+  overflow: hidden;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.newsletter-popup-overlay.newsletter-popup-hidden .newsletter-popup-container {
+  transform: scale(0.9);
+}
+
+.newsletter-close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  z-index: 10;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter-close-btn:hover {
+  color: #374151;
+  background-color: #f3f4f6;
+}
+
+.newsletter-content {
+  padding: 2rem;
+}
+
+.newsletter-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.newsletter-image-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter-image-placeholder {
+  width: 200px;
+  height: 150px;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+}
+
+.newsletter-icon {
+  width: 80%;
+  height: 80%;
+}
+
+.newsletter-text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.newsletter-header {
+  text-align: left;
+}
+
+.newsletter-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.2;
+  font-family: 'Signika', sans-serif;
+}
+
+.newsletter-subtitle {
+  font-size: 1rem;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.newsletter-form {
+  width: 100%;
+}
+
+.newsletter-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.newsletter-input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  outline: none;
+  background: white;
+}
+
+.newsletter-input:focus {
+  border-color: #121212;
+  box-shadow: 0 0 0 3px rgba(18, 18, 18, 0.1);
+}
+
+.newsletter-submit-btn {
+  width: 100%;
+  background-color: #121212;
+  color: white;
+  border: none;
+  padding: 0.875rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.newsletter-submit-btn:hover {
+  background-color: #1f2937;
+  transform: translateY(-1px);
+}
+
+.newsletter-submit-btn:active {
+  transform: translateY(0);
+}
+
+.newsletter-success {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.newsletter-success-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.newsletter-success-icon {
+  color: #10b981;
+  opacity: 0;
+  animation: fadeInScale 0.6s ease-out 0.2s forwards;
+}
+
+.newsletter-success-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out 0.4s forwards;
+}
+
+.newsletter-success-message {
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin: 0;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out 0.6s forwards;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .newsletter-popup-container {
+    margin: 1rem;
+    max-width: calc(100vw - 2rem);
+  }
+  
+  .newsletter-content {
+    padding: 1.5rem;
+  }
+  
+  .newsletter-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .newsletter-image-section {
+    order: -1;
+  }
+  
+  .newsletter-image-placeholder {
+    width: 160px;
+    height: 120px;
+  }
+  
+  .newsletter-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .newsletter-subtitle {
+    text-align: center;
+  }
+  
+  .newsletter-header {
+    text-align: center;
+  }
+}
+
+/* Animations */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .newsletter-popup-container {
+    background: #1f2937;
+    color: white;
+  }
+  
+  .newsletter-title {
+    color: white;
+  }
+  
+  .newsletter-input {
+    background: #374151;
+    border-color: #4b5563;
+    color: white;
+  }
+  
+  .newsletter-input:focus {
+    border-color: white;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+  }
+  
+  .newsletter-submit-btn {
+    background-color: white;
+    color: #121212;
+  }
+  
+  .newsletter-submit-btn:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .newsletter-success-title {
+    color: white;
+  }
+  
+  .newsletter-close-btn:hover {
+    background-color: #374151;
+    color: white;
+  }
+}
+</style>
+
+<!-- Newsletter Popup JavaScript -->
+<script>
+(function() {
+  'use strict';
+  
+  // Configuration
+  const CONFIG = {
+    STORAGE_KEY: 'newsletter-popup-data',
+    DELAY_MS: 1000,
+    MAX_DISPLAYS: 3,
+    DAYS_BETWEEN_SHOWS: 7
+  };
+  
+  // Elements
+  const overlay = document.getElementById('newsletter-popup-overlay');
+  const closeBtn = document.getElementById('newsletter-close-btn');
+  const form = document.getElementById('newsletter-form');
+  const content = document.getElementById('newsletter-content');
+  const success = document.getElementById('newsletter-success');
+  
+  if (!overlay || !closeBtn || !form || !content || !success) {
+    console.warn('Newsletter popup elements not found');
+    return;
+  }
+  
+  // Storage helpers
+  function getPopupData() {
+    try {
+      const data = localStorage.getItem(CONFIG.STORAGE_KEY);
+      return data ? JSON.parse(data) : { count: 0, lastShown: null, subscribed: false };
+    } catch (e) {
+      return { count: 0, lastShown: null, subscribed: false };
+    }
+  }
+  
+  function setPopupData(data) {
+    try {
+      localStorage.setItem(CONFIG.STORAGE_KEY, JSON.stringify(data));
+    } catch (e) {
+      console.warn('Could not save popup data to localStorage');
+    }
+  }
+  
+  // Check if popup should be shown
+  function shouldShowPopup() {
+    const data = getPopupData();
+    
+    if (data.subscribed || data.count >= CONFIG.MAX_DISPLAYS) {
+      return false;
+    }
+    
+    if (data.lastShown) {
+      const daysSinceLastShown = (Date.now() - data.lastShown) / (1000 * 60 * 60 * 24);
+      if (daysSinceLastShown < CONFIG.DAYS_BETWEEN_SHOWS) {
+        return false;
+      }
+    }
+    
+    return true;
+  }
+  
+  // Show popup
+  function showPopup() {
+    overlay.classList.remove('newsletter-popup-hidden');
+    document.body.style.overflow = 'hidden';
+    
+    const data = getPopupData();
+    data.count += 1;
+    data.lastShown = Date.now();
+    setPopupData(data);
+    
+    // Focus trap
+    const focusableElements = overlay.querySelectorAll(
+      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    );
+    const firstFocusable = focusableElements[0];
+    const lastFocusable = focusableElements[focusableElements.length - 1];
+    
+    firstFocusable?.focus();
+    
+    overlay.addEventListener('keydown', function(e) {
+      if (e.key === 'Tab') {
+        if (e.shiftKey) {
+          if (document.activeElement === firstFocusable) {
+            lastFocusable?.focus();
+            e.preventDefault();
+          }
+        } else {
+          if (document.activeElement === lastFocusable) {
+            firstFocusable?.focus();
+            e.preventDefault();
+          }
+        }
+      }
+    });
+  }
+  
+  // Hide popup
+  function hidePopup() {
+    overlay.classList.add('newsletter-popup-hidden');
+    document.body.style.overflow = '';
+  }
+  
+  // Show success message
+  function showSuccess() {
+    content.classList.add('newsletter-popup-hidden');
+    success.classList.remove('newsletter-popup-hidden');
+    
+    const data = getPopupData();
+    data.subscribed = true;
+    setPopupData(data);
+    
+    setTimeout(hidePopup, 3000);
+  }
+  
+  // Event listeners
+  closeBtn.addEventListener('click', hidePopup);
+  
+  overlay.addEventListener('click', function(e) {
+    if (e.target === overlay) {
+      hidePopup();
     }
   });
+  
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && !overlay.classList.contains('newsletter-popup-hidden')) {
+      hidePopup();
+    }
+  });
+  
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const email = form.querySelector('input[name="EMAIL"]').value;
+    if (!email) return;
+    
+    // Submit to Mailchimp
+    const formData = new FormData(form);
+    const submitButton = form.querySelector('button[type="submit"]');
+    const originalText = submitButton.textContent;
+    
+    submitButton.textContent = '訂閱中...';
+    submitButton.disabled = true;
+    
+    // Create a hidden iframe for submission
+    const iframe = document.createElement('iframe');
+    iframe.style.display = 'none';
+    iframe.name = 'newsletter-frame';
+    document.body.appendChild(iframe);
+    
+    form.target = 'newsletter-frame';
+    form.submit();
+    
+    // Show success after short delay
+    setTimeout(() => {
+      showSuccess();
+      document.body.removeChild(iframe);
+    }, 1000);
+  });
+  
+  // Initialize
+  function init() {
+    if (shouldShowPopup()) {
+      setTimeout(showPopup, CONFIG.DELAY_MS);
+    }
+  }
+  
+  // Start when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
 </script>
