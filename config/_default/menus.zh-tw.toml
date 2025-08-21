@@ -23,8 +23,8 @@ weight = 4
 [[main]]
 weight = 1
 parent = "書單"
-name = "推薦書單"
-url = "/reading_list/"
+name = "👍必讀書單📚"
+pageRef = "pages/reading_list"
 
 [[main]]
 weight = 2
@@ -151,5 +151,5 @@ weight = 2
 
 [[footer]]
 name = "隱私權政策"
-pageRef = "/privacy-policy"
+pageRef = "pages/privacy-policy"
 weight = 3

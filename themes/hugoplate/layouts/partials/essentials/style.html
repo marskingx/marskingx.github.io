@@ -66,6 +66,12 @@
 {{ end }}
 
 {{/* styles */}}
+<!-- preload final compiled CSS to speed up first render without overriding theme styles -->
+<link
+  rel="preload"
+  as="style"
+  href="{{ $styles.RelPermalink }}"
+  integrity="{{ $styles.Data.Integrity }}" />
 <link
   href="{{ $styles.RelPermalink }}"
   integrity="{{ $styles.Data.Integrity }}"
