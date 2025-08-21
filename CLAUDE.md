@@ -9,10 +9,11 @@
 - **部署**: GitHub Pages (https://marskingx.github.io/)
 
 ## 專案版本資訊
-- **當前版本**: v2.0.0 - 圖片優化系統完成版
-- **版本管理**: 語義化版本 (Semantic Versioning)
+- **當前版本**: v2.2.0.1 - 電子報系統完成版 + 內容版本管理
+- **版本格式**: major.minor.patch.content (四位版本號)
+- **版本管理**: 自定義四位版本號系統
 - **版本檢視**: `npm run version:show`
-- **版本發布**: `npm run version:patch/minor/major`
+- **版本發布**: `npm run version:content/patch/minor/major`
 
 ## 重要開發指令
 ```bash
@@ -44,12 +45,13 @@ npm run perf:build        # 建置並分析效能
 npm run schema:validate   # 驗證 JSON-LD 結構化資料
 npm run schema:build      # 建置並驗證結構化資料
 
-# 版本管理工具
+# 版本管理工具 (四位版本號系統)
 npm run version:show      # 顯示當前版本資訊
 npm run version:changelog # 顯示版本發布說明
-npm run version:patch     # 錯誤修正版本 (自動發布)
-npm run version:minor     # 新功能版本 (自動發布)
-npm run version:major     # 重大更新版本 (自動發布)
+npm run version:content   # 內容更新版本 (新文章/Podcast)
+npm run version:patch     # 錯誤修正版本 (bug修復)
+npm run version:minor     # 新功能版本 (功能開發)
+npm run version:major     # 重大更新版本 (架構變更)
 ```
 
 ## 專案結構
