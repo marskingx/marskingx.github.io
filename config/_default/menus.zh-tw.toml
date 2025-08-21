@@ -23,8 +23,8 @@ weight = 4
 [[main]]
 weight = 1
 parent = "書單"
-name = "👍推薦書單📚"
-pageRef = "/reading_list/"
+name = "推薦書單"
+url = "/reading_list/"
 
 [[main]]
 weight = 2
