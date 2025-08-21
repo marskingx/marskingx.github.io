@@ -50,7 +50,11 @@
         "@type": "ListItem",
         "position": 1,
         "name": "首頁",
-        "item": "{{ site.BaseURL }}"
+        "item": {
+          "@type": "WebPage",
+          "@id": "{{ site.BaseURL }}",
+          "name": "首頁"
+        }
       }
     ]
   }
