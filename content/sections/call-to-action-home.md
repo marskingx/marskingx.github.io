@@ -24,6 +24,6 @@ button:
   link: "https://lazytoberich.com.tw/blog/"
 
 # don't create a separate page
-_build:
+build:
   render: "never"
 ---

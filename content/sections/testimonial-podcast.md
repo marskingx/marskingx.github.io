@@ -34,6 +34,6 @@ testimonials:
     content: "懶大!聽了你胡說八道很很正經的部份!也聽了你北爛的詮釋理財!真的很有趣!期待持續更新!"
 
 # don't create a separate page
-_build:
+build:
   render: "never"
 ---

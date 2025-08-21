@@ -30,6 +30,6 @@ testimonials:
     content: "從來沒有接觸過股票，雖然很想賺錢，但對於投資就是感到害怕，謝謝懶的變有錢帶我進入安心投資的領域，白天好好上班，晚上專心顧小孩，錢就自己一直來。非常感謝！"
 
 # don't create a separate page
-_build:
+build:
   render: "never"
 ---
