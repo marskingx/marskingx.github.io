@@ -191,16 +191,12 @@ Co-Authored-By: Claude <noreply@anthropic.com>`;
         const [major, minor, patch] = version.split('.');
         const npmTag = `${major}.${minor}.${patch}`;
         execSync(`git tag v${npmTag}`, { stdio: 'inherit' });
-        
-        // 推送到遠端
-        execSync('git push origin main', { stdio: 'inherit' });
-        execSync('git push --tags', { stdio: 'inherit' });
+        console.log(`✅ 版本 v${version} 已提交到本地，標籤已創建`);
+        console.log(`📤 執行 'git push origin main && git push --tags' 來推送到遠端`);
       } else {
-        // 內容更新只推送 commit，不創建標籤
-        execSync('git push origin main', { stdio: 'inherit' });
+        console.log(`✅ 版本 v${version} 已提交到本地`);
+        console.log(`📤 執行 'git push origin main' 來推送到遠端`);
       }
-      
-      console.log(`✅ 版本 v${version} 發布成功！`);
       
     } catch (error) {
       console.error('❌ 版本發布失敗:', error.message);

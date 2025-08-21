@@ -43,6 +43,8 @@
     "version:major": "node ./scripts/version-manager.js major",
     "version:show": "node ./scripts/version-manager.js show",
     "version:changelog": "node ./scripts/version-manager.js changelog",
+    "push": "git push origin main",
+    "push:tags": "git push origin main && git push --tags",
     "content:process": "node ./scripts/content-workflow.js process",
     "content:batch": "node ./scripts/content-workflow.js batch",
     "content:publish": "node ./scripts/content-workflow.js publish",
