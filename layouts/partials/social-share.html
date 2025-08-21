@@ -16,7 +16,7 @@
 {{ end }}
 
 <div class="flex items-center">
-  <h5 class="mr-3">分享文章：</h5>
+  <h5 class="mr-3">分享：</h5>
   <ul class="social-icons">
     <!-- Facebook -->
     <li>
@@ -26,17 +26,6 @@
          title="分享到 Facebook"
          aria-label="分享到 Facebook">
         <i class="fab fa-facebook-f"></i>
-      </a>
-    </li>
-    
-    <!-- Twitter/X -->
-    <li>
-      <a href="https://twitter.com/intent/tweet?url={{ $pageURL | urlquery }}&text={{ printf "%s - %s" $pageTitle $siteName | urlquery }}" 
-         target="_blank" 
-         rel="noopener noreferrer"
-         title="分享到 Twitter"
-         aria-label="分享到 Twitter">
-        <i class="fab fa-twitter"></i>
       </a>
     </li>
     
@@ -62,26 +51,6 @@
       </a>
     </li>
     
-    <!-- Telegram -->
-    <li>
-      <a href="https://t.me/share/url?url={{ $pageURL | urlquery }}&text={{ $pageTitle | urlquery }}" 
-         target="_blank" 
-         rel="noopener noreferrer"
-         title="分享到 Telegram"
-         aria-label="分享到 Telegram">
-        <i class="fab fa-telegram-plane"></i>
-      </a>
-    </li>
-    
-    <!-- Email -->
-    <li>
-      <a href="mailto:?subject={{ printf "%s | %s" $pageTitle $siteName | urlquery }}&body={{ printf "%s\n\n%s\n\n%s" $pageTitle $pageDescription $pageURL | urlquery }}" 
-         title="透過電子郵件分享"
-         aria-label="透過電子郵件分享">
-        <i class="fas fa-envelope"></i>
-      </a>
-    </li>
-    
     <!-- Copy Link -->
     <li>
       <button type="button" 
@@ -91,17 +60,6 @@
               onclick="copyToClipboard(this)"
               class="bg-primary dark:bg-darkmode-primary dark:text-dark flex h-9 w-9 items-center justify-center rounded text-center leading-9 text-white">
         <i class="fas fa-link"></i>
-      </button>
-    </li>
-    
-    <!-- Print -->
-    <li>
-      <button type="button" 
-              title="列印文章"
-              aria-label="列印文章"
-              onclick="window.print()"
-              class="bg-primary dark:bg-darkmode-primary dark:text-dark flex h-9 w-9 items-center justify-center rounded text-center leading-9 text-white">
-        <i class="fas fa-print"></i>
       </button>
     </li>
   </ul>
