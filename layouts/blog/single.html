@@ -75,7 +75,7 @@
           {{ $tags:= .Params.tags }}
           {{ if $tags }}
           <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
-            <h5 class="mr-3">{{ T "tags" }} :</h5>
+            <h5 class="mr-3">{{ T "tags" }}：</h5>
             <ul>
               {{ range $tags }}
               <li class="inline-block">
@@ -90,7 +90,7 @@
           {{ end }}
           <!-- Social Follow links -->
           <div class="lg:col-5 flex items-center">
-            <h5 class="mr-3">{{ T "fallow" }} :</h5>
+            <h5 class="mr-3">{{ T "fallow" }}：</h5>
             <ul class="social-icons">
               {{ range site.Data.social.main}}
               <li>
