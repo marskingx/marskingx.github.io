@@ -23,7 +23,7 @@
     <a href="https://www.facebook.com/sharer/sharer.php?u={{ $pageURL | urlquery }}" 
        target="_blank" 
        rel="noopener noreferrer"
-       class="social-share-btn facebook"
+       class="social-share-btn"
        title="分享到 Facebook"
        aria-label="分享到 Facebook">
       <i class="fab fa-facebook-f"></i>
@@ -34,7 +34,7 @@
     <a href="https://twitter.com/intent/tweet?url={{ $pageURL | urlquery }}&text={{ printf "%s - %s" $pageTitle $siteName | urlquery }}" 
        target="_blank" 
        rel="noopener noreferrer"
-       class="social-share-btn twitter"
+       class="social-share-btn"
        title="分享到 Twitter"
        aria-label="分享到 Twitter">
       <i class="fab fa-twitter"></i>
@@ -45,7 +45,7 @@
     <a href="https://social-plugins.line.me/lineit/share?url={{ $pageURL | urlquery }}" 
        target="_blank" 
        rel="noopener noreferrer"
-       class="social-share-btn line"
+       class="social-share-btn"
        title="分享到 LINE"
        aria-label="分享到 LINE">
       <i class="fab fa-line"></i>
@@ -56,7 +56,7 @@
     <a href="https://www.threads.net/intent/post?text={{ printf "%s %s" $pageTitle $pageURL | urlquery }}" 
        target="_blank" 
        rel="noopener noreferrer"
-       class="social-share-btn threads"
+       class="social-share-btn"
        title="分享到 Threads"
        aria-label="分享到 Threads">
       <i class="fab fa-threads"></i>
@@ -67,7 +67,7 @@
     <a href="https://t.me/share/url?url={{ $pageURL | urlquery }}&text={{ $pageTitle | urlquery }}" 
        target="_blank" 
        rel="noopener noreferrer"
-       class="social-share-btn telegram"
+       class="social-share-btn"
        title="分享到 Telegram"
        aria-label="分享到 Telegram">
       <i class="fab fa-telegram-plane"></i>
@@ -76,7 +76,7 @@
     
     <!-- Email -->
     <a href="mailto:?subject={{ printf "%s | %s" $pageTitle $siteName | urlquery }}&body={{ printf "%s\n\n%s\n\n%s" $pageTitle $pageDescription $pageURL | urlquery }}" 
-       class="social-share-btn email"
+       class="social-share-btn"
        title="透過電子郵件分享"
        aria-label="透過電子郵件分享">
       <i class="fas fa-envelope"></i>
@@ -85,7 +85,7 @@
     
     <!-- Copy Link -->
     <button type="button" 
-            class="social-share-btn copy-link"
+            class="social-share-btn"
             title="複製連結"
             aria-label="複製連結"
             data-url="{{ $pageURL }}"
@@ -96,7 +96,7 @@
     
     <!-- Print -->
     <button type="button" 
-            class="social-share-btn print"
+            class="social-share-btn"
             title="列印文章"
             aria-label="列印文章"
             onclick="window.print()">
@@ -173,40 +173,13 @@ function showCopySuccess(successMsg) {
   @apply flex flex-wrap gap-2;
 }
 
+/* 使用與追蹤按鈕相同的樣式：方形、白色背景、黑色圖示 */
 .social-share-btn {
-  @apply inline-flex items-center justify-center w-8 h-8 rounded-full text-white transition-all duration-300 hover:scale-110 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 text-sm;
+  @apply inline-flex items-center justify-center w-9 h-9 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded border border-gray-200 dark:border-gray-600 transition-all duration-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:border-gray-300 dark:hover:border-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 text-base;
 }
 
-.social-share-btn.facebook {
-  @apply bg-blue-600 hover:bg-blue-700 focus:ring-blue-500;
-}
-
-.social-share-btn.twitter {
-  @apply bg-blue-400 hover:bg-blue-500 focus:ring-blue-400;
-}
-
-.social-share-btn.line {
-  @apply bg-green-500 hover:bg-green-600 focus:ring-green-500;
-}
-
-.social-share-btn.threads {
-  @apply bg-gray-900 hover:bg-black focus:ring-gray-500;
-}
-
-.social-share-btn.telegram {
-  @apply bg-blue-500 hover:bg-blue-600 focus:ring-blue-500;
-}
-
-.social-share-btn.email {
-  @apply bg-gray-600 hover:bg-gray-700 focus:ring-gray-500;
-}
-
-.social-share-btn.copy-link {
-  @apply bg-purple-600 hover:bg-purple-700 focus:ring-purple-500;
-}
-
-.social-share-btn.print {
-  @apply bg-gray-500 hover:bg-gray-600 focus:ring-gray-500;
+.social-share-btn:hover {
+  @apply scale-105 shadow-md;
 }
 
 .copy-success-message {
@@ -224,7 +197,7 @@ function showCopySuccess(successMsg) {
   }
   
   .social-share-btn {
-    @apply w-7 h-7 text-xs;
+    @apply w-8 h-8 text-sm;
   }
   
   .social-share-buttons {
