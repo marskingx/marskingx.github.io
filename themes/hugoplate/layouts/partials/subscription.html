@@ -38,27 +38,27 @@
             <div class="newsletter-features-grid">
               <div class="newsletter-feature">
                 <div class="newsletter-feature-icon">📊</div>
-                <span class="newsletter-feature-text">100+ 理財文章</span>
+                <span class="newsletter-feature-text">100+文章</span>
               </div>
               <div class="newsletter-feature">
                 <div class="newsletter-feature-icon">🎙️</div>
-                <span class="newsletter-feature-text">獨家 Podcast</span>
+                <span class="newsletter-feature-text">獨家音頻</span>
               </div>
               <div class="newsletter-feature">
                 <div class="newsletter-feature-icon">💡</div>
-                <span class="newsletter-feature-text">實用投資策略</span>
+                <span class="newsletter-feature-text">投資策略</span>
               </div>
               <div class="newsletter-feature">
                 <div class="newsletter-feature-icon">📈</div>
-                <span class="newsletter-feature-text">ETF 深度分析</span>
+                <span class="newsletter-feature-text">ETF分析</span>
               </div>
               <div class="newsletter-feature">
                 <div class="newsletter-feature-icon">🎯</div>
-                <span class="newsletter-feature-text">財務規劃指南</span>
+                <span class="newsletter-feature-text">理財規劃</span>
               </div>
               <div class="newsletter-feature">
                 <div class="newsletter-feature-icon">🔥</div>
-                <span class="newsletter-feature-text">FIRE 退休計畫</span>
+                <span class="newsletter-feature-text">FIRE計畫</span>
               </div>
             </div>
           </div>
@@ -221,10 +221,11 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem;
+  padding: 0.75rem 0.5rem;
   background: #f8f9fa;
   border-radius: 6px;
   transition: all 0.2s ease;
+  min-width: 0;
 }
 
 .newsletter-feature:hover {
@@ -243,6 +244,11 @@
   font-size: 0.875rem;
   font-weight: 500;
   color: #374151;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex-shrink: 1;
+  min-width: 0;
 }
 
 .newsletter-header {
@@ -402,6 +408,7 @@
   
   .newsletter-feature-text {
     font-size: 0.8rem;
+    white-space: normal;
   }
 }
 
