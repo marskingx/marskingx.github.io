@@ -92,6 +92,7 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  display: none !important;
 }
 
 .newsletter-popup-container {
@@ -135,6 +136,10 @@
 
 .newsletter-content {
   padding: 2rem;
+}
+
+.newsletter-content.newsletter-popup-hidden {
+  display: none !important;
 }
 
 .newsletter-grid {
@@ -244,6 +249,10 @@
 .newsletter-success {
   padding: 3rem 2rem;
   text-align: center;
+}
+
+.newsletter-success.newsletter-popup-hidden {
+  display: none !important;
 }
 
 .newsletter-success-content {
@@ -542,6 +551,11 @@
   
   // Initialize
   function init() {
+    // Ensure proper initial state
+    content.classList.remove('newsletter-popup-hidden');
+    success.classList.add('newsletter-popup-hidden');
+    overlay.classList.add('newsletter-popup-hidden');
+    
     if (shouldShowPopup()) {
       setTimeout(showPopup, CONFIG.DELAY_MS);
     }
