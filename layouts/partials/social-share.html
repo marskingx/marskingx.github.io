@@ -1,0 +1,240 @@
+{{/*
+  Enhanced Social Share Component
+  懶得變有錢 部落格社群分享功能
+  支援多種社群平台的文章分享
+*/}}
+
+{{ $pageURL := .Permalink }}
+{{ $pageTitle := .Title }}
+{{ $pageDescription := .Description | default .Summary | truncate 150 }}
+{{ $siteName := site.Title }}
+{{ $pageImage := "" }}
+{{ with .Params.image }}
+  {{ $pageImage = . | absURL }}
+{{ else }}
+  {{ $pageImage = (site.Params.metadata.image | default "/images/og-lazytoberich.png") | absURL }}
+{{ end }}
+
+<div class="social-share">
+  <div class="social-share-header">
+    <h5 class="mb-3 text-center">分享這篇文章</h5>
+  </div>
+  
+  <div class="social-share-buttons flex flex-wrap justify-center gap-3">
+    
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ $pageURL | urlquery }}" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="social-share-btn facebook"
+       title="分享到 Facebook"
+       aria-label="分享到 Facebook">
+      <i class="fab fa-facebook-f"></i>
+      <span class="sr-only">Facebook</span>
+    </a>
+    
+    <!-- Twitter/X -->
+    <a href="https://twitter.com/intent/tweet?url={{ $pageURL | urlquery }}&text={{ printf "%s - %s" $pageTitle $siteName | urlquery }}" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="social-share-btn twitter"
+       title="分享到 Twitter"
+       aria-label="分享到 Twitter">
+      <i class="fab fa-twitter"></i>
+      <span class="sr-only">Twitter</span>
+    </a>
+    
+    <!-- LINE -->
+    <a href="https://social-plugins.line.me/lineit/share?url={{ $pageURL | urlquery }}" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="social-share-btn line"
+       title="分享到 LINE"
+       aria-label="分享到 LINE">
+      <i class="fab fa-line"></i>
+      <span class="sr-only">LINE</span>
+    </a>
+    
+    <!-- Threads -->
+    <a href="https://www.threads.net/intent/post?text={{ printf "%s %s" $pageTitle $pageURL | urlquery }}" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="social-share-btn threads"
+       title="分享到 Threads"
+       aria-label="分享到 Threads">
+      <i class="fab fa-threads"></i>
+      <span class="sr-only">Threads</span>
+    </a>
+    
+    <!-- Telegram -->
+    <a href="https://t.me/share/url?url={{ $pageURL | urlquery }}&text={{ $pageTitle | urlquery }}" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="social-share-btn telegram"
+       title="分享到 Telegram"
+       aria-label="分享到 Telegram">
+      <i class="fab fa-telegram-plane"></i>
+      <span class="sr-only">Telegram</span>
+    </a>
+    
+    <!-- Email -->
+    <a href="mailto:?subject={{ printf "%s | %s" $pageTitle $siteName | urlquery }}&body={{ printf "%s\n\n%s\n\n%s" $pageTitle $pageDescription $pageURL | urlquery }}" 
+       class="social-share-btn email"
+       title="透過電子郵件分享"
+       aria-label="透過電子郵件分享">
+      <i class="fas fa-envelope"></i>
+      <span class="sr-only">Email</span>
+    </a>
+    
+    <!-- Copy Link -->
+    <button type="button" 
+            class="social-share-btn copy-link"
+            title="複製連結"
+            aria-label="複製連結"
+            data-url="{{ $pageURL }}"
+            onclick="copyToClipboard(this)">
+      <i class="fas fa-link"></i>
+      <span class="sr-only">複製連結</span>
+    </button>
+    
+    <!-- Print -->
+    <button type="button" 
+            class="social-share-btn print"
+            title="列印文章"
+            aria-label="列印文章"
+            onclick="window.print()">
+      <i class="fas fa-print"></i>
+      <span class="sr-only">列印</span>
+    </button>
+    
+  </div>
+  
+  <!-- 複製成功提示 -->
+  <div id="copy-success" class="copy-success-message" style="display: none;">
+    <i class="fas fa-check-circle text-green-500"></i>
+    <span class="ml-1">連結已複製到剪貼板！</span>
+  </div>
+</div>
+
+<script>
+function copyToClipboard(button) {
+  const url = button.dataset.url;
+  const successMsg = document.getElementById('copy-success');
+  
+  if (navigator.clipboard && window.isSecureContext) {
+    // 使用現代的 Clipboard API
+    navigator.clipboard.writeText(url).then(() => {
+      showCopySuccess(successMsg);
+    }).catch((err) => {
+      console.error('複製失敗:', err);
+      fallbackCopyTextToClipboard(url, successMsg);
+    });
+  } else {
+    // 回退方案
+    fallbackCopyTextToClipboard(url, successMsg);
+  }
+}
+
+function fallbackCopyTextToClipboard(text, successMsg) {
+  const textArea = document.createElement("textarea");
+  textArea.value = text;
+  textArea.style.top = "0";
+  textArea.style.left = "0";
+  textArea.style.position = "fixed";
+  textArea.style.opacity = "0";
+
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
+
+  try {
+    const successful = document.execCommand('copy');
+    if (successful) {
+      showCopySuccess(successMsg);
+    }
+  } catch (err) {
+    console.error('Fallback: 複製失敗', err);
+  }
+
+  document.body.removeChild(textArea);
+}
+
+function showCopySuccess(successMsg) {
+  successMsg.style.display = 'block';
+  setTimeout(() => {
+    successMsg.style.display = 'none';
+  }, 2000);
+}
+</script>
+
+<style>
+.social-share {
+  @apply my-8 p-6 bg-gray-50 dark:bg-gray-800 rounded-lg border;
+}
+
+.social-share-header h5 {
+  @apply text-lg font-semibold text-gray-800 dark:text-gray-200 mb-4;
+}
+
+.social-share-buttons {
+  @apply flex flex-wrap justify-center gap-3;
+}
+
+.social-share-btn {
+  @apply inline-flex items-center justify-center w-12 h-12 rounded-full text-white transition-all duration-300 hover:scale-110 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.social-share-btn.facebook {
+  @apply bg-blue-600 hover:bg-blue-700 focus:ring-blue-500;
+}
+
+.social-share-btn.twitter {
+  @apply bg-blue-400 hover:bg-blue-500 focus:ring-blue-400;
+}
+
+.social-share-btn.line {
+  @apply bg-green-500 hover:bg-green-600 focus:ring-green-500;
+}
+
+.social-share-btn.threads {
+  @apply bg-gray-900 hover:bg-black focus:ring-gray-500;
+}
+
+.social-share-btn.telegram {
+  @apply bg-blue-500 hover:bg-blue-600 focus:ring-blue-500;
+}
+
+.social-share-btn.email {
+  @apply bg-gray-600 hover:bg-gray-700 focus:ring-gray-500;
+}
+
+.social-share-btn.copy-link {
+  @apply bg-purple-600 hover:bg-purple-700 focus:ring-purple-500;
+}
+
+.social-share-btn.print {
+  @apply bg-gray-500 hover:bg-gray-600 focus:ring-gray-500;
+}
+
+.copy-success-message {
+  @apply text-center mt-3 p-2 text-sm text-green-700 bg-green-100 dark:bg-green-800 dark:text-green-200 rounded;
+}
+
+/* 響應式設計 */
+@media (max-width: 640px) {
+  .social-share-btn {
+    @apply w-10 h-10;
+  }
+  
+  .social-share-buttons {
+    @apply gap-2;
+  }
+}
+
+/* 深色模式優化 */
+@media (prefers-color-scheme: dark) {
+  .social-share {
+    border-color: rgba(75, 85, 99, 0.3);
+  }
+}
+</style>
