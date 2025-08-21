@@ -32,7 +32,7 @@ const CONFIG = {
   // 電子報模板設定
   TEMPLATE: {
     FROM_NAME: '懶得變有錢',
-    FROM_EMAIL: 'noreply@lazytoberich.com',
+    FROM_EMAIL: process.env.FROM_EMAIL || 'shamangels@gmail.com', // 使用已驗證的 Gmail 地址
     SUBJECT_PREFIX: '【懶得變有錢】新文章通知：',
     CAMPAIGN_TYPE: 'regular'
   }
