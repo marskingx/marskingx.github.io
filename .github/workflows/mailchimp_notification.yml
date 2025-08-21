@@ -1,11 +1,12 @@
 name: 📧 Mailchimp Newsletter
 
-# 當有新的 commit 推送到 main 分支時觸發
+# 只在新文章發布時觸發 - 限制為 blog 目錄下的新文章
 on:
   push:
     branches: [ main ]
     paths:
-      - 'content/**/*.md'  # 只有當 content 目錄下的 markdown 檔案變更時才觸發
+      - 'content/blog/**/*.md'  # 只有當 blog 目錄下的 markdown 檔案變更時才觸發
+      # 排除其他 content 目錄（如 pages、sections 等）以避免不必要的觸發
 
 # 設定工作流程權限
 permissions:
