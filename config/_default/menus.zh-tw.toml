@@ -23,7 +23,7 @@ weight = 4
 [[main]]
 weight = 1
 parent = "書單"
-name = "👍必讀書單📚"
+name = "👍必讀，書單📚"
 pageRef = "pages/reading_list"
 
 [[main]]

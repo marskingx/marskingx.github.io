@@ -1,4 +1,4 @@
-name: Mailchimp Newsletter Notification
+name: 📧 Mailchimp Newsletter
 
 # 當有新的 commit 推送到 main 分支時觸發
 on:
@@ -12,7 +12,8 @@ permissions:
   contents: read
 
 jobs:
-  check-and-notify:
+  # 檢測新文章並發送電子報
+  newsletter-notification:
     runs-on: ubuntu-latest
     
     steps:
