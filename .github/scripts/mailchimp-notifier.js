@@ -70,8 +70,23 @@ function validateEnvironment() {
 // 取得 Git 變更的檔案列表
 function getChangedFiles() {
   try {
-    // 取得本次 commit 與上一個 commit 的差異
-    const output = execSync('git diff --name-status HEAD~1 HEAD', { encoding: 'utf8' });
+    let output;
+    
+    // 在 GitHub Actions 中，先嘗試檢查是否有足夠的 commit 歷史
+    try {
+      // 檢查是否有 HEAD~1
+      execSync('git rev-parse --verify HEAD~1', { encoding: 'utf8', stdio: 'pipe' });
+      output = execSync('git diff --name-status HEAD~1 HEAD', { encoding: 'utf8' });
+    } catch (e) {
+      // 如果沒有 HEAD~1，可能是第一個 commit 或者是 shallow clone
+      log('info', '無法取得前一個 commit，使用當前 commit 的所有檔案');
+      output = execSync('git diff --name-status --diff-filter=A HEAD', { encoding: 'utf8' });
+      
+      // 如果還是沒有結果，直接列出 content 目錄下的新檔案
+      if (!output.trim()) {
+        output = execSync('git show --name-status --pretty="" HEAD', { encoding: 'utf8' });
+      }
+    }
     
     if (!output.trim()) {
       log('info', '沒有檔案變更');
@@ -81,6 +96,7 @@ function getChangedFiles() {
     const files = output
       .trim()
       .split('\n')
+      .filter(line => line.trim())
       .map(line => {
         const [status, ...fileParts] = line.split('\t');
         const filePath = fileParts.join('\t');
