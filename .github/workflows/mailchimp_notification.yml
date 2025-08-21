@@ -33,7 +33,17 @@ jobs:
       run: |
         npm install axios yaml front-matter
     
-    # 第四步：執行新文章檢測和通知腳本
+    # 第四步：Debug 環境和 API 連線
+    - name: Debug Mailchimp environment
+      env:
+        MAILCHIMP_API_KEY: ${{ secrets.MAILCHIMP_API_KEY }}
+        MAILCHIMP_SERVER_PREFIX: ${{ secrets.MAILCHIMP_SERVER_PREFIX }}
+        MAILCHIMP_AUDIENCE_ID: ${{ secrets.MAILCHIMP_AUDIENCE_ID }}
+        SITE_BASE_URL: ${{ secrets.SITE_BASE_URL }}
+      run: |
+        node .github/scripts/debug-mailchimp.js
+    
+    # 第五步：執行新文章檢測和通知腳本
     - name: Check for new articles and send notifications
       env:
         MAILCHIMP_API_KEY: ${{ secrets.MAILCHIMP_API_KEY }}
