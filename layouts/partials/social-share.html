@@ -15,12 +15,9 @@
   {{ $pageImage = (site.Params.metadata.image | default "/images/og-lazytoberich.png") | absURL }}
 {{ end }}
 
-<div class="social-share">
-  <div class="social-share-header">
-    <h5 class="mb-3 text-center">分享這篇文章</h5>
-  </div>
-  
-  <div class="social-share-buttons flex flex-wrap justify-center gap-3">
+<div class="social-share inline-flex items-center">
+  <h5 class="mr-3 text-nowrap">分享文章：</h5>
+  <div class="social-share-buttons flex flex-wrap gap-3">
     
     <!-- Facebook -->
     <a href="https://www.facebook.com/sharer/sharer.php?u={{ $pageURL | urlquery }}" 
@@ -168,20 +165,16 @@ function showCopySuccess(successMsg) {
 </script>
 
 <style>
-.social-share {
-  @apply my-8 p-6 bg-gray-50 dark:bg-gray-800 rounded-lg border;
-}
-
-.social-share-header h5 {
-  @apply text-lg font-semibold text-gray-800 dark:text-gray-200 mb-4;
+.social-share h5 {
+  @apply text-base font-medium text-gray-800 dark:text-gray-200;
 }
 
 .social-share-buttons {
-  @apply flex flex-wrap justify-center gap-3;
+  @apply flex flex-wrap gap-2;
 }
 
 .social-share-btn {
-  @apply inline-flex items-center justify-center w-12 h-12 rounded-full text-white transition-all duration-300 hover:scale-110 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2;
+  @apply inline-flex items-center justify-center w-8 h-8 rounded-full text-white transition-all duration-300 hover:scale-110 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 text-sm;
 }
 
 .social-share-btn.facebook {
@@ -217,24 +210,25 @@ function showCopySuccess(successMsg) {
 }
 
 .copy-success-message {
-  @apply text-center mt-3 p-2 text-sm text-green-700 bg-green-100 dark:bg-green-800 dark:text-green-200 rounded;
+  @apply fixed top-4 right-4 z-50 p-3 text-sm text-green-700 bg-green-100 dark:bg-green-800 dark:text-green-200 rounded-lg shadow-lg;
 }
 
 /* 響應式設計 */
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+  .social-share {
+    @apply flex-col items-start;
+  }
+  
+  .social-share h5 {
+    @apply mb-2 text-sm;
+  }
+  
   .social-share-btn {
-    @apply w-10 h-10;
+    @apply w-7 h-7 text-xs;
   }
   
   .social-share-buttons {
-    @apply gap-2;
-  }
-}
-
-/* 深色模式優化 */
-@media (prefers-color-scheme: dark) {
-  .social-share {
-    border-color: rgba(75, 85, 99, 0.3);
+    @apply gap-1.5;
   }
 }
 </style>

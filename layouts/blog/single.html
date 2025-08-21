@@ -64,11 +64,13 @@
           {{ partial "podcast-footer.html" . }}
         </div>
         
-        <!-- Enhanced Social Share Component -->
-        {{ partial "social-share.html" . }}
-        
-        <!-- Tags and Social Follow -->
+        <!-- Social Share, Tags and Social Follow -->
         <div class="row items-start justify-between">
+          <!-- Enhanced Social Share Component -->
+          <div class="lg:col-12 mb-6 flex items-center justify-center">
+            {{ partial "social-share.html" . }}
+          </div>
+          
           <!-- Tags -->
           {{ $tags:= .Params.tags }}
           {{ if $tags }}
