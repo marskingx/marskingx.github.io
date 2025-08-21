@@ -2,6 +2,7 @@
 ---
 title: "推薦書單"
 description: "懶得變有錢推薦的理財投資書單，依閱讀時間序整理，包含詳細書評和購買連結"
+url: "/reading_list/"
 draft: false
 ---
 
