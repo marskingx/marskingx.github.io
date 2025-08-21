@@ -4,7 +4,7 @@
   class="{{- if not site.Params.theme_switcher -}}
     {{- site.Params.theme_default -}}
   {{- end -}}"
-  lang="{{ site.LanguageCode | default `en-US` }}"
+  lang="{{ site.LanguageCode | default `zh-TW` }}"
   itemtype="http://schema.org/WebPage">
   <head>
     <!-- head (don't cache it) -->
@@ -51,7 +51,10 @@
     {{ partialCached "essentials/script.html" . }}
 
     {{ if site.Params.subscription.enable }}
-      {{ partial "subscription.html" . }}
+      {{ partial "newsletter-popup.html" . }}
+      {{ if not hugo.IsProduction }}
+        {{ partial "newsletter-popup-demo.html" . }}
+      {{ end }}
     {{ end }}
 
   </body>

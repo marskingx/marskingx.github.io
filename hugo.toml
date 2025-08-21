@@ -8,17 +8,15 @@ theme = "hugoplate"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
 timeZone = "Asia/Taipei"
 # post pagination
-paginate = 120 # see https://gohugo.io/extras/pagination/
+[pagination]
+pagerSize = 120
 # post excerpt
 summaryLength = 0 # see https://gohugo.io/content-management/excerpts/
-# disable language
-disableLanguages = ["en"]
-# example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
+# 單語言模式 - 只使用繁體中文
 hasCJKLanguage = true #  If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
-# default language
+# 預設語言設定  
 defaultContentLanguage = 'zh-tw'
-# defaultContentLanguageInSubdir need to be true if you want to use the language code as a subdirectory and language specific 404 page
-defaultContentLanguageInSubdir = false
+languageCode = 'zh-tw'
 
 ########################### Services #############################
 [services]
@@ -30,7 +28,7 @@ shortname = 'themefisher-template' # we use disqus to show comments in blog post
 
 ########################## Permalinks ############################
 [permalinks.page]
-"pages" = "/:slugorfilename/"
+"pages" = "/:slugorcontentbasename/"
 
 
 ############################# Modules ############################
@@ -89,6 +87,17 @@ maxAge = "720h"
 dir = ":resourceDir/_gen"
 maxAge = "720h"
 
+
+############################ Security ##############################
+[security]
+[security.exec]
+allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$']
+osEnv = ['(?i)^(PATH|NODE_ENV|HUGO_ENV)$']
+[security.funcs]
+getenv = ['^HUGO_']
+[security.http]
+methods = ['(?i)GET|POST']
+urls = ['.*']
 
 ############################ Markup ##############################
 [markup]

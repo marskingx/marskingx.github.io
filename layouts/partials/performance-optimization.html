@@ -20,9 +20,13 @@ Performance Optimization: 資源預載入和 DNS 優化
 {{ end }}
 
 <!-- 關鍵 CSS 預載入 -->
-{{ $critical_css := resources.Get "scss/main.scss" | toCSS | resources.Minify }}
-<link rel="preload" href="{{ $critical_css.RelPermalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="{{ $critical_css.RelPermalink }}"></noscript>
+<!-- 注意：避免直接預載入未經 PostCSS/Tailwind 處理的 SCSS，
+     以免覆蓋主題最終輸出的 /css/style.css 造成版型錯亂。
+     如需預載入，請改為預載入最終輸出的樣式檔。此處先停用預載入以確保正確樣式。 -->
+<!-- 預載入如需啟用，可使用下列（開發環境）：
+<link rel="preload" href="/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/css/style.css"></noscript>
+-->
 
 <!-- 關鍵字型預載入 -->
 {{ if site.Params.google_font_family }}
