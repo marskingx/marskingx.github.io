@@ -1,7 +1,7 @@
 {
   "name": "lazytoberich-blog",
   "description": "懶得變有錢理財部落格 - Hugo + TailwindCSS + 圖片優化系統",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "license": "MIT",
   "author": "懶大 <lazytoberich@gmail.com>",
   "scripts": {
@@ -38,7 +38,7 @@
     "images:optimize": "node ./scripts/optimize-large-images.js",
     "images:preview": "node ./scripts/optimize-large-images.js --dry-run",
     "version:content": "node ./scripts/version-manager.js content",
-    "version:patch": "node ./scripts/version-manager.js patch", 
+    "version:patch": "node ./scripts/version-manager.js patch",
     "version:minor": "node ./scripts/version-manager.js minor",
     "version:major": "node ./scripts/version-manager.js major",
     "version:show": "node ./scripts/version-manager.js show",
