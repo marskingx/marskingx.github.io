@@ -15,96 +15,96 @@
   {{ $pageImage = (site.Params.metadata.image | default "/images/og-lazytoberich.png") | absURL }}
 {{ end }}
 
-<div class="social-share inline-flex items-center">
-  <h5 class="mr-3 text-nowrap">分享文章：</h5>
-  <div class="social-share-buttons flex flex-wrap gap-3">
-    
+<div class="flex items-center">
+  <h5 class="mr-3">分享文章：</h5>
+  <ul class="social-icons">
     <!-- Facebook -->
-    <a href="https://www.facebook.com/sharer/sharer.php?u={{ $pageURL | urlquery }}" 
-       target="_blank" 
-       rel="noopener noreferrer"
-       class="social-share-btn"
-       title="分享到 Facebook"
-       aria-label="分享到 Facebook">
-      <i class="fab fa-facebook-f"></i>
-      <span class="sr-only">Facebook</span>
-    </a>
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ $pageURL | urlquery }}" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         title="分享到 Facebook"
+         aria-label="分享到 Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
     
     <!-- Twitter/X -->
-    <a href="https://twitter.com/intent/tweet?url={{ $pageURL | urlquery }}&text={{ printf "%s - %s" $pageTitle $siteName | urlquery }}" 
-       target="_blank" 
-       rel="noopener noreferrer"
-       class="social-share-btn"
-       title="分享到 Twitter"
-       aria-label="分享到 Twitter">
-      <i class="fab fa-twitter"></i>
-      <span class="sr-only">Twitter</span>
-    </a>
+    <li>
+      <a href="https://twitter.com/intent/tweet?url={{ $pageURL | urlquery }}&text={{ printf "%s - %s" $pageTitle $siteName | urlquery }}" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         title="分享到 Twitter"
+         aria-label="分享到 Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
     
     <!-- LINE -->
-    <a href="https://social-plugins.line.me/lineit/share?url={{ $pageURL | urlquery }}" 
-       target="_blank" 
-       rel="noopener noreferrer"
-       class="social-share-btn"
-       title="分享到 LINE"
-       aria-label="分享到 LINE">
-      <i class="fab fa-line"></i>
-      <span class="sr-only">LINE</span>
-    </a>
+    <li>
+      <a href="https://social-plugins.line.me/lineit/share?url={{ $pageURL | urlquery }}" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         title="分享到 LINE"
+         aria-label="分享到 LINE">
+        <i class="fab fa-line"></i>
+      </a>
+    </li>
     
     <!-- Threads -->
-    <a href="https://www.threads.net/intent/post?text={{ printf "%s %s" $pageTitle $pageURL | urlquery }}" 
-       target="_blank" 
-       rel="noopener noreferrer"
-       class="social-share-btn"
-       title="分享到 Threads"
-       aria-label="分享到 Threads">
-      <i class="fab fa-threads"></i>
-      <span class="sr-only">Threads</span>
-    </a>
+    <li>
+      <a href="https://www.threads.net/intent/post?text={{ printf "%s %s" $pageTitle $pageURL | urlquery }}" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         title="分享到 Threads"
+         aria-label="分享到 Threads">
+        <i class="fab fa-threads"></i>
+      </a>
+    </li>
     
     <!-- Telegram -->
-    <a href="https://t.me/share/url?url={{ $pageURL | urlquery }}&text={{ $pageTitle | urlquery }}" 
-       target="_blank" 
-       rel="noopener noreferrer"
-       class="social-share-btn"
-       title="分享到 Telegram"
-       aria-label="分享到 Telegram">
-      <i class="fab fa-telegram-plane"></i>
-      <span class="sr-only">Telegram</span>
-    </a>
+    <li>
+      <a href="https://t.me/share/url?url={{ $pageURL | urlquery }}&text={{ $pageTitle | urlquery }}" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         title="分享到 Telegram"
+         aria-label="分享到 Telegram">
+        <i class="fab fa-telegram-plane"></i>
+      </a>
+    </li>
     
     <!-- Email -->
-    <a href="mailto:?subject={{ printf "%s | %s" $pageTitle $siteName | urlquery }}&body={{ printf "%s\n\n%s\n\n%s" $pageTitle $pageDescription $pageURL | urlquery }}" 
-       class="social-share-btn"
-       title="透過電子郵件分享"
-       aria-label="透過電子郵件分享">
-      <i class="fas fa-envelope"></i>
-      <span class="sr-only">Email</span>
-    </a>
+    <li>
+      <a href="mailto:?subject={{ printf "%s | %s" $pageTitle $siteName | urlquery }}&body={{ printf "%s\n\n%s\n\n%s" $pageTitle $pageDescription $pageURL | urlquery }}" 
+         title="透過電子郵件分享"
+         aria-label="透過電子郵件分享">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
     
     <!-- Copy Link -->
-    <button type="button" 
-            class="social-share-btn"
-            title="複製連結"
-            aria-label="複製連結"
-            data-url="{{ $pageURL }}"
-            onclick="copyToClipboard(this)">
-      <i class="fas fa-link"></i>
-      <span class="sr-only">複製連結</span>
-    </button>
+    <li>
+      <button type="button" 
+              title="複製連結"
+              aria-label="複製連結"
+              data-url="{{ $pageURL }}"
+              onclick="copyToClipboard(this)"
+              class="bg-primary dark:bg-darkmode-primary dark:text-dark flex h-9 w-9 items-center justify-center rounded text-center leading-9 text-white">
+        <i class="fas fa-link"></i>
+      </button>
+    </li>
     
     <!-- Print -->
-    <button type="button" 
-            class="social-share-btn"
-            title="列印文章"
-            aria-label="列印文章"
-            onclick="window.print()">
-      <i class="fas fa-print"></i>
-      <span class="sr-only">列印</span>
-    </button>
-    
-  </div>
+    <li>
+      <button type="button" 
+              title="列印文章"
+              aria-label="列印文章"
+              onclick="window.print()"
+              class="bg-primary dark:bg-darkmode-primary dark:text-dark flex h-9 w-9 items-center justify-center rounded text-center leading-9 text-white">
+        <i class="fas fa-print"></i>
+      </button>
+    </li>
+  </ul>
   
   <!-- 複製成功提示 -->
   <div id="copy-success" class="copy-success-message" style="display: none;">
@@ -165,43 +165,7 @@ function showCopySuccess(successMsg) {
 </script>
 
 <style>
-.social-share h5 {
-  @apply text-base font-medium text-gray-800 dark:text-gray-200;
-}
-
-.social-share-buttons {
-  @apply flex flex-wrap gap-2;
-}
-
-/* 使用與追蹤按鈕相同的樣式：方形、白色背景、黑色圖示 */
-.social-share-btn {
-  @apply inline-flex items-center justify-center w-9 h-9 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded border border-gray-200 dark:border-gray-600 transition-all duration-300 hover:bg-gray-50 dark:hover:bg-gray-700 hover:border-gray-300 dark:hover:border-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 text-base;
-}
-
-.social-share-btn:hover {
-  @apply scale-105 shadow-md;
-}
-
 .copy-success-message {
   @apply fixed top-4 right-4 z-50 p-3 text-sm text-green-700 bg-green-100 dark:bg-green-800 dark:text-green-200 rounded-lg shadow-lg;
-}
-
-/* 響應式設計 */
-@media (max-width: 768px) {
-  .social-share {
-    @apply flex-col items-start;
-  }
-  
-  .social-share h5 {
-    @apply mb-2 text-sm;
-  }
-  
-  .social-share-btn {
-    @apply w-8 h-8 text-sm;
-  }
-  
-  .social-share-buttons {
-    @apply gap-1.5;
-  }
 }
 </style>
