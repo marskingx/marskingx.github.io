@@ -16,6 +16,7 @@
 
 #### 1.2 取得 Server Prefix
 API Key 的最後部分就是 Server Prefix（例如：`us14`）
+                                                                                                   │
 
 #### 1.3 取得 Audience ID
 1. 前往 **Audience** → **All contacts**

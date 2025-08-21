@@ -1,0 +1,17 @@
+﻿2025-08-21T03:20:04.3867481Z ##[group]Run actions/setup-node@v4
+2025-08-21T03:20:04.3867874Z with:
+2025-08-21T03:20:04.3868112Z   node-version: 18
+2025-08-21T03:20:04.3868349Z   cache: npm
+2025-08-21T03:20:04.3868578Z   always-auth: false
+2025-08-21T03:20:04.3868827Z   check-latest: false
+2025-08-21T03:20:04.3869209Z   token: ***
+2025-08-21T03:20:04.3869445Z ##[endgroup]
+2025-08-21T03:20:04.5619524Z Found in cache @ /opt/hostedtoolcache/node/18.20.8/x64
+2025-08-21T03:20:04.5626116Z ##[group]Environment details
+2025-08-21T03:20:06.1806324Z node: v18.20.8
+2025-08-21T03:20:06.1807290Z npm: 10.8.2
+2025-08-21T03:20:06.1808110Z yarn: 1.22.22
+2025-08-21T03:20:06.1810161Z ##[endgroup]
+2025-08-21T03:20:06.1832472Z [command]/opt/hostedtoolcache/node/18.20.8/x64/bin/npm config get cache
+2025-08-21T03:20:06.4371037Z /home/runner/.npm
+2025-08-21T03:20:06.4470537Z ##[error]Dependencies lock file is not found in /home/runner/work/marskingx.github.io/marskingx.github.io. Supported file patterns: package-lock.json,npm-shrinkwrap.json,yarn.lock

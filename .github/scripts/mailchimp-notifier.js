@@ -24,7 +24,11 @@ const CONFIG = {
   MAILCHIMP_AUDIENCE_ID: process.env.MAILCHIMP_AUDIENCE_ID,
   
   // 網站設定
-  SITE_BASE_URL: process.env.SITE_BASE_URL || 'https://marskingx.github.io',
+  SITE_BASE_URL: process.env.SITE_BASE_URL || 'https://lazytoberich.com.tw',
+  
+  // 測試模式設定
+  TEST_MODE: process.env.TEST_MODE === 'true', // 設為 true 時只建立 draft，不發送
+  TEST_EMAIL: process.env.TEST_EMAIL || 'shamangels@gmail.com', // 測試時的收件者
   
   // 內容路徑設定
   CONTENT_PATHS: ['content/blog/', 'content/posts/'],
@@ -32,7 +36,7 @@ const CONFIG = {
   // 電子報模板設定
   TEMPLATE: {
     FROM_NAME: '懶得變有錢',
-    FROM_EMAIL: process.env.FROM_EMAIL || 'shamangels@gmail.com', // 使用已驗證的 Gmail 地址
+    FROM_EMAIL: process.env.FROM_EMAIL || 'shamangels@gmail.com',
     SUBJECT_PREFIX: '【懶得變有錢】新文章通知：',
     CAMPAIGN_TYPE: 'regular'
   }
@@ -145,7 +149,7 @@ function parseArticle(filePath) {
     const frontMatter = parsed.attributes;
     const body = parsed.body;
     
-    // 生成文章 URL
+    // 生成文章 URL - 確保正確的路径格式
     const slug = frontMatter.slug || path.basename(filePath, '.md');
     const permalink = `${CONFIG.SITE_BASE_URL}/blog/${slug}/`;
     
@@ -254,10 +258,19 @@ async function createMailchimpCampaign(article) {
         from_name: CONFIG.TEMPLATE.FROM_NAME,
         reply_to: CONFIG.TEMPLATE.FROM_EMAIL,
         to_name: '*|FNAME|*',
-        auto_footer: false,
-        inline_css: true
+        auto_footer: false,  // 停用自動 footer
+        inline_css: true,
+        authenticate: false, // 停用驗證標章
+        auto_tweet: false,   // 停用自動推文
+        use_conversation: false, // 停用對話功能
+        folder_id: null      // 不指定資料夾
       }
     };
+    
+    // 測試模式提示
+    if (CONFIG.TEST_MODE) {
+      log('info', '🧪 測試模式: 將創建 DRAFT 活動，不會自動發送');
+    }
     
     log('info', '正在創建 Mailchimp 活動...', { campaignData });
     
@@ -269,7 +282,7 @@ async function createMailchimpCampaign(article) {
     });
     
     const campaignId = response.data.id;
-    log('info', '活動創建成功', { campaignId });
+    log('info', '活動創建成功', { campaignId, testMode: CONFIG.TEST_MODE });
     
     return campaignId;
     
@@ -394,13 +407,20 @@ async function main() {
       // 設定電子報內容
       await setEmailContent(campaignId, article);
       
-      // 發送電子報
-      await sendCampaign(campaignId);
-      
-      log('info', `文章 "${article.title}" 的電子報已成功發送`);
+      // 發送電子報（測試模式下跳過）
+      if (!CONFIG.TEST_MODE) {
+        await sendCampaign(campaignId);
+        log('info', `文章 "${article.title}" 的電子報已成功發送`);
+      } else {
+        log('info', `🧪 測試模式: 文章 "${article.title}" 的活動已創建為 DRAFT，未發送`, { campaignId });
+      }
     }
     
-    log('info', `所有新文章處理完成，共發送 ${newArticles.length} 封電子報`);
+    if (!CONFIG.TEST_MODE) {
+      log('info', `所有新文章處理完成，共發送 ${newArticles.length} 封電子報`);
+    } else {
+      log('info', `🧪 測試模式完成，共創建 ${newArticles.length} 個 DRAFT 活動（未發送）`);
+    }
     
   } catch (error) {
     handleError('腳本執行失敗', error);
