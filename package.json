@@ -1,7 +1,7 @@
 {
   "name": "lazytoberich-blog",
   "description": "懶得變有錢理財部落格 - Hugo + TailwindCSS + 圖片優化系統",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "license": "MIT",
   "author": "懶大 <lazytoberich@gmail.com>",
   "scripts": {
@@ -65,5 +65,8 @@
     "prettier-plugin-tailwindcss": "^0.5.14",
     "tailwind-bootstrap-grid": "^5.1.0",
     "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "axios": "^1.11.0"
   }
 }
