@@ -38,23 +38,23 @@
             <div class="newsletter-features-grid">
               <div class="newsletter-feature">
                 <div class="newsletter-feature-icon">📊</div>
-                <span class="newsletter-feature-text">100+文章</span>
+                <span class="newsletter-feature-text">懶人觀點</span>
               </div>
               <div class="newsletter-feature">
                 <div class="newsletter-feature-icon">🎙️</div>
-                <span class="newsletter-feature-text">獨家音頻</span>
+                <span class="newsletter-feature-text">Podcast</span>
               </div>
               <div class="newsletter-feature">
                 <div class="newsletter-feature-icon">💡</div>
-                <span class="newsletter-feature-text">投資策略</span>
+                <span class="newsletter-feature-text">理財策略</span>
               </div>
               <div class="newsletter-feature">
                 <div class="newsletter-feature-icon">📈</div>
-                <span class="newsletter-feature-text">ETF分析</span>
+                <span class="newsletter-feature-text">有腦ETF</span>
               </div>
               <div class="newsletter-feature">
                 <div class="newsletter-feature-icon">🎯</div>
-                <span class="newsletter-feature-text">理財規劃</span>
+                <span class="newsletter-feature-text">財務規劃</span>
               </div>
               <div class="newsletter-feature">
                 <div class="newsletter-feature-icon">🔥</div>
@@ -65,13 +65,13 @@
 
           <form id="newsletter-form" class="newsletter-form" action="https://lazytoberich.us14.list-manage.com/subscribe/post?u=db5c854191bdeffdff24a5147&amp;id=517a8482e3&amp;f_id=006cc3e0f0" method="POST" target="_blank">
             <div class="newsletter-input-group">
-              <input 
-                type="email" 
-                name="EMAIL" 
+              <input
+                type="email"
+                name="EMAIL"
                 id="newsletter-email"
-                placeholder="請輸入您的電子郵件" 
+                placeholder="請輸入您的電子郵件"
                 required
-                class="newsletter-input" 
+                class="newsletter-input"
               />
               <button type="submit" class="newsletter-submit-btn">
                 免費訂閱
@@ -365,47 +365,47 @@
     margin: 1rem;
     max-width: calc(100vw - 2rem);
   }
-  
+
   .newsletter-content {
     padding: 1.5rem;
   }
-  
+
   .newsletter-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .newsletter-image-section {
     order: -1;
   }
-  
+
   .newsletter-image-placeholder {
     width: 160px;
     height: 120px;
   }
-  
+
   .newsletter-title {
     font-size: 1.5rem;
     text-align: center;
   }
-  
+
   .newsletter-subtitle {
     text-align: center;
   }
-  
+
   .newsletter-header {
     text-align: center;
   }
-  
+
   .newsletter-features-grid {
     grid-template-columns: 1fr;
     gap: 0.5rem;
   }
-  
+
   .newsletter-feature {
     padding: 0.75rem;
   }
-  
+
   .newsletter-feature-text {
     font-size: 0.8rem;
     white-space: normal;
@@ -441,48 +441,48 @@
     background: #1f2937;
     color: white;
   }
-  
+
   .newsletter-title {
     color: white;
   }
-  
+
   .newsletter-input {
     background: #374151;
     border-color: #4b5563;
     color: white;
   }
-  
+
   .newsletter-input:focus {
     border-color: white;
     box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
   }
-  
+
   .newsletter-submit-btn {
     background-color: white;
     color: #121212;
   }
-  
+
   .newsletter-submit-btn:hover {
     background-color: #f3f4f6;
   }
-  
+
   .newsletter-success-title {
     color: white;
   }
-  
+
   .newsletter-close-btn:hover {
     background-color: #374151;
     color: white;
   }
-  
+
   .newsletter-feature {
     background: #374151;
   }
-  
+
   .newsletter-feature:hover {
     background: #4b5563;
   }
-  
+
   .newsletter-feature-text {
     color: #d1d5db;
   }
@@ -493,7 +493,7 @@
 <script>
 (function() {
   'use strict';
-  
+
   // Configuration
   const CONFIG = {
     STORAGE_KEY: 'newsletter-popup-data',
@@ -501,19 +501,19 @@
     MAX_DISPLAYS: 3,
     DAYS_BETWEEN_SHOWS: 7
   };
-  
+
   // Elements
   const overlay = document.getElementById('newsletter-popup-overlay');
   const closeBtn = document.getElementById('newsletter-close-btn');
   const form = document.getElementById('newsletter-form');
   const content = document.getElementById('newsletter-content');
   const success = document.getElementById('newsletter-success');
-  
+
   if (!overlay || !closeBtn || !form || !content || !success) {
     console.warn('Newsletter popup elements not found');
     return;
   }
-  
+
   // Storage helpers
   function getPopupData() {
     try {
@@ -523,7 +523,7 @@
       return { count: 0, lastShown: null, subscribed: false };
     }
   }
-  
+
   function setPopupData(data) {
     try {
       localStorage.setItem(CONFIG.STORAGE_KEY, JSON.stringify(data));
@@ -531,44 +531,44 @@
       console.warn('Could not save popup data to localStorage');
     }
   }
-  
+
   // Check if popup should be shown
   function shouldShowPopup() {
     const data = getPopupData();
-    
+
     if (data.subscribed || data.count >= CONFIG.MAX_DISPLAYS) {
       return false;
     }
-    
+
     if (data.lastShown) {
       const daysSinceLastShown = (Date.now() - data.lastShown) / (1000 * 60 * 60 * 24);
       if (daysSinceLastShown < CONFIG.DAYS_BETWEEN_SHOWS) {
         return false;
       }
     }
-    
+
     return true;
   }
-  
+
   // Show popup
   function showPopup() {
     overlay.classList.remove('newsletter-popup-hidden');
     document.body.style.overflow = 'hidden';
-    
+
     const data = getPopupData();
     data.count += 1;
     data.lastShown = Date.now();
     setPopupData(data);
-    
+
     // Focus trap
     const focusableElements = overlay.querySelectorAll(
       'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
     );
     const firstFocusable = focusableElements[0];
     const lastFocusable = focusableElements[focusableElements.length - 1];
-    
+
     firstFocusable?.focus();
-    
+
     overlay.addEventListener('keydown', function(e) {
       if (e.key === 'Tab') {
         if (e.shiftKey) {
@@ -585,82 +585,82 @@
       }
     });
   }
-  
+
   // Hide popup
   function hidePopup() {
     overlay.classList.add('newsletter-popup-hidden');
     document.body.style.overflow = '';
   }
-  
+
   // Show success message
   function showSuccess() {
     content.classList.add('newsletter-popup-hidden');
     success.classList.remove('newsletter-popup-hidden');
-    
+
     const data = getPopupData();
     data.subscribed = true;
     setPopupData(data);
-    
+
     setTimeout(hidePopup, 3000);
   }
-  
+
   // Event listeners
   closeBtn.addEventListener('click', hidePopup);
-  
+
   overlay.addEventListener('click', function(e) {
     if (e.target === overlay) {
       hidePopup();
     }
   });
-  
+
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape' && !overlay.classList.contains('newsletter-popup-hidden')) {
       hidePopup();
     }
   });
-  
+
   form.addEventListener('submit', function(e) {
     e.preventDefault();
-    
+
     const email = form.querySelector('input[name="EMAIL"]').value;
     if (!email) return;
-    
+
     // Submit to Mailchimp
     const formData = new FormData(form);
     const submitButton = form.querySelector('button[type="submit"]');
     const originalText = submitButton.textContent;
-    
+
     submitButton.textContent = '訂閱中...';
     submitButton.disabled = true;
-    
+
     // Create a hidden iframe for submission
     const iframe = document.createElement('iframe');
     iframe.style.display = 'none';
     iframe.name = 'newsletter-frame';
     document.body.appendChild(iframe);
-    
+
     form.target = 'newsletter-frame';
     form.submit();
-    
+
     // Show success after short delay
     setTimeout(() => {
       showSuccess();
       document.body.removeChild(iframe);
     }, 1000);
   });
-  
+
   // Initialize
   function init() {
     // Ensure proper initial state
     content.classList.remove('newsletter-popup-hidden');
     success.classList.add('newsletter-popup-hidden');
     overlay.classList.add('newsletter-popup-hidden');
-    
+
     if (shouldShowPopup()) {
       setTimeout(showPopup, CONFIG.DELAY_MS);
     }
   }
-  
+
   // Start when DOM is ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
