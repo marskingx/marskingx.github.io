@@ -1,0 +1,94 @@
+// Add your own custom styles here
+/* 將表格和表格內的文字水平和垂直置中 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center; /* 水平置中 */
+  vertical-align: middle; /* 垂直置中 */
+}
+
+table th {
+  font-size: 16px; /* 調整表格標題的字體大小 */
+  font-weight: bold;
+}
+
+/* 自定義表格樣式，讓文字靠上 */
+.table-top-align th, .table-top-align td {
+  vertical-align: top;
+  text-align: center; /* 水平置中 */
+}
+
+/* 圖片居中 */
+.table-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 修復 header dark mode 背景色問題 */
+.header {
+  background-color: #fff !important;
+}
+
+html.dark .header {
+  background-color: #1c1c1c !important;
+}
+
+/* 修復 navbar 和 container 背景色問題 */
+.navbar {
+  background-color: transparent !important;
+}
+
+.header .container {
+  background-color: transparent !important;
+}
+
+/* 提供給blockquote的語法 */
+.article-content blockquote {
+  position: relative;
+  margin: 1.5em 0;
+  border-inline-start: var(--blockquote-border-size) solid var(--card-separator-color);
+  padding: 15px calc(var(--card-padding) - var(--blockquote-border-size));
+  background-color: var(--blockquote-background-color);
+}
+
+.article-content blockquote .cite {
+  display: block;
+  text-align: right;
+  font-size: 0.75em;
+}
+
+.article-content blockquote .cite a {
+  text-decoration: underline;
+}
+
+
+.podcast-container {
+  display: grid;
+  place-items: center; /* 水平和垂直置中 */
+}
+
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

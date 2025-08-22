@@ -1,0 +1,676 @@
+2025-08-21T04:02:36.4351455Z ##[debug]Starting: check-and-notify
+2025-08-21T04:02:36.4381232Z ##[debug]Cleaning runner temp folder: /home/runner/work/_temp
+2025-08-21T04:02:36.4521951Z ##[debug]Starting: Set up job
+2025-08-21T04:02:36.4523654Z Current runner version: '2.328.0'
+2025-08-21T04:02:36.4552325Z ##[group]Runner Image Provisioner
+2025-08-21T04:02:36.4553657Z Hosted Compute Agent
+2025-08-21T04:02:36.4554593Z Version: 20250818.377
+2025-08-21T04:02:36.4555518Z Commit: 3c593e9f75fe0b87e893bca80d6e12ba089c61fc
+2025-08-21T04:02:36.4556850Z Build Date: 2025-08-18T14:52:18Z
+2025-08-21T04:02:36.4557824Z ##[endgroup]
+2025-08-21T04:02:36.4558624Z ##[group]Operating System
+2025-08-21T04:02:36.4559697Z Ubuntu
+2025-08-21T04:02:36.4560460Z 24.04.2
+2025-08-21T04:02:36.4561507Z LTS
+2025-08-21T04:02:36.4562341Z ##[endgroup]
+2025-08-21T04:02:36.4563217Z ##[group]Runner Image
+2025-08-21T04:02:36.4564260Z Image: ubuntu-24.04
+2025-08-21T04:02:36.4565107Z Version: 20250818.1.0
+2025-08-21T04:02:36.4566816Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250818.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-08-21T04:02:36.4569838Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250818.1
+2025-08-21T04:02:36.4572248Z ##[endgroup]
+2025-08-21T04:02:36.4574010Z ##[group]GITHUB_TOKEN Permissions
+2025-08-21T04:02:36.4576466Z Contents: read
+2025-08-21T04:02:36.4577370Z Metadata: read
+2025-08-21T04:02:36.4578217Z ##[endgroup]
+2025-08-21T04:02:36.4582567Z Secret source: Actions
+2025-08-21T04:02:36.4584315Z ##[debug]Primary repository: marskingx/marskingx.github.io
+2025-08-21T04:02:36.4585593Z Prepare workflow directory
+2025-08-21T04:02:36.4675958Z ##[debug]Creating pipeline directory: '/home/runner/work/marskingx.github.io'
+2025-08-21T04:02:36.4681795Z ##[debug]Creating workspace directory: '/home/runner/work/marskingx.github.io/marskingx.github.io'
+2025-08-21T04:02:36.4684854Z ##[debug]Update context data
+2025-08-21T04:02:36.4690017Z ##[debug]Evaluating job-level environment variables
+2025-08-21T04:02:36.5007338Z ##[debug]Evaluating job container
+2025-08-21T04:02:36.5012517Z ##[debug]Evaluating job service containers
+2025-08-21T04:02:36.5016263Z ##[debug]Evaluating job defaults
+2025-08-21T04:02:36.5054289Z Prepare all required actions
+2025-08-21T04:02:36.5110461Z Getting action download info
+2025-08-21T04:02:36.8958988Z Download action repository 'actions/checkout@v4' (SHA:08eba0b27e820071cde6df949e0beb9ba4906955)
+2025-08-21T04:02:36.8982856Z ##[debug]Copied action archive '/opt/actionarchivecache/actions_checkout/08eba0b27e820071cde6df949e0beb9ba4906955.tar.gz' to '/home/runner/work/_actions/_temp_de8a2950-2988-482d-b3f6-fbca5ad1b4fd/1f4800df-4231-46da-8371-77ed68df64fa.tar.gz'
+2025-08-21T04:02:36.9507903Z ##[debug]Unwrap 'actions-checkout-08eba0b' to '/home/runner/work/_actions/actions/checkout/v4'
+2025-08-21T04:02:36.9635050Z ##[debug]Archive '/home/runner/work/_actions/_temp_de8a2950-2988-482d-b3f6-fbca5ad1b4fd/1f4800df-4231-46da-8371-77ed68df64fa.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/checkout/v4'.
+2025-08-21T04:02:36.9739205Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2025-08-21T04:02:36.9774803Z ##[debug]Copied action archive '/opt/actionarchivecache/actions_setup-node/49933ea5288caeca8642d1e84afbd3f7d6820020.tar.gz' to '/home/runner/work/_actions/_temp_bf43a08e-2ce7-45be-9c1f-8eb3b53bac15/6ad46946-467a-46a0-93df-23602b528de6.tar.gz'
+2025-08-21T04:02:37.0322286Z ##[debug]Unwrap 'actions-setup-node-49933ea' to '/home/runner/work/_actions/actions/setup-node/v4'
+2025-08-21T04:02:37.0576751Z ##[debug]Archive '/home/runner/work/_actions/_temp_bf43a08e-2ce7-45be-9c1f-8eb3b53bac15/6ad46946-467a-46a0-93df-23602b528de6.tar.gz' has been unzipped into '/home/runner/work/_actions/actions/setup-node/v4'.
+2025-08-21T04:02:37.0637729Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/checkout/v4/action.yml'.
+2025-08-21T04:02:37.1324797Z ##[debug]action.yml for action: '/home/runner/work/_actions/actions/setup-node/v4/action.yml'.
+2025-08-21T04:02:37.1473360Z ##[debug]Set step '__actions_checkout' display name to: 'Checkout repository'
+2025-08-21T04:02:37.1477064Z ##[debug]Set step '__actions_setup-node' display name to: 'Setup Node.js'
+2025-08-21T04:02:37.1479039Z ##[debug]Set step '__run' display name to: 'Install dependencies'
+2025-08-21T04:02:37.1481166Z ##[debug]Set step '__run_2' display name to: 'Debug Mailchimp environment'
+2025-08-21T04:02:37.1483343Z ##[debug]Set step '__run_3' display name to: 'Check for new articles and send notifications'
+2025-08-21T04:02:37.1485227Z ##[debug]Set step '__run_4' display name to: 'Log execution result'
+2025-08-21T04:02:37.1486020Z Complete job name: check-and-notify
+2025-08-21T04:02:37.1518866Z ##[debug]Collect running processes for tracking orphan processes.
+2025-08-21T04:02:37.1724894Z ##[debug]Finishing: Set up job
+2025-08-21T04:02:37.1846283Z ##[debug]Evaluating condition for step: 'Checkout repository'
+2025-08-21T04:02:37.1882813Z ##[debug]Evaluating: success()
+2025-08-21T04:02:37.1888165Z ##[debug]Evaluating success:
+2025-08-21T04:02:37.1904639Z ##[debug]=> true
+2025-08-21T04:02:37.1911079Z ##[debug]Result: true
+2025-08-21T04:02:37.1933798Z ##[debug]Starting: Checkout repository
+2025-08-21T04:02:37.2006506Z ##[debug]Register post job cleanup for action: actions/checkout@v4
+2025-08-21T04:02:37.2088089Z ##[debug]Loading inputs
+2025-08-21T04:02:37.2109482Z ##[debug]Evaluating: github.repository
+2025-08-21T04:02:37.2111013Z ##[debug]Evaluating Index:
+2025-08-21T04:02:37.2113087Z ##[debug]..Evaluating github:
+2025-08-21T04:02:37.2114377Z ##[debug]..=> Object
+2025-08-21T04:02:37.2120024Z ##[debug]..Evaluating String:
+2025-08-21T04:02:37.2121259Z ##[debug]..=> 'repository'
+2025-08-21T04:02:37.2125800Z ##[debug]=> 'marskingx/marskingx.github.io'
+2025-08-21T04:02:37.2127532Z ##[debug]Result: 'marskingx/marskingx.github.io'
+2025-08-21T04:02:37.2131288Z ##[debug]Evaluating: github.token
+2025-08-21T04:02:37.2131923Z ##[debug]Evaluating Index:
+2025-08-21T04:02:37.2132465Z ##[debug]..Evaluating github:
+2025-08-21T04:02:37.2133030Z ##[debug]..=> Object
+2025-08-21T04:02:37.2133545Z ##[debug]..Evaluating String:
+2025-08-21T04:02:37.2134093Z ##[debug]..=> 'token'
+2025-08-21T04:02:37.2134919Z ##[debug]=> '***'
+2025-08-21T04:02:37.2135568Z ##[debug]Result: '***'
+2025-08-21T04:02:37.2151957Z ##[debug]Loading env
+2025-08-21T04:02:37.2221397Z ##[group]Run actions/checkout@v4
+2025-08-21T04:02:37.2222194Z with:
+2025-08-21T04:02:37.2222637Z   fetch-depth: 2
+2025-08-21T04:02:37.2223149Z   repository: marskingx/marskingx.github.io
+2025-08-21T04:02:37.2223914Z   token: ***
+2025-08-21T04:02:37.2224357Z   ssh-strict: true
+2025-08-21T04:02:37.2224818Z   ssh-user: git
+2025-08-21T04:02:37.2225289Z   persist-credentials: true
+2025-08-21T04:02:37.2225807Z   clean: true
+2025-08-21T04:02:37.2226277Z   sparse-checkout-cone-mode: true
+2025-08-21T04:02:37.2226862Z   fetch-tags: false
+2025-08-21T04:02:37.2227330Z   show-progress: true
+2025-08-21T04:02:37.2227799Z   lfs: false
+2025-08-21T04:02:37.2228227Z   submodules: false
+2025-08-21T04:02:37.2228700Z   set-safe-directory: true
+2025-08-21T04:02:37.2229431Z ##[endgroup]
+2025-08-21T04:02:37.3251732Z ##[debug]GITHUB_WORKSPACE = '/home/runner/work/marskingx.github.io/marskingx.github.io'
+2025-08-21T04:02:37.3254562Z ##[debug]qualified repository = 'marskingx/marskingx.github.io'
+2025-08-21T04:02:37.3256381Z ##[debug]ref = 'refs/heads/main'
+2025-08-21T04:02:37.3257904Z ##[debug]commit = '33edde12f7d61d603c9b07930a5d34a3d4afa449'
+2025-08-21T04:02:37.3258896Z ##[debug]clean = true
+2025-08-21T04:02:37.3259665Z ##[debug]filter = undefined
+2025-08-21T04:02:37.3260469Z ##[debug]fetch depth = 2
+2025-08-21T04:02:37.3261685Z ##[debug]fetch tags = false
+2025-08-21T04:02:37.3262509Z ##[debug]show progress = true
+2025-08-21T04:02:37.3263345Z ##[debug]lfs = false
+2025-08-21T04:02:37.3264119Z ##[debug]submodules = false
+2025-08-21T04:02:37.3265008Z ##[debug]recursive submodules = false
+2025-08-21T04:02:37.3265864Z ##[debug]GitHub Host URL =
+2025-08-21T04:02:37.3267697Z ::add-matcher::/home/runner/work/_actions/actions/checkout/v4/dist/problem-matcher.json
+2025-08-21T04:02:37.3351737Z ##[debug]Added matchers: 'checkout-git'. Problem matchers scan action output for known warning or error strings and report these inline.
+2025-08-21T04:02:37.3357539Z Syncing repository: marskingx/marskingx.github.io
+2025-08-21T04:02:37.3359301Z ::group::Getting Git version info
+2025-08-21T04:02:37.3361042Z ##[group]Getting Git version info
+2025-08-21T04:02:37.3362056Z Working directory is '/home/runner/work/marskingx.github.io/marskingx.github.io'
+2025-08-21T04:02:37.3363500Z ##[debug]Getting git version
+2025-08-21T04:02:37.3364266Z [command]/usr/bin/git version
+2025-08-21T04:02:37.3372166Z git version 2.51.0
+2025-08-21T04:02:37.3396819Z ##[debug]0
+2025-08-21T04:02:37.3398220Z ##[debug]git version 2.51.0
+2025-08-21T04:02:37.3399059Z ##[debug]
+2025-08-21T04:02:37.3401301Z ##[debug]Set git useragent to: git/2.51.0 (github-actions-checkout)
+2025-08-21T04:02:37.3403210Z ::endgroup::
+2025-08-21T04:02:37.3403988Z ##[endgroup]
+2025-08-21T04:02:37.3409126Z ::add-mask::***
+2025-08-21T04:02:37.3424413Z Temporarily overriding HOME='/home/runner/work/_temp/249ff718-15cd-4de7-86cc-a28ee5ab179f' before making global git config changes
+2025-08-21T04:02:37.3425874Z Adding repository directory to the temporary git global config as a safe directory
+2025-08-21T04:02:37.3429744Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/marskingx.github.io/marskingx.github.io
+2025-08-21T04:02:37.3461989Z ##[debug]0
+2025-08-21T04:02:37.3462773Z ##[debug]
+2025-08-21T04:02:37.3467288Z Deleting the contents of '/home/runner/work/marskingx.github.io/marskingx.github.io'
+2025-08-21T04:02:37.3471378Z ::group::Initializing the repository
+2025-08-21T04:02:37.3472072Z ##[group]Initializing the repository
+2025-08-21T04:02:37.3475782Z [command]/usr/bin/git init /home/runner/work/marskingx.github.io/marskingx.github.io
+2025-08-21T04:02:37.3535935Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-08-21T04:02:37.3537868Z hint: is subject to change. To configure the initial branch name to use in all
+2025-08-21T04:02:37.3539169Z hint: of your new repositories, which will suppress this warning, call:
+2025-08-21T04:02:37.3539951Z hint:
+2025-08-21T04:02:37.3540508Z hint: 	git config --global init.defaultBranch <name>
+2025-08-21T04:02:37.3541418Z hint:
+2025-08-21T04:02:37.3542081Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-08-21T04:02:37.3543132Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-08-21T04:02:37.3544346Z hint:
+2025-08-21T04:02:37.3544781Z hint: 	git branch -m <name>
+2025-08-21T04:02:37.3545281Z hint:
+2025-08-21T04:02:37.3545914Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2025-08-21T04:02:37.3547146Z Initialized empty Git repository in /home/runner/work/marskingx.github.io/marskingx.github.io/.git/
+2025-08-21T04:02:37.3548580Z ##[debug]0
+2025-08-21T04:02:37.3550209Z ##[debug]Initialized empty Git repository in /home/runner/work/marskingx.github.io/marskingx.github.io/.git/
+2025-08-21T04:02:37.3551671Z ##[debug]
+2025-08-21T04:02:37.3552434Z [command]/usr/bin/git remote add origin https://github.com/marskingx/marskingx.github.io
+2025-08-21T04:02:37.3585577Z ##[debug]0
+2025-08-21T04:02:37.3586364Z ##[debug]
+2025-08-21T04:02:37.3587284Z ::endgroup::
+2025-08-21T04:02:37.3587721Z ##[endgroup]
+2025-08-21T04:02:37.3588488Z ::group::Disabling automatic garbage collection
+2025-08-21T04:02:37.3589152Z ##[group]Disabling automatic garbage collection
+2025-08-21T04:02:37.3590302Z [command]/usr/bin/git config --local gc.auto 0
+2025-08-21T04:02:37.3620147Z ##[debug]0
+2025-08-21T04:02:37.3621242Z ##[debug]
+2025-08-21T04:02:37.3621971Z ::endgroup::
+2025-08-21T04:02:37.3622406Z ##[endgroup]
+2025-08-21T04:02:37.3623144Z ::group::Setting up auth
+2025-08-21T04:02:37.3623690Z ##[group]Setting up auth
+2025-08-21T04:02:37.3627950Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-08-21T04:02:37.3653370Z ##[debug]1
+2025-08-21T04:02:37.3658283Z ##[debug]
+2025-08-21T04:02:37.3659558Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-08-21T04:02:37.3925133Z ##[debug]0
+2025-08-21T04:02:37.3926018Z ##[debug]
+2025-08-21T04:02:37.3929819Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-08-21T04:02:37.3956050Z ##[debug]1
+2025-08-21T04:02:37.3956917Z ##[debug]
+2025-08-21T04:02:37.3960982Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-08-21T04:02:37.4175249Z ##[debug]0
+2025-08-21T04:02:37.4176044Z ##[debug]
+2025-08-21T04:02:37.4188991Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-08-21T04:02:37.4221197Z ##[debug]0
+2025-08-21T04:02:37.4231163Z ##[debug]
+2025-08-21T04:02:37.4231958Z ::endgroup::
+2025-08-21T04:02:37.4232394Z ##[endgroup]
+2025-08-21T04:02:37.4244156Z ::group::Fetching the repository
+2025-08-21T04:02:37.4244754Z ##[group]Fetching the repository
+2025-08-21T04:02:37.4246146Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=2 origin +33edde12f7d61d603c9b07930a5d34a3d4afa449:refs/remotes/origin/main
+2025-08-21T04:02:40.6348776Z From https://github.com/marskingx/marskingx.github.io
+2025-08-21T04:02:40.6351221Z  * [new ref]         33edde12f7d61d603c9b07930a5d34a3d4afa449 -> origin/main
+2025-08-21T04:02:40.6377578Z ##[debug]0
+2025-08-21T04:02:40.6379510Z ##[debug]
+2025-08-21T04:02:40.6381533Z ::endgroup::
+2025-08-21T04:02:40.6382580Z ##[endgroup]
+2025-08-21T04:02:40.6384452Z ::group::Determining the checkout info
+2025-08-21T04:02:40.6385976Z ##[group]Determining the checkout info
+2025-08-21T04:02:40.6388210Z ::endgroup::
+2025-08-21T04:02:40.6389312Z ##[endgroup]
+2025-08-21T04:02:40.6390456Z [command]/usr/bin/git sparse-checkout disable
+2025-08-21T04:02:40.6423021Z ##[debug]0
+2025-08-21T04:02:40.6424908Z ##[debug]
+2025-08-21T04:02:40.6428308Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-08-21T04:02:40.6455924Z ##[debug]0
+2025-08-21T04:02:40.6457961Z ##[debug]
+2025-08-21T04:02:40.6460367Z ::group::Checking out the ref
+2025-08-21T04:02:40.6462075Z ##[group]Checking out the ref
+2025-08-21T04:02:40.6464373Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-08-21T04:02:41.2703121Z Switched to a new branch 'main'
+2025-08-21T04:02:41.2703780Z branch 'main' set up to track 'origin/main'.
+2025-08-21T04:02:41.2750438Z ##[debug]0
+2025-08-21T04:02:41.2751339Z ##[debug]branch 'main' set up to track 'origin/main'.
+2025-08-21T04:02:41.2751649Z ##[debug]
+2025-08-21T04:02:41.2752000Z ::endgroup::
+2025-08-21T04:02:41.2752249Z ##[endgroup]
+2025-08-21T04:02:41.2791649Z ##[debug]0
+2025-08-21T04:02:41.2792888Z ##[debug]commit 33edde12f7d61d603c9b07930a5d34a3d4afa449
+2025-08-21T04:02:41.2793331Z ##[debug]Author: MarskingxLee <shamangels@gmail.com>
+2025-08-21T04:02:41.2793712Z ##[debug]Date:   Thu Aug 21 11:50:15 2025 +0800
+2025-08-21T04:02:41.2794029Z ##[debug]
+2025-08-21T04:02:41.2794235Z ##[debug]    test: 新增 debug 測試文章觸發詳細診斷
+2025-08-21T04:02:41.2794498Z ##[debug]
+2025-08-21T04:02:41.2794809Z ##[debug]    此文章將觸發包含 debug 步驟的工作流程：
+2025-08-21T04:02:41.2795164Z ##[debug]    - 檢查所有環境變數設定
+2025-08-21T04:02:41.2795416Z ##[debug]    - 驗證 Mailchimp API 連線
+2025-08-21T04:02:41.2795674Z ##[debug]    - 診斷依賴套件載入狀況
+2025-08-21T04:02:41.2796013Z ##[debug]    - 提供詳細的錯誤資訊
+2025-08-21T04:02:41.2796370Z ##[debug]
+2025-08-21T04:02:41.2796705Z ##[debug]    🤖 Generated with Claude Code
+2025-08-21T04:02:41.2797136Z ##[debug]
+2025-08-21T04:02:41.2797450Z ##[debug]    Co-Authored-By: Claude <noreply@anthropic.com>
+2025-08-21T04:02:41.2797767Z ##[debug]
+2025-08-21T04:02:41.2798129Z [command]/usr/bin/git log -1 --format=%H
+2025-08-21T04:02:41.2823170Z 33edde12f7d61d603c9b07930a5d34a3d4afa449
+2025-08-21T04:02:41.2828821Z ##[debug]0
+2025-08-21T04:02:41.2829542Z ##[debug]33edde12f7d61d603c9b07930a5d34a3d4afa449
+2025-08-21T04:02:41.2830008Z ##[debug]
+2025-08-21T04:02:41.2835513Z ##[debug]Unsetting HOME override
+2025-08-21T04:02:41.2846378Z ::remove-matcher owner=checkout-git::
+2025-08-21T04:02:41.2861491Z ##[debug]Removed matchers: 'checkout-git'
+2025-08-21T04:02:41.2918283Z ##[debug]Node Action run completed with exit code 0
+2025-08-21T04:02:41.2953742Z ##[debug]Save intra-action state isPost = true
+2025-08-21T04:02:41.2954217Z ##[debug]Save intra-action state setSafeDirectory = true
+2025-08-21T04:02:41.2954758Z ##[debug]Save intra-action state repositoryPath = /home/runner/work/marskingx.github.io/marskingx.github.io
+2025-08-21T04:02:41.2958799Z ##[debug]Set output commit = 33edde12f7d61d603c9b07930a5d34a3d4afa449
+2025-08-21T04:02:41.2959309Z ##[debug]Set output ref = refs/heads/main
+2025-08-21T04:02:41.2965704Z ##[debug]Finishing: Checkout repository
+2025-08-21T04:02:41.2979017Z ##[debug]Evaluating condition for step: 'Setup Node.js'
+2025-08-21T04:02:41.2982798Z ##[debug]Evaluating: success()
+2025-08-21T04:02:41.2983186Z ##[debug]Evaluating success:
+2025-08-21T04:02:41.2983620Z ##[debug]=> true
+2025-08-21T04:02:41.2984093Z ##[debug]Result: true
+2025-08-21T04:02:41.2985096Z ##[debug]Starting: Setup Node.js
+2025-08-21T04:02:41.3013260Z ##[debug]Register post job cleanup for action: actions/setup-node@v4
+2025-08-21T04:02:41.3029392Z ##[debug]Loading inputs
+2025-08-21T04:02:41.3042145Z ##[debug]Evaluating: (((github.server_url == 'https://github.com') && github.token) || '')
+2025-08-21T04:02:41.3042709Z ##[debug]Evaluating Or:
+2025-08-21T04:02:41.3044822Z ##[debug]..Evaluating And:
+2025-08-21T04:02:41.3046573Z ##[debug]....Evaluating Equal:
+2025-08-21T04:02:41.3047590Z ##[debug]......Evaluating Index:
+2025-08-21T04:02:41.3047870Z ##[debug]........Evaluating github:
+2025-08-21T04:02:41.3048201Z ##[debug]........=> Object
+2025-08-21T04:02:41.3048558Z ##[debug]........Evaluating String:
+2025-08-21T04:02:41.3048830Z ##[debug]........=> 'server_url'
+2025-08-21T04:02:41.3049173Z ##[debug]......=> 'https://github.com'
+2025-08-21T04:02:41.3049471Z ##[debug]......Evaluating String:
+2025-08-21T04:02:41.3049734Z ##[debug]......=> 'https://github.com'
+2025-08-21T04:02:41.3053467Z ##[debug]....=> true
+2025-08-21T04:02:41.3053916Z ##[debug]....Evaluating Index:
+2025-08-21T04:02:41.3054187Z ##[debug]......Evaluating github:
+2025-08-21T04:02:41.3054454Z ##[debug]......=> Object
+2025-08-21T04:02:41.3054715Z ##[debug]......Evaluating String:
+2025-08-21T04:02:41.3054973Z ##[debug]......=> 'token'
+2025-08-21T04:02:41.3055569Z ##[debug]....=> '***'
+2025-08-21T04:02:41.3055907Z ##[debug]..=> '***'
+2025-08-21T04:02:41.3056430Z ##[debug]=> '***'
+2025-08-21T04:02:41.3061132Z ##[debug]Expanded: ((('https://github.com' == 'https://github.com') && '***') || '')
+2025-08-21T04:02:41.3061656Z ##[debug]Result: '***'
+2025-08-21T04:02:41.3064862Z ##[debug]Loading env
+2025-08-21T04:02:41.3070363Z ##[group]Run actions/setup-node@v4
+2025-08-21T04:02:41.3071063Z with:
+2025-08-21T04:02:41.3071352Z   node-version: 18
+2025-08-21T04:02:41.3071682Z   always-auth: false
+2025-08-21T04:02:41.3071961Z   check-latest: false
+2025-08-21T04:02:41.3072298Z   token: ***
+2025-08-21T04:02:41.3072502Z ##[endgroup]
+2025-08-21T04:02:41.4802298Z ##[debug]isExplicit:
+2025-08-21T04:02:41.4803551Z ##[debug]explicit? false
+2025-08-21T04:02:41.4814288Z ##[debug]isExplicit: 18.20.8
+2025-08-21T04:02:41.4814955Z ##[debug]explicit? true
+2025-08-21T04:02:41.4818919Z ##[debug]isExplicit: 20.19.4
+2025-08-21T04:02:41.4819629Z ##[debug]explicit? true
+2025-08-21T04:02:41.4825236Z ##[debug]isExplicit: 22.18.0
+2025-08-21T04:02:41.4825907Z ##[debug]explicit? true
+2025-08-21T04:02:41.4833406Z ##[debug]evaluating 3 versions
+2025-08-21T04:02:41.4857500Z ##[debug]matched: 18.20.8
+2025-08-21T04:02:41.4858422Z ##[debug]checking cache: /opt/hostedtoolcache/node/18.20.8/x64
+2025-08-21T04:02:41.4859384Z ##[debug]Found tool in cache node 18.20.8 x64
+2025-08-21T04:02:41.4860178Z Found in cache @ /opt/hostedtoolcache/node/18.20.8/x64
+2025-08-21T04:02:41.4865684Z ::group::Environment details
+2025-08-21T04:02:41.4866204Z ##[group]Environment details
+2025-08-21T04:02:43.3750104Z node: v18.20.8
+2025-08-21T04:02:43.3750889Z npm: 10.8.2
+2025-08-21T04:02:43.3751259Z yarn: 1.22.22
+2025-08-21T04:02:43.3752640Z ::endgroup::
+2025-08-21T04:02:43.3753082Z ##[endgroup]
+2025-08-21T04:02:43.3759434Z ##[add-matcher]/home/runner/work/_actions/actions/setup-node/v4/.github/tsc.json
+2025-08-21T04:02:43.3784180Z ##[debug]Added matchers: 'tsc'. Problem matchers scan action output for known warning or error strings and report these inline.
+2025-08-21T04:02:43.3785654Z ##[add-matcher]/home/runner/work/_actions/actions/setup-node/v4/.github/eslint-stylish.json
+2025-08-21T04:02:43.3795097Z ##[debug]Added matchers: 'eslint-stylish'. Problem matchers scan action output for known warning or error strings and report these inline.
+2025-08-21T04:02:43.3797016Z ##[add-matcher]/home/runner/work/_actions/actions/setup-node/v4/.github/eslint-compact.json
+2025-08-21T04:02:43.3801151Z ##[debug]Added matchers: 'eslint-compact'. Problem matchers scan action output for known warning or error strings and report these inline.
+2025-08-21T04:02:43.3828176Z ##[debug]Node Action run completed with exit code 0
+2025-08-21T04:02:43.3831788Z ##[debug]Set output node-version = v18.20.8
+2025-08-21T04:02:43.3832465Z ##[debug]Finishing: Setup Node.js
+2025-08-21T04:02:43.3839460Z ##[debug]Evaluating condition for step: 'Install dependencies'
+2025-08-21T04:02:43.3841294Z ##[debug]Evaluating: success()
+2025-08-21T04:02:43.3841667Z ##[debug]Evaluating success:
+2025-08-21T04:02:43.3842141Z ##[debug]=> true
+2025-08-21T04:02:43.3842470Z ##[debug]Result: true
+2025-08-21T04:02:43.3843027Z ##[debug]Starting: Install dependencies
+2025-08-21T04:02:43.3854054Z ##[debug]Loading inputs
+2025-08-21T04:02:43.3854934Z ##[debug]Loading env
+2025-08-21T04:02:43.3870897Z ##[group]Run npm install axios yaml front-matter
+2025-08-21T04:02:43.3871308Z [36;1mnpm install axios yaml front-matter[0m
+2025-08-21T04:02:43.3951426Z shell: /usr/bin/bash -e {0}
+2025-08-21T04:02:43.3951722Z ##[endgroup]
+2025-08-21T04:02:43.4019145Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/8c98b2eb-c2e7-4616-b4ca-16e591370a66.sh
+2025-08-21T04:02:56.3811389Z
+2025-08-21T04:02:56.3820118Z added 232 packages, and audited 233 packages in 13s
+2025-08-21T04:02:56.3820477Z
+2025-08-21T04:02:56.3820959Z 52 packages are looking for funding
+2025-08-21T04:02:56.3821294Z   run `npm fund` for details
+2025-08-21T04:02:56.3824545Z
+2025-08-21T04:02:56.3824905Z found 0 vulnerabilities
+2025-08-21T04:02:56.4082957Z ##[debug]Finishing: Install dependencies
+2025-08-21T04:02:56.4093676Z ##[debug]Evaluating: secrets.MAILCHIMP_API_KEY
+2025-08-21T04:02:56.4094088Z ##[debug]Evaluating Index:
+2025-08-21T04:02:56.4094351Z ##[debug]..Evaluating secrets:
+2025-08-21T04:02:56.4094648Z ##[debug]..=> Object
+2025-08-21T04:02:56.4094919Z ##[debug]..Evaluating String:
+2025-08-21T04:02:56.4095200Z ##[debug]..=> 'MAILCHIMP_API_KEY'
+2025-08-21T04:02:56.4096030Z ##[debug]=> '***'
+2025-08-21T04:02:56.4096364Z ##[debug]Result: '***'
+2025-08-21T04:02:56.4097021Z ##[debug]Evaluating: secrets.MAILCHIMP_SERVER_PREFIX
+2025-08-21T04:02:56.4097359Z ##[debug]Evaluating Index:
+2025-08-21T04:02:56.4097613Z ##[debug]..Evaluating secrets:
+2025-08-21T04:02:56.4097863Z ##[debug]..=> Object
+2025-08-21T04:02:56.4098105Z ##[debug]..Evaluating String:
+2025-08-21T04:02:56.4098362Z ##[debug]..=> 'MAILCHIMP_SERVER_PREFIX'
+2025-08-21T04:02:56.4098666Z ##[debug]=> '***'
+2025-08-21T04:02:56.4098888Z ##[debug]Result: '***'
+2025-08-21T04:02:56.4099392Z ##[debug]Evaluating: secrets.MAILCHIMP_AUDIENCE_ID
+2025-08-21T04:02:56.4099724Z ##[debug]Evaluating Index:
+2025-08-21T04:02:56.4099965Z ##[debug]..Evaluating secrets:
+2025-08-21T04:02:56.4100218Z ##[debug]..=> Object
+2025-08-21T04:02:56.4100438Z ##[debug]..Evaluating String:
+2025-08-21T04:02:56.4100923Z ##[debug]..=> 'MAILCHIMP_AUDIENCE_ID'
+2025-08-21T04:02:56.4101455Z ##[debug]=> '***'
+2025-08-21T04:02:56.4101697Z ##[debug]Result: '***'
+2025-08-21T04:02:56.4102376Z ##[debug]Evaluating: secrets.SITE_BASE_URL
+2025-08-21T04:02:56.4102664Z ##[debug]Evaluating Index:
+2025-08-21T04:02:56.4102897Z ##[debug]..Evaluating secrets:
+2025-08-21T04:02:56.4103133Z ##[debug]..=> Object
+2025-08-21T04:02:56.4103351Z ##[debug]..Evaluating String:
+2025-08-21T04:02:56.4103589Z ##[debug]..=> 'SITE_BASE_URL'
+2025-08-21T04:02:56.4103915Z ##[debug]=> '***'
+2025-08-21T04:02:56.4104168Z ##[debug]Result: '***'
+2025-08-21T04:02:56.4113055Z ##[debug]Evaluating condition for step: 'Debug Mailchimp environment'
+2025-08-21T04:02:56.4114321Z ##[debug]Evaluating: success()
+2025-08-21T04:02:56.4114685Z ##[debug]Evaluating success:
+2025-08-21T04:02:56.4115067Z ##[debug]=> true
+2025-08-21T04:02:56.4115388Z ##[debug]Result: true
+2025-08-21T04:02:56.4115892Z ##[debug]Starting: Debug Mailchimp environment
+2025-08-21T04:02:56.4123533Z ##[debug]Loading inputs
+2025-08-21T04:02:56.4124370Z ##[debug]Loading env
+2025-08-21T04:02:56.4129959Z ##[group]Run node .github/scripts/debug-mailchimp.js
+2025-08-21T04:02:56.4130872Z [36;1mnode .github/scripts/debug-mailchimp.js[0m
+2025-08-21T04:02:56.4171868Z shell: /usr/bin/bash -e {0}
+2025-08-21T04:02:56.4172117Z env:
+2025-08-21T04:02:56.4172540Z   MAILCHIMP_API_KEY: ***
+2025-08-21T04:02:56.4172790Z   MAILCHIMP_SERVER_PREFIX: ***
+2025-08-21T04:02:56.4173043Z   MAILCHIMP_AUDIENCE_ID: ***
+2025-08-21T04:02:56.4173325Z   SITE_BASE_URL: ***
+2025-08-21T04:02:56.4173525Z ##[endgroup]
+2025-08-21T04:02:56.4217313Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/7ccde783-9eb8-48b0-b5e9-d6945b138b5f.sh
+2025-08-21T04:02:56.4505456Z 🔧 Mailchimp Debug 腳本啟動
+2025-08-21T04:02:56.4508133Z ============================
+2025-08-21T04:02:56.4508467Z
+2025-08-21T04:02:56.4508731Z 📋 環境變數檢查:
+2025-08-21T04:02:56.4509298Z MAILCHIMP_API_KEY: ✅ 已設定
+2025-08-21T04:02:56.4509962Z MAILCHIMP_SERVER_PREFIX: ***
+2025-08-21T04:02:56.4510776Z MAILCHIMP_AUDIENCE_ID: ✅ 已設定
+2025-08-21T04:02:56.4511525Z SITE_BASE_URL: ***
+2025-08-21T04:02:56.4511888Z API Key 格式: ✅ 正確
+2025-08-21T04:02:56.4512602Z Server Prefix (從 API Key): ***
+2025-08-21T04:02:56.4512949Z
+2025-08-21T04:02:56.4513175Z 📦 依賴套件檢查:
+2025-08-21T04:02:56.5750861Z axios: ✅ 已載入
+2025-08-21T04:02:56.5969210Z front-matter: ✅ 已載入
+2025-08-21T04:02:56.5969471Z
+2025-08-21T04:02:56.5969681Z 🔧 Git 環境檢查:
+2025-08-21T04:02:56.6084144Z Git 版本: git version 2.51.0
+2025-08-21T04:02:56.6119222Z 當前 Commit: 33edde12f7d61d603c9b07930a5d34a3d4afa449
+2025-08-21T04:02:56.6120260Z
+2025-08-21T04:02:56.6120787Z 🌐 測試 API 連線...
+2025-08-21T04:02:56.6121550Z 使用 Server Prefix: ***
+2025-08-21T04:02:57.1123530Z ✅ API 連線成功!
+2025-08-21T04:02:57.1136547Z 回應: { health_status: "Everything's Chimpy!" }
+2025-08-21T04:02:57.1137014Z
+2025-08-21T04:02:57.1137316Z 👥 測試受眾清單存取...
+2025-08-21T04:02:57.4892035Z ✅ 受眾清單存取成功!
+2025-08-21T04:02:57.4892523Z 清單名稱: Lazytoberich
+2025-08-21T04:02:57.4893901Z 訂閱者數量: 5
+2025-08-21T04:02:57.4967554Z ##[debug]Finishing: Debug Mailchimp environment
+2025-08-21T04:02:57.4980881Z ##[debug]Evaluating: secrets.MAILCHIMP_API_KEY
+2025-08-21T04:02:57.4981535Z ##[debug]Evaluating Index:
+2025-08-21T04:02:57.4981926Z ##[debug]..Evaluating secrets:
+2025-08-21T04:02:57.4982371Z ##[debug]..=> Object
+2025-08-21T04:02:57.4982734Z ##[debug]..Evaluating String:
+2025-08-21T04:02:57.4983145Z ##[debug]..=> 'MAILCHIMP_API_KEY'
+2025-08-21T04:02:57.4983722Z ##[debug]=> '***'
+2025-08-21T04:02:57.4984020Z ##[debug]Result: '***'
+2025-08-21T04:02:57.4984730Z ##[debug]Evaluating: secrets.MAILCHIMP_SERVER_PREFIX
+2025-08-21T04:02:57.4985046Z ##[debug]Evaluating Index:
+2025-08-21T04:02:57.4985302Z ##[debug]..Evaluating secrets:
+2025-08-21T04:02:57.4985559Z ##[debug]..=> Object
+2025-08-21T04:02:57.4985783Z ##[debug]..Evaluating String:
+2025-08-21T04:02:57.4986077Z ##[debug]..=> 'MAILCHIMP_SERVER_PREFIX'
+2025-08-21T04:02:57.4986373Z ##[debug]=> '***'
+2025-08-21T04:02:57.4986591Z ##[debug]Result: '***'
+2025-08-21T04:02:57.4987085Z ##[debug]Evaluating: secrets.MAILCHIMP_AUDIENCE_ID
+2025-08-21T04:02:57.4987642Z ##[debug]Evaluating Index:
+2025-08-21T04:02:57.4987877Z ##[debug]..Evaluating secrets:
+2025-08-21T04:02:57.4988114Z ##[debug]..=> Object
+2025-08-21T04:02:57.4988332Z ##[debug]..Evaluating String:
+2025-08-21T04:02:57.4988587Z ##[debug]..=> 'MAILCHIMP_AUDIENCE_ID'
+2025-08-21T04:02:57.4988887Z ##[debug]=> '***'
+2025-08-21T04:02:57.4989106Z ##[debug]Result: '***'
+2025-08-21T04:02:57.4989570Z ##[debug]Evaluating: secrets.SITE_BASE_URL
+2025-08-21T04:02:57.4989843Z ##[debug]Evaluating Index:
+2025-08-21T04:02:57.4990065Z ##[debug]..Evaluating secrets:
+2025-08-21T04:02:57.4990305Z ##[debug]..=> Object
+2025-08-21T04:02:57.4991049Z ##[debug]..Evaluating String:
+2025-08-21T04:02:57.4991327Z ##[debug]..=> 'SITE_BASE_URL'
+2025-08-21T04:02:57.4991654Z ##[debug]=> '***'
+2025-08-21T04:02:57.4991944Z ##[debug]Result: '***'
+2025-08-21T04:02:57.4992449Z ##[debug]Evaluating: secrets.GITHUB_TOKEN
+2025-08-21T04:02:57.4992726Z ##[debug]Evaluating Index:
+2025-08-21T04:02:57.4992977Z ##[debug]..Evaluating secrets:
+2025-08-21T04:02:57.4993235Z ##[debug]..=> Object
+2025-08-21T04:02:57.4993459Z ##[debug]..Evaluating String:
+2025-08-21T04:02:57.4993694Z ##[debug]..=> 'GITHUB_TOKEN'
+2025-08-21T04:02:57.4994069Z ##[debug]=> '***'
+2025-08-21T04:02:57.4994375Z ##[debug]Result: '***'
+2025-08-21T04:02:57.4994956Z ##[debug]Evaluating condition for step: 'Check for new articles and send notifications'
+2025-08-21T04:02:57.4996123Z ##[debug]Evaluating: success()
+2025-08-21T04:02:57.4996521Z ##[debug]Evaluating success:
+2025-08-21T04:02:57.4996893Z ##[debug]=> true
+2025-08-21T04:02:57.4997212Z ##[debug]Result: true
+2025-08-21T04:02:57.4997754Z ##[debug]Starting: Check for new articles and send notifications
+2025-08-21T04:02:57.5005480Z ##[debug]Loading inputs
+2025-08-21T04:02:57.5006261Z ##[debug]Loading env
+2025-08-21T04:02:57.5009928Z ##[group]Run node .github/scripts/mailchimp-notifier.js
+2025-08-21T04:02:57.5010308Z [36;1mnode .github/scripts/mailchimp-notifier.js[0m
+2025-08-21T04:02:57.5050699Z shell: /usr/bin/bash -e {0}
+2025-08-21T04:02:57.5050988Z env:
+2025-08-21T04:02:57.5051349Z   MAILCHIMP_API_KEY: ***
+2025-08-21T04:02:57.5051597Z   MAILCHIMP_SERVER_PREFIX: ***
+2025-08-21T04:02:57.5051851Z   MAILCHIMP_AUDIENCE_ID: ***
+2025-08-21T04:02:57.5052160Z   SITE_BASE_URL: ***
+2025-08-21T04:02:57.5052461Z   GITHUB_TOKEN: ***
+2025-08-21T04:02:57.5052667Z ##[endgroup]
+2025-08-21T04:02:57.5095506Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/25c205f9-75c2-4f3a-ac07-edaeaa7219a3.sh
+2025-08-21T04:02:57.6284184Z [2025-08-21T04:02:57.627Z] [INFO] 開始執行 Mailchimp 通知腳本...
+2025-08-21T04:02:57.6287753Z [2025-08-21T04:02:57.628Z] [INFO] 環境變數驗證通過
+2025-08-21T04:02:57.6374507Z [2025-08-21T04:02:57.637Z] [INFO] 檢測到檔案變更
+2025-08-21T04:02:57.6375147Z {
+2025-08-21T04:02:57.6375513Z   "files": [
+2025-08-21T04:02:57.6375881Z     {
+2025-08-21T04:02:57.6376229Z       "status": "A",
+2025-08-21T04:02:57.6376728Z       "path": "content/blog/test-debug-20250821.md"
+2025-08-21T04:02:57.6377244Z     }
+2025-08-21T04:02:57.6377563Z   ]
+2025-08-21T04:02:57.6378427Z }
+2025-08-21T04:02:57.6379136Z [2025-08-21T04:02:57.637Z] [INFO] 發現 1 篇新文章
+2025-08-21T04:02:57.6379605Z {
+2025-08-21T04:02:57.6379948Z   "articles": [
+2025-08-21T04:02:57.6380375Z     "content/blog/test-debug-20250821.md"
+2025-08-21T04:02:57.6381066Z   ]
+2025-08-21T04:02:57.6381364Z }
+2025-08-21T04:02:57.6382210Z [2025-08-21T04:02:57.637Z] [INFO] 處理文章: content/blog/test-debug-20250821.md
+2025-08-21T04:02:57.6415344Z [2025-08-21T04:02:57.641Z] [INFO] 文章解析完成
+2025-08-21T04:02:57.6415839Z {
+2025-08-21T04:02:57.6416208Z   "article": {
+2025-08-21T04:02:57.6416826Z     "title": "【Debug】Mailchimp 系統除錯測試",
+2025-08-21T04:02:57.6417732Z     "description": "使用 debug 腳本詳細檢查 Mailchimp API 連線和環境設定，診斷系統問題。",
+2025-08-21T04:02:57.6418884Z     "permalink": "***/blog/mailchimp-debug-test/",
+2025-08-21T04:02:57.6419581Z     "author": "懶大",
+2025-08-21T04:02:57.6420019Z     "date": "2025-08-21T00:00:00.000Z",
+2025-08-21T04:02:57.6420487Z     "categories": [
+2025-08-21T04:02:57.6421119Z       "測試",
+2025-08-21T04:02:57.6421868Z       "除錯"
+2025-08-21T04:02:57.6422275Z     ],
+2025-08-21T04:02:57.6422611Z     "tags": [
+2025-08-21T04:02:57.6422951Z       "Debug",
+2025-08-21T04:02:57.6423311Z       "Mailchimp",
+2025-08-21T04:02:57.6423678Z       "API",
+2025-08-21T04:02:57.6424096Z       "系統診斷"
+2025-08-21T04:02:57.6424436Z     ],
+2025-08-21T04:02:57.6424855Z     "image": "/images/blog/20250821.png",
+2025-08-21T04:02:57.6425510Z     "filePath": "content/blog/test-debug-20250821.md"
+2025-08-21T04:02:57.6426055Z   }
+2025-08-21T04:02:57.6426364Z }
+2025-08-21T04:02:57.6427103Z [2025-08-21T04:02:57.641Z] [INFO] 正在創建 Mailchimp 活動...
+2025-08-21T04:02:57.6427636Z {
+2025-08-21T04:02:57.6427967Z   "campaignData": {
+2025-08-21T04:02:57.6428329Z     "type": "regular",
+2025-08-21T04:02:57.6428714Z     "recipients": {
+2025-08-21T04:02:57.6429150Z       "list_id": "***"
+2025-08-21T04:02:57.6429529Z     },
+2025-08-21T04:02:57.6429874Z     "settings": {
+2025-08-21T04:02:57.6430878Z       "subject_line": "【懶得變有錢】新文章通知：【Debug】Mailchimp 系統除錯測試",
+2025-08-21T04:02:57.6431879Z       "title": "Blog Post: 【Debug】Mailchimp 系統除錯測試",
+2025-08-21T04:02:57.6432558Z       "from_name": "懶得變有錢",
+2025-08-21T04:02:57.6433072Z       "reply_to": "noreply@lazytoberich.com",
+2025-08-21T04:02:57.6433602Z       "to_name": "*|FNAME|*",
+2025-08-21T04:02:57.6434040Z       "auto_footer": false,
+2025-08-21T04:02:57.6434459Z       "inline_css": true
+2025-08-21T04:02:57.6434853Z     }
+2025-08-21T04:02:57.6435164Z   }
+2025-08-21T04:02:57.6435468Z }
+2025-08-21T04:02:58.9576509Z [2025-08-21T04:02:58.957Z] [INFO] 活動創建成功
+2025-08-21T04:02:58.9576894Z {
+2025-08-21T04:02:58.9577140Z   "campaignId": "e05ed8d0fd"
+2025-08-21T04:02:58.9577433Z }
+2025-08-21T04:02:58.9578361Z [2025-08-21T04:02:58.957Z] [INFO] 正在設定電子報內容...
+2025-08-21T04:02:58.9578896Z {
+2025-08-21T04:02:58.9582926Z   "campaignId": "e05ed8d0fd"
+2025-08-21T04:02:58.9583334Z }
+2025-08-21T04:03:00.2853280Z [2025-08-21T04:03:00.284Z] [INFO] 電子報內容設定成功
+2025-08-21T04:03:00.2854329Z [2025-08-21T04:03:00.285Z] [INFO] 正在發送電子報...
+2025-08-21T04:03:00.2855046Z {
+2025-08-21T04:03:00.2855512Z   "campaignId": "e05ed8d0fd"
+2025-08-21T04:03:00.2856069Z }
+2025-08-21T04:03:00.9263072Z [2025-08-21T04:03:00.925Z] [ERROR] Mailchimp API 錯誤
+2025-08-21T04:03:00.9263622Z {
+2025-08-21T04:03:00.9263842Z   "status": 400,
+2025-08-21T04:03:00.9264081Z   "data": {
+2025-08-21T04:03:00.9264548Z     "type": "https://mailchimp.com/developer/marketing/docs/errors/",
+2025-08-21T04:03:00.9265136Z     "title": "Bad Request",
+2025-08-21T04:03:00.9265500Z     "status": 400,
+2025-08-21T04:03:00.9266181Z     "detail": "Your Campaign is not ready to send. address(es) - noreply@lazytoberich.com",
+2025-08-21T04:03:00.9266870Z     "instance": "0bd2a8ea-f853-2a50-d14f-fbbdd44fbc08"
+2025-08-21T04:03:00.9267210Z   }
+2025-08-21T04:03:00.9267402Z }
+2025-08-21T04:03:00.9267805Z [2025-08-21T04:03:00.926Z] [ERROR] 發送電子報失敗
+2025-08-21T04:03:00.9268102Z {
+2025-08-21T04:03:00.9268382Z   "error": "Request failed with status code 400",
+2025-08-21T04:03:00.9273505Z   "stack": "AxiosError: Request failed with status code 400\n    at settle (/home/runner/work/marskingx.github.io/marskingx.github.io/node_modules/axios/dist/node/axios.cjs:2090:12)\n    at Unzip.handleStreamEnd (/home/runner/work/marskingx.github.io/marskingx.github.io/node_modules/axios/dist/node/axios.cjs:3207:11)\n    at Unzip.emit (node:events:529:35)\n    at endReadableNT (node:internal/streams/readable:1400:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)\n    at Axios.request (/home/runner/work/marskingx.github.io/marskingx.github.io/node_modules/axios/dist/node/axios.cjs:4317:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async sendCampaign (/home/runner/work/marskingx.github.io/marskingx.github.io/.github/scripts/mailchimp-notifier.js:340:5)\n    at async main (/home/runner/work/marskingx.github.io/marskingx.github.io/.github/scripts/mailchimp-notifier.js:398:7)"
+2025-08-21T04:03:00.9277608Z }
+2025-08-21T04:03:00.9325820Z ##[error]Process completed with exit code 1.
+2025-08-21T04:03:00.9338208Z ##[debug]Finishing: Check for new articles and send notifications
+2025-08-21T04:03:00.9355851Z ##[debug]Evaluating condition for step: 'Log execution result'
+2025-08-21T04:03:00.9358056Z ##[debug]Evaluating: always()
+2025-08-21T04:03:00.9358440Z ##[debug]Evaluating always:
+2025-08-21T04:03:00.9359188Z ##[debug]=> true
+2025-08-21T04:03:00.9359532Z ##[debug]Result: true
+2025-08-21T04:03:00.9360092Z ##[debug]Starting: Log execution result
+2025-08-21T04:03:00.9367664Z ##[debug]Loading inputs
+2025-08-21T04:03:00.9370089Z ##[debug]Evaluating: format('echo "工作流程執行完成"
+2025-08-21T04:03:00.9370380Z ##[debug]echo "時間: $(date)"
+2025-08-21T04:03:00.9370904Z ##[debug]echo "Commit SHA: {0}"
+2025-08-21T04:03:00.9371200Z ##[debug]echo "觸發事件: {1}"', github.sha, github.event_name)
+2025-08-21T04:03:00.9371516Z ##[debug]Evaluating format:
+2025-08-21T04:03:00.9375075Z ##[debug]..Evaluating String:
+2025-08-21T04:03:00.9375394Z ##[debug]..=> 'echo "工作流程執行完成"
+2025-08-21T04:03:00.9375640Z ##[debug]echo "時間: $(date)"
+2025-08-21T04:03:00.9375869Z ##[debug]echo "Commit SHA: {0}"
+2025-08-21T04:03:00.9376133Z ##[debug]echo "觸發事件: {1}"'
+2025-08-21T04:03:00.9388791Z ##[debug]..Evaluating Index:
+2025-08-21T04:03:00.9389068Z ##[debug]....Evaluating github:
+2025-08-21T04:03:00.9389345Z ##[debug]....=> Object
+2025-08-21T04:03:00.9389589Z ##[debug]....Evaluating String:
+2025-08-21T04:03:00.9389836Z ##[debug]....=> 'sha'
+2025-08-21T04:03:00.9390138Z ##[debug]..=> '33edde12f7d61d603c9b07930a5d34a3d4afa449'
+2025-08-21T04:03:00.9391533Z ##[debug]..Evaluating Index:
+2025-08-21T04:03:00.9391796Z ##[debug]....Evaluating github:
+2025-08-21T04:03:00.9392046Z ##[debug]....=> Object
+2025-08-21T04:03:00.9392283Z ##[debug]....Evaluating String:
+2025-08-21T04:03:00.9392514Z ##[debug]....=> 'event_name'
+2025-08-21T04:03:00.9392908Z ##[debug]..=> 'push'
+2025-08-21T04:03:00.9393251Z ##[debug]=> 'echo "工作流程執行完成"
+2025-08-21T04:03:00.9393477Z ##[debug]echo "時間: $(date)"
+2025-08-21T04:03:00.9393772Z ##[debug]echo "Commit SHA: 33edde12f7d61d603c9b07930a5d34a3d4afa449"
+2025-08-21T04:03:00.9394116Z ##[debug]echo "觸發事件: push"'
+2025-08-21T04:03:00.9394385Z ##[debug]Result: 'echo "工作流程執行完成"
+2025-08-21T04:03:00.9394618Z ##[debug]echo "時間: $(date)"
+2025-08-21T04:03:00.9394906Z ##[debug]echo "Commit SHA: 33edde12f7d61d603c9b07930a5d34a3d4afa449"
+2025-08-21T04:03:00.9395213Z ##[debug]echo "觸發事件: push"'
+2025-08-21T04:03:00.9395634Z ##[debug]Loading env
+2025-08-21T04:03:00.9399345Z ##[group]Run echo "工作流程執行完成"
+2025-08-21T04:03:00.9399594Z [36;1mecho "工作流程執行完成"[0m
+2025-08-21T04:03:00.9399812Z [36;1mecho "時間: $(date)"[0m
+2025-08-21T04:03:00.9400127Z [36;1mecho "Commit SHA: 33edde12f7d61d603c9b07930a5d34a3d4afa449"[0m
+2025-08-21T04:03:00.9400460Z [36;1mecho "觸發事件: push"[0m
+2025-08-21T04:03:00.9442488Z shell: /usr/bin/bash -e {0}
+2025-08-21T04:03:00.9442741Z ##[endgroup]
+2025-08-21T04:03:00.9484712Z ##[debug]/usr/bin/bash -e /home/runner/work/_temp/5a7edf08-97cc-409b-9346-73a62f2aaaff.sh
+2025-08-21T04:03:00.9505904Z 工作流程執行完成
+2025-08-21T04:03:00.9519154Z 時間: Thu Aug 21 04:03:00 UTC 2025
+2025-08-21T04:03:00.9519789Z Commit SHA: 33edde12f7d61d603c9b07930a5d34a3d4afa449
+2025-08-21T04:03:00.9520344Z 觸發事件: push
+2025-08-21T04:03:00.9524320Z ##[debug]Finishing: Log execution result
+2025-08-21T04:03:00.9531645Z ##[debug]Evaluating condition for step: 'Post Setup Node.js'
+2025-08-21T04:03:00.9533234Z ##[debug]Evaluating: success()
+2025-08-21T04:03:00.9533604Z ##[debug]Evaluating success:
+2025-08-21T04:03:00.9533983Z ##[debug]=> false
+2025-08-21T04:03:00.9534311Z ##[debug]Result: false
+2025-08-21T04:03:00.9539867Z ##[debug]Evaluating condition for step: 'Post Checkout repository'
+2025-08-21T04:03:00.9541215Z ##[debug]Evaluating: always()
+2025-08-21T04:03:00.9541549Z ##[debug]Evaluating always:
+2025-08-21T04:03:00.9541857Z ##[debug]=> true
+2025-08-21T04:03:00.9542177Z ##[debug]Result: true
+2025-08-21T04:03:00.9542631Z ##[debug]Starting: Post Checkout repository
+2025-08-21T04:03:00.9586913Z ##[debug]Loading inputs
+2025-08-21T04:03:00.9588134Z ##[debug]Evaluating: github.repository
+2025-08-21T04:03:00.9588614Z ##[debug]Evaluating Index:
+2025-08-21T04:03:00.9588851Z ##[debug]..Evaluating github:
+2025-08-21T04:03:00.9589122Z ##[debug]..=> Object
+2025-08-21T04:03:00.9589349Z ##[debug]..Evaluating String:
+2025-08-21T04:03:00.9589589Z ##[debug]..=> 'repository'
+2025-08-21T04:03:00.9589897Z ##[debug]=> 'marskingx/marskingx.github.io'
+2025-08-21T04:03:00.9590203Z ##[debug]Result: 'marskingx/marskingx.github.io'
+2025-08-21T04:03:00.9591839Z ##[debug]Evaluating: github.token
+2025-08-21T04:03:00.9592147Z ##[debug]Evaluating Index:
+2025-08-21T04:03:00.9592385Z ##[debug]..Evaluating github:
+2025-08-21T04:03:00.9592631Z ##[debug]..=> Object
+2025-08-21T04:03:00.9592847Z ##[debug]..Evaluating String:
+2025-08-21T04:03:00.9593075Z ##[debug]..=> 'token'
+2025-08-21T04:03:00.9593440Z ##[debug]=> '***'
+2025-08-21T04:03:00.9593741Z ##[debug]Result: '***'
+2025-08-21T04:03:00.9620442Z ##[debug]Loading env
+2025-08-21T04:03:00.9624655Z Post job cleanup.
+2025-08-21T04:03:01.0584381Z ##[debug]Getting git version
+2025-08-21T04:03:01.0598527Z [command]/usr/bin/git version
+2025-08-21T04:03:01.0636950Z git version 2.51.0
+2025-08-21T04:03:01.0659700Z ##[debug]0
+2025-08-21T04:03:01.0660382Z ##[debug]git version 2.51.0
+2025-08-21T04:03:01.0660803Z ##[debug]
+2025-08-21T04:03:01.0661696Z ##[debug]Set git useragent to: git/2.51.0 (github-actions-checkout)
+2025-08-21T04:03:01.0664812Z ::add-mask::***
+2025-08-21T04:03:01.0679764Z Temporarily overriding HOME='/home/runner/work/_temp/1675ac47-d111-41a5-9e5b-e5fb65468df7' before making global git config changes
+2025-08-21T04:03:01.0681114Z Adding repository directory to the temporary git global config as a safe directory
+2025-08-21T04:03:01.0685644Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/marskingx.github.io/marskingx.github.io
+2025-08-21T04:03:01.0718421Z ##[debug]0
+2025-08-21T04:03:01.0718955Z ##[debug]
+2025-08-21T04:03:01.0725824Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-08-21T04:03:01.0751519Z ##[debug]1
+2025-08-21T04:03:01.0752051Z ##[debug]
+2025-08-21T04:03:01.0758908Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-08-21T04:03:01.0980008Z fatal: No url found for submodule path 'Claude-Code-Usage-Monitor' in .gitmodules
+2025-08-21T04:03:01.0990035Z ##[debug]Unsetting HOME override
+2025-08-21T04:03:01.1023156Z ##[warning]The process '/usr/bin/git' failed with exit code 128
+2025-08-21T04:03:01.1061561Z ##[debug]Node Action run completed with exit code 0
+2025-08-21T04:03:01.1063859Z ##[debug]Finishing: Post Checkout repository
+2025-08-21T04:03:01.1100962Z ##[debug]Starting: Complete job
+2025-08-21T04:03:01.1102621Z Uploading runner diagnostic logs
+2025-08-21T04:03:01.1114346Z ##[debug]Starting diagnostic file upload.
+2025-08-21T04:03:01.1114682Z ##[debug]Setting up diagnostic log folders.
+2025-08-21T04:03:01.1116371Z ##[debug]Creating diagnostic log files folder.
+2025-08-21T04:03:01.1124631Z ##[debug]Copying 1 worker diagnostic logs.
+2025-08-21T04:03:01.1132935Z ##[debug]Copying 1 runner diagnostic logs.
+2025-08-21T04:03:01.1133991Z ##[debug]Zipping diagnostic files.
+2025-08-21T04:03:01.1206065Z ##[debug]Uploading diagnostic metadata file.
+2025-08-21T04:03:01.1234459Z ##[debug]Diagnostic file upload complete.
+2025-08-21T04:03:01.1234987Z Completed runner diagnostic log upload
+2025-08-21T04:03:01.1235263Z Cleaning up orphan processes
+2025-08-21T04:03:01.1472622Z ##[debug]Finishing: Complete job
+2025-08-21T04:03:01.1503209Z ##[debug]Finishing: check-and-notify

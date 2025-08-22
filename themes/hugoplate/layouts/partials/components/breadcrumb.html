@@ -1,0 +1,45 @@
+<nav aria-label="Breadcrumb">
+  <ol class="flex items-center text-sm text-gray-600 dark:text-gray-300" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <!-- Home -->
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a class="hover:text-primary dark:hover:text-darkmode-primary flex items-center" itemprop="item" href="{{ site.Home.RelPermalink }}">
+        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+        <span itemprop="name">{{ T "home" }}</span>
+      </a>
+      <meta itemprop="position" content="1" />
+    </li>
+    
+    <!-- Category (for blog posts) -->
+    {{ if .Params.categories }}
+      <li class="before:px-2 before:content-['>']" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        {{ $category := index .Params.categories 0 }}
+        <a class="hover:text-primary dark:hover:text-darkmode-primary" itemprop="item" href="{{ `categories/` | relLangURL }}{{ $category | urlize | lower }}/">
+          <span itemprop="name">{{ $category | humanize }}</span>
+        </a>
+        <meta itemprop="position" content="2" />
+      </li>
+    {{ end }}
+    
+    <!-- Section (for taxonomy pages) -->
+    {{ if .Section }}
+      <li class="before:px-2 before:content-['>']" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a class="hover:text-primary dark:hover:text-darkmode-primary" itemprop="item" href="{{ printf "/%s/" .Section | relLangURL }}">
+          <span itemprop="name">{{ .Section | humanize }}</span>
+        </a>
+        <meta itemprop="position" content="{{ if .Params.categories }}3{{ else }}2{{ end }}" />
+      </li>
+    {{ end }}
+    
+    <!-- Current page -->
+    <li class="before:px-2 before:content-['>']" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      {{ if .IsPage }}
+        <span class="text-gray-400 dark:text-gray-500" itemprop="name">{{ .Title }}</span>
+      {{ else }}
+        <a class="hover:text-primary dark:hover:text-darkmode-primary" itemprop="item" href="{{ .Permalink }}">
+          <span itemprop="name">{{ .Title }}</span>
+        </a>
+      {{ end }}
+      <meta itemprop="position" content="{{ if and .Params.categories .Section }}4{{ else if or .Params.categories .Section }}3{{ else }}2{{ end }}" />
+    </li>
+  </ol>
+</nav>

@@ -1,0 +1,66 @@
+name: 📧 Mailchimp Newsletter
+
+# 只在新文章發布時觸發 - 限制為 blog 目錄下的新文章
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'content/blog/**/*.md'  # 只有當 blog 目錄下的 markdown 檔案變更時才觸發
+      # 排除其他 content 目錄（如 pages、sections 等）以避免不必要的觸發
+
+# 設定工作流程權限
+permissions:
+  contents: read
+
+jobs:
+  # 檢測新文章並發送電子報
+  newsletter-notification:
+    runs-on: ubuntu-latest
+    
+    steps:
+    # 第一步：檢出代碼庫
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 2  # 需要獲取前兩個 commit 來比較變更
+    
+    # 第二步：設定 Node.js 環境
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+    
+    # 第三步：安裝相依套件
+    - name: Install dependencies
+      run: |
+        npm install axios yaml front-matter
+    
+    # 第四步：Debug 環境和 API 連線
+    - name: Debug Mailchimp environment
+      env:
+        MAILCHIMP_API_KEY: ${{ secrets.MAILCHIMP_API_KEY }}
+        MAILCHIMP_SERVER_PREFIX: ${{ secrets.MAILCHIMP_SERVER_PREFIX }}
+        MAILCHIMP_AUDIENCE_ID: ${{ secrets.MAILCHIMP_AUDIENCE_ID }}
+        SITE_BASE_URL: ${{ secrets.SITE_BASE_URL }}
+      run: |
+        node .github/scripts/debug-mailchimp.js
+    
+    # 第五步：執行新文章檢測和通知腳本
+    - name: Check for new articles and send notifications
+      env:
+        MAILCHIMP_API_KEY: ${{ secrets.MAILCHIMP_API_KEY }}
+        MAILCHIMP_SERVER_PREFIX: ${{ secrets.MAILCHIMP_SERVER_PREFIX }}
+        MAILCHIMP_AUDIENCE_ID: ${{ secrets.MAILCHIMP_AUDIENCE_ID }}
+        SITE_BASE_URL: ${{ secrets.SITE_BASE_URL }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        node .github/scripts/mailchimp-notifier.js
+    
+    # 第五步：紀錄執行結果（成功或失敗都會執行）
+    - name: Log execution result
+      if: always()
+      run: |
+        echo "工作流程執行完成"
+        echo "時間: $(date)"
+        echo "Commit SHA: ${{ github.sha }}"
+        echo "觸發事件: ${{ github.event_name }}"

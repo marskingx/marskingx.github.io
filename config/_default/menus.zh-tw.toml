@@ -1,0 +1,155 @@
+############# navigation ##############
+
+# main menu
+[[main]]
+name = "首頁"
+pageRef = "/"
+weight = 1
+
+[[main]]
+name = "關於"
+pageRef = "/about"
+weight = 2
+
+[[main]]
+name = "Podcast"
+pageRef = "/podcast"
+weight = 3
+
+[[main]]
+name = "書單"
+weight = 4
+
+[[main]]
+weight = 1
+parent = "書單"
+name = "👍必讀，書單📚"
+pageRef = "pages/reading_list"
+
+[[main]]
+weight = 2
+parent = "書單"
+name = "商業/財經"
+pageRef = "/tags/商業/財經/"
+
+[[main]]
+weight = 2
+parent = "書單"
+name = "理財/觀念"
+pageRef = "/tags/理財/觀念/"
+
+
+[[main]]
+weight = 3
+parent = "書單"
+name = "商務/趨勢"
+pageRef = "/tags/商務/趨勢/"
+
+[[main]]
+weight = 4
+parent = "書單"
+name = "心理/勵志"
+pageRef = "/tags/心理/勵志/"
+
+[[main]]
+weight = 5
+parent = "書單"
+name = "行銷/市場"
+pageRef = "/tags/行銷/市場/"
+
+[[main]]
+weight = 5
+parent = "書單"
+name = "人文/史哲"
+pageRef = "/tags/人文/史哲/"
+
+[[main]]
+weight = 6
+parent = "書單"
+name = "親子/教養"
+pageRef = "/tags/親子/教養/"
+
+[[main]]
+name = "文章"
+pageRef = "/blog"
+weight = 5
+
+[[main]]
+weight = 1
+parent = "文章"
+name = "所有文章"
+pageRef = "/blog"
+
+[[main]]
+weight = 2
+parent = "文章"
+name = "財務規劃與心態"
+pageRef = "/categories/財務規劃與心態/"
+
+[[main]]
+weight = 3
+parent = "文章"
+name = "閱讀心得"
+pageRef = "/categories/閱讀心得/"
+
+[[main]]
+weight = 4
+parent = "文章"
+name = "財務工具與金融商品"
+pageRef = "/categories/財務工具與金融商品/"
+
+[[main]]
+weight = 5
+parent = "文章"
+name = "職涯與生活"
+pageRef = "/categories/職涯與生活/"
+
+[[main]]
+weight = 6
+parent = "文章"
+name = "Podcast節目"
+pageRef = "/categories/Podcast節目/"
+
+[[main]]
+weight = 6
+name = "追蹤"
+
+[[main]]
+weight = 1
+parent = "追蹤"
+name = "threads"
+url = "https://www.threads.net/@lazytoberich/"
+
+[[main]]
+weight = 2
+parent = "追蹤"
+name = "instagram"
+url = "https://www.instagram.com/lazytoberich/"
+
+[[main]]
+weight = 3
+parent = "追蹤"
+name = "facebook"
+url = "https://www.facebook.com/lazytoberich"
+
+[[main]]
+weight = 4
+parent = "追蹤"
+name = "discord"
+url = "https://discord.gg/xeYCvQWBPx"
+
+# footer menu
+[[footer]]
+name = "關於"
+pageRef = "/about"
+weight = 1
+
+[[footer]]
+name = "Podcast"
+pageRef = "/podcast"
+weight = 2
+
+[[footer]]
+name = "隱私權政策"
+pageRef = "pages/privacy-policy"
+weight = 3

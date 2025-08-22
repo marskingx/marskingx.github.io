@@ -1,0 +1,129 @@
+{{/*
+  Enhanced Social Share Component
+  懶得變有錢 部落格社群分享功能
+  支援多種社群平台的文章分享
+*/}}
+
+{{ $pageURL := .Permalink }}
+{{ $pageTitle := .Title }}
+{{ $pageDescription := .Description | default .Summary | truncate 150 }}
+{{ $siteName := site.Title }}
+{{ $pageImage := "" }}
+{{ with .Params.image }}
+  {{ $pageImage = . | absURL }}
+{{ else }}
+  {{ $pageImage = (site.Params.metadata.image | default "/images/og-lazytoberich.png") | absURL }}
+{{ end }}
+
+<div class="flex items-center">
+  <h5 class="mr-3">分享：</h5>
+  <ul class="social-icons">
+    <!-- Facebook -->
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ $pageURL | urlquery }}" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         title="分享到 Facebook"
+         aria-label="分享到 Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    
+    <!-- LINE -->
+    <li>
+      <a href="https://social-plugins.line.me/lineit/share?url={{ $pageURL | urlquery }}" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         title="分享到 LINE"
+         aria-label="分享到 LINE">
+        <i class="fab fa-line"></i>
+      </a>
+    </li>
+    
+    <!-- Threads -->
+    <li>
+      <a href="https://www.threads.net/intent/post?text={{ printf "%s %s" $pageTitle $pageURL | urlquery }}" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         title="分享到 Threads"
+         aria-label="分享到 Threads">
+        <i class="fab fa-threads"></i>
+      </a>
+    </li>
+    
+    <!-- Copy Link -->
+    <li>
+      <button type="button" 
+              title="複製連結"
+              aria-label="複製連結"
+              data-url="{{ $pageURL }}"
+              onclick="copyToClipboard(this)"
+              class="bg-primary dark:bg-darkmode-primary dark:text-dark flex h-9 w-9 items-center justify-center rounded text-center leading-9 text-white">
+        <i class="fas fa-link"></i>
+      </button>
+    </li>
+  </ul>
+  
+  <!-- 複製成功提示 -->
+  <div id="copy-success" class="copy-success-message" style="display: none;">
+    <i class="fas fa-check-circle text-green-500"></i>
+    <span class="ml-1">連結已複製到剪貼板！</span>
+  </div>
+</div>
+
+<script>
+function copyToClipboard(button) {
+  const url = button.dataset.url;
+  const successMsg = document.getElementById('copy-success');
+  
+  if (navigator.clipboard && window.isSecureContext) {
+    // 使用現代的 Clipboard API
+    navigator.clipboard.writeText(url).then(() => {
+      showCopySuccess(successMsg);
+    }).catch((err) => {
+      console.error('複製失敗:', err);
+      fallbackCopyTextToClipboard(url, successMsg);
+    });
+  } else {
+    // 回退方案
+    fallbackCopyTextToClipboard(url, successMsg);
+  }
+}
+
+function fallbackCopyTextToClipboard(text, successMsg) {
+  const textArea = document.createElement("textarea");
+  textArea.value = text;
+  textArea.style.top = "0";
+  textArea.style.left = "0";
+  textArea.style.position = "fixed";
+  textArea.style.opacity = "0";
+
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
+
+  try {
+    const successful = document.execCommand('copy');
+    if (successful) {
+      showCopySuccess(successMsg);
+    }
+  } catch (err) {
+    console.error('Fallback: 複製失敗', err);
+  }
+
+  document.body.removeChild(textArea);
+}
+
+function showCopySuccess(successMsg) {
+  successMsg.style.display = 'block';
+  setTimeout(() => {
+    successMsg.style.display = 'none';
+  }, 2000);
+}
+</script>
+
+<style>
+.copy-success-message {
+  @apply fixed top-4 right-4 z-50 p-3 text-sm text-green-700 bg-green-100 dark:bg-green-800 dark:text-green-200 rounded-lg shadow-lg;
+}
+</style>

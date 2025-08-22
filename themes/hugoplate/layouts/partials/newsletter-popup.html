@@ -1,0 +1,389 @@
+<!-- 現代化電子報訂閱彈窗 -->
+<div id="newsletter-popup-overlay" class="fixed inset-0 z-50 flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-500 ease-out">
+  <!-- 背景遮罩 -->
+  <div class="absolute inset-0 bg-black/70 backdrop-blur-sm"></div>
+  
+  <!-- 彈窗容器 -->
+  <div id="newsletter-popup-modal" class="relative bg-white dark:bg-gray-800 max-w-lg w-full rounded-2xl shadow-2xl transform scale-90 transition-all duration-500 ease-out">
+    <!-- 關閉按鈕 -->
+    <button id="newsletter-popup-close" 
+            class="absolute -top-3 -right-3 w-8 h-8 bg-gray-600 hover:bg-gray-700 text-white rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 z-10">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+
+    <!-- 頂部裝飾區域 -->
+    <div class="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 rounded-t-2xl p-6 text-white">
+      <!-- 圖示 -->
+      <div class="flex justify-center mb-4">
+        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 7.89a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+          </svg>
+        </div>
+      </div>
+      
+      <!-- 標題 -->
+      <h2 class="text-2xl font-bold text-center mb-2">💰 加入懶得變有錢</h2>
+      <p class="text-center text-blue-100 text-sm">每週獲得最新理財心法與投資洞察</p>
+    </div>
+
+    <!-- 內容區域 -->
+    <div class="p-6">
+      <!-- 價值主張 -->
+      <div class="mb-6">
+        <div class="grid grid-cols-1 gap-3">
+          <div class="flex items-center text-gray-700 dark:text-gray-300">
+            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+              <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <span class="text-sm">每週精選理財文章與市場分析</span>
+          </div>
+          
+          <div class="flex items-center text-gray-700 dark:text-gray-300">
+            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+              <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <span class="text-sm">獨家投資策略與實戰經驗分享</span>
+          </div>
+          
+          <div class="flex items-center text-gray-700 dark:text-gray-300">
+            <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+              <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <span class="text-sm">不定期贈送實用理財工具與資源</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 訂閱表單 -->
+      <form id="newsletter-form" action="{{ site.Params.subscription.mailchimp_form_action }}" method="POST" target="_blank" class="space-y-4">
+        <div class="relative">
+          <input 
+            type="email" 
+            name="EMAIL" 
+            id="newsletter-email"
+            placeholder="輸入您的 Email 地址" 
+            required
+            class="w-full px-4 py-3 pr-12 border-2 border-gray-300 dark:border-gray-600 rounded-xl bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/20 transition-all duration-300 outline-none" 
+          />
+          <div class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path>
+            </svg>
+          </div>
+        </div>
+
+        <!-- 隱藏字段 -->
+        <div style="position: absolute; left: -5000px;">
+          <input type="text" name="{{ site.Params.subscription.mailchimp_form_name }}" tabindex="-1" value="">
+        </div>
+
+        <button 
+          type="submit"
+          class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg focus:ring-4 focus:ring-blue-500/20 focus:outline-none"
+        >
+          <span class="flex items-center justify-center">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+            </svg>
+            立即免費訂閱
+          </span>
+        </button>
+      </form>
+
+      <!-- 底部說明 -->
+      <div class="mt-4 text-center">
+        <p class="text-xs text-gray-500 dark:text-gray-400">
+          我們尊重您的隱私，隨時可以取消訂閱
+        </p>
+      </div>
+    </div>
+
+    <!-- 底部小標語 -->
+    <div class="bg-gray-50 dark:bg-gray-700 rounded-b-2xl px-6 py-3">
+      <p class="text-center text-xs text-gray-600 dark:text-gray-300">
+        🚀 已有 <span class="font-semibold text-blue-600 dark:text-blue-400">5,000+</span> 讀者加入理財成長之路
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- CSS 樣式 -->
+<style>
+  @keyframes slideInScale {
+    from {
+      opacity: 0;
+      transform: translateY(-50px) scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  @keyframes slideOutScale {
+    from {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(-50px) scale(0.9);
+    }
+  }
+  
+  .newsletter-popup-show {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+  
+  .newsletter-popup-show #newsletter-popup-modal {
+    transform: scale(1) !important;
+  }
+  
+  .newsletter-popup-hide {
+    animation: slideOutScale 0.3s ease-in-out forwards;
+  }
+  
+  #newsletter-popup-modal {
+    animation: slideInScale 0.5s ease-out;
+  }
+  
+  /* 移動裝置優化 */
+  @media (max-width: 640px) {
+    #newsletter-popup-modal {
+      max-width: 90vw;
+      margin: 0 20px;
+    }
+  }
+  
+  /* 深色模式下的漸層調整 */
+  @media (prefers-color-scheme: dark) {
+    .dark #newsletter-popup-modal {
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+  }
+</style>
+
+<!-- JavaScript 功能 -->
+<script>
+(function() {
+  'use strict';
+  
+  const STORAGE_KEY = 'newsletter_popup_data';
+  const SHOW_DELAY = 5000; // 5秒後顯示
+  const SCROLL_THRESHOLD = 50; // 滾動50%後可觸發
+  const MAX_SHOW_COUNT = 3; // 最多顯示3次
+  const COOLDOWN_DAYS = 7; // 冷卻期7天
+  
+  let popupData = {
+    showCount: 0,
+    lastShown: null,
+    dismissed: false,
+    subscribed: false
+  };
+  
+  // 載入本地儲存數據
+  function loadPopupData() {
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      if (stored) {
+        popupData = { ...popupData, ...JSON.parse(stored) };
+      }
+    } catch (e) {
+      console.warn('Failed to load popup data:', e);
+    }
+  }
+  
+  // 儲存數據
+  function savePopupData() {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(popupData));
+    } catch (e) {
+      console.warn('Failed to save popup data:', e);
+    }
+  }
+  
+  // 檢查是否應該顯示彈窗
+  function shouldShowPopup() {
+    const now = Date.now();
+    const lastShown = popupData.lastShown ? new Date(popupData.lastShown).getTime() : 0;
+    const daysSinceLastShown = (now - lastShown) / (1000 * 60 * 60 * 24);
+    
+    return !popupData.subscribed && 
+           !popupData.dismissed && 
+           popupData.showCount < MAX_SHOW_COUNT &&
+           daysSinceLastShown >= COOLDOWN_DAYS;
+  }
+  
+  // 顯示彈窗
+  function showPopup() {
+    if (!shouldShowPopup()) return;
+    
+    const overlay = document.getElementById('newsletter-popup-overlay');
+    if (!overlay) return;
+    
+    overlay.classList.add('newsletter-popup-show');
+    document.body.style.overflow = 'hidden';
+    
+    // 更新統計
+    popupData.showCount++;
+    popupData.lastShown = new Date().toISOString();
+    savePopupData();
+    
+    // Google Analytics 事件追蹤
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'newsletter_popup_shown', {
+        event_category: 'engagement',
+        event_label: 'popup_display'
+      });
+    }
+  }
+  
+  // 隱藏彈窗
+  function hidePopup() {
+    const overlay = document.getElementById('newsletter-popup-overlay');
+    if (!overlay) return;
+    
+    overlay.classList.add('newsletter-popup-hide');
+    document.body.style.overflow = '';
+    
+    setTimeout(() => {
+      overlay.classList.remove('newsletter-popup-show', 'newsletter-popup-hide');
+    }, 300);
+  }
+  
+  // 關閉彈窗（使用者主動關閉）
+  function dismissPopup() {
+    hidePopup();
+    popupData.dismissed = true;
+    savePopupData();
+    
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'newsletter_popup_dismissed', {
+        event_category: 'engagement',
+        event_label: 'popup_close'
+      });
+    }
+  }
+  
+  // 滾動觸發檢測
+  let hasScrolledEnough = false;
+  function checkScrollTrigger() {
+    if (hasScrolledEnough) return;
+    
+    const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+    
+    if (scrollPercent >= SCROLL_THRESHOLD) {
+      hasScrolledEnough = true;
+      setTimeout(showPopup, 1000); // 延遲1秒顯示
+    }
+  }
+  
+  // 退出意圖檢測
+  let exitIntentDetected = false;
+  function detectExitIntent(e) {
+    if (exitIntentDetected || e.clientY > 0) return;
+    
+    exitIntentDetected = true;
+    showPopup();
+    
+    // 移除事件監聽器避免重複觸發
+    document.removeEventListener('mouseout', detectExitIntent);
+  }
+  
+  // 表單提交處理
+  function handleFormSubmit(e) {
+    const emailInput = document.getElementById('newsletter-email');
+    const email = emailInput ? emailInput.value : '';
+    
+    if (email) {
+      popupData.subscribed = true;
+      savePopupData();
+      
+      // Google Analytics 事件追蹤
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'newsletter_subscribe', {
+          event_category: 'conversion',
+          event_label: 'popup_form',
+          value: 1
+        });
+      }
+      
+      // 顯示成功訊息
+      setTimeout(() => {
+        hidePopup();
+        // 可以在這裡顯示感謝訊息
+      }, 500);
+    }
+  }
+  
+  // 初始化
+  function init() {
+    loadPopupData();
+    
+    // 事件監聽器
+    const closeBtn = document.getElementById('newsletter-popup-close');
+    const overlay = document.getElementById('newsletter-popup-overlay');
+    const form = document.getElementById('newsletter-form');
+    
+    if (closeBtn) {
+      closeBtn.addEventListener('click', dismissPopup);
+    }
+    
+    if (overlay) {
+      overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) {
+          dismissPopup();
+        }
+      });
+    }
+    
+    if (form) {
+      form.addEventListener('submit', handleFormSubmit);
+    }
+    
+    // ESC 鍵關閉
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        dismissPopup();
+      }
+    });
+    
+    // 設定觸發條件
+    if (shouldShowPopup()) {
+      // 時間觸發
+      setTimeout(showPopup, SHOW_DELAY);
+      
+      // 滾動觸發
+      let scrollTimeout;
+      window.addEventListener('scroll', function() {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(checkScrollTrigger, 100);
+      }, { passive: true });
+      
+      // 退出意圖觸發（僅桌面版）
+      if (window.innerWidth > 768) {
+        setTimeout(() => {
+          document.addEventListener('mouseout', detectExitIntent);
+        }, 10000); // 10秒後開始監聽退出意圖
+      }
+    }
+  }
+  
+  // DOM 載入完成後初始化
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>

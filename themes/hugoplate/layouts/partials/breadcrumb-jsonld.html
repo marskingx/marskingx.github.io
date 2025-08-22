@@ -1,0 +1,49 @@
+<!-- Breadcrumb JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "首頁",
+      "item": {
+        "@type": "WebPage",
+        "@id": {{ site.Home.Permalink | jsonify }},
+        "name": {{ "首頁" | jsonify }}
+      }
+    }{{ if .Params.categories }},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ index .Params.categories 0 | humanize | jsonify }},
+      "item": {
+        "@type": "WebPage",
+        "@id": {{ printf "%s%s/" ("categories/" | relLangURL) (index .Params.categories 0 | urlize | lower) | absURL | jsonify }},
+        "name": {{ index .Params.categories 0 | humanize | jsonify }}
+      }
+    }{{ end }}{{ if .Section }},
+    {
+      "@type": "ListItem",
+      "position": {{ if .Params.categories }}3{{ else }}2{{ end }},
+      "name": {{ .Section | humanize | jsonify }},
+      "item": {
+        "@type": "WebPage",
+        "@id": {{ printf "/%s/" .Section | absURL | jsonify }},
+        "name": {{ .Section | humanize | jsonify }}
+      }
+    }{{ end }},
+    {
+      "@type": "ListItem",
+      "position": {{ if and .Params.categories .Section }}4{{ else if or .Params.categories .Section }}3{{ else }}2{{ end }},
+      "name": {{ .Title | jsonify }}{{ if not .IsPage }},
+      "item": {
+        "@type": "WebPage",
+        "@id": {{ .Permalink | jsonify }},
+        "name": {{ .Title | jsonify }}
+      }{{ end }}
+    }
+  ]
+}
+</script>

@@ -1,0 +1,78 @@
+{{/* 組織和作者資訊的結構化資料 */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "{{ site.BaseURL }}#organization",
+  "name": {{ site.Title | jsonify }},
+  "alternateName": {{ "懶得變有錢" | jsonify }},
+  "url": {{ site.BaseURL | jsonify }},
+  "logo": {
+    "@type": "ImageObject",
+    "url": {{ (site.Params.logo | default "/favicon.png" | absURL) | jsonify }},
+    "width": 512,
+    "height": 512
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": {{ "/images/og-lazytoberich.png" | absURL | jsonify }},
+    "width": 1200,
+    "height": 630
+  },
+  "description": {{ site.Params.meta_description | default "專業的財務規劃和理財教育平台，提供實用的投資理財知識與策略" | jsonify }},
+  "foundingDate": {{ "2023" | jsonify }},
+  "founder": {
+    "@type": "Person",
+    "@id": "{{ site.BaseURL }}#founder",
+    "name": {{ "懶大" | jsonify }},
+    "description": {{ "財務規劃專家，專注於協助民眾建立正確的理財觀念" | jsonify }},
+    "url": {{ printf "%sauthors/懶大/" site.BaseURL | jsonify }},
+    "sameAs": [
+      {{- $socialLinks := slice -}}
+      {{- with site.Params.social -}}
+        {{- with .facebook -}}
+          {{- $socialLinks = $socialLinks | append . -}}
+        {{- end -}}
+        {{- with .instagram -}}
+          {{- $socialLinks = $socialLinks | append . -}}
+        {{- end -}}
+        {{- with .discord -}}
+          {{- $socialLinks = $socialLinks | append . -}}
+        {{- end -}}
+        {{- with .youtube -}}
+          {{- $socialLinks = $socialLinks | append . -}}
+        {{- end -}}
+      {{- end -}}
+      {{- range $index, $link := $socialLinks -}}
+        {{- if $index -}}, {{ end -}}{{ $link | jsonify }}
+      {{- end -}}
+    ]
+  },
+  "sameAs": [
+    {{- $socialLinks := slice -}}
+    {{- with site.Params.social -}}
+      {{- with .facebook -}}
+        {{- $socialLinks = $socialLinks | append . -}}
+      {{- end -}}
+      {{- with .instagram -}}
+        {{- $socialLinks = $socialLinks | append . -}}
+      {{- end -}}
+      {{- with .discord -}}
+        {{- $socialLinks = $socialLinks | append . -}}
+      {{- end -}}
+      {{- with .youtube -}}
+        {{- $socialLinks = $socialLinks | append . -}}
+      {{- end -}}
+    {{- end -}}
+    {{- range $index, $link := $socialLinks -}}
+      {{- if $index -}}, {{ end -}}{{ $link | jsonify }}
+    {{- end -}}
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": {{ "customer service" | jsonify }},
+    "availableLanguage": {{ "zh-TW" | jsonify }},
+    "url": {{ printf "%scontact/" site.BaseURL | jsonify }}
+  }
+}
+</script>

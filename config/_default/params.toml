@@ -1,0 +1,114 @@
+#################### default parameters ################################
+# favicon module: https://github.com/gethugothemes/hugo-modules/tree/master/images#favicon-implementation
+favicon = "images/favicon.png"
+# logo module: https://github.com/gethugothemes/hugo-modules/tree/master/images#logo-implementation
+logo = "images/logo.png"
+logo_darkmode = "images/logo-darkmode.png"
+# use `px` or `x` with logo_width, example: "100px".
+# Note: logo_width is not work with .svg file
+logo_width = "160px"
+logo_height = "32px"
+# if logo_webp set false, will not generate WEBP version of logo | default is true
+logo_webp = true
+# logo text will only show when logo is missing.
+logo_text = "懶得變有錢"
+# navbar fixed to top
+navbar_fixed = true
+# theme-mode
+theme_switcher = true
+theme_default = "system" # available options [light/dark/system]
+# Main Sections
+mainSections = ["blog"]
+# contact form action
+contact_form_action = "https://airform.io/shamangels@gmail.com" # contact form works with [https://airform.io/] or [https://formspree.io]
+# google tag manager, see https://developers.google.com/tag-manager/
+google_tag_manager = "GTM-WFVQPMPL" # example: G-XXXXXXXXXX
+google_adsense = "pub-1504939696165194"     # example: ca-pub-xxxxxxxxxxxxxxxx
+# custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
+custom_script = ""
+# copyright
+copyright = "©2018-2024 [**懶得變有錢**](https://lazytoberich.com.tw) | 理解財務規劃本質 鑑定你的財務DNA<br>本網站文章未經同意禁止轉載"
+
+# Preloader
+# preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader
+[preloader]
+enable = false
+preloader = "" # use jpg, png, svg or gif format.
+
+# Navigation button
+[navigation_button]
+enable = true
+label = "聯絡懶大"
+link = "contact"
+
+# search
+# search module: https://github.com/gethugothemes/hugo-modules/tree/master/search
+[search]
+enable = true
+primary_color = "#121212"
+include_sections = ["blog"]
+show_image = true
+show_description = true
+show_tags = true
+show_categories = true
+
+# announcement
+# announcement module: https://github.com/gethugothemes/hugo-modules/tree/master/components/announcement
+[announcement]
+enable = true
+expire_days = 7
+content = "本站透過少量的GoogleAdsense廣告以及聯盟行銷用於**支持本站營運**及**家扶基金會兒童教養公益**用途！"
+
+# seo meta data for OpenGraph / Twitter Card
+# seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
+[metadata]
+keywords = ["ETF", "Podcast", "保險", "儲蓄", "台股", "基金", "懶得變有錢", "房地產", "投資", "投資理財", "支出", "收入", "理財", "理財規劃", "瑪斯理財兩三事", "稅務", "總體經濟", "美股", "職涯心得", "股利收入", "複委託", "記帳", "閱讀心得", "財務規劃", "財商", "貸款", "資產配置", "退休規劃", "開源節流"]
+description = "懶．是一種思維模式，用乘法的效率，解決加法的事情。懶．是一種生活方式，用專注體驗當下，迎接一直來的未來。我是懶得變有錢的站長Mars，也有人叫我懶大，這裡是幫助你理解財務規劃本質，鑑定自己財務DNA的地方"
+author = "懶得變有錢"
+image = "images/og-lazytoberich.png"
+
+
+# site verifications
+# verification module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/site-verifications
+[site_verification]
+google = "6267550629"   # Your verification code
+bing = "B8901C747010127F0D6FABD662802BC0"     # Your verification code
+baidu = ""    # Your verification code
+facebook = "" # Your verification code
+mastodon = "" # Your verification code
+
+# cookies
+# cookies module: https://github.com/gethugothemes/hugo-modules/tree/master/components/cookie-consent
+[cookies]
+enable = true
+expire_days = 60
+content = "為提供您更多優質的內容，本網站使用 cookies 分析技術。若繼續閱覽本網站內容，即表示您同意我們使用 cookies，關於更多 cookies 以及相關政策更新資訊請閱讀我們的隱私權政策。"
+button = "我知道了"
+
+# diagrams
+[mermaid]
+js_url = 'https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.esm.min.mjs'
+
+
+######################## sidebar widgets #########################
+[widgets]
+sidebar = ["apple-podcast", "categories", "tags", ]
+
+
+# google map
+[google_map]
+enable = false
+map_api_key = "AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"
+map_latitude = "51.5223477"
+map_longitude = "-0.1622023"
+map_marker = "images/marker.png"
+
+
+# Subscription
+[subscription]
+enable = true
+# mailchimp subsciption
+mailchimp_form_action = "https://lazytoberich.us14.list-manage.com/subscribe/post?u=db5c854191bdeffdff24a5147&id=517a8482e3&f_id=006cc3e0f0" # replace this url with yours
+mailchimp_form_name = "b_db5c854191bdeffdff24a5147_517a8482e3"
+
+
