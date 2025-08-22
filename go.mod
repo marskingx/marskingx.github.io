@@ -5,6 +5,7 @@ go 1.23
 toolchain go1.24.6
 
 require (
+	github.com/zeon-studio/hugoplate v0.0.0-20240726062833-d1e3a9f07d03
 	cloud.google.com/go v0.116.0 // indirect
 	cloud.google.com/go/auth v0.9.3 // indirect
 	cloud.google.com/go/compute/metadata v0.5.0 // indirect
