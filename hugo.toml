@@ -36,9 +36,6 @@ shortname = 'themefisher-template' # we use disqus to show comments in blog post
 imports = [
   { path = "github.com/zeon-studio/hugoplate" }
 ]
-[[module.mounts]]
-source = "assets"
-target = "assets"
 
 ############################# Build ##############################
 [build]
