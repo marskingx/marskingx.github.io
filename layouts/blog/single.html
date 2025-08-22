@@ -102,59 +102,8 @@
             </ul>
           </div>
         </div>
-        {{/* Create a scratchpad for the schema */}}
-        {{ $schema := newScratch }}
-
-        {{/* Base Schema */}}
-        {{ $schema.Set "data" (dict "@context" "https://schema.org" "@type" "BlogPosting") }}
-        {{ $schemaData := $schema.Get "data" }}
-        {{ $schemaData = merge $schemaData (dict "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)) }}
-        {{ $schemaData = merge $schemaData (dict "headline" .Title) }}
-        {{ $schemaData = merge $schemaData (dict "description" .Description) }}
-        {{ with .Params.image }}
-        {{ $schemaData = merge $schemaData (dict "image" (. | absURL)) }}
-        {{ end }}
-        {{ $schemaData = merge $schemaData (dict "datePublished" (.PublishDate.Format "2006-01-02T15:04:05Z07:00")) }}
-        {{ $schemaData = merge $schemaData (dict "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")) }}
-
-        {{/* Author - ONLY if author param exists and is not empty */}}
-        {{ with .Params.author }}
-        {{ if ne . "" }}
-        {{ $schemaData = merge $schemaData (dict "author" (dict "@type" "Person" "name" . "url" (printf "%s%s/"
-        ("authors/" | relLangURL) (. | urlize)))) }}
-        {{ end }}
-        {{ end }}
-
-        {{/* Publisher */}}
-        {{ $logoURL := site.Params.logo | default "/favicon.png" | absURL }}
-        {{ $publisher := dict "@type" "Organization" "name" site.Title "logo" (dict "@type" "ImageObject" "url"
-        $logoURL) }}
-        {{ $schemaData = merge $schemaData (dict "publisher" $publisher) }}
-
-        {{/* Categories & Tags */}}
-        {{ with .Params.categories }}
-        {{ $keywords := delimit . ", " }}
-        {{ $schemaData = merge $schemaData (dict "keywords" $keywords) }}
-        {{ end }}
-
-        {{/* Article Section - Only if categories exist */}}
-        {{ with index .Params.categories 0 }}
-        {{ $schemaData = merge $schemaData (dict "articleSection" .) }}
-        {{ end }}
-
-        {{/* Word Count */}}
-        {{ $schemaData = merge $schemaData (dict "wordCount" .WordCount) }}
-
-        {{/* In Language */}}
-        {{ $schemaData = merge $schemaData (dict "inLanguage" site.Language.Lang) }}
-
-        {{/* URL */}}
-        {{ $schemaData = merge $schemaData (dict "url" .Permalink) }}
-
-        {{/* Output JSON-LD */}}
-        <script type="application/ld+json">
-          {{ $schemaData | jsonify (dict "indent" "  ") | safeHTML }}
-        </script>
+        {{/* Use the enhanced structured data template with Review schema support */}}
+        {{ partial "structured-data/article.html" . }}
         
       </article>
     </div>

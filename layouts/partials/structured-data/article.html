@@ -1,109 +1,89 @@
-{{/* 文章內容的結構化資料 */}}
-{{- $articleType := "BlogPosting" -}}
-{{- $articleSection := "Finance" -}}
+{{/*
+自動為文章頁面產生 BlogPosting 結構化資料。
+如果文章分類為 "閱讀心得" 且包含 `rate` 參數，則會自動追加 Review (星級評分) 資訊。
+*/}}
+{{ if and .IsPage (eq .Section "blog") }}
+{{/* Create a scratchpad for the schema */}}
+{{ $schema := newScratch }}
 
-{{- if .Params.categories -}}
-  {{- $firstCategory := index .Params.categories 0 -}}
-  {{- if eq $firstCategory "閱讀心得" -}}
-    {{- $articleType = "Review" -}}
-    {{- $articleSection = "Book Review" -}}
-  {{- else if eq $firstCategory "理財" -}}
-    {{- $articleSection = "Financial Planning" -}}
-  {{- else if eq $firstCategory "投資" -}}
-    {{- $articleSection = "Investment" -}}
-  {{- else if eq $firstCategory "保險" -}}
-    {{- $articleSection = "Insurance" -}}
-  {{- else if eq $firstCategory "生活" -}}
-    {{- $articleSection = "Lifestyle" -}}
-  {{- end -}}
-{{- end -}}
+{{/* Base BlogPosting Schema */}}
+{{ $schemaData := dict "@context" "https://schema.org" "@type" "BlogPosting" }}
+{{ $schemaData = merge $schemaData (dict "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)) }}
+{{ $schemaData = merge $schemaData (dict "headline" .Title) }}
+{{ $schemaData = merge $schemaData (dict "description" (.Description | default .Summary)) }}
 
+{{/* Image */}}
+{{ with .Params.image }}
+{{ $imageURL := . | absURL }}
+{{ $schemaData = merge $schemaData (dict "image" (dict "@type" "ImageObject" "url" $imageURL)) }}
+{{ end }}
+
+{{/* Author - ONLY if author param exists and is not empty */}}
+{{ with .Params.author }}
+{{ if ne . "" }}
+{{ $authorData := dict "@type" "Person" "name" . }}
+{{ $authorData = merge $authorData (dict "@id" (printf "%s#founder" site.BaseURL)) }}
+{{ $authorData = merge $authorData (dict "url" (printf "%s%s/" ("authors/" | relLangURL) (. | urlize))) }}
+{{ $schemaData = merge $schemaData (dict "author" $authorData) }}
+{{ end }}
+{{ end }}
+
+{{/* Publisher */}}
+{{ $logoURL := site.Params.logo | default "/favicon.png" | absURL }}
+{{ $publisher := dict "@type" "Organization" "name" site.Title }}
+{{ $publisher = merge $publisher (dict "@id" (printf "%s#organization" site.BaseURL)) }}
+{{ $publisher = merge $publisher (dict "logo" (dict "@type" "ImageObject" "url" $logoURL)) }}
+{{ $schemaData = merge $schemaData (dict "publisher" $publisher) }}
+
+{{/* Dates */}}
+{{ $schemaData = merge $schemaData (dict "datePublished" (.PublishDate.Format "2006-01-02T15:04:05Z07:00")) }}
+{{ $schemaData = merge $schemaData (dict "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")) }}
+
+{{/* Categories & Tags as keywords */}}
+{{ $keywords := slice }}
+{{ with .Params.categories }}
+{{ $keywords = $keywords | append . }}
+{{ end }}
+{{ with .Params.tags }}
+{{ $keywords = $keywords | append . }}
+{{ end }}
+{{ if $keywords }}
+{{ $schemaData = merge $schemaData (dict "keywords" (delimit ($keywords | uniq) ", ")) }}
+{{ end }}
+
+{{/* Article Section - Only if categories exist */}}
+{{ with index .Params.categories 0 }}
+{{ $schemaData = merge $schemaData (dict "articleSection" .) }}
+{{ end }}
+
+{{/* Word Count and Language */}}
+{{ $schemaData = merge $schemaData (dict "wordCount" .WordCount) }}
+{{ $schemaData = merge $schemaData (dict "inLanguage" site.Language.Lang) }}
+{{ $schemaData = merge $schemaData (dict "url" .Permalink) }}
+
+{{/* 智慧判斷：如果是閱讀心得且有評分，自動追加 Review schema */}}
+{{ if and (in .Params.categories "閱讀心得") .Params.rate }}
+{{/* 計算星級評分：計算 ⭐ 符號的數量 */}}
+{{ $ratingValue := 0 }}
+{{ $rateStr := .Params.rate | string }}
+{{ range split $rateStr "" }}
+{{ if eq . "⭐" }}
+{{ $ratingValue = add $ratingValue 1 }}
+{{ end }}
+{{ end }}
+
+{{/* 如果成功解析到評分，添加 Review 結構 */}}
+{{ if gt $ratingValue 0 }}
+{{ $reviewData := dict "@type" "Review" }}
+{{ $reviewData = merge $reviewData (dict "reviewRating" (dict "@type" "Rating" "ratingValue" $ratingValue "bestRating" 5)) }}
+{{ $reviewData = merge $reviewData (dict "author" (dict "@type" "Person" "@id" (printf "%s#founder" site.BaseURL))) }}
+{{ $reviewData = merge $reviewData (dict "reviewBody" (.Summary | default .Description)) }}
+{{ $schemaData = merge $schemaData (dict "review" $reviewData) }}
+{{ end }}
+{{ end }}
+
+{{/* Output JSON-LD */}}
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": {{ $articleType | jsonify }},
-  "@id": "{{ .Permalink }}#article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "{{ .Permalink }}"
-  },
-  "headline": {{ .Title | jsonify }},
-  "description": {{ .Description | jsonify }},
-  "inLanguage": {{ "zh-TW" | jsonify }},
-  {{- with .Params.image -}}
-  "image": {
-    "@type": "ImageObject",
-    "url": {{ . | absURL | jsonify }},
-    "width": 1200,
-    "height": 630
-  },
-  {{- end -}}
-  "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}",
-  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
-  "author": {
-    "@type": "Person",
-    "@id": "{{ site.BaseURL }}#founder",
-    "name": {{ (.Params.author | default "懶大") | jsonify }},
-    "description": {{ "財務規劃專家，專注於協助民眾建立正確的理財觀念" | jsonify }},
-    "url": {{ printf "%s%s/" ("authors/" | relLangURL) ((.Params.author | default "懶大") | urlize) | jsonify }}
-  },
-  "publisher": {
-    "@type": "Organization",
-    "@id": "{{ site.BaseURL }}#organization",
-    "name": {{ site.Title | jsonify }},
-    "url": {{ site.BaseURL | jsonify }},
-    "logo": {
-      "@type": "ImageObject",
-      "url": {{ (site.Params.logo | default "/favicon.png" | absURL) | jsonify }},
-      "width": 512,
-      "height": 512
-    }
-  },
-  {{- with .Params.categories -}}
-  "articleSection": {{ $articleSection | jsonify }},
-  "about": [
-    {{- range $index, $category := . -}}
-      {{- if $index -}}, {{ end -}}
-      {
-        "@type": "Thing",
-        "name": {{ $category | jsonify }}
-      }
-    {{- end -}}
-  ],
-  {{- end -}}
-  {{- with .Params.tags -}}
-  "keywords": {{ delimit . ", " | jsonify }},
-  {{- end -}}
-  "wordCount": {{ .WordCount }},
-  "timeRequired": "PT{{ math.Ceil (div .WordCount 200.0) }}M",
-  "isPartOf": {
-    "@type": "WebSite",
-    "@id": "{{ site.BaseURL }}#website"
-  }
-  {{- if and (in .Params.categories "閱讀心得") .Params.rate -}}
-    {{- $cleanRate := .Params.rate | replaceRE "⭐️" "⭐" -}}
-    {{- $ratingValue := len (findRE "⭐" $cleanRate) -}}
-    {{- if and (gt $ratingValue 0) (le $ratingValue 5) -}}
-      {{- $bookTitle := .Title -}}
-      {{- with findRE "《([^》]+)》" .Title -}}
-        {{- $bookTitle = index . 0 | strings.TrimPrefix "《" | strings.TrimSuffix "》" -}}
-      {{- end -}}
-  ,
-  "itemReviewed": {
-    "@type": "Book",
-    "name": {{ $bookTitle | jsonify }},
-    "author": {
-      "@type": "Person",
-      "name": {{ "未知作者" | jsonify }}
-    }
-  },
-  "reviewRating": {
-    "@type": "Rating",
-    "ratingValue": {{ $ratingValue }},
-    "bestRating": 5,
-    "worstRating": 1
-  }
-    {{- end -}}
-  {{- end -}}
-}
+{{ $schemaData | jsonify (dict "indent" "  ") | safeHTML }}
 </script>
+{{ end }}
