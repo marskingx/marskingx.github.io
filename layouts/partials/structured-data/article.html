@@ -61,7 +61,7 @@
 {{ $schemaData = merge $schemaData (dict "inLanguage" site.Language.Lang) }}
 {{ $schemaData = merge $schemaData (dict "url" .Permalink) }}
 
-{{/* 智慧判斷：如果是閱讀心得且有評分，自動追加 Review schema */}}
+{{/* 🔥 CTR 優化：智慧判斷書評並生成獨立 Review + 整合 BlogPosting */}}
 {{ if and (in .Params.categories "閱讀心得") .Params.rate }}
 {{/* 計算星級評分：計算 ⭐ 符號的數量 */}}
 {{ $ratingValue := 0 }}
@@ -72,13 +72,30 @@
 {{ end }}
 {{ end }}
 
-{{/* 如果成功解析到評分，添加 Review 結構 */}}
+{{/* 如果成功解析到評分，創建完整的 Review 結構化資料 */}}
 {{ if gt $ratingValue 0 }}
+
+{{/* 提取書名：從標題中取得書名（去除【書單】前綴） */}}
+{{ $bookTitle := .Title }}
+{{ $bookTitle = $bookTitle | replaceRE "^【[^】]*】\\s*" "" }}
+{{ $bookTitle = $bookTitle | replaceRE "\\s*閱讀心得\\s*$" "" }}
+
+{{/* 建立獨立的 Review 結構化資料 */}}
 {{ $reviewData := dict "@type" "Review" }}
-{{ $reviewData = merge $reviewData (dict "reviewRating" (dict "@type" "Rating" "ratingValue" $ratingValue "bestRating" 5)) }}
-{{ $reviewData = merge $reviewData (dict "author" (dict "@type" "Person" "@id" (printf "%s#founder" site.BaseURL))) }}
+{{ $reviewData = merge $reviewData (dict "itemReviewed" (dict "@type" "Book" "name" $bookTitle)) }}
+{{ $reviewData = merge $reviewData (dict "reviewRating" (dict "@type" "Rating" "ratingValue" $ratingValue "bestRating" 5 "worstRating" 1)) }}
+{{ $reviewData = merge $reviewData (dict "author" (dict "@type" "Person" "name" (.Params.author | default "懶大") "@id" (printf "%s#founder" site.BaseURL))) }}
 {{ $reviewData = merge $reviewData (dict "reviewBody" (.Summary | default .Description)) }}
+{{ $reviewData = merge $reviewData (dict "datePublished" (.PublishDate.Format "2006-01-02")) }}
+{{ $reviewData = merge $reviewData (dict "headline" .Title) }}
+{{ $reviewData = merge $reviewData (dict "url" .Permalink) }}
+
+{{/* 在 BlogPosting 中也添加 Review 關聯 */}}
 {{ $schemaData = merge $schemaData (dict "review" $reviewData) }}
+
+{{/* 🎯 關鍵優化：將文章類型改為 Review，增加搜尋引擎理解度 */}}
+{{ $schemaData = merge $schemaData (dict "@type" (slice "BlogPosting" "Review")) }}
+
 {{ end }}
 {{ end }}
 

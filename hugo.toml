@@ -4,7 +4,7 @@ baseURL = "https://lazytoberich.com.tw/"
 # Title of your website (required).
 title = "懶得變有錢 | 帶你了解財務規劃本質 鑑定自己的財務DNA"
 # Your theme name
-theme = "hugoplate"
+# theme = "hugoplate" # theme is imported as a module
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
 timeZone = "Asia/Taipei"
 # post pagination
@@ -14,7 +14,7 @@ pagerSize = 120
 summaryLength = 0 # see https://gohugo.io/content-management/excerpts/
 # 單語言模式 - 只使用繁體中文
 hasCJKLanguage = true #  If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
-# 預設語言設定  
+# 預設語言設定
 defaultContentLanguage = 'zh-tw'
 languageCode = 'zh-tw'
 
@@ -33,6 +33,9 @@ shortname = 'themefisher-template' # we use disqus to show comments in blog post
 
 ############################# Modules ############################
 [module]
+imports = [
+  { path = "github.com/zeon-studio/hugoplate" }
+]
 [[module.mounts]]
 source = "assets"
 target = "assets"
