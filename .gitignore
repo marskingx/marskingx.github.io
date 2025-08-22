@@ -93,6 +93,29 @@ Thumbs.db
 # 確保只有網站必要檔案被部署到 GitHub Pages
 # 所有開發工具、AI 記憶、私人設定均被排除
 
+# ============================================
+# 🤖 AI 協作系統檔案 (不推送到 GitHub)
+# ============================================
+
+# AI 記憶管理系統
+docs/aimemory/
+AI_*.md
+CLAUDE*.md
+GEMINI*.md  
+CODEX*.md
+
+# AI 協作檔案
+*ONBOARDING*.md
+*HANDOVER*.md
+*REVIEW*.md
+*COLLABORATION*.md
+GSC_*.md
+GSC_*.txt
+.ai-lock.json
+
+# 臨時檔案
+docs/temp.txt
+
 # 開發文檔 (包含 AI 記憶等私人檔案)
 docs/ai-memory/
 docs/prompts/
