@@ -37,12 +37,12 @@
     {
       "@type": "ListItem",
       "position": {{ if and .Params.categories .Section }}4{{ else if or .Params.categories .Section }}3{{ else }}2{{ end }},
-      "name": {{ .Title | jsonify }}{{ if not .IsPage }},
+      "name": {{ .Title | jsonify }},
       "item": {
         "@type": "WebPage",
         "@id": {{ .Permalink | jsonify }},
         "name": {{ .Title | jsonify }}
-      }{{ end }}
+      }
     }
   ]
 }

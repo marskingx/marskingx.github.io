@@ -1,0 +1,33 @@
+必須指定「name」或「item.name」 (位於「itemListElement」)
+含有這個問題的項目無效。無效項目無法在 Google 搜尋中以複合式搜尋結果的形式呈現
+
+
+error_outline
+無法繼續進行驗證程序
+系統已找到受影響的頁面。請修正相關問題，然後再次進行驗證。
+error_outline
+https://lazytoberich.com.tw/categories/%E9%96%B1%E8%AE%80%E5%BF%83%E5%BE%97/
+項目：不適用
+error_outline
+https://lazytoberich.com.tw/privacy-policy/
+項目：不適用
+error_outline
+https://lazytoberich.com.tw/blog/
+項目：不適用
+
+示例
+
+網址	項目名稱	上次檢索日期
+https://lazytoberich.com.tw/categories/閱讀心得/
+不適用	2025年8月22日
+https://lazytoberich.com.tw/privacy-policy/
+不適用	2025年8月21日
+https://lazytoberich.com.tw/blog/
+不適用	2025年8月21日
+https://lazytoberich.com.tw/tags/行銷/市場/
+不適用	2025年8月17日
+https://lazytoberich.com.tw/tags/心理/勵志/
+
+
+
+不適用	2025年8月16日?
