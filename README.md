@@ -1,93 +1,176 @@
-# Lazytoberich
+# 懶得變有錢 | 理解財務規劃本質 鑑定你的財務DNA
 
+[![Hugo](https://img.shields.io/badge/Hugo-0.148.2-FF4088?style=flat&logo=hugo)](https://gohugo.io/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?style=flat&logo=tailwind-css)](https://tailwindcss.com/)
+[![GitHub Pages](https://img.shields.io/badge/Deployed%20on-GitHub%20Pages-222222?style=flat&logo=github)](https://marskingx.github.io/)
+[![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red)](https://lazytoberich.com.tw/)
 
+> **懶．是一種思維模式**，用乘法的效率，解決加法的事情。  
+> **懶．是一種生活方式**，用專注體驗當下，迎接一直來的未來。
 
-## Getting started
+「懶得變有錢」是由 Mars（懶大）創立的財務規劃部落格，致力於幫助讀者理解財務規劃的本質，找到自己的財務DNA。透過深入淺出的文章和實用的理財知識，讓更多人能夠建立正確的理財觀念，邁向財務自由。
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+## 🌟 網站特色
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+### 📝 內容豐富
+- **140+ 原創文章**：涵蓋投資理財、財務規劃、職涯發展、閱讀心得等主題
+- **分類完整**：財務規劃與心態、投資、理財、生活、閱讀等多元分類
+- **定期更新**：持續分享最新的理財觀念和實務經驗
 
-## Add your files
+### 🎧 多媒體整合
+- **Podcast 節目**：「瑪斯理財兩三事」音頻內容
+- **Apple Podcast**：完整的 Podcast 訂閱和推廣功能
+- **社群整合**：Facebook、Instagram、Threads、Discord 等多平台連結
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+### 🔍 SEO 優化
+- **結構化資料**：完整的 JSON-LD Schema.org 標記
+- **智慧評分系統**：書評文章自動產生星級評分結構化資料
+- **搜尋引擎友善**：Google Search Console、Bing 驗證完整設定
+
+## 🛠 技術架構
+
+### 核心技術
+- **靜態網站生成器**：Hugo 0.148.2
+- **CSS 框架**：TailwindCSS 3.4
+- **主題**：Hugoplate 1.15.1（高度客製化）
+- **部署平台**：GitHub Pages
+- **內容管理**：Git-based workflow
+
+### 效能優化
+- **圖片優化**：自動 WebP 轉換，responsive images
+- **載入優化**：DNS 預解析、資源預載入、Service Worker
+- **快取策略**：Hugo 內建快取 + CDN 優化
+- **代碼分割**：延遲載入非關鍵資源
+
+### 開發工具
+```bash
+# 本地開發
+npm run dev          # 開發伺服器
+npm run build        # 生產建置
+npm run preview      # 預覽生產版本
+
+# 版本管理（四位版本號系統）
+npm run version:show     # 顯示當前版本
+npm run version:content  # 內容更新版本
+npm run version:patch    # 錯誤修正版本
+npm run version:minor    # 新功能版本
+npm run version:major    # 重大更新版本
+
+# 工具
+npm run format          # 代碼格式化
+npm run images:analyze  # 圖片使用分析
+npm run perf:analyze    # 效能分析
+npm run schema:validate # 結構化資料驗證
+```
+
+## 📊 專案統計
+
+- **部落格文章**：140+ 篇
+- **圖片資源**：275 張（自動 WebP 優化）
+- **靜態檔案**：3,929 個，350.38 MB
+- **建置時間**：平均 3.2 秒
+- **Lighthouse 分數**：效能 95+ / SEO 100
+
+## 🚀 快速開始
+
+### 環境需求
+- Node.js 18+
+- Hugo 0.148.2+
+- Git
+
+### 安裝與執行
+```bash
+# 複製專案
+git clone https://github.com/marskingx/marskingx.github.io.git
+cd marskingx.github.io
+
+# 安裝依賴
+npm install
+
+# 啟動開發伺服器
+npm run dev
+
+# 瀏覽網站
+open http://localhost:1313
+```
+
+### 新增文章
+```bash
+# 創建新文章
+hugo new content/blog/YYYY-MM-DD-文章標題.md
+
+# 編輯文章內容
+# 確保 front matter 設定完整
+
+# 本地預覽
+npm run dev
+
+# 建置發布
+npm run build
+```
+
+## 📁 專案結構
 
 ```
-cd existing_repo
-git remote add origin https://gitlab.com/lazytoberich/lazytoberich.git
-git branch -M main
-git push -uf origin main
+marskingx.github.io/
+├── content/
+│   ├── blog/           # 部落格文章（140+ 篇）
+│   ├── podcast/        # Podcast 內容
+│   ├── authors/        # 作者資訊
+│   ├── pages/          # 靜態頁面
+│   └── sections/       # 頁面區塊
+├── assets/
+│   └── images/         # 圖片資源
+├── layouts/
+│   ├── partials/       # 自定義模板
+│   └── structured-data/ # JSON-LD 結構化資料
+├── static/             # 靜態檔案
+├── config/_default/    # Hugo 配置
+├── themes/hugoplate/   # 主題檔案
+└── package.json        # 專案依賴
 ```
 
-## Integrate with your tools
+## 🤝 社群連結
 
-- [ ] [Set up project integrations](https://gitlab.com/lazytoberich/lazytoberich/-/settings/integrations)
+- **官方網站**：[lazytoberich.com.tw](https://lazytoberich.com.tw)
+- **Facebook**：[@lazytoberich](https://www.facebook.com/lazytoberich)
+- **Instagram**：[@lazytoberich](https://www.instagram.com/lazytoberich/)
+- **Threads**：[@lazytoberich](https://www.threads.net/@lazytoberich/)
+- **Discord**：[懶得變有錢社群](https://discord.gg/xeYCvQWBPx)
+- **Podcast**：[瑪斯理財兩三事](https://podcasts.apple.com/tw/podcast/id1548637718)
 
-## Collaborate with your team
+## 📞 聯絡方式
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+- **信箱**：[shamangels@gmail.com](mailto:shamangels@gmail.com)
+- **聯絡表單**：[網站聯絡頁面](https://lazytoberich.com.tw/contact/)
 
-## Test and Deploy
+## 📝 內容政策
 
-Use the built-in continuous integration in GitLab.
+### 版權聲明
+- 本網站所有文章內容均為原創，受著作權法保護
+- 未經同意禁止轉載或商業使用
+- 引用請註明出處並附上原文連結
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+### 免責聲明
+- 本網站內容僅供參考，不構成投資建議
+- 投資有風險，請務必評估自身風險承受能力
+- 任何投資決策請諮詢專業理財顧問
 
-***
+## 🔧 技術支援
 
-# Editing this README
+如有技術問題或建議，歡迎：
+1. 透過 [Issues](https://github.com/marskingx/marskingx.github.io/issues) 回報問題
+2. 加入 [Discord 社群](https://discord.gg/xeYCvQWBPx) 討論
+3. 透過網站聯絡表單聯繫
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+## 📈 更新日誌
 
-## Suggestions for a good README
+查看最新更新請參考：
+- [CLAUDE.md](./CLAUDE.md) - 詳細開發記錄
+- [Git Commits](https://github.com/marskingx/marskingx.github.io/commits/main) - 提交歷史
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+---
 
-## Name
-Choose a self-explaining name for your project.
+**© 2018-2024 懶得變有錢 | 理解財務規劃本質 鑑定你的財務DNA**
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+*Built with ❤️ by Mars（懶大）*
