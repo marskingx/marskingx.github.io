@@ -388,9 +388,15 @@ npm run claude:status
 ## 開發注意事項
 
 ### Claude Code 協作流程
-- **任務完成**: Claude 完成修改後會自動提交變更 (`git commit`)
+- **專屬暗號**: 當使用者說「**上版**」時，自動執行完整版本發布流程
+- **版本發布流程**: 
+  1. 分析變更類型 (content/patch/minor/major)
+  2. 執行對應的 `npm run version:xxx` 
+  3. 按照四位版本號規範 (`major.minor.patch.content`)
+  4. 創建符合 Conventional Commits 的提交訊息
+  5. 創建版本標籤
+- **重要**: 絕對不能在聽到「上版」暗號時忽略版本規範
 - **部署控制**: 使用者檢視提交內容，決定是否推送 (`git push origin main`)
-- **提交訊息**: 自動生成包含修改描述和 Claude Code 標籤的中文訊息
 - **驗證建議**: 重要變更建議先本地測試 (`npm run build`) 再推送部署
 
 ### 文章發布檢查清單
