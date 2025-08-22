@@ -92,3 +92,7 @@ Thumbs.db
 # 此 .gitignore 專為懶得變有錢部落格優化
 # 確保只有網站必要檔案被部署到 GitHub Pages
 # 所有開發工具、AI 記憶、私人設定均被排除
+
+# 開發文檔 (包含 AI 記憶等私人檔案)
+docs/ai-memory/
+docs/prompts/
