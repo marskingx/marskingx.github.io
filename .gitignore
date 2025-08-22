@@ -116,6 +116,36 @@ GSC_*.txt
 # 臨時檔案
 docs/temp.txt
 
-# 開發文檔 (包含 AI 記憶等私人檔案)
+# ============================================
+# 📝 開發文檔與分析報告 (非網站服務必要)
+# ============================================
+
+# 開發分析報告
+BRANCH_ANALYSIS_REPORT.md
+CHANGELOG.md
+HUGO.md
+prompt.md
+README-NEWSLETTER-POPUP.md
+VERSION_MANAGEMENT.md
+
+# 開發文檔目錄
 docs/ai-memory/
 docs/prompts/
+docs/hugo/
+docs/SEO/
+
+# Hugo 升級相關文檔
+*HUGO_INTEGRATION*.md
+*HUGO_UPGRADE*.md
+*HUGO_REPORT*.md
+
+# SEO 和 CTR 優化文檔  
+*CTR-Optimization*.md
+*SEO*.md
+GSC-CTR-Optimization-Prompt.md
+
+# 多 AI 協作系統文檔
+MULTI-AI-COLLABORATION.md
+
+# GitHub 相關文檔
+.github/MAILCHIMP_*.md
