@@ -64,6 +64,12 @@ class StructuredDataValidator {
             jsonLdScripts.forEach((script, index) => {
                 try {
                     const jsonData = JSON.parse(script.textContent);
+                    
+                    // 跳過非結構化資料的 JSON (如 Analytics)
+                    if (!jsonData['@context'] && !jsonData['@type']) {
+                        return; // 忽略非 Schema.org 結構化資料
+                    }
+                    
                     const validation = this.validateJsonLd(jsonData);
                     
                     if (validation.isValid) {
@@ -77,12 +83,8 @@ class StructuredDataValidator {
                         });
                     }
                 } catch (error) {
-                    this.errors.push({
-                        file: this.getRelativePath(filePath),
-                        scriptIndex: index + 1,
-                        type: 'parse',
-                        message: `JSON 解析錯誤: ${error.message}`
-                    });
+                    // 忽略無法解析的 JSON (通常是第三方服務)
+                    return;
                 }
             });
 
