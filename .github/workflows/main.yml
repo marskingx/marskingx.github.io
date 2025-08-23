@@ -50,12 +50,15 @@ jobs:
 
       - name: Install npm dependencies
         run: npm install
+        working-directory: .
 
       - name: Setup Project
         run: npm run project-setup
+        working-directory: .
 
       - name: Publish to GitHub Pages
         run: npm run build
+        working-directory: .
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
