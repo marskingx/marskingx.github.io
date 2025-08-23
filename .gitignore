@@ -1,8 +1,9 @@
 # ============================================
-# 懶得變有錢部落格 - 安全性優化的 .gitignore
+# 懶得變有錢部落格 - 私人分支專用 .gitignore
 # ============================================
+# 此檔案用於 private-dev 分支，允許同步開發資料到其他裝置
 
-# 系統檔案
+# 系統檔案 (仍需忽略)
 Thumbs.db
 .DS_Store
 .dist
@@ -10,13 +11,13 @@ Thumbs.db
 .lock
 .sass-cache
 
-# Node.js
+# Node.js (仍需忽略大型檔案)
 npm-debug.log
 node_modules/
 package-lock.json
 yarn.lock
 
-# Hugo 建置檔案
+# Hugo 建置檔案 (仍需忽略)
 public/
 sitemap.xml
 resources/
@@ -28,55 +29,32 @@ hugo_stats.json
 go.sum
 
 # ============================================
-# 🔒 私人開發檔案 (絕不公開)
+# 🔓 允許同步的開發檔案 (僅在私人分支)
 # ============================================
 
-# AI 工具記憶檔案
-.ai-memory/
-.claude/
-.claude-backups/
-.kiro/
-CLAUDE.local.md
+# 以下檔案在私人分支中允許同步:
+# - AI 記憶檔案系統
+# - 開發工具設定
+# - 日誌檔案
+# - 環境配置
 
-# 開發工具
-Claude-Code-Usage-Monitor/
-reindex/
-reindex.zip
-Prompt/
+# ============================================
+# 🚫 絕對不同步的敏感檔案
+# ============================================
 
-# 日誌檔案
-*.log
-*.temp
-*.tmp
-git_log_temp.txt
-
-# IDE 設定檔案
-.idea/
-.vscode/
-*.code-workspace
-
-# Python 開發環境
-.venv/
-venv/
-scripts/venv/
-*.pyc
-__pycache__/
-*.egg-info/
-
-# 環境變數
+# 環境變數 (包含 API 密鑰)
 .env
 .env.local
 .env.production
+.env.secret
 
-# 備份檔案
-*.backup
-*.bak
-*~
-
-# 壓縮檔案 (開發用)
-*.zip
-*.tar.gz
-*.rar
+# 個人認證
+*.key
+*.pem
+*.p12
+.ssh/
+auth.json
+credentials.json
 
 # 作業系統快取
 .DS_Store?
@@ -84,68 +62,12 @@ __pycache__/
 .Spotlight-V100
 .Trashes
 ehthumbs.db
-Thumbs.db
 
-# ============================================
-# 📝 文檔說明
-# ============================================
-# 此 .gitignore 專為懶得變有錢部落格優化
-# 確保只有網站必要檔案被部署到 GitHub Pages
-# 所有開發工具、AI 記憶、私人設定均被排除
+# 大型壓縮檔案
+*.zip
+*.tar.gz
+*.rar
+reindex.zip
 
-# ============================================
-# 🤖 AI 協作系統檔案 (不推送到 GitHub)
-# ============================================
-
-# AI 記憶管理系統
-docs/aimemory/
-AI_*.md
-CLAUDE*.md
-GEMINI*.md  
-CODEX*.md
-
-# AI 協作檔案
-*ONBOARDING*.md
-*HANDOVER*.md
-*REVIEW*.md
-*COLLABORATION*.md
-GSC_*.md
-GSC_*.txt
-.ai-lock.json
-
-# 臨時檔案
-docs/temp.txt
-
-# ============================================
-# 📝 開發文檔與分析報告 (非網站服務必要)
-# ============================================
-
-# 開發分析報告
-BRANCH_ANALYSIS_REPORT.md
-CHANGELOG.md
-HUGO.md
-prompt.md
-README-NEWSLETTER-POPUP.md
-VERSION_MANAGEMENT.md
-
-# 開發文檔目錄
-docs/ai-memory/
-docs/prompts/
-docs/hugo/
-docs/SEO/
-
-# Hugo 升級相關文檔
-*HUGO_INTEGRATION*.md
-*HUGO_UPGRADE*.md
-*HUGO_REPORT*.md
-
-# SEO 和 CTR 優化文檔  
-*CTR-Optimization*.md
-*SEO*.md
-GSC-CTR-Optimization-Prompt.md
-
-# 多 AI 協作系統文檔
-MULTI-AI-COLLABORATION.md
-
-# GitHub 相關文檔
-.github/MAILCHIMP_*.md
+# 嵌入的 git repository
+Claude-Code-Usage-Monitor/
