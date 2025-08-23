@@ -33,14 +33,14 @@ go.sum
 
 # AI 工具記憶檔案
 .ai-memory/
-.claude/
-.claude-backups/
-.kiro/
+# .claude/
+# .claude-backups/
+# .kiro/
 CLAUDE.local.md
 
 # 開發工具
 Claude-Code-Usage-Monitor/
-reindex/
+# reindex/
 reindex.zip
 Prompt/
 
@@ -64,7 +64,7 @@ __pycache__/
 *.egg-info/
 
 # 環境變數
-.env
+# .env
 .env.local
 .env.production
 
@@ -98,7 +98,7 @@ Thumbs.db
 # ============================================
 
 # AI 記憶管理系統
-docs/aimemory/
+# docs/aimemory/
 AI_*.md
 CLAUDE*.md
 GEMINI*.md  
@@ -117,5 +117,5 @@ GSC_*.txt
 docs/temp.txt
 
 # 開發文檔 (包含 AI 記憶等私人檔案)
-docs/ai-memory/
-docs/prompts/
+# docs/ai-memory/
+# docs/prompts/
