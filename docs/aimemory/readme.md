@@ -5,18 +5,14 @@
 ```
 docs/aimemory/
 ├── shared/           # 三 AI 共用記憶
-│   ├── AI_SHARED.md
-│   ├── AI_COLLABORATION_ANNOUNCEMENT.md
-│   └── MULTI-AI-COLLABORATION.md
+│   ├── ai-shared.md
+│   └── ai-collaboration-announcement.md
 ├── claude/           # Claude (克勞德) 專用記憶
-│   └── CLAUDE.md
+│   └── claude.md
 ├── gemini/           # Gemini 專用記憶
-│   ├── GEMINI.md
-│   ├── GSC_STRUCTURED_DATA_REVIEW.md
-│   └── CLAUDE_TO_GEMINI_HANDOVER.md
+│   └── gemini.md
 ├── codex/            # Codex 專用記憶
-│   ├── CODEX.md
-│   └── AI_ONBOARDING_CODEX.md
+│   └── codex.md
 └── README.md         # 本檔案
 ```
 
@@ -58,22 +54,22 @@ npm run ai:memory          # 檢查記憶檔案狀態
 #### Claude (主目錄)
 ```bash
 cd D:/marskingx.github.io
-cat docs/aimemory/shared/AI_SHARED.md     # 共用記憶
-cat docs/aimemory/claude/CLAUDE.md        # 個人記憶
+cat docs/aimemory/shared/ai-shared.md     # 共用記憶
+cat docs/aimemory/claude/claude.md        # 個人記憶
 ```
 
 #### Codex (worktree)
 ```bash
 cd D:/marskingx-worktrees/codex-dev
-cat docs/aimemory/shared/AI_SHARED.md     # 共用記憶  
-cat docs/aimemory/codex/CODEX.md          # 個人記憶
+cat docs/aimemory/shared/ai-shared.md     # 共用記憶  
+cat docs/aimemory/codex/codex.md          # 個人記憶
 ```
 
 #### Gemini (worktree)
 ```bash
 cd D:/marskingx-worktrees/gemini-dev
-cat docs/aimemory/shared/AI_SHARED.md     # 共用記憶
-cat docs/aimemory/gemini/GEMINI.md        # 個人記憶
+cat docs/aimemory/shared/ai-shared.md     # 共用記憶
+cat docs/aimemory/gemini/gemini.md        # 個人記憶
 ```
 
 ## 🚫 隱私保護
@@ -112,4 +108,4 @@ CODEX*.md
 
 *AI 記憶管理系統 v1.0*  
 *建立日期: 2025-08-22*  
-*專案版本: v3.1.0.0*
+*專案版本: v3.4.1.0*
