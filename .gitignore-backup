@@ -1,0 +1,121 @@
+# ============================================
+# 懶得變有錢部落格 - 安全性優化的 .gitignore
+# ============================================
+
+# 系統檔案
+Thumbs.db
+.DS_Store
+.dist
+.tmp
+.lock
+.sass-cache
+
+# Node.js
+npm-debug.log
+node_modules/
+package-lock.json
+yarn.lock
+
+# Hugo 建置檔案
+public/
+sitemap.xml
+resources/
+.hugo_build.lock
+jsconfig.json
+hugo_stats.json
+
+# Go 模組
+go.sum
+
+# ============================================
+# 🔒 私人開發檔案 (絕不公開)
+# ============================================
+
+# AI 工具記憶檔案
+.ai-memory/
+# .claude/
+# .claude-backups/
+# .kiro/
+CLAUDE.local.md
+
+# 開發工具
+Claude-Code-Usage-Monitor/
+# reindex/
+reindex.zip
+Prompt/
+
+# 日誌檔案
+*.log
+*.temp
+*.tmp
+git_log_temp.txt
+
+# IDE 設定檔案
+.idea/
+.vscode/
+*.code-workspace
+
+# Python 開發環境
+.venv/
+venv/
+scripts/venv/
+*.pyc
+__pycache__/
+*.egg-info/
+
+# 環境變數
+# .env
+.env.local
+.env.production
+
+# 備份檔案
+*.backup
+*.bak
+*~
+
+# 壓縮檔案 (開發用)
+*.zip
+*.tar.gz
+*.rar
+
+# 作業系統快取
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ============================================
+# 📝 文檔說明
+# ============================================
+# 此 .gitignore 專為懶得變有錢部落格優化
+# 確保只有網站必要檔案被部署到 GitHub Pages
+# 所有開發工具、AI 記憶、私人設定均被排除
+
+# ============================================
+# 🤖 AI 協作系統檔案 (不推送到 GitHub)
+# ============================================
+
+# AI 記憶管理系統
+# docs/aimemory/
+AI_*.md
+CLAUDE*.md
+GEMINI*.md  
+CODEX*.md
+
+# AI 協作檔案
+*ONBOARDING*.md
+*HANDOVER*.md
+*REVIEW*.md
+*COLLABORATION*.md
+GSC_*.md
+GSC_*.txt
+.ai-lock.json
+
+# 臨時檔案
+docs/temp.txt
+
+# 開發文檔 (包含 AI 記憶等私人檔案)
+# docs/ai-memory/
+# docs/prompts/

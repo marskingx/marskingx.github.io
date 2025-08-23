@@ -1,0 +1,99 @@
+2024-07-24 08:15:48 - INFO - 成功加載配置文件
+2024-07-24 08:15:48 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
+2024-07-24 08:15:48 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-24【理財】個人財務規劃的3大財務報表：一張都不能少？.md
+2024-07-24 08:15:48 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-22【書單】《開始分心，就是要變強了》閱讀心得.md
+2024-07-24 08:15:48 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-24 08:15:48 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-28【嗑書】《商業書10倍高效》讀書心得.md
+2024-07-24 08:15:48 - INFO - 6. D:\marskingx.github.io\content\blog\2023-11-09【保險】信用卡回饋繳保費真的有比較省嗎算出來虧大了!.md
+2024-07-24 08:15:48 - INFO - 7. D:\marskingx.github.io\content\blog\2023-11-16【嗑書】《賺錢也賺幸福》.md
+2024-07-24 08:15:48 - INFO - 8. D:\marskingx.github.io\content\blog\2023-11-18【嗑書】《FIRE致富實踐》.md
+2024-07-24 08:15:48 - INFO - 9. D:\marskingx.github.io\content\blog\2023-11-23【投資】平價ETFvs奢華ETF誰更適合你長期投資.md
+2024-07-24 08:15:48 - INFO - 10. D:\marskingx.github.io\content\blog\2024-04-24【理財】如何享受美股大漲：專注你能控制的.md
+2024-07-24 08:15:53 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-24【理財】個人財務規劃的3大財務報表：一張都不能少？.md 中未找到 YAML 前置數據
+2024-07-24 08:15:53 - INFO - 開始處理財務心態: D:\marskingx.github.io\content\blog\2024-07-24【理財】個人財務規劃的3大財務報表：一張都不能少？.md
+2024-07-24 08:15:53 - DEBUG - 成功更新 YAML 內容
+2024-07-24 08:15:53 - ERROR - 處理財務心態時發生錯誤: write() argument must be str, not None
+Traceback (most recent call last):
+  File "D:\marskingx.github.io\reindex\processors\financial_mindset_processor.py", line 25, in process
+    self.write_file(self.content)
+  File "D:\marskingx.github.io\reindex\processors\base_processor.py", line 15, in write_file
+    file.write(content)
+TypeError: write() argument must be str, not None
+2024-07-24 08:20:56 - INFO - 成功加載配置文件
+2024-07-24 08:20:56 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
+2024-07-24 08:20:56 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-24【理財】個人財務規劃的3大財務報表：一張都不能少？.md
+2024-07-24 08:20:56 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-22【書單】《開始分心，就是要變強了》閱讀心得.md
+2024-07-24 08:20:56 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-24 08:20:56 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-28【嗑書】《商業書10倍高效》讀書心得.md
+2024-07-24 08:20:56 - INFO - 6. D:\marskingx.github.io\content\blog\2023-11-09【保險】信用卡回饋繳保費真的有比較省嗎算出來虧大了!.md
+2024-07-24 08:20:56 - INFO - 7. D:\marskingx.github.io\content\blog\2023-11-16【嗑書】《賺錢也賺幸福》.md
+2024-07-24 08:20:56 - INFO - 8. D:\marskingx.github.io\content\blog\2023-11-18【嗑書】《FIRE致富實踐》.md
+2024-07-24 08:20:56 - INFO - 9. D:\marskingx.github.io\content\blog\2023-11-23【投資】平價ETFvs奢華ETF誰更適合你長期投資.md
+2024-07-24 08:20:56 - INFO - 10. D:\marskingx.github.io\content\blog\2024-04-24【理財】如何享受美股大漲：專注你能控制的.md
+2024-07-24 08:21:00 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-24【理財】個人財務規劃的3大財務報表：一張都不能少？.md 中未找到 YAML 前置數據
+2024-07-24 08:21:00 - INFO - 開始處理財務心態: D:\marskingx.github.io\content\blog\2024-07-24【理財】個人財務規劃的3大財務報表：一張都不能少？.md
+2024-07-24 08:21:00 - ERROR - 處理財務心態時發生錯誤: expected string or bytes-like object, got 'NoneType'
+Traceback (most recent call last):
+  File "D:\marskingx.github.io\reindex\processors\financial_mindset_processor.py", line 22, in process
+    self.content = self.update_yaml()
+                   ^^^^^^^^^^^^^^^^^^
+  File "D:\marskingx.github.io\reindex\processors\financial_mindset_processor.py", line 36, in update_yaml
+    yaml_match = yaml_pattern.search(self.content)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+2024-07-24 08:25:17 - INFO - 成功加載配置文件
+2024-07-24 08:25:17 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
+2024-07-24 08:25:17 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-24【理財】個人財務規劃的3大財務報表：一張都不能少？.md
+2024-07-24 08:25:17 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-22【書單】《開始分心，就是要變強了》閱讀心得.md
+2024-07-24 08:25:17 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-24 08:25:17 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-28【嗑書】《商業書10倍高效》讀書心得.md
+2024-07-24 08:25:17 - INFO - 6. D:\marskingx.github.io\content\blog\2023-11-09【保險】信用卡回饋繳保費真的有比較省嗎算出來虧大了!.md
+2024-07-24 08:25:17 - INFO - 7. D:\marskingx.github.io\content\blog\2023-11-16【嗑書】《賺錢也賺幸福》.md
+2024-07-24 08:25:17 - INFO - 8. D:\marskingx.github.io\content\blog\2023-11-18【嗑書】《FIRE致富實踐》.md
+2024-07-24 08:25:17 - INFO - 9. D:\marskingx.github.io\content\blog\2023-11-23【投資】平價ETFvs奢華ETF誰更適合你長期投資.md
+2024-07-24 08:25:17 - INFO - 10. D:\marskingx.github.io\content\blog\2024-04-24【理財】如何享受美股大漲：專注你能控制的.md
+2024-07-24 08:25:21 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-24【理財】個人財務規劃的3大財務報表：一張都不能少？.md 中未找到 YAML 前置數據
+2024-07-24 08:25:21 - INFO - 開始處理財務心態: D:\marskingx.github.io\content\blog\2024-07-24【理財】個人財務規劃的3大財務報表：一張都不能少？.md
+2024-07-24 08:25:21 - DEBUG - 成功更新 YAML 內容
+2024-07-24 08:25:21 - DEBUG - 成功寫入更新後的內容到文件
+2024-07-24 09:28:46 - INFO - 成功加載配置文件
+2024-07-24 09:28:46 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
+2024-07-24 09:28:46 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-23【理財】個人財務規劃的3大財務報表：一張都不能少？.md
+2024-07-24 09:28:46 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-22【書單】《開始分心，就是要變強了》閱讀心得.md
+2024-07-24 09:28:46 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-24【EP23】取乎其上，得乎其中。認識財務規劃的基礎3報表.md
+2024-07-24 09:28:46 - INFO - 5. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-24 09:28:46 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-28【嗑書】《商業書10倍高效》讀書心得.md
+2024-07-24 09:28:46 - INFO - 7. D:\marskingx.github.io\content\blog\2023-11-09【保險】信用卡回饋繳保費真的有比較省嗎算出來虧大了!.md
+2024-07-24 09:28:46 - INFO - 8. D:\marskingx.github.io\content\blog\2023-11-16【嗑書】《賺錢也賺幸福》.md
+2024-07-24 09:28:46 - INFO - 9. D:\marskingx.github.io\content\blog\2023-11-18【嗑書】《FIRE致富實踐》.md
+2024-07-24 09:28:46 - INFO - 10. D:\marskingx.github.io\content\blog\2023-11-23【投資】平價ETFvs奢華ETF誰更適合你長期投資.md
+2024-07-24 09:32:35 - INFO - 成功加載配置文件
+2024-07-24 09:32:35 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
+2024-07-24 09:32:35 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-23【理財】個人財務規劃的3大財務報表：一張都不能少？.md
+2024-07-24 09:32:35 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-22【書單】《開始分心，就是要變強了》閱讀心得.md
+2024-07-24 09:32:35 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-24【EP23】取乎其上，得乎其中。認識財務規劃的基礎3報表.md
+2024-07-24 09:32:35 - INFO - 5. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-24 09:32:35 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-28【嗑書】《商業書10倍高效》讀書心得.md
+2024-07-24 09:32:35 - INFO - 7. D:\marskingx.github.io\content\blog\2023-11-09【保險】信用卡回饋繳保費真的有比較省嗎算出來虧大了!.md
+2024-07-24 09:32:35 - INFO - 8. D:\marskingx.github.io\content\blog\2023-11-16【嗑書】《賺錢也賺幸福》.md
+2024-07-24 09:32:35 - INFO - 9. D:\marskingx.github.io\content\blog\2023-11-18【嗑書】《FIRE致富實踐》.md
+2024-07-24 09:32:35 - INFO - 10. D:\marskingx.github.io\content\blog\2023-11-23【投資】平價ETFvs奢華ETF誰更適合你長期投資.md
+2024-07-24 09:32:39 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-24【EP23】取乎其上，得乎其中。認識財務規劃的基礎3報表.md 中未找到 YAML 前置數據
+2024-07-24 09:32:39 - INFO - 開始處理Podcast節目: D:\marskingx.github.io\content\blog\2024-07-24【EP23】取乎其上，得乎其中。認識財務規劃的基礎3報表.md
+2024-07-24 09:32:39 - DEBUG - 成功更新 YAML 內容
+2024-07-24 09:32:39 - DEBUG - 成功寫入更新後的內容到文件
+2024-07-24 09:33:43 - INFO - 成功加載配置文件
+2024-07-24 09:33:43 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-24【EP23】取乎其上，得乎其中。認識財務規劃的基礎3報表.md
+2024-07-24 09:33:43 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
+2024-07-24 09:33:43 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-23【理財】個人財務規劃的3大財務報表：一張都不能少？.md
+2024-07-24 09:33:43 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-22【書單】《開始分心，就是要變強了》閱讀心得.md
+2024-07-24 09:33:43 - INFO - 5. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-24 09:33:43 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-28【嗑書】《商業書10倍高效》讀書心得.md
+2024-07-24 09:33:43 - INFO - 7. D:\marskingx.github.io\content\blog\2023-11-09【保險】信用卡回饋繳保費真的有比較省嗎算出來虧大了!.md
+2024-07-24 09:33:43 - INFO - 8. D:\marskingx.github.io\content\blog\2023-11-16【嗑書】《賺錢也賺幸福》.md
+2024-07-24 09:33:43 - INFO - 9. D:\marskingx.github.io\content\blog\2023-11-18【嗑書】《FIRE致富實踐》.md
+2024-07-24 09:33:43 - INFO - 10. D:\marskingx.github.io\content\blog\2023-11-23【投資】平價ETFvs奢華ETF誰更適合你長期投資.md
+2024-07-24 09:33:45 - WARNING - 在文件 D:\marskingx.github.io\content\blog\2024-07-24【EP23】取乎其上，得乎其中。認識財務規劃的基礎3報表.md 中未找到 YAML 前置數據
+2024-07-24 09:33:45 - INFO - 開始處理Podcast節目: D:\marskingx.github.io\content\blog\2024-07-24【EP23】取乎其上，得乎其中。認識財務規劃的基礎3報表.md
+2024-07-24 09:33:45 - DEBUG - 成功更新 YAML 內容
+2024-07-24 09:33:45 - DEBUG - 成功寫入更新後的內容到文件
