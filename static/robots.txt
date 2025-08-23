@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# 優先抓取重要頁面
+Sitemap: https://marskingx.github.io/sitemap.xml
+
+# 避免抓取開發和測試檔案
+Disallow: /dev/
+Disallow: /*.json$
+Disallow: /search/
+
+# 優化抓取效率
+Crawl-delay: 1
+
+# 特別指示給 Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0

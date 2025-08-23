@@ -1,0 +1,120 @@
+2024-07-20 13:12:18 - INFO - 開始搜索關鍵字: 平衡心態
+2024-07-20 13:12:18 - DEBUG - Selenium Manager binary found at: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+2024-07-20 13:12:18 - DEBUG - Executing process: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+2024-07-20 13:12:18 - DEBUG - chromedriver not found in PATH
+2024-07-20 13:12:18 - DEBUG - chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+2024-07-20 13:12:18 - DEBUG - Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+2024-07-20 13:12:18 - DEBUG - Output: ""
+2024-07-20 13:12:18 - DEBUG - Running command: REG QUERY HKCU\Software\Google\Chrome\BLBeacon /v version
+2024-07-20 13:12:18 - DEBUG - Output: ""
+2024-07-20 13:12:18 - DEBUG - chrome not found in the system
+2024-07-20 13:12:18 - DEBUG - Required browser: chrome 126.0.6478.182
+2024-07-20 13:12:18 - DEBUG - chrome 126.0.6478.182 already exists
+2024-07-20 13:12:18 - DEBUG - chrome 126.0.6478.182 is available at C:\Users\Mars\.cache\selenium\chrome\win64\126.0.6478.182\chrome.exe
+2024-07-20 13:12:18 - DEBUG - Required driver: chromedriver 126.0.6478.182
+2024-07-20 13:12:18 - DEBUG - chromedriver 126.0.6478.182 already in the cache
+2024-07-20 13:12:18 - DEBUG - Driver path: C:\Users\Mars\.cache\selenium\chromedriver\win64\126.0.6478.182\chromedriver.exe
+2024-07-20 13:12:18 - DEBUG - Browser path: C:\Users\Mars\.cache\selenium\chrome\win64\126.0.6478.182\chrome.exe
+2024-07-20 13:12:18 - DEBUG - Started executable: `C:\Users\Mars\.cache\selenium\chromedriver\win64\126.0.6478.182\chromedriver.exe` in a child process with pid: 3244 using 0 to output -3
+2024-07-20 13:12:18 - DEBUG - POST http://localhost:50834/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Users\\Mars\\.cache\\selenium\\chrome\\win64\\126.0.6478.182\\chrome.exe', 'args': ['--headless', '--disable-gpu', '--no-sandbox', '--disable-dev-shm-usage', 'user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36']}}}}
+2024-07-20 13:12:18 - DEBUG - Starting new HTTP connection (1): localhost:50834
+2024-07-20 13:12:19 - DEBUG - http://localhost:50834 "POST /session HTTP/1.1" 200 896
+2024-07-20 13:12:19 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome-headless-shell","browserVersion":"126.0.6478.182","chrome":{"chromedriverVersion":"126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776})","userDataDir":"C:\\Users\\Mars\\AppData\\Local\\Temp\\scoped_dir3244_334048031"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:50840"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"33cf12681bd43fe1828060cbb182dbce"}} | headers=HTTPHeaderDict({'Content-Length': '896', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 13:12:19 - DEBUG - Finished Request
+2024-07-20 13:12:19 - DEBUG - POST http://localhost:50834/session/33cf12681bd43fe1828060cbb182dbce/timeouts {'pageLoad': 30000}
+2024-07-20 13:12:19 - DEBUG - http://localhost:50834 "POST /session/33cf12681bd43fe1828060cbb182dbce/timeouts HTTP/1.1" 200 14
+2024-07-20 13:12:19 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 13:12:19 - DEBUG - Finished Request
+2024-07-20 13:12:19 - DEBUG - 初始化 WebDriver 完成
+2024-07-20 13:12:19 - DEBUG - 開始搜索關鍵字: 平衡心態
+2024-07-20 13:12:19 - DEBUG - POST http://localhost:50834/session/33cf12681bd43fe1828060cbb182dbce/url {'url': 'https://www.momoshop.com.tw/search/searchShop.jsp?keyword=平衡心態&searchType=1&curPage=1&showType=chess...'}
+2024-07-20 13:12:21 - DEBUG - http://localhost:50834 "POST /session/33cf12681bd43fe1828060cbb182dbce/url HTTP/1.1" 200 14
+2024-07-20 13:12:21 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 13:12:21 - DEBUG - Finished Request
+2024-07-20 13:12:21 - DEBUG - POST http://localhost:50834/session/33cf12681bd43fe1828060cbb182dbce/element {'using': 'css selector', 'value': 'li[gcode]'}
+2024-07-20 13:12:21 - DEBUG - http://localhost:50834 "POST /session/33cf12681bd43fe1828060cbb182dbce/element HTTP/1.1" 200 126
+2024-07-20 13:12:21 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.C5660103DF19A786E35BC89C15A58841.d.8705E5F2EC429BF58486F8B12B10D8BE.e.29"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 13:12:21 - DEBUG - Finished Request
+2024-07-20 13:12:21 - DEBUG - POST http://localhost:50834/session/33cf12681bd43fe1828060cbb182dbce/elements {'using': 'css selector', 'value': 'li[gcode]'}
+2024-07-20 13:12:21 - DEBUG - http://localhost:50834 "POST /session/33cf12681bd43fe1828060cbb182dbce/elements HTTP/1.1" 200 830
+2024-07-20 13:12:21 - DEBUG - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.C5660103DF19A786E35BC89C15A58841.d.8705E5F2EC429BF58486F8B12B10D8BE.e.29"},{"element-6066-11e4-a52e-4f735466cecf":"f.C5660103DF19A786E35BC89C15A58841.d.8705E5F2EC429BF58486F8B12B10D8BE.e.30"},{"element-6066-11e4-a52e-4f735466cecf":"f.C5660103DF19A786E35BC89C15A58841.d.8705E5F2EC429BF58486F8B12B10D8BE.e.31"},{"element-6066-11e4-a52e-4f735466cecf":"f.C5660103DF19A786E35BC89C15A58841.d.8705E5F2EC429BF58486F8B12B10D8BE.e.32"},{"element-6066-11e4-a52e-4f735466cecf":"f.C5660103DF19A786E35BC89C15A58841.d.8705E5F2EC429BF58486F8B12B10D8BE.e.33"},{"element-6066-11e4-a52e-4f735466cecf":"f.C5660103DF19A786E35BC89C15A58841.d.8705E5F2EC429BF58486F8B12B10D8BE.e.34"},{"element-6066-11e4-a52e-4f735466cecf":"f.C5660103DF19A786E35BC89C15A58841.d.8705E5F2EC429BF58486F8B12B10D8BE.e.35"}]} | headers=HTTPHeaderDict({'Content-Length': '830', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 13:12:21 - DEBUG - Finished Request
+2024-07-20 13:12:21 - DEBUG - POST http://localhost:50834/session/33cf12681bd43fe1828060cbb182dbce/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.C5660103DF19A786E35BC89C15A58841.d.8705E5F2EC429BF58486F8B12B10D8BE.e.29'}, 'gcode']}
+2024-07-20 13:12:21 - DEBUG - http://localhost:50834 "POST /session/33cf12681bd43fe1828060cbb182dbce/execute/sync HTTP/1.1" 200 20
+2024-07-20 13:12:21 - DEBUG - Remote response: status=200 | data={"value":"11062008"} | headers=HTTPHeaderDict({'Content-Length': '20', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 13:12:21 - DEBUG - Finished Request
+2024-07-20 13:12:21 - DEBUG - POST http://localhost:50834/session/33cf12681bd43fe1828060cbb182dbce/element/f.C5660103DF19A786E35BC89C15A58841.d.8705E5F2EC429BF58486F8B12B10D8BE.e.29/element {'using': 'css selector', 'value': '.prdName'}
+2024-07-20 13:12:21 - DEBUG - http://localhost:50834 "POST /session/33cf12681bd43fe1828060cbb182dbce/element/f.C5660103DF19A786E35BC89C15A58841.d.8705E5F2EC429BF58486F8B12B10D8BE.e.29/element HTTP/1.1" 200 126
+2024-07-20 13:12:21 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.C5660103DF19A786E35BC89C15A58841.d.8705E5F2EC429BF58486F8B12B10D8BE.e.36"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 13:12:21 - DEBUG - Finished Request
+2024-07-20 13:12:21 - DEBUG - GET http://localhost:50834/session/33cf12681bd43fe1828060cbb182dbce/element/f.C5660103DF19A786E35BC89C15A58841.d.8705E5F2EC429BF58486F8B12B10D8BE.e.36/text {}
+2024-07-20 13:12:21 - DEBUG - http://localhost:50834 "GET /session/33cf12681bd43fe1828060cbb182dbce/element/f.C5660103DF19A786E35BC89C15A58841.d.8705E5F2EC429BF58486F8B12B10D8BE.e.36/text HTTP/1.1" 200 102
+2024-07-20 13:12:21 - DEBUG - Remote response: status=200 | data={"value":"平衡心態：掌握成功的四腳桌法則，穩步累積你的財富、幸福與健康"} | headers=HTTPHeaderDict({'Content-Length': '102', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 13:12:21 - DEBUG - Finished Request
+2024-07-20 13:12:21 - DEBUG - 找到書籍: 平衡心態：掌握成功的四腳桌法則，穩步累積你的財富、幸福與健康
+2024-07-20 13:12:21 - DEBUG - 商品URL: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11062008
+2024-07-20 13:12:21 - DEBUG - DELETE http://localhost:50834/session/33cf12681bd43fe1828060cbb182dbce {}
+2024-07-20 13:12:21 - DEBUG - http://localhost:50834 "DELETE /session/33cf12681bd43fe1828060cbb182dbce HTTP/1.1" 200 14
+2024-07-20 13:12:21 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 13:12:21 - DEBUG - Finished Request
+2024-07-20 13:12:27 - INFO - Momo: 平衡心態：掌握成功的四腳桌法則，穩步累積你的財富、幸福與健康, URL: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11062008
+2024-07-20 13:14:03 - INFO - 開始搜索關鍵字: 平衡心態
+2024-07-20 13:14:03 - DEBUG - Selenium Manager binary found at: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+2024-07-20 13:14:03 - DEBUG - Executing process: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+2024-07-20 13:14:03 - DEBUG - chromedriver not found in PATH
+2024-07-20 13:14:03 - DEBUG - chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+2024-07-20 13:14:03 - DEBUG - Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+2024-07-20 13:14:03 - DEBUG - Output: ""
+2024-07-20 13:14:03 - DEBUG - Running command: REG QUERY HKCU\Software\Google\Chrome\BLBeacon /v version
+2024-07-20 13:14:03 - DEBUG - Output: ""
+2024-07-20 13:14:03 - DEBUG - chrome not found in the system
+2024-07-20 13:14:03 - DEBUG - Required browser: chrome 126.0.6478.182
+2024-07-20 13:14:03 - DEBUG - chrome 126.0.6478.182 already exists
+2024-07-20 13:14:03 - DEBUG - chrome 126.0.6478.182 is available at C:\Users\Mars\.cache\selenium\chrome\win64\126.0.6478.182\chrome.exe
+2024-07-20 13:14:03 - DEBUG - Required driver: chromedriver 126.0.6478.182
+2024-07-20 13:14:03 - DEBUG - chromedriver 126.0.6478.182 already in the cache
+2024-07-20 13:14:03 - DEBUG - Driver path: C:\Users\Mars\.cache\selenium\chromedriver\win64\126.0.6478.182\chromedriver.exe
+2024-07-20 13:14:03 - DEBUG - Browser path: C:\Users\Mars\.cache\selenium\chrome\win64\126.0.6478.182\chrome.exe
+2024-07-20 13:14:03 - DEBUG - Started executable: `C:\Users\Mars\.cache\selenium\chromedriver\win64\126.0.6478.182\chromedriver.exe` in a child process with pid: 31960 using 0 to output -3
+2024-07-20 13:14:03 - DEBUG - POST http://localhost:51087/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Users\\Mars\\.cache\\selenium\\chrome\\win64\\126.0.6478.182\\chrome.exe', 'args': ['--headless', '--disable-gpu', '--no-sandbox', '--disable-dev-shm-usage', 'user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36']}}}}
+2024-07-20 13:14:03 - DEBUG - Starting new HTTP connection (1): localhost:51087
+2024-07-20 13:14:04 - DEBUG - http://localhost:51087 "POST /session HTTP/1.1" 200 898
+2024-07-20 13:14:04 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome-headless-shell","browserVersion":"126.0.6478.182","chrome":{"chromedriverVersion":"126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776})","userDataDir":"C:\\Users\\Mars\\AppData\\Local\\Temp\\scoped_dir31960_1831448212"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:51090"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"b173591d926da4a0e29fcf1cd91318fb"}} | headers=HTTPHeaderDict({'Content-Length': '898', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 13:14:04 - DEBUG - Finished Request
+2024-07-20 13:14:04 - DEBUG - POST http://localhost:51087/session/b173591d926da4a0e29fcf1cd91318fb/timeouts {'pageLoad': 30000}
+2024-07-20 13:14:04 - DEBUG - http://localhost:51087 "POST /session/b173591d926da4a0e29fcf1cd91318fb/timeouts HTTP/1.1" 200 14
+2024-07-20 13:14:04 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 13:14:04 - DEBUG - Finished Request
+2024-07-20 13:14:04 - DEBUG - 初始化 WebDriver 完成
+2024-07-20 13:14:04 - DEBUG - 開始搜索關鍵字: 平衡心態
+2024-07-20 13:14:04 - DEBUG - POST http://localhost:51087/session/b173591d926da4a0e29fcf1cd91318fb/url {'url': 'https://www.momoshop.com.tw/search/searchShop.jsp?keyword=平衡心態&searchType=1&curPage=1&showType=chess...'}
+2024-07-20 13:14:05 - DEBUG - http://localhost:51087 "POST /session/b173591d926da4a0e29fcf1cd91318fb/url HTTP/1.1" 200 14
+2024-07-20 13:14:05 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 13:14:05 - DEBUG - Finished Request
+2024-07-20 13:14:05 - DEBUG - POST http://localhost:51087/session/b173591d926da4a0e29fcf1cd91318fb/element {'using': 'css selector', 'value': 'li[gcode]'}
+2024-07-20 13:14:06 - DEBUG - http://localhost:51087 "POST /session/b173591d926da4a0e29fcf1cd91318fb/element HTTP/1.1" 200 126
+2024-07-20 13:14:06 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.9CBBC28B2F014CB4FD35AE85B70D61B7.d.5194A5F06EF4D70EB0822D11C05782DB.e.29"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 13:14:06 - DEBUG - Finished Request
+2024-07-20 13:14:06 - DEBUG - POST http://localhost:51087/session/b173591d926da4a0e29fcf1cd91318fb/elements {'using': 'css selector', 'value': 'li[gcode]'}
+2024-07-20 13:14:06 - DEBUG - http://localhost:51087 "POST /session/b173591d926da4a0e29fcf1cd91318fb/elements HTTP/1.1" 200 830
+2024-07-20 13:14:06 - DEBUG - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.9CBBC28B2F014CB4FD35AE85B70D61B7.d.5194A5F06EF4D70EB0822D11C05782DB.e.29"},{"element-6066-11e4-a52e-4f735466cecf":"f.9CBBC28B2F014CB4FD35AE85B70D61B7.d.5194A5F06EF4D70EB0822D11C05782DB.e.30"},{"element-6066-11e4-a52e-4f735466cecf":"f.9CBBC28B2F014CB4FD35AE85B70D61B7.d.5194A5F06EF4D70EB0822D11C05782DB.e.31"},{"element-6066-11e4-a52e-4f735466cecf":"f.9CBBC28B2F014CB4FD35AE85B70D61B7.d.5194A5F06EF4D70EB0822D11C05782DB.e.32"},{"element-6066-11e4-a52e-4f735466cecf":"f.9CBBC28B2F014CB4FD35AE85B70D61B7.d.5194A5F06EF4D70EB0822D11C05782DB.e.33"},{"element-6066-11e4-a52e-4f735466cecf":"f.9CBBC28B2F014CB4FD35AE85B70D61B7.d.5194A5F06EF4D70EB0822D11C05782DB.e.34"},{"element-6066-11e4-a52e-4f735466cecf":"f.9CBBC28B2F014CB4FD35AE85B70D61B7.d.5194A5F06EF4D70EB0822D11C05782DB.e.35"}]} | headers=HTTPHeaderDict({'Content-Length': '830', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 13:14:06 - DEBUG - Finished Request
+2024-07-20 13:14:06 - DEBUG - POST http://localhost:51087/session/b173591d926da4a0e29fcf1cd91318fb/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.9CBBC28B2F014CB4FD35AE85B70D61B7.d.5194A5F06EF4D70EB0822D11C05782DB.e.29'}, 'gcode']}
+2024-07-20 13:14:06 - DEBUG - http://localhost:51087 "POST /session/b173591d926da4a0e29fcf1cd91318fb/execute/sync HTTP/1.1" 200 20
+2024-07-20 13:14:06 - DEBUG - Remote response: status=200 | data={"value":"11062008"} | headers=HTTPHeaderDict({'Content-Length': '20', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 13:14:06 - DEBUG - Finished Request
+2024-07-20 13:14:06 - DEBUG - POST http://localhost:51087/session/b173591d926da4a0e29fcf1cd91318fb/element/f.9CBBC28B2F014CB4FD35AE85B70D61B7.d.5194A5F06EF4D70EB0822D11C05782DB.e.29/element {'using': 'css selector', 'value': '.prdName'}
+2024-07-20 13:14:06 - DEBUG - http://localhost:51087 "POST /session/b173591d926da4a0e29fcf1cd91318fb/element/f.9CBBC28B2F014CB4FD35AE85B70D61B7.d.5194A5F06EF4D70EB0822D11C05782DB.e.29/element HTTP/1.1" 200 126
+2024-07-20 13:14:06 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.9CBBC28B2F014CB4FD35AE85B70D61B7.d.5194A5F06EF4D70EB0822D11C05782DB.e.36"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 13:14:06 - DEBUG - Finished Request
+2024-07-20 13:14:06 - DEBUG - GET http://localhost:51087/session/b173591d926da4a0e29fcf1cd91318fb/element/f.9CBBC28B2F014CB4FD35AE85B70D61B7.d.5194A5F06EF4D70EB0822D11C05782DB.e.36/text {}
+2024-07-20 13:14:06 - DEBUG - http://localhost:51087 "GET /session/b173591d926da4a0e29fcf1cd91318fb/element/f.9CBBC28B2F014CB4FD35AE85B70D61B7.d.5194A5F06EF4D70EB0822D11C05782DB.e.36/text HTTP/1.1" 200 102
+2024-07-20 13:14:06 - DEBUG - Remote response: status=200 | data={"value":"平衡心態：掌握成功的四腳桌法則，穩步累積你的財富、幸福與健康"} | headers=HTTPHeaderDict({'Content-Length': '102', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 13:14:06 - DEBUG - Finished Request
+2024-07-20 13:14:06 - DEBUG - 找到書籍: 平衡心態：掌握成功的四腳桌法則，穩步累積你的財富、幸福與健康
+2024-07-20 13:14:06 - DEBUG - 商品URL: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11062008
+2024-07-20 13:14:06 - DEBUG - DELETE http://localhost:51087/session/b173591d926da4a0e29fcf1cd91318fb {}
+2024-07-20 13:14:06 - DEBUG - http://localhost:51087 "DELETE /session/b173591d926da4a0e29fcf1cd91318fb HTTP/1.1" 200 14
+2024-07-20 13:14:06 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 13:14:06 - DEBUG - Finished Request
+2024-07-20 13:14:12 - INFO - Momo: 平衡心態：掌握成功的四腳桌法則，穩步累積你的財富、幸福與健康, URL: https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11062008

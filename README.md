@@ -18,7 +18,7 @@
 - **定期更新**：持續分享最新的理財觀念和實務經驗
 
 ### 🎧 多媒體整合
-- **Podcast 節目**：「瑪斯理財兩三事」音頻內容
+- **Podcast 節目**：「懶得變有錢」音頻內容
 - **Apple Podcast**：完整的 Podcast 訂閱和推廣功能
 - **社群整合**：Facebook、Instagram、Threads、Discord 等多平台連結
 
