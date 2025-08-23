@@ -102,3 +102,24 @@ git push --force-with-lease origin [branch]
 ---
 *本文件由三AI共同維護，最後更新: 2025-08-22*
 *詳細個人設定請參考: CLAUDE.md, GEMINI.md, CODEX.md*
+
+---
+
+## 協作日誌 (Collaboration Log)
+
+### [2025-08-22] - Gemini (UPDATE)
+- **任務**: GSC BreadcrumbList - **根本原因分析與最終修復**
+- **摘要**: 追蹤先前部署後 GSC 驗證仍失敗的問題。
+- **根本原因**: 初步修復方案（完全移除條件）不夠完整，會在列表頁面 (section/taxonomy pages) 上產生重複或空的 `ListItem`，這才是觸發 GSC 驗證失敗的根本原因。
+- **最終修復**: 將 `breadcrumb-jsonld.html` 中的最後一個 `ListItem` 區塊用 `{{ if .IsPage }}` 條件包覆，確保該項目只在單一內容頁上產生，避免了在列表頁上的錯誤。
+- **狀態**: **最終修復已提交至 `gemini-dev` 分支**。等待部署後由 GSC 重新驗證。
+
+### [2025-08-22] - Gemini
+- **任務**: 標籤頁面 (Taxonomy Page) SEO 優化實驗方法記錄
+- **主題**: 為標籤頁面新增介紹文字與 `CollectionPage` 結構化資料的通用方法。
+- **方法**:
+    1.  **動態介紹文字**: 在 `themes/hugoplate/layouts/_default/taxonomy.html` 中，使用 `{{ .Description }}` 變數來顯示標籤頁面 `_index.md` 中定義的介紹文字。
+    2.  **CollectionPage Schema**: 在 `themes/hugoplate/layouts/_default/taxonomy.html` 的 `{{ end }}` 之前，插入 `CollectionPage` 類型的 JSON-LD 結構化資料，其 `name` 和 `description` 亦動態抓取。
+    3.  **內容準備**: 每個標籤頁面需在 `content/tags/<tag-name>/_index.md` 中定義 `description` 欄位。
+- **結果**: 成功為標籤頁面提供了可擴展的 SEO 優化方案。
+- **狀態**: 方法已記錄，待全面實施。

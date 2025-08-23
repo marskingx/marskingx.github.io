@@ -1,6 +1,17 @@
 {{ define "main" }}
-  {{ partial "page-header" . }}
+    {{ partial "page-header" . }}
 
+  {{ if .Description }}
+  <div class="container mb-8">
+    <div class="row">
+      <div class="col-12">
+        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+          {{ .Description }}
+        </p>
+      </div>
+    </div>
+  </div>
+  {{ end }}
 
   <section class="section">
     <div class="container">
@@ -18,4 +29,25 @@
       </div>
     </div>
   </section>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": {{ .Title | jsonify }},
+      "description": {{ .Description | default (printf "探索所有關於 %s 的文章，從心態調整到習慣養成，為你的財富自由之路注入正能量。" (.Title | humanize)) | jsonify }},
+      "url": {{ .Permalink | jsonify }},
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {{ range $index, $page := .Data.Pages }}
+          {
+            "@type": "ListItem",
+            "position": {{ add $index 1 }},
+            "url": {{ $page.Permalink | jsonify }}
+          }{{ if ne (add $index 1) (len $.Data.Pages) }},{{ end }}
+          {{ end }}
+        ]
+      }
+    }
+    </script>
 {{ end }}

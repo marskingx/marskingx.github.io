@@ -33,7 +33,7 @@
         "@id": {{ printf "/%s/" .Section | absURL | jsonify }},
         "name": {{ .Section | humanize | jsonify }}
       }
-    }{{ end }},
+    }{{ end }}{{ if .IsPage }},
     {
       "@type": "ListItem",
       "position": {{ if and .Params.categories .Section }}4{{ else if or .Params.categories .Section }}3{{ else }}2{{ end }},
@@ -43,7 +43,7 @@
         "@id": {{ .Permalink | jsonify }},
         "name": {{ .Title | jsonify }}
       }
-    }
+    }{{ end }}
   ]
 }
 </script>
