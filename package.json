@@ -1,7 +1,7 @@
 {
   "name": "lazytoberich-blog",
   "description": "懶得變有錢理財部落格 - Hugo + TailwindCSS + 圖片優化系統",
-  "version": "3.3.1",
+  "version": "3.3.2",
   "license": "MIT",
   "author": "懶大 <lazytoberich@gmail.com>",
   "scripts": {
