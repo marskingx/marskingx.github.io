@@ -20,7 +20,7 @@ D:/marskingx-worktrees/gemini-dev - [gemini-dev] Gemini 開發分支
 - **名稱**: 懶得變有錢 (Lazytoberich)
 - **網址**: https://marskingx.github.io/
 - **技術棧**: Hugo + TailwindCSS + Hugoplate Theme
-- **當前版本**: v3.0.0.0 (四位版本號系統)
+- **當前版本**: v3.4.1.0 (四位版本號系統)
 
 ### ⚡ 重要指令
 ```bash
@@ -170,5 +170,5 @@ function validateStructuredData() {}
 - 新建檔案時遵循小寫命名規範
 
 ---
-*本文件由三AI共同維護，最後更新: 2025-08-22*
+*本文件由三AI共同維護，最後更新: 2025-08-23*
 *詳細個人設定請參考: claude.md, gemini.md, codex.md*

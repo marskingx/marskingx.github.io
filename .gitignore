@@ -68,3 +68,6 @@ ehthumbs.db
 *.tar.gz
 *.rar
 reindex.zip
+
+# 嵌入的 git repository
+Claude-Code-Usage-Monitor/
