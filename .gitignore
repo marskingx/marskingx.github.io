@@ -31,19 +31,6 @@ go.sum
 # 🔒 私人開發檔案 (絕不公開)
 # ============================================
 
-# AI 工具記憶檔案
-.ai-memory/
-.claude/
-.claude-backups/
-.kiro/
-CLAUDE.local.md
-
-# 開發工具
-Claude-Code-Usage-Monitor/
-reindex/
-reindex.zip
-Prompt/
-
 # 日誌檔案
 *.log
 *.temp
@@ -101,7 +88,7 @@ Thumbs.db
 docs/aimemory/
 AI_*.md
 CLAUDE*.md
-GEMINI*.md  
+GEMINI*.md
 CODEX*.md
 
 # AI 協作檔案
@@ -130,7 +117,7 @@ VERSION_MANAGEMENT.md
 
 # 開發文檔目錄
 docs/ai-memory/
-docs/prompts/
+docs/mission/
 docs/hugo/
 docs/SEO/
 
@@ -139,7 +126,7 @@ docs/SEO/
 *HUGO_UPGRADE*.md
 *HUGO_REPORT*.md
 
-# SEO 和 CTR 優化文檔  
+# SEO 和 CTR 優化文檔
 *CTR-Optimization*.md
 *SEO*.md
 GSC-CTR-Optimization-Prompt.md
