@@ -204,6 +204,15 @@ class SmartMergeManager {
       
       // 6. 合併後驗證
       await this.postMergeValidation();
+
+      // 自動提交任何由合併過程產生的未提交變更 (例如日誌更新)
+      const gitStatusAfterMerge = this.executeCommand('git status --porcelain', { silent: true }).trim();
+      if (gitStatusAfterMerge) {
+        this.log('檢測到合併過程產生未提交變更，正在自動提交...', 'info');
+        this.executeCommand('git add .');
+        this.executeCommand(`git commit -m "chore: 智能併版自動提交日誌更新"`);
+        this.log('自動提交完成', 'success');
+      }
       
       return { success: true, strategy, branchInfo, conflictInfo };
     } catch (error) {
