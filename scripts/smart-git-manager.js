@@ -2,206 +2,77 @@
 
 const { execSync } = require("child_process");
 const fs = require("fs");
-// const path = require("path"); // 暫時不使用
-
-/**
- * Smart Git Manager
- * 智能 Git 管理系統 - 實現選擇性推送功能
- *
- * 功能：
- * 1. 分析 Git 變更，區分公開/私有檔案
- * 2. 自動將 AI 記憶檔案推送到私有儲存庫
- * 3. 將網站程式碼推送到公開儲存庫
- */
 
 class SmartGitManager {
   constructor() {
-    this.publicRepo = {
-      name: "public",
-      remote: "origin",
-      branch: "main",
-    };
-
-    this.privateRepo = {
-      name: "private",
-      path: "D:\\marskingx.github.io-dev-sync",
-      remote: "origin",
-      branch: "main",
-    };
-
-    // 需要鏡射到私有庫的目錄（可擴充）
-    this.mirrorPaths = [
-      'docs/aimemory',
-      '.kiro',
-    ];
-
-    // 定義私有檔案模式 - 完整控制所有非網站必要檔案
+    this.publicRepo = { name: "public", remote: "origin", branch: "main" };
+    this.privateRepo = { name: "private", path: "D:\\marskingx.github.io-dev-sync", remote: "origin", branch: "main" };
+    this.mirrorPaths = ['docs/aimemory', '.kiro'];
     this.privateFilePatterns = [
-      // AI 協作系統檔案
-      "docs/",
-      "docs/aimemory/",
-      ".kiro/",
-      ".claude-backups/",
-      ".claude/",
-      "reindex/",
-      "AI_*.md",
-      "CLAUDE*.md",
-      "GEMINI*.md",
-      "CODEX*.md",
-      "*ONBOARDING*.md",
-      "*HANDOVER*.md",
-      "*REVIEW*.md",
-      "*COLLABORATION*.md",
-      "GSC_*.md",
-      "GSC_*.txt",
-      ".ai-lock.json",
-
-      // 開發環境檔案
-      ".env*",
-      "*.log",
-      "*.temp",
-      "*.tmp",
-      "git_log_temp.txt",
-
-      // IDE 設定檔案
-      ".idea/",
-      ".vscode/",
-      "*.code-workspace",
-
-      // Python 開發環境
-      ".venv/",
-      "venv/",
-      "scripts/venv/",
-      "*.pyc",
-      "__pycache__/",
-      "*.egg-info/",
-
-      // 備份檔案
-      "*.backup",
-      "*.bak",
-      "*~",
-      ".gitignore-backup",
-      ".gitignore-private",
-
-      // 壓縮檔案 (開發用)
-      "*.zip",
-      "*.tar.gz",
-      "*.rar",
-
-      // 開發文檔與分析報告
-      "BRANCH_ANALYSIS_REPORT.md",
-      "CHANGELOG.md",
-      "HUGO.md",
-      "prompt.md",
-      "README-NEWSLETTER-POPUP.md",
-      "VERSION_MANAGEMENT.md",
-      "*HUGO_INTEGRATION*.md",
-      "*HUGO_UPGRADE*.md",
-      "*HUGO_REPORT*.md",
-      "*CTR-Optimization*.md",
-      "*SEO*.md",
-      "GSC-CTR-Optimization-Prompt.md",
-      "MULTI-AI-COLLABORATION.md",
-
-      // GitHub 相關文檔
-      ".github/MAILCHIMP_*.md",
-
-      // External repositories and tools
-      "Claude-Code-Usage-Monitor/",
-
-      // 舊版及專案根目錄設定檔
-      ".gitlab-ci.yml",
-      "netlify.toml",
-      "vercel.json",
-      "amplify.yml",
-      "vercel-build.sh",
-      "Dmarskingx.github.io.markdownlint.json",
-
-      // 臨時檔案
+      "docs/", ".kiro/", ".claude-backups/", ".claude/", "reindex/", "AI_*.md", "CLAUDE*.md",
+      "GEMINI*.md", "CODEX*.md", "*ONBOARDING*.md", "*HANDOVER*.md", "*REVIEW*.md", "*COLLABORATION*.md",
+      "GSC_*.md", "GSC_*.txt", ".ai-lock.json", ".env*", "*.log", "*.temp", "*.tmp", "git_log_temp.txt",
+      ".idea/", ".vscode/", ".code-workspace", ".venv/", "venv/", "scripts/venv/", "*.pyc",
+      "__pycache__/", "*.egg-info/", "*.backup", "*.bak", "*~", ".gitignore-backup", ".gitignore-private",
+      "*.zip", "*.tar.gz", "*.rar", "BRANCH_ANALYSIS_REPORT.md", "CHANGELOG.md", "HUGO.md", "prompt.md",
+      "README-NEWSLETTER-POPUP.md", "VERSION_MANAGEMENT.md", "*HUGO_INTEGRATION*.md", "*HUGO_UPGRADE*.md",
+      "*HUGO_REPORT*.md", "*CTR-Optimization*.md", "*SEO*.md", "GSC-CTR-Optimization-Prompt.md",
+      "MULTI-AI-COLLABORATION.md", ".github/MAILCHIMP_*.md", "Claude-Code-Usage-Monitor/", ".gitlab-ci.yml",
+      "netlify.toml", "vercel.json", "amplify.yml", "vercel-build.sh", "Dmarskingx.github.io.markdownlint.json",
       "docs/temp.txt",
     ];
   }
 
   log(message, type = "info") {
-    const prefix = {
-      info: "📝",
-      success: "✅",
-      error: "❌",
-      warning: "⚠️",
-    };
+    const prefix = { info: "📝", success: "✅", error: "❌", warning: "⚠️" };
     console.log(`${prefix[type]} ${message}`);
   }
 
   executeCommand(command, options = {}) {
     try {
-      return execSync(command, {
-        encoding: "utf8",
-        stdio: options.silent ? "pipe" : "inherit",
-        cwd: options.cwd || process.cwd(),
-        ...options,
-      });
+      return execSync(command, { encoding: "utf8", stdio: options.silent ? "pipe" : "inherit", cwd: options.cwd || process.cwd(), ...options });
     } catch (error) {
+      if (options.ignoreError) return null;
       throw new Error(`指令執行失敗: ${command}\n${error.message}`);
     }
   }
 
-  /**
-   * 檢查檔案是否為私有檔案
-   */
   isPrivateFile(filePath) {
     return this.privateFilePatterns.some((pattern) => {
-      if (pattern.endsWith("/")) {
-        return filePath.startsWith(pattern);
-      }
-      if (pattern.includes("*")) {
-        const regex = new RegExp(pattern.replace(/\*/g, ".*"));
-        return regex.test(filePath);
-      }
+      if (pattern.endsWith("/")) return filePath.startsWith(pattern);
+      if (pattern.includes("*")) return new RegExp(pattern.replace(/\*/g, ".*")).test(filePath);
       return filePath === pattern;
     });
   }
 
-  /**
-   * 分析 Git 狀態，區分公開/私有變更
-   */
   analyzeGitChanges() {
     this.log("分析 Git 變更狀態...", "info");
-
-    const statusOutput = this.executeCommand("git status --porcelain", {
-      silent: true,
-    });
-    const lines = statusOutput
-      .trim()
-      .split("\n")
-      .filter((line) => line.length > 0);
-
-    const changes = {
-      public: [],
-      private: [],
-      untracked: [],
-    };
-
+    const statusOutput = this.executeCommand("git status --porcelain", { silent: true });
+    const lines = statusOutput.trim().split("\n").filter(Boolean);
+    const changes = { public: [], private: [], untracked: [] };
+    
     for (const line of lines) {
+      if (line.length < 3) continue;
+      
       const status = line.substring(0, 2);
       const filePath = line.substring(3);
-
-      if (this.isPrivateFile(filePath)) {
-        changes.private.push({ status, path: filePath });
-      } else {
-        changes.public.push({ status, path: filePath });
-      }
-
-      if (status.includes("?")) {
-        changes.untracked.push({ status, path: filePath });
-      }
+      
+      // 跳過空路徑或無效行
+      if (!filePath || filePath.trim() === '') continue;
+      
+      // 檢查是否有任何變更（包括已暫存和工作目錄變更）
+      const hasChanges = status[0] !== ' ' || status[1] !== ' ';
+      if (!hasChanges) continue;
+      
+      if (this.isPrivateFile(filePath)) changes.private.push({ status, path: filePath });
+      else changes.public.push({ status, path: filePath });
+      if (status.includes("?")) changes.untracked.push({ status, path: filePath });
     }
-
+    
+    this.log(`🔍 檢測結果: 公開 ${changes.public.length} 個, 私有 ${changes.private.length} 個, 未追蹤 ${changes.untracked.length} 個`, "info");
     return changes;
   }
 
-  /**
-   * 智能提交 - 分別處理公開和私有變更
-   */
   async smartCommit(message) {
     const changes = this.analyzeGitChanges();
 
@@ -210,7 +81,8 @@ class SmartGitManager {
       return { success: true };
     }
 
-    this.log(`\n📊 變更分析:`, "info");
+    this.log(`
+📊 變更分析:`, "info");
     this.log(`🌐 公開檔案: ${changes.public.length} 個`, "info");
     this.log(`🔒 私有檔案: ${changes.private.length} 個`, "info");
 
@@ -221,10 +93,10 @@ class SmartGitManager {
       // 使用已暫存內容建立更可靠的摘要
       const staged = this.getStagedNameStatus(process.cwd());
       const enhancedMessage = this.buildCommitMessage(message, changes, staged);
-      this.executeCommand(`git commit -m "${enhancedMessage}"`);
+      this.executeCommand(`git commit -m "${enhancedMessage}"`, { stdio: 'inherit' });
 
       this.log("✓ 本地提交完成", "success");
-      // 2. 先遞增 5碼版本的第5碼（協作日誌），再追加協作日誌（Codex 自動）
+      // 2. 先遞增 5碼版本的第5碼（協作日誌），再追加協作日誌（Claude 自動）
       try {
         // bump log version
         this.executeCommand(`${process.execPath} scripts/version-manager.js log`, { silent: true });
@@ -233,7 +105,7 @@ class SmartGitManager {
         const logCmd = [
           process.execPath,
           'scripts/aimemory-log-update.js',
-          '--agent', 'Codex',
+          '--agent', 'Claude',
           '--task', '智能提交',
           '--summary', message,
           '--no-bump',
@@ -257,9 +129,6 @@ class SmartGitManager {
     }
   }
 
-  /**
-   * 智能推送 - 將私有檔案推送到私有儲存庫，公開檔案推送到公開儲存庫
-   */
   async smartPush(options = {}) {
     const { skipPublic = false, skipPrivate = false } = options;
     const results = [];
@@ -294,9 +163,6 @@ class SmartGitManager {
     }
   }
 
-  /**
-   * 推送到私有儲存庫
-   */
   async pushToPrivateRepo() {
     try {
       // 檢查私有儲存庫路徑
@@ -305,7 +171,6 @@ class SmartGitManager {
       }
 
       // 在推送前鏡射指定目錄到私有庫（確保私有檔案被追蹤）
-      // 預設鏡射 docs/aimemory
       try {
         this.log('鏡射檔案到私有儲存庫...', 'info');
         this.mirrorToPrivate(this.mirrorPaths);
@@ -318,27 +183,7 @@ class SmartGitManager {
       const PrivateRepoHandler = require("./private-repo-handler");
       const handler = new PrivateRepoHandler();
 
-      // 產生簡易摘要訊息
-      let commitMsg = "sync: 智能同步 AI 記憶檔案";
-      try {
-        const st = await handler.getStatus();
-        if (st && st.hasChanges) {
-          const lines = (st.changes || "").trim().split(/\n/).filter(Boolean);
-          const counts = { M: 0, A: 0, D: 0, R: 0, C: 0, Q: 0 };
-          const files = [];
-          lines.forEach((l) => {
-            const code = l.slice(0, 2);
-            const p = l.slice(3);
-            if (code.includes("M")) counts.M++; else if (code.includes("A")) counts.A++; else if (code.includes("D")) counts.D++; else if (code.includes("R")) counts.R++; else if (code.includes("C")) counts.C++; else if (code.includes("?")) counts.Q++;
-            files.push(p);
-          });
-          const top = files.slice(0, 20).join(", ");
-          commitMsg += `\n\n## Change Summary\n- Changes: ${lines.length} (M:${counts.M} A:${counts.A} D:${counts.D})`;
-          if (top) commitMsg += `\n- Files: ${top}`;
-        }
-      } catch {}
-
-      const result = await handler.pushChanges(commitMsg);
+      const result = await handler.pushChanges("sync: 智能同步 AI 記憶檔案");
 
       if (result.success) {
         this.log("✓ 私有儲存庫同步完成", "success");
@@ -351,9 +196,6 @@ class SmartGitManager {
     }
   }
 
-  /**
-   * 推送到公開儲存庫
-   */
   async pushToPublicRepo() {
     try {
       // 推送到公開儲存庫（Git 會自動根據 .gitignore 過濾）
@@ -368,9 +210,6 @@ class SmartGitManager {
     }
   }
 
-  /**
-   * 完整的智能發布流程
-   */
   async smartRelease(message = "feat: 智能發布更新") {
     this.log("🚀 開始智能發布流程", "info");
 
@@ -387,15 +226,6 @@ class SmartGitManager {
         throw new Error("推送失敗");
       }
 
-      // 3. 驗證私有庫關鍵檔案是否同步成功
-      try {
-        this.verifyPrivateSync([
-          'docs/aimemory/shared/ai-shared.md',
-        ]);
-      } catch (e) {
-        this.log(`私有庫同步驗證警告: ${e.message}`, 'warning');
-      }
-
       this.log("🎉 智能發布完成！", "success");
       return { success: true };
     } catch (error) {
@@ -404,9 +234,57 @@ class SmartGitManager {
     }
   }
 
-  /**
-   * 顯示使用說明
-   */
+  mirrorToPrivate(paths) {
+    const pathLib = require('path');
+    paths.forEach((rel) => {
+      const src = pathLib.join(process.cwd(), rel);
+      const dst = pathLib.join(this.privateRepo.path, rel);
+      if (!fs.existsSync(src)) return;
+      fs.mkdirSync(pathLib.dirname(dst), { recursive: true });
+      fs.cpSync(src, dst, { recursive: true, force: true });
+    });
+  }
+
+  buildCommitMessage(baseMessage, changes, staged = { lines: [], files: [], counts: {} }) {
+    const msg = baseMessage && baseMessage.trim().length > 0 ? baseMessage.trim() : "feat: 智能提交更新";
+    const lines = [msg, "", "## Change Summary"];
+    
+    const stageFiles = (staged.files || []).slice(0, 20);
+    if (stageFiles.length) {
+      lines.push(`- Files: ${stageFiles.join(", ")}`);
+    }
+
+    return lines.join("\n");
+  }
+
+  getStagedNameStatus(cwd) {
+    try {
+      const out = this.executeCommand('git diff --cached --name-status', { cwd, silent: true });
+      const lines = out.trim().split(/\n/).filter(Boolean);
+      const files = [];
+      lines.forEach((l) => {
+        const m = l.match(/^([MADRCU])\s+(.+)$/);
+        if (m) files.push(m[2]);
+      });
+      return { lines, files, counts: {} };
+    } catch {
+      return { lines: [], files: [], counts: {} };
+    }
+  }
+
+  readProjectVersion() {
+    try {
+      const txt = fs.readFileSync('.version', 'utf8');
+      const obj = JSON.parse(txt);
+      if (obj && obj.version) return obj.version;
+    } catch {}
+    try {
+      const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+      return pkg.version || '';
+    } catch {}
+    return '';
+  }
+
   showHelp() {
     console.log(`
 🤖 智能 Git 管理系統
@@ -424,154 +302,6 @@ class SmartGitManager {
   ✅ 避免敏感資料意外洩漏
     `);
   }
-
-  /**
-   * 將指定路徑鏡射到私有儲存庫
-   */
-  mirrorToPrivate(paths) {
-    const pathLib = require('path');
-    paths.forEach((rel) => {
-      const src = pathLib.join(process.cwd(), rel);
-      const dst = pathLib.join(this.privateRepo.path, rel);
-      if (!fs.existsSync(src)) return;
-      fs.mkdirSync(pathLib.dirname(dst), { recursive: true });
-      // 使用 Node 20 的 cpSync 遞迴覆蓋
-      fs.cpSync(src, dst, { recursive: true, force: true });
-    });
-  }
-
-  /**
-   * 驗證私有庫檔案與主庫是否一致（以檔案內容為準）
-   */
-  verifyPrivateSync(paths) {
-    const pathLib = require('path');
-    const crypto = require('crypto');
-    const hashFile = (p) => {
-      try {
-        const buf = fs.readFileSync(p);
-        return crypto.createHash('sha1').update(buf).digest('hex');
-      } catch { return null; }
-    };
-    let allOk = true;
-    paths.forEach((rel) => {
-      const src = pathLib.join(process.cwd(), rel);
-      const dst = pathLib.join(this.privateRepo.path, rel);
-      const h1 = hashFile(src);
-      const h2 = hashFile(dst);
-      if (h1 && h2 && h1 === h2) {
-        this.log(`✓ 驗證一致: ${rel}`, 'success');
-      } else {
-        allOk = false;
-        this.log(`⚠️ 不一致: ${rel}`, 'warning');
-      }
-    });
-    if (!allOk) throw new Error('部分檔案未同步一致');
-  }
-
-  /**
-   * 生成提交訊息摘要（含變更統計與檔案清單）
-   */
-  buildCommitMessage(baseMessage, changes, staged = { lines: [], files: [], counts: {} }) {
-    const msg = baseMessage && baseMessage.trim().length > 0 ? baseMessage.trim() : "feat: 智能提交更新";
-    const summarize = (arr) => {
-      const stat = { M: 0, A: 0, D: 0, R: 0, C: 0, Q: 0 };
-      arr.forEach((i) => {
-        const s = i.status || "";
-        if (s.includes("M")) stat.M++;
-        else if (s.includes("A")) stat.A++;
-        else if (s.includes("D")) stat.D++;
-        else if (s.includes("R")) stat.R++;
-        else if (s.includes("C")) stat.C++;
-        else if (s.includes("?")) stat.Q++;
-      });
-      return stat;
-    };
-
-    const pubStat = summarize(changes.public);
-    const priStat = summarize(changes.private);
-
-    // 優先使用已暫存的準確檔案列表
-    const stageFiles = (staged.files || []).slice(0, 20);
-    // 後備：從 status 推估
-    const top = (arr) => arr.map((c) => c.path).slice(0, 20);
-    const pubFiles = top(changes.public);
-    const priFiles = top(changes.private);
-
-    const lines = [
-      msg,
-      "",
-      "## Change Summary",
-      `- Public: ${changes.public.length} (M:${pubStat.M} A:${pubStat.A} D:${pubStat.D})`,
-      `- Private: ${changes.private.length} (M:${priStat.M} A:${priStat.A} D:${priStat.D})`,
-    ];
-    if (stageFiles.length) {
-      lines.push(`- Files: ${stageFiles.join(", ")}`);
-    } else {
-      if (pubFiles.length) lines.push(`- Files(public): ${pubFiles.join(", ")}`);
-      if (priFiles.length) lines.push(`- Files(private): ${priFiles.join(", ")}`);
-    }
-
-    // 附上目前 5 碼版本與中文說明
-    try {
-      const v = this.readProjectVersion();
-      if (v) {
-        lines.push(`- Version: v${v}`);
-        const parts = String(v).split('.');
-        if (parts.length >= 5) {
-          lines.push('');
-          lines.push('## Version Info (5碼)');
-          lines.push(`- Tuple: (${parts.join('.')})`);
-          lines.push(`- major (${parts[0]}): 重大變更`);
-          lines.push(`- minor (${parts[1]}): 新功能`);
-          lines.push(`- patch (${parts[2]}): 錯誤修正`);
-          lines.push(`- content (${parts[3]}): 內容更新`);
-          lines.push(`- log (${parts[4]}): 協作日誌遞增次數`);
-        }
-      }
-    } catch {}
-
-    return lines.join("\n");
-  }
-
-  /**
-   * 取得已暫存清單（name-status）
-   */
-  getStagedNameStatus(cwd) {
-    try {
-      const out = this.executeCommand('git diff --cached --name-status', { cwd, silent: true });
-      const lines = out.trim().split(/\n/).filter(Boolean);
-      const files = [];
-      const counts = { M: 0, A: 0, D: 0 };
-      lines.forEach((l) => {
-        const m = l.match(/^([MADRCU])\s+(.+)$/);
-        if (m) {
-          const code = m[1];
-          const file = m[2];
-          files.push(file);
-          if (counts[code] !== undefined) counts[code]++;
-        }
-      });
-      return { lines, files, counts };
-    } catch {
-      return { lines: [], files: [], counts: {} };
-    }
-  }
-
-  /**
-   * 讀取專案四段式版本，回退到 package.json 版本
-   */
-  readProjectVersion() {
-    try {
-      const txt = require('fs').readFileSync('.version', 'utf8');
-      const obj = JSON.parse(txt);
-      if (obj && obj.version) return obj.version;
-    } catch {}
-    try {
-      const pkg = JSON.parse(require('fs').readFileSync('package.json', 'utf8'));
-      return pkg.version || '';
-    } catch {}
-    return '';
-  }
 }
 
 // CLI 接口
@@ -581,20 +311,7 @@ async function main() {
 
   switch (command) {
     case "commit": {
-      const flagIndex = args.indexOf('--lint-md');
-      const lintMd = flagIndex !== -1;
-      if (lintMd) args.splice(flagIndex, 1);
       const message = args.join(" ") || "feat: 智能提交更新";
-      if (lintMd) {
-        try {
-          manager.log('執行 Markdown 檢查 (--lint-md)', 'info');
-          manager.executeCommand('npm run content:lint:strict', { silent: false });
-          manager.log('Markdown 檢查通過', 'success');
-        } catch (e) {
-          manager.log('Markdown 檢查未通過，取消上版', 'error');
-          process.exit(1);
-        }
-      }
       await manager.smartCommit(message);
       break;
     }
@@ -605,37 +322,16 @@ async function main() {
     }
 
     case "release": {
-      const flagIndex = args.indexOf('--lint-md');
-      const lintMd = flagIndex !== -1;
-      if (lintMd) args.splice(flagIndex, 1);
       const releaseMessage = args.join(" ") || "feat: 智能發布更新";
-      if (lintMd) {
-        try {
-          manager.log('執行 Markdown 檢查 (--lint-md)', 'info');
-          manager.executeCommand('npm run content:lint:strict', { silent: false });
-          manager.log('Markdown 檢查通過', 'success');
-        } catch (e) {
-          manager.log('Markdown 檢查未通過，取消上版&佈署', 'error');
-          process.exit(1);
-        }
-      }
       await manager.smartRelease(releaseMessage);
       break;
     }
 
     case "analyze": {
       const changes = manager.analyzeGitChanges();
-      // console.log("\n📊 變更分析結果:");
-      // console.log(
-      //   "🌐 公開檔案:",
-      //   changes.public.map((c) => c.path),
-      // );
-      // console.log(
-      //   "🔒 私有檔案:",
-      //   changes.private.map((c) => c.path),
-      // );
       manager.log(
-        `\n📊 變更分析結果: 公開 ${changes.public.length} 個，私有 ${changes.private.length} 個`,
+        `📊 變更分析結果: 公開 ${changes.public.length} 個，私有 ${changes.private.length} 個`,
+        "info"
       );
       break;
     }

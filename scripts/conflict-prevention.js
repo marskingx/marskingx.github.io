@@ -42,8 +42,10 @@ class ConflictPrevention {
       case "check":
         await this.checkCurrentChanges();
         break;
-      case "precommit":
-        await this.preCommitCheck();
+      case "precommit": {
+        const ok = await this.preCommitCheck();
+        process.exit(ok ? 0 : 1);
+      }
         break;
       case "rules":
         await this.showCollaborationRules();
@@ -180,7 +182,7 @@ class ConflictPrevention {
       issues.forEach((issue, index) => {
         console.log(`   ${index + 1}. ${issue}`);
       });
-      console.log("\n💡 建議解決問題後再提交\n");
+      console.log("\n💡 已阻擋提交，請修復後重試\n");
       return false;
     }
   }

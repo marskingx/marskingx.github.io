@@ -122,6 +122,20 @@ git push --force-with-lease origin [branch]
 
 ## 協作日誌 (Collaboration Log)
 
+### [2025-08-24 23:58] - Codex
+- 任務: 智能提交
+- 摘要: chore: 上版&佈署（含 --lint-md 驗證）
+- 變更檔: docs/aimemory/shared/ai-shared.md, package.json
+- 版本: v3.4.0.0.12
+
+#### Version Info (5碼)
+- Tuple: (3.4.0.0.12)
+- major (3): 重大變更
+- minor (4): 新功能
+- patch (0): 錯誤修正
+- content (0): 內容更新
+- log (12): 協作日誌遞增次數
+
 ### [2025-08-24 23:52] - Codex
 - 任務: 智能提交
 - 摘要: chore: md 規範落地（ignore+fixer+precommit+嚴格檢查）

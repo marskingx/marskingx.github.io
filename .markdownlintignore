@@ -1,4 +1,5 @@
 .claude-backups/**
+.kiro/**
 docs/external-tools/**
 scripts/venv/**
 .idea/**

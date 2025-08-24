@@ -61,6 +61,24 @@ npm run context:load gemini seo-optimization
     npm run conflict:unlock
     ```
 
+### 智能版控擴充功能
+
+**目的**：提供更進階的 Git 操作，簡化跨分支的開發流程。
+
+**主要指令**：
+
+1.  **合併分支**：將當前分支以 "merge commit" 的方式安全地合併到目標分支。
+    ```bash
+    # 格式: npm run smart:merge <target-branch>
+    npm run smart:merge main
+    ```
+
+2.  **獲取單一檔案**：從其他分支拉取特定檔案的最新版本到當前分支。
+    ```bash
+    # 格式: npm run smart:get-file <source-branch> <file-path>
+    npm run smart:get-file gemini-dev docs/aimemory/gemini.md
+    ```
+
 ---
 
 ## 📊 中優先級功能
