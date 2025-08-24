@@ -511,10 +511,23 @@ class SmartGitManager {
       if (priFiles.length) lines.push(`- Files(private): ${priFiles.join(", ")}`);
     }
 
-    // 附上目前 5 碼版本
+    // 附上目前 5 碼版本與中文說明
     try {
       const v = this.readProjectVersion();
-      if (v) lines.push(`- Version: ${v}`);
+      if (v) {
+        lines.push(`- Version: v${v}`);
+        const parts = String(v).split('.');
+        if (parts.length >= 5) {
+          lines.push('');
+          lines.push('## Version Info (5碼)');
+          lines.push(`- Tuple: (${parts.join('.')})`);
+          lines.push(`- major (${parts[0]}): 重大變更`);
+          lines.push(`- minor (${parts[1]}): 新功能`);
+          lines.push(`- patch (${parts[2]}): 錯誤修正`);
+          lines.push(`- content (${parts[3]}): 內容更新`);
+          lines.push(`- log (${parts[4]}): 協作日誌遞增次數`);
+        }
+      }
     } catch {}
 
     return lines.join("\n");

@@ -75,7 +75,21 @@ function buildEntry({ date, time, agent, task, summary, files, status, version }
   if (summary) lines.push(`- 摘要: ${summary}`);
   if (files) lines.push(`- 變更檔: ${files}`);
   if (status) lines.push(`- 狀態: ${status}`);
-  if (version) lines.push(`- 版本: ${version}`);
+  if (version) {
+    const vstr = String(version).startsWith('v') ? version : `v${version}`;
+    lines.push(`- 版本: ${vstr}`);
+    const tuple = String(version).replace(/^v/i, '').split('.');
+    if (tuple.length >= 5) {
+      lines.push('');
+      lines.push('#### Version Info (5碼)');
+      lines.push(`- Tuple: (${tuple.join('.')})`);
+      lines.push(`- major (${tuple[0]}): 重大變更`);
+      lines.push(`- minor (${tuple[1]}): 新功能`);
+      lines.push(`- patch (${tuple[2]}): 錯誤修正`);
+      lines.push(`- content (${tuple[3]}): 內容更新`);
+      lines.push(`- log (${tuple[4]}): 協作日誌遞增次數`);
+    }
+  }
   lines.push('');
   return lines.join('\n');
 }
@@ -111,7 +125,7 @@ async function main() {
   const task = args.task || '';
   const summary = args.summary || '';
   const status = args.status || '';
-  const version = args.version || '';
+  let version = args.version || '';
   const dt = nowDateTime();
   const date = args.date || dt.date;
   const time = args.time || dt.time;
@@ -124,6 +138,13 @@ async function main() {
   }
 
   const repoRoot = process.cwd();
+  // 補充版本：若未提供 --version，嘗試從 .version 讀取
+  if (!version) {
+    try {
+      const vObj = JSON.parse(fs.readFileSync(path.join(repoRoot, '.version'), 'utf8'));
+      if (vObj && vObj.version) version = vObj.version;
+    } catch {}
+  }
   const targetPath = path.join(
     repoRoot,
     'docs/aimemory/shared/ai-shared.md',

@@ -49,7 +49,10 @@ class ConflictPrevention {
         await this.showCollaborationRules();
         break;
       case "lock":
-        await this.createFileLock();
+        await this.createFileLock(process.argv[3]);
+        if (process.argv.includes("--notify")) {
+          await this.notifyOtherAIs();
+        }
         break;
       case "unlock":
         await this.releaseFileLock();
@@ -361,6 +364,37 @@ class ConflictPrevention {
     console.log("• 如需協調，可創建鎖定: npm run conflict:lock\n");
   }
 
+  // <<<<<<< 新增：通知其他 AI >>>>>>>
+  async notifyOtherAIs() {
+    const lockPath = path.join(this.projectRoot, ".ai-lock.json");
+    if (!fs.existsSync(lockPath)) {
+      console.log("💡 沒有發現檔案鎖定，無需通知。");
+      return;
+    }
+
+    const lockInfo = JSON.parse(fs.readFileSync(lockPath, "utf8"));
+    const allAIs = ["claude", "codex", "gemini"];
+    const lockingAI = lockInfo.branch.split('-')[0];
+    const otherAIs = allAIs.filter(ai => ai !== lockingAI);
+
+    const notificationMessage = `\n---\n**🚨 自動化衝突警告 (${new Date().toISOString()}) 🚨**\n- **來源**: ${lockInfo.ai}\n- **訊息**: ${lockInfo.message}\n- **建議**: 在對方釋放鎖定 (執行 \`npm run conflict:unlock\]) 前，請避免修改高風險檔案。\n---\n`;
+
+    console.log(`\n📢 正在通知其他 AI...`);
+
+    for (const ai of otherAIs) {
+      const memoryFile = `docs/aimemory/${ai}/${ai}.md`;
+      const memoryPath = path.join(this.projectRoot, memoryFile);
+      if (fs.existsSync(memoryPath)) {
+        fs.appendFileSync(memoryPath, notificationMessage);
+        console.log(`   ✅ 已通知 ${ai} (更新於 ${memoryFile})`);
+      } else {
+        console.log(`   ⚠️  ${ai} 的記憶檔案不存在，無法通知。`);
+      }
+    }
+    console.log();
+  }
+  // <<<<<<< 新增結束 >>>>>>>
+
   async checkMemorySync() {
     // 檢查記憶檔案是否需要同步
     const memoryFiles = [
@@ -400,11 +434,12 @@ class ConflictPrevention {
 
   showUsage() {
     console.log("使用方式:\n");
-    console.log("npm run conflict:check      - 檢查當前變更風險");
-    console.log("npm run conflict:precommit  - 提交前安全檢查");
-    console.log("npm run conflict:rules      - 顯示協作規則");
-    console.log("npm run conflict:lock       - 創建檔案鎖定");
-    console.log("npm run conflict:unlock     - 釋放檔案鎖定\n");
+    console.log("npm run conflict:check                - 檢查當前變更風險 (會自動偵測鎖定)");
+    console.log("npm run conflict:precommit            - 提交前安全檢查");
+    console.log("npm run conflict:rules                - 顯示協作規則");
+    console.log("npm run conflict:lock [message]       - 創建檔案鎖定，可選填訊息");
+    console.log("npm run conflict:lock --notify [msg]  - 創建鎖定並通知其他 AI");
+    console.log("npm run conflict:unlock               - 釋放檔案鎖定\n");
   }
 }
 
