@@ -112,7 +112,17 @@ class ConflictPrevention {
 
     const issues = [];
 
-    // 1. 檢查建置是否成功
+    // 1. 檢查 Markdown 規範（快速失敗）
+    console.log("📝 檢查 Markdown 規範...");
+    try {
+      execSync("npm run content:lint:strict", { stdio: "pipe" });
+      console.log("✅ Markdown 檢查通過\n");
+    } catch {
+      console.log("❌ Markdown 檢查未通過\n");
+      issues.push("Markdown 規範未通過 (content/docs/aimemory)");
+    }
+
+    // 2. 檢查建置是否成功
     console.log("🔨 檢查建置狀態...");
     try {
       execSync("npm run build", { stdio: "pipe" });
@@ -122,7 +132,7 @@ class ConflictPrevention {
       issues.push("建置失敗，請修復後再提交");
     }
 
-    // 2. 檢查結構化資料
+    // 3. 檢查結構化資料
     console.log("📊 檢查結構化資料...");
     try {
       const output = execSync("npm run schema:validate", {
@@ -138,7 +148,7 @@ class ConflictPrevention {
       console.log("⚠️  結構化資料檢查失敗\n");
     }
 
-    // 3. 檢查高風險檔案
+    // 4. 檢查高風險檔案
     const modifiedFiles = this.getModifiedFiles();
     const highRiskModified = modifiedFiles.filter((file) =>
       this.highRiskFiles.some((riskFile) => file.includes(riskFile)),
@@ -152,7 +162,7 @@ class ConflictPrevention {
       console.log("   💡 建議通知其他 AI 協調\n");
     }
 
-    // 4. 檢查記憶檔案同步
+    // 5. 檢查記憶檔案同步
     if (modifiedFiles.some((file) => file.includes(".md"))) {
       console.log("📝 檢查記憶檔案同步...");
       const needsSync = await this.checkMemorySync();

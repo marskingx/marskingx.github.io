@@ -72,6 +72,8 @@
     "setup:quality": "npm install --save-dev eslint markdownlint-cli stylelint stylelint-config-standard stylelint-prettier",
     "lint": "eslint --fix .",
     "lint:md": "markdownlint **/*.md --fix",
+    "content:lint:strict": "markdownlint docs/aimemory/**/*.md content/**/*.md",
+    "md:fix:templog": "node ./scripts/md-fixer.js .claude-backups/README.md docs/aimemory/claude/claude.md .kiro/specs/ai-collaboration-guidelines/design.md .kiro/specs/ai-collaboration-guidelines/requirements.md .kiro/specs/dual-repository-release/requirements.md .kiro/specs/external-memory/requirements.md docs/aimemory/shared/ai-collaboration-announcement.md docs/aimemory/shared/hugo/hugo-integration-success-report.md docs/aimemory/shared/mission/spec-ai-collab-team-guide-v1.0.md docs/aimemory/shared/mission/spec-standard-release-and-sync-process.md docs/aimemory/gemini/gemini.md",
     "lint:css": "stylelint **/*.css **/*.scss --fix",
     "lint:all": "npm run lint && npm run lint:md && npm run lint:css",
     "release:start": "node ./scripts/release-manager.js start",

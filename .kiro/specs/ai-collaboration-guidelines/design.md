@@ -93,7 +93,7 @@ The system operates across two repositories:
 
 **Private Repository Structure**
 
-```
+```text
 private-repo/
 ├── AI_PROTOCOL.md          # Core AI collaboration rules
 ├── ai-configs/

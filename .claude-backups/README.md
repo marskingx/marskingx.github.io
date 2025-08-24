@@ -6,7 +6,7 @@ Claude Code 記憶系統基於標準的 `CLAUDE.md` 檔案，為 AI 助手提供
 
 ## 檔案結構
 
-```
+```text
 ├── CLAUDE.md                    # 主記憶檔案 (Claude Code 自動讀取)
 ├── .claude-backups/             # 備份目錄
 │   ├── README.md               # 本使用指南
@@ -58,9 +58,11 @@ npm run claude:status
 ### 記憶更新操作
 
 #### 使用互動式工具
+
 ```bash
 npm run claude:memory
 ```
+
 提供以下選項：
 - 新增開發指令
 - 新增解決方案  
@@ -83,6 +85,7 @@ npm run claude:memory
 - 備份檔案存放在 `.claude-backups/` 目錄
 
 #### 手動備份  
+
 ```bash
 # 建立當日備份
 npm run claude:backup

@@ -581,7 +581,20 @@ async function main() {
 
   switch (command) {
     case "commit": {
+      const flagIndex = args.indexOf('--lint-md');
+      const lintMd = flagIndex !== -1;
+      if (lintMd) args.splice(flagIndex, 1);
       const message = args.join(" ") || "feat: 智能提交更新";
+      if (lintMd) {
+        try {
+          manager.log('執行 Markdown 檢查 (--lint-md)', 'info');
+          manager.executeCommand('npm run content:lint:strict', { silent: false });
+          manager.log('Markdown 檢查通過', 'success');
+        } catch (e) {
+          manager.log('Markdown 檢查未通過，取消上版', 'error');
+          process.exit(1);
+        }
+      }
       await manager.smartCommit(message);
       break;
     }
@@ -592,7 +605,20 @@ async function main() {
     }
 
     case "release": {
+      const flagIndex = args.indexOf('--lint-md');
+      const lintMd = flagIndex !== -1;
+      if (lintMd) args.splice(flagIndex, 1);
       const releaseMessage = args.join(" ") || "feat: 智能發布更新";
+      if (lintMd) {
+        try {
+          manager.log('執行 Markdown 檢查 (--lint-md)', 'info');
+          manager.executeCommand('npm run content:lint:strict', { silent: false });
+          manager.log('Markdown 檢查通過', 'success');
+        } catch (e) {
+          manager.log('Markdown 檢查未通過，取消上版&佈署', 'error');
+          process.exit(1);
+        }
+      }
       await manager.smartRelease(releaseMessage);
       break;
     }

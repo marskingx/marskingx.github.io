@@ -504,6 +504,7 @@ npm run claude:status
 ### 📝 Coding Style 規範 (嚴格遵守)
 
 **JavaScript/Node.js**:
+
 ```javascript
 // ✅ 正確
 const imageOptimizer = new ImageOptimizer();
@@ -517,6 +518,7 @@ function ValidateStructuredData() {}
 ```
 
 **Hugo Templates**:
+
 ```go
 {{/* ✅ 正確 - 清晰的變數命名 */}}
 {{ $imageUrl := .Params.image }}
@@ -528,6 +530,7 @@ function ValidateStructuredData() {}
 ```
 
 **Commit Messages** (Conventional Commits):
+
 ```bash
 # ✅ 正確格式
 feat: 新增智能版本控制系統第5碼
@@ -595,7 +598,7 @@ update
 
 #### 📋 檔案結構
 
-```
+```text
 scripts/
 ├── smart-git-manager.js     # 智能 Git 管理系統
 ├── smart-git-pull.js        # 智能拉取與同步
@@ -681,7 +684,7 @@ npm run 下拉                 # 智能同步流程
 
 #### 📂 Worktree 配置
 
-```
+```text
 D:/marskingx.github.io           - [main] + [claude-dev]
 D:/marskingx-worktrees/codex-dev - [codex-dev]
 D:/marskingx-worktrees/gemini-dev - [gemini-dev]

@@ -143,7 +143,7 @@ npm run images:rebuild    # 重新建置所有圖片
 
 ### 成功建置數據
 
-```
+```text
 Hugo v0.148.2 建置結果:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
                 │ ZH-TW
@@ -201,7 +201,7 @@ Total in 2751 ms
 
 ### 核心技術棧
 
-```
+```text
 Hugo v0.148.2 Extended
 ├── 主題: Hugoplate v1.15.1
 ├── CSS: TailwindCSS + PostCSS
@@ -212,7 +212,7 @@ Hugo v0.148.2 Extended
 
 ### 自動化工作流程
 
-```
+```bash
 內容發布流程:
 1. 編輯 content/*.md →
 2. git push origin main →

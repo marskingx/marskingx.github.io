@@ -1,0 +1,8 @@
+.claude-backups/**
+docs/external-tools/**
+scripts/venv/**
+.idea/**
+.vscode/**
+themes.zip
+public/**
+resources/**
