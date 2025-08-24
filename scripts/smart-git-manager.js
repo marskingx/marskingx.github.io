@@ -212,8 +212,9 @@ class SmartGitManager {
       // 1. 先處理所有變更（暫存）
       this.executeCommand("git add .");
 
-      // 自動生成補充的提交內容摘要
-      const enhancedMessage = this.buildCommitMessage(message, changes);
+      // 使用已暫存內容建立更可靠的摘要
+      const staged = this.getStagedNameStatus(process.cwd());
+      const enhancedMessage = this.buildCommitMessage(message, changes, staged);
       this.executeCommand(`git commit -m "${enhancedMessage}"`);
 
       this.log("✓ 本地提交完成", "success");
@@ -222,10 +223,7 @@ class SmartGitManager {
         // bump log version
         this.executeCommand(`${process.execPath} scripts/version-manager.js log`, { silent: true });
         const version = this.readProjectVersion();
-        const fileList = [...changes.public, ...changes.private]
-          .map((c) => c.path)
-          .slice(0, 10)
-          .join(', ');
+        const topFiles = (staged.files || []).slice(0, 10).join(', ');
         const logCmd = [
           process.execPath,
           'scripts/aimemory-log-update.js',
@@ -234,8 +232,8 @@ class SmartGitManager {
           '--summary', message,
           '--no-bump',
         ];
-        if (fileList) {
-          logCmd.push('--files', fileList);
+        if (topFiles) {
+          logCmd.push('--files', topFiles);
         }
         if (version) {
           logCmd.push('--version', version);
@@ -405,7 +403,7 @@ class SmartGitManager {
   /**
    * 生成提交訊息摘要（含變更統計與檔案清單）
    */
-  buildCommitMessage(baseMessage, changes) {
+  buildCommitMessage(baseMessage, changes, staged = { lines: [], files: [], counts: {} }) {
     const msg = baseMessage && baseMessage.trim().length > 0 ? baseMessage.trim() : "feat: 智能提交更新";
     const summarize = (arr) => {
       const stat = { M: 0, A: 0, D: 0, R: 0, C: 0, Q: 0 };
@@ -424,6 +422,9 @@ class SmartGitManager {
     const pubStat = summarize(changes.public);
     const priStat = summarize(changes.private);
 
+    // 優先使用已暫存的準確檔案列表
+    const stageFiles = (staged.files || []).slice(0, 20);
+    // 後備：從 status 推估
     const top = (arr) => arr.map((c) => c.path).slice(0, 20);
     const pubFiles = top(changes.public);
     const priFiles = top(changes.private);
@@ -435,8 +436,12 @@ class SmartGitManager {
       `- Public: ${changes.public.length} (M:${pubStat.M} A:${pubStat.A} D:${pubStat.D})`,
       `- Private: ${changes.private.length} (M:${priStat.M} A:${priStat.A} D:${priStat.D})`,
     ];
-    if (pubFiles.length) lines.push(`- Files(public): ${pubFiles.join(", ")}`);
-    if (priFiles.length) lines.push(`- Files(private): ${priFiles.join(", ")}`);
+    if (stageFiles.length) {
+      lines.push(`- Files: ${stageFiles.join(", ")}`);
+    } else {
+      if (pubFiles.length) lines.push(`- Files(public): ${pubFiles.join(", ")}`);
+      if (priFiles.length) lines.push(`- Files(private): ${priFiles.join(", ")}`);
+    }
 
     // 附上目前 5 碼版本
     try {
@@ -445,6 +450,30 @@ class SmartGitManager {
     } catch {}
 
     return lines.join("\n");
+  }
+
+  /**
+   * 取得已暫存清單（name-status）
+   */
+  getStagedNameStatus(cwd) {
+    try {
+      const out = this.executeCommand('git diff --cached --name-status', { cwd, silent: true });
+      const lines = out.trim().split(/\n/).filter(Boolean);
+      const files = [];
+      const counts = { M: 0, A: 0, D: 0 };
+      lines.forEach((l) => {
+        const m = l.match(/^([MADRCU])\s+(.+)$/);
+        if (m) {
+          const code = m[1];
+          const file = m[2];
+          files.push(file);
+          if (counts[code] !== undefined) counts[code]++;
+        }
+      });
+      return { lines, files, counts };
+    } catch {
+      return { lines: [], files: [], counts: {} };
+    }
   }
 
   /**

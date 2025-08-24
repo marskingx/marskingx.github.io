@@ -96,8 +96,30 @@ class PrivateRepoHandler {
       this.executeCommand("git add .");
       this.log("已添加所有變更到暫存區");
 
+      // 產生更可靠的摘要（依據已暫存檔案）
+      let summary = "";
+      try {
+        const out = this.executeCommand('git diff --cached --name-status', { silent: true });
+        const lines = out.trim().split(/\n/).filter(Boolean);
+        const counts = { M: 0, A: 0, D: 0 };
+        const files = [];
+        lines.forEach((l) => {
+          const m = l.match(/^([MADRCU])\s+(.+)$/);
+          if (m) {
+            const code = m[1];
+            const file = m[2];
+            files.push(file);
+            if (counts[code] !== undefined) counts[code]++;
+          }
+        });
+        if (lines.length > 0) {
+          summary = `\n\n## Change Summary\n- Changes: ${lines.length} (M:${counts.M} A:${counts.A} D:${counts.D})`;
+          summary += files.length ? `\n- Files: ${files.slice(0,20).join(', ')}` : '';
+        }
+      } catch {}
+
       // 提交變更
-      const message = commitMessage || this.config.defaultCommitMessage;
+      const message = (commitMessage || this.config.defaultCommitMessage) + summary;
       this.executeCommand(`git commit -m "${message}"`);
       this.log(`已提交變更: ${message}`);
 
