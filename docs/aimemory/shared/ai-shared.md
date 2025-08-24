@@ -136,23 +136,33 @@ git push --force-with-lease origin [branch]
 
 ## 協作日誌 (Collaboration Log)
 
+### [2025-08-25 05:58] - Claude
+- 版本: v3.4.0.0.19
+- 任務: minor/AI上版
+- 摘要: feat: AI上版更新
+- 原因: 執行AI上版流程
+- 方法: 使用智能Git管理系統進行檔案分類和自動提交
+- 結果: 成功完成AI上版並更新協作日誌
+- 狀態: 已完成
+- 變更檔: docs/aimemory/shared/ai-shared.md
+
 ### [2025-08-25 05:57] - Claude
 - 版本: v3.4.0.0.18
-- 任務: content/智能提交
+- 任務: content/AI上版
 - 摘要: docs: 更新所有相關文檔，完善智能併版功能說明
-- 原因: 執行智能提交流程
+- 原因: 執行AI上版流程
 - 方法: 使用智能Git管理系統進行檔案分類和自動提交
-- 結果: 成功完成智能提交並更新協作日誌
+- 結果: 成功完成AI上版並更新協作日誌
 - 狀態: 已完成
 - 變更檔: docs/README.md, docs/aimemory/Automation-Tools-Manual.md, docs/aimemory/claude/claude.md, docs/aimemory/shared/ai-shared.md
 
 ### [2025-08-25 05:52] - Claude
 - 版本: v3.4.0.0.17
-- 任務: minor/智能提交
+- 任務: minor/AI上版
 - 摘要: feat: 新增智能併版系統，支援多種合併策略和自動衝突檢測
-- 原因: 執行智能提交流程
+- 原因: 執行AI上版流程
 - 方法: 使用智能Git管理系統進行檔案分類和自動提交
-- 結果: 成功完成智能提交並更新協作日誌
+- 結果: 成功完成AI上版並更新協作日誌
 - 狀態: 已完成
 - 變更檔: docs/aimemory/shared/ai-shared.md, docs/version-control/README.md, docs/version-control/commands.md, docs/version-control/examples.md, docs/version-control/workflow.md, package.json, scripts/smart-merge-manager.js
 
@@ -168,8 +178,8 @@ git push --force-with-lease origin [branch]
 
 ### [2025-08-25 04:49] - Claude
 - 版本: v3.4.0.0.14
-- 任務: log/: feat: 智能提交更新
-- 摘要: feat: 智能提交更新
+- 任務: log/: feat: AI上版更新
+- 摘要: feat: AI上版更新
 - 原因: 無
 - 方法: 無
 - 結果: 無
@@ -218,7 +228,7 @@ git push --force-with-lease origin [branch]
 
 ### [2025-08-24 23:10] - Codex
 - 版本: 無
-- 任務: log/智能提交
+- 任務: log/AI上版
 - 摘要: 無
 - 原因: 無
 - 方法: 無
@@ -228,7 +238,7 @@ git push --force-with-lease origin [branch]
 
 ### [2025-08-24 23:08] - Codex
 - 版本: 無
-- 任務: log/智能提交
+- 任務: log/AI上版
 - 摘要: 無
 - 原因: 無
 - 方法: 無
@@ -238,7 +248,7 @@ git push --force-with-lease origin [branch]
 
 ### [2025-08-24 23:04] - Codex
 - 版本: 無
-- 任務: log/智能提交
+- 任務: log/AI上版
 - 摘要: 無
 - 原因: 無
 - 方法: 無
@@ -248,7 +258,7 @@ git push --force-with-lease origin [branch]
 
 ### [2025-08-24 23:04] - Codex
 - 版本: 無
-- 任務: log/智能提交
+- 任務: log/AI上版
 - 摘要: 無
 - 原因: 無
 - 方法: 無
@@ -258,7 +268,7 @@ git push --force-with-lease origin [branch]
 
 ### [2025-08-24 23:03] - Codex
 - 版本: 無
-- 任務: log/智能提交
+- 任務: log/AI上版
 - 摘要: 無
 - 原因: 無
 - 方法: 無
@@ -268,7 +278,7 @@ git push --force-with-lease origin [branch]
 
 ### [2025-08-24 22:58] - Codex
 - 版本: 無
-- 任務: log/智能提交
+- 任務: log/AI上版
 - 摘要: 無
 - 原因: 無
 - 方法: 無
@@ -278,7 +288,7 @@ git push --force-with-lease origin [branch]
 
 ### [2025-08-24 22:58] - Codex
 - 版本: 無
-- 任務: log/智能提交
+- 任務: log/AI上版
 - 摘要: 無
 - 原因: 無
 - 方法: 無
@@ -288,7 +298,7 @@ git push --force-with-lease origin [branch]
 
 ### [2025-08-24 22:47] - Codex
 - 版本: 無
-- 任務: log/智能提交
+- 任務: log/AI上版
 - 摘要: 無
 - 原因: 無
 - 方法: 無
@@ -298,7 +308,7 @@ git push --force-with-lease origin [branch]
 
 ### [2025-08-24 21:44] - Codex
 - 版本: 無
-- 任務: log/智能提交
+- 任務: log/AI上版
 - 摘要: 無
 - 原因: 無
 - 方法: 無
@@ -308,7 +318,7 @@ git push --force-with-lease origin [branch]
 
 ### [2025-08-24 21:43] - Codex
 - 版本: 無
-- 任務: log/智能提交
+- 任務: log/AI上版
 - 摘要: 無
 - 原因: 無
 - 方法: 無
@@ -318,7 +328,7 @@ git push --force-with-lease origin [branch]
 
 ### [2025-08-22] - Gemini (UPDATE)
 - 版本: 無
-- 任務: log/智能提交
+- 任務: log/AI上版
 - 摘要: GSC BreadcrumbList - **根本原因分析與最終修復**
 - 原因: 初步修復方案（完全移除條件）不夠完整，會在列表頁面 (section/taxonomy pages) 上產生重複或空的 `ListItem`，這才是觸發 GSC 驗證失敗的根本原因。
 - 方法: 將 `breadcrumb-jsonld.html` 中的最後一個 `ListItem` 區塊用 `{{ if .IsPage }}` 條件包覆，確保該項目只在單一內容頁上產生，避免了在列表頁上的錯誤。
@@ -328,7 +338,7 @@ git push --force-with-lease origin [branch]
 
 ### [2025-08-22] - Gemini
 - 版本: 無
-- 任務: log/智能提交
+- 任務: log/AI上版
 - 摘要: 標籤頁面 (Taxonomy Page) SEO 優化實驗方法記錄
 - 原因: 無
 - 方法: **動態介紹文字**: 在 `themes/hugoplate/layouts/_default/taxonomy.html` 中，使用 `{{ .Description }}` 變數來顯示標籤頁面 `_index.md` 中定義的介紹文字。

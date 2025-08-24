@@ -50,25 +50,25 @@ class SmartGitManager {
     const statusOutput = this.executeCommand("git status --porcelain", { silent: true });
     const lines = statusOutput.trim().split("\n").filter(Boolean);
     const changes = { public: [], private: [], untracked: [] };
-    
+
     for (const line of lines) {
       if (line.length < 3) continue;
-      
+
       const status = line.substring(0, 2);
       const filePath = line.substring(3);
-      
+
       // 跳過空路徑或無效行
       if (!filePath || filePath.trim() === '') continue;
-      
+
       // 檢查是否有任何變更（包括已暫存和工作目錄變更）
       const hasChanges = status[0] !== ' ' || status[1] !== ' ';
       if (!hasChanges) continue;
-      
+
       if (this.isPrivateFile(filePath)) changes.private.push({ status, path: filePath });
       else changes.public.push({ status, path: filePath });
       if (status.includes("?")) changes.untracked.push({ status, path: filePath });
     }
-    
+
     this.log(`🔍 檢測結果: 公開 ${changes.public.length} 個, 私有 ${changes.private.length} 個, 未追蹤 ${changes.untracked.length} 個`, "info");
     return changes;
   }
@@ -118,7 +118,7 @@ class SmartGitManager {
           }
         }
 
-        const logTask = `${versionCategory}/智能提交`;
+        const logTask = `${versionCategory}/AI上版`;
 
         const logCmd = [
           process.execPath,
@@ -126,9 +126,9 @@ class SmartGitManager {
           '--agent', 'Claude',
           '--task', logTask,
           '--summary', message,
-          '--reason', '執行智能提交流程',
+          '--reason', '執行AI上版流程',
           '--method', '使用智能Git管理系統進行檔案分類和自動提交',
-          '--result', '成功完成智能提交並更新協作日誌',
+          '--result', '成功完成AI上版並更新協作日誌',
           '--status', '已完成',
           '--no-bump',
         ];
@@ -236,7 +236,7 @@ class SmartGitManager {
     this.log("🚀 開始智能發布流程", "info");
 
     try {
-      // 1. 智能提交
+      // 1. AI上版
       const commitResult = await this.smartCommit(message);
       if (!commitResult.success) {
         throw new Error("提交失敗");
@@ -268,9 +268,9 @@ class SmartGitManager {
   }
 
   buildCommitMessage(baseMessage, changes, staged = { lines: [], files: [], counts: {} }) {
-    const msg = baseMessage && baseMessage.trim().length > 0 ? baseMessage.trim() : "feat: 智能提交更新";
+    const msg = baseMessage && baseMessage.trim().length > 0 ? baseMessage.trim() : "feat: AI上版更新";
     const lines = [msg, "", "## Change Summary"];
-    
+
     const stageFiles = (staged.files || []).slice(0, 20);
     if (stageFiles.length) {
       lines.push(`- Files: ${stageFiles.join(", ")}`);
@@ -312,7 +312,7 @@ class SmartGitManager {
 🤖 智能 Git 管理系統
 
 使用方式:
-  node smart-git-manager.js commit [message]    # 智能提交
+  node smart-git-manager.js commit [message]    # AI上版
   node smart-git-manager.js push                # 智能推送
   node smart-git-manager.js release [message]   # 完整智能發布
   node smart-git-manager.js analyze             # 分析變更狀態
@@ -333,7 +333,7 @@ async function main() {
 
   switch (command) {
     case "commit": {
-      const message = args.join(" ") || "feat: 智能提交更新";
+      const message = args.join(" ") || "feat: AI上版更新";
       await manager.smartCommit(message);
       break;
     }

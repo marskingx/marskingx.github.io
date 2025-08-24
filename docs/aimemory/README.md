@@ -63,10 +63,10 @@ npm run memory:sync
 # 追加協作日誌到 shared/ai-shared.md（手動）
 npm run 記憶 -- --agent Codex --task "任務" --summary "摘要" --status done
 
-# 上版（智能提交）→ 會自動追加一筆協作日誌
+# 上版（AI上版）→ 會自動追加一筆協作日誌
 npm run 上版 -- "feat: 說明訊息"
 
-# 上版&佈署（智能提交+推送）→ 會自動追加一筆協作日誌
+# 上版&佈署（AI上版+推送）→ 會自動追加一筆協作日誌
 npm run 上版&佈署 -- "feat: 說明訊息"
 ```
 

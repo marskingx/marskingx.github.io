@@ -36,7 +36,7 @@
 # 查看當前版本
 npm run version:show
 
-# 智能提交 (僅本地)
+# AI上版 (僅本地)
 npm run 上版
 
 # 智能發布 (含部署)

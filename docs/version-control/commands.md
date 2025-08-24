@@ -9,11 +9,11 @@
 npm run version:show           # 顯示當前版本號 (5碼格式)
 ```
 
-### 智能提交 & 發布
+### AI上版 & 發布
 
 ```bash
 # 中文暗號指令
-npm run 上版                   # 智能提交 (本地)
+npm run 上版                   # AI上版 (本地)
 npm run 上版&佈署              # 智能發布 (含部署)  
 npm run 記憶                   # 記錄 AI 協作日誌
 npm run 下拉                   # 智能拉取更新
@@ -200,7 +200,7 @@ npm run memory:help            # 記憶管理說明
 ### 日常開發
 1. `npm run 下拉` - 拉取最新更新
 2. 進行開發工作  
-3. `npm run 上版` - 智能提交
+3. `npm run 上版` - AI上版
 4. `npm run 上版&佈署` - 發布部署
 
 ### AI 協作記錄

@@ -37,7 +37,7 @@
 
 ```bash
 # 中文暗號指令 (必須使用)
-npm run 上版                   # 智能提交 (僅本地)
+npm run 上版                   # AI上版 (僅本地)
 npm run 上版&佈署              # 智能發布 (含部署)
 npm run 記憶                   # 記錄AI協作日誌
 npm run 下拉                   # 智能拉取更新
@@ -498,7 +498,7 @@ npm run claude:status
 - AI協作記錄   → npm run 記憶 (自動遞增第5碼)
 
 智能發布:
-- npm run 上版     → 智能提交 (僅本地)
+- npm run 上版     → AI上版 (僅本地)
 - npm run 上版&佈署 → 智能發布 (含部署)
 - npm run 記憶     → AI協作日誌 (必須執行)
 ```
@@ -623,7 +623,7 @@ scripts/
 
 ```bash
 # 智能發布系統
-npm run 上版                  # 智能提交 (僅本地)
+npm run 上版                  # AI上版 (僅本地)
 npm run 上版&佈署             # 智能發布 (雙軌推送)
 npm run smart:commit          # 英文版：僅提交
 npm run smart:release         # 英文版：完整發布
