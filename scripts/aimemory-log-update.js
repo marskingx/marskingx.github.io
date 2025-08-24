@@ -7,6 +7,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 
 function parseArgs(argv) {
   const args = {};
@@ -115,6 +116,7 @@ async function main() {
   const date = args.date || dt.date;
   const time = args.time || dt.time;
   const files = normalizeList(args.files);
+  const noBump = !!args['no-bump'];
 
   if (!task && !summary) {
     usage();
@@ -141,6 +143,15 @@ async function main() {
 
   fs.writeFileSync(targetPath, updated, 'utf8');
   console.log('✅ 已追加協作日誌到 ai-shared.md');
+
+  // 自動遞增 5 碼版本的第 5 碼（協作日誌）
+  if (!noBump) {
+    try {
+      execSync(`${process.execPath} ${path.join(repoRoot, 'scripts/version-manager.js')} log`, { stdio: 'inherit' });
+    } catch (e) {
+      console.warn('⚠️ 無法自動更新日誌版本碼:', e.message);
+    }
+  }
 }
 
 main().catch((e) => {

@@ -214,8 +214,10 @@ class SmartGitManager {
       this.executeCommand(`git commit -m "${message}"`);
 
       this.log("✓ 本地提交完成", "success");
-      // 2. 追加協作日誌（Codex 自動）
+      // 2. 先遞增 5碼版本的第5碼（協作日誌），再追加協作日誌（Codex 自動）
       try {
+        // bump log version
+        this.executeCommand(`${process.execPath} scripts/version-manager.js log`, { silent: true });
         const version = this.readProjectVersion();
         const fileList = [...changes.public, ...changes.private]
           .map((c) => c.path)
@@ -227,6 +229,7 @@ class SmartGitManager {
           '--agent', 'Codex',
           '--task', '智能提交',
           '--summary', message,
+          '--no-bump',
         ];
         if (fileList) {
           logCmd.push('--files', fileList);

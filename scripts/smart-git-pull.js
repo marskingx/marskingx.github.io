@@ -287,7 +287,7 @@ class SmartGitPull {
     const expectedFiles = [
       "package.json",
       "hugo.toml",
-      "docs/aimemory/readme.md",
+      "docs/aimemory/README.md",
       ".kiro/steering/system-prompt.md",
     ];
 

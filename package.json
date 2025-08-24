@@ -41,6 +41,7 @@
     "version:patch": "node ./scripts/version-manager.js patch",
     "version:minor": "node ./scripts/version-manager.js minor",
     "version:major": "node ./scripts/version-manager.js major",
+    "version:log": "node ./scripts/version-manager.js log",
     "version:show": "node ./scripts/version-manager.js show",
     "version:changelog": "node ./scripts/version-manager.js changelog",
     "push": "git push origin main",
