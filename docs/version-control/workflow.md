@@ -38,7 +38,7 @@ npm run conflict:check
 
 #### 3. 提交發布
 ```bash
-# AI上版 (僅本地)
+# AI版控 (僅本地)
 npm run 上版
 
 # 智能發布 (含部署)
@@ -77,7 +77,7 @@ cd D:/marskingx.github.io
 # 日常工作
 npm run 下拉              # 拉取更新
 # ... 進行開發 ...
-npm run 上版              # AI上版
+npm run 上版              # AI版控
 npm run 上版&佈署          # 發布部署
 npm run 記憶              # 記錄日誌
 ```

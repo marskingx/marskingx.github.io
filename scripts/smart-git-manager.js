@@ -118,7 +118,7 @@ class SmartGitManager {
           }
         }
 
-        const logTask = `${versionCategory}/AI上版`;
+        const logTask = `${versionCategory}/AI版控`;
 
         const logCmd = [
           process.execPath,
@@ -126,9 +126,9 @@ class SmartGitManager {
           '--agent', 'Claude',
           '--task', logTask,
           '--summary', message,
-          '--reason', '執行AI上版流程',
+          '--reason', '執行AI版控流程',
           '--method', '使用智能Git管理系統進行檔案分類和自動提交',
-          '--result', '成功完成AI上版並更新協作日誌',
+          '--result', '成功完成AI版控並更新協作日誌',
           '--status', '已完成',
           '--no-bump',
         ];
@@ -236,7 +236,7 @@ class SmartGitManager {
     this.log("🚀 開始智能發布流程", "info");
 
     try {
-      // 1. AI上版
+      // 1. AI版控
       const commitResult = await this.smartCommit(message);
       if (!commitResult.success) {
         throw new Error("提交失敗");
@@ -268,7 +268,7 @@ class SmartGitManager {
   }
 
   buildCommitMessage(baseMessage, changes, staged = { lines: [], files: [], counts: {} }) {
-    const msg = baseMessage && baseMessage.trim().length > 0 ? baseMessage.trim() : "feat: AI上版更新";
+    const msg = baseMessage && baseMessage.trim().length > 0 ? baseMessage.trim() : "feat: AI版控更新";
     const lines = [msg, "", "## Change Summary"];
 
     const stageFiles = (staged.files || []).slice(0, 20);
@@ -312,7 +312,7 @@ class SmartGitManager {
 🤖 智能 Git 管理系統
 
 使用方式:
-  node smart-git-manager.js commit [message]    # AI上版
+  node smart-git-manager.js commit [message]    # AI版控
   node smart-git-manager.js push                # 智能推送
   node smart-git-manager.js release [message]   # 完整智能發布
   node smart-git-manager.js analyze             # 分析變更狀態
@@ -333,7 +333,7 @@ async function main() {
 
   switch (command) {
     case "commit": {
-      const message = args.join(" ") || "feat: AI上版更新";
+      const message = args.join(" ") || "feat: AI版控更新";
       await manager.smartCommit(message);
       break;
     }

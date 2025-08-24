@@ -38,7 +38,7 @@ npm run test:system
 # ✅ 代碼品質工具測試 - 通過
 # ⚠️  Git Hooks 設定檢查 - 失敗 (缺少 hooks 檔案)
 
-# 5. AI上版
+# 5. AI版控
 npm run 上版
 
 # 輸出範例:
@@ -47,7 +47,7 @@ npm run 上版
 # 📁 公有檔案: 15 個 (content/, layouts/, static/)
 # 🔒 私有檔案: 3 個 (.idea/, docs/aimemory/)  
 # 📝 提交訊息: feat: 新增智能搜尋功能
-# ✅ AI上版完成
+# ✅ AI版控完成
 
 # 6. 發布部署
 npm run 上版&佈署
