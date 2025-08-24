@@ -1,0 +1,34 @@
+######################## default configuration ####################
+# The base URL of your site (required). This will be prepended to all relative URLs.
+baseURL = "https://lazytoberich.com.tw/"
+# Title of your website (required).
+title = "懶得變有錢 | 帶你了解財務規劃本質 鑑定自己的財務DNA"
+# Your theme name
+theme = "hugoplate"
+# Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
+timeZone = "Asia/Taipei"
+# post pagination
+[pagination]
+pagerSize = 120
+# post excerpt
+summaryLength = 0 # see https://gohugo.io/content-management/excerpts/
+# 單語言模式 - 只使用繁體中文
+hasCJKLanguage = true #  If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
+
+# 語言配置 - 必須在 defaultContentLanguage 之前定義
+[languages]
+[languages.zh-tw]
+languageName = "繁體中文"
+languageCode = 'zh-tw'
+weight = 1
+
+# 預設語言設定 - 必須在 languages 之後定義
+defaultContentLanguage = 'zh-tw'
+
+########################### Services #############################
+[services]
+[services.googleAnalytics]
+ID = 'G-03PSTN4ES1' # see https://gohugo.io/templates/internal/#configure-google-analytics
+
+[services.disqus]
+shortname = 'themefisher-template' # we use disqus to show comments in blog posts . To install disqus please follow this tutorial https://portfolio.peter-baumgartner.net/2017/09/10/how-to-install-disqus-on-hugo/

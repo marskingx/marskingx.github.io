@@ -1,0 +1,15 @@
+file_paths:
+  blog_directory: "D:/marskingx.github.io/content/blog"
+  reading_list: "D:/marskingx.github.io/content/pages/reading_list.md"
+
+default_values:
+  author: "懶大"
+  draft: "false"
+
+promotion_links:
+  books:
+    base_url: "https://www.books.com.tw/exep/assp.php/shamangels/products/"
+    params: "utm_source=shamangels&utm_medium=ap-books&utm_content=recommend&utm_campaign=ap-"
+  momo:
+    base_url: "https://www.momoshop.com.tw/goods/GoodsDetail.jsp"
+    params: "memid=6000021729&cid=apuad&oid=1&osm=league"

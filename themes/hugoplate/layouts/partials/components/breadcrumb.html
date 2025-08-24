@@ -10,7 +10,7 @@
     </li>
     
     <!-- Category (for blog posts) -->
-    {{ if .Params.categories }}
+    {{ if gt (len .Params.categories) 0 }}
       <li class="before:px-2 before:content-['>']" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
         {{ $category := index .Params.categories 0 }}
         <a class="hover:text-primary dark:hover:text-darkmode-primary" itemprop="item" href="{{ `categories/` | relLangURL }}{{ $category | urlize | lower }}/">
@@ -26,7 +26,7 @@
         <a class="hover:text-primary dark:hover:text-darkmode-primary" itemprop="item" href="{{ printf "/%s/" .Section | relLangURL }}">
           <span itemprop="name">{{ .Section | humanize }}</span>
         </a>
-        <meta itemprop="position" content="{{ if .Params.categories }}3{{ else }}2{{ end }}" />
+        <meta itemprop="position" content="{{ if gt (len .Params.categories) 0 }}3{{ else }}2{{ end }}" />
       </li>
     {{ end }}
     
@@ -39,7 +39,7 @@
           <span itemprop="name">{{ .Title }}</span>
         </a>
       {{ end }}
-      <meta itemprop="position" content="{{ if and .Params.categories .Section }}4{{ else if or .Params.categories .Section }}3{{ else }}2{{ end }}" />
+      <meta itemprop="position" content="{{ if and (gt (len .Params.categories) 0) .Section }}4{{ else if or (gt (len .Params.categories) 0) .Section }}3{{ else }}2{{ end }}" />
     </li>
   </ol>
 </nav>

@@ -1,0 +1,116 @@
+2024-07-20 06:53:28,212 - INFO - 使用目錄路徑: D:\marskingx.github.io\content\blog
+2024-07-20 06:53:28,213 - INFO - 最近更新的 10 個 Markdown 檔案：
+2024-07-20 06:53:28,213 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 06:53:28,213 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
+2024-07-20 06:53:28,213 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
+2024-07-20 06:53:28,213 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
+2024-07-20 06:53:28,214 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 06:53:28,214 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
+2024-07-20 06:53:28,214 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
+2024-07-20 06:53:28,214 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
+2024-07-20 06:53:28,214 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
+2024-07-20 06:53:28,214 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
+2024-07-20 06:53:41,406 - INFO - 使用目錄路徑: D:\marskingx.github.io\content\blog
+2024-07-20 06:53:41,407 - INFO - 最近更新的 10 個 Markdown 檔案：
+2024-07-20 06:53:41,407 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 06:53:41,407 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
+2024-07-20 06:53:41,407 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
+2024-07-20 06:53:41,408 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
+2024-07-20 06:53:41,408 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 06:53:41,408 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
+2024-07-20 06:53:41,408 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
+2024-07-20 06:53:41,408 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
+2024-07-20 06:53:41,408 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
+2024-07-20 06:53:41,408 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
+2024-07-20 06:53:43,204 - INFO - 選擇的文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 06:53:43,204 - INFO - 檔案類型為: 讀書心得
+2024-07-20 06:53:43,204 - INFO - 準備執行腳本: D:\marskingx.github.io\reindex\books_review_reindex.py
+2024-07-20 06:53:43,205 - INFO - 正在執行命令: python D:\marskingx.github.io\reindex\books_review_reindex.py D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md D:\marskingx.github.io\content\pages\reading_list.md
+2024-07-20 06:56:14,245 - INFO - 使用目錄路徑: D:\marskingx.github.io\content\blog
+2024-07-20 06:56:14,247 - INFO - 最近更新的 10 個 Markdown 檔案：
+2024-07-20 06:56:14,247 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 06:56:14,247 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
+2024-07-20 06:56:14,247 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
+2024-07-20 06:56:14,247 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
+2024-07-20 06:56:14,247 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 06:56:14,247 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
+2024-07-20 06:56:14,247 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
+2024-07-20 06:56:14,247 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
+2024-07-20 06:56:14,247 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
+2024-07-20 06:56:14,247 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
+2024-07-20 06:56:16,968 - INFO - 使用目錄路徑: D:\marskingx.github.io\content\blog
+2024-07-20 06:56:16,969 - INFO - 最近更新的 10 個 Markdown 檔案：
+2024-07-20 06:56:16,969 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 06:56:16,969 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
+2024-07-20 06:56:16,970 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
+2024-07-20 06:56:16,970 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
+2024-07-20 06:56:16,970 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 06:56:16,970 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
+2024-07-20 06:56:16,970 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
+2024-07-20 06:56:16,970 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
+2024-07-20 06:56:16,970 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
+2024-07-20 06:56:16,970 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
+2024-07-20 06:56:19,165 - INFO - 選擇的文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 06:56:19,166 - INFO - 檔案類型為: 讀書心得
+2024-07-20 06:56:19,166 - INFO - 準備執行腳本: D:\marskingx.github.io\reindex\books_review_reindex.py
+2024-07-20 06:56:19,166 - INFO - 正在執行命令: python D:\marskingx.github.io\reindex\books_review_reindex.py D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md D:\marskingx.github.io\content\pages\reading_list.md
+2024-07-20 07:01:08,770 - INFO - 使用目錄路徑: D:\marskingx.github.io\content\blog
+2024-07-20 07:01:08,771 - INFO - 最近更新的 10 個 Markdown 檔案：
+2024-07-20 07:01:08,771 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 07:01:08,771 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
+2024-07-20 07:01:08,771 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
+2024-07-20 07:01:08,771 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
+2024-07-20 07:01:08,771 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 07:01:08,771 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
+2024-07-20 07:01:08,771 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
+2024-07-20 07:01:08,771 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
+2024-07-20 07:01:08,771 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
+2024-07-20 07:01:08,771 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
+2024-07-20 07:01:10,672 - INFO - 選擇的文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 07:01:10,673 - INFO - 檔案類型為: 讀書心得
+2024-07-20 07:01:10,673 - INFO - 準備執行腳本: D:\marskingx.github.io\reindex\books_review_reindex.py
+2024-07-20 07:01:10,673 - INFO - 正在執行命令: python D:\marskingx.github.io\reindex\books_review_reindex.py D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md D:\marskingx.github.io\content\pages\reading_list.md
+2024-07-20 07:01:17,840 - INFO - 使用目錄路徑: D:\marskingx.github.io\content\blog
+2024-07-20 07:01:17,842 - INFO - 最近更新的 10 個 Markdown 檔案：
+2024-07-20 07:01:17,842 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 07:01:17,842 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
+2024-07-20 07:01:17,842 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
+2024-07-20 07:01:17,842 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
+2024-07-20 07:01:17,842 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 07:01:17,842 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
+2024-07-20 07:01:17,842 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
+2024-07-20 07:01:17,842 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
+2024-07-20 07:01:17,842 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
+2024-07-20 07:01:17,842 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
+2024-07-20 07:01:23,256 - INFO - 使用目錄路徑: D:\marskingx.github.io\content\blog
+2024-07-20 07:01:23,257 - INFO - 最近更新的 10 個 Markdown 檔案：
+2024-07-20 07:01:23,258 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 07:01:23,258 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
+2024-07-20 07:01:23,258 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
+2024-07-20 07:01:23,258 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
+2024-07-20 07:01:23,258 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 07:01:23,258 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
+2024-07-20 07:01:23,258 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
+2024-07-20 07:01:23,258 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
+2024-07-20 07:01:23,258 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
+2024-07-20 07:01:23,258 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
+2024-07-20 07:01:25,418 - INFO - 選擇的文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 07:01:25,419 - INFO - 檔案類型為: [讀書心得]
+2024-07-20 07:01:25,419 - ERROR - 未知的類型: [讀書心得]
+2024-07-20 07:01:25,419 - INFO - 主程序執行完成
+2024-07-20 07:01:39,055 - INFO - 使用目錄路徑: D:\marskingx.github.io\content\blog
+2024-07-20 07:01:39,057 - INFO - 最近更新的 10 個 Markdown 檔案：
+2024-07-20 07:01:39,057 - INFO - 1. D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 07:01:39,057 - INFO - 2. D:\marskingx.github.io\content\blog\2024-07-17【EP22】讓小孩有空間也讓自己學會珍惜時間，接著就取得3個財富自由的條件.md
+2024-07-20 07:01:39,057 - INFO - 3. D:\marskingx.github.io\content\blog\2024-07-01【理財】3種自由都取得，才是真的財富自由：財務、時間、精神.md
+2024-07-20 07:01:39,057 - INFO - 4. D:\marskingx.github.io\content\blog\2024-07-10【EP21】用《原子習慣》來建立存錢的習慣，學會花錢就會存錢了! .md
+2024-07-20 07:01:39,057 - INFO - 5. D:\marskingx.github.io\content\blog\2023-10-25【嗑書】《窮查理的普通常識》讀書心得.md
+2024-07-20 07:01:39,058 - INFO - 6. D:\marskingx.github.io\content\blog\2023-10-17【EP4】有一間銀行每天都給你1440，不管你有沒有花完，隔天都還會幫你補滿1440!.md
+2024-07-20 07:01:39,058 - INFO - 7. D:\marskingx.github.io\content\blog\2023-10-16【投資】月配息夯成這樣!真的月配息損失可能現在沒感覺!長期損失可大了!.md
+2024-07-20 07:01:39,058 - INFO - 8. D:\marskingx.github.io\content\blog\2023-10-15【理財】新手理財要注意的7件事.md
+2024-07-20 07:01:39,058 - INFO - 9. D:\marskingx.github.io\content\blog\2023-10-11【職涯】這個世代的生活必需是網路!下個世代可能是ai.md
+2024-07-20 07:01:39,058 - INFO - 10. D:\marskingx.github.io\content\blog\2023-10-10【EP3】半夜睡不著覺!把鍵盤敲一敲!只好再把麥克風拿出來錄一錄.md
+2024-07-20 07:01:41,336 - INFO - 選擇的文件: D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md
+2024-07-20 07:01:41,337 - INFO - 檔案類型為: 讀書心得
+2024-07-20 07:01:41,338 - INFO - 準備執行腳本: D:\marskingx.github.io\reindex\books_review_reindex.py
+2024-07-20 07:01:41,338 - INFO - 正在執行命令: python D:\marskingx.github.io\reindex\books_review_reindex.py D:\marskingx.github.io\content\blog\2024-07-20【嗑書】《給孩子的商業啟蒙》讀書心得.md D:\marskingx.github.io\content\pages\reading_list.md

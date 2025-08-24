@@ -1,0 +1,58 @@
+2024-07-20 16:54:08 - INFO - 開始搜索關鍵字: 上台的技術
+2024-07-20 16:54:08 - DEBUG - Selenium Manager binary found at: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+2024-07-20 16:54:08 - DEBUG - Executing process: C:\Users\Mars\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+2024-07-20 16:54:08 - DEBUG - chromedriver not found in PATH
+2024-07-20 16:54:08 - DEBUG - chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+2024-07-20 16:54:08 - DEBUG - Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+2024-07-20 16:54:08 - DEBUG - Output: ""
+2024-07-20 16:54:08 - DEBUG - Running command: REG QUERY HKCU\Software\Google\Chrome\BLBeacon /v version
+2024-07-20 16:54:08 - DEBUG - Output: ""
+2024-07-20 16:54:08 - DEBUG - chrome not found in the system
+2024-07-20 16:54:08 - DEBUG - Required browser: chrome 126.0.6478.182
+2024-07-20 16:54:08 - DEBUG - chrome 126.0.6478.182 already exists
+2024-07-20 16:54:08 - DEBUG - chrome 126.0.6478.182 is available at C:\Users\Mars\.cache\selenium\chrome\win64\126.0.6478.182\chrome.exe
+2024-07-20 16:54:08 - DEBUG - Required driver: chromedriver 126.0.6478.182
+2024-07-20 16:54:08 - DEBUG - chromedriver 126.0.6478.182 already in the cache
+2024-07-20 16:54:08 - DEBUG - Driver path: C:\Users\Mars\.cache\selenium\chromedriver\win64\126.0.6478.182\chromedriver.exe
+2024-07-20 16:54:08 - DEBUG - Browser path: C:\Users\Mars\.cache\selenium\chrome\win64\126.0.6478.182\chrome.exe
+2024-07-20 16:54:08 - DEBUG - Started executable: `C:\Users\Mars\.cache\selenium\chromedriver\win64\126.0.6478.182\chromedriver.exe` in a child process with pid: 52588 using 0 to output -3
+2024-07-20 16:54:08 - DEBUG - POST http://localhost:62370/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': 'C:\\Users\\Mars\\.cache\\selenium\\chrome\\win64\\126.0.6478.182\\chrome.exe', 'args': ['--headless', '--disable-gpu', '--no-sandbox', '--disable-dev-shm-usage', 'user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36']}}}}
+2024-07-20 16:54:08 - DEBUG - Starting new HTTP connection (1): localhost:62370
+2024-07-20 16:54:09 - DEBUG - http://localhost:62370 "POST /session HTTP/1.1" 200 897
+2024-07-20 16:54:09 - DEBUG - Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome-headless-shell","browserVersion":"126.0.6478.182","chrome":{"chromedriverVersion":"126.0.6478.182 (5b5d8292ddf182f8b2096fa665b473b6317906d5-refs/branch-heads/6478@{#1776})","userDataDir":"C:\\Users\\Mars\\AppData\\Local\\Temp\\scoped_dir52588_492290973"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:62373"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"9caad417d55adaa997a8e4415e5ef690"}} | headers=HTTPHeaderDict({'Content-Length': '897', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 16:54:09 - DEBUG - Finished Request
+2024-07-20 16:54:09 - DEBUG - POST http://localhost:62370/session/9caad417d55adaa997a8e4415e5ef690/timeouts {'pageLoad': 30000}
+2024-07-20 16:54:09 - DEBUG - http://localhost:62370 "POST /session/9caad417d55adaa997a8e4415e5ef690/timeouts HTTP/1.1" 200 14
+2024-07-20 16:54:09 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 16:54:09 - DEBUG - Finished Request
+2024-07-20 16:54:09 - DEBUG - 初始化 WebDriver 完成
+2024-07-20 16:54:09 - DEBUG - 開始搜索關鍵字: 上台的技術
+2024-07-20 16:54:09 - DEBUG - POST http://localhost:62370/session/9caad417d55adaa997a8e4415e5ef690/url {'url': 'https://www.momoshop.com.tw/search/searchShop.jsp?keyword=上台的技術&searchType=1&curPage=1&showType=ches...'}
+2024-07-20 16:54:11 - DEBUG - http://localhost:62370 "POST /session/9caad417d55adaa997a8e4415e5ef690/url HTTP/1.1" 200 14
+2024-07-20 16:54:11 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 16:54:11 - DEBUG - Finished Request
+2024-07-20 16:54:11 - DEBUG - POST http://localhost:62370/session/9caad417d55adaa997a8e4415e5ef690/element {'using': 'css selector', 'value': 'li[gcode]'}
+2024-07-20 16:54:11 - DEBUG - http://localhost:62370 "POST /session/9caad417d55adaa997a8e4415e5ef690/element HTTP/1.1" 200 126
+2024-07-20 16:54:11 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.2BE6773A10DCED31647112951DDB8A05.d.21E755082178065E0725A669613309A2.e.32"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 16:54:11 - DEBUG - Finished Request
+2024-07-20 16:54:11 - DEBUG - POST http://localhost:62370/session/9caad417d55adaa997a8e4415e5ef690/elements {'using': 'css selector', 'value': 'li[gcode]'}
+2024-07-20 16:54:11 - DEBUG - http://localhost:62370 "POST /session/9caad417d55adaa997a8e4415e5ef690/elements HTTP/1.1" 200 128
+2024-07-20 16:54:11 - DEBUG - Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"f.2BE6773A10DCED31647112951DDB8A05.d.21E755082178065E0725A669613309A2.e.32"}]} | headers=HTTPHeaderDict({'Content-Length': '128', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 16:54:11 - DEBUG - Finished Request
+2024-07-20 16:54:11 - DEBUG - POST http://localhost:62370/session/9caad417d55adaa997a8e4415e5ef690/execute/sync {'script': '/* getAttribute */return (function(){return (function(){var d=this||self;function f(a,b){function c(...', 'args': [{'element-6066-11e4-a52e-4f735466cecf': 'f.2BE6773A10DCED31647112951DDB8A05.d.21E755082178065E0725A669613309A2.e.32'}, 'gcode']}
+2024-07-20 16:54:11 - DEBUG - http://localhost:62370 "POST /session/9caad417d55adaa997a8e4415e5ef690/execute/sync HTTP/1.1" 200 20
+2024-07-20 16:54:11 - DEBUG - Remote response: status=200 | data={"value":"12405825"} | headers=HTTPHeaderDict({'Content-Length': '20', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 16:54:11 - DEBUG - Finished Request
+2024-07-20 16:54:11 - DEBUG - POST http://localhost:62370/session/9caad417d55adaa997a8e4415e5ef690/element/f.2BE6773A10DCED31647112951DDB8A05.d.21E755082178065E0725A669613309A2.e.32/element {'using': 'css selector', 'value': '.prdName'}
+2024-07-20 16:54:11 - DEBUG - http://localhost:62370 "POST /session/9caad417d55adaa997a8e4415e5ef690/element/f.2BE6773A10DCED31647112951DDB8A05.d.21E755082178065E0725A669613309A2.e.32/element HTTP/1.1" 200 126
+2024-07-20 16:54:11 - DEBUG - Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.2BE6773A10DCED31647112951DDB8A05.d.21E755082178065E0725A669613309A2.e.33"}} | headers=HTTPHeaderDict({'Content-Length': '126', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 16:54:11 - DEBUG - Finished Request
+2024-07-20 16:54:11 - DEBUG - GET http://localhost:62370/session/9caad417d55adaa997a8e4415e5ef690/element/f.2BE6773A10DCED31647112951DDB8A05.d.21E755082178065E0725A669613309A2.e.33/text {}
+2024-07-20 16:54:11 - DEBUG - http://localhost:62370 "GET /session/9caad417d55adaa997a8e4415e5ef690/element/f.2BE6773A10DCED31647112951DDB8A05.d.21E755082178065E0725A669613309A2.e.33/text HTTP/1.1" 200 152
+2024-07-20 16:54:11 - DEBUG - Remote response: status=200 | data={"value":"【MyBook】線上即戰場！突破時代困境的遠距溝通術：內容設計、說話技巧……專業講師教你發揮實(電子書)"} | headers=HTTPHeaderDict({'Content-Length': '152', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 16:54:11 - DEBUG - Finished Request
+2024-07-20 16:54:11 - DEBUG - 找到書籍 1: 【MyBook】線上即戰場！突破時代困境的遠距溝通術：內容設計、說話技巧……專業講師教你發揮實(電子書)
+2024-07-20 16:54:11 - DEBUG - DELETE http://localhost:62370/session/9caad417d55adaa997a8e4415e5ef690 {}
+2024-07-20 16:54:11 - DEBUG - http://localhost:62370 "DELETE /session/9caad417d55adaa997a8e4415e5ef690 HTTP/1.1" 200 14
+2024-07-20 16:54:11 - DEBUG - Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-07-20 16:54:11 - DEBUG - Finished Request

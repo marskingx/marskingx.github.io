@@ -1,0 +1,53 @@
+{
+  "summary": {
+    "totalTests": 7,
+    "passedTests": 6,
+    "failedTests": 1,
+    "successRate": "85.71%",
+    "timestamp": "2025-08-24T12:23:55.776Z"
+  },
+  "results": [
+    {
+      "name": "核心檔案存在性檢查",
+      "passed": true,
+      "details": "",
+      "timestamp": "2025-08-24T12:23:54.435Z"
+    },
+    {
+      "name": "Git Hooks 設定檢查",
+      "passed": false,
+      "details": "缺少 hooks 檔案",
+      "timestamp": "2025-08-24T12:23:54.436Z"
+    },
+    {
+      "name": "npm scripts 可用性檢查",
+      "passed": true,
+      "details": "",
+      "timestamp": "2025-08-24T12:23:54.436Z"
+    },
+    {
+      "name": "代碼品質工具安裝檢查",
+      "passed": true,
+      "details": "",
+      "timestamp": "2025-08-24T12:23:54.436Z"
+    },
+    {
+      "name": "私有儲存庫連接檢查",
+      "passed": true,
+      "details": "",
+      "timestamp": "2025-08-24T12:23:54.807Z"
+    },
+    {
+      "name": "Conventional Commits 驗證測試",
+      "passed": true,
+      "details": "",
+      "timestamp": "2025-08-24T12:23:54.808Z"
+    },
+    {
+      "name": "代碼品質檢查工具測試",
+      "passed": true,
+      "details": "",
+      "timestamp": "2025-08-24T12:23:55.776Z"
+    }
+  ]
+}
