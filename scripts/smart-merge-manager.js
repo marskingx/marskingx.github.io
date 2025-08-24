@@ -73,13 +73,8 @@ class SmartMergeManager {
         
         try {
           // 檢查分支是否領先主分支
-          const aheadBehind = this.executeCommand(
-            `git rev-list --count --left-right ${currentBranch}...origin/${branch}`, 
-            { silent: true }
-          ).trim().split('\t');
-          
-          const behind = parseInt(aheadBehind[0]) || 0;
-          const ahead = parseInt(aheadBehind[1]) || 0;
+          const ahead = parseInt(this.executeCommand(`git rev-list --count ${currentBranch}..origin/${branch}`, { silent: true }).trim()) || 0;
+          const behind = parseInt(this.executeCommand(`git rev-list --count origin/${branch}..${currentBranch}`, { silent: true }).trim()) || 0;
           
           if (ahead > 0 || behind > 0) {
             branchAnalysis[branch] = { ahead, behind };
