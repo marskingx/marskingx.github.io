@@ -36,11 +36,11 @@ class SystemTester {
         ...options,
       });
       return { success: true, output: result };
-    } catch (error) {
+    } catch (_error) {
       return {
         success: false,
-        error: error.message,
-        output: error.stdout || error.stderr || "",
+        error: _error.message,
+        output: _error.stdout || _error.stderr || "",
       };
     }
   }
@@ -74,11 +74,11 @@ class SystemTester {
       "scripts/release-manager.js",
       "scripts/private-repo-handler.js",
       "scripts/git-hooks-setup.js",
-      "CLAUDE.md",
+      "docs/aimemory/claude/claude.md",
     ];
 
     let allFilesExist = true;
-    let missingFiles = [];
+    const missingFiles = [];
 
     for (const file of requiredFiles) {
       const filePath = path.join(__dirname, "..", file);
@@ -117,7 +117,7 @@ class SystemTester {
         executableChecks =
           commitMsgContent.includes("commit_regex") &&
           preCommitContent.includes("代碼品質檢查");
-      } catch (error) {
+      } catch {
         executableChecks = false;
       }
     }
@@ -154,7 +154,7 @@ class SystemTester {
     ];
 
     let allScriptsExist = true;
-    let missingScripts = [];
+    const missingScripts = [];
 
     for (const script of requiredScripts) {
       if (!packageJson.scripts[script]) {
@@ -190,7 +190,7 @@ class SystemTester {
     ];
 
     let allToolsInstalled = true;
-    let missingTools = [];
+    const missingTools = [];
 
     for (const tool of requiredDevDeps) {
       if (!packageJson.devDependencies[tool]) {
@@ -243,9 +243,9 @@ class SystemTester {
             details = "memory:status 輸出格式異常";
           }
         }
-      } catch (error) {
+      } catch (_error) {
         passed = false;
-        details = `無法解析 memory:status 輸出: ${error.message}`;
+        details = `無法解析 memory:status 輸出: ${_error.message}`;
       }
     }
 
@@ -270,7 +270,7 @@ class SystemTester {
     ];
 
     let allTestsPassed = true;
-    let failedCases = [];
+    const failedCases = [];
 
     for (const testCase of testCases) {
       const result = validateCommitMessage(testCase.message);
@@ -322,7 +322,7 @@ class SystemTester {
       );
 
       return eslintWorking;
-    } catch (error) {
+    } catch (_error) {
       // 清理測試檔案
       if (fs.existsSync(testJsFile)) {
         fs.unlinkSync(testJsFile);
@@ -331,7 +331,7 @@ class SystemTester {
       this.addTestResult(
         "代碼品質檢查工具測試",
         false,
-        `測試執行失敗: ${error.message}`,
+        `測試執行失敗: ${_error.message}`,
       );
 
       return false;

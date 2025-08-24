@@ -4,14 +4,14 @@ const themePath = path.join(__dirname, "data/theme.json");
 const themeRead = fs.readFileSync(themePath, "utf8");
 const theme = JSON.parse(themeRead);
 
-let font_base = Number(theme.fonts.font_size.base.replace("px", ""));
-let font_scale = Number(theme.fonts.font_size.scale);
-let h6 = font_scale;
-let h5 = h6 * font_scale;
-let h4 = h5 * font_scale;
-let h3 = h4 * font_scale;
-let h2 = h3 * font_scale;
-let h1 = h2 * font_scale;
+const font_base = Number(theme.fonts.font_size.base.replace("px", ""));
+const font_scale = Number(theme.fonts.font_size.scale);
+const h6 = font_scale;
+const h5 = h6 * font_scale;
+const h4 = h5 * font_scale;
+const h3 = h4 * font_scale;
+const h2 = h3 * font_scale;
+const h1 = h2 * font_scale;
 let fontPrimary, fontPrimaryType, fontSecondary, fontSecondaryType;
 if (theme.fonts.font_family.primary) {
   fontPrimary = theme.fonts.font_family.primary

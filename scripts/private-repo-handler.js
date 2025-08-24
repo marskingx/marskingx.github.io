@@ -22,7 +22,9 @@ class PrivateRepoHandler {
   }
 
   log(message, type = "info") {
-    if (!this.config.verbose) return;
+    if (!this.config.verbose) {
+      return;
+    }
 
     const prefix = {
       info: "📝",

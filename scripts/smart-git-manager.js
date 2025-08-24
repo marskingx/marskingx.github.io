@@ -2,7 +2,7 @@
 
 const { execSync } = require("child_process");
 const fs = require("fs");
-const path = require("path");
+// const path = require("path"); // 暫時不使用
 
 /**
  * Smart Git Manager
@@ -29,12 +29,14 @@ class SmartGitManager {
       branch: "main",
     };
 
-    // 定義私有檔案模式
+    // 定義私有檔案模式 - 完整控制所有非網站必要檔案
     this.privateFilePatterns = [
+      // AI 協作系統檔案
+      "docs/",
       "docs/aimemory/",
       ".kiro/",
       ".claude-backups/",
-      ".env*",
+      ".claude/",
       "reindex/",
       "AI_*.md",
       "CLAUDE*.md",
@@ -44,6 +46,73 @@ class SmartGitManager {
       "*HANDOVER*.md",
       "*REVIEW*.md",
       "*COLLABORATION*.md",
+      "GSC_*.md",
+      "GSC_*.txt",
+      ".ai-lock.json",
+
+      // 開發環境檔案
+      ".env*",
+      "*.log",
+      "*.temp",
+      "*.tmp",
+      "git_log_temp.txt",
+
+      // IDE 設定檔案
+      ".idea/",
+      ".vscode/",
+      "*.code-workspace",
+
+      // Python 開發環境
+      ".venv/",
+      "venv/",
+      "scripts/venv/",
+      "*.pyc",
+      "__pycache__/",
+      "*.egg-info/",
+
+      // 備份檔案
+      "*.backup",
+      "*.bak",
+      "*~",
+      ".gitignore-backup",
+      ".gitignore-private",
+
+      // 壓縮檔案 (開發用)
+      "*.zip",
+      "*.tar.gz",
+      "*.rar",
+
+      // 開發文檔與分析報告
+      "BRANCH_ANALYSIS_REPORT.md",
+      "CHANGELOG.md",
+      "HUGO.md",
+      "prompt.md",
+      "README-NEWSLETTER-POPUP.md",
+      "VERSION_MANAGEMENT.md",
+      "*HUGO_INTEGRATION*.md",
+      "*HUGO_UPGRADE*.md",
+      "*HUGO_REPORT*.md",
+      "*CTR-Optimization*.md",
+      "*SEO*.md",
+      "GSC-CTR-Optimization-Prompt.md",
+      "MULTI-AI-COLLABORATION.md",
+
+      // GitHub 相關文檔
+      ".github/MAILCHIMP_*.md",
+
+      // External repositories and tools
+      "Claude-Code-Usage-Monitor/",
+
+      // 舊版及專案根目錄設定檔
+      ".gitlab-ci.yml",
+      "netlify.toml",
+      "vercel.json",
+      "amplify.yml",
+      "vercel-build.sh",
+      "Dmarskingx.github.io.markdownlint.json",
+
+      // 臨時檔案
+      "docs/temp.txt",
     ];
   }
 
@@ -145,6 +214,32 @@ class SmartGitManager {
       this.executeCommand(`git commit -m "${message}"`);
 
       this.log("✓ 本地提交完成", "success");
+      // 2. 追加協作日誌（Codex 自動）
+      try {
+        const version = this.readProjectVersion();
+        const fileList = [...changes.public, ...changes.private]
+          .map((c) => c.path)
+          .slice(0, 10)
+          .join(', ');
+        const logCmd = [
+          process.execPath,
+          'scripts/aimemory-log-update.js',
+          '--agent', 'Codex',
+          '--task', '智能提交',
+          '--summary', message,
+        ];
+        if (fileList) {
+          logCmd.push('--files', fileList);
+        }
+        if (version) {
+          logCmd.push('--version', version);
+        }
+        this.executeCommand(logCmd.map((s)=> (s.includes(' ') ? `"${s}"` : s)).join(' '), { silent: true });
+        this.log('已自動更新協作日誌', 'success');
+      } catch (e) {
+        this.log(`協作日誌更新失敗: ${e.message}`, 'warning');
+      }
+
       return { success: true, changes };
     } catch (error) {
       this.log(`提交失敗: ${error.message}`, "error");
@@ -280,6 +375,22 @@ class SmartGitManager {
   ✅ 避免敏感資料意外洩漏
     `);
   }
+
+  /**
+   * 讀取專案四段式版本，回退到 package.json 版本
+   */
+  readProjectVersion() {
+    try {
+      const txt = require('fs').readFileSync('.version', 'utf8');
+      const obj = JSON.parse(txt);
+      if (obj && obj.version) return obj.version;
+    } catch {}
+    try {
+      const pkg = JSON.parse(require('fs').readFileSync('package.json', 'utf8'));
+      return pkg.version || '';
+    } catch {}
+    return '';
+  }
 }
 
 // CLI 接口
@@ -288,32 +399,39 @@ async function main() {
   const [command, ...args] = process.argv.slice(2);
 
   switch (command) {
-    case "commit":
+    case "commit": {
       const message = args.join(" ") || "feat: 智能提交更新";
       await manager.smartCommit(message);
       break;
+    }
 
-    case "push":
+    case "push": {
       await manager.smartPush();
       break;
+    }
 
-    case "release":
+    case "release": {
       const releaseMessage = args.join(" ") || "feat: 智能發布更新";
       await manager.smartRelease(releaseMessage);
       break;
+    }
 
-    case "analyze":
+    case "analyze": {
       const changes = manager.analyzeGitChanges();
-      console.log("\n📊 變更分析結果:");
-      console.log(
-        "🌐 公開檔案:",
-        changes.public.map((c) => c.path),
-      );
-      console.log(
-        "🔒 私有檔案:",
-        changes.private.map((c) => c.path),
+      // console.log("\n📊 變更分析結果:");
+      // console.log(
+      //   "🌐 公開檔案:",
+      //   changes.public.map((c) => c.path),
+      // );
+      // console.log(
+      //   "🔒 私有檔案:",
+      //   changes.private.map((c) => c.path),
+      // );
+      manager.log(
+        `\n📊 變更分析結果: 公開 ${changes.public.length} 個，私有 ${changes.private.length} 個`,
       );
       break;
+    }
 
     default:
       manager.showHelp();

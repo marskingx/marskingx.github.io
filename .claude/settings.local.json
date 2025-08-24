@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git filter-branch:*)",
+      "Bash(git gc:*)",
+      "Bash(git worktree:*)",
+      "Bash(git rm:*)",
+      "Bash(git commit:*)",
+      "Bash(npm run:*)",
+      "Bash(git add:*)",
+      "Bash(mkdir:*)",
+      "Bash(git mv:*)",
+      "Bash(mv:*)",
+      "Bash(rm:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
