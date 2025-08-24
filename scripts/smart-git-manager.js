@@ -381,6 +381,15 @@ class SmartGitManager {
         throw new Error("推送失敗");
       }
 
+      // 3. 驗證私有庫關鍵檔案是否同步成功
+      try {
+        this.verifyPrivateSync([
+          'docs/aimemory/shared/ai-shared.md',
+        ]);
+      } catch (e) {
+        this.log(`私有庫同步驗證警告: ${e.message}`, 'warning');
+      }
+
       this.log("🎉 智能發布完成！", "success");
       return { success: true };
     } catch (error) {
@@ -423,6 +432,34 @@ class SmartGitManager {
       // 使用 Node 20 的 cpSync 遞迴覆蓋
       fs.cpSync(src, dst, { recursive: true, force: true });
     });
+  }
+
+  /**
+   * 驗證私有庫檔案與主庫是否一致（以檔案內容為準）
+   */
+  verifyPrivateSync(paths) {
+    const pathLib = require('path');
+    const crypto = require('crypto');
+    const hashFile = (p) => {
+      try {
+        const buf = fs.readFileSync(p);
+        return crypto.createHash('sha1').update(buf).digest('hex');
+      } catch { return null; }
+    };
+    let allOk = true;
+    paths.forEach((rel) => {
+      const src = pathLib.join(process.cwd(), rel);
+      const dst = pathLib.join(this.privateRepo.path, rel);
+      const h1 = hashFile(src);
+      const h2 = hashFile(dst);
+      if (h1 && h2 && h1 === h2) {
+        this.log(`✓ 驗證一致: ${rel}`, 'success');
+      } else {
+        allOk = false;
+        this.log(`⚠️ 不一致: ${rel}`, 'warning');
+      }
+    });
+    if (!allOk) throw new Error('部分檔案未同步一致');
   }
 
   /**
