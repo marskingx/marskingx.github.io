@@ -41,12 +41,14 @@ npm run 上版                   # 智能提交 (僅本地)
 npm run 上版&佈署              # 智能發布 (含部署)
 npm run 記憶                   # 記錄AI協作日誌
 npm run 下拉                   # 智能拉取更新
+npm run 併版 <branch>          # 智能併版 (合併分支) 🆕
 
 # 英文等效指令
 npm run smart:commit           # = 上版
 npm run smart:release          # = 上版&佈署
 npm run memory:log             # = 記憶
 npm run smart:pull             # = 下拉
+npm run smart:merge            # = 併版
 ```
 
 ## 重要開發指令
