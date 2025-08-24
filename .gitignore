@@ -1,5 +1,12 @@
 # ============================================
-# 懶得變有錢部落格 - 安全性優化的 .gitignore
+# 懶得變有錢部落格 - 極簡化的 .gitignore
+# ============================================
+# 
+# 註解：所有檔案控制已交由智能上版系統處理
+# 這裡只保留絕對必要的系統檔案
+
+# ============================================
+# 🔧 系統必要忽略檔案
 # ============================================
 
 # 系統檔案
@@ -10,7 +17,7 @@ Thumbs.db
 .lock
 .sass-cache
 
-# Node.js
+# Node.js 核心檔案
 npm-debug.log
 node_modules/
 package-lock.json
@@ -18,7 +25,6 @@ yarn.lock
 
 # Hugo 建置檔案
 public/
-sitemap.xml
 resources/
 .hugo_build.lock
 jsconfig.json
@@ -27,115 +33,22 @@ hugo_stats.json
 # Go 模組
 go.sum
 
-# ============================================
-# 🔒 私人開發檔案 (絕不公開)
-# ============================================
-
-# 日誌檔案
-*.log
-*.temp
-*.tmp
-git_log_temp.txt
-
-# IDE 設定檔案
-.idea/
-.vscode/
-*.code-workspace
-
-# Python 開發環境
-.venv/
-venv/
-scripts/venv/
-*.pyc
-__pycache__/
-*.egg-info/
-
-# 環境變數
-.env
-.env.local
-.env.production
-
-# 備份檔案
-*.backup
-*.bak
-*~
-
-# 壓縮檔案 (開發用)
-*.zip
-*.tar.gz
-*.rar
-
 # 作業系統快取
 .DS_Store?
 ._*
 .Spotlight-V100
 .Trashes
 ehthumbs.db
-Thumbs.db
 
 # ============================================
-# 📝 文檔說明
+# 🤖 智能檔案管理說明
 # ============================================
-# 此 .gitignore 專為懶得變有錢部落格優化
-# 確保只有網站必要檔案被部署到 GitHub Pages
-# 所有開發工具、AI 記憶、私人設定均被排除
-
-# ============================================
-# 🤖 AI 協作系統檔案 (不推送到 GitHub)
-# ============================================
-
-# AI 記憶管理系統
-docs/aimemory/
-AI_*.md
-CLAUDE*.md
-GEMINI*.md
-CODEX*.md
-
-# AI 協作檔案
-*ONBOARDING*.md
-*HANDOVER*.md
-*REVIEW*.md
-*COLLABORATION*.md
-GSC_*.md
-GSC_*.txt
-.ai-lock.json
-
-# 臨時檔案
-docs/temp.txt
-
-# ============================================
-# 📝 開發文檔與分析報告 (非網站服務必要)
-# ============================================
-
-# 開發分析報告
-BRANCH_ANALYSIS_REPORT.md
-CHANGELOG.md
-HUGO.md
-prompt.md
-README-NEWSLETTER-POPUP.md
-VERSION_MANAGEMENT.md
-
-# 開發文檔目錄
-docs/ai-memory/
-docs/mission/
-docs/hugo/
-docs/SEO/
-
-# Hugo 升級相關文檔
-*HUGO_INTEGRATION*.md
-*HUGO_UPGRADE*.md
-*HUGO_REPORT*.md
-
-# SEO 和 CTR 優化文檔
-*CTR-Optimization*.md
-*SEO*.md
-GSC-CTR-Optimization-Prompt.md
-
-# 多 AI 協作系統文檔
-MULTI-AI-COLLABORATION.md
-
-# GitHub 相關文檔
-.github/MAILCHIMP_*.md
-
-# External repositories and tools
-Claude-Code-Usage-Monitor/
+# 其他所有檔案（開發工具、AI 記憶、私人設定等）
+# 均由智能上版系統自動分類和路由：
+# 
+# 📁 公有檔案 → GitHub 公開儲存庫
+# 📁 私有檔案 → 私有儲存庫
+# 
+# 執行指令：
+# npm run 上版  - 智能發布
+# npm run 下拉  - 智能同步
