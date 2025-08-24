@@ -110,7 +110,43 @@ git commit -m "experiment: 實驗功能描述"
 git push --force-with-lease origin gemini-dev
 ```
 
-### 分支合併流程
+### 🔀 智能併版流程 (新增)
+
+#### 基本併版操作
+```bash
+# 1. 分析可併版分支
+npm run 併版:分析
+
+# 2. 智能併版 (自動選擇策略)
+npm run 併版 codex-dev
+
+# 3. 指定合併策略
+npm run 併版 gemini-dev no-fast-forward
+
+# 4. 併版後發布
+npm run 上版&佈署
+npm run 記憶
+```
+
+#### 併版前安全檢查
+```bash
+# 檢查分支狀態
+npm run ai:status
+
+# 檢查衝突風險  
+npm run conflict:check
+
+# 確保工作目錄乾淨
+git status
+```
+
+#### 併版策略選擇指南
+- **fast-forward**: 適用於線性歷史，無分歧情況
+- **no-fast-forward**: 保留完整分支歷史，推薦用於功能合併
+- **squash**: 將多個提交壓縮為一個，適用於實驗性功能
+- **rebase**: 重新整理提交歷史，適用於有衝突的情況
+
+### 傳統分支合併流程 (保留參考)
 ```bash
 # 1. 功能完成確認
 npm run test:system

@@ -431,14 +431,135 @@ npm run test:system:verbose
 
 ---
 
+## 🔀 智能併版範例
+
+### 範例12: 智能併版操作 (新功能)
+```bash
+# 情境：codex-dev 分支有新功能需要併版到 main
+
+# 1. 分析併版情況  
+npm run 併版:分析
+
+# 輸出範例:
+# 📋 可併版分支分析:
+# 
+# 1. codex-dev
+#    📈 領先: 5 個提交
+#    📉 落後: 2 個提交  
+#    🎯 建議策略: no-fast-forward
+#    ✅ 無衝突
+#
+# 2. gemini-dev
+#    📈 領先: 3 個提交
+#    📉 落後: 2 個提交
+#    🎯 建議策略: squash
+#    ⚠️  衝突檔案: 1 個
+#       - layouts/seo.html
+#
+# 💡 使用方式:
+#   npm run 併版 <branch-name>     # 智能併版指定分支
+#   npm run 併版 <branch> <strategy> # 指定合併策略
+
+# 2. 執行智能併版 (自動策略)
+npm run 併版 codex-dev
+
+# 輸出範例:
+# 🔀 開始智能併版: codex-dev -> main
+# 🔍 分析分支狀態...
+# 🔍 分支分析: codex-dev 領先 5 個提交，落後 2 個提交
+# 🔍 檢測 codex-dev -> main 合併衝突...
+# ✅ 無衝突檔案
+# 📝 選擇合併策略: no-fast-forward (保留分支歷史記錄)
+# 🔀 執行合併...
+# 🔍 執行合併後驗證...
+# ✅ 合併驗證通過
+# ✅ 併版成功完成! codex-dev -> main
+
+# 3. 併版後發布
+npm run 上版&佈署
+
+# 4. 記錄協作日誌
+npm run 記憶
+```
+
+### 範例13: 處理併版衝突
+```bash
+# 情境：gemini-dev 分支有衝突需要解決
+
+# 1. 嘗試併版
+npm run 併版 gemini-dev
+
+# 輸出範例:
+# 🔀 開始智能併版: gemini-dev -> main
+# 🔍 檢測到 1 個檔案衝突:
+#   - layouts/seo.html
+# 📝 選擇合併策略: rebase (重新整理提交歷史)
+# ❌ 併版失敗: 合併過程中發現衝突，需要手動解決
+
+# 2. 手動解決衝突並重試
+# ... 編輯 layouts/seo.html 解決衝突 ...
+git add layouts/seo.html
+
+# 3. 使用 rebase 策略重新併版
+npm run 併版 gemini-dev rebase
+
+# 輸出範例:
+# 🔀 開始智能併版: gemini-dev -> main  
+# 📝 選擇合併策略: rebase (重新整理提交歷史)
+# 🔀 執行合併...
+# ✅ 併版成功完成! gemini-dev -> main
+
+# 4. 清理併版過程檔案
+npm run 併版:清理
+
+# 輸出範例:
+# 🧹 清理合併臨時檔案...
+# ✅ 清理完成
+```
+
+### 範例14: 壓縮合併實驗功能
+```bash
+# 情境：將實驗分支的多個提交壓縮為一個提交
+
+# 1. 檢查實驗分支狀態
+npm run 併版:分析
+
+# 2. 使用壓縮合併策略
+npm run 併版 experiment/ai-features squash
+
+# 輸出範例:
+# 🔀 開始智能併版: experiment/ai-features -> main
+# 📝 選擇合併策略: squash (多個提交壓縮為一個)
+# 🔀 執行合併...
+# 📝 請輸入壓縮提交的訊息 (或按 Enter 使用預設訊息)
+# 
+# [系統會自動生成以下提交訊息]
+# merge: 壓縮併版 experiment/ai-features 到 main
+# 
+# 🔀 智能併版操作 (壓縮模式)
+# - 來源分支: experiment/ai-features
+# - 目標分支: main
+# - 合併策略: 多提交壓縮為單一提交
+# - 執行者: Claude Code 智能併版系統
+
+# 3. 驗證併版結果
+git log --oneline -5
+
+# 輸出範例:
+# abc1234 merge: 壓縮併版 experiment/ai-features 到 main
+# def5678 feat: 智能搜尋功能完成
+# ghi9012 fix: 修正圖片載入問題
+```
+
 ## 🎯 最佳實踐總結
 
 ### ✅ 推薦做法
 1. **開工前**: 必執行 `npm run 下拉` 和 `npm run ai:memory`
 2. **提交時**: 使用 `npm run 上版` 而非直接 git commit
 3. **發布時**: 執行完整流程 `npm run 上版&佈署` + `npm run 記憶`
-4. **協作時**: 尊重檔案責任區域，必要時使用鎖定機制
-5. **修復時**: hotfix 立即處理，然後通知其他 AI
+4. **併版時**: 先執行 `npm run 併版:分析` 了解分支狀況 🆕
+5. **協作時**: 尊重檔案責任區域，必要時使用鎖定機制
+6. **修復時**: hotfix 立即處理，然後通知其他 AI
 
 ### ❌ 避免操作
 1. **跳過智能系統**: 直接使用 `git add . && git commit`
@@ -446,6 +567,7 @@ npm run test:system:verbose
 3. **修改他人區域**: 未協議修改其他 AI 的專責檔案
 4. **遺漏日誌記錄**: 完成工作後忘記 `npm run 記憶`
 5. **不測試就發布**: 未執行 `npm run test:system`
+6. **強制併版**: 忽略衝突警告強行合併分支 🆕
 
 ---
 
