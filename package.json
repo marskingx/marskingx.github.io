@@ -87,6 +87,7 @@
     "smart:release": "node ./scripts/smart-git-manager.js release",
     "smart:analyze": "node ./scripts/smart-git-manager.js analyze",
     "smart:help": "node ./scripts/smart-git-manager.js",
+    "smart:merge": "node ./scripts/smart-git-manager.js merge",
     "smart:pull": "node ./scripts/smart-git-pull.js pull",
     "上版": "npm run smart:commit",
     "上版&佈署": "npm run smart:release",
