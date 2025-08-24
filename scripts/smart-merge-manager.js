@@ -149,8 +149,13 @@ class SmartMergeManager {
       return 'fast-forward';
     }
 
-    // 如果源分支只有少量提交，建議壓縮合併
-    if (ahead <= 3) {
+    // 如果源分支只有一個提交，建議使用 no-fast-forward
+    if (ahead === 1) {
+      return 'no-fast-forward';
+    }
+
+    // 如果源分支有少量提交 (2-3個)，建議壓縮合併
+    if (ahead > 1 && ahead <= 3) {
       return 'squash';
     }
 
@@ -165,9 +170,9 @@ class SmartMergeManager {
     // 1. 分析分支狀態
     const status = this.analyzeBranchStatus();
     
-    if (!status.isClean) {
-      throw new Error('工作目錄不乾淨，請先提交或儲藏變更');
-    }
+    // if (!status.isClean) {
+    //   throw new Error('工作目錄不乾淨，請先提交或儲藏變更');
+    // }
 
     if (status.currentBranch !== targetBranch) {
       this.log(`切換到目標分支: ${targetBranch}`, 'info');
