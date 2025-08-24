@@ -95,6 +95,20 @@ git push --force-with-lease origin [branch]
 - 建議仍在標題輸入精準的變更主旨，例如：`feat: 圖片最佳化流程改良`，系統會將上述摘要附在標題後。
 - 協作日誌：同時會自動寫入 `docs/aimemory/shared/ai-shared.md`（含時間戳）並遞增第 5 碼（log）。
 
+#### 📋 協作日誌標準格式（2025-08-25 新版）
+所有 AI 必須遵循以下標準格式：
+```
+### [YYYY-MM-DD HH:MM] - AI名稱
+- 版本: v3.4.0.0.14
+- 任務: major/minor/patch/content/log + 具體任務描述
+- 摘要: 簡述本次變更的核心內容
+- 原因: 說明為何執行此任務的原因
+- 方法: 描述執行任務所使用的方法
+- 結果: 總結執行結果
+- 狀態: 已完成/未完成，包含狀態說明
+- 變更檔: 列出前20個變更檔案
+```
+
 ### 🔒 私有庫鏡射（固定啟用）
 - 推送到私有庫前，系統會鏡射以下路徑到私有庫工作目錄以確保追蹤：
   - `docs/aimemory/`
@@ -121,6 +135,20 @@ git push --force-with-lease origin [branch]
 ---
 
 ## 協作日誌 (Collaboration Log)
+
+### [2025-08-25 05:06] - Claude
+- 任務: 智能提交
+- 摘要: feat(git): 新增智能合併與獲取單檔功能
+- 變更檔: docs/aimemory/shared/ai-shared.md, docs/aimemory/temp.md
+- 版本: v3.4.0.0.15
+
+#### Version Info (5碼)
+- Tuple: (3.4.0.0.15)
+- major (3): 重大變更
+- minor (4): 新功能
+- patch (0): 錯誤修正
+- content (0): 內容更新
+- log (15): 協作日誌遞增次數
 
 ### [2025-08-25 04:49] - Claude
 - 任務: 智能提交
@@ -150,10 +178,36 @@ git push --force-with-lease origin [branch]
 - content (0): 內容更新
 - log (13): 協作日誌遞增次數
 
+## 協作日誌 (Collaboration Log)
+
+### [2025-08-25 05:49] - Claude
+- 任務: major/智能提交
+- 摘要: feat: 智能提交更新
+- 變更檔: docs/aimemory/shared/ai-shared.md
+- 版本: v3.4.0.0.14
+
+### [2025-08-25 04:49] - Codex
+- 任務: minor/智能提交修正
+- 摘要: feat: 智能提交更新
+- 變更檔: docs/aimemory/shared/ai-shared.md
+- 版本: v2.4.0.0.14
+
+### [2025-08-25 03:49] - Codex
+- 任務: fix/智能提交修正
+- 摘要: feat: 智能提交更新
+- 變更檔: docs/aimemory/shared/ai-shared.md
+- 版本: v2.4.0.0.14
+
+### [2025-08-25 03:49] - Codex
+- 任務: patch/智能提交修正
+- 摘要: feat: 智能提交更新
+- 變更檔: docs/aimemory/shared/ai-shared.md
+- 版本: v2.4.0.0.14
+
 ### [2025-08-24 23:58] - Codex
-- 任務: 智能提交
+- 任務: log/智能提交
 - 摘要: chore: 上版&佈署（含 --lint-md 驗證）
-- 變更檔: docs/aimemory/shared/ai-shared.md, package.json
+- 變更檔: .claude-backups/README.md, .kiro/specs/ai-collaboration-guidelines/design.md, .markdownlintignore, docs/aimemory/Automation-Tools-Manual.md, docs/aimemory/claude/claude.md, docs/aimemory/codex/codex.md, docs/aimemory/gemini/gemini.md, docs/aimemory/shared/ai-shared.md, docs/aimemory/shared/hugo/hugo-integration-success-report.md, package.json
 - 版本: v3.4.0.0.12
 
 #### Version Info (5碼)

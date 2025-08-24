@@ -202,6 +202,23 @@ npm run memory:sync
 npm run 記憶           # 完成工作後必須執行
 
 # 衝突預防
+```
+
+#### 📋 協作日誌標準格式（2025-08-25 新版）
+所有 AI 必須遵循以下標準格式：
+```
+### [YYYY-MM-DD HH:MM] - AI名稱
+- 版本: v3.4.0.0.14
+- 任務: major/minor/patch/content/log + 具體任務描述
+- 摘要: 簡述本次變更的核心內容
+- 原因: 說明為何執行此任務的原因
+- 方法: 描述執行任務所使用的方法
+- 結果: 總結執行結果
+- 狀態: 已完成/未完成，包含狀態說明
+- 變更檔: 列出前20個變更檔案
+```
+
+### 衝突預防
 npm run conflict:check
 npm run conflict:precommit
 ```

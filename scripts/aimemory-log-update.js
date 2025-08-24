@@ -42,6 +42,7 @@ function usage() {
   console.log('    --agent Codex \\');
   console.log('    --task "短述" \\');
   console.log('    --summary "摘要" \\');
+  console.log('    [--reason "原因"] [--method "方法"] [--result "結果"] \\');
   console.log('    [--files "a.md,b.md"] [--status done] [--version v3.4.1.0]');
   console.log('\nNotes:');
   console.log('  - Writes to docs/aimemory/shared/ai-shared.md under "協作日誌" section.');
@@ -67,29 +68,24 @@ function normalizeList(val) {
     .join(', ');
 }
 
-function buildEntry({ date, time, agent, task, summary, files, status, version }) {
+function buildEntry({ date, time, agent, task, summary, files, status, version, reason, method, result }) {
   const lines = [];
   const when = time ? `${date} ${time}` : date;
   lines.push(`### [${when}] - ${agent}`);
-  if (task) lines.push(`- 任務: ${task}`);
-  if (summary) lines.push(`- 摘要: ${summary}`);
-  if (files) lines.push(`- 變更檔: ${files}`);
-  if (status) lines.push(`- 狀態: ${status}`);
+  
+  // 新格式: 版本, 任務, 摘要, 原因, 方法, 結果, 狀態, 變更檔
   if (version) {
     const vstr = String(version).startsWith('v') ? version : `v${version}`;
     lines.push(`- 版本: ${vstr}`);
-    const tuple = String(version).replace(/^v/i, '').split('.');
-    if (tuple.length >= 5) {
-      lines.push('');
-      lines.push('#### Version Info (5碼)');
-      lines.push(`- Tuple: (${tuple.join('.')})`);
-      lines.push(`- major (${tuple[0]}): 重大變更`);
-      lines.push(`- minor (${tuple[1]}): 新功能`);
-      lines.push(`- patch (${tuple[2]}): 錯誤修正`);
-      lines.push(`- content (${tuple[3]}): 內容更新`);
-      lines.push(`- log (${tuple[4]}): 協作日誌遞增次數`);
-    }
   }
+  if (task) lines.push(`- 任務: ${task}`);
+  if (summary) lines.push(`- 摘要: ${summary}`);
+  if (reason) lines.push(`- 原因: ${reason}`);
+  if (method) lines.push(`- 方法: ${method}`);
+  if (result) lines.push(`- 結果: ${result}`);
+  if (status) lines.push(`- 狀態: ${status}`);
+  if (files) lines.push(`- 變更檔: ${files}`);
+  
   lines.push('');
   return lines.join('\n');
 }
@@ -124,6 +120,9 @@ async function main() {
   const agent = args.agent || 'Codex';
   const task = args.task || '';
   const summary = args.summary || '';
+  const reason = args.reason || '';
+  const method = args.method || '';
+  const result = args.result || '';
   const status = args.status || '';
   let version = args.version || '';
   const dt = nowDateTime();
@@ -155,7 +154,7 @@ async function main() {
   }
 
   const original = fs.readFileSync(targetPath, 'utf8');
-  const entry = buildEntry({ date, time, agent, task, summary, files, status, version });
+  const entry = buildEntry({ date, time, agent, task, summary, files, status, version, reason, method, result });
   const updated = insertAfterHeading(
     original,
     /^##\s+協作日誌/i,

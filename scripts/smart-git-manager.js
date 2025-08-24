@@ -102,12 +102,34 @@ class SmartGitManager {
         this.executeCommand(`${process.execPath} scripts/version-manager.js log`, { silent: true });
         const version = this.readProjectVersion();
         const topFiles = (staged.files || []).slice(0, 10).join(', ');
+
+        // 解析提交訊息類型
+        const commitTypeMatch = message.match(/^([a-z]+):/);
+        let versionCategory = 'log'; // 預設為 log
+        if (commitTypeMatch) {
+          const type = commitTypeMatch[1];
+          switch (type) {
+            case 'feat': versionCategory = 'minor'; break;
+            case 'fix': versionCategory = 'patch'; break;
+            case 'docs':
+            case 'content': versionCategory = 'content'; break;
+            case 'major': versionCategory = 'major'; break; // 假設有明確的 major 類型
+            default: versionCategory = 'log'; break;
+          }
+        }
+
+        const logTask = `${versionCategory}/智能提交`;
+
         const logCmd = [
           process.execPath,
           'scripts/aimemory-log-update.js',
           '--agent', 'Claude',
-          '--task', '智能提交',
+          '--task', logTask,
           '--summary', message,
+          '--reason', '執行智能提交流程',
+          '--method', '使用智能Git管理系統進行檔案分類和自動提交',
+          '--result', '成功完成智能提交並更新協作日誌',
+          '--status', '已完成',
           '--no-bump',
         ];
         if (topFiles) {
