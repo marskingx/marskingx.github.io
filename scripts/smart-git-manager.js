@@ -298,6 +298,16 @@ class SmartGitManager {
         throw new Error(`私有儲存庫路徑不存在: ${this.privateRepo.path}`);
       }
 
+      // 在推送前鏡射指定目錄到私有庫（確保私有檔案被追蹤）
+      // 預設鏡射 docs/aimemory
+      try {
+        this.log('鏡射檔案到私有儲存庫...', 'info');
+        this.mirrorToPrivate(['docs/aimemory']);
+        this.log('鏡射完成', 'success');
+      } catch (e) {
+        this.log(`鏡射失敗: ${e.message}`, 'warning');
+      }
+
       // 同步當前變更到私有儲存庫
       const PrivateRepoHandler = require("./private-repo-handler");
       const handler = new PrivateRepoHandler();
@@ -398,6 +408,21 @@ class SmartGitManager {
   ✅ 程式碼推送到公開儲存庫
   ✅ 避免敏感資料意外洩漏
     `);
+  }
+
+  /**
+   * 將指定路徑鏡射到私有儲存庫
+   */
+  mirrorToPrivate(paths) {
+    const pathLib = require('path');
+    paths.forEach((rel) => {
+      const src = pathLib.join(process.cwd(), rel);
+      const dst = pathLib.join(this.privateRepo.path, rel);
+      if (!fs.existsSync(src)) return;
+      fs.mkdirSync(pathLib.dirname(dst), { recursive: true });
+      // 使用 Node 20 的 cpSync 遞迴覆蓋
+      fs.cpSync(src, dst, { recursive: true, force: true });
+    });
   }
 
   /**
