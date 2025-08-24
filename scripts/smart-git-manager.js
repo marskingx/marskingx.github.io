@@ -211,7 +211,10 @@ class SmartGitManager {
     try {
       // 1. 先處理所有變更（暫存）
       this.executeCommand("git add .");
-      this.executeCommand(`git commit -m "${message}"`);
+
+      // 自動生成補充的提交內容摘要
+      const enhancedMessage = this.buildCommitMessage(message, changes);
+      this.executeCommand(`git commit -m "${enhancedMessage}"`);
 
       this.log("✓ 本地提交完成", "success");
       // 2. 先遞增 5碼版本的第5碼（協作日誌），再追加協作日誌（Codex 自動）
@@ -301,7 +304,27 @@ class SmartGitManager {
       const PrivateRepoHandler = require("./private-repo-handler");
       const handler = new PrivateRepoHandler();
 
-      const result = await handler.pushChanges("sync: 智能同步 AI 記憶檔案");
+      // 產生簡易摘要訊息
+      let commitMsg = "sync: 智能同步 AI 記憶檔案";
+      try {
+        const st = await handler.getStatus();
+        if (st && st.hasChanges) {
+          const lines = (st.changes || "").trim().split(/\n/).filter(Boolean);
+          const counts = { M: 0, A: 0, D: 0, R: 0, C: 0, Q: 0 };
+          const files = [];
+          lines.forEach((l) => {
+            const code = l.slice(0, 2);
+            const p = l.slice(3);
+            if (code.includes("M")) counts.M++; else if (code.includes("A")) counts.A++; else if (code.includes("D")) counts.D++; else if (code.includes("R")) counts.R++; else if (code.includes("C")) counts.C++; else if (code.includes("?")) counts.Q++;
+            files.push(p);
+          });
+          const top = files.slice(0, 20).join(", ");
+          commitMsg += `\n\n## Change Summary\n- Changes: ${lines.length} (M:${counts.M} A:${counts.A} D:${counts.D})`;
+          if (top) commitMsg += `\n- Files: ${top}`;
+        }
+      } catch {}
+
+      const result = await handler.pushChanges(commitMsg);
 
       if (result.success) {
         this.log("✓ 私有儲存庫同步完成", "success");
@@ -377,6 +400,51 @@ class SmartGitManager {
   ✅ 程式碼推送到公開儲存庫
   ✅ 避免敏感資料意外洩漏
     `);
+  }
+
+  /**
+   * 生成提交訊息摘要（含變更統計與檔案清單）
+   */
+  buildCommitMessage(baseMessage, changes) {
+    const msg = baseMessage && baseMessage.trim().length > 0 ? baseMessage.trim() : "feat: 智能提交更新";
+    const summarize = (arr) => {
+      const stat = { M: 0, A: 0, D: 0, R: 0, C: 0, Q: 0 };
+      arr.forEach((i) => {
+        const s = i.status || "";
+        if (s.includes("M")) stat.M++;
+        else if (s.includes("A")) stat.A++;
+        else if (s.includes("D")) stat.D++;
+        else if (s.includes("R")) stat.R++;
+        else if (s.includes("C")) stat.C++;
+        else if (s.includes("?")) stat.Q++;
+      });
+      return stat;
+    };
+
+    const pubStat = summarize(changes.public);
+    const priStat = summarize(changes.private);
+
+    const top = (arr) => arr.map((c) => c.path).slice(0, 20);
+    const pubFiles = top(changes.public);
+    const priFiles = top(changes.private);
+
+    const lines = [
+      msg,
+      "",
+      "## Change Summary",
+      `- Public: ${changes.public.length} (M:${pubStat.M} A:${pubStat.A} D:${pubStat.D})`,
+      `- Private: ${changes.private.length} (M:${priStat.M} A:${priStat.A} D:${priStat.D})`,
+    ];
+    if (pubFiles.length) lines.push(`- Files(public): ${pubFiles.join(", ")}`);
+    if (priFiles.length) lines.push(`- Files(private): ${priFiles.join(", ")}`);
+
+    // 附上目前 5 碼版本
+    try {
+      const v = this.readProjectVersion();
+      if (v) lines.push(`- Version: ${v}`);
+    } catch {}
+
+    return lines.join("\n");
   }
 
   /**

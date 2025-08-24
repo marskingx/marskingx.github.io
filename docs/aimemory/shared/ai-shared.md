@@ -87,6 +87,14 @@ git push --force-with-lease origin [branch]
 4. 合併到 main
 5. 推送觸發 GitHub Pages 部署
 
+### 📝 提交訊息規範（智能版控，固定啟用）
+- 使用 `npm run 上版` 或 `npm run 上版&佈署` 時，系統會自動產生提交訊息「內文摘要」，包含：
+  - Public/Private 變更數量與 M/A/D 統計
+  - 所有重要變更檔案清單
+  - 目前 5 碼版本號（major.minor.patch.content.log）
+- 建議仍在標題輸入精準的變更主旨，例如：`feat: 圖片最佳化流程改良`，系統會將上述摘要附在標題後。
+- 協作日誌：同時會自動寫入 `docs/aimemory/shared/ai-shared.md`（含時間戳）並遞增第 5 碼（log）。
+
 ## 溝通協調
 
 ### 📋 日常檢查項目
@@ -107,6 +115,12 @@ git push --force-with-lease origin [branch]
 ---
 
 ## 協作日誌 (Collaboration Log)
+
+### [2025-08-24 22:47] - Codex
+- 任務: 智能提交
+- 摘要: feat: 智能提交更新
+- 變更檔: ackage.json, scripts/smart-git-manager.js, scripts/smart-git-pull.js, scripts/version-manager.js, scripts/smart-context-loader.js, scripts/aimemory-log-update.js, docs/
+- 版本: 3.4.0.0.2
 
 ### [2025-08-24 21:44] - Codex
 - 任務: 示範上版(手動)
