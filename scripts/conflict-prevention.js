@@ -63,6 +63,24 @@ class ConflictPrevention {
   async checkCurrentChanges() {
     console.log("🔍 檢查當前變更風險\n");
 
+    // <<<<<<< 新增：自動檢查檔案鎖定 >>>>>>>
+    const lockPath = path.join(this.projectRoot, ".ai-lock.json");
+    if (fs.existsSync(lockPath)) {
+      const lockInfo = JSON.parse(fs.readFileSync(lockPath, "utf8"));
+      const currentBranch = this.getCurrentBranch();
+      if (lockInfo.branch !== currentBranch) {
+        console.log("🚨 !!! 警告：偵測到檔案鎖定 !!! 🚨\n");
+        console.log(`   • 鎖定者: ${lockInfo.ai}`);
+        console.log(`   • 鎖定分支: ${lockInfo.branch}`);
+        console.log(`   • 鎖定時間: ${lockInfo.timestamp}`);
+        console.log(`   • 訊息: ${lockInfo.message}`);
+        console.log(`   • 鎖定檔案數: ${lockInfo.files.length}\n`);
+        console.log("💡 建議：暫停目前工作，並與鎖定者協調。\n");
+        return; // 發現鎖定後，提前終止檢查
+      }
+    }
+    // <<<<<<< 新增結束 >>>>>>>
+
     const currentBranch = this.getCurrentBranch();
     const modifiedFiles = this.getModifiedFiles();
 
@@ -184,7 +202,7 @@ class ConflictPrevention {
   }
 
   // 創建檔案鎖定 (標記正在編輯)
-  async createFileLock() {
+  async createFileLock(message = "正在進行高風險變更，請稍後再修改相關檔案") {
     const currentBranch = this.getCurrentBranch();
     const aiName = this.getAINameFromBranch(currentBranch);
 
@@ -192,6 +210,7 @@ class ConflictPrevention {
       ai: aiName,
       branch: currentBranch,
       timestamp: new Date().toISOString(),
+      message: message,
       files: this.getModifiedFiles(),
     };
 
@@ -199,6 +218,7 @@ class ConflictPrevention {
     fs.writeFileSync(lockPath, JSON.stringify(lockInfo, null, 2));
 
     console.log(`🔒 已創建檔案鎖定標記 (${aiName})`);
+    console.log(`💬 訊息: ${message}`);
     console.log(`📁 鎖定檔案: ${lockInfo.files.length} 個\n`);
   }
 

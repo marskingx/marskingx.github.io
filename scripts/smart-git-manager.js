@@ -29,6 +29,12 @@ class SmartGitManager {
       branch: "main",
     };
 
+    // 需要鏡射到私有庫的目錄（可擴充）
+    this.mirrorPaths = [
+      'docs/aimemory',
+      '.kiro',
+    ];
+
     // 定義私有檔案模式 - 完整控制所有非網站必要檔案
     this.privateFilePatterns = [
       // AI 協作系統檔案
@@ -302,7 +308,7 @@ class SmartGitManager {
       // 預設鏡射 docs/aimemory
       try {
         this.log('鏡射檔案到私有儲存庫...', 'info');
-        this.mirrorToPrivate(['docs/aimemory']);
+        this.mirrorToPrivate(this.mirrorPaths);
         this.log('鏡射完成', 'success');
       } catch (e) {
         this.log(`鏡射失敗: ${e.message}`, 'warning');

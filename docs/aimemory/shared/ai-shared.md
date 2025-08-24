@@ -95,6 +95,12 @@ git push --force-with-lease origin [branch]
 - 建議仍在標題輸入精準的變更主旨，例如：`feat: 圖片最佳化流程改良`，系統會將上述摘要附在標題後。
 - 協作日誌：同時會自動寫入 `docs/aimemory/shared/ai-shared.md`（含時間戳）並遞增第 5 碼（log）。
 
+### 🔒 私有庫鏡射（固定啟用）
+- 推送到私有庫前，系統會鏡射以下路徑到私有庫工作目錄以確保追蹤：
+  - `docs/aimemory/`
+  - `.kiro/`
+- 完成推送後會進行一致性校驗（至少校驗 `docs/aimemory/shared/ai-shared.md`），保障私有庫與主庫內容一致。
+
 ## 溝通協調
 
 ### 📋 日常檢查項目
@@ -115,6 +121,12 @@ git push --force-with-lease origin [branch]
 ---
 
 ## 協作日誌 (Collaboration Log)
+
+### [2025-08-24 23:08] - Codex
+- 任務: 智能提交
+- 摘要: chore: 驗證私有庫同步校驗
+- 變更檔: docs/aimemory/shared/ai-shared.md, scripts/smart-git-manager.js
+- 版本: 3.4.0.0.8
 
 ### [2025-08-24 23:04] - Codex
 - 任務: 智能提交
