@@ -37,18 +37,16 @@
 
 ```bash
 # 中文暗號指令 (必須使用)
-npm run 上版                   # AI版控 (僅本地)
+npm run 上版                   # 智能提交 (僅本地)
 npm run 上版&佈署              # 智能發布 (含部署)
 npm run 記憶                   # 記錄AI協作日誌
 npm run 下拉                   # 智能拉取更新
-npm run 併版 <branch>          # 智能併版 (合併分支) 🆕
 
 # 英文等效指令
 npm run smart:commit           # = 上版
 npm run smart:release          # = 上版&佈署
 npm run memory:log             # = 記憶
 npm run smart:pull             # = 下拉
-npm run smart:merge            # = 併版
 ```
 
 ## 重要開發指令
@@ -498,7 +496,7 @@ npm run claude:status
 - AI協作記錄   → npm run 記憶 (自動遞增第5碼)
 
 智能發布:
-- npm run 上版     → AI版控 (僅本地)
+- npm run 上版     → 智能提交 (僅本地)
 - npm run 上版&佈署 → 智能發布 (含部署)
 - npm run 記憶     → AI協作日誌 (必須執行)
 ```
@@ -506,7 +504,6 @@ npm run claude:status
 ### 📝 Coding Style 規範 (嚴格遵守)
 
 **JavaScript/Node.js**:
-
 ```javascript
 // ✅ 正確
 const imageOptimizer = new ImageOptimizer();
@@ -520,7 +517,6 @@ function ValidateStructuredData() {}
 ```
 
 **Hugo Templates**:
-
 ```go
 {{/* ✅ 正確 - 清晰的變數命名 */}}
 {{ $imageUrl := .Params.image }}
@@ -532,7 +528,6 @@ function ValidateStructuredData() {}
 ```
 
 **Commit Messages** (Conventional Commits):
-
 ```bash
 # ✅ 正確格式
 feat: 新增智能版本控制系統第5碼
@@ -600,7 +595,7 @@ update
 
 #### 📋 檔案結構
 
-```text
+```
 scripts/
 ├── smart-git-manager.js     # 智能 Git 管理系統
 ├── smart-git-pull.js        # 智能拉取與同步
@@ -623,7 +618,7 @@ scripts/
 
 ```bash
 # 智能發布系統
-npm run 上版                  # AI版控 (僅本地)
+npm run 上版                  # 智能提交 (僅本地)
 npm run 上版&佈署             # 智能發布 (雙軌推送)
 npm run smart:commit          # 英文版：僅提交
 npm run smart:release         # 英文版：完整發布
@@ -632,20 +627,6 @@ npm run smart:push            # 智能推送
 # 智能同步系統  
 npm run 下拉                  # 智能同步 (中文暗號)
 npm run smart:pull            # 英文版本
-```
-
-#### 📋 協作日誌標準格式（2025-08-25 新版）
-所有 AI 必須遵循以下標準格式：
-```
-### [YYYY-MM-DD HH:MM] - AI名稱
-- 版本: v3.4.0.0.14
-- 任務: major/minor/patch/content/log + 具體任務描述
-- 摘要: 簡述本次變更的核心內容
-- 原因: 說明為何執行此任務的原因
-- 方法: 描述執行任務所使用的方法
-- 結果: 總結執行結果
-- 狀態: 已完成/未完成，包含狀態說明
-- 變更檔: 列出前20個變更檔案
 ```
 
 #### 🛡️ 自動化保護機制
@@ -700,7 +681,7 @@ npm run 下拉                 # 智能同步流程
 
 #### 📂 Worktree 配置
 
-```text
+```
 D:/marskingx.github.io           - [main] + [claude-dev]
 D:/marskingx-worktrees/codex-dev - [codex-dev]
 D:/marskingx-worktrees/gemini-dev - [gemini-dev]

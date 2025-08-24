@@ -92,7 +92,7 @@
         "name": {{ printf "%s" $collectionType | jsonify }},
         "item": {
           "@type": "WebPage",
-          "@id": {{ printf "%s%s/" $collectionType (strings.ToLower $collectionType) | relLangURL | absURL | jsonify }},
+          "@id": {{ printf "/%s/" .Type | relLangURL | absURL | jsonify }},
           "name": {{ printf "%s" $collectionType | jsonify }}
         }
       },

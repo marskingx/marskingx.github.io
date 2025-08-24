@@ -9,24 +9,20 @@
 npm run version:show           # 顯示當前版本號 (5碼格式)
 ```
 
-### AI版控 & 發布
+### 智能提交 & 發布
 
 ```bash
 # 中文暗號指令
-npm run 上版                   # AI版控 (本地)
+npm run 上版                   # 智能提交 (本地)
 npm run 上版&佈署              # 智能發布 (含部署)  
 npm run 記憶                   # 記錄 AI 協作日誌
 npm run 下拉                   # 智能拉取更新
-npm run 併版 <branch>          # 智能併版 (合併分支)
-npm run 併版:分析              # 分析可併版分支
-npm run 併版:清理              # 清理併版臨時檔案
 
 # 英文等效指令
 npm run smart:commit           # = 上版
 npm run smart:release          # = 上版&佈署  
 npm run memory:log             # = 記憶
 npm run smart:pull             # = 下拉
-npm run smart:merge            # = 併版
 ```
 
 ## 📊 版本管理 (5碼系統)
@@ -69,25 +65,6 @@ npm run conflict:precommit     # 提交前安全檢查
 npm run conflict:rules         # 顯示協作規則
 npm run conflict:lock          # 鎖定檔案避免衝突
 npm run conflict:unlock        # 解鎖檔案
-```
-
-## 🔀 智能併版系統
-
-### 分支合併管理
-```bash
-npm run 併版 <branch>          # 智能併版指定分支
-npm run 併版:分析              # 分析可併版分支狀態  
-npm run 併版:清理              # 清理併版臨時檔案
-npm run smart:merge:help       # 顯示併版系統說明
-```
-
-### 合併策略選項
-```bash
-npm run 併版 codex-dev                    # 自動選擇最佳策略
-npm run 併版 codex-dev fast-forward       # 快速合併
-npm run 併版 gemini-dev no-fast-forward   # 保留分支歷史
-npm run 併版 feature-branch squash        # 壓縮合併
-npm run 併版 hotfix-branch rebase         # 變基合併
 ```
 
 ## 🚀 智能發布系統
@@ -200,7 +177,7 @@ npm run memory:help            # 記憶管理說明
 ### 日常開發
 1. `npm run 下拉` - 拉取最新更新
 2. 進行開發工作  
-3. `npm run 上版` - AI版控
+3. `npm run 上版` - 智能提交
 4. `npm run 上版&佈署` - 發布部署
 
 ### AI 協作記錄

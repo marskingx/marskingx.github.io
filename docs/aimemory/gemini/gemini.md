@@ -32,7 +32,7 @@
 第5碼 (log):     AI協作日誌   (0.0.0.0.1) 🆕
 
 智能指令:
-- npm run 上版     → AI版控 (僅本地)
+- npm run 上版     → 智能提交 (僅本地)
 - npm run 上版&佈署 → 智能發布 (含部署)
 - npm run 記憶     → AI協作日誌 (必須執行)
 ```
@@ -40,7 +40,6 @@
 ### 📝 Coding Style 規範 (嚴格遵守)
 
 **Hugo Templates**:
-
 ```go
 {{/* ✅ 正確 - 清晰的變數命名 */}}
 {{ $imageUrl := .Params.image }}
@@ -54,7 +53,6 @@
 ```
 
 **Markdown 與 YAML**:
-
 ```yaml
 # ✅ 正確格式
 ---
@@ -78,7 +76,6 @@ tags: [tag1, tag2]
 ```
 
 **Commit Messages** (Conventional Commits):
-
 ```bash
 # ✅ 正確格式
 feat: 新增標籤頁面 SEO 優化功能
@@ -100,7 +97,6 @@ experiment: 測試 AI 內容生成器原型
 - **當前版本**: v3.4.0 - AI 協作規範系統完整實作版
 
 ### Gemini 工作環境
-
 ```bash
 # Gemini 專用分支
 cd D:/marskingx-worktrees/gemini-dev
@@ -181,7 +177,6 @@ slug: "english-slug-for-url"
 - **Gemini (你)**: 實驗功能、內容創新、SEO 分析
 
 ### 檔案責任區域
-
 ```yaml
 /content/blog/:           Gemini 主導內容 SEO 優化
 /layouts/seo/:           Gemini 實驗新的 SEO 功能
@@ -191,7 +186,6 @@ slug: "english-slug-for-url"
 ```
 
 ### 協作工具
-
 ```bash
 # 檢查其他 AI 狀態
 npm run ai:status
@@ -202,23 +196,6 @@ npm run memory:sync
 npm run 記憶           # 完成工作後必須執行
 
 # 衝突預防
-```
-
-#### 📋 協作日誌標準格式（2025-08-25 新版）
-所有 AI 必須遵循以下標準格式：
-```
-### [YYYY-MM-DD HH:MM] - AI名稱
-- 版本: v3.4.0.0.14
-- 任務: major/minor/patch/content/log + 具體任務描述
-- 摘要: 簡述本次變更的核心內容
-- 原因: 說明為何執行此任務的原因
-- 方法: 描述執行任務所使用的方法
-- 結果: 總結執行結果
-- 狀態: 已完成/未完成，包含狀態說明
-- 變更檔: 列出前20個變更檔案
-```
-
-### 衝突預防
 npm run conflict:check
 npm run conflict:precommit
 ```
@@ -275,12 +252,5 @@ npm run conflict:precommit
 **🚨 自動化衝突警告 (2025-08-24T15:14:55.401Z) 🚨**
 - **來源**: Claude (克勞德)
 - **訊息**: 我正在更新核心設定檔，請暫停相關修改
-- **建議**: 在對方釋放鎖定 (執行 `npm run conflict:unlock]) 前，請避免修改高風險檔案。
----
-
----
-**🚨 自動化衝突警告 (2025-08-24T15:47:28.246Z) 🚨**
-- **來源**: Unknown AI
-- **訊息**: 自動化測試鎖定
 - **建議**: 在對方釋放鎖定 (執行 `npm run conflict:unlock]) 前，請避免修改高風險檔案。
 ---
