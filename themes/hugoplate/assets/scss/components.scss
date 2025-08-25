@@ -71,4 +71,77 @@ main {
   .btn {
     @apply dark:hover:text-dark no-underline hover:text-white #{!important};
   }
+
+  // Responsive table improvements
+  .responsive-table-wrapper {
+    @apply overflow-x-auto;
+    // Enable momentum scrolling on iOS Safari
+    -webkit-overflow-scrolling: touch;
+
+    table {
+      @apply min-w-full;
+
+      // Mobile optimizations (<= md)
+      @media (max-width: 767px) {
+        @apply text-sm;
+
+        th,
+        td {
+          @apply px-2 py-3 text-xs;
+          min-width: 100px;
+          word-wrap: break-word;
+          overflow-wrap: break-word;
+          hyphens: auto;
+        }
+
+        th {
+          @apply text-xs font-semibold;
+          line-height: 1.3;
+        }
+
+        td {
+          line-height: 1.4;
+          vertical-align: top;
+        }
+      }
+    }
+  }
+
+  // Mobile cards for complex tables
+  .mobile-table-cards {
+    @apply block md:hidden space-y-4;
+
+    .table-card {
+      @apply bg-theme-light dark:bg-darkmode-theme-light rounded-lg border border-border dark:border-darkmode-border p-4 shadow-sm;
+
+      .card-header {
+        @apply font-semibold text-dark dark:text-darkmode-dark mb-3 pb-2 border-b border-border dark:border-darkmode-border flex items-center;
+
+        .card-icon {
+          @apply mr-2 text-primary dark:text-darkmode-primary;
+        }
+      }
+
+      .card-content {
+        @apply space-y-2;
+
+        .card-row {
+          @apply flex flex-col sm:flex-row sm:justify-between;
+
+          .label {
+            @apply font-medium text-dark dark:text-darkmode-dark text-sm mb-1 sm:mb-0 sm:w-1/3;
+          }
+
+          .value {
+            @apply text-text dark:text-darkmode-text text-sm sm:w-2/3 leading-relaxed;
+          }
+        }
+      }
+    }
+  }
+
+  // Hide desktop table on mobile when using cards
+  .desktop-table {
+    @apply hidden md:block;
+  }
 }
