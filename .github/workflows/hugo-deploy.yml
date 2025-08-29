@@ -1,0 +1,112 @@
+name: 🚀 Hugo Deploy to GitHub Pages
+
+on:
+  # 手動觸發 - 在 GitHub Actions 頁面點擊 "Run workflow" 按鈕
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: '部署環境'
+        required: true
+        default: 'production'
+        type: choice
+        options:
+        - production
+        - staging
+      deploy_message:
+        description: '部署說明 (選填)'
+        required: false
+        default: '手動部署'
+        type: string
+
+# 設定權限以部署到 GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 確保同時只有一個部署在進行
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # 建置 Job
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.148.2
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: 📦 Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true
+
+      - name: 📦 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: 🔧 Install dependencies
+        run: |
+          npm ci
+          hugo mod get
+          hugo mod tidy
+
+      - name: 🔍 Hugo environment info
+        run: hugo env
+
+      - name: 🏗️ Build Hugo site
+        run: |
+          hugo --gc --minify \
+            --baseURL "${{ steps.pages.outputs.base_url || 'https://lazytoberich.com.tw' }}" \
+            --environment ${{ inputs.environment || 'production' }}
+
+      - name: 📊 Build statistics
+        run: |
+          echo "## 📊 建置統計" >> $GITHUB_STEP_SUMMARY
+          echo "- **環境**: ${{ inputs.environment || 'production' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **部署說明**: ${{ inputs.deploy_message || '手動部署' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Hugo 版本**: ${{ env.HUGO_VERSION }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **建置時間**: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+          if [ -d "public" ]; then
+            echo "- **輸出檔案數**: $(find public -type f | wc -l)" >> $GITHUB_STEP_SUMMARY
+            echo "- **總大小**: $(du -sh public | cut -f1)" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: 📤 Setup GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: 📦 Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  # 部署 Job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: 🚀 Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: ✅ Deployment summary
+        run: |
+          echo "## 🎉 部署成功！" >> $GITHUB_STEP_SUMMARY
+          echo "- **網站 URL**: ${{ steps.deployment.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **部署時間**: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "- **部署環境**: ${{ inputs.environment || 'production' }}" >> $GITHUB_STEP_SUMMARY
+          echo "---" >> $GITHUB_STEP_SUMMARY
+          echo "🚀 **懶得變有錢部落格** 已成功部署到 GitHub Pages！" >> $GITHUB_STEP_SUMMARY

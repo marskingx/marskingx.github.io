@@ -1,0 +1,57 @@
+name: 🔍 Hugo Build Check
+
+on:
+  # 只在 PR 時自動檢查建置是否成功
+  pull_request:
+    branches: [ main ]
+  # 也可以手動觸發檢查
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.148.2
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: 📦 Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true
+
+      - name: 📦 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: 🔧 Install dependencies
+        run: |
+          npm ci
+          hugo mod get
+          hugo mod tidy
+
+      - name: 🔍 Check Hugo configuration
+        run: hugo config
+
+      - name: 🏗️ Test build (no deploy)
+        run: |
+          hugo --gc --minify --environment staging --baseURL "https://example.com"
+          echo "✅ 建置測試成功 - 網站可正常建立" >> $GITHUB_STEP_SUMMARY
+
+      - name: 📊 Build report
+        run: |
+          echo "## 📊 建置檢查報告" >> $GITHUB_STEP_SUMMARY
+          echo "- **Hugo 版本**: ${{ env.HUGO_VERSION }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **檢查時間**: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+          if [ -d "public" ]; then
+            echo "- **頁面數**: $(find public -name "*.html" | wc -l)" >> $GITHUB_STEP_SUMMARY
+            echo "- **總檔案數**: $(find public -type f | wc -l)" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "---" >> $GITHUB_STEP_SUMMARY
+          echo "🎉 **建置檢查通過！** 可以安全合併此 PR。" >> $GITHUB_STEP_SUMMARY
