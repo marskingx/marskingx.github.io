@@ -1,5 +1,10 @@
 {
+  "scripts": {
+    "build": "postcss assets/scss/main.scss -o static/css/style.css --watch",
+    "build-prod": "postcss assets/scss/main.scss -o static/css/style.css --env production"
+  },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.12",
     "@tailwindcss/typography": "^0.5.16",
     "autoprefixer": "^10.4.21",
     "postcss-cli": "^11.0.1",
