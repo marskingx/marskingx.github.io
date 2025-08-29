@@ -1,6 +1,8 @@
-module github.com/marskingx/marskingx.github.io
+module hugoplate.netlify.app
 
-go 1.25.0
+go 1.23
+
+toolchain go1.24.6
 
 require (
 	github.com/gethugothemes/hugo-modules/accordion v0.0.0-20250702070945-cd8319c6b26e // indirect
