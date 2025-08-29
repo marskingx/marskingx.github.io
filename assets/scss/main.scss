@@ -1,5 +1,34 @@
-/* 主樣式檔案 */
-@import "./custom.scss";
+/* 主樣式檔案 - 整合 Tailwind CSS 和自定義樣式 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @import "base";
+}
+
+@layer components {
+  @import "components";
+  @import "navigation";
+  @import "buttons";
+}
+
+@layer utilities {
+  @import "utilities";
+}
+
+/* 從主題匯入其他樣式 */
+@import "search";
+@import "social-share";
+@import "gallery-slider";
+@import "toc";
+@import "tab";
+@import "accordion";
+@import "modal";
+@import "notice";
+
+@import "module-overrides";
+@import "custom";
 
 /* 基礎重置樣式 */
 * {
