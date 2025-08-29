@@ -1,0 +1,146 @@
+{{ define "main" }}
+  <section class="section pt-7">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="mb-4">
+          <!-- Breadcrumb -->
+          {{ partial "components/breadcrumb.html" . }}
+        </div>
+        <article class="lg:col-10">
+          {{/* Display post image if available */}}
+          {{ $image:= .Params.image }}
+          {{ if $image }}
+            <div class="mb-10">
+              {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full rounded") }}
+            </div>
+          {{ end }}
+          <!-- Post Title -->
+          <h1 class="h2 mb-4">
+            {{ .Title }}
+          </h1>
+          <!-- Post-meta -->
+          <ul class="mb-4">
+            <!-- Author -->
+            {{ with .Params.author }}
+              {{ if ne . "" }}
+                <li class="mr-4 inline-block">
+                  <a href="{{ `authors/` | relLangURL }}{{ . | urlize }}/">
+                    <i class="fa-regular fa-circle-user mr-2"></i>{{ . }}
+                  </a>
+                </li>
+              {{ end }}
+            {{ end }}
+            <!-- Categories -->
+            {{ $categories:= .Params.categories }}
+            {{ if $categories }}
+              <li class="mr-4 inline-block">
+                <i class="fa-regular fa-folder mr-2"></i>
+                {{ range $i,$p:= $categories }}
+                  <a
+                    href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"
+                    class=""
+                    >{{ . | humanize }}{{ if ne $i
+                      (sub (len $categories) 1)
+                    }}
+                      {{ "," }}
+                    {{ end }}
+                  </a>
+                {{ end }}
+              </li>
+            {{ end }}
+            <!-- Last Updated Date -->
+            <li class="mr-4 inline-block">
+              <i class="fa-regular fa-clock mr-2"></i>
+              {{ T "last_updated_on" }}
+              {{ time.Format ":date_long" .Lastmod }}
+            </li>
+            <!-- Reading Time -->
+            <li class="mr-4 inline-block">
+              <i class="fa-solid fa-stopwatch mr-2"></i>
+              {{ .ReadingTime }}
+              {{ T "reading_time" }}
+            </li>
+          </ul>
+          <!-- Post Content -->
+          <div class="content mb-10">
+            <!-- Table of Contents -->
+            {{ partial "toc.html" (dict "Class" "blog" "Collapsed" false "TableOfContents" .TableOfContents ) }}
+            {{ .Content }}
+            <!-- Podcast footer partial -->
+            {{ partial "podcast-footer.html" . }}
+          </div>
+
+          <!-- Social Share, Tags and Social Follow -->
+          <div class="row items-start justify-between">
+            <!-- Enhanced Social Share Component -->
+            <div class="lg:col-12 mb-6">
+              {{ partial "social-share.html" . }}
+            </div>
+
+            <!-- Tags -->
+            {{ $tags:= .Params.tags }}
+            {{ if $tags }}
+              <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
+                <h5 class="mr-3">{{ T "tags" }}：</h5>
+                <ul>
+                  {{ range $tags }}
+                    <li class="inline-block">
+                      <a
+                        class="bg-theme-light hover:bg-primary dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary dark:hover:text-dark m-1 block rounded px-3 py-1 hover:text-white"
+                        href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/">
+                        {{ . | humanize }}
+                      </a>
+                    </li>
+                  {{ end }}
+                </ul>
+              </div>
+            {{ end }}
+            <!-- Social Follow links -->
+            <div class="lg:col-5 flex items-center">
+              <h5 class="mr-3">{{ T "fallow" }}：</h5>
+              <ul class="social-icons">
+                {{ range site.Data.social.main }}
+                  <li>
+                    <a
+                      target="_blank"
+                      aria-label="{{ .name }}"
+                      rel="nofollow noopener"
+                      href="{{ .link | safeURL }}">
+                      <i class="{{ .icon }}"></i>
+                    </a>
+                  </li>
+                {{ end }}
+              </ul>
+            </div>
+          </div>
+          {{/* 🔥 CTR 優化：整合所有結構化資料系統 */}}
+          {{ partial "structured-data/article.html" . }}
+          {{ partial "structured-data/faq.html" . }}
+
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- related posts -->
+  {{ $related_posts := site.RegularPages.Related . | first 3 }}
+  {{ if $related_posts }}
+    <section class="section pt-0">
+      <div class="container">
+        <div class="row">
+          <div class="lg:col-10 mx-auto">
+            <h2 class="h3 mb-8 text-center">{{ T "related_posts" }}</h2>
+            <div class="row gy-5 justify-center">
+              {{ range $related_posts }}
+                <div class="lg:col-4 md:col-6">
+                  {{ partial "components/blog-card" . }}
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+{{ end }}

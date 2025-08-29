@@ -1,0 +1,48 @@
+{{/* Responsive Table Shortcode
+  Usage: {{< responsive-table
+>}}
+[table content here]
+{{< /responsive-table >}}
+*/}}
+{{- $content := .Inner | markdownify -}}
+
+
+<!-- Desktop/Tablet Table -->
+<div class="desktop-table responsive-table-wrapper">
+  {{ $content | safeHTML }}
+</div>
+
+<!-- Mobile Cards -->
+{{- if $content -}}
+  <div class="mobile-table-cards">
+    {{/* Parse table and convert to cards */}}
+    {{- $tableContent := $content | plainify | strings.TrimSpace -}}
+
+    {{/* Simple table to cards conversion for common cases */}}
+    {{- if strings.Contains $tableContent "|" -}}
+      {{/* This is a markdown table, we'll create a generic card layout */}}
+      <div class="table-card">
+        <div class="card-header">
+          <i class="fa-solid fa-table card-icon"></i>
+          <span>表格內容</span>
+        </div>
+        <div class="card-content">
+          <div class="text-sm text-text dark:text-darkmode-text">
+            <div class="overflow-x-auto">
+              <div class="min-w-0">
+                {{ $content | safeHTML }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{- else -}}
+      {{/* For non-markdown tables, just show in a card wrapper */}}
+      <div class="table-card">
+        <div class="card-content">
+          {{ $content | safeHTML }}
+        </div>
+      </div>
+    {{- end -}}
+  </div>
+{{- end -}}

@@ -1,0 +1,171 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="row">
+        <div class="md:col-10 lg:col-6 mx-auto">
+          <form action="{{ site.Params.contact_form_action }}" method="POST">
+            <div class="mb-6">
+              <label for="name" class="form-label">
+                暱稱 <span class="text-red-500">*</span>
+              </label>
+              <input
+                id="name"
+                name="name"
+                class="form-input"
+                placeholder="輸入你的暱稱"
+                type="text"
+                required />
+            </div>
+            <div class="mb-6">
+              <label for="email" class="form-label">
+                E-mail <span class="text-red-500">*</span>
+              </label>
+              <input
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="輸入你的Email"
+                type="email"
+                required />
+            </div>
+            <div class="mb-6">
+              <label class="form-label"
+                >聯絡原因<span class="text-red-500">*</span></label
+              >
+              <div class="space-y-2">
+                <label class="inline-flex items-center">
+                  <input
+                    type="checkbox"
+                    name="reason[]"
+                    value="問題"
+                    class="form-checkbox" />
+                  <span class="ml-2">我想了解開戶手續費優惠</span>
+                </label>
+                <label class="inline-flex items-center">
+                  <input
+                    type="checkbox"
+                    name="reason[]"
+                    value="故事"
+                    class="form-checkbox" />
+                  <span class="ml-2">我有故事想要跟懶大分享</span>
+                </label>
+                <label class="inline-flex items-center">
+                  <input
+                    type="checkbox"
+                    name="reason[]"
+                    value="課程問題"
+                    class="form-checkbox" />
+                  <span class="ml-2">我有財務規劃方面的問題</span>
+                </label>
+                <label class="inline-flex items-center">
+                  <input
+                    type="checkbox"
+                    name="reason[]"
+                    value="建議"
+                    class="form-checkbox" />
+                  <span class="ml-2">我其它疑難雜症想要詢問</span>
+                </label>
+                <label class="inline-flex items-center">
+                  <input
+                    type="checkbox"
+                    name="reason[]"
+                    value="投稿"
+                    class="form-checkbox" />
+                  <span class="ml-2">我有對網站和 Podcast 節目的建議</span>
+                </label>
+              </div>
+            </div>
+            <div class="mb-6">
+              <label for="message" class="form-label">
+                輸入留言 <span class="text-red-500">*</span>
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-input"
+                placeholder="輸入你的留言細節…"
+                rows="8"
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">送出</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="{{ "js/form-validation.js" | relURL }}"></script>
+
+  <!-- google map -->
+  {{ with site.Params.google_map }}
+    {{ if .enable }}
+      <div
+        id="map"
+        style="height: 400px;"
+        data-latitude="{{ .map_latitude }}"
+        data-longitude="{{ .map_longitude }}"
+        data-marker="{{ .map_marker | relURL }}"
+        data-marker-name="{{ site.Title }}"></div>
+    {{ end }}
+  {{ end }}
+
+  {{ with site.Params.subscription }}
+    {{ if .enable }}
+      <!-- subscription form -->
+      <form
+        action="{{ .mailchimp_form_action | safeURL }}"
+        method="post"
+        id="mc-embedded-subscribe-form"
+        class="w-full max-w-md mx-auto"
+        novalidate="novalidate">
+        <div class="relative flex mb-3">
+          <input
+            type="email"
+            name="EMAIL"
+            placeholder="請輸入email，訂閱懶得電子報"
+            class="form-input flex-grow rounded-r-none"
+            id="mce-EMAIL"
+            aria-required="true"
+            autocomplete="off"
+            required />
+          <button
+            class="btn btn-primary rounded-l-none -ml-px flex-shrink-0 whitespace-nowrap"
+            name="subscribe"
+            id="mc-embedded-subscribe">
+            立即訂閱
+          </button>
+        </div>
+        <input
+          type="hidden"
+          name="EMAILTYPE"
+          id="mce-EMAILTYPE-0"
+          value="html" />
+        <div style="position:absolute;left:-5000px" aria-hidden="true">
+          <input type="text" name="{{ .name }}" tabindex="-1" />
+        </div>
+      </form>
+      <div id="mce-responses" class="clear">
+        <div
+          class="response text-white"
+          id="mce-error-response"
+          style="display:none"></div>
+        <div
+          class="response text-white"
+          id="mce-success-response"
+          style="display:none"></div>
+      </div>
+      <script
+        type="text/javascript"
+        src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+      <!-- /subscription form -->
+    {{ end }}
+  {{ end }}
+
+  {{ if site.Params.google_map.enable }}
+    {{ $gmap:= resources.Get "plugins/maps/google-map.js" }}
+    <script defer src="{{ $gmap.RelPermalink }}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ site.Params.google_map.map_api_key }}&libraries=places"></script>
+  {{ end }}
+{{ end }}

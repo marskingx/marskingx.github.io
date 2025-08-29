@@ -1,0 +1,24 @@
+{
+  "main": [
+    {
+      "name": "facebook",
+      "icon": "fab fa-facebook",
+      "link": "https://www.facebook.com/lazytoberich"
+    },
+    {
+      "name": "threads",
+      "icon": "fab fa-threads",
+      "link": "https://www.threads.net/@lazytoberich/"
+    },
+    {
+      "name": "instagram",
+      "icon": "fab fa-instagram",
+      "link": "https://www.instagram.com/lazytoberich/"
+    },
+    {
+      "name": "discord",
+      "icon": "fab fa-discord",
+      "link": "https://discord.gg/xeYCvQWBPx"
+    }
+  ]
+}

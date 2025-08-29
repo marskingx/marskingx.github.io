@@ -1,0 +1,60 @@
+{{/* 完整的比較表格 Shortcode - 專為你的使用案例設計
+  Usage:
+  {{< comparison-table title="存錢這件事的啟示"
+>}}
+{{< comparison-row
+  category="投手的經歷"
+  situation="我們的財務規劃"
+  insight="沒有累實的本金，投資賺10%也無感，更重要的是，身邊有錢生活才有安全感。"
+  icon="fa-solid fa-chart-line"
+>}}
+{{< comparison-row
+  category="小聯盟的多年磨練"
+  situation="存錢與累積本金"
+  insight="沒有累實的本金，投資賺10%也無感，更重要的是，身邊有錢生活才有安全感。"
+  icon="fa-solid fa-piggy-bank"
+>}}
+{{< /comparison-table >}}
+*/}}
+{{- $title := .Get "title" | default "比較表" -}}
+
+
+<!-- Desktop Table -->
+<div class="desktop-table">
+  <div class="responsive-table-wrapper mb-6">
+    <table class="w-full border-collapse">
+      <thead>
+        <tr class="bg-theme-light dark:bg-darkmode-theme-light">
+          <th
+            class="text-left p-4 border border-border dark:border-darkmode-border font-semibold text-dark dark:text-darkmode-dark">
+            項目分類
+          </th>
+          <th
+            class="text-left p-4 border border-border dark:border-darkmode-border font-semibold text-dark dark:text-darkmode-dark">
+            我們的財務規劃
+          </th>
+          <th
+            class="text-left p-4 border border-border dark:border-darkmode-border font-semibold text-dark dark:text-darkmode-dark">
+            {{ $title }}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ .Inner }}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Mobile Cards -->
+<div class="mobile-table-cards">
+  <h3
+    class="text-lg font-semibold text-dark dark:text-darkmode-dark mb-4 flex items-center">
+    <i
+      class="fa-solid fa-lightbulb mr-2 text-primary dark:text-darkmode-primary"></i>
+    {{ $title }}
+  </h3>
+  <div class="space-y-4">
+    {{ .Inner }}
+  </div>
+</div>

@@ -1,0 +1,67 @@
+{{/* Partial to display a responsive image with WebP support.
+  It uses `srcset` to provide multiple image sizes for different screen resolutions.
+
+  @param {string} Src - The path to the image.
+  @param {string} Alt - The alt text for the image.
+  @param {string} [Class] - CSS classes to apply to the <img> tag.
+  @param {string} [Loading] - The loading attribute for the <img> tag (e.g., "lazy", "eager"). Defaults to "lazy".
+  @param {object} [Context] - The page context, used for page resources.
+*/}}
+{{ $src := .Src }}
+{{ $alt := .Alt | default (.Title | default "image") }}
+{{ $class := .Class }}
+{{ $loading := .Loading | default "lazy" }}
+
+{{ $image := "" }}
+{{ with .Context }}
+  {{ with .Resources.GetMatch $src }}
+    {{ $image = . }}
+  {{ end }}
+{{ end }}
+{{ if not $image }}
+  {{ with resources.Get $src }}
+    {{ $image = . }}
+  {{ end }}
+{{ end }}
+
+{{ if $image }}
+  {{/* Define image widths for srcset. */}}
+  {{ $widths := slice 480 720 1024 1280 1536 }}
+  {{/* Add original width to the set for high-res screens, if not too large. */}}
+  {{ if lt $image.Width 2000 }}
+    {{ $widths = $widths | append $image.Width }}
+  {{ end }}
+  {{ $widths = $widths | uniq | sort }}
+
+  {{ $webpSrcs := slice }}
+  {{ $originalSrcs := slice }}
+
+  {{ range $widths }}
+    {{ $width := . }}
+    {{ if le $width $image.Width }}
+      {{ $resizedOriginal := $image.Resize (printf "%dx" .) }}
+      {{ $resizedWebp := $image.Resize (printf "%dx webp" .) }}
+      {{ $originalSrcs = $originalSrcs | append (printf "%s %dw" $resizedOriginal.RelPermalink .) }}
+      {{ $webpSrcs = $webpSrcs | append (printf "%s %dw" $resizedWebp.RelPermalink .) }}
+    {{ end }}
+  {{ end }}
+
+  {{ $fallbackSrc := ($image.Resize (printf "%dx" (index $widths 0))).RelPermalink }}
+
+
+  <picture>
+    <source type="image/webp" srcset="{{ delimit $webpSrcs ", " }}" />
+    <source
+      type="image/{{ $image.MediaType.SubType }}"
+      srcset="{{ delimit $originalSrcs ", " }}" />
+    <img
+      class="{{ $class }}"
+      src="{{ $fallbackSrc }}"
+      alt="{{ $alt }}"
+      width="{{ $image.Width }}"
+      height="{{ $image.Height }}"
+      loading="{{ $loading }}" />
+  </picture>
+{{ else }}
+  {{ warnf "Image not found: %s" $src }}
+{{ end }}

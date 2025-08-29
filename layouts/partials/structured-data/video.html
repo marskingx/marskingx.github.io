@@ -1,0 +1,75 @@
+{{/* 影片內容的結構化資料模板
+  為包含影片的頁面生成 VideoObject Schema
+*/}}
+{{- if and .IsPage .Params.video -}}
+  {{- $video := .Params.video -}}
+  {{- $videoData := dict "@context" "https://schema.org" "@type" "VideoObject" -}}
+
+  {{/* 基本影片資訊 */}}
+  {{- $videoData = merge $videoData (dict "name" (.Params.video_title | default .Title)) -}}
+  {{- $videoData = merge $videoData (dict "description" (.Params.video_description | default .Description | default .Summary)) -}}
+  {{- $videoData = merge $videoData (dict "url" .Permalink) -}}
+
+  {{/* 影片 URL */}}
+  {{- if $video.url -}}
+    {{- $videoData = merge $videoData (dict "contentUrl" $video.url) -}}
+  {{- end -}}
+
+  {{/* 嵌入 URL */}}
+  {{- if $video.embed_url -}}
+    {{- $videoData = merge $videoData (dict "embedUrl" $video.embed_url) -}}
+  {{- end -}}
+
+  {{/* 縮圖圖片 */}}
+  {{- if $video.thumbnail -}}
+    {{- $thumbnailUrl := $video.thumbnail | absURL -}}
+    {{- $videoData = merge $videoData (dict "thumbnailUrl" (slice $thumbnailUrl)) -}}
+  {{- else if .Params.image -}}
+    {{- $thumbnailUrl := .Params.image | absURL -}}
+    {{- $videoData = merge $videoData (dict "thumbnailUrl" (slice $thumbnailUrl)) -}}
+  {{- end -}}
+
+  {{/* 上傳日期 */}}
+  {{- $videoData = merge $videoData (dict "uploadDate" (.PublishDate.Format "2006-01-02")) -}}
+
+  {{/* 影片時長 */}}
+  {{- if $video.duration -}}
+    {{- $videoData = merge $videoData (dict "duration" $video.duration) -}}
+  {{- end -}}
+
+  {{/* 影片發布者資訊 */}}
+  {{- $publisher := dict "@type" "Organization" "name" site.Title -}}
+  {{- $publisher = merge $publisher (dict "@id" (printf "%s#organization" site.BaseURL)) -}}
+  {{- if site.Params.logo -}}
+    {{- $logoUrl := site.Params.logo | absURL -}}
+    {{- $publisher = merge $publisher (dict "logo" (dict "@type" "ImageObject" "url" $logoUrl)) -}}
+  {{- end -}}
+  {{- $videoData = merge $videoData (dict "publisher" $publisher) -}}
+
+  {{/* 創作者資訊 */}}
+  {{- if $video.creator -}}
+    {{- $creator := dict "@type" "Person" "name" $video.creator -}}
+    {{- $videoData = merge $videoData (dict "creator" $creator) -}}
+  {{- else -}}
+    {{- $creator := dict "@type" "Person" "name" (.Params.author | default "懶大") -}}
+    {{- $creator = merge $creator (dict "@id" (printf "%s#founder" site.BaseURL)) -}}
+    {{- $videoData = merge $videoData (dict "creator" $creator) -}}
+  {{- end -}}
+
+  {{/* 影片分類 */}}
+  {{- if .Params.categories -}}
+    {{- $videoData = merge $videoData (dict "genre" (index .Params.categories 0)) -}}
+  {{- end -}}
+
+  {{/* 影片標籤 */}}
+  {{- if .Params.tags -}}
+    {{- $videoData = merge $videoData (dict "keywords" (delimit .Params.tags ", ")) -}}
+  {{- end -}}
+
+  {{/* 語言設定 */}}
+  {{- $videoData = merge $videoData (dict "inLanguage" site.Language.Lang) -}}
+
+<script type="application/ld+json">
+{{- $videoData | jsonify (dict "indent" "  ") | safeHTML -}}
+</script>
+{{- end -}}

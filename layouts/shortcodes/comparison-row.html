@@ -1,0 +1,53 @@
+{{/* 比較表格行 Shortcode
+  Usage: {{< comparison-row
+  category="分類名稱"
+  situation="狀況描述"
+  insight="啟示說明"
+  icon="fa-solid fa-icon-name"
+>}}
+*/}}
+{{- $category := .Get "category" | default "項目" -}}
+{{- $situation := .Get "situation" | default "" -}}
+{{- $insight := .Get "insight" | default "" -}}
+{{- $icon := .Get "icon" | default "fa-solid fa-circle-dot" -}}
+
+
+<!-- Desktop table row -->
+<tr
+  class="desktop-row hover:bg-theme-light/50 dark:hover:bg-darkmode-theme-light/50 transition-colors">
+  <td
+    class="p-4 border border-border dark:border-darkmode-border font-medium text-dark dark:text-darkmode-dark align-top">
+    <i class="{{ $icon }} mr-2 text-primary dark:text-darkmode-primary"></i>
+    {{ $category }}
+  </td>
+  <td
+    class="p-4 border border-border dark:border-darkmode-border text-text dark:text-darkmode-text align-top">
+    {{ $situation }}
+  </td>
+  <td
+    class="p-4 border border-border dark:border-darkmode-border text-text dark:text-darkmode-text align-top leading-relaxed">
+    {{ $insight }}
+  </td>
+</tr>
+
+<!-- Mobile card -->
+<div class="table-card mobile-card">
+  <div class="card-header">
+    <i class="{{ $icon }} card-icon"></i>
+    <span>{{ $category }}</span>
+  </div>
+  <div class="card-content">
+    {{- if $situation -}}
+      <div class="card-row">
+        <span class="label">現況：</span>
+        <span class="value">{{ $situation }}</span>
+      </div>
+    {{- end -}}
+    {{- if $insight -}}
+      <div class="card-row">
+        <span class="label">啟示：</span>
+        <div class="value">{{ $insight }}</div>
+      </div>
+    {{- end -}}
+  </div>
+</div>

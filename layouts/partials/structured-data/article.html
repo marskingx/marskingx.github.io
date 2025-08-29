@@ -1,0 +1,115 @@
+{{/* 自動為文章頁面產生 BlogPosting 結構化資料。
+  如果文章分類為 "閱讀心得" 且包含 `rate` 參數，則會自動追加 Review (星級評分) 資訊。
+*/}}
+{{ if and .IsPage (eq .Section "blog") }}
+  {{/* Create a scratchpad for the schema */}}
+  {{ $schema := newScratch }}
+
+  {{/* Base BlogPosting Schema */}}
+  {{ $schemaData := dict "@context" "https://schema.org" "@type" "BlogPosting" }}
+  {{ $schemaData = merge $schemaData (dict "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)) }}
+{{/* Robust headline fallback to avoid empty titles */}}
+{{ $pageTitle := .Title | default .Params.title | default .Params.seo_title | default (path.Base .Permalink | humanize) }}
+{{ $schemaData = merge $schemaData (dict "headline" $pageTitle) }}
+  {{ $schemaData = merge $schemaData (dict "description" (.Description | default .Summary)) }}
+
+  {{/* Image */}}
+  {{ with .Params.image }}
+    {{ $imageURL := . | absURL }}
+    {{ $schemaData = merge $schemaData (dict "image" (dict "@type" "ImageObject" "url" $imageURL)) }}
+  {{ end }}
+
+  {{/* Author - ONLY if author param exists and is not empty */}}
+  {{ with .Params.author }}
+    {{ if ne . "" }}
+      {{ $authorData := dict "@type" "Person" "name" . }}
+      {{ $authorData = merge $authorData (dict "@id" (printf "%s#founder" site.BaseURL)) }}
+      {{ $authorData = merge $authorData (dict "url" (printf "%s%s/" ("authors/" | relLangURL) (. | urlize))) }}
+      {{ $schemaData = merge $schemaData (dict "author" $authorData) }}
+    {{ end }}
+  {{ end }}
+
+  {{/* Publisher */}}
+  {{ $logoURL := site.Params.logo | default "/favicon.png" | absURL }}
+  {{ $publisher := dict "@type" "Organization" "name" site.Title }}
+  {{ $publisher = merge $publisher (dict "@id" (printf "%s#organization" site.BaseURL)) }}
+  {{ $publisher = merge $publisher (dict "logo" (dict "@type" "ImageObject" "url" $logoURL)) }}
+  {{ $schemaData = merge $schemaData (dict "publisher" $publisher) }}
+
+  {{/* Dates */}}
+  {{ $schemaData = merge $schemaData (dict "datePublished" (.PublishDate.Format "2006-01-02T15:04:05Z07:00")) }}
+  {{ $schemaData = merge $schemaData (dict "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")) }}
+
+  {{/* Categories & Tags as keywords */}}
+  {{ $keywords := slice }}
+  {{ with .Params.categories }}
+    {{ $keywords = $keywords | append . }}
+  {{ end }}
+  {{ with .Params.tags }}
+    {{ $keywords = $keywords | append . }}
+  {{ end }}
+  {{ if $keywords }}
+    {{ $schemaData = merge $schemaData (dict "keywords" (delimit ($keywords | uniq) ", ")) }}
+  {{ end }}
+
+  {{/* Article Section - Only if categories exist */}}
+  {{ with index .Params.categories 0 }}
+    {{ $schemaData = merge $schemaData (dict "articleSection" .) }}
+  {{ end }}
+
+  {{/* Word Count and Language */}}
+  {{ $schemaData = merge $schemaData (dict "wordCount" .WordCount) }}
+  {{ $schemaData = merge $schemaData (dict "inLanguage" site.Language.Lang) }}
+  {{ $schemaData = merge $schemaData (dict "url" .Permalink) }}
+
+  {{/* 🔥 CTR 優化：智慧判斷書評並生成獨立 Review + 整合 BlogPosting */}}
+  {{ if and (in .Params.categories "閱讀心得") .Params.rate }}
+    {{/* 計算星級評分：計算 ⭐ 符號的數量 */}}
+    {{ $ratingValue := 0 }}
+    {{ $rateStr := .Params.rate | string }}
+    {{ range split $rateStr "" }}
+      {{ if eq . "⭐" }}
+        {{ $ratingValue = add $ratingValue 1 }}
+      {{ end }}
+    {{ end }}
+
+    {{/* 如果成功解析到評分，創建完整的 Review 結構化資料 */}}
+    {{ if gt $ratingValue 0 }}
+      {{/* 提取書名：從標題中取得書名（去除【書單】前綴） */}}
+      {{ $bookTitle := .Title }}
+      {{ $bookTitle = $bookTitle | replaceRE "^【[^】]*】\\s*" "" }}
+      {{ $bookTitle = $bookTitle | replaceRE "\\s*閱讀心得\\s*$" "" }}
+
+      {{/* 建立獨立的 Review 結構化資料 */}}
+      {{ $reviewData := dict "@type" "Review" }}
+      {{ $reviewData = merge $reviewData (dict "itemReviewed" (dict "@type" "Book" "name" $bookTitle)) }}
+      {{ $reviewData = merge $reviewData (dict "reviewRating" (dict "@type" "Rating" "ratingValue" $ratingValue "bestRating" 5 "worstRating" 1)) }}
+      {{ $reviewData = merge $reviewData (dict "author" (dict "@type" "Person" "name" (.Params.author | default "懶大") "@id" (printf "%s#founder" site.BaseURL))) }}
+      {{ $reviewData = merge $reviewData (dict "reviewBody" (.Summary | default .Description)) }}
+      {{ $reviewData = merge $reviewData (dict "datePublished" (.PublishDate.Format "2006-01-02")) }}
+      {{ $reviewData = merge $reviewData (dict "headline" .Title) }}
+      {{ $reviewData = merge $reviewData (dict "url" .Permalink) }}
+
+      {{/* 在 BlogPosting 中也添加 Review 關聯 */}}
+      {{ $schemaData = merge $schemaData (dict "review" $reviewData) }}
+
+      {{/* 🎯 關鍵優化：將文章類型改為 Review，增加搜尋引擎理解度 */}}
+      {{ $schemaData = merge $schemaData (dict "@type" (slice "BlogPosting" "Review")) }}
+    {{ end }}
+  {{ end }}
+
+  {{/* Output JSON-LD */}}
+<script type="application/ld+json">
+  {{
+    $schemaData
+    |
+    jsonify
+    (dict
+    "indent"
+    "  "
+    )
+    |
+    safeJS
+  }}
+</script>
+{{ end }}

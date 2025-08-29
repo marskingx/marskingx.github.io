@@ -1,0 +1,142 @@
+{{/* Table of Contents partial for blog posts */}}
+{{- $toc := .TableOfContents -}}
+{{- $class := .Class | default "default" -}}
+{{- $collapsed := .Collapsed | default false -}}
+
+{{/* Only show TOC if content has headings */}}
+{{- if $toc -}}
+  <div
+    class="toc-container mb-8 p-6 bg-theme-light dark:bg-darkmode-theme-light rounded-lg border border-border dark:border-darkmode-border">
+    <!-- TOC Header -->
+    <div class="flex items-center justify-between mb-4">
+      <h3
+        class="text-lg font-semibold text-dark dark:text-darkmode-dark flex items-center">
+        <i
+          class="fa-solid fa-list-ul mr-2 text-primary dark:text-darkmode-primary"></i>
+        讀完這篇你會學到：
+      </h3>
+      {{- if $collapsed -}}
+        <button
+          class="toc-toggle text-primary dark:text-darkmode-primary hover:text-primary-dark dark:hover:text-darkmode-primary-light transition-colors duration-200"
+          aria-label="切換目錄顯示">
+          <i
+            class="fa-solid fa-chevron-down transition-transform duration-200"></i>
+        </button>
+      {{- end -}}
+    </div>
+
+    <!-- TOC Content -->
+    <div class="toc-content{{- if $collapsed -}}hidden{{- end -}}">
+      <div class="toc-wrapper prose prose-sm max-w-none">
+        {{ $toc | safeHTML }}
+      </div>
+    </div>
+  </div>
+
+  {{- if $collapsed -}}
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const tocToggle = document.querySelector(".toc-toggle");
+        const tocContent = document.querySelector(".toc-content");
+        const chevron = tocToggle?.querySelector("i");
+
+        if (tocToggle && tocContent && chevron) {
+          tocToggle.addEventListener("click", function () {
+            tocContent.classList.toggle("hidden");
+            chevron.classList.toggle("rotate-180");
+          });
+        }
+      });
+    </script>
+  {{- end -}}
+
+
+  <style>
+    .toc-wrapper ol {
+      counter-reset: toc-counter;
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .toc-wrapper ol li {
+      counter-increment: toc-counter;
+      position: relative;
+      padding-left: 2rem;
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+
+    .toc-wrapper ol li:before {
+      content: counter(toc-counter, decimal) ".";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #3b82f6; /* primary color */
+      font-weight: 600;
+      min-width: 1.5rem;
+    }
+
+    .dark .toc-wrapper ol li:before {
+      color: #60a5fa; /* darkmode primary color */
+    }
+
+    .toc-wrapper ol li a {
+      color: #374151; /* text color */
+      text-decoration: none;
+      transition: color 0.2s ease;
+      font-weight: 500;
+    }
+
+    .dark .toc-wrapper ol li a {
+      color: #d1d5db; /* darkmode text color */
+    }
+
+    .toc-wrapper ol li a:hover {
+      color: #3b82f6; /* primary color */
+      text-decoration: underline;
+    }
+
+    .dark .toc-wrapper ol li a:hover {
+      color: #60a5fa; /* darkmode primary color */
+    }
+
+    /* 次級項目 */
+    .toc-wrapper ol ol {
+      margin-top: 0.25rem;
+      padding-left: 1rem;
+      border-left: 2px solid #e5e7eb;
+    }
+
+    .dark .toc-wrapper ol ol {
+      border-left-color: #4b5563;
+    }
+
+    .toc-wrapper ol ol li {
+      padding-left: 1.5rem;
+      font-size: 0.9rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .toc-wrapper ol ol li:before {
+      content: counter(toc-counter, lower-alpha) ".";
+      color: #6b7280; /* secondary text color */
+      font-weight: 500;
+    }
+
+    .dark .toc-wrapper ol ol li:before {
+      color: #9ca3af; /* darkmode secondary text color */
+    }
+
+    /* 第三層項目 */
+    .toc-wrapper ol ol ol li:before {
+      content: "• ";
+      color: #9ca3af; /* light text color */
+      font-weight: 400;
+    }
+
+    .dark .toc-wrapper ol ol ol li:before {
+      color: #6b7280; /* darkmode light text color */
+    }
+  </style>
+{{- end -}}

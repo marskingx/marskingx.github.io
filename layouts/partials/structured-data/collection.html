@@ -1,0 +1,49 @@
+{{/* 集合頁面（分類、標籤、作者、部落格列表）：dict → jsonify，避免雙重字串化 */}}
+{{- $collectionType := (cond (eq .Type "categories") "Category" (cond (eq .Type "tags") "Tag" (cond (eq .Type "authors") "Author" "Blog"))) -}}
+
+{{- $items := slice -}}
+{{- range $index, $post := .Pages -}}
+  {{- $author := dict "@type" "Person" "name" ($post.Params.author | default "懶大") -}}
+  {{- $publisher := dict "@type" "Organization" "name" site.Title -}}
+  {{- $item := dict "@type" "BlogPosting" "@id" (printf "%s#article" $post.Permalink) "name" $post.Title "url" $post.Permalink "datePublished" ($post.PublishDate.Format "2006-01-02T15:04:05Z07:00") "author" $author "publisher" $publisher -}}
+  {{- with $post.Params.image -}}
+    {{- $item = merge $item (dict "image" (dict "@type" "ImageObject" "url" (. | absURL))) -}}
+  {{- end -}}
+  {{- with $post.Description -}}
+    {{- $item = merge $item (dict "description" .) -}}
+  {{- end -}}
+  {{- $listItem := dict "@type" "ListItem" "position" (add $index 1) "item" $item -}}
+  {{- $items = $items | append $listItem -}}
+{{- end -}}
+
+{{- $itemList := dict "@type" "ItemList" "name" (printf "%s文章列表" .Title) "description" (printf "所有關於%s的文章" .Title) "numberOfItems" (len .Pages) "itemListElement" $items -}}
+{{- $isPartOf := dict "@type" "WebSite" "@id" (printf "%s#website" site.BaseURL) -}}
+
+{{- $collection := dict "@context" "https://schema.org" "@type" "CollectionPage" "@id" (printf "%s#collection" .Permalink) "url" .Permalink "name" .Title "description" (.Description | default (printf "%s相關的所有文章" .Title)) "inLanguage" "zh-TW" "isPartOf" $isPartOf -}}
+{{- with .Params.image -}}
+  {{- $collection = merge $collection (dict "image" (dict "@type" "ImageObject" "url" (. | absURL))) -}}
+{{- end -}}
+{{- $about := dict "@type" "Thing" "name" .Title "description" (.Description | default (printf "%s相關的財務規劃知識" .Title)) -}}
+{{- $collection = merge $collection (dict "about" $about "mainEntity" $itemList) -}}
+
+{{- $bc1 := dict "@type" "ListItem" "position" 1 "name" "首頁" "item" (dict "@type" "WebPage" "@id" site.BaseURL "name" "首頁") -}}
+{{- $bc2 := dict "@type" "ListItem" "position" 2 "name" $collectionType "item" (dict "@type" "WebPage" "@id" ((printf "/%s/" .Type) | relLangURL | absURL) "name" $collectionType) -}}
+{{- $bc3 := dict "@type" "ListItem" "position" 3 "name" .Title "item" (dict "@type" "WebPage" "@id" .Permalink "name" .Title) -}}
+{{- $breadcrumb := dict "@type" "BreadcrumbList" "itemListElement" (slice $bc1 $bc2 $bc3) -}}
+{{- $collection = merge $collection (dict "breadcrumb" $breadcrumb) -}}
+
+<script type="application/ld+json">
+  {{
+    -
+    $collection
+    |
+    jsonify
+    (dict
+    "indent"
+    "  "
+    )
+    |
+    safeJS
+    -
+  }}
+</script>

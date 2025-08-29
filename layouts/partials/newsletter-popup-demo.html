@@ -1,0 +1,40 @@
+<!-- 新電子報訂閱彈窗展示頁面 -->
+<div class="fixed bottom-4 right-4 z-40">
+  <button
+    id="demo-trigger-btn"
+    class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 focus:ring-4 focus:ring-blue-500/20 focus:outline-none">
+    <span class="flex items-center">
+      <svg
+        class="w-5 h-5 mr-2"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M3 8l7.89 7.89a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+      </svg>
+      預覽新彈窗 ✨
+    </span>
+  </button>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const demoBtn = document.getElementById("demo-trigger-btn");
+    if (demoBtn) {
+      demoBtn.addEventListener("click", function () {
+        // 暫時清除 localStorage 限制以便展示
+        localStorage.removeItem("newsletter_popup_data");
+
+        // 觸發彈窗顯示
+        const overlay = document.getElementById("newsletter-popup-overlay");
+        if (overlay) {
+          overlay.classList.add("newsletter-popup-show");
+          document.body.style.overflow = "hidden";
+        }
+      });
+    }
+  });
+</script>

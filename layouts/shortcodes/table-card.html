@@ -1,0 +1,37 @@
+{{/* Individual Table Card Shortcode
+  Usage: {{< table-card title="項目名稱" icon="fa-icon-name" situation="狀況描述"
+>}}
+內容說明
+{{< /table-card >}}
+*/}}
+{{- $title := .Get "title" | default "項目" -}}
+{{- $icon := .Get "icon" | default "fa-solid fa-circle-dot" -}}
+{{- $situation := .Get "situation" | default "" -}}
+
+
+<!-- Desktop table row -->
+<tr class="md-table-row">
+  <td class="font-medium">{{ $title }}</td>
+  <td>{{ $situation }}</td>
+  <td>{{ .Inner | markdownify }}</td>
+</tr>
+
+<!-- Mobile card -->
+<div class="table-card md:hidden">
+  <div class="card-header">
+    <i class="{{ $icon }} card-icon"></i>
+    <span>{{ $title }}</span>
+  </div>
+  <div class="card-content">
+    {{- if $situation -}}
+      <div class="card-row">
+        <span class="label">狀況：</span>
+        <span class="value">{{ $situation }}</span>
+      </div>
+    {{- end -}}
+    <div class="card-row">
+      <span class="label">說明：</span>
+      <div class="value">{{ .Inner | markdownify }}</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,180 @@
+{{/* Smart Prefetch System: 智慧型預取系統
+  根據使用者行為和頁面類型智慧預取資源
+*/}}
+
+{{ if hugo.Environment | eq "production" }}
+<script>
+(function() {
+  'use strict';
+
+  // 智慧型預取設定
+  const PREFETCH_CONFIG = {
+    // 預取延遲（毫秒）
+    delay: 2000,
+    // 連線類型檢查
+    respectDataSaver: true,
+    // 預取限制
+    maxPrefetch: 3,
+    // Intersection Observer 設定
+    threshold: 0.1
+  };
+
+  let prefetchCount = 0;
+  let prefetchQueue = new Set();
+
+  // 檢查網路條件
+  function shouldPrefetch() {
+    // 檢查 Data Saver
+    if (PREFETCH_CONFIG.respectDataSaver &&
+        navigator.connection &&
+        navigator.connection.saveData) {
+      return false;
+    }
+
+    // 檢查連線速度
+    if (navigator.connection) {
+      const connection = navigator.connection;
+      const slowConnection = connection.effectiveType === 'slow-2g' ||
+                           connection.effectiveType === '2g';
+      if (slowConnection) return false;
+    }
+
+    // 檢查預取數量限制
+    if (prefetchCount >= PREFETCH_CONFIG.maxPrefetch) {
+      return false;
+    }
+
+    return true;
+  }
+
+  // 預取資源
+  function prefetchResource(url, priority = 'low') {
+    if (!shouldPrefetch() || prefetchQueue.has(url)) return;
+
+    prefetchQueue.add(url);
+    prefetchCount++;
+
+    const link = document.createElement('link');
+    link.rel = 'prefetch';
+    link.href = url;
+    link.fetchPriority = priority;
+
+    // 預取完成後的清理
+    link.onload = link.onerror = () => {
+      prefetchQueue.delete(url);
+      document.head.removeChild(link);
+    };
+
+    document.head.appendChild(link);
+    console.log(`Prefetching: ${url}`);
+  }
+
+  // 延遲預取關鍵頁面
+  function delayedPrefetch() {
+    setTimeout(() => {
+      // 首頁：預取熱門文章
+      {{ if eq .Type "homepage" }}
+      const popularPosts = [
+        {{ range first 3 (where site.RegularPages "Type" "blog") }}
+        '{{ .RelPermalink }}',
+        {{ end }}
+    ]
+      popularPosts.forEach((url, index) => {
+        setTimeout(() => prefetchResource(url, index === 0 ? 'high' : 'low'), index * 500);
+      });
+      {{ end }}
+
+      // 文章頁：預取相關文章
+      {{ if eq .Type "blog" }}
+      const relatedPosts = [
+        {{ range first 2 .Site.RegularPages }}
+        {{ if and (ne . $.Page) (intersect .Params.tags $.Params.tags) }}
+        '{{ .RelPermalink }}',
+        {{ end }}
+        {{ end }}
+    ]
+      relatedPosts.forEach(url => prefetchResource(url));
+      {{ end }}
+
+      // 預取常用頁面
+      const keyPages = ['/about/', '/contact/', '/podcast/'];
+      keyPages.forEach(url => {
+        if (window.location.pathname !== url) {
+          prefetchResource(url);
+        }
+      });
+
+    }, PREFETCH_CONFIG.delay);
+  }
+
+  // Intersection Observer 用於可視區域預取
+  if ('IntersectionObserver' in window) {
+    const linkObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const link = entry.target;
+          const href = link.href;
+
+          if (href && href !== window.location.href) {
+            // 延遲預取以避免影響當前頁面載入
+            setTimeout(() => {
+              prefetchResource(href, 'low');
+            }, 200);
+
+            linkObserver.unobserve(link);
+          }
+        }
+      });
+    }, { threshold: PREFETCH_CONFIG.threshold });
+
+    // 觀察所有內部連結
+    setTimeout(() => {
+      const internalLinks = document.querySelectorAll('a[href^="/"], a[href^="{{ site.BaseURL }}"]');
+      internalLinks.forEach(link => {
+        if (!link.href.includes('#') && !link.href.includes('mailto:')) {
+          linkObserver.observe(link);
+        }
+      });
+    }, 1000);
+  }
+
+  // 滑鼠懸停預取
+  let hoverTimeout;
+  document.addEventListener('mouseover', (e) => {
+    if (e.target.tagName === 'A' && e.target.href) {
+      const href = e.target.href;
+      if (href.startsWith(window.location.origin)) {
+        hoverTimeout = setTimeout(() => {
+          prefetchResource(href, 'high');
+        }, 65); // 65ms 是最佳的懸停檢測時間
+      }
+    }
+  });
+
+  document.addEventListener('mouseout', (e) => {
+    if (hoverTimeout) {
+      clearTimeout(hoverTimeout);
+      hoverTimeout = null;
+    }
+  });
+
+  // 頁面載入完成後開始預取
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', delayedPrefetch);
+  } else {
+    delayedPrefetch();
+  }
+
+  // 防止記憶體洩漏
+  window.addEventListener('beforeunload', () => {
+    prefetchQueue.clear();
+    if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+      navigator.serviceWorker.controller.postMessage({
+        type: 'PREFETCH_CLEANUP'
+      });
+    }
+  });
+
+})();
+</script>
+{{ end }}

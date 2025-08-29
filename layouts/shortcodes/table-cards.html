@@ -1,0 +1,44 @@
+{{/* Table Cards Shortcode - For complex comparison tables
+  Usage: {{< table-cards title="比較標題"
+>}}
+{{< table-card title="項目1" icon="fa-chart-line" >}}
+**狀況：**描述<br />
+**啟示：**說明
+{{< /table-card >}}
+{{< table-card title="項目2" icon="fa-phone" >}}
+**狀況：**描述<br />
+**啟示：**說明
+{{< /table-card >}}
+{{< /table-cards >}}
+*/}}
+{{- $title := .Get "title" | default "對照表" -}}
+
+
+<!-- Desktop Table (Hidden on mobile) -->
+<div class="desktop-table">
+  <div class="responsive-table-wrapper">
+    <table class="w-full">
+      <thead>
+        <tr>
+          <th class="text-left">項目</th>
+          <th class="text-left">狀況</th>
+          <th class="text-left">{{ $title }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ .Inner }}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Mobile Cards (Hidden on desktop) -->
+<div class="mobile-table-cards">
+  <h3
+    class="text-lg font-semibold text-dark dark:text-darkmode-dark mb-4 flex items-center">
+    <i
+      class="fa-solid fa-table mr-2 text-primary dark:text-darkmode-primary"></i>
+    {{ $title }}
+  </h3>
+  {{ .Inner }}
+</div>

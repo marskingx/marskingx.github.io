@@ -1,0 +1,4 @@
+{{/* hreflang links (single-language site) */}}
+{{ $lang := site.Language.Lang | default "zh-TW" }}
+<link rel="alternate" href="{{ .Permalink }}" hreflang="{{ $lang }}" />
+<link rel="alternate" href="{{ .Permalink }}" hreflang="x-default" />

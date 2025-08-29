@@ -1,0 +1,33 @@
+{{ $title := .Title }}
+{{ $description := .Description | default .Summary }}
+{{ $image := .Params.image | default site.Params.logo | absURL }}
+
+
+<title>{{ $title }}</title>
+
+<!-- canonical url -->
+<link rel="canonical" href="{{ .Permalink }}" />
+
+<!-- meta description -->
+<meta name="description" content="{{ $description }}" />
+
+<!-- opengraph -->
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:description" content="{{ $description }}" />
+<meta
+  property="og:type"
+  content="{{ if .IsPage }}
+    article
+  {{ else }}
+    website
+  {{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:image" content="{{ $image }}" />
+<meta property="og:image:alt" content="{{ $title }}" />
+
+<!-- twitter -->
+<meta name="twitter:title" content="{{ $title }}" />
+<meta name="twitter:description" content="{{ $description }}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="{{ $image }}" />
+<meta name="twitter:image:alt" content="{{ $title }}" />

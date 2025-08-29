@@ -1,0 +1,37 @@
+{{/* 首頁專用：以 dict 組裝，避免任何雙重字串化 */}}
+{{- $about := dict "@type" "Thing" "name" "財務規劃" "description" "個人理財規劃、投資策略、保險規劃等財務知識" -}}
+
+{{- $items := slice -}}
+{{- $pages := where .Site.RegularPages "Section" "blog" -}}
+{{- $recentPosts := first 10 $pages -}}
+{{- range $index, $post := $recentPosts -}}
+  {{- $author := dict "@type" "Person" "name" ($post.Params.author | default "懶大") -}}
+  {{- $item := dict "@type" "BlogPosting" "name" $post.Title "url" $post.Permalink "datePublished" ($post.PublishDate.Format "2006-01-02T15:04:05Z07:00") "author" $author -}}
+  {{- $listItem := dict "@type" "ListItem" "position" (add $index 1) "item" $item -}}
+  {{- $items = $items | append $listItem -}}
+{{- end -}}
+
+{{- $itemList := dict "@type" "ItemList" "name" "最新文章" "description" "懶得變有錢部落格的最新財務規劃文章" "itemListElement" $items -}}
+
+{{- $isPartOf := dict "@type" "WebSite" "@id" (printf "%s#website" site.BaseURL) -}}
+
+{{- $breadcrumbItem := dict "@type" "ListItem" "position" 1 "name" "首頁" "item" (dict "@type" "WebPage" "@id" site.BaseURL "name" "首頁") -}}
+{{- $breadcrumb := dict "@type" "BreadcrumbList" "itemListElement" (slice $breadcrumbItem) -}}
+
+{{- $webpage := dict "@context" "https://schema.org" "@type" "WebPage" "@id" (printf "%s#homepage" site.BaseURL) "url" site.BaseURL "name" site.Title "description" (site.Params.meta_description | default "專業的財務規劃和理財教育平台，提供實用的投資理財知識與策略") "inLanguage" "zh-TW" "isPartOf" $isPartOf "about" $about "mainEntity" $itemList "breadcrumb" $breadcrumb -}}
+
+<script type="application/ld+json">
+  {{
+    -
+    $webpage
+    |
+    jsonify
+    (dict
+    "indent"
+    "  "
+    )
+    |
+    safeJS
+    -
+  }}
+</script>

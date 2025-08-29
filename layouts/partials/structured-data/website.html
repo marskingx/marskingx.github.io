@@ -1,0 +1,42 @@
+{{/* 網站基本資訊的結構化資料：以 dict 構建後一次性 jsonify，避免雙重字串化 */}}
+{{- $socialLinks := slice -}}
+{{- with site.Params.social -}}
+  {{- with .facebook -}}
+    {{- $socialLinks = $socialLinks | append . -}}
+  {{- end -}}
+  {{- with .instagram -}}
+    {{- $socialLinks = $socialLinks | append . -}}
+  {{- end -}}
+  {{- with .discord -}}{{- $socialLinks = $socialLinks | append . -}}{{- end -}}
+  {{- with .youtube -}}{{- $socialLinks = $socialLinks | append . -}}{{- end -}}
+{{- end -}}
+
+{{- $publisher := dict "@type" "Organization" "@id" (printf "%s#organization" site.BaseURL) "name" site.Title "url" site.BaseURL -}}
+{{- $publisher = merge $publisher (dict "logo" (dict "@type" "ImageObject" "url" ((site.Params.logo | default "/favicon.png") | absURL) "width" 512 "height" 512)) -}}
+{{- if $socialLinks -}}
+  {{- $publisher = merge $publisher (dict "sameAs" $socialLinks) -}}
+{{- end -}}
+
+{{- $website := dict "@context" "https://schema.org" "@type" "WebSite" "@id" (printf "%s#website" site.BaseURL) -}}
+{{- $website = merge $website (dict "url" site.BaseURL "name" site.Title "alternateName" "懶得變有錢") -}}
+{{- $website = merge $website (dict "description" (site.Params.meta_description | default "帶你了解財務規劃本質，鑑定自己的財務DNA")) -}}
+{{- $website = merge $website (dict "inLanguage" "zh-TW") -}}
+{{- $search := dict "@type" "SearchAction" "target" (dict "@type" "EntryPoint" "urlTemplate" (printf "%ssearch?q={search_term_string}" site.BaseURL)) "query-input" "required name=search_term_string" -}}
+{{- $website = merge $website (dict "potentialAction" $search) -}}
+{{- $website = merge $website (dict "publisher" $publisher) -}}
+
+<script type="application/ld+json">
+  {{
+    -
+    $website
+    |
+    jsonify
+    (dict
+    "indent"
+    "  "
+    )
+    |
+    safeJS
+    -
+  }}
+</script>

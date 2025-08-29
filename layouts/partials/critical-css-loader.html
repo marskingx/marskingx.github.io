@@ -1,0 +1,207 @@
+{{/* Critical CSS Loader: 關鍵 CSS 載入優化
+  實作內聯關鍵 CSS 和延遲載入非關鍵 CSS
+*/}}
+
+{{ $critical_css := "" }}
+{{ $non_critical_css := slice }}
+
+
+<!-- 內聯關鍵 CSS -->
+{{ if hugo.Environment | eq "production" }}
+  <style>
+    /* 關鍵 CSS - 立即渲染 */
+    /* Reset and Base Styles */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family:
+        system-ui,
+        -apple-system,
+        sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    /* Navigation */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    /* Layout */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    /* Typography */
+    h1,
+    h2,
+    h3 {
+      margin: 0 0 1rem;
+      line-height: 1.3;
+    }
+    p {
+      margin: 0 0 1rem;
+    }
+    /* Loading State */
+    .loading {
+      opacity: 0.7;
+      pointer-events: none;
+    }
+  </style>
+{{ end }}
+
+
+<!-- 延遲載入非關鍵 CSS -->
+<script>
+(function() {
+  'use strict';
+
+  // 非關鍵 CSS 列表
+  const nonCriticalCSS = [
+    {{ range site.Params.plugins.css }}
+    {{ if .lazy }}
+    '{{ .link | absURL }}',
+    {{ end }}
+    {{ end }}
+]
+
+  // 載入 CSS 函數
+  function loadCSS(href, before, media) {
+    const doc = window.document;
+    const ss = doc.createElement('link');
+    let ref;
+
+    if (before) {
+      ref = before;
+    } else {
+      const refs = (doc.body || doc.getElementsByTagName('head')[0]).childNodes;
+      ref = refs[refs.length - 1];
+    }
+
+    const sheets = doc.styleSheets;
+
+    ss.rel = 'stylesheet';
+    ss.href = href;
+    ss.media = 'only x';
+
+    function ready(cb) {
+      if (doc.body) {
+        return cb();
+      }
+      setTimeout(() => ready(cb));
+    }
+
+    function loadCB() {
+      let href = ss.href;
+      ss.media = media || 'all';
+    }
+
+    ready(() => {
+      ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+    });
+
+    ss.addEventListener('load', loadCB);
+    ss.onloadcssdefined = loadCB;
+    return ss;
+  }
+
+  // 延遲載入非關鍵 CSS
+  function loadNonCriticalCSS() {
+    nonCriticalCSS.forEach((href, index) => {
+      setTimeout(() => {
+        loadCSS(href);
+        console.log('Lazy loaded CSS:', href);
+      }, index * 50); // 分散載入以避免阻塞
+    });
+  }
+
+  // 頁面載入完成後載入非關鍵 CSS
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(loadNonCriticalCSS, 100);
+    });
+  } else {
+    setTimeout(loadNonCriticalCSS, 100);
+  }
+
+  // 字型載入優化
+  if ('fonts' in document) {
+    document.fonts.addEventListener('loadingdone', () => {
+      console.log('All fonts loaded');
+      // 移除載入狀態
+      document.body.classList.remove('fonts-loading');
+    });
+  }
+})();
+</script>
+
+<!-- 字型載入優化 -->
+{{ if site.Params.google_font_family }}
+<script>
+// 字型載入檢測
+document.body.classList.add('fonts-loading');
+
+const observer = new FontFaceObserver('{{ site.Params.google_font_family }}');
+observer.load().then(() => {
+  document.body.classList.remove('fonts-loading');
+  document.body.classList.add('fonts-loaded');
+
+  // 儲存字型載入狀態到 localStorage
+  try {
+    localStorage.setItem('fontsLoaded', 'true');
+  } catch(e) {}
+});
+
+// 檢查是否已載入過字型
+try {
+  if (localStorage.getItem('fontsLoaded')) {
+    document.body.classList.add('fonts-loaded');
+  }
+} catch(e) {}
+</script>
+{{ end }}
+
+
+<!-- 預載入下一頁的關鍵資源 -->
+{{ if .NextInSection }}
+<script>
+// 預測性預載入
+let prefetchTriggered = false;
+
+function prefetchNextPage() {
+  if (prefetchTriggered) return;
+  prefetchTriggered = true;
+
+  const nextPageUrl = '{{ .NextInSection.RelPermalink }}';
+
+  // 預載入下一頁
+  const link = document.createElement('link');
+  link.rel = 'prefetch';
+  link.href = nextPageUrl;
+  document.head.appendChild(link);
+
+  console.log('Prefetching next page:', nextPageUrl);
+}
+
+// 滾動到 70% 時觸發預載入
+let scrollTriggered = false;
+window.addEventListener('scroll', () => {
+  if (scrollTriggered) return;
+
+  const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+
+  if (scrollPercent > 70) {
+    scrollTriggered = true;
+    prefetchNextPage();
+  }
+});
+</script>
+{{ end }}
