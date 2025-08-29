@@ -10,3 +10,15 @@ Thumbs.db
 
 # IDE configuration
 /.idea/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# AI collaboration files
+CLAUDE.md
+GEMINI.md
+PURE_STATE.md
+Tools.txt

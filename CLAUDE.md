@@ -47,7 +47,7 @@ hugo --gc --minify --environment staging --baseURL "<https://example.com>"
 
 - **靜態網站生成器**: Hugo v0.148.2 (extended)
 - **主題**: Hugoplate (客製化)
-- **CSS 框架**: Tailwind CSS v4.1.12
+- **CSS 框架**: Tailwind CSS v3.4.17 (重要：保持v3版本，不要升級至v4)
 - **構建工具**: PostCSS, autoprefixer
 - **託管**: GitHub Pages
 - **語言**: 繁體中文 (zh-tw)
