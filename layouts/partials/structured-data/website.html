@@ -26,17 +26,5 @@
 {{- $website = merge $website (dict "publisher" $publisher) -}}
 
 <script type="application/ld+json">
-  {{
-    -
-    $website
-    |
-    jsonify
-    (dict
-    "indent"
-    "  "
-    )
-    |
-    safeJS
-    -
-  }}
+  {{- $website | jsonify (dict "indent" "  ") | safeJS -}}
 </script>

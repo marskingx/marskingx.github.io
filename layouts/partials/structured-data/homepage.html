@@ -21,17 +21,5 @@
 {{- $webpage := dict "@context" "https://schema.org" "@type" "WebPage" "@id" (printf "%s#homepage" site.BaseURL) "url" site.BaseURL "name" site.Title "description" (site.Params.meta_description | default "專業的財務規劃和理財教育平台，提供實用的投資理財知識與策略") "inLanguage" "zh-TW" "isPartOf" $isPartOf "about" $about "mainEntity" $itemList "breadcrumb" $breadcrumb -}}
 
 <script type="application/ld+json">
-  {{
-    -
-    $webpage
-    |
-    jsonify
-    (dict
-    "indent"
-    "  "
-    )
-    |
-    safeJS
-    -
-  }}
+  {{- $webpage | jsonify (dict "indent" "  ") | safeJS -}}
 </script>

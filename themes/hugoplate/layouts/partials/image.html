@@ -13,15 +13,11 @@
 {{ $loading := .Loading | default "lazy" }}
 
 {{ $image := "" }}
-{{ with .Context }}
-  {{ with .Resources.GetMatch $src }}
-    {{ $image = . }}
-  {{ end }}
-{{ end }}
-{{ if not $image }}
-  {{ with resources.Get $src }}
-    {{ $image = . }}
-  {{ end }}
+{{/* Try to find image in Page Resources first, then fallback to global resources */}}
+{{ if and .Context (.Context.Resources.GetMatch $src) }}
+  {{ $image = .Context.Resources.GetMatch $src }}
+{{ else }}
+  {{ $image = resources.Get $src }}
 {{ end }}
 
 {{ if $image }}

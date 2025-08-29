@@ -32,17 +32,5 @@
 {{- $organization = merge $organization (dict "contactPoint" (dict "@type" "ContactPoint" "contactType" "customer service" "availableLanguage" "zh-TW" "url" (printf "%scontact/" site.BaseURL))) -}}
 
 <script type="application/ld+json">
-  {{
-    -
-    $organization
-    |
-    jsonify
-    (dict
-    "indent"
-    "  "
-    )
-    |
-    safeJS
-    -
-  }}
+  {{- $organization | jsonify (dict "indent" "  ") | safeJS -}}
 </script>

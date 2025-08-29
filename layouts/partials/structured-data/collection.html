@@ -33,17 +33,5 @@
 {{- $collection = merge $collection (dict "breadcrumb" $breadcrumb) -}}
 
 <script type="application/ld+json">
-  {{
-    -
-    $collection
-    |
-    jsonify
-    (dict
-    "indent"
-    "  "
-    )
-    |
-    safeJS
-    -
-  }}
+  {{- $collection | jsonify (dict "indent" "  ") | safeJS -}}
 </script>

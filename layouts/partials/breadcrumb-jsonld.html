@@ -30,23 +30,10 @@
 {{- $items = $items | append $current -}}
 
 <script type="application/ld+json">
-  {{
-    -
-    dict
-    "@context"
-    "https://schema.org"
-    "@type"
-    "BreadcrumbList"
-    "itemListElement"
-    $items
-    |
-    jsonify
-    (dict
-    "indent"
-    "  "
-    )
-    |
-    safeJS
-    -
-  }}
+  {{- dict 
+    "@context" "https://schema.org"
+    "@type" "BreadcrumbList"
+    "itemListElement" $items
+    | jsonify (dict "indent" "  ") 
+    | safeJS -}}
 </script>
